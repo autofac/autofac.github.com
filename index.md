@@ -8,7 +8,7 @@ css: ['/css/home.min.css']
 -->
 <div class="page-wrapper">
 <header class="jumbotron">
-	<div class="container-fluid">
+	<div class="container-fluid centre-spacing">
 		<div class="row-fluid">
 			<div class="span12 character-wrap">
 				<img class="character" src="img/autofac_web-banner_character.svg" />
@@ -17,11 +17,11 @@ css: ['/css/home.min.css']
 				<div class="container-fluid">
 					<div class="row-fluid">
 					<img class="logo-type" src="img/autofac_logo-type.svg" />
-					<p class="lead">Autofac is an addictive <a href="http://martinfowler.com/articles/injection.html">Inversion of Control container</a> for .NET Core, ASP.NET Core, .NET 4.5.1+, Universal Windows apps, and more.
+					<p class="lead">Autofac is an addictive <a class="header-link" href="http://martinfowler.com/articles/injection.html">Inversion of Control container</a> for .NET Core, ASP.NET Core, .NET 4.5.1+, Universal Windows apps, and more.
 					</p>
 					<div class="action-buttons">
-						<a href="http://autofac.readthedocs.io/en/latest/getting-started/index.html" class="btn btn-primary btn-large">Quick Start Guide &raquo;</a>
-						<a href="https://www.nuget.org/packages?q=Owner%3A%22alexmg%22+Autofac*" class="btn btn-primary btn-large">Download via NuGet &raquo;</a>
+						<a href="http://autofac.readthedocs.io/en/latest/getting-started/index.html" class="btn btn-primary btn-large header-link-btn"><span>Quick Start Guide</span></a>
+						<a href="https://www.nuget.org/packages?q=Owner%3A%22alexmg%22+Autofac*" class="btn btn-primary btn-large header-link-btn"><span>Download via NuGet</span></a>
 					</div>
 					</div>
 				</div>
