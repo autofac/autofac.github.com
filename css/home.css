@@ -204,7 +204,7 @@ p.lead {
 ------------------------- */
 @media (min-width: 980px) {
   .centre-spacing{
-    margin: 0 11% !important;
+    margin: 0 15% !important;
   }
   .jumbotron {
     margin-top: 40px;
@@ -247,10 +247,6 @@ p.lead {
   body {
     padding-top: 0;
   }
-  /* Widen masthead and social buttons to fill body padding */
-  .jumbotron {
-    /*margin-top: -20px;  Offset bottom margin on .navbar */
-  }
   .character-wrap{
     width: 20% !important;
   }
@@ -265,11 +261,15 @@ p.lead {
 
 /* Tablet
 ------------------------- */
-@media (max-width: 767px) {
+@media only screen 
+  and (max-width: 767px) {
   /* Remove any padding from the body */
-  body{
-     padding-right: 0 !important; 
-     padding-left: 0 !important; 
+   html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow-x: hidden;
   }
 
   .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
@@ -277,7 +277,6 @@ p.lead {
      margin-left: 0 !important; 
   }
   .copy-container {
-    /*width: 75% !important;*/
     padding-top:20px;
   }
   .jumbotron img.logo-type {
@@ -311,9 +310,35 @@ p.lead {
   }
 }
 
+/* Small Tablet (600px by 800px) Portrait */
+@media only screen 
+  and (max-device-width: 600px)
+  and (orientation: portrait) {
+   .jumbotron{
+    padding: 40px 20px;
+   }
+
+   p.lead {
+    text-align: center;
+   }
+
+   .action-buttons{
+    width: 100%;
+   }
+
+   .jumbotron .action-buttons a.btn {
+      position: relative;
+      display: block;
+      margin: 10px auto;
+  }
+
+}
+
+
 /* Landscape phones
 ------------------------- */
-@media (max-width: 480px) {
+@media only screen 
+and (max-width: 480px) {
   /* Remove padding above jumbotron */
   body {
     padding-top: 0;
