@@ -78,12 +78,14 @@
   <HelpKINode Title="ActivatorData property" Url="html/6ADADF4.htm" />
   <HelpKINode Title="Adapter property" Url="html/255947AD.htm" />
   <HelpKINode Title="Adaptive enumeration member" Url="html/3B3E90A5.htm" />
+  <HelpKINode Title="AddAutofac method" Url="html/C5827639.htm" />
   <HelpKINode Title="AddBindingParameters method">
     <HelpKINode Title="AutofacDependencyInjectionServiceBehavior.AddBindingParameters Method " Url="html/BD1367CD.htm" />
     <HelpKINode Title="TenantPropagationBehavior(TTenantId).AddBindingParameters Method " Url="html/C8928F75.htm" />
   </HelpKINode>
   <HelpKINode Title="AddDependencyInjectionBehavior method" Url="html/AA2726BB.htm" />
   <HelpKINode Title="AddInstanceForDisposal method" Url="html/ED523BCF.htm" />
+  <HelpKINode Title="AddRegistration method" Url="html/87C78D82.htm" />
   <HelpKINode Title="AddRegistrationSource method">
     <HelpKINode Title="ComponentRegistry.AddRegistrationSource Method " Url="html/779F5ACF.htm" />
     <HelpKINode Title="IComponentRegistry.AddRegistrationSource Method " Url="html/E03B16B1.htm" />
@@ -210,6 +212,7 @@
   <HelpKINode Title="Autofac.Builder namespace" Url="html/4CEBBC9B.htm" />
   <HelpKINode Title="Autofac.Builder.ConcreteReflectionActivatorData class" Url="html/56197DD.htm" />
   <HelpKINode Title="Autofac.Builder.ContainerBuildOptions enumeration" Url="html/2B53898B.htm" />
+  <HelpKINode Title="Autofac.Builder.DeferredCallback class" Url="html/B699D2CF.htm" />
   <HelpKINode Title="Autofac.Builder.DynamicRegistrationStyle class" Url="html/BDCF20C2.htm" />
   <HelpKINode Title="Autofac.Builder.IConcreteActivatorData interface" Url="html/9E082F91.htm" />
   <HelpKINode Title="Autofac.Builder.IHideObjectMembers interface" Url="html/C92C316D.htm" />
@@ -258,6 +261,7 @@
   <HelpKINode Title="Autofac.Core.Activators.Reflection.MostParametersConstructorSelector class" Url="html/2E231CD5.htm" />
   <HelpKINode Title="Autofac.Core.Activators.Reflection.ReflectionActivator class" Url="html/34AC228A.htm" />
   <HelpKINode Title="Autofac.Core.ComponentRegisteredEventArgs class" Url="html/5F4A8ACE.htm" />
+  <HelpKINode Title="Autofac.Core.ComponentRegistrationExtensions class" Url="html/9CF23B54.htm" />
   <HelpKINode Title="Autofac.Core.ConstantParameter class" Url="html/A4EECF48.htm" />
   <HelpKINode Title="Autofac.Core.Container class" Url="html/4C556D2D.htm" />
   <HelpKINode Title="Autofac.Core.DefaultPropertySelector class" Url="html/9FB4316A.htm" />
@@ -315,6 +319,8 @@
   <HelpKINode Title="Autofac.Extensions.DependencyInjection namespace" Url="html/5A0BA2BA.htm" />
   <HelpKINode Title="Autofac.Extensions.DependencyInjection.AutofacRegistration class" Url="html/743B0541.htm" />
   <HelpKINode Title="Autofac.Extensions.DependencyInjection.AutofacServiceProvider class" Url="html/74DD9320.htm" />
+  <HelpKINode Title="Autofac.Extensions.DependencyInjection.AutofacServiceProviderFactory class" Url="html/5042E523.htm" />
+  <HelpKINode Title="Autofac.Extensions.DependencyInjection.ServiceCollectionExtensions class" Url="html/1BA26F06.htm" />
   <HelpKINode Title="Autofac.Extras.AggregateService namespace" Url="html/9FFA0EAB.htm" />
   <HelpKINode Title="Autofac.Extras.AggregateService.AggregateServiceGenerator class" Url="html/5480B55A.htm" />
   <HelpKINode Title="Autofac.Extras.AggregateService.ContainerBuilderExtensions class" Url="html/942847D1.htm" />
@@ -351,6 +357,11 @@
   <HelpKINode Title="Autofac.Extras.NHibernate.Bytecode.AutofacBytecodeProvider class" Url="html/9E7DD550.htm" />
   <HelpKINode Title="Autofac.Extras.NHibernate.Bytecode.AutofacObjectsFactory class" Url="html/633AA3B0.htm" />
   <HelpKINode Title="Autofac.Extras.NHibernate.Bytecode.AutofacReflectionOptimizer class" Url="html/9A5CCF60.htm" />
+  <HelpKINode Title="Autofac.Features.AttributeFilters namespace" Url="html/58CCF8C0.htm" />
+  <HelpKINode Title="Autofac.Features.AttributeFilters.KeyFilterAttribute class" Url="html/9305214F.htm" />
+  <HelpKINode Title="Autofac.Features.AttributeFilters.MetadataFilterAttribute class" Url="html/88E529CF.htm" />
+  <HelpKINode Title="Autofac.Features.AttributeFilters.ParameterFilterAttribute class" Url="html/1EAA0F30.htm" />
+  <HelpKINode Title="Autofac.Features.AttributeFilters.RegistrationExtensions class" Url="html/B699D977.htm" />
   <HelpKINode Title="Autofac.Features.GeneratedFactories namespace" Url="html/CF764C0F.htm" />
   <HelpKINode Title="Autofac.Features.GeneratedFactories.FactoryGenerator class" Url="html/120D5BF8.htm" />
   <HelpKINode Title="Autofac.Features.GeneratedFactories.GeneratedFactoryActivatorData class" Url="html/ABD5E0BD.htm" />
@@ -438,6 +449,7 @@
   <HelpKINode Title="Autofac.Integration.WebApi.AutofacWebApiFilterProvider class" Url="html/D95E8831.htm" />
   <HelpKINode Title="Autofac.Integration.WebApi.AutofacWebApiModelBinderProvider class" Url="html/B4E95BD9.htm" />
   <HelpKINode Title="Autofac.Integration.WebApi.DependencyResolverExtensions class" Url="html/B8A3F13F.htm" />
+  <HelpKINode Title="Autofac.Integration.WebApi.HttpConfigurationExtensions class" Url="html/81561ECA.htm" />
   <HelpKINode Title="Autofac.Integration.WebApi.IAutofacActionFilter interface" Url="html/FB6AF200.htm" />
   <HelpKINode Title="Autofac.Integration.WebApi.IAutofacAuthenticationFilter interface" Url="html/7D97EECE.htm" />
   <HelpKINode Title="Autofac.Integration.WebApi.IAutofacAuthorizationFilter interface" Url="html/F76038B4.htm" />
@@ -487,7 +499,7 @@
   </HelpKINode>
   <HelpKINode Title="AutofacAppBuilderExtensions.DisposeScopeOnAppDisposing method" Url="html/D36D9561.htm" />
   <HelpKINode Title="AutofacAppBuilderExtensions.IsAutofacLifetimeScopeInjectorRegistered method" Url="html/B2B0A342.htm" />
-  <HelpKINode Title="AutofacAppBuilderExtensions.UseAutofacLifetimeScopeInjector method" Url="html/F229F80B.htm" />
+  <HelpKINode Title="AutofacAppBuilderExtensions.UseAutofacLifetimeScopeInjector method" Url="html/E9877046.htm" />
   <HelpKINode Title="AutofacAppBuilderExtensions.UseAutofacMiddleware method" Url="html/F2B74551.htm" />
   <HelpKINode Title="AutofacAppBuilderExtensions.UseMiddlewareFromContainer(Of T) method" Url="html/D45772B8.htm" />
   <HelpKINode Title="AutofacAppBuilderExtensions.UseMiddlewareFromContainer&lt;T&gt; method" Url="html/D45772B8.htm" />
@@ -546,16 +558,16 @@
   <HelpKINode Title="AutofacDependencyInjectionServiceBehavior.AutofacDependencyInjectionServiceBehavior constructor" Url="html/415C9015.htm" />
   <HelpKINode Title="AutofacDependencyInjectionServiceBehavior.Validate method" Url="html/2795F790.htm" />
   <HelpKINode Title="AutofacDependencyResolver class">
-    <HelpKINode Title="AutofacDependencyResolver Class" Url="html/F06CDC73.htm" />
     <HelpKINode Title="AutofacDependencyResolver Class" Url="html/4D5AA8DA.htm" />
-    <HelpKINode Title="about AutofacDependencyResolver class" Url="html/F06CDC73.htm" />
+    <HelpKINode Title="AutofacDependencyResolver Class" Url="html/F06CDC73.htm" />
     <HelpKINode Title="about AutofacDependencyResolver class" Url="html/4D5AA8DA.htm" />
+    <HelpKINode Title="about AutofacDependencyResolver class" Url="html/F06CDC73.htm" />
     <HelpKINode Title="constructor" Url="html/D7097DA5.htm" />
     <HelpKINode Title="constructor" Url="html/16A3AAAC.htm" />
     <HelpKINode Title="methods" Url="html/3B89266E.htm" />
     <HelpKINode Title="methods" Url="html/9878EE3D.htm" />
-    <HelpKINode Title="properties" Url="html/C52DC43A.htm" />
     <HelpKINode Title="properties" Url="html/7109A373.htm" />
+    <HelpKINode Title="properties" Url="html/C52DC43A.htm" />
   </HelpKINode>
   <HelpKINode Title="AutofacDependencyResolver.ApplicationContainer property" Url="html/BD440D38.htm" />
   <HelpKINode Title="AutofacDependencyResolver.AutofacDependencyResolver constructor">
@@ -563,8 +575,8 @@
     <HelpKINode Title="AutofacDependencyResolver Constructor " Url="html/16A3AAAC.htm" />
   </HelpKINode>
   <HelpKINode Title="AutofacDependencyResolver.Current property">
-    <HelpKINode Title="AutofacDependencyResolver.Current Property " Url="html/C17040BE.htm" />
     <HelpKINode Title="AutofacDependencyResolver.Current Property " Url="html/CD4381BF.htm" />
+    <HelpKINode Title="AutofacDependencyResolver.Current Property " Url="html/C17040BE.htm" />
   </HelpKINode>
   <HelpKINode Title="AutofacDependencyResolver.GetService method">
     <HelpKINode Title="AutofacDependencyResolver.GetService Method " Url="html/564756B3.htm" />
@@ -650,6 +662,12 @@
   </HelpKINode>
   <HelpKINode Title="AutofacModelBinderProvider.AutofacModelBinderProvider constructor" Url="html/5CA810FB.htm" />
   <HelpKINode Title="AutofacModelBinderProvider.GetBinder method" Url="html/408A9A.htm" />
+  <HelpKINode Title="AutofacMultitenantWebHostBuilderExtensions class">
+    <HelpKINode Title="AutofacMultitenantWebHostBuilderExtensions Class" Url="html/BAE7797A.htm" />
+    <HelpKINode Title="about AutofacMultitenantWebHostBuilderExtensions class" Url="html/BAE7797A.htm" />
+    <HelpKINode Title="methods" Url="html/67ED0CA.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AutofacMultitenantWebHostBuilderExtensions.UseAutofacMultitenantRequestServices method" Url="html/E40A065C.htm" />
   <HelpKINode Title="AutofacMvcAppBuilderExtensions class">
     <HelpKINode Title="AutofacMvcAppBuilderExtensions Class" Url="html/8A1D19F2.htm" />
     <HelpKINode Title="about AutofacMvcAppBuilderExtensions class" Url="html/8A1D19F2.htm" />
@@ -693,7 +711,7 @@
     <HelpKINode Title="about AutofacRegistration class" Url="html/743B0541.htm" />
     <HelpKINode Title="methods" Url="html/39C9E38.htm" />
   </HelpKINode>
-  <HelpKINode Title="AutofacRegistration.Populate method" Url="html/B3162450.htm" />
+  <HelpKINode Title="AutofacRegistration.Populate method" Url="html/52050927.htm" />
   <HelpKINode Title="AutofacServiceHostFactory class">
     <HelpKINode Title="AutofacServiceHostFactory Class" Url="html/CA546AD9.htm" />
     <HelpKINode Title="about AutofacServiceHostFactory class" Url="html/CA546AD9.htm" />
@@ -721,6 +739,15 @@
   <HelpKINode Title="AutofacServiceProvider.AutofacServiceProvider constructor" Url="html/6C542669.htm" />
   <HelpKINode Title="AutofacServiceProvider.GetRequiredService method" Url="html/FBEE5FA4.htm" />
   <HelpKINode Title="AutofacServiceProvider.GetService method" Url="html/1253BF79.htm" />
+  <HelpKINode Title="AutofacServiceProviderFactory class">
+    <HelpKINode Title="AutofacServiceProviderFactory Class" Url="html/5042E523.htm" />
+    <HelpKINode Title="about AutofacServiceProviderFactory class" Url="html/5042E523.htm" />
+    <HelpKINode Title="constructor" Url="html/FC2D34D9.htm" />
+    <HelpKINode Title="methods" Url="html/35CCA598.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AutofacServiceProviderFactory.AutofacServiceProviderFactory constructor" Url="html/FC2D34D9.htm" />
+  <HelpKINode Title="AutofacServiceProviderFactory.CreateBuilder method" Url="html/11D3AE1A.htm" />
+  <HelpKINode Title="AutofacServiceProviderFactory.CreateServiceProvider method" Url="html/CCF07C6B.htm" />
   <HelpKINode Title="AutofacWebApiAppBuilderExtensions class">
     <HelpKINode Title="AutofacWebApiAppBuilderExtensions Class" Url="html/8555FA34.htm" />
     <HelpKINode Title="about AutofacWebApiAppBuilderExtensions class" Url="html/8555FA34.htm" />
@@ -730,11 +757,11 @@
   <HelpKINode Title="AutofacWebApiDependencyResolver class">
     <HelpKINode Title="AutofacWebApiDependencyResolver Class" Url="html/9C06FDB5.htm" />
     <HelpKINode Title="about AutofacWebApiDependencyResolver class" Url="html/9C06FDB5.htm" />
-    <HelpKINode Title="constructor" Url="html/459FFD51.htm" />
+    <HelpKINode Title="constructor" Url="html/35BB35B9.htm" />
     <HelpKINode Title="methods" Url="html/47492661.htm" />
     <HelpKINode Title="properties" Url="html/56292983.htm" />
   </HelpKINode>
-  <HelpKINode Title="AutofacWebApiDependencyResolver.AutofacWebApiDependencyResolver constructor" Url="html/459FFD51.htm" />
+  <HelpKINode Title="AutofacWebApiDependencyResolver.AutofacWebApiDependencyResolver constructor" Url="html/35BB35B9.htm" />
   <HelpKINode Title="AutofacWebApiDependencyResolver.BeginScope method" Url="html/BC71015E.htm" />
   <HelpKINode Title="AutofacWebApiDependencyResolver.Container property" Url="html/C9997D7E.htm" />
   <HelpKINode Title="AutofacWebApiDependencyResolver.Dispose method" Url="html/CE846C75.htm" />
@@ -853,9 +880,10 @@
     <HelpKINode Title="RegistrationExtensions.CacheInSession(TLimit, TActivatorData, TSingleRegistrationStyle) Method " Url="html/3B02EA4A.htm" />
   </HelpKINode>
   <HelpKINode Title="CacheInSession&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt; method">
-    <HelpKINode Title="RegistrationExtensions.CacheInSession(TLimit, TActivatorData, TSingleRegistrationStyle) Method " Url="html/81502B7A.htm" />
     <HelpKINode Title="RegistrationExtensions.CacheInSession(TLimit, TActivatorData, TSingleRegistrationStyle) Method " Url="html/3B02EA4A.htm" />
+    <HelpKINode Title="RegistrationExtensions.CacheInSession(TLimit, TActivatorData, TSingleRegistrationStyle) Method " Url="html/81502B7A.htm" />
   </HelpKINode>
+  <HelpKINode Title="Callback property" Url="html/7FE44CE4.htm" />
   <HelpKINode Title="CanInstantiate property" Url="html/B173974A.htm" />
   <HelpKINode Title="CanSupplyValue method">
     <HelpKINode Title="AutowiringParameter.CanSupplyValue Method " Url="html/D8D03009.htm" />
@@ -962,6 +990,12 @@
   <HelpKINode Title="ComponentRegistration.Sharing property" Url="html/C05A7190.htm" />
   <HelpKINode Title="ComponentRegistration.Target property" Url="html/23680855.htm" />
   <HelpKINode Title="ComponentRegistration.ToString method" Url="html/29A490F3.htm" />
+  <HelpKINode Title="ComponentRegistrationExtensions class">
+    <HelpKINode Title="ComponentRegistrationExtensions Class" Url="html/9CF23B54.htm" />
+    <HelpKINode Title="about ComponentRegistrationExtensions class" Url="html/9CF23B54.htm" />
+    <HelpKINode Title="methods" Url="html/1A5778F8.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ComponentRegistrationExtensions.MatchingLifetimeScopeTags method" Url="html/E02DEA3D.htm" />
   <HelpKINode Title="ComponentRegistry class">
     <HelpKINode Title="ComponentRegistry Class" Url="html/1BB68D08.htm" />
     <HelpKINode Title="about ComponentRegistry class" Url="html/1BB68D08.htm" />
@@ -980,11 +1014,13 @@
     <HelpKINode Title="MultitenantContainer.ComponentRegistry Property " Url="html/E8D82F98.htm" />
     <HelpKINode Title="RegistrationSourceAddedEventArgs.ComponentRegistry Property " Url="html/964CD0AF.htm" />
   </HelpKINode>
+  <HelpKINode Title="ComponentRegistry.AddRegistration method" Url="html/87C78D82.htm" />
   <HelpKINode Title="ComponentRegistry.AddRegistrationSource method" Url="html/779F5ACF.htm" />
   <HelpKINode Title="ComponentRegistry.ComponentRegistry constructor" Url="html/F6E1C030.htm" />
   <HelpKINode Title="ComponentRegistry.Dispose method" Url="html/AF3F377B.htm" />
   <HelpKINode Title="ComponentRegistry.HasLocalComponents property" Url="html/8026854B.htm" />
   <HelpKINode Title="ComponentRegistry.IsRegistered method" Url="html/F186CDD9.htm" />
+  <HelpKINode Title="ComponentRegistry.Properties property" Url="html/F678070F.htm" />
   <HelpKINode Title="ComponentRegistry.Register method" Url="html/7AC3B4D5.htm" />
   <HelpKINode Title="ComponentRegistry.Registered event" Url="html/B545004E.htm" />
   <HelpKINode Title="ComponentRegistry.Registrations property" Url="html/4AACE8A2.htm" />
@@ -1113,6 +1149,7 @@
     <HelpKINode Title="about ContainerBuilder class" Url="html/717248.htm" />
     <HelpKINode Title="constructor" Url="html/A4D8618A.htm" />
     <HelpKINode Title="methods" Url="html/4DD9FD2F.htm" />
+    <HelpKINode Title="properties" Url="html/12010204.htm" />
   </HelpKINode>
   <HelpKINode Title="ContainerBuilder property">
     <HelpKINode Title="IMetadataRegistrar(TInterface, TMetadata).ContainerBuilder Property " Url="html/B917F0C9.htm" />
@@ -1120,6 +1157,8 @@
   </HelpKINode>
   <HelpKINode Title="ContainerBuilder.Build method" Url="html/4A68ED05.htm" />
   <HelpKINode Title="ContainerBuilder.ContainerBuilder constructor" Url="html/A4D8618A.htm" />
+  <HelpKINode Title="ContainerBuilder.Properties property" Url="html/338B86C1.htm" />
+  <HelpKINode Title="ContainerBuilder.RegisterBuildCallback method" Url="html/7B96906E.htm" />
   <HelpKINode Title="ContainerBuilder.RegisterCallback method" Url="html/38CF1326.htm" />
   <HelpKINode Title="ContainerBuilder.Update method" Url="html/643D901.htm" />
   <HelpKINode Title="ContainerBuilderExtensions class">
@@ -1209,6 +1248,7 @@
     <HelpKINode Title="AutoFake.Create(T) Method " Url="html/E60BA29E.htm" />
     <HelpKINode Title="AutoMock.Create(T) Method " Url="html/93EE0136.htm" />
   </HelpKINode>
+  <HelpKINode Title="CreateBuilder method" Url="html/11D3AE1A.htm" />
   <HelpKINode Title="CreateDomainService method" Url="html/2462B19C.htm" />
   <HelpKINode Title="CreateInstance method">
     <HelpKINode Title="AggregateServiceGenerator.CreateInstance Method " Url="html/2C011A29.htm" />
@@ -1221,6 +1261,7 @@
     <HelpKINode Title="AutofacServiceHostFactory.CreateServiceHost Method " Url="html/EA69F144.htm" />
     <HelpKINode Title="AutofacWebServiceHostFactory.CreateServiceHost Method " Url="html/ECEBA408.htm" />
   </HelpKINode>
+  <HelpKINode Title="CreateServiceProvider method" Url="html/CCF07C6B.htm" />
   <HelpKINode Title="CreateSingletonServiceHost method">
     <HelpKINode Title="AutofacHostFactory.CreateSingletonServiceHost Method " Url="html/1989BA2F.htm" />
     <HelpKINode Title="AutofacServiceHostFactory.CreateSingletonServiceHost Method " Url="html/B905D32B.htm" />
@@ -1302,6 +1343,17 @@
   </HelpKINode>
   <HelpKINode Title="DefaultValueParameter.CanSupplyValue method" Url="html/9B307CCA.htm" />
   <HelpKINode Title="DefaultValueParameter.DefaultValueParameter constructor" Url="html/CDDA04C1.htm" />
+  <HelpKINode Title="DeferredCallback class">
+    <HelpKINode Title="DeferredCallback Class" Url="html/B699D2CF.htm" />
+    <HelpKINode Title="about DeferredCallback class" Url="html/B699D2CF.htm" />
+    <HelpKINode Title="constructor" Url="html/BA7223F6.htm" />
+    <HelpKINode Title="methods" Url="html/4602EB3D.htm" />
+    <HelpKINode Title="properties" Url="html/C7D0ABE8.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DeferredCallback property" Url="html/DA98CE5C.htm" />
+  <HelpKINode Title="DeferredCallback.Callback property" Url="html/7FE44CE4.htm" />
+  <HelpKINode Title="DeferredCallback.DeferredCallback constructor" Url="html/BA7223F6.htm" />
+  <HelpKINode Title="DeferredCallback.Id property" Url="html/FFE8969F.htm" />
   <HelpKINode Title="DelegateActivator class">
     <HelpKINode Title="DelegateActivator Class" Url="html/10C1A460.htm" />
     <HelpKINode Title="about DelegateActivator class" Url="html/10C1A460.htm" />
@@ -1589,8 +1641,8 @@
   <HelpKINode Title="GetRequiredService method" Url="html/FBEE5FA4.htm" />
   <HelpKINode Title="GetRootLifetimeScope method" Url="html/83D665D.htm" />
   <HelpKINode Title="GetService method">
-    <HelpKINode Title="AutofacDependencyResolver.GetService Method " Url="html/564756B3.htm" />
     <HelpKINode Title="AutofacDependencyResolver.GetService Method " Url="html/7F1F310C.htm" />
+    <HelpKINode Title="AutofacDependencyResolver.GetService Method " Url="html/564756B3.htm" />
     <HelpKINode Title="AutofacServiceProvider.GetService Method " Url="html/1253BF79.htm" />
     <HelpKINode Title="AutofacWebApiDependencyResolver.GetService Method " Url="html/BA1E8404.htm" />
     <HelpKINode Title="AutofacWebApiDependencyScope.GetService Method " Url="html/4E07FA66.htm" />
@@ -1621,6 +1673,12 @@
   </HelpKINode>
   <HelpKINode Title="HostAsSingleton property" Url="html/70E86BEA.htm" />
   <HelpKINode Title="HostConfigurationAction property" Url="html/F0D8D963.htm" />
+  <HelpKINode Title="HttpConfigurationExtensions class">
+    <HelpKINode Title="HttpConfigurationExtensions Class" Url="html/81561ECA.htm" />
+    <HelpKINode Title="about HttpConfigurationExtensions class" Url="html/81561ECA.htm" />
+    <HelpKINode Title="methods" Url="html/A2E2BE24.htm" />
+  </HelpKINode>
+  <HelpKINode Title="HttpConfigurationExtensions.RegisterHttpRequestMessage method" Url="html/7F2E416D.htm" />
   <HelpKINode Title="IActivatedEventArgs(Of T) interface">
     <HelpKINode Title="IActivatedEventArgs(T) Interface" Url="html/F9693A2F.htm" />
     <HelpKINode Title="about IActivatedEventArgs(Of T) interface" Url="html/F9693A2F.htm" />
@@ -1738,6 +1796,7 @@
   <HelpKINode Title="IComponentRegistry.AddRegistrationSource method" Url="html/E03B16B1.htm" />
   <HelpKINode Title="IComponentRegistry.HasLocalComponents property" Url="html/580DC3F8.htm" />
   <HelpKINode Title="IComponentRegistry.IsRegistered method" Url="html/25982970.htm" />
+  <HelpKINode Title="IComponentRegistry.Properties property" Url="html/E572E97A.htm" />
   <HelpKINode Title="IComponentRegistry.Register method" Url="html/DCFCC5BD.htm" />
   <HelpKINode Title="IComponentRegistry.Registered event" Url="html/5B56CE37.htm" />
   <HelpKINode Title="IComponentRegistry.Registrations property" Url="html/6B9FAA13.htm" />
@@ -1799,6 +1858,7 @@
   <HelpKINode Title="IContainerProviderAccessor.ContainerProvider property" Url="html/93619850.htm" />
   <HelpKINode Title="Id property">
     <HelpKINode Title="ComponentRegistration.Id Property " Url="html/ACDF0B48.htm" />
+    <HelpKINode Title="DeferredCallback.Id Property " Url="html/FFE8969F.htm" />
     <HelpKINode Title="IComponentRegistration.Id Property " Url="html/D893FA18.htm" />
     <HelpKINode Title="SingleRegistrationStyle.Id Property " Url="html/6CE8393E.htm" />
   </HelpKINode>
@@ -1810,6 +1870,8 @@
     <HelpKINode Title="methods" Url="html/57A87F8D.htm" />
   </HelpKINode>
   <HelpKINode Title="IDisposer.AddInstanceForDisposal method" Url="html/ED523BCF.htm" />
+  <HelpKINode Title="IfNotRegistered(Of TLimit, TActivatorData, TStyle) method" Url="html/BEE129AA.htm" />
+  <HelpKINode Title="IfNotRegistered&lt;TLimit, TActivatorData, TStyle&gt; method" Url="html/BEE129AA.htm" />
   <HelpKINode Title="IgnoreAttributeInterfaceProxyInstanceContributor class">
     <HelpKINode Title="IgnoreAttributeInterfaceProxyInstanceContributor Class" Url="html/F7453D43.htm" />
     <HelpKINode Title="about IgnoreAttributeInterfaceProxyInstanceContributor class" Url="html/F7453D43.htm" />
@@ -2047,8 +2109,8 @@
     <HelpKINode Title="RegistrationExtensions.InstancePerHttpRequest(TLimit, TActivatorData, TStyle) Method " Url="html/1F6D3BA3.htm" />
   </HelpKINode>
   <HelpKINode Title="InstancePerHttpRequest&lt;TLimit, TActivatorData, TStyle&gt; method">
-    <HelpKINode Title="RegistrationExtensions.InstancePerHttpRequest(TLimit, TActivatorData, TStyle) Method " Url="html/CE22CC19.htm" />
     <HelpKINode Title="RegistrationExtensions.InstancePerHttpRequest(TLimit, TActivatorData, TStyle) Method " Url="html/1F6D3BA3.htm" />
+    <HelpKINode Title="RegistrationExtensions.InstancePerHttpRequest(TLimit, TActivatorData, TStyle) Method " Url="html/CE22CC19.htm" />
   </HelpKINode>
   <HelpKINode Title="InstancePerLifetimeScope method" Url="html/8804210E.htm" />
   <HelpKINode Title="InstancePerMatchingLifetimeScope method" Url="html/49BAD240.htm" />
@@ -2203,6 +2265,8 @@
   </HelpKINode>
   <HelpKINode Title="ITenantIdentificationStrategy.TryIdentifyTenant method" Url="html/149A5C31.htm" />
   <HelpKINode Title="Key property">
+    <HelpKINode Title="KeyFilterAttribute.Key Property " Url="html/52DDC3B1.htm" />
+    <HelpKINode Title="MetadataFilterAttribute.Key Property " Url="html/EAE67C66.htm" />
     <HelpKINode Title="WithKeyAttribute.Key Property " Url="html/291670E3.htm" />
     <HelpKINode Title="WithMetadataAttribute.Key Property " Url="html/2589F485.htm" />
   </HelpKINode>
@@ -2224,6 +2288,16 @@
   <HelpKINode Title="KeyedService.KeyedService constructor" Url="html/4BE596B2.htm" />
   <HelpKINode Title="KeyedService.ServiceKey property" Url="html/2D6429A8.htm" />
   <HelpKINode Title="KeyedService.ServiceType property" Url="html/F78EB13D.htm" />
+  <HelpKINode Title="KeyFilterAttribute class">
+    <HelpKINode Title="KeyFilterAttribute Class" Url="html/9305214F.htm" />
+    <HelpKINode Title="about KeyFilterAttribute class" Url="html/9305214F.htm" />
+    <HelpKINode Title="constructor" Url="html/635313CA.htm" />
+    <HelpKINode Title="methods" Url="html/75C30EF9.htm" />
+    <HelpKINode Title="properties" Url="html/7C638188.htm" />
+  </HelpKINode>
+  <HelpKINode Title="KeyFilterAttribute.Key property" Url="html/52DDC3B1.htm" />
+  <HelpKINode Title="KeyFilterAttribute.KeyFilterAttribute constructor" Url="html/635313CA.htm" />
+  <HelpKINode Title="KeyFilterAttribute.ResolveParameter method" Url="html/8B62CEAF.htm" />
   <HelpKINode Title="Lifetime property">
     <HelpKINode Title="ComponentRegistration.Lifetime Property " Url="html/5925C16F.htm" />
     <HelpKINode Title="IComponentRegistration.Lifetime Property " Url="html/13E74417.htm" />
@@ -2297,14 +2371,17 @@
     <HelpKINode Title="MetadataModule(TInterface, TMetadata).Load Method " Url="html/5DDB2841.htm" />
     <HelpKINode Title="Module.Load Method " Url="html/A4220791.htm" />
   </HelpKINode>
+  <HelpKINode Title="MatchingLifetimeScopeTags method" Url="html/E02DEA3D.htm" />
   <HelpKINode Title="MatchingScopeLifetime class">
     <HelpKINode Title="MatchingScopeLifetime Class" Url="html/8DD7E4D4.htm" />
     <HelpKINode Title="about MatchingScopeLifetime class" Url="html/8DD7E4D4.htm" />
     <HelpKINode Title="constructor" Url="html/245A7B8C.htm" />
     <HelpKINode Title="methods" Url="html/2116179C.htm" />
+    <HelpKINode Title="properties" Url="html/46DB1860.htm" />
   </HelpKINode>
   <HelpKINode Title="MatchingScopeLifetime.FindScope method" Url="html/C1525C46.htm" />
   <HelpKINode Title="MatchingScopeLifetime.MatchingScopeLifetime constructor" Url="html/245A7B8C.htm" />
+  <HelpKINode Title="MatchingScopeLifetime.TagsToMatch property" Url="html/1BFD48EC.htm" />
   <HelpKINode Title="MatchingScopeLifetimeTags class">
     <HelpKINode Title="MatchingScopeLifetimeTags Class" Url="html/962E6DFD.htm" />
     <HelpKINode Title="about MatchingScopeLifetimeTags class" Url="html/962E6DFD.htm" />
@@ -2384,6 +2461,17 @@
   </HelpKINode>
   <HelpKINode Title="MetadataConfiguration&lt;TMetadata&gt;.For&lt;TProperty&gt; method" Url="html/4FA9F3CB.htm" />
   <HelpKINode Title="MetadataConfiguration&lt;TMetadata&gt;.MetadataConfiguration constructor" Url="html/8B5CF6DC.htm" />
+  <HelpKINode Title="MetadataFilterAttribute class">
+    <HelpKINode Title="MetadataFilterAttribute Class" Url="html/88E529CF.htm" />
+    <HelpKINode Title="about MetadataFilterAttribute class" Url="html/88E529CF.htm" />
+    <HelpKINode Title="constructor" Url="html/99283BA1.htm" />
+    <HelpKINode Title="methods" Url="html/AB53036E.htm" />
+    <HelpKINode Title="properties" Url="html/34327A9B.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MetadataFilterAttribute.Key property" Url="html/EAE67C66.htm" />
+  <HelpKINode Title="MetadataFilterAttribute.MetadataFilterAttribute constructor" Url="html/99283BA1.htm" />
+  <HelpKINode Title="MetadataFilterAttribute.ResolveParameter method" Url="html/3919E8CE.htm" />
+  <HelpKINode Title="MetadataFilterAttribute.Value property" Url="html/A33C6521.htm" />
   <HelpKINode Title="MetadataHelper class">
     <HelpKINode Title="MetadataHelper Class" Url="html/8D9620D1.htm" />
     <HelpKINode Title="about MetadataHelper class" Url="html/8D9620D1.htm" />
@@ -2417,6 +2505,8 @@
   <HelpKINode Title="MetadataModule&lt;TInterface, TMetadata&gt;.Register method" Url="html/2D10DD75.htm" />
   <HelpKINode Title="MetadataModule&lt;TInterface, TMetadata&gt;.RegisterAttributedType method" Url="html/599EF4ED.htm" />
   <HelpKINode Title="MetadataModule&lt;TInterface, TMetadata&gt;.RegisterType method" Url="html/47B365A7.htm" />
+  <HelpKINode Title="Microsoft.AspNetCore.Hosting namespace" Url="html/AB1E38D1.htm" />
+  <HelpKINode Title="Microsoft.AspNetCore.Hosting.AutofacMultitenantWebHostBuilderExtensions class" Url="html/BAE7797A.htm" />
   <HelpKINode Title="Mock(Of T) method" Url="html/66E87E8B.htm" />
   <HelpKINode Title="Mock&lt;T&gt; method" Url="html/66E87E8B.htm" />
   <HelpKINode Title="MockRepository property" Url="html/860BBBA.htm" />
@@ -2485,10 +2575,13 @@
   <HelpKINode Title="MultitenantContainer.GetCurrentTenantScope method" Url="html/8257DDB3.htm" />
   <HelpKINode Title="MultitenantContainer.GetTenantScope method" Url="html/2E677312.htm" />
   <HelpKINode Title="MultitenantContainer.MultitenantContainer constructor" Url="html/83DE9DA.htm" />
+  <HelpKINode Title="MultitenantContainer.ReconfigureTenant method" Url="html/7DAC4792.htm" />
+  <HelpKINode Title="MultitenantContainer.RemoveTenant method" Url="html/AA6B458E.htm" />
   <HelpKINode Title="MultitenantContainer.ResolveComponent method" Url="html/10048557.htm" />
   <HelpKINode Title="MultitenantContainer.ResolveOperationBeginning event" Url="html/7E38AEA2.htm" />
   <HelpKINode Title="MultitenantContainer.Tag property" Url="html/859FA842.htm" />
   <HelpKINode Title="MultitenantContainer.TenantIdentificationStrategy property" Url="html/7FB1F176.htm" />
+  <HelpKINode Title="MultitenantContainer.TenantIsConfigured method" Url="html/646B19EE.htm" />
   <HelpKINode Title="MultitenantServiceImplementationDataProvider class">
     <HelpKINode Title="MultitenantServiceImplementationDataProvider Class" Url="html/53013613.htm" />
     <HelpKINode Title="about MultitenantServiceImplementationDataProvider class" Url="html/53013613.htm" />
@@ -2541,6 +2634,8 @@
   <HelpKINode Title="OnActivating method" Url="html/B68FA76F.htm" />
   <HelpKINode Title="OnAuthorizationAsync method" Url="html/26092F3D.htm" />
   <HelpKINode Title="OnExceptionAsync method" Url="html/FC727C62.htm" />
+  <HelpKINode Title="OnlyIf(Of TLimit, TActivatorData, TStyle) method" Url="html/D513BEF6.htm" />
+  <HelpKINode Title="OnlyIf&lt;TLimit, TActivatorData, TStyle&gt; method" Url="html/D513BEF6.htm" />
   <HelpKINode Title="OnPreparing method" Url="html/6EA3BABE.htm" />
   <HelpKINode Title="OnRegistered method" Url="html/7E9311F0.htm" />
   <HelpKINode Title="OnRelease(Of TLimit, TActivatorData, TRegistrationStyle) method" Url="html/61B5ECEC.htm" />
@@ -2583,6 +2678,7 @@
     <HelpKINode Title="methods" Url="html/C6DB9979.htm" />
   </HelpKINode>
   <HelpKINode Title="OwinContextExtensions.GetAutofacLifetimeScope method" Url="html/86CEB237.htm" />
+  <HelpKINode Title="OwinContextExtensions.SetAutofacLifetimeScope method" Url="html/558D7FF.htm" />
   <HelpKINode Title="Owned(Of T) class">
     <HelpKINode Title="Owned(T) Class" Url="html/4EE77638.htm" />
     <HelpKINode Title="about Owned(Of T) class" Url="html/4EE77638.htm" />
@@ -2631,13 +2727,24 @@
   <HelpKINode Title="ParameterExtensions.TypedAs&lt;T&gt; method" Url="html/62FDB7A3.htm" />
   <HelpKINode Title="ParameterFilterAttribute class">
     <HelpKINode Title="ParameterFilterAttribute Class" Url="html/2BED6379.htm" />
+    <HelpKINode Title="ParameterFilterAttribute Class" Url="html/1EAA0F30.htm" />
+    <HelpKINode Title="about ParameterFilterAttribute class" Url="html/1EAA0F30.htm" />
     <HelpKINode Title="about ParameterFilterAttribute class" Url="html/2BED6379.htm" />
     <HelpKINode Title="constructor" Url="html/3BE1CD2C.htm" />
+    <HelpKINode Title="constructor" Url="html/C170B1AA.htm" />
+    <HelpKINode Title="methods" Url="html/B8D34792.htm" />
     <HelpKINode Title="methods" Url="html/862131BB.htm" />
+    <HelpKINode Title="properties" Url="html/12ECFAEB.htm" />
     <HelpKINode Title="properties" Url="html/84B52753.htm" />
   </HelpKINode>
-  <HelpKINode Title="ParameterFilterAttribute.ParameterFilterAttribute constructor" Url="html/3BE1CD2C.htm" />
-  <HelpKINode Title="ParameterFilterAttribute.ResolveParameter method" Url="html/7166EC05.htm" />
+  <HelpKINode Title="ParameterFilterAttribute.ParameterFilterAttribute constructor">
+    <HelpKINode Title="ParameterFilterAttribute Constructor " Url="html/C170B1AA.htm" />
+    <HelpKINode Title="ParameterFilterAttribute Constructor " Url="html/3BE1CD2C.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ParameterFilterAttribute.ResolveParameter method">
+    <HelpKINode Title="ParameterFilterAttribute.ResolveParameter Method " Url="html/7166EC05.htm" />
+    <HelpKINode Title="ParameterFilterAttribute.ResolveParameter Method " Url="html/4EFDEB44.htm" />
+  </HelpKINode>
   <HelpKINode Title="ParameterMapping enumeration" Url="html/3B3E90A5.htm" />
   <HelpKINode Title="ParameterMapping property" Url="html/7DA09D01.htm" />
   <HelpKINode Title="Parameters property">
@@ -2652,7 +2759,7 @@
     <HelpKINode Title="ISharingLifetimeScope.ParentLifetimeScope Property " Url="html/B64382F2.htm" />
     <HelpKINode Title="LifetimeScope.ParentLifetimeScope Property " Url="html/FF22A7.htm" />
   </HelpKINode>
-  <HelpKINode Title="Populate method" Url="html/B3162450.htm" />
+  <HelpKINode Title="Populate method" Url="html/52050927.htm" />
   <HelpKINode Title="Position property" Url="html/9130C5CD.htm" />
   <HelpKINode Title="Positional(Of T) method" Url="html/A4AA7229.htm" />
   <HelpKINode Title="Positional&lt;T&gt; method" Url="html/A4AA7229.htm" />
@@ -2694,7 +2801,12 @@
   <HelpKINode Title="PreserveExistingDefaults method" Url="html/62FEFB77.htm" />
   <HelpKINode Title="PreserveSetValues enumeration member" Url="html/33ED0D92.htm" />
   <HelpKINode Title="PreserveSetValues property" Url="html/302D2538.htm" />
-  <HelpKINode Title="Properties property" Url="html/7D4E5FA0.htm" />
+  <HelpKINode Title="Properties property">
+    <HelpKINode Title="ComponentRegistry.Properties Property " Url="html/F678070F.htm" />
+    <HelpKINode Title="ContainerBuilder.Properties Property " Url="html/338B86C1.htm" />
+    <HelpKINode Title="IComponentRegistry.Properties Property " Url="html/E572E97A.htm" />
+    <HelpKINode Title="IMetadataConfiguration.Properties Property " Url="html/7D4E5FA0.htm" />
+  </HelpKINode>
   <HelpKINode Title="PropertiesAutowired method">
     <HelpKINode Title="IRegistrationBuilder(TLimit, TActivatorData, TRegistrationStyle).PropertiesAutowired Method " Url="html/D5F2CE3E.htm" />
     <HelpKINode Title="RegistrationExtensions.PropertiesAutowired Method " Url="html/A3E0919B.htm" />
@@ -2739,6 +2851,7 @@
     <HelpKINode Title="ComponentRegistration.RaisePreparing Method " Url="html/9398BD25.htm" />
     <HelpKINode Title="IComponentRegistration.RaisePreparing Method " Url="html/1178E29.htm" />
   </HelpKINode>
+  <HelpKINode Title="ReconfigureTenant method" Url="html/7DAC4792.htm" />
   <HelpKINode Title="ReflectionActivator class">
     <HelpKINode Title="ReflectionActivator Class" Url="html/34AC228A.htm" />
     <HelpKINode Title="about ReflectionActivator class" Url="html/34AC228A.htm" />
@@ -2772,13 +2885,14 @@
   <HelpKINode Title="RegisterAdapter method" Url="html/1D4FAF37.htm" />
   <HelpKINode Title="RegisterAggregateService method" Url="html/8855AAAC.htm" />
   <HelpKINode Title="RegisterAll method" Url="html/EE50F7A8.htm" />
-  <HelpKINode Title="RegisterApiControllers method" Url="html/CF7528E8.htm" />
+  <HelpKINode Title="RegisterApiControllers method" Url="html/B222B6AA.htm" />
   <HelpKINode Title="RegisterAssemblyModules method" Url="html/200E2369.htm" />
   <HelpKINode Title="RegisterAssemblyTypes method" Url="html/4D1791D1.htm" />
   <HelpKINode Title="RegisterAttributedType method">
     <HelpKINode Title="IMetadataRegistrar(TInterface, TMetadata).RegisterAttributedType Method " Url="html/A9F44B0E.htm" />
     <HelpKINode Title="MetadataModule(TInterface, TMetadata).RegisterAttributedType Method " Url="html/599EF4ED.htm" />
   </HelpKINode>
+  <HelpKINode Title="RegisterBuildCallback method" Url="html/7B96906E.htm" />
   <HelpKINode Title="RegisterCallback method" Url="html/38CF1326.htm" />
   <HelpKINode Title="RegisterComponent method" Url="html/206A8E02.htm" />
   <HelpKINode Title="RegisterComponentMetadata(Of TReflectionActivatorData, TSingleRegistrationStyle) method" Url="html/C22E8E87.htm" />
@@ -2816,7 +2930,10 @@
   <HelpKINode Title="RegisterGeneratedFactory method" Url="html/92E9982D.htm" />
   <HelpKINode Title="RegisterGeneric method" Url="html/73E6F0FF.htm" />
   <HelpKINode Title="RegisterGenericDecorator method" Url="html/6DCC47C8.htm" />
-  <HelpKINode Title="RegisterHttpRequestMessage method" Url="html/4491E7D9.htm" />
+  <HelpKINode Title="RegisterHttpRequestMessage method">
+    <HelpKINode Title="HttpConfigurationExtensions.RegisterHttpRequestMessage Method " Url="html/7F2E416D.htm" />
+    <HelpKINode Title="RegistrationExtensions.RegisterHttpRequestMessage Method " Url="html/4491E7D9.htm" />
+  </HelpKINode>
   <HelpKINode Title="RegisterHubs method" Url="html/5B8080AD.htm" />
   <HelpKINode Title="RegisterInstance(Of T) method" Url="html/23FE467C.htm" />
   <HelpKINode Title="RegisterInstance&lt;T&gt; method" Url="html/23FE467C.htm" />
@@ -2865,6 +2982,7 @@
   <HelpKINode Title="RegistrationData.AddServices method" Url="html/84EEE547.htm" />
   <HelpKINode Title="RegistrationData.ClearServices method" Url="html/F08C6963.htm" />
   <HelpKINode Title="RegistrationData.CopyFrom method" Url="html/77A18EEA.htm" />
+  <HelpKINode Title="RegistrationData.DeferredCallback property" Url="html/DA98CE5C.htm" />
   <HelpKINode Title="RegistrationData.Lifetime property" Url="html/F6807B49.htm" />
   <HelpKINode Title="RegistrationData.Metadata property" Url="html/D9608875.htm" />
   <HelpKINode Title="RegistrationData.Ownership property" Url="html/8FAF04C5.htm" />
@@ -2873,36 +2991,39 @@
   <HelpKINode Title="RegistrationData.Services property" Url="html/AB1089B4.htm" />
   <HelpKINode Title="RegistrationData.Sharing property" Url="html/9D81E0DC.htm" />
   <HelpKINode Title="RegistrationExtensions class">
-    <HelpKINode Title="RegistrationExtensions Class" Url="html/4840D234.htm" />
-    <HelpKINode Title="RegistrationExtensions Class" Url="html/7F709E0E.htm" />
-    <HelpKINode Title="RegistrationExtensions Class" Url="html/18993CBF.htm" />
-    <HelpKINode Title="RegistrationExtensions Class" Url="html/F6A86594.htm" />
-    <HelpKINode Title="RegistrationExtensions Class" Url="html/9D147680.htm" />
-    <HelpKINode Title="RegistrationExtensions Class" Url="html/B0F6BE4F.htm" />
-    <HelpKINode Title="RegistrationExtensions Class" Url="html/B4A9621.htm" />
-    <HelpKINode Title="RegistrationExtensions Class" Url="html/D9785D69.htm" />
     <HelpKINode Title="RegistrationExtensions Class" Url="html/3AF2BFA7.htm" />
+    <HelpKINode Title="RegistrationExtensions Class" Url="html/9D147680.htm" />
     <HelpKINode Title="RegistrationExtensions Class" Url="html/725DA023.htm" />
-    <HelpKINode Title="about RegistrationExtensions class" Url="html/B4A9621.htm" />
+    <HelpKINode Title="RegistrationExtensions Class" Url="html/B699D977.htm" />
+    <HelpKINode Title="RegistrationExtensions Class" Url="html/7F709E0E.htm" />
+    <HelpKINode Title="RegistrationExtensions Class" Url="html/D9785D69.htm" />
+    <HelpKINode Title="RegistrationExtensions Class" Url="html/B4A9621.htm" />
+    <HelpKINode Title="RegistrationExtensions Class" Url="html/4840D234.htm" />
+    <HelpKINode Title="RegistrationExtensions Class" Url="html/B0F6BE4F.htm" />
+    <HelpKINode Title="RegistrationExtensions Class" Url="html/F6A86594.htm" />
+    <HelpKINode Title="RegistrationExtensions Class" Url="html/18993CBF.htm" />
     <HelpKINode Title="about RegistrationExtensions class" Url="html/F6A86594.htm" />
-    <HelpKINode Title="about RegistrationExtensions class" Url="html/9D147680.htm" />
-    <HelpKINode Title="about RegistrationExtensions class" Url="html/B0F6BE4F.htm" />
-    <HelpKINode Title="about RegistrationExtensions class" Url="html/18993CBF.htm" />
-    <HelpKINode Title="about RegistrationExtensions class" Url="html/D9785D69.htm" />
-    <HelpKINode Title="about RegistrationExtensions class" Url="html/7F709E0E.htm" />
     <HelpKINode Title="about RegistrationExtensions class" Url="html/3AF2BFA7.htm" />
-    <HelpKINode Title="about RegistrationExtensions class" Url="html/4840D234.htm" />
     <HelpKINode Title="about RegistrationExtensions class" Url="html/725DA023.htm" />
-    <HelpKINode Title="methods" Url="html/D7D7F316.htm" />
-    <HelpKINode Title="methods" Url="html/BF3E5216.htm" />
-    <HelpKINode Title="methods" Url="html/465B82F8.htm" />
-    <HelpKINode Title="methods" Url="html/7A9A48CE.htm" />
-    <HelpKINode Title="methods" Url="html/E60185C4.htm" />
-    <HelpKINode Title="methods" Url="html/9AB7058F.htm" />
-    <HelpKINode Title="methods" Url="html/55E36A49.htm" />
-    <HelpKINode Title="methods" Url="html/87B52F0E.htm" />
+    <HelpKINode Title="about RegistrationExtensions class" Url="html/B4A9621.htm" />
+    <HelpKINode Title="about RegistrationExtensions class" Url="html/7F709E0E.htm" />
+    <HelpKINode Title="about RegistrationExtensions class" Url="html/18993CBF.htm" />
+    <HelpKINode Title="about RegistrationExtensions class" Url="html/4840D234.htm" />
+    <HelpKINode Title="about RegistrationExtensions class" Url="html/B0F6BE4F.htm" />
+    <HelpKINode Title="about RegistrationExtensions class" Url="html/B699D977.htm" />
+    <HelpKINode Title="about RegistrationExtensions class" Url="html/9D147680.htm" />
+    <HelpKINode Title="about RegistrationExtensions class" Url="html/D9785D69.htm" />
     <HelpKINode Title="methods" Url="html/98A12393.htm" />
     <HelpKINode Title="methods" Url="html/F1FAD869.htm" />
+    <HelpKINode Title="methods" Url="html/9AB7058F.htm" />
+    <HelpKINode Title="methods" Url="html/7A9A48CE.htm" />
+    <HelpKINode Title="methods" Url="html/BF3E5216.htm" />
+    <HelpKINode Title="methods" Url="html/E60185C4.htm" />
+    <HelpKINode Title="methods" Url="html/D7D7F316.htm" />
+    <HelpKINode Title="methods" Url="html/D6F7ADEE.htm" />
+    <HelpKINode Title="methods" Url="html/55E36A49.htm" />
+    <HelpKINode Title="methods" Url="html/87B52F0E.htm" />
+    <HelpKINode Title="methods" Url="html/465B82F8.htm" />
   </HelpKINode>
   <HelpKINode Title="RegistrationExtensions.As method" Url="html/D595EF1C.htm" />
   <HelpKINode Title="RegistrationExtensions.AsActionFilterFor method" Url="html/E08E9DFA.htm" />
@@ -2920,8 +3041,8 @@
     <HelpKINode Title="RegistrationExtensions.AsModelBinderForTypes(TLimit, TActivatorData, TRegistrationStyle) Method " Url="html/344BABA4.htm" />
   </HelpKINode>
   <HelpKINode Title="RegistrationExtensions.AsModelBinderForTypes&lt;TLimit, TActivatorData, TRegistrationStyle&gt; method">
-    <HelpKINode Title="RegistrationExtensions.AsModelBinderForTypes(TLimit, TActivatorData, TRegistrationStyle) Method " Url="html/31544FB7.htm" />
     <HelpKINode Title="RegistrationExtensions.AsModelBinderForTypes(TLimit, TActivatorData, TRegistrationStyle) Method " Url="html/344BABA4.htm" />
+    <HelpKINode Title="RegistrationExtensions.AsModelBinderForTypes(TLimit, TActivatorData, TRegistrationStyle) Method " Url="html/31544FB7.htm" />
   </HelpKINode>
   <HelpKINode Title="RegistrationExtensions.AsResultFilterFor method" Url="html/C1630B9C.htm" />
   <HelpKINode Title="RegistrationExtensions.AsResultFilterOverrideFor method" Url="html/689AD0CC.htm" />
@@ -2951,6 +3072,8 @@
   <HelpKINode Title="RegistrationExtensions.Exported(Of TLimit, TActivatorData, TSingleRegistrationStyle) method" Url="html/C6E530B5.htm" />
   <HelpKINode Title="RegistrationExtensions.Exported&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt; method" Url="html/C6E530B5.htm" />
   <HelpKINode Title="RegistrationExtensions.FindConstructorsWith method" Url="html/36155092.htm" />
+  <HelpKINode Title="RegistrationExtensions.IfNotRegistered(Of TLimit, TActivatorData, TStyle) method" Url="html/BEE129AA.htm" />
+  <HelpKINode Title="RegistrationExtensions.IfNotRegistered&lt;TLimit, TActivatorData, TStyle&gt; method" Url="html/BEE129AA.htm" />
   <HelpKINode Title="RegistrationExtensions.InjectActionInvoker method" Url="html/3F21E54C.htm" />
   <HelpKINode Title="RegistrationExtensions.InNamespace(Of TLimit, TScanningActivatorData, TRegistrationStyle) method" Url="html/4A195A74.htm" />
   <HelpKINode Title="RegistrationExtensions.InNamespace&lt;TLimit, TScanningActivatorData, TRegistrationStyle&gt; method" Url="html/4A195A74.htm" />
@@ -2964,8 +3087,8 @@
     <HelpKINode Title="RegistrationExtensions.InstancePerHttpRequest(TLimit, TActivatorData, TStyle) Method " Url="html/CE22CC19.htm" />
   </HelpKINode>
   <HelpKINode Title="RegistrationExtensions.InstancePerHttpRequest&lt;TLimit, TActivatorData, TStyle&gt; method">
-    <HelpKINode Title="RegistrationExtensions.InstancePerHttpRequest(TLimit, TActivatorData, TStyle) Method " Url="html/CE22CC19.htm" />
     <HelpKINode Title="RegistrationExtensions.InstancePerHttpRequest(TLimit, TActivatorData, TStyle) Method " Url="html/1F6D3BA3.htm" />
+    <HelpKINode Title="RegistrationExtensions.InstancePerHttpRequest(TLimit, TActivatorData, TStyle) Method " Url="html/CE22CC19.htm" />
   </HelpKINode>
   <HelpKINode Title="RegistrationExtensions.InstancePerRequest(Of TLimit, TActivatorData, TStyle) method" Url="html/C1CF5C3D.htm" />
   <HelpKINode Title="RegistrationExtensions.InstancePerRequest&lt;TLimit, TActivatorData, TStyle&gt; method" Url="html/C1CF5C3D.htm" />
@@ -2977,6 +3100,8 @@
   <HelpKINode Title="RegistrationExtensions.Named method" Url="html/AA579712.htm" />
   <HelpKINode Title="RegistrationExtensions.NamedParameterMapping(Of TDelegate, TGeneratedFactoryActivatorData, TSingleRegistrationStyle) method" Url="html/610EF94F.htm" />
   <HelpKINode Title="RegistrationExtensions.NamedParameterMapping&lt;TDelegate, TGeneratedFactoryActivatorData, TSingleRegistrationStyle&gt; method" Url="html/610EF94F.htm" />
+  <HelpKINode Title="RegistrationExtensions.OnlyIf(Of TLimit, TActivatorData, TStyle) method" Url="html/D513BEF6.htm" />
+  <HelpKINode Title="RegistrationExtensions.OnlyIf&lt;TLimit, TActivatorData, TStyle&gt; method" Url="html/D513BEF6.htm" />
   <HelpKINode Title="RegistrationExtensions.OnRegistered method" Url="html/7E9311F0.htm" />
   <HelpKINode Title="RegistrationExtensions.OnRelease(Of TLimit, TActivatorData, TRegistrationStyle) method" Url="html/61B5ECEC.htm" />
   <HelpKINode Title="RegistrationExtensions.OnRelease&lt;TLimit, TActivatorData, TRegistrationStyle&gt; method" Url="html/61B5ECEC.htm" />
@@ -2995,7 +3120,7 @@
   <HelpKINode Title="RegistrationExtensions.PropertiesAutowired method" Url="html/A3E0919B.htm" />
   <HelpKINode Title="RegistrationExtensions.Register method" Url="html/C210EFA0.htm" />
   <HelpKINode Title="RegistrationExtensions.RegisterAdapter method" Url="html/1D4FAF37.htm" />
-  <HelpKINode Title="RegistrationExtensions.RegisterApiControllers method" Url="html/CF7528E8.htm" />
+  <HelpKINode Title="RegistrationExtensions.RegisterApiControllers method" Url="html/B222B6AA.htm" />
   <HelpKINode Title="RegistrationExtensions.RegisterAssemblyTypes method" Url="html/4D1791D1.htm" />
   <HelpKINode Title="RegistrationExtensions.RegisterComponent method" Url="html/206A8E02.htm" />
   <HelpKINode Title="RegistrationExtensions.RegisterComposablePartCatalog method" Url="html/E081BE01.htm" />
@@ -3030,6 +3155,8 @@
   <HelpKINode Title="RegistrationExtensions.UsingConstructor method" Url="html/FC95B0A3.htm" />
   <HelpKINode Title="RegistrationExtensions.Where(Of TLimit, TScanningActivatorData, TRegistrationStyle) method" Url="html/7E6E4A20.htm" />
   <HelpKINode Title="RegistrationExtensions.Where&lt;TLimit, TScanningActivatorData, TRegistrationStyle&gt; method" Url="html/7E6E4A20.htm" />
+  <HelpKINode Title="RegistrationExtensions.WithAttributeFiltering(Of TLimit, TReflectionActivatorData, TRegistrationStyle) method" Url="html/E13FE1D3.htm" />
+  <HelpKINode Title="RegistrationExtensions.WithAttributeFiltering&lt;TLimit, TReflectionActivatorData, TRegistrationStyle&gt; method" Url="html/E13FE1D3.htm" />
   <HelpKINode Title="RegistrationExtensions.WithMetadata method" Url="html/38FE30AF.htm" />
   <HelpKINode Title="RegistrationExtensions.WithMetadataFrom(Of TAttribute) method" Url="html/CE3E908.htm" />
   <HelpKINode Title="RegistrationExtensions.WithMetadataFrom&lt;TAttribute&gt; method" Url="html/CE3E908.htm" />
@@ -3069,6 +3196,7 @@
   <HelpKINode Title="RegistrationStyle property" Url="html/AD89A18F.htm" />
   <HelpKINode Title="ReleaseDomainService method" Url="html/21F77FA9.htm" />
   <HelpKINode Title="ReleaseInstance method" Url="html/73F31B3.htm" />
+  <HelpKINode Title="RemoveTenant method" Url="html/AA6B458E.htm" />
   <HelpKINode Title="ReplaceInstance method">
     <HelpKINode Title="ActivatingEventArgs(T).ReplaceInstance Method " Url="html/7F228A8C.htm" />
     <HelpKINode Title="IActivatingEventArgs(T).ReplaceInstance Method " Url="html/C685DD55.htm" />
@@ -3180,7 +3308,10 @@
   <HelpKINode Title="ResolveOptionalNamed method" Url="html/8DDEF507.htm" />
   <HelpKINode Title="ResolveOptionalService method" Url="html/77CB73A1.htm" />
   <HelpKINode Title="ResolveParameter method">
+    <HelpKINode Title="KeyFilterAttribute.ResolveParameter Method " Url="html/8B62CEAF.htm" />
+    <HelpKINode Title="MetadataFilterAttribute.ResolveParameter Method " Url="html/3919E8CE.htm" />
     <HelpKINode Title="ParameterFilterAttribute.ResolveParameter Method " Url="html/7166EC05.htm" />
+    <HelpKINode Title="ParameterFilterAttribute.ResolveParameter Method " Url="html/4EFDEB44.htm" />
     <HelpKINode Title="WithKeyAttribute.ResolveParameter Method " Url="html/2E25F20B.htm" />
     <HelpKINode Title="WithMetadataAttribute.ResolveParameter Method " Url="html/86664675.htm" />
   </HelpKINode>
@@ -3239,6 +3370,12 @@
   <HelpKINode Title="Service.Inequality operator" Url="html/3D137317.htm" />
   <HelpKINode Title="Service.Service constructor" Url="html/45B535E0.htm" />
   <HelpKINode Title="Service.ToString method" Url="html/6D40D521.htm" />
+  <HelpKINode Title="ServiceCollectionExtensions class">
+    <HelpKINode Title="ServiceCollectionExtensions Class" Url="html/1BA26F06.htm" />
+    <HelpKINode Title="about ServiceCollectionExtensions class" Url="html/1BA26F06.htm" />
+    <HelpKINode Title="methods" Url="html/3EBD66E3.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ServiceCollectionExtensions.AddAutofac method" Url="html/C5827639.htm" />
   <HelpKINode Title="ServiceHostExtensions class">
     <HelpKINode Title="ServiceHostExtensions Class" Url="html/2D6E4F01.htm" />
     <HelpKINode Title="about ServiceHostExtensions class" Url="html/2D6E4F01.htm" />
@@ -3312,6 +3449,7 @@
   <HelpKINode Title="SetAutoActivate(Of TReflectionActivatorData, TSingleRegistrationStyle) method" Url="html/3FB8387B.htm" />
   <HelpKINode Title="SetAutoActivate&lt;TReflectionActivatorData, TSingleRegistrationStyle&gt; method" Url="html/3FB8387B.htm" />
   <HelpKINode Title="SetAutofacDependencyResolverAccessor method" Url="html/886CFC0C.htm" />
+  <HelpKINode Title="SetAutofacLifetimeScope method" Url="html/558D7FF.htm" />
   <HelpKINode Title="SetComponentOwnership(Of TReflectionActivatorData, TSingleRegistrationStyle) method" Url="html/30854D2C.htm" />
   <HelpKINode Title="SetComponentOwnership&lt;TReflectionActivatorData, TSingleRegistrationStyle&gt; method" Url="html/30854D2C.htm" />
   <HelpKINode Title="SetContainer method" Url="html/805F55C8.htm" />
@@ -3368,6 +3506,7 @@
     <HelpKINode Title="LifetimeScope.Tag Property " Url="html/FB65420B.htm" />
     <HelpKINode Title="MultitenantContainer.Tag Property " Url="html/859FA842.htm" />
   </HelpKINode>
+  <HelpKINode Title="TagsToMatch property" Url="html/1BFD48EC.htm" />
   <HelpKINode Title="Target property">
     <HelpKINode Title="ComponentRegistration.Target Property " Url="html/23680855.htm" />
     <HelpKINode Title="IComponentRegistration.Target Property " Url="html/9B95D132.htm" />
@@ -3403,6 +3542,7 @@
   </HelpKINode>
   <HelpKINode Title="TenantIdentificationStrategyExtensions.IdentifyTenant(Of T) method" Url="html/DDABAB33.htm" />
   <HelpKINode Title="TenantIdentificationStrategyExtensions.IdentifyTenant&lt;T&gt; method" Url="html/DDABAB33.htm" />
+  <HelpKINode Title="TenantIsConfigured method" Url="html/646B19EE.htm" />
   <HelpKINode Title="TenantPropagationBehavior(Of TTenantId) class">
     <HelpKINode Title="TenantPropagationBehavior(TTenantId) Class" Url="html/2BAC7967.htm" />
     <HelpKINode Title="about TenantPropagationBehavior(Of TTenantId) class" Url="html/2BAC7967.htm" />
@@ -3517,12 +3657,12 @@
   <HelpKINode Title="TypedService.ServiceType property" Url="html/D22CB417.htm" />
   <HelpKINode Title="TypedService.TypedService constructor" Url="html/D5F8FA35.htm" />
   <HelpKINode Title="TypeExtensions class">
-    <HelpKINode Title="TypeExtensions Class" Url="html/79FBE015.htm" />
     <HelpKINode Title="TypeExtensions Class" Url="html/BE3B9B5F.htm" />
-    <HelpKINode Title="about TypeExtensions class" Url="html/79FBE015.htm" />
+    <HelpKINode Title="TypeExtensions Class" Url="html/79FBE015.htm" />
     <HelpKINode Title="about TypeExtensions class" Url="html/BE3B9B5F.htm" />
-    <HelpKINode Title="methods" Url="html/3ADBA9C4.htm" />
+    <HelpKINode Title="about TypeExtensions class" Url="html/79FBE015.htm" />
     <HelpKINode Title="methods" Url="html/AC8B862D.htm" />
+    <HelpKINode Title="methods" Url="html/3ADBA9C4.htm" />
   </HelpKINode>
   <HelpKINode Title="TypeExtensions.GetMatchingConstructor method" Url="html/BD04BFF9.htm" />
   <HelpKINode Title="TypeExtensions.GetMetadataClassType method" Url="html/547BF64F.htm" />
@@ -3554,8 +3694,9 @@
   <HelpKINode Title="UnsetPropertyInjectionModule.GetInjectionBehaviorForHandlerType method" Url="html/C613CBA6.htm" />
   <HelpKINode Title="UnsetPropertyInjectionModule.UnsetPropertyInjectionModule constructor" Url="html/3424B252.htm" />
   <HelpKINode Title="Update method" Url="html/643D901.htm" />
-  <HelpKINode Title="UseAutofacLifetimeScopeInjector method" Url="html/F229F80B.htm" />
+  <HelpKINode Title="UseAutofacLifetimeScopeInjector method" Url="html/E9877046.htm" />
   <HelpKINode Title="UseAutofacMiddleware method" Url="html/F2B74551.htm" />
+  <HelpKINode Title="UseAutofacMultitenantRequestServices method" Url="html/E40A065C.htm" />
   <HelpKINode Title="UseAutofacMvc method" Url="html/2D2067E8.htm" />
   <HelpKINode Title="UseAutofacWebApi method" Url="html/8BB1DD4E.htm" />
   <HelpKINode Title="UseMiddlewareFromContainer(Of T) method" Url="html/D45772B8.htm" />
@@ -3573,6 +3714,7 @@
     <HelpKINode Title="ConstantParameter.Value Property " Url="html/D946691E.htm" />
     <HelpKINode Title="Meta(T).Value Property " Url="html/B7458971.htm" />
     <HelpKINode Title="Meta(T, TMetadata).Value Property " Url="html/B6AA8971.htm" />
+    <HelpKINode Title="MetadataFilterAttribute.Value Property " Url="html/A33C6521.htm" />
     <HelpKINode Title="Owned(T).Value Property " Url="html/A1347B.htm" />
     <HelpKINode Title="WithMetadataAttribute.Value Property " Url="html/C3DBB0BE.htm" />
   </HelpKINode>
@@ -3601,6 +3743,8 @@
   <HelpKINode Title="WithAttributedMetadata method" Url="html/FF9F6C7C.htm" />
   <HelpKINode Title="WithAttributeFilter(Of TLimit, TReflectionActivatorData, TRegistrationStyle) method" Url="html/3D221F03.htm" />
   <HelpKINode Title="WithAttributeFilter&lt;TLimit, TReflectionActivatorData, TRegistrationStyle&gt; method" Url="html/3D221F03.htm" />
+  <HelpKINode Title="WithAttributeFiltering(Of TLimit, TReflectionActivatorData, TRegistrationStyle) method" Url="html/E13FE1D3.htm" />
+  <HelpKINode Title="WithAttributeFiltering&lt;TLimit, TReflectionActivatorData, TRegistrationStyle&gt; method" Url="html/E13FE1D3.htm" />
   <HelpKINode Title="WithInstanceScope(Of TLimit, TActivatorData, TRegistrationStyle) method" Url="html/B7675C3F.htm" />
   <HelpKINode Title="WithInstanceScope&lt;TLimit, TActivatorData, TRegistrationStyle&gt; method" Url="html/B7675C3F.htm" />
   <HelpKINode Title="WithKeyAttribute class">
