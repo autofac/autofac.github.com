@@ -1,3 +1,17 @@
 name: "Autofac"
-exclude: [assets, tools, default.proj]
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://autofac.org"
 markdown: kramdown
+exclude:
+  - assets
+  - node_modules
+  - tools
+  - default.proj
+  - Gemfile
+  - Gemfile.lock
+
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
