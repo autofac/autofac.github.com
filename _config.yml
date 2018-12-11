@@ -2,7 +2,7 @@ name: "Autofac"
 title: "Autofac"
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://autofac.org"
+url: "https://autofac.org"
 markdown: kramdown
 exclude:
   - assets
