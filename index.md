@@ -21,7 +21,7 @@ css: ['/css/home.min.css']
 					</p>
 					<div class="action-buttons">
 						<a href="https://autofac.readthedocs.io/en/latest/getting-started/index.html" class="btn btn-primary btn-large header-link-btn"><span>Quick Start Guide</span></a>
-						<a href="https://www.nuget.org/packages?q=Owner%3A%22alexmg%22+Autofac*" class="btn btn-primary btn-large header-link-btn"><span>Download via NuGet</span></a>
+						<a href="https://www.nuget.org/packages?q=Owner%3A%22Autofac%22+Autofac*" class="btn btn-primary btn-large header-link-btn"><span>Download via NuGet</span></a>
 					</div>
 					</div>
 				</div>
@@ -139,7 +139,7 @@ var container = builder.Build();
 			<div class="span4">
 				<img class="marketing-img" src="img/icon_arrow.png" alt="Download" width="128" height="128" />
 				<h2>Download</h2>
-				<p>The easiest way to get Autofac is through NuGet. <a href="https://www.nuget.org/packages?q=Owner%3A%22alexmg%22+Autofac*">Here are the Autofac packages in the NuGet Gallery</a>.</p>
+				<p>The easiest way to get Autofac is through NuGet. <a href="https://www.nuget.org/packages?q=Owner%3A%22Autofac%22+Autofac*">Here are the Autofac packages in the NuGet Gallery</a>.</p>
 			</div>
 			<div class="span4">
 				<img class="marketing-img" src="img/icon_school.png" alt="Learn" width="128" height="128" />
