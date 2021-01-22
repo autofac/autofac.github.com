@@ -1,1 +1,1 @@
-﻿<?xml version="1.0" encoding="utf-8"?><HelpTOCNode Title="ISharingLifetimeScope Methods" Url="html/5FE39D66.htm"><HelpTOCNode Title="GetOrCreateAndShare Method " Url="html/6E6592BC.htm" /></HelpTOCNode>
+﻿<?xml version="1.0" encoding="utf-8"?><HelpTOCNode Title="ISharingLifetimeScope Methods" Url="html/5FE39D66.htm"><HelpTOCNode Title="CreateSharedInstance Method " Url="html/D836005A.htm" HasChildren="true" /><HelpTOCNode Title="TryGetSharedInstance Method " Url="html/9263E4FF.htm" HasChildren="true" /></HelpTOCNode>
