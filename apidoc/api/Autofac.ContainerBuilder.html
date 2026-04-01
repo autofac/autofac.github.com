@@ -1,0 +1,391 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ContainerBuilder | Autofac </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ContainerBuilder | Autofac ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="Autofac API Reference">
+            Autofac API Reference
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+        </div>
+
+        <article data-uid="Autofac.ContainerBuilder">
+
+
+
+  <h1 id="Autofac_ContainerBuilder" data-uid="Autofac.ContainerBuilder" class="text-break">
+Class ContainerBuilder  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Autofac.html">Autofac</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Autofac.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class ContainerBuilder</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">ContainerBuilder</span></div>
+    </dd>
+  </dl>
+
+
+
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="Autofac.Builder.RegistrationExtensions.RegisterGeneratedFactory.html#Autofac_Builder_RegistrationExtensions_RegisterGeneratedFactory_Autofac_ContainerBuilder_System_Type_">RegistrationExtensions.RegisterGeneratedFactory(ContainerBuilder, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.Builder.RegistrationExtensions.RegisterGeneratedFactory.html#Autofac_Builder_RegistrationExtensions_RegisterGeneratedFactory_Autofac_ContainerBuilder_System_Type_Autofac_Core_Service_">RegistrationExtensions.RegisterGeneratedFactory(ContainerBuilder, Type, Service)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.Builder.RegistrationExtensions.RegisterGeneratedFactory.html#Autofac_Builder_RegistrationExtensions_RegisterGeneratedFactory__1_Autofac_ContainerBuilder_">RegistrationExtensions.RegisterGeneratedFactory&lt;TDelegate&gt;(ContainerBuilder)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.Builder.RegistrationExtensions.RegisterGeneratedFactory.html#Autofac_Builder_RegistrationExtensions_RegisterGeneratedFactory__1_Autofac_ContainerBuilder_Autofac_Core_Service_">RegistrationExtensions.RegisterGeneratedFactory&lt;TDelegate&gt;(ContainerBuilder, Service)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ModuleRegistrationExtensions.RegisterAssemblyModules.html#Autofac_ModuleRegistrationExtensions_RegisterAssemblyModules_Autofac_ContainerBuilder_System_Reflection_Assembly___">ModuleRegistrationExtensions.RegisterAssemblyModules(ContainerBuilder, params Assembly[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ModuleRegistrationExtensions.RegisterAssemblyModules.html#Autofac_ModuleRegistrationExtensions_RegisterAssemblyModules_Autofac_ContainerBuilder_System_Type_System_Reflection_Assembly___">ModuleRegistrationExtensions.RegisterAssemblyModules(ContainerBuilder, Type, params Assembly[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ModuleRegistrationExtensions.RegisterAssemblyModules.html#Autofac_ModuleRegistrationExtensions_RegisterAssemblyModules__1_Autofac_ContainerBuilder_System_Reflection_Assembly___">ModuleRegistrationExtensions.RegisterAssemblyModules&lt;TModule&gt;(ContainerBuilder, params Assembly[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ModuleRegistrationExtensions.RegisterModule.html#Autofac_ModuleRegistrationExtensions_RegisterModule_Autofac_ContainerBuilder_Autofac_Core_IModule_">ModuleRegistrationExtensions.RegisterModule(ContainerBuilder, IModule)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ModuleRegistrationExtensions.RegisterModule.html#Autofac_ModuleRegistrationExtensions_RegisterModule__1_Autofac_ContainerBuilder_">ModuleRegistrationExtensions.RegisterModule&lt;TModule&gt;(ContainerBuilder)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.RegistrationExtensions.RegisterAdapter.html#Autofac_RegistrationExtensions_RegisterAdapter__2_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter____0___1__">RegistrationExtensions.RegisterAdapter&lt;TFrom, TTo&gt;(ContainerBuilder, Func&lt;IComponentContext, IEnumerable&lt;Parameter&gt;, TFrom, TTo&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.RegistrationExtensions.RegisterAdapter.html#Autofac_RegistrationExtensions_RegisterAdapter__2_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext___0___1__">RegistrationExtensions.RegisterAdapter&lt;TFrom, TTo&gt;(ContainerBuilder, Func&lt;IComponentContext, TFrom, TTo&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.RegistrationExtensions.RegisterAdapter.html#Autofac_RegistrationExtensions_RegisterAdapter__2_Autofac_ContainerBuilder_System_Func___0___1__">RegistrationExtensions.RegisterAdapter&lt;TFrom, TTo&gt;(ContainerBuilder, Func&lt;TFrom, TTo&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.RegistrationExtensions.RegisterAssemblyOpenGenericTypes.html#Autofac_RegistrationExtensions_RegisterAssemblyOpenGenericTypes_Autofac_ContainerBuilder_System_Reflection_Assembly___">RegistrationExtensions.RegisterAssemblyOpenGenericTypes(ContainerBuilder, params Assembly[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.RegistrationExtensions.RegisterAssemblyTypes.html#Autofac_RegistrationExtensions_RegisterAssemblyTypes_Autofac_ContainerBuilder_System_Reflection_Assembly___">RegistrationExtensions.RegisterAssemblyTypes(ContainerBuilder, params Assembly[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.RegistrationExtensions.RegisterComponent.html#Autofac_RegistrationExtensions_RegisterComponent_Autofac_ContainerBuilder_Autofac_Core_IComponentRegistration_">RegistrationExtensions.RegisterComponent(ContainerBuilder, IComponentRegistration)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.RegistrationExtensions.RegisterComposite.html#Autofac_RegistrationExtensions_RegisterComposite_Autofac_ContainerBuilder_System_Type_System_Type_">RegistrationExtensions.RegisterComposite(ContainerBuilder, Type, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.RegistrationExtensions.RegisterComposite.html#Autofac_RegistrationExtensions_RegisterComposite__1_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter__System_Collections_Generic_IEnumerable___0____0__">RegistrationExtensions.RegisterComposite&lt;TService&gt;(ContainerBuilder, Func&lt;IComponentContext, IEnumerable&lt;Parameter&gt;, IEnumerable&lt;TService&gt;, TService&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.RegistrationExtensions.RegisterComposite.html#Autofac_RegistrationExtensions_RegisterComposite__1_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext_System_Collections_Generic_IEnumerable___0____0__">RegistrationExtensions.RegisterComposite&lt;TService&gt;(ContainerBuilder, Func&lt;IComponentContext, IEnumerable&lt;TService&gt;, TService&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.RegistrationExtensions.RegisterComposite.html#Autofac_RegistrationExtensions_RegisterComposite__2_Autofac_ContainerBuilder_">RegistrationExtensions.RegisterComposite&lt;TComposite, TService&gt;(ContainerBuilder)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.RegistrationExtensions.RegisterDecorator.html#Autofac_RegistrationExtensions_RegisterDecorator_Autofac_ContainerBuilder_System_Type_System_Type_System_Func_Autofac_Features_Decorators_IDecoratorContext_System_Boolean__">RegistrationExtensions.RegisterDecorator(ContainerBuilder, Type, Type, Func&lt;IDecoratorContext, bool&gt;?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.RegistrationExtensions.RegisterDecorator.html#Autofac_RegistrationExtensions_RegisterDecorator__1_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter____0___0__System_Func_Autofac_Features_Decorators_IDecoratorContext_System_Boolean__">RegistrationExtensions.RegisterDecorator&lt;TService&gt;(ContainerBuilder, Func&lt;IComponentContext, IEnumerable&lt;Parameter&gt;, TService, TService&gt;, Func&lt;IDecoratorContext, bool&gt;?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.RegistrationExtensions.RegisterDecorator.html#Autofac_RegistrationExtensions_RegisterDecorator__1_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter____0___0__System_Object_System_Object_">RegistrationExtensions.RegisterDecorator&lt;TService&gt;(ContainerBuilder, Func&lt;IComponentContext, IEnumerable&lt;Parameter&gt;, TService, TService&gt;, object, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.RegistrationExtensions.RegisterDecorator.html#Autofac_RegistrationExtensions_RegisterDecorator__1_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext___0___0__System_Object_System_Object_">RegistrationExtensions.RegisterDecorator&lt;TService&gt;(ContainerBuilder, Func&lt;IComponentContext, TService, TService&gt;, object, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.RegistrationExtensions.RegisterDecorator.html#Autofac_RegistrationExtensions_RegisterDecorator__1_Autofac_ContainerBuilder_System_Func___0___0__System_Object_System_Object_">RegistrationExtensions.RegisterDecorator&lt;TService&gt;(ContainerBuilder, Func&lt;TService, TService&gt;, object, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.RegistrationExtensions.RegisterDecorator.html#Autofac_RegistrationExtensions_RegisterDecorator__2_Autofac_ContainerBuilder_System_Func_Autofac_Features_Decorators_IDecoratorContext_System_Boolean__">RegistrationExtensions.RegisterDecorator&lt;TDecorator, TService&gt;(ContainerBuilder, Func&lt;IDecoratorContext, bool&gt;?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.RegistrationExtensions.RegisterGeneric.html#Autofac_RegistrationExtensions_RegisterGeneric_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext_System_Type___System_Collections_Generic_IEnumerable_Autofac_Core_Parameter__System_Object__">RegistrationExtensions.RegisterGeneric(ContainerBuilder, Func&lt;IComponentContext, Type[], IEnumerable&lt;Parameter&gt;, object&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.RegistrationExtensions.RegisterGeneric.html#Autofac_RegistrationExtensions_RegisterGeneric_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext_System_Type___System_Object__">RegistrationExtensions.RegisterGeneric(ContainerBuilder, Func&lt;IComponentContext, Type[], object&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.RegistrationExtensions.RegisterGeneric.html#Autofac_RegistrationExtensions_RegisterGeneric_Autofac_ContainerBuilder_System_Type_">RegistrationExtensions.RegisterGeneric(ContainerBuilder, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.RegistrationExtensions.RegisterGenericComposite.html#Autofac_RegistrationExtensions_RegisterGenericComposite_Autofac_ContainerBuilder_System_Type_System_Type_">RegistrationExtensions.RegisterGenericComposite(ContainerBuilder, Type, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.RegistrationExtensions.RegisterGenericDecorator.html#Autofac_RegistrationExtensions_RegisterGenericDecorator_Autofac_ContainerBuilder_System_Type_System_Type_System_Func_Autofac_Features_Decorators_IDecoratorContext_System_Boolean__">RegistrationExtensions.RegisterGenericDecorator(ContainerBuilder, Type, Type, Func&lt;IDecoratorContext, bool&gt;?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.RegistrationExtensions.RegisterGenericDecorator.html#Autofac_RegistrationExtensions_RegisterGenericDecorator_Autofac_ContainerBuilder_System_Type_System_Type_System_Object_System_Object_">RegistrationExtensions.RegisterGenericDecorator(ContainerBuilder, Type, Type, object, object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.RegistrationExtensions.RegisterInstance.html#Autofac_RegistrationExtensions_RegisterInstance__1_Autofac_ContainerBuilder___0_">RegistrationExtensions.RegisterInstance&lt;T&gt;(ContainerBuilder, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.RegistrationExtensions.RegisterType.html#Autofac_RegistrationExtensions_RegisterType_Autofac_ContainerBuilder_System_Type_">RegistrationExtensions.RegisterType(ContainerBuilder, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.RegistrationExtensions.RegisterType.html#Autofac_RegistrationExtensions_RegisterType__1_Autofac_ContainerBuilder_">RegistrationExtensions.RegisterType&lt;TImplementer&gt;(ContainerBuilder)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.RegistrationExtensions.RegisterTypes.html#Autofac_RegistrationExtensions_RegisterTypes_Autofac_ContainerBuilder_System_Type___">RegistrationExtensions.RegisterTypes(ContainerBuilder, params Type[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.RegistrationExtensions.Register.html#Autofac_RegistrationExtensions_Register__1_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter____0__">RegistrationExtensions.Register&lt;T&gt;(ContainerBuilder, Func&lt;IComponentContext, IEnumerable&lt;Parameter&gt;, T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.RegistrationExtensions.Register.html#Autofac_RegistrationExtensions_Register__1_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext___0__">RegistrationExtensions.Register&lt;T&gt;(ContainerBuilder, Func&lt;IComponentContext, T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.RegistrationExtensions.Register.html#Autofac_RegistrationExtensions_Register__10_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext___0___1___2___3___4___5___6___7___8___9__">RegistrationExtensions.Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TDependency9, TComponent&gt;(ContainerBuilder, Func&lt;IComponentContext, TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TDependency9, TComponent&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.RegistrationExtensions.Register.html#Autofac_RegistrationExtensions_Register__10_Autofac_ContainerBuilder_System_Func___0___1___2___3___4___5___6___7___8___9__">RegistrationExtensions.Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TDependency9, TComponent&gt;(ContainerBuilder, Func&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TDependency9, TComponent&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.RegistrationExtensions.Register.html#Autofac_RegistrationExtensions_Register__11_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext___0___1___2___3___4___5___6___7___8___9___10__">RegistrationExtensions.Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TDependency9, TDependency10, TComponent&gt;(ContainerBuilder, Func&lt;IComponentContext, TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TDependency9, TDependency10, TComponent&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.RegistrationExtensions.Register.html#Autofac_RegistrationExtensions_Register__11_Autofac_ContainerBuilder_System_Func___0___1___2___3___4___5___6___7___8___9___10__">RegistrationExtensions.Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TDependency9, TDependency10, TComponent&gt;(ContainerBuilder, Func&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TDependency9, TDependency10, TComponent&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.RegistrationExtensions.Register.html#Autofac_RegistrationExtensions_Register__2_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext___0___1__">RegistrationExtensions.Register&lt;TDependency1, TComponent&gt;(ContainerBuilder, Func&lt;IComponentContext, TDependency1, TComponent&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.RegistrationExtensions.Register.html#Autofac_RegistrationExtensions_Register__2_Autofac_ContainerBuilder_System_Func___0___1__">RegistrationExtensions.Register&lt;TDependency1, TComponent&gt;(ContainerBuilder, Func&lt;TDependency1, TComponent&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.RegistrationExtensions.Register.html#Autofac_RegistrationExtensions_Register__3_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext___0___1___2__">RegistrationExtensions.Register&lt;TDependency1, TDependency2, TComponent&gt;(ContainerBuilder, Func&lt;IComponentContext, TDependency1, TDependency2, TComponent&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.RegistrationExtensions.Register.html#Autofac_RegistrationExtensions_Register__3_Autofac_ContainerBuilder_System_Func___0___1___2__">RegistrationExtensions.Register&lt;TDependency1, TDependency2, TComponent&gt;(ContainerBuilder, Func&lt;TDependency1, TDependency2, TComponent&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.RegistrationExtensions.Register.html#Autofac_RegistrationExtensions_Register__4_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext___0___1___2___3__">RegistrationExtensions.Register&lt;TDependency1, TDependency2, TDependency3, TComponent&gt;(ContainerBuilder, Func&lt;IComponentContext, TDependency1, TDependency2, TDependency3, TComponent&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.RegistrationExtensions.Register.html#Autofac_RegistrationExtensions_Register__4_Autofac_ContainerBuilder_System_Func___0___1___2___3__">RegistrationExtensions.Register&lt;TDependency1, TDependency2, TDependency3, TComponent&gt;(ContainerBuilder, Func&lt;TDependency1, TDependency2, TDependency3, TComponent&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.RegistrationExtensions.Register.html#Autofac_RegistrationExtensions_Register__5_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext___0___1___2___3___4__">RegistrationExtensions.Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TComponent&gt;(ContainerBuilder, Func&lt;IComponentContext, TDependency1, TDependency2, TDependency3, TDependency4, TComponent&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.RegistrationExtensions.Register.html#Autofac_RegistrationExtensions_Register__5_Autofac_ContainerBuilder_System_Func___0___1___2___3___4__">RegistrationExtensions.Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TComponent&gt;(ContainerBuilder, Func&lt;TDependency1, TDependency2, TDependency3, TDependency4, TComponent&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.RegistrationExtensions.Register.html#Autofac_RegistrationExtensions_Register__6_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext___0___1___2___3___4___5__">RegistrationExtensions.Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TComponent&gt;(ContainerBuilder, Func&lt;IComponentContext, TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TComponent&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.RegistrationExtensions.Register.html#Autofac_RegistrationExtensions_Register__6_Autofac_ContainerBuilder_System_Func___0___1___2___3___4___5__">RegistrationExtensions.Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TComponent&gt;(ContainerBuilder, Func&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TComponent&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.RegistrationExtensions.Register.html#Autofac_RegistrationExtensions_Register__7_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext___0___1___2___3___4___5___6__">RegistrationExtensions.Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TComponent&gt;(ContainerBuilder, Func&lt;IComponentContext, TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TComponent&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.RegistrationExtensions.Register.html#Autofac_RegistrationExtensions_Register__7_Autofac_ContainerBuilder_System_Func___0___1___2___3___4___5___6__">RegistrationExtensions.Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TComponent&gt;(ContainerBuilder, Func&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TComponent&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.RegistrationExtensions.Register.html#Autofac_RegistrationExtensions_Register__8_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext___0___1___2___3___4___5___6___7__">RegistrationExtensions.Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TComponent&gt;(ContainerBuilder, Func&lt;IComponentContext, TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TComponent&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.RegistrationExtensions.Register.html#Autofac_RegistrationExtensions_Register__8_Autofac_ContainerBuilder_System_Func___0___1___2___3___4___5___6___7__">RegistrationExtensions.Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TComponent&gt;(ContainerBuilder, Func&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TComponent&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.RegistrationExtensions.Register.html#Autofac_RegistrationExtensions_Register__9_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext___0___1___2___3___4___5___6___7___8__">RegistrationExtensions.Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TComponent&gt;(ContainerBuilder, Func&lt;IComponentContext, TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TComponent&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.RegistrationExtensions.Register.html#Autofac_RegistrationExtensions_Register__9_Autofac_ContainerBuilder_System_Func___0___1___2___3___4___5___6___7___8__">RegistrationExtensions.Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TComponent&gt;(ContainerBuilder, Func&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TComponent&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ServiceMiddlewareRegistrationExtensions.RegisterServiceMiddleware.html#Autofac_ServiceMiddlewareRegistrationExtensions_RegisterServiceMiddleware_Autofac_ContainerBuilder_Autofac_Core_Service_Autofac_Core_Resolving_Pipeline_IResolveMiddleware_Autofac_Core_Resolving_Pipeline_MiddlewareInsertionMode_">ServiceMiddlewareRegistrationExtensions.RegisterServiceMiddleware(ContainerBuilder, Service, IResolveMiddleware, MiddlewareInsertionMode)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ServiceMiddlewareRegistrationExtensions.RegisterServiceMiddleware.html#Autofac_ServiceMiddlewareRegistrationExtensions_RegisterServiceMiddleware_Autofac_ContainerBuilder_System_Type_Autofac_Core_Resolving_Pipeline_IResolveMiddleware_Autofac_Core_Resolving_Pipeline_MiddlewareInsertionMode_">ServiceMiddlewareRegistrationExtensions.RegisterServiceMiddleware(ContainerBuilder, Type, IResolveMiddleware, MiddlewareInsertionMode)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ServiceMiddlewareRegistrationExtensions.RegisterServiceMiddleware.html#Autofac_ServiceMiddlewareRegistrationExtensions_RegisterServiceMiddleware_Autofac_ContainerBuilder_System_Type_Autofac_Core_Resolving_Pipeline_PipelinePhase_System_Action_Autofac_Core_Resolving_Pipeline_ResolveRequestContext_System_Action_Autofac_Core_Resolving_Pipeline_ResolveRequestContext___">ServiceMiddlewareRegistrationExtensions.RegisterServiceMiddleware(ContainerBuilder, Type, PipelinePhase, Action&lt;ResolveRequestContext, Action&lt;ResolveRequestContext&gt;&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ServiceMiddlewareRegistrationExtensions.RegisterServiceMiddleware.html#Autofac_ServiceMiddlewareRegistrationExtensions_RegisterServiceMiddleware_Autofac_ContainerBuilder_System_Type_System_String_Autofac_Core_Resolving_Pipeline_PipelinePhase_Autofac_Core_Resolving_Pipeline_MiddlewareInsertionMode_System_Action_Autofac_Core_Resolving_Pipeline_ResolveRequestContext_System_Action_Autofac_Core_Resolving_Pipeline_ResolveRequestContext___">ServiceMiddlewareRegistrationExtensions.RegisterServiceMiddleware(ContainerBuilder, Type, string, PipelinePhase, MiddlewareInsertionMode, Action&lt;ResolveRequestContext, Action&lt;ResolveRequestContext&gt;&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ServiceMiddlewareRegistrationExtensions.RegisterServiceMiddleware.html#Autofac_ServiceMiddlewareRegistrationExtensions_RegisterServiceMiddleware_Autofac_ContainerBuilder_System_Type_System_String_Autofac_Core_Resolving_Pipeline_PipelinePhase_System_Action_Autofac_Core_Resolving_Pipeline_ResolveRequestContext_System_Action_Autofac_Core_Resolving_Pipeline_ResolveRequestContext___">ServiceMiddlewareRegistrationExtensions.RegisterServiceMiddleware(ContainerBuilder, Type, string, PipelinePhase, Action&lt;ResolveRequestContext, Action&lt;ResolveRequestContext&gt;&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ServiceMiddlewareRegistrationExtensions.RegisterServiceMiddlewareSource.html#Autofac_ServiceMiddlewareRegistrationExtensions_RegisterServiceMiddlewareSource_Autofac_ContainerBuilder_Autofac_Core_Registration_IServiceMiddlewareSource_">ServiceMiddlewareRegistrationExtensions.RegisterServiceMiddlewareSource(ContainerBuilder, IServiceMiddlewareSource)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ServiceMiddlewareRegistrationExtensions.RegisterServiceMiddleware.html#Autofac_ServiceMiddlewareRegistrationExtensions_RegisterServiceMiddleware__1_Autofac_ContainerBuilder_Autofac_Core_Resolving_Pipeline_IResolveMiddleware_Autofac_Core_Resolving_Pipeline_MiddlewareInsertionMode_">ServiceMiddlewareRegistrationExtensions.RegisterServiceMiddleware&lt;TService&gt;(ContainerBuilder, IResolveMiddleware, MiddlewareInsertionMode)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ServiceMiddlewareRegistrationExtensions.RegisterServiceMiddleware.html#Autofac_ServiceMiddlewareRegistrationExtensions_RegisterServiceMiddleware__1_Autofac_ContainerBuilder_Autofac_Core_Resolving_Pipeline_PipelinePhase_System_Action_Autofac_Core_Resolving_Pipeline_ResolveRequestContext_System_Action_Autofac_Core_Resolving_Pipeline_ResolveRequestContext___">ServiceMiddlewareRegistrationExtensions.RegisterServiceMiddleware&lt;TService&gt;(ContainerBuilder, PipelinePhase, Action&lt;ResolveRequestContext, Action&lt;ResolveRequestContext&gt;&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ServiceMiddlewareRegistrationExtensions.RegisterServiceMiddleware.html#Autofac_ServiceMiddlewareRegistrationExtensions_RegisterServiceMiddleware__1_Autofac_ContainerBuilder_System_String_Autofac_Core_Resolving_Pipeline_PipelinePhase_Autofac_Core_Resolving_Pipeline_MiddlewareInsertionMode_System_Action_Autofac_Core_Resolving_Pipeline_ResolveRequestContext_System_Action_Autofac_Core_Resolving_Pipeline_ResolveRequestContext___">ServiceMiddlewareRegistrationExtensions.RegisterServiceMiddleware&lt;TService&gt;(ContainerBuilder, string, PipelinePhase, MiddlewareInsertionMode, Action&lt;ResolveRequestContext, Action&lt;ResolveRequestContext&gt;&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ServiceMiddlewareRegistrationExtensions.RegisterServiceMiddleware.html#Autofac_ServiceMiddlewareRegistrationExtensions_RegisterServiceMiddleware__1_Autofac_ContainerBuilder_System_String_Autofac_Core_Resolving_Pipeline_PipelinePhase_System_Action_Autofac_Core_Resolving_Pipeline_ResolveRequestContext_System_Action_Autofac_Core_Resolving_Pipeline_ResolveRequestContext___">ServiceMiddlewareRegistrationExtensions.RegisterServiceMiddleware&lt;TService&gt;(ContainerBuilder, string, PipelinePhase, Action&lt;ResolveRequestContext, Action&lt;ResolveRequestContext&gt;&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.SourceRegistrationExtensions.RegisterSource.html#Autofac_SourceRegistrationExtensions_RegisterSource_Autofac_ContainerBuilder_Autofac_Core_IRegistrationSource_">SourceRegistrationExtensions.RegisterSource(ContainerBuilder, IRegistrationSource)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.SourceRegistrationExtensions.RegisterSource.html#Autofac_SourceRegistrationExtensions_RegisterSource__1_Autofac_ContainerBuilder_">SourceRegistrationExtensions.RegisterSource&lt;TRegistrationSource&gt;(ContainerBuilder)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.ContainerBuilder.-ctor.html#Autofac_ContainerBuilder__ctor">ContainerBuilder()</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.ContainerBuilder.ComponentRegistryBuilder.html#Autofac_ContainerBuilder_ComponentRegistryBuilder">ComponentRegistryBuilder</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.ContainerBuilder.Properties.html#Autofac_ContainerBuilder_Properties">Properties</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.ContainerBuilder.Build.html#Autofac_ContainerBuilder_Build_Autofac_Builder_ContainerBuildOptions_">Build(ContainerBuildOptions)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.ContainerBuilder.RegisterBuildCallback.html#Autofac_ContainerBuilder_RegisterBuildCallback_System_Action_Autofac_ILifetimeScope__">RegisterBuildCallback(Action&lt;ILifetimeScope&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.ContainerBuilder.RegisterCallback.html#Autofac_ContainerBuilder_RegisterCallback_System_Action_Autofac_Core_Registration_IComponentRegistryBuilder__">RegisterCallback(Action&lt;IComponentRegistryBuilder&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+</article>
+
+
+
+      </div>
+
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright © 2007-2026 Autofac Contributors. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

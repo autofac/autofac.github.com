@@ -1,0 +1,1303 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Method Register | Autofac </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Method Register | Autofac ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="Autofac API Reference">
+            Autofac API Reference
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+        </div>
+
+        <article data-uid="Autofac.RegistrationExtensions.Register*">
+
+
+
+
+
+<h1 id="Autofac_RegistrationExtensions_Register_" data-uid="Autofac.RegistrationExtensions.Register*" class="text-break">
+Method Register  
+</h1>
+
+<div class="facts text-secondary">
+  <dl><dt>Namespace</dt><dd><a class="xref" href="Autofac.html">Autofac</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Autofac.dll</dd></dl>
+</div>
+
+<div class="markdown summary"></div>
+<div class="markdown conceptual"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="Autofac_RegistrationExtensions_Register_" data-uid="Autofac.RegistrationExtensions.Register*"></a>
+
+<h3 id="Autofac_RegistrationExtensions_Register__1_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext___0__" data-uid="Autofac.RegistrationExtensions.Register``1(Autofac.ContainerBuilder,System.Func{Autofac.IComponentContext,``0})">
+  Register&lt;T&gt;(ContainerBuilder, Func&lt;IComponentContext, T&gt;)
+  
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static IRegistrationBuilder&lt;T, SimpleActivatorData, SingleRegistrationStyle&gt; Register&lt;T&gt;(this ContainerBuilder builder, Func&lt;IComponentContext, T&gt; @delegate) where T : notnull</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>builder</code> <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a></dt>
+  <dd></dd>
+  <dt><code>delegate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="Autofac.IComponentContext.html">IComponentContext</a>, T&gt;</dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;T, <a class="xref" href="Autofac.Builder.SimpleActivatorData.html">SimpleActivatorData</a>, <a class="xref" href="Autofac.Builder.SingleRegistrationStyle.html">SingleRegistrationStyle</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Type Parameters</h4>
+<dl class="parameters">
+  <dt><code>T</code></dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+<a id="Autofac_RegistrationExtensions_Register_" data-uid="Autofac.RegistrationExtensions.Register*"></a>
+
+<h3 id="Autofac_RegistrationExtensions_Register__1_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter____0__" data-uid="Autofac.RegistrationExtensions.Register``1(Autofac.ContainerBuilder,System.Func{Autofac.IComponentContext,System.Collections.Generic.IEnumerable{Autofac.Core.Parameter},``0})">
+  Register&lt;T&gt;(ContainerBuilder, Func&lt;IComponentContext, IEnumerable&lt;Parameter&gt;, T&gt;)
+  
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static IRegistrationBuilder&lt;T, SimpleActivatorData, SingleRegistrationStyle&gt; Register&lt;T&gt;(this ContainerBuilder builder, Func&lt;IComponentContext, IEnumerable&lt;Parameter&gt;, T&gt; @delegate) where T : notnull</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>builder</code> <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a></dt>
+  <dd></dd>
+  <dt><code>delegate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="Autofac.IComponentContext.html">IComponentContext</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Autofac.Core.Parameter.html">Parameter</a>&gt;, T&gt;</dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;T, <a class="xref" href="Autofac.Builder.SimpleActivatorData.html">SimpleActivatorData</a>, <a class="xref" href="Autofac.Builder.SingleRegistrationStyle.html">SingleRegistrationStyle</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Type Parameters</h4>
+<dl class="parameters">
+  <dt><code>T</code></dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+<a id="Autofac_RegistrationExtensions_Register_" data-uid="Autofac.RegistrationExtensions.Register*"></a>
+
+<h3 id="Autofac_RegistrationExtensions_Register__2_Autofac_ContainerBuilder_System_Func___0___1__" data-uid="Autofac.RegistrationExtensions.Register``2(Autofac.ContainerBuilder,System.Func{``0,``1})">
+  Register&lt;TDependency1, TComponent&gt;(ContainerBuilder, Func&lt;TDependency1, TComponent&gt;)
+  
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static IRegistrationBuilder&lt;TComponent, SimpleActivatorData, SingleRegistrationStyle&gt; Register&lt;TDependency1, TComponent&gt;(this ContainerBuilder builder, Func&lt;TDependency1, TComponent&gt; @delegate) where TDependency1 : notnull</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>builder</code> <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a></dt>
+  <dd></dd>
+  <dt><code>delegate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TDependency1, TComponent&gt;</dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TComponent, <a class="xref" href="Autofac.Builder.SimpleActivatorData.html">SimpleActivatorData</a>, <a class="xref" href="Autofac.Builder.SingleRegistrationStyle.html">SingleRegistrationStyle</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Type Parameters</h4>
+<dl class="parameters">
+  <dt><code>TDependency1</code></dt>
+  <dd></dd>
+  <dt><code>TComponent</code></dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+<a id="Autofac_RegistrationExtensions_Register_" data-uid="Autofac.RegistrationExtensions.Register*"></a>
+
+<h3 id="Autofac_RegistrationExtensions_Register__2_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext___0___1__" data-uid="Autofac.RegistrationExtensions.Register``2(Autofac.ContainerBuilder,System.Func{Autofac.IComponentContext,``0,``1})">
+  Register&lt;TDependency1, TComponent&gt;(ContainerBuilder, Func&lt;IComponentContext, TDependency1, TComponent&gt;)
+  
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static IRegistrationBuilder&lt;TComponent, SimpleActivatorData, SingleRegistrationStyle&gt; Register&lt;TDependency1, TComponent&gt;(this ContainerBuilder builder, Func&lt;IComponentContext, TDependency1, TComponent&gt; @delegate) where TDependency1 : notnull</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>builder</code> <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a></dt>
+  <dd></dd>
+  <dt><code>delegate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="Autofac.IComponentContext.html">IComponentContext</a>, TDependency1, TComponent&gt;</dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TComponent, <a class="xref" href="Autofac.Builder.SimpleActivatorData.html">SimpleActivatorData</a>, <a class="xref" href="Autofac.Builder.SingleRegistrationStyle.html">SingleRegistrationStyle</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Type Parameters</h4>
+<dl class="parameters">
+  <dt><code>TDependency1</code></dt>
+  <dd></dd>
+  <dt><code>TComponent</code></dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+<a id="Autofac_RegistrationExtensions_Register_" data-uid="Autofac.RegistrationExtensions.Register*"></a>
+
+<h3 id="Autofac_RegistrationExtensions_Register__3_Autofac_ContainerBuilder_System_Func___0___1___2__" data-uid="Autofac.RegistrationExtensions.Register``3(Autofac.ContainerBuilder,System.Func{``0,``1,``2})">
+  Register&lt;TDependency1, TDependency2, TComponent&gt;(ContainerBuilder, Func&lt;TDependency1, TDependency2, TComponent&gt;)
+  
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static IRegistrationBuilder&lt;TComponent, SimpleActivatorData, SingleRegistrationStyle&gt; Register&lt;TDependency1, TDependency2, TComponent&gt;(this ContainerBuilder builder, Func&lt;TDependency1, TDependency2, TComponent&gt; @delegate) where TDependency1 : notnull where TDependency2 : notnull</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>builder</code> <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a></dt>
+  <dd></dd>
+  <dt><code>delegate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;TDependency1, TDependency2, TComponent&gt;</dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TComponent, <a class="xref" href="Autofac.Builder.SimpleActivatorData.html">SimpleActivatorData</a>, <a class="xref" href="Autofac.Builder.SingleRegistrationStyle.html">SingleRegistrationStyle</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Type Parameters</h4>
+<dl class="parameters">
+  <dt><code>TDependency1</code></dt>
+  <dd></dd>
+  <dt><code>TDependency2</code></dt>
+  <dd></dd>
+  <dt><code>TComponent</code></dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+<a id="Autofac_RegistrationExtensions_Register_" data-uid="Autofac.RegistrationExtensions.Register*"></a>
+
+<h3 id="Autofac_RegistrationExtensions_Register__3_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext___0___1___2__" data-uid="Autofac.RegistrationExtensions.Register``3(Autofac.ContainerBuilder,System.Func{Autofac.IComponentContext,``0,``1,``2})">
+  Register&lt;TDependency1, TDependency2, TComponent&gt;(ContainerBuilder, Func&lt;IComponentContext, TDependency1, TDependency2, TComponent&gt;)
+  
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static IRegistrationBuilder&lt;TComponent, SimpleActivatorData, SingleRegistrationStyle&gt; Register&lt;TDependency1, TDependency2, TComponent&gt;(this ContainerBuilder builder, Func&lt;IComponentContext, TDependency1, TDependency2, TComponent&gt; @delegate) where TDependency1 : notnull where TDependency2 : notnull</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>builder</code> <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a></dt>
+  <dd></dd>
+  <dt><code>delegate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-4">Func</a>&lt;<a class="xref" href="Autofac.IComponentContext.html">IComponentContext</a>, TDependency1, TDependency2, TComponent&gt;</dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TComponent, <a class="xref" href="Autofac.Builder.SimpleActivatorData.html">SimpleActivatorData</a>, <a class="xref" href="Autofac.Builder.SingleRegistrationStyle.html">SingleRegistrationStyle</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Type Parameters</h4>
+<dl class="parameters">
+  <dt><code>TDependency1</code></dt>
+  <dd></dd>
+  <dt><code>TDependency2</code></dt>
+  <dd></dd>
+  <dt><code>TComponent</code></dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+<a id="Autofac_RegistrationExtensions_Register_" data-uid="Autofac.RegistrationExtensions.Register*"></a>
+
+<h3 id="Autofac_RegistrationExtensions_Register__4_Autofac_ContainerBuilder_System_Func___0___1___2___3__" data-uid="Autofac.RegistrationExtensions.Register``4(Autofac.ContainerBuilder,System.Func{``0,``1,``2,``3})">
+  Register&lt;TDependency1, TDependency2, TDependency3, TComponent&gt;(ContainerBuilder, Func&lt;TDependency1, TDependency2, TDependency3, TComponent&gt;)
+  
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static IRegistrationBuilder&lt;TComponent, SimpleActivatorData, SingleRegistrationStyle&gt; Register&lt;TDependency1, TDependency2, TDependency3, TComponent&gt;(this ContainerBuilder builder, Func&lt;TDependency1, TDependency2, TDependency3, TComponent&gt; @delegate) where TDependency1 : notnull where TDependency2 : notnull where TDependency3 : notnull</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>builder</code> <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a></dt>
+  <dd></dd>
+  <dt><code>delegate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-4">Func</a>&lt;TDependency1, TDependency2, TDependency3, TComponent&gt;</dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TComponent, <a class="xref" href="Autofac.Builder.SimpleActivatorData.html">SimpleActivatorData</a>, <a class="xref" href="Autofac.Builder.SingleRegistrationStyle.html">SingleRegistrationStyle</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Type Parameters</h4>
+<dl class="parameters">
+  <dt><code>TDependency1</code></dt>
+  <dd></dd>
+  <dt><code>TDependency2</code></dt>
+  <dd></dd>
+  <dt><code>TDependency3</code></dt>
+  <dd></dd>
+  <dt><code>TComponent</code></dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+<a id="Autofac_RegistrationExtensions_Register_" data-uid="Autofac.RegistrationExtensions.Register*"></a>
+
+<h3 id="Autofac_RegistrationExtensions_Register__4_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext___0___1___2___3__" data-uid="Autofac.RegistrationExtensions.Register``4(Autofac.ContainerBuilder,System.Func{Autofac.IComponentContext,``0,``1,``2,``3})">
+  Register&lt;TDependency1, TDependency2, TDependency3, TComponent&gt;(ContainerBuilder, Func&lt;IComponentContext, TDependency1, TDependency2, TDependency3, TComponent&gt;)
+  
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static IRegistrationBuilder&lt;TComponent, SimpleActivatorData, SingleRegistrationStyle&gt; Register&lt;TDependency1, TDependency2, TDependency3, TComponent&gt;(this ContainerBuilder builder, Func&lt;IComponentContext, TDependency1, TDependency2, TDependency3, TComponent&gt; @delegate) where TDependency1 : notnull where TDependency2 : notnull where TDependency3 : notnull</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>builder</code> <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a></dt>
+  <dd></dd>
+  <dt><code>delegate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-5">Func</a>&lt;<a class="xref" href="Autofac.IComponentContext.html">IComponentContext</a>, TDependency1, TDependency2, TDependency3, TComponent&gt;</dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TComponent, <a class="xref" href="Autofac.Builder.SimpleActivatorData.html">SimpleActivatorData</a>, <a class="xref" href="Autofac.Builder.SingleRegistrationStyle.html">SingleRegistrationStyle</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Type Parameters</h4>
+<dl class="parameters">
+  <dt><code>TDependency1</code></dt>
+  <dd></dd>
+  <dt><code>TDependency2</code></dt>
+  <dd></dd>
+  <dt><code>TDependency3</code></dt>
+  <dd></dd>
+  <dt><code>TComponent</code></dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+<a id="Autofac_RegistrationExtensions_Register_" data-uid="Autofac.RegistrationExtensions.Register*"></a>
+
+<h3 id="Autofac_RegistrationExtensions_Register__5_Autofac_ContainerBuilder_System_Func___0___1___2___3___4__" data-uid="Autofac.RegistrationExtensions.Register``5(Autofac.ContainerBuilder,System.Func{``0,``1,``2,``3,``4})">
+  Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TComponent&gt;(ContainerBuilder, Func&lt;TDependency1, TDependency2, TDependency3, TDependency4, TComponent&gt;)
+  
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static IRegistrationBuilder&lt;TComponent, SimpleActivatorData, SingleRegistrationStyle&gt; Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TComponent&gt;(this ContainerBuilder builder, Func&lt;TDependency1, TDependency2, TDependency3, TDependency4, TComponent&gt; @delegate) where TDependency1 : notnull where TDependency2 : notnull where TDependency3 : notnull where TDependency4 : notnull</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>builder</code> <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a></dt>
+  <dd></dd>
+  <dt><code>delegate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-5">Func</a>&lt;TDependency1, TDependency2, TDependency3, TDependency4, TComponent&gt;</dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TComponent, <a class="xref" href="Autofac.Builder.SimpleActivatorData.html">SimpleActivatorData</a>, <a class="xref" href="Autofac.Builder.SingleRegistrationStyle.html">SingleRegistrationStyle</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Type Parameters</h4>
+<dl class="parameters">
+  <dt><code>TDependency1</code></dt>
+  <dd></dd>
+  <dt><code>TDependency2</code></dt>
+  <dd></dd>
+  <dt><code>TDependency3</code></dt>
+  <dd></dd>
+  <dt><code>TDependency4</code></dt>
+  <dd></dd>
+  <dt><code>TComponent</code></dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+<a id="Autofac_RegistrationExtensions_Register_" data-uid="Autofac.RegistrationExtensions.Register*"></a>
+
+<h3 id="Autofac_RegistrationExtensions_Register__5_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext___0___1___2___3___4__" data-uid="Autofac.RegistrationExtensions.Register``5(Autofac.ContainerBuilder,System.Func{Autofac.IComponentContext,``0,``1,``2,``3,``4})">
+  Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TComponent&gt;(ContainerBuilder, Func&lt;IComponentContext, TDependency1, TDependency2, TDependency3, TDependency4, TComponent&gt;)
+  
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static IRegistrationBuilder&lt;TComponent, SimpleActivatorData, SingleRegistrationStyle&gt; Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TComponent&gt;(this ContainerBuilder builder, Func&lt;IComponentContext, TDependency1, TDependency2, TDependency3, TDependency4, TComponent&gt; @delegate) where TDependency1 : notnull where TDependency2 : notnull where TDependency3 : notnull where TDependency4 : notnull</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>builder</code> <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a></dt>
+  <dd></dd>
+  <dt><code>delegate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-6">Func</a>&lt;<a class="xref" href="Autofac.IComponentContext.html">IComponentContext</a>, TDependency1, TDependency2, TDependency3, TDependency4, TComponent&gt;</dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TComponent, <a class="xref" href="Autofac.Builder.SimpleActivatorData.html">SimpleActivatorData</a>, <a class="xref" href="Autofac.Builder.SingleRegistrationStyle.html">SingleRegistrationStyle</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Type Parameters</h4>
+<dl class="parameters">
+  <dt><code>TDependency1</code></dt>
+  <dd></dd>
+  <dt><code>TDependency2</code></dt>
+  <dd></dd>
+  <dt><code>TDependency3</code></dt>
+  <dd></dd>
+  <dt><code>TDependency4</code></dt>
+  <dd></dd>
+  <dt><code>TComponent</code></dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+<a id="Autofac_RegistrationExtensions_Register_" data-uid="Autofac.RegistrationExtensions.Register*"></a>
+
+<h3 id="Autofac_RegistrationExtensions_Register__6_Autofac_ContainerBuilder_System_Func___0___1___2___3___4___5__" data-uid="Autofac.RegistrationExtensions.Register``6(Autofac.ContainerBuilder,System.Func{``0,``1,``2,``3,``4,``5})">
+  Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TComponent&gt;(ContainerBuilder, Func&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TComponent&gt;)
+  
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static IRegistrationBuilder&lt;TComponent, SimpleActivatorData, SingleRegistrationStyle&gt; Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TComponent&gt;(this ContainerBuilder builder, Func&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TComponent&gt; @delegate) where TDependency1 : notnull where TDependency2 : notnull where TDependency3 : notnull where TDependency4 : notnull where TDependency5 : notnull</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>builder</code> <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a></dt>
+  <dd></dd>
+  <dt><code>delegate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-6">Func</a>&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TComponent&gt;</dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TComponent, <a class="xref" href="Autofac.Builder.SimpleActivatorData.html">SimpleActivatorData</a>, <a class="xref" href="Autofac.Builder.SingleRegistrationStyle.html">SingleRegistrationStyle</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Type Parameters</h4>
+<dl class="parameters">
+  <dt><code>TDependency1</code></dt>
+  <dd></dd>
+  <dt><code>TDependency2</code></dt>
+  <dd></dd>
+  <dt><code>TDependency3</code></dt>
+  <dd></dd>
+  <dt><code>TDependency4</code></dt>
+  <dd></dd>
+  <dt><code>TDependency5</code></dt>
+  <dd></dd>
+  <dt><code>TComponent</code></dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+<a id="Autofac_RegistrationExtensions_Register_" data-uid="Autofac.RegistrationExtensions.Register*"></a>
+
+<h3 id="Autofac_RegistrationExtensions_Register__6_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext___0___1___2___3___4___5__" data-uid="Autofac.RegistrationExtensions.Register``6(Autofac.ContainerBuilder,System.Func{Autofac.IComponentContext,``0,``1,``2,``3,``4,``5})">
+  Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TComponent&gt;(ContainerBuilder, Func&lt;IComponentContext, TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TComponent&gt;)
+  
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static IRegistrationBuilder&lt;TComponent, SimpleActivatorData, SingleRegistrationStyle&gt; Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TComponent&gt;(this ContainerBuilder builder, Func&lt;IComponentContext, TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TComponent&gt; @delegate) where TDependency1 : notnull where TDependency2 : notnull where TDependency3 : notnull where TDependency4 : notnull where TDependency5 : notnull</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>builder</code> <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a></dt>
+  <dd></dd>
+  <dt><code>delegate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-7">Func</a>&lt;<a class="xref" href="Autofac.IComponentContext.html">IComponentContext</a>, TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TComponent&gt;</dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TComponent, <a class="xref" href="Autofac.Builder.SimpleActivatorData.html">SimpleActivatorData</a>, <a class="xref" href="Autofac.Builder.SingleRegistrationStyle.html">SingleRegistrationStyle</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Type Parameters</h4>
+<dl class="parameters">
+  <dt><code>TDependency1</code></dt>
+  <dd></dd>
+  <dt><code>TDependency2</code></dt>
+  <dd></dd>
+  <dt><code>TDependency3</code></dt>
+  <dd></dd>
+  <dt><code>TDependency4</code></dt>
+  <dd></dd>
+  <dt><code>TDependency5</code></dt>
+  <dd></dd>
+  <dt><code>TComponent</code></dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+<a id="Autofac_RegistrationExtensions_Register_" data-uid="Autofac.RegistrationExtensions.Register*"></a>
+
+<h3 id="Autofac_RegistrationExtensions_Register__7_Autofac_ContainerBuilder_System_Func___0___1___2___3___4___5___6__" data-uid="Autofac.RegistrationExtensions.Register``7(Autofac.ContainerBuilder,System.Func{``0,``1,``2,``3,``4,``5,``6})">
+  Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TComponent&gt;(ContainerBuilder, Func&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TComponent&gt;)
+  
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static IRegistrationBuilder&lt;TComponent, SimpleActivatorData, SingleRegistrationStyle&gt; Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TComponent&gt;(this ContainerBuilder builder, Func&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TComponent&gt; @delegate) where TDependency1 : notnull where TDependency2 : notnull where TDependency3 : notnull where TDependency4 : notnull where TDependency5 : notnull where TDependency6 : notnull</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>builder</code> <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a></dt>
+  <dd></dd>
+  <dt><code>delegate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-7">Func</a>&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TComponent&gt;</dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TComponent, <a class="xref" href="Autofac.Builder.SimpleActivatorData.html">SimpleActivatorData</a>, <a class="xref" href="Autofac.Builder.SingleRegistrationStyle.html">SingleRegistrationStyle</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Type Parameters</h4>
+<dl class="parameters">
+  <dt><code>TDependency1</code></dt>
+  <dd></dd>
+  <dt><code>TDependency2</code></dt>
+  <dd></dd>
+  <dt><code>TDependency3</code></dt>
+  <dd></dd>
+  <dt><code>TDependency4</code></dt>
+  <dd></dd>
+  <dt><code>TDependency5</code></dt>
+  <dd></dd>
+  <dt><code>TDependency6</code></dt>
+  <dd></dd>
+  <dt><code>TComponent</code></dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+<a id="Autofac_RegistrationExtensions_Register_" data-uid="Autofac.RegistrationExtensions.Register*"></a>
+
+<h3 id="Autofac_RegistrationExtensions_Register__7_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext___0___1___2___3___4___5___6__" data-uid="Autofac.RegistrationExtensions.Register``7(Autofac.ContainerBuilder,System.Func{Autofac.IComponentContext,``0,``1,``2,``3,``4,``5,``6})">
+  Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TComponent&gt;(ContainerBuilder, Func&lt;IComponentContext, TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TComponent&gt;)
+  
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static IRegistrationBuilder&lt;TComponent, SimpleActivatorData, SingleRegistrationStyle&gt; Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TComponent&gt;(this ContainerBuilder builder, Func&lt;IComponentContext, TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TComponent&gt; @delegate) where TDependency1 : notnull where TDependency2 : notnull where TDependency3 : notnull where TDependency4 : notnull where TDependency5 : notnull where TDependency6 : notnull</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>builder</code> <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a></dt>
+  <dd></dd>
+  <dt><code>delegate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-8">Func</a>&lt;<a class="xref" href="Autofac.IComponentContext.html">IComponentContext</a>, TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TComponent&gt;</dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TComponent, <a class="xref" href="Autofac.Builder.SimpleActivatorData.html">SimpleActivatorData</a>, <a class="xref" href="Autofac.Builder.SingleRegistrationStyle.html">SingleRegistrationStyle</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Type Parameters</h4>
+<dl class="parameters">
+  <dt><code>TDependency1</code></dt>
+  <dd></dd>
+  <dt><code>TDependency2</code></dt>
+  <dd></dd>
+  <dt><code>TDependency3</code></dt>
+  <dd></dd>
+  <dt><code>TDependency4</code></dt>
+  <dd></dd>
+  <dt><code>TDependency5</code></dt>
+  <dd></dd>
+  <dt><code>TDependency6</code></dt>
+  <dd></dd>
+  <dt><code>TComponent</code></dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+<a id="Autofac_RegistrationExtensions_Register_" data-uid="Autofac.RegistrationExtensions.Register*"></a>
+
+<h3 id="Autofac_RegistrationExtensions_Register__8_Autofac_ContainerBuilder_System_Func___0___1___2___3___4___5___6___7__" data-uid="Autofac.RegistrationExtensions.Register``8(Autofac.ContainerBuilder,System.Func{``0,``1,``2,``3,``4,``5,``6,``7})">
+  Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TComponent&gt;(ContainerBuilder, Func&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TComponent&gt;)
+  
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static IRegistrationBuilder&lt;TComponent, SimpleActivatorData, SingleRegistrationStyle&gt; Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TComponent&gt;(this ContainerBuilder builder, Func&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TComponent&gt; @delegate) where TDependency1 : notnull where TDependency2 : notnull where TDependency3 : notnull where TDependency4 : notnull where TDependency5 : notnull where TDependency6 : notnull where TDependency7 : notnull</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>builder</code> <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a></dt>
+  <dd></dd>
+  <dt><code>delegate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-8">Func</a>&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TComponent&gt;</dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TComponent, <a class="xref" href="Autofac.Builder.SimpleActivatorData.html">SimpleActivatorData</a>, <a class="xref" href="Autofac.Builder.SingleRegistrationStyle.html">SingleRegistrationStyle</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Type Parameters</h4>
+<dl class="parameters">
+  <dt><code>TDependency1</code></dt>
+  <dd></dd>
+  <dt><code>TDependency2</code></dt>
+  <dd></dd>
+  <dt><code>TDependency3</code></dt>
+  <dd></dd>
+  <dt><code>TDependency4</code></dt>
+  <dd></dd>
+  <dt><code>TDependency5</code></dt>
+  <dd></dd>
+  <dt><code>TDependency6</code></dt>
+  <dd></dd>
+  <dt><code>TDependency7</code></dt>
+  <dd></dd>
+  <dt><code>TComponent</code></dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+<a id="Autofac_RegistrationExtensions_Register_" data-uid="Autofac.RegistrationExtensions.Register*"></a>
+
+<h3 id="Autofac_RegistrationExtensions_Register__8_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext___0___1___2___3___4___5___6___7__" data-uid="Autofac.RegistrationExtensions.Register``8(Autofac.ContainerBuilder,System.Func{Autofac.IComponentContext,``0,``1,``2,``3,``4,``5,``6,``7})">
+  Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TComponent&gt;(ContainerBuilder, Func&lt;IComponentContext, TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TComponent&gt;)
+  
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static IRegistrationBuilder&lt;TComponent, SimpleActivatorData, SingleRegistrationStyle&gt; Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TComponent&gt;(this ContainerBuilder builder, Func&lt;IComponentContext, TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TComponent&gt; @delegate) where TDependency1 : notnull where TDependency2 : notnull where TDependency3 : notnull where TDependency4 : notnull where TDependency5 : notnull where TDependency6 : notnull where TDependency7 : notnull</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>builder</code> <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a></dt>
+  <dd></dd>
+  <dt><code>delegate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-9">Func</a>&lt;<a class="xref" href="Autofac.IComponentContext.html">IComponentContext</a>, TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TComponent&gt;</dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TComponent, <a class="xref" href="Autofac.Builder.SimpleActivatorData.html">SimpleActivatorData</a>, <a class="xref" href="Autofac.Builder.SingleRegistrationStyle.html">SingleRegistrationStyle</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Type Parameters</h4>
+<dl class="parameters">
+  <dt><code>TDependency1</code></dt>
+  <dd></dd>
+  <dt><code>TDependency2</code></dt>
+  <dd></dd>
+  <dt><code>TDependency3</code></dt>
+  <dd></dd>
+  <dt><code>TDependency4</code></dt>
+  <dd></dd>
+  <dt><code>TDependency5</code></dt>
+  <dd></dd>
+  <dt><code>TDependency6</code></dt>
+  <dd></dd>
+  <dt><code>TDependency7</code></dt>
+  <dd></dd>
+  <dt><code>TComponent</code></dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+<a id="Autofac_RegistrationExtensions_Register_" data-uid="Autofac.RegistrationExtensions.Register*"></a>
+
+<h3 id="Autofac_RegistrationExtensions_Register__9_Autofac_ContainerBuilder_System_Func___0___1___2___3___4___5___6___7___8__" data-uid="Autofac.RegistrationExtensions.Register``9(Autofac.ContainerBuilder,System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8})">
+  Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TComponent&gt;(ContainerBuilder, Func&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TComponent&gt;)
+  
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static IRegistrationBuilder&lt;TComponent, SimpleActivatorData, SingleRegistrationStyle&gt; Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TComponent&gt;(this ContainerBuilder builder, Func&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TComponent&gt; @delegate) where TDependency1 : notnull where TDependency2 : notnull where TDependency3 : notnull where TDependency4 : notnull where TDependency5 : notnull where TDependency6 : notnull where TDependency7 : notnull where TDependency8 : notnull</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>builder</code> <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a></dt>
+  <dd></dd>
+  <dt><code>delegate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-9">Func</a>&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TComponent&gt;</dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TComponent, <a class="xref" href="Autofac.Builder.SimpleActivatorData.html">SimpleActivatorData</a>, <a class="xref" href="Autofac.Builder.SingleRegistrationStyle.html">SingleRegistrationStyle</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Type Parameters</h4>
+<dl class="parameters">
+  <dt><code>TDependency1</code></dt>
+  <dd></dd>
+  <dt><code>TDependency2</code></dt>
+  <dd></dd>
+  <dt><code>TDependency3</code></dt>
+  <dd></dd>
+  <dt><code>TDependency4</code></dt>
+  <dd></dd>
+  <dt><code>TDependency5</code></dt>
+  <dd></dd>
+  <dt><code>TDependency6</code></dt>
+  <dd></dd>
+  <dt><code>TDependency7</code></dt>
+  <dd></dd>
+  <dt><code>TDependency8</code></dt>
+  <dd></dd>
+  <dt><code>TComponent</code></dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+<a id="Autofac_RegistrationExtensions_Register_" data-uid="Autofac.RegistrationExtensions.Register*"></a>
+
+<h3 id="Autofac_RegistrationExtensions_Register__9_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext___0___1___2___3___4___5___6___7___8__" data-uid="Autofac.RegistrationExtensions.Register``9(Autofac.ContainerBuilder,System.Func{Autofac.IComponentContext,``0,``1,``2,``3,``4,``5,``6,``7,``8})">
+  Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TComponent&gt;(ContainerBuilder, Func&lt;IComponentContext, TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TComponent&gt;)
+  
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static IRegistrationBuilder&lt;TComponent, SimpleActivatorData, SingleRegistrationStyle&gt; Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TComponent&gt;(this ContainerBuilder builder, Func&lt;IComponentContext, TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TComponent&gt; @delegate) where TDependency1 : notnull where TDependency2 : notnull where TDependency3 : notnull where TDependency4 : notnull where TDependency5 : notnull where TDependency6 : notnull where TDependency7 : notnull where TDependency8 : notnull</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>builder</code> <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a></dt>
+  <dd></dd>
+  <dt><code>delegate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-10">Func</a>&lt;<a class="xref" href="Autofac.IComponentContext.html">IComponentContext</a>, TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TComponent&gt;</dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TComponent, <a class="xref" href="Autofac.Builder.SimpleActivatorData.html">SimpleActivatorData</a>, <a class="xref" href="Autofac.Builder.SingleRegistrationStyle.html">SingleRegistrationStyle</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Type Parameters</h4>
+<dl class="parameters">
+  <dt><code>TDependency1</code></dt>
+  <dd></dd>
+  <dt><code>TDependency2</code></dt>
+  <dd></dd>
+  <dt><code>TDependency3</code></dt>
+  <dd></dd>
+  <dt><code>TDependency4</code></dt>
+  <dd></dd>
+  <dt><code>TDependency5</code></dt>
+  <dd></dd>
+  <dt><code>TDependency6</code></dt>
+  <dd></dd>
+  <dt><code>TDependency7</code></dt>
+  <dd></dd>
+  <dt><code>TDependency8</code></dt>
+  <dd></dd>
+  <dt><code>TComponent</code></dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+<a id="Autofac_RegistrationExtensions_Register_" data-uid="Autofac.RegistrationExtensions.Register*"></a>
+
+<h3 id="Autofac_RegistrationExtensions_Register__10_Autofac_ContainerBuilder_System_Func___0___1___2___3___4___5___6___7___8___9__" data-uid="Autofac.RegistrationExtensions.Register``10(Autofac.ContainerBuilder,System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9})">
+  Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TDependency9, TComponent&gt;(ContainerBuilder, Func&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TDependency9, TComponent&gt;)
+  
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static IRegistrationBuilder&lt;TComponent, SimpleActivatorData, SingleRegistrationStyle&gt; Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TDependency9, TComponent&gt;(this ContainerBuilder builder, Func&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TDependency9, TComponent&gt; @delegate) where TDependency1 : notnull where TDependency2 : notnull where TDependency3 : notnull where TDependency4 : notnull where TDependency5 : notnull where TDependency6 : notnull where TDependency7 : notnull where TDependency8 : notnull where TDependency9 : notnull</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>builder</code> <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a></dt>
+  <dd></dd>
+  <dt><code>delegate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-10">Func</a>&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TDependency9, TComponent&gt;</dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TComponent, <a class="xref" href="Autofac.Builder.SimpleActivatorData.html">SimpleActivatorData</a>, <a class="xref" href="Autofac.Builder.SingleRegistrationStyle.html">SingleRegistrationStyle</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Type Parameters</h4>
+<dl class="parameters">
+  <dt><code>TDependency1</code></dt>
+  <dd></dd>
+  <dt><code>TDependency2</code></dt>
+  <dd></dd>
+  <dt><code>TDependency3</code></dt>
+  <dd></dd>
+  <dt><code>TDependency4</code></dt>
+  <dd></dd>
+  <dt><code>TDependency5</code></dt>
+  <dd></dd>
+  <dt><code>TDependency6</code></dt>
+  <dd></dd>
+  <dt><code>TDependency7</code></dt>
+  <dd></dd>
+  <dt><code>TDependency8</code></dt>
+  <dd></dd>
+  <dt><code>TDependency9</code></dt>
+  <dd></dd>
+  <dt><code>TComponent</code></dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+<a id="Autofac_RegistrationExtensions_Register_" data-uid="Autofac.RegistrationExtensions.Register*"></a>
+
+<h3 id="Autofac_RegistrationExtensions_Register__10_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext___0___1___2___3___4___5___6___7___8___9__" data-uid="Autofac.RegistrationExtensions.Register``10(Autofac.ContainerBuilder,System.Func{Autofac.IComponentContext,``0,``1,``2,``3,``4,``5,``6,``7,``8,``9})">
+  Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TDependency9, TComponent&gt;(ContainerBuilder, Func&lt;IComponentContext, TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TDependency9, TComponent&gt;)
+  
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static IRegistrationBuilder&lt;TComponent, SimpleActivatorData, SingleRegistrationStyle&gt; Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TDependency9, TComponent&gt;(this ContainerBuilder builder, Func&lt;IComponentContext, TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TDependency9, TComponent&gt; @delegate) where TDependency1 : notnull where TDependency2 : notnull where TDependency3 : notnull where TDependency4 : notnull where TDependency5 : notnull where TDependency6 : notnull where TDependency7 : notnull where TDependency8 : notnull where TDependency9 : notnull</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>builder</code> <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a></dt>
+  <dd></dd>
+  <dt><code>delegate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-11">Func</a>&lt;<a class="xref" href="Autofac.IComponentContext.html">IComponentContext</a>, TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TDependency9, TComponent&gt;</dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TComponent, <a class="xref" href="Autofac.Builder.SimpleActivatorData.html">SimpleActivatorData</a>, <a class="xref" href="Autofac.Builder.SingleRegistrationStyle.html">SingleRegistrationStyle</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Type Parameters</h4>
+<dl class="parameters">
+  <dt><code>TDependency1</code></dt>
+  <dd></dd>
+  <dt><code>TDependency2</code></dt>
+  <dd></dd>
+  <dt><code>TDependency3</code></dt>
+  <dd></dd>
+  <dt><code>TDependency4</code></dt>
+  <dd></dd>
+  <dt><code>TDependency5</code></dt>
+  <dd></dd>
+  <dt><code>TDependency6</code></dt>
+  <dd></dd>
+  <dt><code>TDependency7</code></dt>
+  <dd></dd>
+  <dt><code>TDependency8</code></dt>
+  <dd></dd>
+  <dt><code>TDependency9</code></dt>
+  <dd></dd>
+  <dt><code>TComponent</code></dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+<a id="Autofac_RegistrationExtensions_Register_" data-uid="Autofac.RegistrationExtensions.Register*"></a>
+
+<h3 id="Autofac_RegistrationExtensions_Register__11_Autofac_ContainerBuilder_System_Func___0___1___2___3___4___5___6___7___8___9___10__" data-uid="Autofac.RegistrationExtensions.Register``11(Autofac.ContainerBuilder,System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10})">
+  Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TDependency9, TDependency10, TComponent&gt;(ContainerBuilder, Func&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TDependency9, TDependency10, TComponent&gt;)
+  
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static IRegistrationBuilder&lt;TComponent, SimpleActivatorData, SingleRegistrationStyle&gt; Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TDependency9, TDependency10, TComponent&gt;(this ContainerBuilder builder, Func&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TDependency9, TDependency10, TComponent&gt; @delegate) where TDependency1 : notnull where TDependency2 : notnull where TDependency3 : notnull where TDependency4 : notnull where TDependency5 : notnull where TDependency6 : notnull where TDependency7 : notnull where TDependency8 : notnull where TDependency9 : notnull where TDependency10 : notnull</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>builder</code> <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a></dt>
+  <dd></dd>
+  <dt><code>delegate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-11">Func</a>&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TDependency9, TDependency10, TComponent&gt;</dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TComponent, <a class="xref" href="Autofac.Builder.SimpleActivatorData.html">SimpleActivatorData</a>, <a class="xref" href="Autofac.Builder.SingleRegistrationStyle.html">SingleRegistrationStyle</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Type Parameters</h4>
+<dl class="parameters">
+  <dt><code>TDependency1</code></dt>
+  <dd></dd>
+  <dt><code>TDependency2</code></dt>
+  <dd></dd>
+  <dt><code>TDependency3</code></dt>
+  <dd></dd>
+  <dt><code>TDependency4</code></dt>
+  <dd></dd>
+  <dt><code>TDependency5</code></dt>
+  <dd></dd>
+  <dt><code>TDependency6</code></dt>
+  <dd></dd>
+  <dt><code>TDependency7</code></dt>
+  <dd></dd>
+  <dt><code>TDependency8</code></dt>
+  <dd></dd>
+  <dt><code>TDependency9</code></dt>
+  <dd></dd>
+  <dt><code>TDependency10</code></dt>
+  <dd></dd>
+  <dt><code>TComponent</code></dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+<a id="Autofac_RegistrationExtensions_Register_" data-uid="Autofac.RegistrationExtensions.Register*"></a>
+
+<h3 id="Autofac_RegistrationExtensions_Register__11_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext___0___1___2___3___4___5___6___7___8___9___10__" data-uid="Autofac.RegistrationExtensions.Register``11(Autofac.ContainerBuilder,System.Func{Autofac.IComponentContext,``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10})">
+  Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TDependency9, TDependency10, TComponent&gt;(ContainerBuilder, Func&lt;IComponentContext, TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TDependency9, TDependency10, TComponent&gt;)
+  
+</h3>
+
+<div class="markdown level1 summary"></div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static IRegistrationBuilder&lt;TComponent, SimpleActivatorData, SingleRegistrationStyle&gt; Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TDependency9, TDependency10, TComponent&gt;(this ContainerBuilder builder, Func&lt;IComponentContext, TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TDependency9, TDependency10, TComponent&gt; @delegate) where TDependency1 : notnull where TDependency2 : notnull where TDependency3 : notnull where TDependency4 : notnull where TDependency5 : notnull where TDependency6 : notnull where TDependency7 : notnull where TDependency8 : notnull where TDependency9 : notnull where TDependency10 : notnull</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>builder</code> <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a></dt>
+  <dd></dd>
+  <dt><code>delegate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-12">Func</a>&lt;<a class="xref" href="Autofac.IComponentContext.html">IComponentContext</a>, TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TDependency9, TDependency10, TComponent&gt;</dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TComponent, <a class="xref" href="Autofac.Builder.SimpleActivatorData.html">SimpleActivatorData</a>, <a class="xref" href="Autofac.Builder.SingleRegistrationStyle.html">SingleRegistrationStyle</a>&gt;</dt>
+  <dd></dd>
+</dl>
+
+<h4 class="section">Type Parameters</h4>
+<dl class="parameters">
+  <dt><code>TDependency1</code></dt>
+  <dd></dd>
+  <dt><code>TDependency2</code></dt>
+  <dd></dd>
+  <dt><code>TDependency3</code></dt>
+  <dd></dd>
+  <dt><code>TDependency4</code></dt>
+  <dd></dd>
+  <dt><code>TDependency5</code></dt>
+  <dd></dd>
+  <dt><code>TDependency6</code></dt>
+  <dd></dd>
+  <dt><code>TDependency7</code></dt>
+  <dd></dd>
+  <dt><code>TDependency8</code></dt>
+  <dd></dd>
+  <dt><code>TDependency9</code></dt>
+  <dd></dd>
+  <dt><code>TDependency10</code></dt>
+  <dd></dd>
+  <dt><code>TComponent</code></dt>
+  <dd></dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright © 2007-2026 Autofac Contributors. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

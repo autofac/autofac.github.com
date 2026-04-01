@@ -1,0 +1,401 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class DecoratorContext | Autofac </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class DecoratorContext | Autofac ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="Autofac API Reference">
+            Autofac API Reference
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+        </div>
+
+        <article data-uid="Autofac.Features.Decorators.DecoratorContext">
+
+
+
+  <h1 id="Autofac_Features_Decorators_DecoratorContext" data-uid="Autofac.Features.Decorators.DecoratorContext" class="text-break">
+Class DecoratorContext  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Autofac.html">Autofac</a>.<a class="xref" href="Autofac.Features.html">Features</a>.<a class="xref" href="Autofac.Features.Decorators.html">Decorators</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Autofac.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class DecoratorContext : IDecoratorContext, IComponentContext</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">DecoratorContext</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Autofac.Features.Decorators.IDecoratorContext.html">IDecoratorContext</a></div>
+      <div><a class="xref" href="Autofac.IComponentContext.html">IComponentContext</a></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.InjectProperties.html#Autofac_ResolutionExtensions_InjectProperties__1_Autofac_IComponentContext___0_">ResolutionExtensions.InjectProperties&lt;TService&gt;(IComponentContext, TService)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.InjectProperties.html#Autofac_ResolutionExtensions_InjectProperties__1_Autofac_IComponentContext___0_Autofac_Core_IPropertySelector_">ResolutionExtensions.InjectProperties&lt;TService&gt;(IComponentContext, TService, IPropertySelector)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.InjectProperties.html#Autofac_ResolutionExtensions_InjectProperties__1_Autofac_IComponentContext___0_Autofac_Core_IPropertySelector_Autofac_Core_Parameter___">ResolutionExtensions.InjectProperties&lt;TService&gt;(IComponentContext, TService, IPropertySelector, params Parameter[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.InjectProperties.html#Autofac_ResolutionExtensions_InjectProperties__1_Autofac_IComponentContext___0_Autofac_Core_IPropertySelector_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter__">ResolutionExtensions.InjectProperties&lt;TService&gt;(IComponentContext, TService, IPropertySelector, IEnumerable&lt;Parameter&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.InjectProperties.html#Autofac_ResolutionExtensions_InjectProperties__1_Autofac_IComponentContext___0_Autofac_Core_Parameter___">ResolutionExtensions.InjectProperties&lt;TService&gt;(IComponentContext, TService, params Parameter[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.InjectProperties.html#Autofac_ResolutionExtensions_InjectProperties__1_Autofac_IComponentContext___0_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter__">ResolutionExtensions.InjectProperties&lt;TService&gt;(IComponentContext, TService, IEnumerable&lt;Parameter&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.InjectUnsetProperties.html#Autofac_ResolutionExtensions_InjectUnsetProperties__1_Autofac_IComponentContext___0_">ResolutionExtensions.InjectUnsetProperties&lt;TService&gt;(IComponentContext, TService)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.InjectUnsetProperties.html#Autofac_ResolutionExtensions_InjectUnsetProperties__1_Autofac_IComponentContext___0_Autofac_Core_Parameter___">ResolutionExtensions.InjectUnsetProperties&lt;TService&gt;(IComponentContext, TService, params Parameter[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.InjectUnsetProperties.html#Autofac_ResolutionExtensions_InjectUnsetProperties__1_Autofac_IComponentContext___0_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter__">ResolutionExtensions.InjectUnsetProperties&lt;TService&gt;(IComponentContext, TService, IEnumerable&lt;Parameter&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.IsRegistered.html#Autofac_ResolutionExtensions_IsRegistered_Autofac_IComponentContext_System_Type_">ResolutionExtensions.IsRegistered(IComponentContext, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.IsRegisteredService.html#Autofac_ResolutionExtensions_IsRegisteredService_Autofac_IComponentContext_Autofac_Core_Service_">ResolutionExtensions.IsRegisteredService(IComponentContext, Service)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.IsRegisteredWithKey.html#Autofac_ResolutionExtensions_IsRegisteredWithKey_Autofac_IComponentContext_System_Object_System_Type_">ResolutionExtensions.IsRegisteredWithKey(IComponentContext, object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.IsRegisteredWithKey.html#Autofac_ResolutionExtensions_IsRegisteredWithKey__1_Autofac_IComponentContext_System_Object_">ResolutionExtensions.IsRegisteredWithKey&lt;TService&gt;(IComponentContext, object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.IsRegisteredWithName.html#Autofac_ResolutionExtensions_IsRegisteredWithName_Autofac_IComponentContext_System_String_System_Type_">ResolutionExtensions.IsRegisteredWithName(IComponentContext, string, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.IsRegisteredWithName.html#Autofac_ResolutionExtensions_IsRegisteredWithName__1_Autofac_IComponentContext_System_String_">ResolutionExtensions.IsRegisteredWithName&lt;TService&gt;(IComponentContext, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.IsRegistered.html#Autofac_ResolutionExtensions_IsRegistered__1_Autofac_IComponentContext_">ResolutionExtensions.IsRegistered&lt;TService&gt;(IComponentContext)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.Resolve.html#Autofac_ResolutionExtensions_Resolve_Autofac_IComponentContext_System_Type_">ResolutionExtensions.Resolve(IComponentContext, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.Resolve.html#Autofac_ResolutionExtensions_Resolve_Autofac_IComponentContext_System_Type_Autofac_Core_Parameter___">ResolutionExtensions.Resolve(IComponentContext, Type, params Parameter[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.Resolve.html#Autofac_ResolutionExtensions_Resolve_Autofac_IComponentContext_System_Type_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter__">ResolutionExtensions.Resolve(IComponentContext, Type, IEnumerable&lt;Parameter&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.ResolveKeyed.html#Autofac_ResolutionExtensions_ResolveKeyed_Autofac_IComponentContext_System_Object_System_Type_">ResolutionExtensions.ResolveKeyed(IComponentContext, object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.ResolveKeyed.html#Autofac_ResolutionExtensions_ResolveKeyed_Autofac_IComponentContext_System_Object_System_Type_Autofac_Core_Parameter___">ResolutionExtensions.ResolveKeyed(IComponentContext, object, Type, params Parameter[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.ResolveKeyed.html#Autofac_ResolutionExtensions_ResolveKeyed_Autofac_IComponentContext_System_Object_System_Type_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter__">ResolutionExtensions.ResolveKeyed(IComponentContext, object, Type, IEnumerable&lt;Parameter&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.ResolveKeyed.html#Autofac_ResolutionExtensions_ResolveKeyed__1_Autofac_IComponentContext_System_Object_">ResolutionExtensions.ResolveKeyed&lt;TService&gt;(IComponentContext, object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.ResolveKeyed.html#Autofac_ResolutionExtensions_ResolveKeyed__1_Autofac_IComponentContext_System_Object_Autofac_Core_Parameter___">ResolutionExtensions.ResolveKeyed&lt;TService&gt;(IComponentContext, object, params Parameter[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.ResolveKeyed.html#Autofac_ResolutionExtensions_ResolveKeyed__1_Autofac_IComponentContext_System_Object_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter__">ResolutionExtensions.ResolveKeyed&lt;TService&gt;(IComponentContext, object, IEnumerable&lt;Parameter&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.ResolveNamed.html#Autofac_ResolutionExtensions_ResolveNamed_Autofac_IComponentContext_System_String_System_Type_">ResolutionExtensions.ResolveNamed(IComponentContext, string, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.ResolveNamed.html#Autofac_ResolutionExtensions_ResolveNamed_Autofac_IComponentContext_System_String_System_Type_Autofac_Core_Parameter___">ResolutionExtensions.ResolveNamed(IComponentContext, string, Type, params Parameter[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.ResolveNamed.html#Autofac_ResolutionExtensions_ResolveNamed_Autofac_IComponentContext_System_String_System_Type_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter__">ResolutionExtensions.ResolveNamed(IComponentContext, string, Type, IEnumerable&lt;Parameter&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.ResolveNamed.html#Autofac_ResolutionExtensions_ResolveNamed__1_Autofac_IComponentContext_System_String_">ResolutionExtensions.ResolveNamed&lt;TService&gt;(IComponentContext, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.ResolveNamed.html#Autofac_ResolutionExtensions_ResolveNamed__1_Autofac_IComponentContext_System_String_Autofac_Core_Parameter___">ResolutionExtensions.ResolveNamed&lt;TService&gt;(IComponentContext, string, params Parameter[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.ResolveNamed.html#Autofac_ResolutionExtensions_ResolveNamed__1_Autofac_IComponentContext_System_String_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter__">ResolutionExtensions.ResolveNamed&lt;TService&gt;(IComponentContext, string, IEnumerable&lt;Parameter&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.ResolveOptional.html#Autofac_ResolutionExtensions_ResolveOptional_Autofac_IComponentContext_System_Type_">ResolutionExtensions.ResolveOptional(IComponentContext, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.ResolveOptional.html#Autofac_ResolutionExtensions_ResolveOptional_Autofac_IComponentContext_System_Type_Autofac_Core_Parameter___">ResolutionExtensions.ResolveOptional(IComponentContext, Type, params Parameter[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.ResolveOptional.html#Autofac_ResolutionExtensions_ResolveOptional_Autofac_IComponentContext_System_Type_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter__">ResolutionExtensions.ResolveOptional(IComponentContext, Type, IEnumerable&lt;Parameter&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.ResolveOptionalKeyed.html#Autofac_ResolutionExtensions_ResolveOptionalKeyed__1_Autofac_IComponentContext_System_Object_">ResolutionExtensions.ResolveOptionalKeyed&lt;TService&gt;(IComponentContext, object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.ResolveOptionalKeyed.html#Autofac_ResolutionExtensions_ResolveOptionalKeyed__1_Autofac_IComponentContext_System_Object_Autofac_Core_Parameter___">ResolutionExtensions.ResolveOptionalKeyed&lt;TService&gt;(IComponentContext, object, params Parameter[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.ResolveOptionalKeyed.html#Autofac_ResolutionExtensions_ResolveOptionalKeyed__1_Autofac_IComponentContext_System_Object_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter__">ResolutionExtensions.ResolveOptionalKeyed&lt;TService&gt;(IComponentContext, object, IEnumerable&lt;Parameter&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.ResolveOptionalNamed.html#Autofac_ResolutionExtensions_ResolveOptionalNamed__1_Autofac_IComponentContext_System_String_">ResolutionExtensions.ResolveOptionalNamed&lt;TService&gt;(IComponentContext, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.ResolveOptionalNamed.html#Autofac_ResolutionExtensions_ResolveOptionalNamed__1_Autofac_IComponentContext_System_String_Autofac_Core_Parameter___">ResolutionExtensions.ResolveOptionalNamed&lt;TService&gt;(IComponentContext, string, params Parameter[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.ResolveOptionalNamed.html#Autofac_ResolutionExtensions_ResolveOptionalNamed__1_Autofac_IComponentContext_System_String_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter__">ResolutionExtensions.ResolveOptionalNamed&lt;TService&gt;(IComponentContext, string, IEnumerable&lt;Parameter&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.ResolveOptionalService.html#Autofac_ResolutionExtensions_ResolveOptionalService_Autofac_IComponentContext_Autofac_Core_Service_">ResolutionExtensions.ResolveOptionalService(IComponentContext, Service)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.ResolveOptionalService.html#Autofac_ResolutionExtensions_ResolveOptionalService_Autofac_IComponentContext_Autofac_Core_Service_Autofac_Core_Parameter___">ResolutionExtensions.ResolveOptionalService(IComponentContext, Service, params Parameter[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.ResolveOptionalService.html#Autofac_ResolutionExtensions_ResolveOptionalService_Autofac_IComponentContext_Autofac_Core_Service_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter__">ResolutionExtensions.ResolveOptionalService(IComponentContext, Service, IEnumerable&lt;Parameter&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.ResolveOptional.html#Autofac_ResolutionExtensions_ResolveOptional__1_Autofac_IComponentContext_">ResolutionExtensions.ResolveOptional&lt;TService&gt;(IComponentContext)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.ResolveOptional.html#Autofac_ResolutionExtensions_ResolveOptional__1_Autofac_IComponentContext_Autofac_Core_Parameter___">ResolutionExtensions.ResolveOptional&lt;TService&gt;(IComponentContext, params Parameter[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.ResolveOptional.html#Autofac_ResolutionExtensions_ResolveOptional__1_Autofac_IComponentContext_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter__">ResolutionExtensions.ResolveOptional&lt;TService&gt;(IComponentContext, IEnumerable&lt;Parameter&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.ResolveService.html#Autofac_ResolutionExtensions_ResolveService_Autofac_IComponentContext_Autofac_Core_Service_">ResolutionExtensions.ResolveService(IComponentContext, Service)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.ResolveService.html#Autofac_ResolutionExtensions_ResolveService_Autofac_IComponentContext_Autofac_Core_Service_Autofac_Core_Parameter___">ResolutionExtensions.ResolveService(IComponentContext, Service, params Parameter[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.ResolveService.html#Autofac_ResolutionExtensions_ResolveService_Autofac_IComponentContext_Autofac_Core_Service_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter__">ResolutionExtensions.ResolveService(IComponentContext, Service, IEnumerable&lt;Parameter&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.Resolve.html#Autofac_ResolutionExtensions_Resolve__1_Autofac_IComponentContext_">ResolutionExtensions.Resolve&lt;TService&gt;(IComponentContext)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.Resolve.html#Autofac_ResolutionExtensions_Resolve__1_Autofac_IComponentContext_Autofac_Core_Parameter___">ResolutionExtensions.Resolve&lt;TService&gt;(IComponentContext, params Parameter[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.Resolve.html#Autofac_ResolutionExtensions_Resolve__1_Autofac_IComponentContext_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter__">ResolutionExtensions.Resolve&lt;TService&gt;(IComponentContext, IEnumerable&lt;Parameter&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.TryResolve.html#Autofac_ResolutionExtensions_TryResolve_Autofac_IComponentContext_System_Type_System_Object__">ResolutionExtensions.TryResolve(IComponentContext, Type, out object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.TryResolveKeyed.html#Autofac_ResolutionExtensions_TryResolveKeyed_Autofac_IComponentContext_System_Object_System_Type_System_Object__">ResolutionExtensions.TryResolveKeyed(IComponentContext, object, Type, out object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.TryResolveKeyed.html#Autofac_ResolutionExtensions_TryResolveKeyed__1_Autofac_IComponentContext_System_Object___0__">ResolutionExtensions.TryResolveKeyed&lt;T&gt;(IComponentContext, object, out T?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.TryResolveNamed.html#Autofac_ResolutionExtensions_TryResolveNamed_Autofac_IComponentContext_System_String_System_Type_System_Object__">ResolutionExtensions.TryResolveNamed(IComponentContext, string, Type, out object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.TryResolveNamed.html#Autofac_ResolutionExtensions_TryResolveNamed__1_Autofac_IComponentContext_System_String___0__">ResolutionExtensions.TryResolveNamed&lt;T&gt;(IComponentContext, string, out T?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.TryResolveService.html#Autofac_ResolutionExtensions_TryResolveService_Autofac_IComponentContext_Autofac_Core_Service_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter__System_Object__">ResolutionExtensions.TryResolveService(IComponentContext, Service, IEnumerable&lt;Parameter&gt;, out object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.TryResolveService.html#Autofac_ResolutionExtensions_TryResolveService_Autofac_IComponentContext_Autofac_Core_Service_System_Object__">ResolutionExtensions.TryResolveService(IComponentContext, Service, out object?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionExtensions.TryResolve.html#Autofac_ResolutionExtensions_TryResolve__1_Autofac_IComponentContext___0__">ResolutionExtensions.TryResolve&lt;T&gt;(IComponentContext, out T?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionValueExtensions.ResolveOptionalKeyed.html#Autofac_ResolutionValueExtensions_ResolveOptionalKeyed__1_Autofac_IComponentContext_System_Object_">ResolutionValueExtensions.ResolveOptionalKeyed&lt;TService&gt;(IComponentContext, object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionValueExtensions.ResolveOptionalKeyed.html#Autofac_ResolutionValueExtensions_ResolveOptionalKeyed__1_Autofac_IComponentContext_System_Object_Autofac_Core_Parameter___">ResolutionValueExtensions.ResolveOptionalKeyed&lt;TService&gt;(IComponentContext, object, params Parameter[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionValueExtensions.ResolveOptionalKeyed.html#Autofac_ResolutionValueExtensions_ResolveOptionalKeyed__1_Autofac_IComponentContext_System_Object_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter__">ResolutionValueExtensions.ResolveOptionalKeyed&lt;TService&gt;(IComponentContext, object, IEnumerable&lt;Parameter&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionValueExtensions.ResolveOptionalNamed.html#Autofac_ResolutionValueExtensions_ResolveOptionalNamed__1_Autofac_IComponentContext_System_String_">ResolutionValueExtensions.ResolveOptionalNamed&lt;TService&gt;(IComponentContext, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionValueExtensions.ResolveOptionalNamed.html#Autofac_ResolutionValueExtensions_ResolveOptionalNamed__1_Autofac_IComponentContext_System_String_Autofac_Core_Parameter___">ResolutionValueExtensions.ResolveOptionalNamed&lt;TService&gt;(IComponentContext, string, params Parameter[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionValueExtensions.ResolveOptionalNamed.html#Autofac_ResolutionValueExtensions_ResolveOptionalNamed__1_Autofac_IComponentContext_System_String_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter__">ResolutionValueExtensions.ResolveOptionalNamed&lt;TService&gt;(IComponentContext, string, IEnumerable&lt;Parameter&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionValueExtensions.ResolveOptional.html#Autofac_ResolutionValueExtensions_ResolveOptional__1_Autofac_IComponentContext_">ResolutionValueExtensions.ResolveOptional&lt;TService&gt;(IComponentContext)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionValueExtensions.ResolveOptional.html#Autofac_ResolutionValueExtensions_ResolveOptional__1_Autofac_IComponentContext_Autofac_Core_Parameter___">ResolutionValueExtensions.ResolveOptional&lt;TService&gt;(IComponentContext, params Parameter[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionValueExtensions.ResolveOptional.html#Autofac_ResolutionValueExtensions_ResolveOptional__1_Autofac_IComponentContext_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter__">ResolutionValueExtensions.ResolveOptional&lt;TService&gt;(IComponentContext, IEnumerable&lt;Parameter&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Autofac.ResolutionValueExtensions.TryResolve.html#Autofac_ResolutionValueExtensions_TryResolve__1_Autofac_IComponentContext_System_Nullable___0___">ResolutionValueExtensions.TryResolve&lt;T&gt;(IComponentContext, out T?)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.Features.Decorators.DecoratorContext.AppliedDecoratorTypes.html#Autofac_Features_Decorators_DecoratorContext_AppliedDecoratorTypes">AppliedDecoratorTypes</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.Features.Decorators.DecoratorContext.AppliedDecorators.html#Autofac_Features_Decorators_DecoratorContext_AppliedDecorators">AppliedDecorators</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.Features.Decorators.DecoratorContext.ComponentRegistry.html#Autofac_Features_Decorators_DecoratorContext_ComponentRegistry">ComponentRegistry</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.Features.Decorators.DecoratorContext.CurrentInstance.html#Autofac_Features_Decorators_DecoratorContext_CurrentInstance">CurrentInstance</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.Features.Decorators.DecoratorContext.ImplementationType.html#Autofac_Features_Decorators_DecoratorContext_ImplementationType">ImplementationType</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.Features.Decorators.DecoratorContext.ServiceType.html#Autofac_Features_Decorators_DecoratorContext_ServiceType">ServiceType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.Features.Decorators.DecoratorContext.ResolveComponent.html#Autofac_Features_Decorators_DecoratorContext_ResolveComponent_Autofac_ResolveRequest__">ResolveComponent(in ResolveRequest)</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+</article>
+
+
+
+      </div>
+
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright © 2007-2026 Autofac Contributors. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,302 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MultitenantContainer | Autofac </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MultitenantContainer | Autofac ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="Autofac API Reference">
+            Autofac API Reference
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+        </div>
+
+        <article data-uid="Autofac.Multitenant.MultitenantContainer">
+
+
+
+  <h1 id="Autofac_Multitenant_MultitenantContainer" data-uid="Autofac.Multitenant.MultitenantContainer" class="text-break">
+Class MultitenantContainer  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Autofac.html">Autofac</a>.<a class="xref" href="Autofac.Multitenant.html">Multitenant</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Autofac.Multitenant.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MultitenantContainer : Disposable, IContainer, ILifetimeScope, IComponentContext</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Autofac.Util.Disposable.html">Disposable</a></div>
+      <div><span class="xref">MultitenantContainer</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Autofac.IContainer.html">IContainer</a></div>
+      <div><a class="xref" href="Autofac.ILifetimeScope.html">ILifetimeScope</a></div>
+      <div><a class="xref" href="Autofac.IComponentContext.html">IComponentContext</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Autofac.Util.Disposable.Dispose.html#Autofac_Util_Disposable_Dispose">Disposable.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autofac.Util.Disposable.DisposeAsync.html#Autofac_Util_Disposable_DisposeAsync">Disposable.DisposeAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Autofac.Util.Disposable.IsDisposed.html#Autofac_Util_Disposable_IsDisposed">Disposable.IsDisposed</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.-ctor.html#Autofac_Multitenant_MultitenantContainer__ctor_Autofac_Multitenant_ITenantIdentificationStrategy_Autofac_IContainer_">MultitenantContainer(ITenantIdentificationStrategy, IContainer)</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.ApplicationContainer.html#Autofac_Multitenant_MultitenantContainer_ApplicationContainer">ApplicationContainer</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.ComponentRegistry.html#Autofac_Multitenant_MultitenantContainer_ComponentRegistry">ComponentRegistry</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.DiagnosticSource.html#Autofac_Multitenant_MultitenantContainer_DiagnosticSource">DiagnosticSource</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.Disposer.html#Autofac_Multitenant_MultitenantContainer_Disposer">Disposer</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.Tag.html#Autofac_Multitenant_MultitenantContainer_Tag">Tag</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.TenantIdentificationStrategy.html#Autofac_Multitenant_MultitenantContainer_TenantIdentificationStrategy">TenantIdentificationStrategy</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.BeginLifetimeScope.html#Autofac_Multitenant_MultitenantContainer_BeginLifetimeScope">BeginLifetimeScope()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.BeginLifetimeScope.html#Autofac_Multitenant_MultitenantContainer_BeginLifetimeScope_System_Action_Autofac_ContainerBuilder__">BeginLifetimeScope(Action&lt;ContainerBuilder&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.BeginLifetimeScope.html#Autofac_Multitenant_MultitenantContainer_BeginLifetimeScope_System_Object_">BeginLifetimeScope(object)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.BeginLifetimeScope.html#Autofac_Multitenant_MultitenantContainer_BeginLifetimeScope_System_Object_System_Action_Autofac_ContainerBuilder__">BeginLifetimeScope(object, Action&lt;ContainerBuilder&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.BeginLoadContextLifetimeScope.html#Autofac_Multitenant_MultitenantContainer_BeginLoadContextLifetimeScope_System_Object_System_Runtime_Loader_AssemblyLoadContext_System_Action_Autofac_ContainerBuilder__">BeginLoadContextLifetimeScope(object, AssemblyLoadContext, Action&lt;ContainerBuilder&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.BeginLoadContextLifetimeScope.html#Autofac_Multitenant_MultitenantContainer_BeginLoadContextLifetimeScope_System_Runtime_Loader_AssemblyLoadContext_System_Action_Autofac_ContainerBuilder__">BeginLoadContextLifetimeScope(AssemblyLoadContext, Action&lt;ContainerBuilder&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.ClearTenants.html#Autofac_Multitenant_MultitenantContainer_ClearTenants">ClearTenants()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.ClearTenantsAsync.html#Autofac_Multitenant_MultitenantContainer_ClearTenantsAsync">ClearTenantsAsync()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.ConfigureTenant.html#Autofac_Multitenant_MultitenantContainer_ConfigureTenant_System_Object_System_Action_Autofac_ContainerBuilder__">ConfigureTenant(object?, Action&lt;ContainerBuilder&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.Dispose.html#Autofac_Multitenant_MultitenantContainer_Dispose_System_Boolean_">Dispose(bool)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.DisposeAsync.html#Autofac_Multitenant_MultitenantContainer_DisposeAsync_System_Boolean_">DisposeAsync(bool)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.GetCurrentTenantScope.html#Autofac_Multitenant_MultitenantContainer_GetCurrentTenantScope">GetCurrentTenantScope()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.GetTenantScope.html#Autofac_Multitenant_MultitenantContainer_GetTenantScope_System_Object_">GetTenantScope(object?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.GetTenants.html#Autofac_Multitenant_MultitenantContainer_GetTenants">GetTenants()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.ReconfigureTenant.html#Autofac_Multitenant_MultitenantContainer_ReconfigureTenant_System_Object_System_Action_Autofac_ContainerBuilder__">ReconfigureTenant(object?, Action&lt;ContainerBuilder&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.ReconfigureTenantAsync.html#Autofac_Multitenant_MultitenantContainer_ReconfigureTenantAsync_System_Object_System_Action_Autofac_ContainerBuilder__">ReconfigureTenantAsync(object?, Action&lt;ContainerBuilder&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.RemoveTenant.html#Autofac_Multitenant_MultitenantContainer_RemoveTenant_System_Object_">RemoveTenant(object?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.RemoveTenantAsync.html#Autofac_Multitenant_MultitenantContainer_RemoveTenantAsync_System_Object_">RemoveTenantAsync(object?)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.ResolveComponent.html#Autofac_Multitenant_MultitenantContainer_ResolveComponent_Autofac_ResolveRequest__">ResolveComponent(in ResolveRequest)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.TenantIsConfigured.html#Autofac_Multitenant_MultitenantContainer_TenantIsConfigured_System_Object_">TenantIsConfigured(object?)</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h2 class="section" id="events">Events
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.ChildLifetimeScopeBeginning.html">ChildLifetimeScopeBeginning</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.CurrentScopeEnding.html">CurrentScopeEnding</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.ResolveOperationBeginning.html">ResolveOperationBeginning</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+</article>
+
+
+
+      </div>
+
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright © 2007-2026 Autofac Contributors. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
