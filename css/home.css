@@ -236,7 +236,7 @@ p.lead {
   }
 
   .navbar-fixed-top {
-     margin-bottom: 0 !important; 
+     margin-bottom: 0 !important;
   }
 }
 
@@ -261,7 +261,7 @@ p.lead {
 
 /* Tablet
 ------------------------- */
-@media only screen 
+@media only screen
   and (max-width: 767px) {
   /* Remove any padding from the body */
    html, body{
@@ -273,8 +273,8 @@ p.lead {
   }
 
   .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
-     margin-right: 0 !important; 
-     margin-left: 0 !important; 
+     margin-right: 0 !important;
+     margin-left: 0 !important;
   }
   .copy-container {
     padding-top:20px;
@@ -311,7 +311,7 @@ p.lead {
 }
 
 /* Small Tablet (600px by 800px) Portrait */
-@media only screen 
+@media only screen
   and (max-device-width: 600px)
   and (orientation: portrait) {
    .jumbotron{
@@ -337,7 +337,7 @@ p.lead {
 
 /* Landscape phones
 ------------------------- */
-@media only screen 
+@media only screen
 and (max-width: 480px) {
   /* Remove padding above jumbotron */
   body {

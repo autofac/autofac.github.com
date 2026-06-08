@@ -8,34 +8,34 @@ css: ['/css/home.min.css']
 -->
 <div class="page-wrapper">
 <header class="jumbotron">
-	<div class="container-fluid centre-spacing">
-		<div class="row-fluid">
-			<div class="span12 character-wrap">
-				<img class="character" src="img/autofac_web-banner_character.svg" />
-			</div>
-			<div class="span12 copy-container">
-				<div class="container-fluid">
-					<div class="row-fluid">
-					<img class="logo-type" src="img/autofac_logo-type.svg" />
-					<p class="lead">Autofac is an addictive <a class="header-link" href="http://martinfowler.com/articles/injection.html">Inversion of Control container</a> for .NET Core, ASP.NET Core, .NET 4.5.1+, Universal Windows apps, and more.
-					</p>
-					<div class="action-buttons">
-						<a href="https://autofac.readthedocs.io/en/latest/getting-started/index.html" class="btn btn-primary btn-large header-link-btn"><span>Quick Start Guide</span></a>
-						<a href="https://www.nuget.org/packages?q=Owner%3A%22Autofac%22+Autofac*" class="btn btn-primary btn-large header-link-btn"><span>Download via NuGet</span></a>
-					</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+ <div class="container-fluid centre-spacing">
+  <div class="row-fluid">
+   <div class="span12 character-wrap">
+    <img class="character" alt="Autofac Robot" src="img/autofac_web-banner_character.svg" />
+   </div>
+   <div class="span12 copy-container">
+    <div class="container-fluid">
+     <div class="row-fluid">
+     <img class="logo-type" alt="Autofac Logo" src="img/autofac_logo-type.svg" />
+     <p class="lead">Autofac is an addictive <a class="header-link" href="http://martinfowler.com/articles/injection.html">Inversion of Control container</a> for .NET Core, ASP.NET Core, .NET 4.5.1+, Universal Windows apps, and more.
+     </p>
+     <div class="action-buttons">
+      <a href="https://autofac.readthedocs.io/en/latest/getting-started/index.html" class="btn btn-primary btn-large header-link-btn"><span>Quick Start Guide</span></a>
+      <a href="https://www.nuget.org/packages?q=Owner%3A%22Autofac%22+Autofac*" class="btn btn-primary btn-large header-link-btn"><span>Download via NuGet</span></a>
+     </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
 </header>
 
 <div class="container">
-	<div class="marketing">
-		<div class="row-fluid">
-			<div class="span6">
-				<h2>Register Components</h2>
-				<p>Build up containers with <a href="https://autofac.readthedocs.io/en/latest/register/registration.html">lambdas, types, or pre-built instances</a> of components. You can also <a href="https://autofac.readthedocs.io/en/latest/register/scanning.html">scan assemblies for registrations</a>.</p>
+ <div class="marketing">
+  <div class="row-fluid">
+   <div class="span6">
+    <h2>Register Components</h2>
+    <p>Build up containers with <a href="https://autofac.readthedocs.io/en/latest/register/registration.html">lambdas, types, or pre-built instances</a> of components. You can also <a href="https://autofac.readthedocs.io/en/latest/register/scanning.html">scan assemblies for registrations</a>.</p>
 <pre class="prettyprint linenums">
 var builder = new ContainerBuilder();
 
@@ -53,10 +53,10 @@ builder.RegisterAssemblyTypes(myAssembly)
 
 var container = builder.Build();
 </pre>
-			</div>
-			<div class="span6">
-				<h2>Express Dependencies</h2>
-				<p>Let Autofac inject your constructor parameters for you. It can also handle <a href="https://autofac.readthedocs.io/en/latest/register/prop-method-injection.html">property and method injection</a>.</p>
+   </div>
+   <div class="span6">
+    <h2>Express Dependencies</h2>
+    <p>Let Autofac inject your constructor parameters for you. It can also handle <a href="https://autofac.readthedocs.io/en/latest/register/prop-method-injection.html">property and method injection</a>.</p>
 <pre class="prettyprint linenums">
 public class TaskController
 {
@@ -74,14 +74,14 @@ public class TaskController
   }
 }
 </pre>
-			</div>
-		</div>
-	</div>
-	<div class="marketing">
-		<div class="row-fluid">
-			<div class="span6">
-				<h2>Flexible Module System</h2>
-				<p>Strike a balance between the deployment-time benefits of <a href="https://autofac.readthedocs.io/en/latest/configuration/xml.html">XML configuration</a> and the power of code with <a href="https://autofac.readthedocs.io/en/latest/configuration/modules.html">Autofac modules</a>.</p>
+   </div>
+  </div>
+ </div>
+ <div class="marketing">
+  <div class="row-fluid">
+   <div class="span6">
+    <h2>Flexible Module System</h2>
+    <p>Strike a balance between the deployment-time benefits of <a href="https://autofac.readthedocs.io/en/latest/configuration/xml.html">XML configuration</a> and the power of code with <a href="https://autofac.readthedocs.io/en/latest/configuration/modules.html">Autofac modules</a>.</p>
 <pre class="prettyprint linenums">
 // Specify complex registrations in code
 public class CarTransportModule : Module
@@ -109,10 +109,10 @@ public class CarTransportModule : Module
   &lt;/module&gt;
 &lt;/autofac&gt;
 </pre>
-			</div>
-			<div class="span6">
-				<h2>Simple Extension Points</h2>
-				<p>Autofac provides <a href="https://github.com/autofac/Autofac/wiki/Lifetime-Events">activation events</a> to let you know when components are being activated or released, allowing for a lot of customization with little code.</p>
+   </div>
+   <div class="span6">
+    <h2>Simple Extension Points</h2>
+    <p>Autofac provides <a href="https://github.com/autofac/Autofac/wiki/Lifetime-Events">activation events</a> to let you know when components are being activated or released, allowing for a lot of customization with little code.</p>
 <pre class="prettyprint linenums">
 var builder = new ContainerBuilder();
 
@@ -129,29 +129,29 @@ builder.RegisterType&lt;Processor&gt;()
 
 var container = builder.Build();
 </pre>
-			</div>
-		</div>
-	</div>
-	<div class="marketing">
-		<h1>Dive In</h1>
-		<p class="marketing-byline">Want to download Autofac or learn more? Here's how.</p>
-		<div class="row-fluid">
-			<div class="span4">
-				<img class="marketing-img" src="img/icon_arrow.png" alt="Download" width="128" height="128" />
-				<h2>Download</h2>
-				<p>The easiest way to get Autofac is through NuGet. <a href="https://www.nuget.org/packages?q=Owner%3A%22Autofac%22+Autofac*">Here are the Autofac packages in the NuGet Gallery</a>.</p>
-			</div>
-			<div class="span4">
-				<img class="marketing-img" src="img/icon_school.png" alt="Learn" width="128" height="128" />
-				<h2>Learn</h2>
-				<p>If you're new to Autofac, <a href="https://autofac.readthedocs.io/en/latest/getting-started/index.html">the Quick Start guide</a> is a good place to start. There's also <a href="https://autofac.readthedocs.io/">an official documentation site</a>, <a href="/apidoc/">API documentation</a>, and <a href="https://github.com/autofac/Autofac/wiki">lots of info on the Autofac wiki</a>. For questions, hit us up on <a href="https://stackoverflow.com/questions/tagged/autofac">StackOverflow</a>.</p>
-			</div>
-			<div class="span4">
-				<img class="marketing-img" src="img/icon_people.png" alt="Get Involved" width="128" height="128" />
-				<h2>Get Involved</h2>
-				<p>Found an issue? <a href="https://github.com/autofac/Autofac/issues">Let us know!</a> Want to help us improve Autofac? <a href="https://github.com/autofac/Autofac">Check out the source</a> and our <a href="https://autofac.readthedocs.io/en/latest/contributors.html">contributor's guide</a>, and drop us a line on <a href="https://groups.google.com/forum/#forum/autofac">the discussion forum</a>!</p>
-			</div>
-		</div>
-	</div>
+   </div>
+  </div>
+ </div>
+ <div class="marketing">
+  <h1>Dive In</h1>
+  <p class="marketing-byline">Want to download Autofac or learn more? Here's how.</p>
+  <div class="row-fluid">
+   <div class="span4">
+    <img class="marketing-img" src="img/icon_arrow.png" alt="Download" width="128" height="128" />
+    <h2>Download</h2>
+    <p>The easiest way to get Autofac is through NuGet. <a href="https://www.nuget.org/packages?q=Owner%3A%22Autofac%22+Autofac*">Here are the Autofac packages in the NuGet Gallery</a>.</p>
+   </div>
+   <div class="span4">
+    <img class="marketing-img" src="img/icon_school.png" alt="Learn" width="128" height="128" />
+    <h2>Learn</h2>
+    <p>If you're new to Autofac, <a href="https://autofac.readthedocs.io/en/latest/getting-started/index.html">the Quick Start guide</a> is a good place to start. There's also <a href="https://autofac.readthedocs.io/">an official documentation site</a>, <a href="/apidoc/">API documentation</a>, and <a href="https://github.com/autofac/Autofac/wiki">lots of info on the Autofac wiki</a>. For questions, hit us up on <a href="https://stackoverflow.com/questions/tagged/autofac">StackOverflow</a>.</p>
+   </div>
+   <div class="span4">
+    <img class="marketing-img" src="img/icon_people.png" alt="Get Involved" width="128" height="128" />
+    <h2>Get Involved</h2>
+    <p>Found an issue? <a href="https://github.com/autofac/Autofac/issues">Let us know!</a> Want to help us improve Autofac? <a href="https://github.com/autofac/Autofac">Check out the source</a> and our <a href="https://autofac.readthedocs.io/en/latest/contributors.html">contributor's guide</a>, and drop us a line on <a href="https://groups.google.com/forum/#forum/autofac">the discussion forum</a>!</p>
+   </div>
+  </div>
+ </div>
 </div>
 </div>
