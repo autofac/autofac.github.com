@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,8 @@ Constructor AutofacDependencyResolver
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Autofac.Integration.Mvc.AutofacDependencyResolver.html">AutofacDependencyResolver</a> class.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -133,7 +134,8 @@ Constructor AutofacDependencyResolver
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>container</code> <a class="xref" href="../Autofac.ILifetimeScope.html">ILifetimeScope</a></dt>
-  <dd></dd>
+  <dd><p>The container from which nested lifetime scopes will be created.</p>
+</dd>
 </dl>
 
 
@@ -154,7 +156,8 @@ Constructor AutofacDependencyResolver
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Autofac.Integration.Mvc.AutofacDependencyResolver.html">AutofacDependencyResolver</a> class.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -164,9 +167,12 @@ Constructor AutofacDependencyResolver
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>container</code> <a class="xref" href="../Autofac.ILifetimeScope.html">ILifetimeScope</a></dt>
-  <dd></dd>
-  <dt><code>configurationAction</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="../Autofac.ContainerBuilder.html">ContainerBuilder</a>&gt;</dt>
-  <dd></dd>
+  <dd><p>The container from which nested lifetime scopes will be created.</p>
+</dd>
+  <dt><code>configurationAction</code> <span class="xref">Action</span>&lt;<a class="xref" href="../Autofac.ContainerBuilder.html">ContainerBuilder</a>&gt;</dt>
+  <dd><p>Action on a <a class="xref" href="../Autofac.ContainerBuilder.html">ContainerBuilder</a>
+that adds component registrations visible only in nested lifetime scopes.</p>
+</dd>
 </dl>
 
 
@@ -187,7 +193,8 @@ Constructor AutofacDependencyResolver
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Autofac.Integration.Mvc.AutofacDependencyResolver.html">AutofacDependencyResolver</a> class.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -197,9 +204,12 @@ Constructor AutofacDependencyResolver
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>container</code> <a class="xref" href="../Autofac.ILifetimeScope.html">ILifetimeScope</a></dt>
-  <dd></dd>
+  <dd><p>The container from which nested lifetime scopes will be created.</p>
+</dd>
   <dt><code>lifetimeScopeProvider</code> <a class="xref" href="Autofac.Integration.Mvc.ILifetimeScopeProvider.html">ILifetimeScopeProvider</a></dt>
-  <dd></dd>
+  <dd><p>A <a class="xref" href="Autofac.Integration.Mvc.ILifetimeScopeProvider.html">ILifetimeScopeProvider</a> implementation for
+creating new lifetime scopes.</p>
+</dd>
 </dl>
 
 
@@ -220,7 +230,8 @@ Constructor AutofacDependencyResolver
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Autofac.Integration.Mvc.AutofacDependencyResolver.html">AutofacDependencyResolver</a> class.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -230,11 +241,16 @@ Constructor AutofacDependencyResolver
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>container</code> <a class="xref" href="../Autofac.ILifetimeScope.html">ILifetimeScope</a></dt>
-  <dd></dd>
+  <dd><p>The container from which nested lifetime scopes will be created.</p>
+</dd>
   <dt><code>lifetimeScopeProvider</code> <a class="xref" href="Autofac.Integration.Mvc.ILifetimeScopeProvider.html">ILifetimeScopeProvider</a></dt>
-  <dd></dd>
-  <dt><code>configurationAction</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="../Autofac.ContainerBuilder.html">ContainerBuilder</a>&gt;</dt>
-  <dd></dd>
+  <dd><p>A <a class="xref" href="Autofac.Integration.Mvc.ILifetimeScopeProvider.html">ILifetimeScopeProvider</a> implementation for
+creating new lifetime scopes.</p>
+</dd>
+  <dt><code>configurationAction</code> <span class="xref">Action</span>&lt;<a class="xref" href="../Autofac.ContainerBuilder.html">ContainerBuilder</a>&gt;</dt>
+  <dd><p>Action on a <a class="xref" href="../Autofac.ContainerBuilder.html">ContainerBuilder</a>
+that adds component registrations visible only in nested lifetime scopes.</p>
+</dd>
 </dl>
 
 

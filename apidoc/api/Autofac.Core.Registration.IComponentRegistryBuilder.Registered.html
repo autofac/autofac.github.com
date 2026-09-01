@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Event Registered | Autofac ">
       
-      
+      <meta name="description" content="Fired whenever a component is registered - either explicitly or via a .">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -97,7 +97,9 @@ Event Registered
   <dl><dt>Assembly</dt><dd>Autofac.dll</dd></dl>
 </div>
 
-<div class="markdown summary"></div>
+<div class="markdown summary"><p>Fired whenever a component is registered - either explicitly or via a
+<a class="xref" href="Autofac.Core.IRegistrationSource.html">IRegistrationSource</a>.</p>
+</div>
 <div class="markdown conceptual"></div>
 
 <div class="codewrapper">
@@ -107,8 +109,8 @@ Event Registered
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="Autofac.Core.ComponentRegisteredEventArgs.html">ComponentRegisteredEventArgs</a>&gt;</dt>
-  <dd></dd>
+  <dt><span class="xref">EventHandler</span>&lt;<a class="xref" href="Autofac.Core.ComponentRegisteredEventArgs.html">ComponentRegisteredEventArgs</a>&gt;</dt>
+  <dd>Fired whenever a component is registered - either explicitly or via a .</dd>
 </dl>
 
 

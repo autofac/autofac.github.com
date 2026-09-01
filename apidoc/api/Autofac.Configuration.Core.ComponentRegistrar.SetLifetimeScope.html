@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,8 @@ Method SetLifetimeScope
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Sets the lifetime scope for the component.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -132,19 +133,25 @@ Method SetLifetimeScope
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><code>component</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration.iconfiguration">IConfiguration</a></dt>
-  <dd></dd>
-  <dt><code>registrar</code> <a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>, TReflectionActivatorData, TSingleRegistrationStyle&gt;</dt>
-  <dd></dd>
+  <dt><code>component</code> <span class="xref">IConfiguration</span></dt>
+  <dd><p>The configuration data containing the component. The <code>instanceScope</code>
+content will be read from this configuration object and used
+as the lifetime scope.</p>
+</dd>
+  <dt><code>registrar</code> <a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;<span class="xref">object</span>, TReflectionActivatorData, TSingleRegistrationStyle&gt;</dt>
+  <dd><p>The component registration on which the lifetime scope is being set.</p>
+</dd>
 </dl>
 
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>TReflectionActivatorData</code></dt>
-  <dd></dd>
+  <dd><p>Activator data type.</p>
+</dd>
   <dt><code>TSingleRegistrationStyle</code></dt>
-  <dd></dd>
+  <dd><p>Registration style.</p>
+</dd>
 </dl>
 
 
@@ -152,7 +159,26 @@ Method SetLifetimeScope
 
 
 
+<h4 class="section" id="Autofac_Configuration_Core_ComponentRegistrar_SetLifetimeScope__2_Microsoft_Extensions_Configuration_IConfiguration_Autofac_Builder_IRegistrationBuilder_System_Object___0___1___remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>
+By default, this implementation understands the following grammar:
+</p>
+<table><thead><tr><th class="term">Values</th><th class="description">Lifetime Scope</th></tr></thead><tbody><tr><td class="term"><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, empty</td><td class="description">Default - no specified scope</td></tr><tr><td class="term"><code>single-instance</code>, <code>SingleInstance</code></td><td class="description">Singleton</td></tr><tr><td class="term"><code>instance-per-lifetime-scope</code>, <code>InstancePerLifetimeScope</code>, <code>per-lifetime-scope</code>, <code>PerLifetimeScope</code></td><td class="description">One instance per nested lifetime scope</td></tr><tr><td class="term"><code>instance-per-dependency</code>, <code>InstancePerDependency</code>, <code>per-dependency</code>, <code>PerDependency</code></td><td class="description">One instance for each resolution call</td></tr><tr><td class="term"><code>instance-per-request</code>, <code>InstancePerRequest</code>, <code>per-request</code>, <code>PerRequest</code></td><td class="description">One instance per request lifetime scope</td></tr></tbody></table>
+<p>
+You may override this method to extend the available grammar for lifetime scope.
+</p>
+</div>
 
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><span class="xref">ArgumentNullException</span></dt>
+  <dd><p>Thrown if <code class="paramref">registrar</code> or <code class="paramref">component</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+  <dt><span class="xref">InvalidOperationException</span></dt>
+  <dd><p>Thrown if the value for lifetime scope is not part of the
+recognized grammar.</p>
+</dd>
+</dl>
 
 
 

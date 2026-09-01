@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class ServiceHostProxyBuilder | Autofac ">
       
-      
+      <meta name="description" content="Proxy builder that has an additional method to create proxies usable in WCF multitenant hosting.">
       <link rel="icon" href="../../favicon.ico">
       <link rel="stylesheet" href="../../public/docfx.min.css">
       <link rel="stylesheet" href="../../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,9 @@ Class ServiceHostProxyBuilder
   <dl><dt>Assembly</dt><dd>Autofac.Multitenant.Wcf.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Proxy builder that has an additional method to create proxies usable
+in WCF multitenant hosting.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -110,7 +112,7 @@ public class ServiceHostProxyBuilder : DefaultProxyBuilder</code></pre>
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><span class="xref">DefaultProxyBuilder</span></div>
       <div><span class="xref">ServiceHostProxyBuilder</span></div>
     </dd>
@@ -122,6 +124,14 @@ public class ServiceHostProxyBuilder : DefaultProxyBuilder</code></pre>
 
 
 
+  <h2 id="Autofac_Multitenant_Wcf_DynamicProxy_ServiceHostProxyBuilder_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+The primary point of interest in this builder type is the
+<a class="xref" href="Autofac.Multitenant.Wcf.DynamicProxy.ServiceHostProxyBuilder.CreateWcfProxyType.html#Autofac_Multitenant_Wcf_DynamicProxy_ServiceHostProxyBuilder_CreateWcfProxyType_System_Type_">CreateWcfProxyType(Type)</a>
+method, which is used to create an interface proxy type that is hostable
+by WCF.
+</p>
+</div>
 
   <h2 class="section" id="constructors">Constructors
 </h2>
@@ -136,7 +146,8 @@ public class ServiceHostProxyBuilder : DefaultProxyBuilder</code></pre>
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.Wcf.DynamicProxy.ServiceHostProxyBuilder.CreateWcfProxyType.html#Autofac_Multitenant_Wcf_DynamicProxy_ServiceHostProxyBuilder_CreateWcfProxyType_System_Type_">CreateWcfProxyType(Type)</a></dt>
-    <dd></dd>
+    <dd><p>Creates an interface proxy type that can be used by the WCF host.</p>
+</dd>
   </dl>
 
 

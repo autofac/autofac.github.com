@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class DecoratorService | Autofac ">
       
-      
+      <meta name="description" content="A service that has been registered for the purpose of decorating other components.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,8 @@ Class DecoratorService
   <dl><dt>Assembly</dt><dd>Autofac.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>A service that has been registered for the purpose of decorating other components.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -109,7 +110,7 @@ Class DecoratorService
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><a class="xref" href="Autofac.Core.Service.html">Service</a></div>
       <div><span class="xref">DecoratorService</span></div>
     </dd>
@@ -134,13 +135,17 @@ Class DecoratorService
 
 
 
+  <h2 id="Autofac_Features_Decorators_DecoratorService_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This service type is used to locate decorator services and is intended for internal use only.</p>
+</div>
 
   <h2 class="section" id="constructors">Constructors
 </h2>
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Features.Decorators.DecoratorService.-ctor.html#Autofac_Features_Decorators_DecoratorService__ctor_System_Type_System_Func_Autofac_Features_Decorators_IDecoratorContext_System_Boolean__">DecoratorService(Type, Func&lt;IDecoratorContext, bool&gt;?)</a></dt>
-    <dd></dd>
+    <dd><p>Initializes a new instance of the <a class="xref" href="Autofac.Features.Decorators.DecoratorService.html">DecoratorService</a> class.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="properties">Properties
@@ -148,15 +153,18 @@ Class DecoratorService
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Features.Decorators.DecoratorService.Condition.html#Autofac_Features_Decorators_DecoratorService_Condition">Condition</a></dt>
-    <dd></dd>
+    <dd><p>Gets the condition that must be met for the decorator to be applied.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Features.Decorators.DecoratorService.Description.html#Autofac_Features_Decorators_DecoratorService_Description">Description</a></dt>
-    <dd></dd>
+    <dd><p>Gets a human-readable description of the service.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Features.Decorators.DecoratorService.ServiceType.html#Autofac_Features_Decorators_DecoratorService_ServiceType">ServiceType</a></dt>
-    <dd></dd>
+    <dd><p>Gets the type of the service.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -164,7 +172,9 @@ Class DecoratorService
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Features.Decorators.DecoratorService.ChangeType.html#Autofac_Features_Decorators_DecoratorService_ChangeType_System_Type_">ChangeType(Type)</a></dt>
-    <dd></dd>
+    <dd><p>Return a new service of the same kind, but carrying
+<code class="paramref">newType</code> as the <a class="xref" href="Autofac.Core.IServiceWithType.ServiceType.html#Autofac_Core_IServiceWithType_ServiceType">ServiceType</a>.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Features.Decorators.DecoratorService.Equals.html#Autofac_Features_Decorators_DecoratorService_Equals_Autofac_Features_Decorators_DecoratorService_">Equals(DecoratorService?)</a></dt>
@@ -172,11 +182,13 @@ Class DecoratorService
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Features.Decorators.DecoratorService.Equals.html#Autofac_Features_Decorators_DecoratorService_Equals_System_Object_">Equals(object?)</a></dt>
-    <dd></dd>
+    <dd><p>Determines whether the specified <span class="xref">object</span> is equal to the current <span class="xref">object</span>.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Features.Decorators.DecoratorService.GetHashCode.html#Autofac_Features_Decorators_DecoratorService_GetHashCode">GetHashCode()</a></dt>
-    <dd></dd>
+    <dd><p>Serves as a hash function for a particular type.</p>
+</dd>
   </dl>
 
 

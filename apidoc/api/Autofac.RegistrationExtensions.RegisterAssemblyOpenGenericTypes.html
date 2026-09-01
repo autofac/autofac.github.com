@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,25 +123,30 @@ Method RegisterAssemblyOpenGenericTypes
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Register all open generic types in an assembly.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static IRegistrationBuilder&lt;object, OpenGenericScanningActivatorData, DynamicRegistrationStyle&gt; RegisterAssemblyOpenGenericTypes(this ContainerBuilder builder, params Assembly[] assemblies)</code></pre>
+  <pre><code class="lang-csharp hljs">[RequiresUnreferencedCode(&quot;Assembly scanning is unlikely to be compatible with member-level trimming; the linker will not be able to determine which types to preserve.&quot;)]
+public static IRegistrationBuilder&lt;object, OpenGenericScanningActivatorData, DynamicRegistrationStyle&gt; RegisterAssemblyOpenGenericTypes(this ContainerBuilder builder, params Assembly[] assemblies)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>builder</code> <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a></dt>
-  <dd></dd>
-  <dt><code>assemblies</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.assembly">Assembly</a>[]</dt>
-  <dd></dd>
+  <dd><p>Container builder.</p>
+</dd>
+  <dt><code>assemblies</code> <span class="xref">Assembly</span>[]</dt>
+  <dd><p>The assemblies from which to register open generic types.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>, <a class="xref" href="Autofac.Features.Scanning.OpenGenericScanningActivatorData.html">OpenGenericScanningActivatorData</a>, <a class="xref" href="Autofac.Builder.DynamicRegistrationStyle.html">DynamicRegistrationStyle</a>&gt;</dt>
-  <dd></dd>
+  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;<span class="xref">object</span>, <a class="xref" href="Autofac.Features.Scanning.OpenGenericScanningActivatorData.html">OpenGenericScanningActivatorData</a>, <a class="xref" href="Autofac.Builder.DynamicRegistrationStyle.html">DynamicRegistrationStyle</a>&gt;</dt>
+  <dd><p>Registration builder allowing the registration to be configured.</p>
+</dd>
 </dl>
 
 

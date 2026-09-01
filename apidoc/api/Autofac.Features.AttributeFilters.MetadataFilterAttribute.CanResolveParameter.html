@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,25 +123,31 @@ Method CanResolveParameter
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Checks a constructor parameter can be resolved based on metadata requirements.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public override bool CanResolveParameter(ParameterInfo parameter, IComponentContext context)</code></pre>
+  <pre><code class="lang-csharp hljs">[UnconditionalSuppressMessage(&quot;AOT&quot;, &quot;IL3050:RequiresDynamicCode&quot;, Justification = &quot;MetadataFilter is an opt-in attribute the consumer applies to a constructor parameter. The MakeGenericMethod over the parameter&#39;s element type only runs when such a parameter is resolved; the dynamic-code/preservation responsibility lies with the consumer that applied [MetadataFilter]. The base ParameterFilterAttribute cannot be marked [RequiresDynamicCode] without forcing it on all filter attributes.&quot;)]
+[UnconditionalSuppressMessage(&quot;Trimming&quot;, &quot;IL2060:MakeGenericMethod&quot;, Justification = &quot;The generic argument is the element type of the parameter being filtered, supplied by the consumer&#39;s metadata-filtered registration. Preserving it is the responsibility of the consumer that opted into [MetadataFilter].&quot;)]
+public override bool CanResolveParameter(ParameterInfo parameter, IComponentContext context)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo">ParameterInfo</a></dt>
-  <dd></dd>
+  <dt><code>parameter</code> <span class="xref">ParameterInfo</span></dt>
+  <dd><p>The specific parameter being resolved that is marked with this attribute.</p>
+</dd>
   <dt><code>context</code> <a class="xref" href="Autofac.IComponentContext.html">IComponentContext</a></dt>
-  <dd></dd>
+  <dd><p>The component context under which the parameter is being resolved.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-  <dd></dd>
+  <dt><span class="xref">bool</span></dt>
+  <dd><p>true if parameter can be resolved; otherwise, false.</p>
+</dd>
 </dl>
 
 

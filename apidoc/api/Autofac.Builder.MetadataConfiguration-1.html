@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class MetadataConfiguration&lt;TMetadata&gt; | Autofac ">
       
-      
+      <meta name="description" content="Used with the WithMetadata configuration method to associate key-value pairs with an .">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,9 @@ Class MetadataConfiguration&lt;TMetadata&gt;
   <dl><dt>Assembly</dt><dd>Autofac.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Used with the WithMetadata configuration method to
+associate key-value pairs with an <a class="xref" href="Autofac.Core.IComponentRegistration.html">IComponentRegistration</a>.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -108,13 +110,15 @@ Class MetadataConfiguration&lt;TMetadata&gt;
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>TMetadata</code></dt>
-    <dd></dd>
+    <dd><p>Interface with properties whose names correspond to
+the property keys.</p>
+</dd>
   </dl>
 
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><span class="xref">MetadataConfiguration&lt;TMetadata&gt;</span></div>
     </dd>
   </dl>
@@ -125,6 +129,9 @@ Class MetadataConfiguration&lt;TMetadata&gt;
 
 
 
+  <h2 id="Autofac_Builder_MetadataConfiguration_1_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This feature was suggested by OJ Reeves (@TheColonial).</p>
+</div>
 
   <h2 class="section" id="constructors">Constructors
 </h2>
@@ -139,7 +146,8 @@ Class MetadataConfiguration&lt;TMetadata&gt;
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Builder.MetadataConfiguration-1.For.html#Autofac_Builder_MetadataConfiguration_1_For__1_System_Linq_Expressions_Expression_System_Func__0___0_____0_">For&lt;TProperty&gt;(Expression&lt;Func&lt;TMetadata, TProperty&gt;&gt;, TProperty)</a></dt>
-    <dd></dd>
+    <dd><p>Set one of the property values.</p>
+</dd>
   </dl>
 
 

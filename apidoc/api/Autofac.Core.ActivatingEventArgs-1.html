@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class ActivatingEventArgs&lt;T&gt; | Autofac ">
       
-      
+      <meta name="description" content="Fired after the construction of an instance but before that instance is shared with any other or any members are invoked on it.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,9 @@ Class ActivatingEventArgs&lt;T&gt;
   <dl><dt>Assembly</dt><dd>Autofac.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Fired after the construction of an instance but before that instance
+is shared with any other or any members are invoked on it.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -108,14 +110,15 @@ Class ActivatingEventArgs&lt;T&gt;
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd></dd>
+    <dd><p>The type of instance being used to satisfy the request.</p>
+</dd>
   </dl>
 
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventargs">EventArgs</a></div>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">EventArgs</span></div>
       <div><span class="xref">ActivatingEventArgs&lt;T&gt;</span></div>
     </dd>
   </dl>
@@ -138,7 +141,8 @@ Class ActivatingEventArgs&lt;T&gt;
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.ActivatingEventArgs-1.-ctor.html#Autofac_Core_ActivatingEventArgs_1__ctor_Autofac_IComponentContext_Autofac_Core_Service_Autofac_Core_IComponentRegistration_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter___0_">ActivatingEventArgs(IComponentContext, Service, IComponentRegistration, IEnumerable&lt;Parameter&gt;, T)</a></dt>
-    <dd></dd>
+    <dd><p>Initializes a new instance of the <a class="xref" href="Autofac.Core.ActivatingEventArgs-1.html">ActivatingEventArgs&lt;T&gt;</a> class.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="properties">Properties
@@ -146,23 +150,28 @@ Class ActivatingEventArgs&lt;T&gt;
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.ActivatingEventArgs-1.Component.html#Autofac_Core_ActivatingEventArgs_1_Component">Component</a></dt>
-    <dd></dd>
+    <dd><p>Gets the component providing the instance.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.ActivatingEventArgs-1.Context.html#Autofac_Core_ActivatingEventArgs_1_Context">Context</a></dt>
-    <dd></dd>
+    <dd><p>Gets the context in which the activation occurred.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.ActivatingEventArgs-1.Instance.html#Autofac_Core_ActivatingEventArgs_1_Instance">Instance</a></dt>
-    <dd></dd>
+    <dd><p>Gets or sets the instance that will be used to satisfy the request.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.ActivatingEventArgs-1.Parameters.html#Autofac_Core_ActivatingEventArgs_1_Parameters">Parameters</a></dt>
-    <dd></dd>
+    <dd><p>Gets the parameters supplied to the activator.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.ActivatingEventArgs-1.Service.html#Autofac_Core_ActivatingEventArgs_1_Service">Service</a></dt>
-    <dd></dd>
+    <dd><p>Gets the service being resolved.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -170,7 +179,8 @@ Class ActivatingEventArgs&lt;T&gt;
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.ActivatingEventArgs-1.ReplaceInstance.html#Autofac_Core_ActivatingEventArgs_1_ReplaceInstance_System_Object_">ReplaceInstance(object)</a></dt>
-    <dd></dd>
+    <dd><p>The instance can be replaced if needed, e.g. by an interface proxy.</p>
+</dd>
   </dl>
 
 

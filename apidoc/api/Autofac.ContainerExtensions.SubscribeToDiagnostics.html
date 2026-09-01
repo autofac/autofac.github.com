@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,8 @@ Method SubscribeToDiagnostics
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Subscribes a diagnostic tracer to Autofac events.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -133,9 +134,11 @@ Method SubscribeToDiagnostics
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>container</code> <a class="xref" href="Autofac.IContainer.html">IContainer</a></dt>
-  <dd></dd>
+  <dd><p>The container with the diagnostics to which you want to subscribe.</p>
+</dd>
   <dt><code>tracer</code> <a class="xref" href="Autofac.Diagnostics.DiagnosticTracerBase.html">DiagnosticTracerBase</a></dt>
-  <dd></dd>
+  <dd><p>A diagnostic tracer that will be subscribed to the lifetime scope's diagnostic source.</p>
+</dd>
 </dl>
 
 
@@ -145,6 +148,15 @@ Method SubscribeToDiagnostics
 
 
 
+<h4 class="section" id="Autofac_ContainerExtensions_SubscribeToDiagnostics_Autofac_IContainer_Autofac_Diagnostics_DiagnosticTracerBase__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>
+This is a convenience method that attaches the <code class="paramref">tracer</code> to the
+<span class="xref">System.Diagnostics.DiagnosticListener</span> associated with the <code class="paramref">container</code>. If you
+have an event listener that isn't a <a class="xref" href="Autofac.Diagnostics.DiagnosticTracerBase.html">DiagnosticTracerBase</a> you can
+use standard <span class="xref">System.Diagnostics.DiagnosticListener</span> semantics to subscribe to the events
+with your custom listener.
+</p>
+</div>
 
 
 
@@ -156,7 +168,8 @@ Method SubscribeToDiagnostics
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Subscribes a diagnostic tracer to Autofac events.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -166,19 +179,23 @@ Method SubscribeToDiagnostics
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>container</code> <a class="xref" href="Autofac.IContainer.html">IContainer</a></dt>
-  <dd></dd>
+  <dd><p>The container with the diagnostics to which you want to subscribe.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><span class="xref">T</span></dt>
-  <dd></dd>
+  <dd><p>The diagnostic tracer that was created and attached to the diagnostic source. Use
+this instance to enable or disable the messages that should be handled.</p>
+</dd>
 </dl>
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>T</code></dt>
-  <dd></dd>
+  <dd><p>The type of diagnostic tracer that will be subscribed to the lifetime scope's diagnostic source.</p>
+</dd>
 </dl>
 
 
@@ -186,6 +203,15 @@ Method SubscribeToDiagnostics
 
 
 
+<h4 class="section" id="Autofac_ContainerExtensions_SubscribeToDiagnostics__1_Autofac_IContainer__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>
+This is a convenience method that attaches a tracer to the
+<span class="xref">System.Diagnostics.DiagnosticListener</span> associated with the <code class="paramref">container</code>. If you
+have an event listener that isn't a <a class="xref" href="Autofac.Diagnostics.DiagnosticTracerBase.html">DiagnosticTracerBase</a> you can
+use standard <span class="xref">System.Diagnostics.DiagnosticListener</span> semantics to subscribe to the events
+with your custom listener.
+</p>
+</div>
 
 
 

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IServiceMiddlewareSource | Autofac ">
       
-      
+      <meta name="description" content="Interface defining a source of middleware for a service&#39;s pipeline.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,8 @@ Interface IServiceMiddlewareSource
   <dl><dt>Assembly</dt><dd>Autofac.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Interface defining a source of middleware for a service's pipeline.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -119,7 +120,8 @@ Interface IServiceMiddlewareSource
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Registration.IServiceMiddlewareSource.ProvideMiddleware.html#Autofac_Core_Registration_IServiceMiddlewareSource_ProvideMiddleware_Autofac_Core_Service_Autofac_Core_IComponentRegistryServices_Autofac_Core_Resolving_Pipeline_IResolvePipelineBuilder_">ProvideMiddleware(Service, IComponentRegistryServices, IResolvePipelineBuilder)</a></dt>
-    <dd></dd>
+    <dd><p>Called when a service is first resolved; implementations can add middleware to the service using the <code class="paramref">pipelineBuilder</code>.</p>
+</dd>
   </dl>
 
 

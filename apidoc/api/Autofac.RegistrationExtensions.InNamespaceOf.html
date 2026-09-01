@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,9 @@ Method InNamespaceOf
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Filters the scanned types to include only those in the namespace of the provided type
+or one of its sub-namespaces.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -132,20 +134,23 @@ Method InNamespaceOf
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><code>registration</code> <a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>, <a class="xref" href="Autofac.Features.Scanning.ScanningActivatorData.html">ScanningActivatorData</a>, <a class="xref" href="Autofac.Builder.DynamicRegistrationStyle.html">DynamicRegistrationStyle</a>&gt;</dt>
-  <dd></dd>
+  <dt><code>registration</code> <a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;<span class="xref">object</span>, <a class="xref" href="Autofac.Features.Scanning.ScanningActivatorData.html">ScanningActivatorData</a>, <a class="xref" href="Autofac.Builder.DynamicRegistrationStyle.html">DynamicRegistrationStyle</a>&gt;</dt>
+  <dd><p>Registration to filter types from.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>, <a class="xref" href="Autofac.Features.Scanning.ScanningActivatorData.html">ScanningActivatorData</a>, <a class="xref" href="Autofac.Builder.DynamicRegistrationStyle.html">DynamicRegistrationStyle</a>&gt;</dt>
-  <dd></dd>
+  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;<span class="xref">object</span>, <a class="xref" href="Autofac.Features.Scanning.ScanningActivatorData.html">ScanningActivatorData</a>, <a class="xref" href="Autofac.Builder.DynamicRegistrationStyle.html">DynamicRegistrationStyle</a>&gt;</dt>
+  <dd><p>Registration builder allowing the registration to be configured.</p>
+</dd>
 </dl>
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>T</code></dt>
-  <dd></dd>
+  <dd><p>A type in the target namespace.</p>
+</dd>
 </dl>
 
 
@@ -164,7 +169,9 @@ Method InNamespaceOf
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Filters the scanned open generic types to include only those in the namespace of the provided type
+or one of its sub-namespaces.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -173,20 +180,23 @@ Method InNamespaceOf
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><code>registration</code> <a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>, <a class="xref" href="Autofac.Features.Scanning.OpenGenericScanningActivatorData.html">OpenGenericScanningActivatorData</a>, <a class="xref" href="Autofac.Builder.DynamicRegistrationStyle.html">DynamicRegistrationStyle</a>&gt;</dt>
-  <dd></dd>
+  <dt><code>registration</code> <a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;<span class="xref">object</span>, <a class="xref" href="Autofac.Features.Scanning.OpenGenericScanningActivatorData.html">OpenGenericScanningActivatorData</a>, <a class="xref" href="Autofac.Builder.DynamicRegistrationStyle.html">DynamicRegistrationStyle</a>&gt;</dt>
+  <dd><p>Registration to filter types from.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>, <a class="xref" href="Autofac.Features.Scanning.OpenGenericScanningActivatorData.html">OpenGenericScanningActivatorData</a>, <a class="xref" href="Autofac.Builder.DynamicRegistrationStyle.html">DynamicRegistrationStyle</a>&gt;</dt>
-  <dd></dd>
+  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;<span class="xref">object</span>, <a class="xref" href="Autofac.Features.Scanning.OpenGenericScanningActivatorData.html">OpenGenericScanningActivatorData</a>, <a class="xref" href="Autofac.Builder.DynamicRegistrationStyle.html">DynamicRegistrationStyle</a>&gt;</dt>
+  <dd><p>Registration builder allowing the registration to be configured.</p>
+</dd>
 </dl>
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>T</code></dt>
-  <dd></dd>
+  <dd><p>A type in the target namespace.</p>
+</dd>
 </dl>
 
 

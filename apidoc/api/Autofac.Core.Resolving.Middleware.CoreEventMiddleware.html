@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class CoreEventMiddleware | Autofac ">
       
-      
+      <meta name="description" content="Middleware that invokes one of the built-in resolve events, defined by .">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,8 @@ Class CoreEventMiddleware
   <dl><dt>Assembly</dt><dd>Autofac.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Middleware that invokes one of the built-in resolve events, defined by <a class="xref" href="Autofac.Core.Resolving.Middleware.ResolveEventType.html">ResolveEventType</a>.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -109,7 +110,7 @@ Class CoreEventMiddleware
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><span class="xref">CoreEventMiddleware</span></div>
     </dd>
   </dl>
@@ -132,11 +133,13 @@ Class CoreEventMiddleware
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Resolving.Middleware.CoreEventMiddleware.EventType.html#Autofac_Core_Resolving_Middleware_CoreEventMiddleware_EventType">EventType</a></dt>
-    <dd></dd>
+    <dd><p>Gets the event type represented by this middleware.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Resolving.Middleware.CoreEventMiddleware.Phase.html#Autofac_Core_Resolving_Middleware_CoreEventMiddleware_Phase">Phase</a></dt>
-    <dd></dd>
+    <dd><p>Gets the phase of the resolve pipeline at which to execute.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -144,7 +147,9 @@ Class CoreEventMiddleware
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Resolving.Middleware.CoreEventMiddleware.Execute.html#Autofac_Core_Resolving_Middleware_CoreEventMiddleware_Execute_Autofac_Core_Resolving_Pipeline_ResolveRequestContext_System_Action_Autofac_Core_Resolving_Pipeline_ResolveRequestContext__">Execute(ResolveRequestContext, Action&lt;ResolveRequestContext&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Invoked when this middleware is executed as part of an active <a class="xref" href="Autofac.ResolveRequest.html">ResolveRequest</a>. The middleware should usually call
+the <code class="paramref">next</code> method in order to continue the pipeline, unless the middleware fully satisfies the request.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Resolving.Middleware.CoreEventMiddleware.ToString.html#Autofac_Core_Resolving_Middleware_CoreEventMiddleware_ToString">ToString()</a></dt>

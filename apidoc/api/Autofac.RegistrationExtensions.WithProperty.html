@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,8 @@ Method WithProperty
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Configure an explicit value for a property.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -133,27 +134,34 @@ Method WithProperty
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>registration</code> <a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, TReflectionActivatorData, TStyle&gt;</dt>
-  <dd></dd>
-  <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-  <dd></dd>
-  <dt><code>propertyValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-  <dd></dd>
+  <dd><p>Registration to set property on.</p>
+</dd>
+  <dt><code>propertyName</code> <span class="xref">string</span></dt>
+  <dd><p>Name of a property on the target type.</p>
+</dd>
+  <dt><code>propertyValue</code> <span class="xref">object</span></dt>
+  <dd><p>Value to supply to the property.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, TReflectionActivatorData, TStyle&gt;</dt>
-  <dd></dd>
+  <dd><p>A registration builder allowing further configuration of the component.</p>
+</dd>
 </dl>
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>TLimit</code></dt>
-  <dd></dd>
+  <dd><p>Registration limit type.</p>
+</dd>
   <dt><code>TReflectionActivatorData</code></dt>
-  <dd></dd>
+  <dd><p>Activator data type.</p>
+</dd>
   <dt><code>TStyle</code></dt>
-  <dd></dd>
+  <dd><p>Registration style.</p>
+</dd>
 </dl>
 
 
@@ -172,7 +180,8 @@ Method WithProperty
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Configure an explicit value for a property.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -182,25 +191,31 @@ Method WithProperty
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>registration</code> <a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, TReflectionActivatorData, TStyle&gt;</dt>
-  <dd></dd>
+  <dd><p>Registration to set parameter on.</p>
+</dd>
   <dt><code>property</code> <a class="xref" href="Autofac.Core.Parameter.html">Parameter</a></dt>
-  <dd></dd>
+  <dd><p>The property to supply.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, TReflectionActivatorData, TStyle&gt;</dt>
-  <dd></dd>
+  <dd><p>A registration builder allowing further configuration of the component.</p>
+</dd>
 </dl>
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>TLimit</code></dt>
-  <dd></dd>
+  <dd><p>Registration limit type.</p>
+</dd>
   <dt><code>TReflectionActivatorData</code></dt>
-  <dd></dd>
+  <dd><p>Activator data type.</p>
+</dd>
   <dt><code>TStyle</code></dt>
-  <dd></dd>
+  <dd><p>Registration style.</p>
+</dd>
 </dl>
 
 
@@ -219,7 +234,8 @@ Method WithProperty
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Configure an explicit value for a property.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -229,29 +245,37 @@ Method WithProperty
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>registration</code> <a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, TReflectionActivatorData, TStyle&gt;</dt>
-  <dd></dd>
-  <dt><code>propertyExpression</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1">Expression</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TLimit, TProperty&gt;&gt;</dt>
-  <dd></dd>
+  <dd><p>Registration to set property on.</p>
+</dd>
+  <dt><code>propertyExpression</code> <span class="xref">Expression</span>&lt;<span class="xref">Func</span>&lt;TLimit, TProperty&gt;&gt;</dt>
+  <dd><p>Expression of a property on the target type.</p>
+</dd>
   <dt><code>propertyValue</code> <span class="xref">TProperty</span></dt>
-  <dd></dd>
+  <dd><p>Value to supply to the property.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, TReflectionActivatorData, TStyle&gt;</dt>
-  <dd></dd>
+  <dd><p>A registration builder allowing further configuration of the component.</p>
+</dd>
 </dl>
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>TLimit</code></dt>
-  <dd></dd>
+  <dd><p>Registration limit type.</p>
+</dd>
   <dt><code>TReflectionActivatorData</code></dt>
-  <dd></dd>
+  <dd><p>Activator data type.</p>
+</dd>
   <dt><code>TStyle</code></dt>
-  <dd></dd>
+  <dd><p>Registration style.</p>
+</dd>
   <dt><code>TProperty</code></dt>
-  <dd></dd>
+  <dd><p>Type of the property being assigned.</p>
+</dd>
 </dl>
 
 

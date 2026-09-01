@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IComponentRegistry | Autofac ">
       
-      
+      <meta name="description" content="Provides component registrations according to the services they provide.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,8 @@ Interface IComponentRegistry
   <dl><dt>Assembly</dt><dd>Autofac.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Provides component registrations according to the services they provide.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -119,23 +120,30 @@ Interface IComponentRegistry
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.IComponentRegistry.HasLocalComponents.html#Autofac_Core_IComponentRegistry_HasLocalComponents">HasLocalComponents</a></dt>
-    <dd></dd>
+    <dd><p>Gets a value indicating whether the registry contains its own components.
+True if the registry contains its own components; false if it is forwarding
+registrations from another external registry.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.IComponentRegistry.Properties.html#Autofac_Core_IComponentRegistry_Properties">Properties</a></dt>
-    <dd></dd>
+    <dd><p>Gets the set of properties used during component registration.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.IComponentRegistry.Registrations.html#Autofac_Core_IComponentRegistry_Registrations">Registrations</a></dt>
-    <dd></dd>
+    <dd><p>Gets the set of registered components.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.IComponentRegistry.ServiceMiddlewareSources.html#Autofac_Core_IComponentRegistry_ServiceMiddlewareSources">ServiceMiddlewareSources</a></dt>
-    <dd></dd>
+    <dd><p>Gets the set of service middleware sources that are used by the registry.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.IComponentRegistry.Sources.html#Autofac_Core_IComponentRegistry_Sources">Sources</a></dt>
-    <dd></dd>
+    <dd><p>Gets the registration sources that are used by the registry.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -143,27 +151,37 @@ Interface IComponentRegistry
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.IComponentRegistry.IsRegistered.html#Autofac_Core_IComponentRegistry_IsRegistered_Autofac_Core_Service_">IsRegistered(Service)</a></dt>
-    <dd></dd>
+    <dd><p>Determines whether the specified service is registered.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.IComponentRegistry.RegistrationsFor.html#Autofac_Core_IComponentRegistry_RegistrationsFor_Autofac_Core_Service_">RegistrationsFor(Service)</a></dt>
-    <dd></dd>
+    <dd><p>Selects from the available registrations after ensuring that any
+dynamic registration sources that may provide <code class="paramref">service</code>
+have been invoked.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.IComponentRegistry.ServiceMiddlewareFor.html#Autofac_Core_IComponentRegistry_ServiceMiddlewareFor_Autofac_Core_Service_">ServiceMiddlewareFor(Service)</a></dt>
-    <dd></dd>
+    <dd><p>Gets the set of custom service middleware for the specified service.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.IComponentRegistry.ServiceRegistrationsFor.html#Autofac_Core_IComponentRegistry_ServiceRegistrationsFor_Autofac_Core_Service_">ServiceRegistrationsFor(Service)</a></dt>
-    <dd></dd>
+    <dd><p>Selects from the available service registrations after ensuring that any
+dynamic registration sources that may provide <code class="paramref">service</code>
+have been invoked.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.IComponentRegistry.TryGetRegistration.html#Autofac_Core_IComponentRegistry_TryGetRegistration_Autofac_Core_Service_Autofac_Core_IComponentRegistration__">TryGetRegistration(Service, out IComponentRegistration?)</a></dt>
-    <dd></dd>
+    <dd><p>Attempts to find a default registration for the specified service.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.IComponentRegistry.TryGetServiceRegistration.html#Autofac_Core_IComponentRegistry_TryGetServiceRegistration_Autofac_Core_Service_Autofac_Core_ServiceRegistration__">TryGetServiceRegistration(Service, out ServiceRegistration)</a></dt>
-    <dd></dd>
+    <dd><p>Attempts to find a default service registration for the specified service.</p>
+</dd>
   </dl>
 
 

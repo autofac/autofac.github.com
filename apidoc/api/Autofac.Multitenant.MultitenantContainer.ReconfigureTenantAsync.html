@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,9 @@ Method ReconfigureTenantAsync
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Allows re-configuration of tenant-specific components by closing and rebuilding
+the tenant scope. The closed scope is disposed asynchronously.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -132,16 +134,22 @@ Method ReconfigureTenantAsync
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><code>tenantId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-  <dd></dd>
-  <dt><code>configuration</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a>&gt;</dt>
-  <dd></dd>
+  <dt><code>tenantId</code> <span class="xref">object</span></dt>
+  <dd><p>The ID of the tenant for which configuration is occurring. If this
+value is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, configuration occurs for the &quot;default
+tenant&quot; - the tenant that is used when no tenant ID can be determined.</p>
+</dd>
+  <dt><code>configuration</code> <span class="xref">Action</span>&lt;<a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a>&gt;</dt>
+  <dd><p>An action that uses a <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a> to set
+up registrations for the tenant.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1">ValueTask</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
-  <dd></dd>
+  <dt><span class="xref">ValueTask</span>&lt;<span class="xref">bool</span>&gt;</dt>
+  <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if an existing configuration was removed; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
 </dl>
 
 
@@ -150,8 +158,33 @@ Method ReconfigureTenantAsync
 
 
 
+<h4 class="section" id="Autofac_Multitenant_MultitenantContainer_ReconfigureTenantAsync_System_Object_System_Action_Autofac_ContainerBuilder___remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>
+If you need to configure a tenant across multiple registration
+calls, consider using a <a class="xref" href="Autofac.Multitenant.ConfigurationActionBuilder.html">ConfigurationActionBuilder</a>
+and configuring the tenant using the aggregate configuration
+action it produces.
+</p>
+<p>
+This method is intended for use after application start-up.  During start-up, please
+use <a class="xref" href="Autofac.Multitenant.MultitenantContainer.ConfigureTenant.html#Autofac_Multitenant_MultitenantContainer_ConfigureTenant_System_Object_System_Action_Autofac_ContainerBuilder__">ConfigureTenant(object?, Action&lt;ContainerBuilder&gt;)</a>.
+</p>
+</div>
 
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><span class="xref">ArgumentNullException</span></dt>
+  <dd><p>Thrown if <code class="paramref">configuration</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+</dl>
 
+<dl class="typelist seealso">
+  <dt>See Also</dt>
+  <dd>
+  <div><a class="xref" href="Autofac.Multitenant.ConfigurationActionBuilder.html">ConfigurationActionBuilder</a></div>
+  <div><a class="xref" href="Autofac.Multitenant.MultitenantContainer.ConfigureTenant.html#Autofac_Multitenant_MultitenantContainer_ConfigureTenant_System_Object_System_Action_Autofac_ContainerBuilder__">ConfigureTenant</a>(<span class="xref">object</span>, <span class="xref">Action</span>&lt;<a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a>&gt;)</div>
+  </dd>
+</dl>
 
 
 </article>

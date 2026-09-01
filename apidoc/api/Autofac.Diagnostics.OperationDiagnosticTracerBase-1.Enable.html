@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,8 @@ Method Enable
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Subscribes the observer to a particular named diagnostic event.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -132,8 +133,10 @@ Method Enable
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><code>diagnosticName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-  <dd></dd>
+  <dt><code>diagnosticName</code> <span class="xref">string</span></dt>
+  <dd><p>The name of the event to which the observer should subscribe. Diagnostic
+names are case-sensitive.</p>
+</dd>
 </dl>
 
 
@@ -143,8 +146,22 @@ Method Enable
 
 
 
+<h4 class="section" id="Autofac_Diagnostics_OperationDiagnosticTracerBase_1_Enable_System_String__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>
+By default the observer is not subscribed to any events. You must
+opt-in to any events you wish to handle. You may use
+<a class="xref" href="Autofac.Diagnostics.DiagnosticTracerBase.EnableAll.html#Autofac_Diagnostics_DiagnosticTracerBase_EnableAll">EnableAll()</a> to subscribe to all Autofac events at once.
+</p>
+</div>
 
 
+<dl class="typelist seealso">
+  <dt>See Also</dt>
+  <dd>
+  <div><a class="xref" href="Autofac.Diagnostics.DiagnosticTracerBase.EnableAll.html#Autofac_Diagnostics_DiagnosticTracerBase_EnableAll">EnableAll</a>()</div>
+  <div><a class="xref" href="Autofac.Diagnostics.DiagnosticTracerBase.Disable.html#Autofac_Diagnostics_DiagnosticTracerBase_Disable_System_String_">Disable</a>(<span class="xref">string</span>)</div>
+  </dd>
+</dl>
 
 
 </article>

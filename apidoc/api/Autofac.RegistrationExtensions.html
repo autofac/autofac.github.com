@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class RegistrationExtensions | Autofac ">
       
-      
+      <meta name="description" content="Adds registration syntax to the  type.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,8 @@ Class RegistrationExtensions
   <dl><dt>Assembly</dt><dd>Autofac.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Adds registration syntax to the <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a> type.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -109,7 +110,7 @@ Class RegistrationExtensions
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><span class="xref">RegistrationExtensions</span></div>
     </dd>
   </dl>
@@ -126,471 +127,669 @@ Class RegistrationExtensions
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.AsClosedTypesOf.html#Autofac_RegistrationExtensions_AsClosedTypesOf__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Type_">AsClosedTypesOf&lt;TLimit, TScanningActivatorData, TRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, TScanningActivatorData, TRegistrationStyle&gt;, Type)</a></dt>
-    <dd></dd>
+    <dd><p>Specifies that a type from a scanned assembly is registered if it implements an interface
+that closes the provided open generic interface type.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.AsClosedTypesOf.html#Autofac_RegistrationExtensions_AsClosedTypesOf__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Type_System_Func_System_Type_System_Object__">AsClosedTypesOf&lt;TLimit, TScanningActivatorData, TRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, TScanningActivatorData, TRegistrationStyle&gt;, Type, Func&lt;Type, object&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Specifies that a type from a scanned assembly is registered if it implements an interface
+that closes the provided open generic interface type.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.AsClosedTypesOf.html#Autofac_RegistrationExtensions_AsClosedTypesOf__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Type_System_Object_">AsClosedTypesOf&lt;TLimit, TScanningActivatorData, TRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, TScanningActivatorData, TRegistrationStyle&gt;, Type, object)</a></dt>
-    <dd></dd>
+    <dd><p>Specifies that a type from a scanned assembly is registered if it implements an interface
+that closes the provided open generic interface type.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.AsImplementedInterfaces.html#Autofac_RegistrationExtensions_AsImplementedInterfaces__1_Autofac_Builder_IRegistrationBuilder___0_Autofac_Builder_ReflectionActivatorData_Autofac_Builder_DynamicRegistrationStyle__">AsImplementedInterfaces&lt;TLimit&gt;(IRegistrationBuilder&lt;TLimit, ReflectionActivatorData, DynamicRegistrationStyle&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Specifies that a type is registered as providing all of its implemented interfaces.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.AsImplementedInterfaces.html#Autofac_RegistrationExtensions_AsImplementedInterfaces__1_Autofac_Builder_IRegistrationBuilder___0_Autofac_Features_Scanning_OpenGenericScanningActivatorData_Autofac_Builder_DynamicRegistrationStyle__">AsImplementedInterfaces&lt;TLimit&gt;(IRegistrationBuilder&lt;TLimit, OpenGenericScanningActivatorData, DynamicRegistrationStyle&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Specifies that an open generic type from a scanned assembly is registered as providing all of its
+implemented interfaces.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.AsImplementedInterfaces.html#Autofac_RegistrationExtensions_AsImplementedInterfaces__1_Autofac_Builder_IRegistrationBuilder___0_Autofac_Features_Scanning_ScanningActivatorData_Autofac_Builder_DynamicRegistrationStyle__">AsImplementedInterfaces&lt;TLimit&gt;(IRegistrationBuilder&lt;TLimit, ScanningActivatorData, DynamicRegistrationStyle&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Specifies that a type from a scanned assembly is registered as providing all of its
+implemented interfaces.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.AsImplementedInterfaces.html#Autofac_RegistrationExtensions_AsImplementedInterfaces__2_Autofac_Builder_IRegistrationBuilder___0___1_Autofac_Builder_SingleRegistrationStyle__">AsImplementedInterfaces&lt;TLimit, TConcreteActivatorData&gt;(IRegistrationBuilder&lt;TLimit, TConcreteActivatorData, SingleRegistrationStyle&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Specifies that a type is registered as providing all of its implemented interfaces.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.AsSelf.html#Autofac_RegistrationExtensions_AsSelf__1_Autofac_Builder_IRegistrationBuilder___0_Autofac_Builder_ReflectionActivatorData_Autofac_Builder_DynamicRegistrationStyle__">AsSelf&lt;TLimit&gt;(IRegistrationBuilder&lt;TLimit, ReflectionActivatorData, DynamicRegistrationStyle&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Specifies that a type provides its own concrete type as a service.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.AsSelf.html#Autofac_RegistrationExtensions_AsSelf__1_Autofac_Builder_IRegistrationBuilder___0_Autofac_Features_Scanning_OpenGenericScanningActivatorData_Autofac_Builder_DynamicRegistrationStyle__">AsSelf&lt;TLimit&gt;(IRegistrationBuilder&lt;TLimit, OpenGenericScanningActivatorData, DynamicRegistrationStyle&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Specifies that an open generic type from a scanned assembly provides its own open generic type as a service.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.AsSelf.html#Autofac_RegistrationExtensions_AsSelf__1_Autofac_Builder_IRegistrationBuilder___0_Autofac_Features_Scanning_ScanningActivatorData_Autofac_Builder_DynamicRegistrationStyle__">AsSelf&lt;TLimit&gt;(IRegistrationBuilder&lt;TLimit, ScanningActivatorData, DynamicRegistrationStyle&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Specifies that a type from a scanned assembly provides its own concrete type as a service.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.AsSelf.html#Autofac_RegistrationExtensions_AsSelf__2_Autofac_Builder_IRegistrationBuilder___0___1_Autofac_Builder_SingleRegistrationStyle__">AsSelf&lt;TLimit, TConcreteActivatorData&gt;(IRegistrationBuilder&lt;TLimit, TConcreteActivatorData, SingleRegistrationStyle&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Specifies that a type provides its own concrete type as a service.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.As.html#Autofac_RegistrationExtensions_As__2_Autofac_Builder_IRegistrationBuilder___0_Autofac_Features_Scanning_OpenGenericScanningActivatorData___1__System_Func_System_Type_Autofac_Core_Service__">As&lt;TLimit, TRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, OpenGenericScanningActivatorData, TRegistrationStyle&gt;, Func&lt;Type, Service&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Specifies how an open generic type from a scanned assembly is mapped to a service.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.As.html#Autofac_RegistrationExtensions_As__2_Autofac_Builder_IRegistrationBuilder___0_Autofac_Features_Scanning_OpenGenericScanningActivatorData___1__System_Func_System_Type_System_Collections_Generic_IEnumerable_Autofac_Core_Service___">As&lt;TLimit, TRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, OpenGenericScanningActivatorData, TRegistrationStyle&gt;, Func&lt;Type, IEnumerable&lt;Service&gt;&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Specifies how an open generic type from a scanned assembly is mapped to services.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.As.html#Autofac_RegistrationExtensions_As__2_Autofac_Builder_IRegistrationBuilder___0_Autofac_Features_Scanning_OpenGenericScanningActivatorData___1__System_Func_System_Type_System_Collections_Generic_IEnumerable_System_Type___">As&lt;TLimit, TRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, OpenGenericScanningActivatorData, TRegistrationStyle&gt;, Func&lt;Type, IEnumerable&lt;Type&gt;&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Specifies how a type from a scanned assembly is mapped to types.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.As.html#Autofac_RegistrationExtensions_As__2_Autofac_Builder_IRegistrationBuilder___0_Autofac_Features_Scanning_OpenGenericScanningActivatorData___1__System_Func_System_Type_System_Type__">As&lt;TLimit, TRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, OpenGenericScanningActivatorData, TRegistrationStyle&gt;, Func&lt;Type, Type&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Specifies how an open generic type from a scanned assembly is mapped to a type.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.As.html#Autofac_RegistrationExtensions_As__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Func_System_Type_Autofac_Core_Service__">As&lt;TLimit, TScanningActivatorData, TRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, TScanningActivatorData, TRegistrationStyle&gt;, Func&lt;Type, Service&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Specifies how a type from a scanned assembly is mapped to a service.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.As.html#Autofac_RegistrationExtensions_As__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Func_System_Type_System_Collections_Generic_IEnumerable_Autofac_Core_Service___">As&lt;TLimit, TScanningActivatorData, TRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, TScanningActivatorData, TRegistrationStyle&gt;, Func&lt;Type, IEnumerable&lt;Service&gt;&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Specifies how a type from a scanned assembly is mapped to a service.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.As.html#Autofac_RegistrationExtensions_As__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Func_System_Type_System_Collections_Generic_IEnumerable_System_Type___">As&lt;TLimit, TScanningActivatorData, TRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, TScanningActivatorData, TRegistrationStyle&gt;, Func&lt;Type, IEnumerable&lt;Type&gt;&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Specifies how a type from a scanned assembly is mapped to a service.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.As.html#Autofac_RegistrationExtensions_As__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Func_System_Type_System_Type__">As&lt;TLimit, TScanningActivatorData, TRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, TScanningActivatorData, TRegistrationStyle&gt;, Func&lt;Type, Type&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Specifies how a type from a scanned assembly is mapped to a service.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.AssignableTo.html#Autofac_RegistrationExtensions_AssignableTo__1_Autofac_Builder_IRegistrationBuilder_System_Object_Autofac_Features_Scanning_ScanningActivatorData_Autofac_Builder_DynamicRegistrationStyle__">AssignableTo&lt;T&gt;(IRegistrationBuilder&lt;object, ScanningActivatorData, DynamicRegistrationStyle&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Filters the scanned types to include only those assignable to the provided
+type.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.AssignableTo.html#Autofac_RegistrationExtensions_AssignableTo__2_Autofac_Builder_IRegistrationBuilder___0_Autofac_Features_Scanning_OpenGenericScanningActivatorData___1__System_Type_">AssignableTo&lt;TLimit, TRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, OpenGenericScanningActivatorData, TRegistrationStyle&gt;, Type)</a></dt>
-    <dd></dd>
+    <dd><p>Filters the scanned types to include only those assignable to the provided.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.AssignableTo.html#Autofac_RegistrationExtensions_AssignableTo__2_Autofac_Builder_IRegistrationBuilder___0_Autofac_Features_Scanning_OpenGenericScanningActivatorData___1__System_Type_System_Func_System_Type_System_Object__">AssignableTo&lt;TLimit, TRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, OpenGenericScanningActivatorData, TRegistrationStyle&gt;, Type, Func&lt;Type, object&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Filters the scanned types to include only those assignable to the provided.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.AssignableTo.html#Autofac_RegistrationExtensions_AssignableTo__2_Autofac_Builder_IRegistrationBuilder___0_Autofac_Features_Scanning_OpenGenericScanningActivatorData___1__System_Type_System_Object_">AssignableTo&lt;TLimit, TRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, OpenGenericScanningActivatorData, TRegistrationStyle&gt;, Type, object)</a></dt>
-    <dd></dd>
+    <dd><p>Filters the scanned types to include only those assignable to the provided.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.AssignableTo.html#Autofac_RegistrationExtensions_AssignableTo__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Type_">AssignableTo&lt;TLimit, TScanningActivatorData, TRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, TScanningActivatorData, TRegistrationStyle&gt;, Type)</a></dt>
-    <dd></dd>
+    <dd><p>Filters the scanned types to include only those assignable to the provided
+type.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.AutoActivate.html#Autofac_RegistrationExtensions_AutoActivate__3_Autofac_Builder_IRegistrationBuilder___0___1___2__">AutoActivate&lt;TLimit, TActivatorData, TRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, TRegistrationStyle&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Wraps a registration in an implicit <a class="xref" href="Autofac.IStartable.html">IStartable</a> and automatically
+activates the registration after the container is built.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.Except.html#Autofac_RegistrationExtensions_Except_Autofac_Builder_IRegistrationBuilder_System_Object_Autofac_Features_Scanning_OpenGenericScanningActivatorData_Autofac_Builder_DynamicRegistrationStyle__System_Type_">Except(IRegistrationBuilder&lt;object, OpenGenericScanningActivatorData, DynamicRegistrationStyle&gt;, Type)</a></dt>
-    <dd></dd>
+    <dd><p>Filters the scanned open generic types to exclude the provided type.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.Except.html#Autofac_RegistrationExtensions_Except_Autofac_Builder_IRegistrationBuilder_System_Object_Autofac_Features_Scanning_OpenGenericScanningActivatorData_Autofac_Builder_DynamicRegistrationStyle__System_Type_System_Action_Autofac_Builder_IRegistrationBuilder_System_Object_Autofac_Builder_ReflectionActivatorData_Autofac_Builder_DynamicRegistrationStyle___">Except(IRegistrationBuilder&lt;object, OpenGenericScanningActivatorData, DynamicRegistrationStyle&gt;, Type, Action&lt;IRegistrationBuilder&lt;object, ReflectionActivatorData, DynamicRegistrationStyle&gt;&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Filters the scanned open generic types to exclude the provided type, providing specific configuration for
+the excluded type.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.Except.html#Autofac_RegistrationExtensions_Except__1_Autofac_Builder_IRegistrationBuilder_System_Object_Autofac_Features_Scanning_ScanningActivatorData_Autofac_Builder_DynamicRegistrationStyle__">Except&lt;T&gt;(IRegistrationBuilder&lt;object, ScanningActivatorData, DynamicRegistrationStyle&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Filters the scanned types to exclude the provided type.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.Except.html#Autofac_RegistrationExtensions_Except__1_Autofac_Builder_IRegistrationBuilder_System_Object_Autofac_Features_Scanning_ScanningActivatorData_Autofac_Builder_DynamicRegistrationStyle__System_Action_Autofac_Builder_IRegistrationBuilder___0_Autofac_Builder_ConcreteReflectionActivatorData_Autofac_Builder_SingleRegistrationStyle___">Except&lt;T&gt;(IRegistrationBuilder&lt;object, ScanningActivatorData, DynamicRegistrationStyle&gt;, Action&lt;IRegistrationBuilder&lt;T, ConcreteReflectionActivatorData, SingleRegistrationStyle&gt;&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Filters the scanned types to exclude the provided type, providing specific configuration for
+the excluded type.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.FindConstructorsWith.html#Autofac_RegistrationExtensions_FindConstructorsWith__3_Autofac_Builder_IRegistrationBuilder___0___1___2__Autofac_Core_Activators_Reflection_IConstructorFinder_">FindConstructorsWith&lt;TLimit, TReflectionActivatorData, TStyle&gt;(IRegistrationBuilder&lt;TLimit, TReflectionActivatorData, TStyle&gt;, IConstructorFinder)</a></dt>
-    <dd></dd>
+    <dd><p>Set the policy used to find candidate constructors on the implementation type.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.FindConstructorsWith.html#Autofac_RegistrationExtensions_FindConstructorsWith__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Func_System_Type_System_Reflection_ConstructorInfo____">FindConstructorsWith&lt;TLimit, TReflectionActivatorData, TStyle&gt;(IRegistrationBuilder&lt;TLimit, TReflectionActivatorData, TStyle&gt;, Func&lt;Type, ConstructorInfo[]&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Set the policy used to find candidate constructors on the implementation type.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.RegistrationExtensions.GetRegistrationId.html#Autofac_RegistrationExtensions_GetRegistrationId__2_Autofac_Builder_IRegistrationBuilder___0___1_Autofac_Builder_SingleRegistrationStyle__">GetRegistrationId&lt;TLimit, TActivatorData&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, SingleRegistrationStyle&gt;)</a></dt>
+    <dd><p>Gets the unique <span class="xref">System.Guid</span> identity assigned to a single-component registration.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.IfNotRegistered.html#Autofac_RegistrationExtensions_IfNotRegistered__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Type_">IfNotRegistered&lt;TLimit, TActivatorData, TStyle&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, TStyle&gt;, Type)</a></dt>
-    <dd></dd>
+    <dd><p>Attaches a predicate such that a registration will only be made if
+a specific service type is not already registered.
+The predicate will run at registration time, not runtime, to determine
+whether the registration should execute.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.InNamespaceOf.html#Autofac_RegistrationExtensions_InNamespaceOf__1_Autofac_Builder_IRegistrationBuilder_System_Object_Autofac_Features_Scanning_OpenGenericScanningActivatorData_Autofac_Builder_DynamicRegistrationStyle__">InNamespaceOf&lt;T&gt;(IRegistrationBuilder&lt;object, OpenGenericScanningActivatorData, DynamicRegistrationStyle&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Filters the scanned open generic types to include only those in the namespace of the provided type
+or one of its sub-namespaces.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.InNamespaceOf.html#Autofac_RegistrationExtensions_InNamespaceOf__1_Autofac_Builder_IRegistrationBuilder_System_Object_Autofac_Features_Scanning_ScanningActivatorData_Autofac_Builder_DynamicRegistrationStyle__">InNamespaceOf&lt;T&gt;(IRegistrationBuilder&lt;object, ScanningActivatorData, DynamicRegistrationStyle&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Filters the scanned types to include only those in the namespace of the provided type
+or one of its sub-namespaces.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.InNamespace.html#Autofac_RegistrationExtensions_InNamespace__2_Autofac_Builder_IRegistrationBuilder___0_Autofac_Features_Scanning_OpenGenericScanningActivatorData___1__System_String_">InNamespace&lt;TLimit, TRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, OpenGenericScanningActivatorData, TRegistrationStyle&gt;, string)</a></dt>
-    <dd></dd>
+    <dd><p>Filters the scanned types to include only those in the provided namespace
+or one of its sub-namespaces.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.InNamespace.html#Autofac_RegistrationExtensions_InNamespace__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_String_">InNamespace&lt;TLimit, TScanningActivatorData, TRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, TScanningActivatorData, TRegistrationStyle&gt;, string)</a></dt>
-    <dd></dd>
+    <dd><p>Filters the scanned types to include only those in the provided namespace
+or one of its sub-namespaces.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.InstancePerRequest.html#Autofac_RegistrationExtensions_InstancePerRequest__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Object___">InstancePerRequest&lt;TLimit, TActivatorData, TStyle&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, TStyle&gt;, params object[])</a></dt>
-    <dd></dd>
+    <dd><p>Share one instance of the component within the context of a single
+web/HTTP/API request. Only available for integration that supports
+per-request dependencies (e.g., MVC, Web API, web forms, etc.).</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.Keyed.html#Autofac_RegistrationExtensions_Keyed__1_Autofac_Builder_IRegistrationBuilder_System_Object_Autofac_Features_Scanning_ScanningActivatorData_Autofac_Builder_DynamicRegistrationStyle__System_Func_System_Type_System_Object__">Keyed&lt;TService&gt;(IRegistrationBuilder&lt;object, ScanningActivatorData, DynamicRegistrationStyle&gt;, Func&lt;Type, object&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Specifies how a type from a scanned assembly is mapped to a keyed service.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.Keyed.html#Autofac_RegistrationExtensions_Keyed__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Func_System_Type_System_Object__System_Type_">Keyed&lt;TLimit, TScanningActivatorData, TRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, TScanningActivatorData, TRegistrationStyle&gt;, Func&lt;Type, object&gt;, Type)</a></dt>
-    <dd></dd>
+    <dd><p>Specifies how a type from a scanned assembly is mapped to a keyed service.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.Named.html#Autofac_RegistrationExtensions_Named__1_Autofac_Builder_IRegistrationBuilder_System_Object_Autofac_Features_Scanning_ScanningActivatorData_Autofac_Builder_DynamicRegistrationStyle__System_Func_System_Type_System_String__">Named&lt;TService&gt;(IRegistrationBuilder&lt;object, ScanningActivatorData, DynamicRegistrationStyle&gt;, Func&lt;Type, string&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Specifies how a type from a scanned assembly is mapped to a named service.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.Named.html#Autofac_RegistrationExtensions_Named__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Func_System_Type_System_String__System_Type_">Named&lt;TLimit, TScanningActivatorData, TRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, TScanningActivatorData, TRegistrationStyle&gt;, Func&lt;Type, string&gt;, Type)</a></dt>
-    <dd></dd>
+    <dd><p>Specifies how a type from a scanned assembly is mapped to a named service.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.OnRegistered.html#Autofac_RegistrationExtensions_OnRegistered__2_Autofac_Builder_IRegistrationBuilder___0_Autofac_Features_Scanning_ScanningActivatorData___1__System_Action_Autofac_Core_ComponentRegisteredEventArgs__">OnRegistered&lt;TLimit, TRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, ScanningActivatorData, TRegistrationStyle&gt;, Action&lt;ComponentRegisteredEventArgs&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Provide a handler to be called when the component is registered.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.OnRegistered.html#Autofac_RegistrationExtensions_OnRegistered__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Action_Autofac_Core_ComponentRegisteredEventArgs__">OnRegistered&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;, Action&lt;ComponentRegisteredEventArgs&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Provide a handler to be called when the component is registered.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.OnRelease.html#Autofac_RegistrationExtensions_OnRelease__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Action___0__">OnRelease&lt;TLimit, TActivatorData, TRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, TRegistrationStyle&gt;, Action&lt;TLimit&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Run a supplied action instead of disposing instances when they're no
+longer required.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.OnRelease.html#Autofac_RegistrationExtensions_OnRelease__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Func___0_System_Threading_Tasks_ValueTask__">OnRelease&lt;TLimit, TActivatorData, TRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, TRegistrationStyle&gt;, Func&lt;TLimit, ValueTask&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Run a supplied async action instead of disposing instances when they're no
+longer required.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.OnlyIf.html#Autofac_RegistrationExtensions_OnlyIf__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Predicate_Autofac_Core_Registration_IComponentRegistryBuilder__">OnlyIf&lt;TLimit, TActivatorData, TStyle&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, TStyle&gt;, Predicate&lt;IComponentRegistryBuilder&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Attaches a predicate to evaluate prior to executing the registration.
+The predicate will run at registration time, not runtime, to determine
+whether the registration should execute.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.PreserveExistingDefaults.html#Autofac_RegistrationExtensions_PreserveExistingDefaults__2_Autofac_Builder_IRegistrationBuilder___0_Autofac_Features_Scanning_ScanningActivatorData___1__">PreserveExistingDefaults&lt;TLimit, TRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, ScanningActivatorData, TRegistrationStyle&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Specifies that the components being registered should only be made the default for services
+that have not already been registered.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.PreserveExistingDefaults.html#Autofac_RegistrationExtensions_PreserveExistingDefaults__3_Autofac_Builder_IRegistrationBuilder___0___1___2__">PreserveExistingDefaults&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Specifies that the component being registered should only be made the default for services
+that have not already been registered.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.PropertiesAutowired.html#Autofac_RegistrationExtensions_PropertiesAutowired__3_Autofac_Builder_IRegistrationBuilder___0___1___2__Autofac_PropertyWiringOptions_">PropertiesAutowired&lt;TLimit, TActivatorData, TRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, TRegistrationStyle&gt;, PropertyWiringOptions)</a></dt>
-    <dd></dd>
+    <dd><p>Configure the component so that any properties whose types are registered in the
+container will be wired to instances of the appropriate service.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.PropertiesAutowired.html#Autofac_RegistrationExtensions_PropertiesAutowired__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Func_System_Reflection_PropertyInfo_System_Object_System_Boolean__">PropertiesAutowired&lt;TLimit, TActivatorData, TStyle&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, TStyle&gt;, Func&lt;PropertyInfo, object, bool&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Set the policy used to find candidate properties on the implementation type.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.RegisterAdapter.html#Autofac_RegistrationExtensions_RegisterAdapter__2_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter____0___1__">RegisterAdapter&lt;TFrom, TTo&gt;(ContainerBuilder, Func&lt;IComponentContext, IEnumerable&lt;Parameter&gt;, TFrom, TTo&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Adapt all components implementing service <code class="typeparamref">TFrom</code>
+to provide <code class="typeparamref">TTo</code> using the provided <code class="paramref">adapter</code>
+function.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.RegisterAdapter.html#Autofac_RegistrationExtensions_RegisterAdapter__2_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext___0___1__">RegisterAdapter&lt;TFrom, TTo&gt;(ContainerBuilder, Func&lt;IComponentContext, TFrom, TTo&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Adapt all components implementing service <code class="typeparamref">TFrom</code>
+to provide <code class="typeparamref">TTo</code> using the provided <code class="paramref">adapter</code>
+function.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.RegisterAdapter.html#Autofac_RegistrationExtensions_RegisterAdapter__2_Autofac_ContainerBuilder_System_Func___0___1__">RegisterAdapter&lt;TFrom, TTo&gt;(ContainerBuilder, Func&lt;TFrom, TTo&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Adapt all components implementing service <code class="typeparamref">TFrom</code>
+to provide <code class="typeparamref">TTo</code> using the provided <code class="paramref">adapter</code>
+function.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.RegisterAssemblyOpenGenericTypes.html#Autofac_RegistrationExtensions_RegisterAssemblyOpenGenericTypes_Autofac_ContainerBuilder_System_Reflection_Assembly___">RegisterAssemblyOpenGenericTypes(ContainerBuilder, params Assembly[])</a></dt>
-    <dd></dd>
+    <dd><p>Register all open generic types in an assembly.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.RegisterAssemblyTypes.html#Autofac_RegistrationExtensions_RegisterAssemblyTypes_Autofac_ContainerBuilder_System_Reflection_Assembly___">RegisterAssemblyTypes(ContainerBuilder, params Assembly[])</a></dt>
-    <dd></dd>
+    <dd><p>Register all types in an assembly.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.RegisterComponent.html#Autofac_RegistrationExtensions_RegisterComponent_Autofac_ContainerBuilder_Autofac_Core_IComponentRegistration_">RegisterComponent(ContainerBuilder, IComponentRegistration)</a></dt>
-    <dd></dd>
+    <dd><p>Add a component to the container.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.RegisterComposite.html#Autofac_RegistrationExtensions_RegisterComposite_Autofac_ContainerBuilder_System_Type_System_Type_">RegisterComposite(ContainerBuilder, Type, Type)</a></dt>
-    <dd></dd>
+    <dd><p>
+Register a composite type that should always provide the instance of <code class="paramref">serviceType</code> when it is resolved,
+regardless of what other registrations for <code class="paramref">serviceType</code> are available.
+</p>
+<p>
+Composite registrations are not included when resolving a collection of <code class="paramref">serviceType</code>.
+</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.RegisterComposite.html#Autofac_RegistrationExtensions_RegisterComposite__1_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter__System_Collections_Generic_IEnumerable___0____0__">RegisterComposite&lt;TService&gt;(ContainerBuilder, Func&lt;IComponentContext, IEnumerable&lt;Parameter&gt;, IEnumerable&lt;TService&gt;, TService&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>
+Register a delegate that should always provide the composite instance of a service type when it is resolved,
+regardless of what other registrations for <code class="typeparamref">TService</code> are available.
+</p>
+<p>
+ Composite registrations are not included when resolving a collection of <code class="typeparamref">TService</code>.
+</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.RegisterComposite.html#Autofac_RegistrationExtensions_RegisterComposite__1_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext_System_Collections_Generic_IEnumerable___0____0__">RegisterComposite&lt;TService&gt;(ContainerBuilder, Func&lt;IComponentContext, IEnumerable&lt;TService&gt;, TService&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>
+Register a delegate that should always provide the composite instance of a service type when it is resolved,
+regardless of what other registrations for <code class="typeparamref">TService</code> are available.
+</p>
+<p>
+Composite registrations are not included when resolving a collection of <code class="typeparamref">TService</code>.
+</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.RegisterComposite.html#Autofac_RegistrationExtensions_RegisterComposite__2_Autofac_ContainerBuilder_">RegisterComposite&lt;TComposite, TService&gt;(ContainerBuilder)</a></dt>
-    <dd></dd>
+    <dd><p>
+Register a composite type that should always provide the instance of <code class="typeparamref">TService</code> when it is resolved,
+regardless of what other registrations for <code class="typeparamref">TService</code> are available.
+</p>
+<p>
+Composite registrations are not included when resolving a collection of <code class="typeparamref">TService</code>.
+</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.RegisterDecorator.html#Autofac_RegistrationExtensions_RegisterDecorator_Autofac_ContainerBuilder_System_Type_System_Type_System_Func_Autofac_Features_Decorators_IDecoratorContext_System_Boolean__">RegisterDecorator(ContainerBuilder, Type, Type, Func&lt;IDecoratorContext, bool&gt;?)</a></dt>
-    <dd></dd>
+    <dd><p>Decorate all components implementing service <code class="paramref">serviceType</code>
+with decorator service <code class="paramref">decoratorType</code>.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.RegisterDecorator.html#Autofac_RegistrationExtensions_RegisterDecorator__1_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter____0___0__System_Func_Autofac_Features_Decorators_IDecoratorContext_System_Boolean__">RegisterDecorator&lt;TService&gt;(ContainerBuilder, Func&lt;IComponentContext, IEnumerable&lt;Parameter&gt;, TService, TService&gt;, Func&lt;IDecoratorContext, bool&gt;?)</a></dt>
-    <dd></dd>
+    <dd><p>Decorate all components implementing service <code class="typeparamref">TService</code>
+using the provided <code class="paramref">decorator</code> function.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.RegisterDecorator.html#Autofac_RegistrationExtensions_RegisterDecorator__1_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter____0___0__System_Object_System_Object_">RegisterDecorator&lt;TService&gt;(ContainerBuilder, Func&lt;IComponentContext, IEnumerable&lt;Parameter&gt;, TService, TService&gt;, object, object?)</a></dt>
-    <dd></dd>
+    <dd><p>Decorate all components implementing service <code class="typeparamref">TService</code>
+using the provided <code class="paramref">decorator</code> function.
+The <code class="paramref">fromKey</code> and <code class="paramref">toKey</code> parameters must be different values.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.RegisterDecorator.html#Autofac_RegistrationExtensions_RegisterDecorator__1_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext___0___0__System_Object_System_Object_">RegisterDecorator&lt;TService&gt;(ContainerBuilder, Func&lt;IComponentContext, TService, TService&gt;, object, object?)</a></dt>
-    <dd></dd>
+    <dd><p>Decorate all components implementing service <code class="typeparamref">TService</code>
+using the provided <code class="paramref">decorator</code> function.
+The <code class="paramref">fromKey</code> and <code class="paramref">toKey</code> parameters must be different values.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.RegisterDecorator.html#Autofac_RegistrationExtensions_RegisterDecorator__1_Autofac_ContainerBuilder_System_Func___0___0__System_Object_System_Object_">RegisterDecorator&lt;TService&gt;(ContainerBuilder, Func&lt;TService, TService&gt;, object, object?)</a></dt>
-    <dd></dd>
+    <dd><p>Decorate all components implementing service <code class="typeparamref">TService</code>
+using the provided <code class="paramref">decorator</code> function.
+The <code class="paramref">fromKey</code> and <code class="paramref">toKey</code> parameters must be different values.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.RegisterDecorator.html#Autofac_RegistrationExtensions_RegisterDecorator__2_Autofac_ContainerBuilder_System_Func_Autofac_Features_Decorators_IDecoratorContext_System_Boolean__">RegisterDecorator&lt;TDecorator, TService&gt;(ContainerBuilder, Func&lt;IDecoratorContext, bool&gt;?)</a></dt>
-    <dd></dd>
+    <dd><p>Decorate all components implementing service <code class="typeparamref">TService</code>
+with decorator service <code class="typeparamref">TDecorator</code>.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.RegisterGeneric.html#Autofac_RegistrationExtensions_RegisterGeneric_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext_System_Type___System_Collections_Generic_IEnumerable_Autofac_Core_Parameter__System_Object__">RegisterGeneric(ContainerBuilder, Func&lt;IComponentContext, Type[], IEnumerable&lt;Parameter&gt;, object&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Register a delegate that can provide instances of an open generic registration.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.RegisterGeneric.html#Autofac_RegistrationExtensions_RegisterGeneric_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext_System_Type___System_Object__">RegisterGeneric(ContainerBuilder, Func&lt;IComponentContext, Type[], object&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Register a delegate that can provide instances of an open generic registration.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.RegisterGeneric.html#Autofac_RegistrationExtensions_RegisterGeneric_Autofac_ContainerBuilder_System_Type_">RegisterGeneric(ContainerBuilder, Type)</a></dt>
-    <dd></dd>
+    <dd><p>Register an un-parameterized generic type, e.g. Repository&lt;&gt;.
+Concrete types will be made as they are requested, e.g. with Resolve&lt;Repository&lt;int&gt;&gt;().</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.RegisterGenericComposite.html#Autofac_RegistrationExtensions_RegisterGenericComposite_Autofac_ContainerBuilder_System_Type_System_Type_">RegisterGenericComposite(ContainerBuilder, Type, Type)</a></dt>
-    <dd></dd>
+    <dd><p>
+Register an un-parameterized generic type, e.g. Composite&lt;&gt; to function as a composite
+for an open generic service, e.g. IRepository&lt;&gt;. Composites will be made as they are requested,
+e.g. with Resolve&lt;IRepository&lt;int&gt;&gt;().
+</p>
+<p>
+ Composite registrations are not included when resolving a collection of <code class="paramref">serviceType</code>.
+</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.RegisterGenericDecorator.html#Autofac_RegistrationExtensions_RegisterGenericDecorator_Autofac_ContainerBuilder_System_Type_System_Type_System_Func_Autofac_Features_Decorators_IDecoratorContext_System_Boolean__">RegisterGenericDecorator(ContainerBuilder, Type, Type, Func&lt;IDecoratorContext, bool&gt;?)</a></dt>
-    <dd></dd>
+    <dd><p>Decorate all components implementing open generic service <code class="paramref">serviceType</code>.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.RegisterGenericDecorator.html#Autofac_RegistrationExtensions_RegisterGenericDecorator_Autofac_ContainerBuilder_System_Type_System_Type_System_Object_System_Object_">RegisterGenericDecorator(ContainerBuilder, Type, Type, object, object?)</a></dt>
-    <dd></dd>
+    <dd><p>Decorate all components implementing open generic service <code class="paramref">decoratedServiceType</code>.
+The <code class="paramref">fromKey</code> and <code class="paramref">toKey</code> parameters must be different values.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.RegisterInstance.html#Autofac_RegistrationExtensions_RegisterInstance__1_Autofac_ContainerBuilder___0_">RegisterInstance&lt;T&gt;(ContainerBuilder, T)</a></dt>
-    <dd></dd>
+    <dd><p>Register an instance as a component.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.RegisterType.html#Autofac_RegistrationExtensions_RegisterType_Autofac_ContainerBuilder_System_Type_">RegisterType(ContainerBuilder, Type)</a></dt>
-    <dd></dd>
+    <dd><p>Register a component to be created through reflection.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.RegisterType.html#Autofac_RegistrationExtensions_RegisterType__1_Autofac_ContainerBuilder_">RegisterType&lt;TImplementer&gt;(ContainerBuilder)</a></dt>
-    <dd></dd>
+    <dd><p>Register a component to be created through reflection.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.RegisterTypes.html#Autofac_RegistrationExtensions_RegisterTypes_Autofac_ContainerBuilder_System_Type___">RegisterTypes(ContainerBuilder, params Type[])</a></dt>
-    <dd></dd>
+    <dd><p>Register the types in a list.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.Register.html#Autofac_RegistrationExtensions_Register__1_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter____0__">Register&lt;T&gt;(ContainerBuilder, Func&lt;IComponentContext, IEnumerable&lt;Parameter&gt;, T&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Register a delegate as a component.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.Register.html#Autofac_RegistrationExtensions_Register__1_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext___0__">Register&lt;T&gt;(ContainerBuilder, Func&lt;IComponentContext, T&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Register a delegate as a component.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.Register.html#Autofac_RegistrationExtensions_Register__10_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext___0___1___2___3___4___5___6___7___8___9__">Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TDependency9, TComponent&gt;(ContainerBuilder, Func&lt;IComponentContext, TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TDependency9, TComponent&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Register a delegate as a component.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.Register.html#Autofac_RegistrationExtensions_Register__10_Autofac_ContainerBuilder_System_Func___0___1___2___3___4___5___6___7___8___9__">Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TDependency9, TComponent&gt;(ContainerBuilder, Func&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TDependency9, TComponent&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Register a delegate as a component.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.Register.html#Autofac_RegistrationExtensions_Register__11_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext___0___1___2___3___4___5___6___7___8___9___10__">Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TDependency9, TDependency10, TComponent&gt;(ContainerBuilder, Func&lt;IComponentContext, TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TDependency9, TDependency10, TComponent&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Register a delegate as a component.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.Register.html#Autofac_RegistrationExtensions_Register__11_Autofac_ContainerBuilder_System_Func___0___1___2___3___4___5___6___7___8___9___10__">Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TDependency9, TDependency10, TComponent&gt;(ContainerBuilder, Func&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TDependency9, TDependency10, TComponent&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Register a delegate as a component.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.Register.html#Autofac_RegistrationExtensions_Register__2_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext___0___1__">Register&lt;TDependency1, TComponent&gt;(ContainerBuilder, Func&lt;IComponentContext, TDependency1, TComponent&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Register a delegate as a component.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.Register.html#Autofac_RegistrationExtensions_Register__2_Autofac_ContainerBuilder_System_Func___0___1__">Register&lt;TDependency1, TComponent&gt;(ContainerBuilder, Func&lt;TDependency1, TComponent&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Register a delegate as a component.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.Register.html#Autofac_RegistrationExtensions_Register__3_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext___0___1___2__">Register&lt;TDependency1, TDependency2, TComponent&gt;(ContainerBuilder, Func&lt;IComponentContext, TDependency1, TDependency2, TComponent&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Register a delegate as a component.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.Register.html#Autofac_RegistrationExtensions_Register__3_Autofac_ContainerBuilder_System_Func___0___1___2__">Register&lt;TDependency1, TDependency2, TComponent&gt;(ContainerBuilder, Func&lt;TDependency1, TDependency2, TComponent&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Register a delegate as a component.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.Register.html#Autofac_RegistrationExtensions_Register__4_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext___0___1___2___3__">Register&lt;TDependency1, TDependency2, TDependency3, TComponent&gt;(ContainerBuilder, Func&lt;IComponentContext, TDependency1, TDependency2, TDependency3, TComponent&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Register a delegate as a component.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.Register.html#Autofac_RegistrationExtensions_Register__4_Autofac_ContainerBuilder_System_Func___0___1___2___3__">Register&lt;TDependency1, TDependency2, TDependency3, TComponent&gt;(ContainerBuilder, Func&lt;TDependency1, TDependency2, TDependency3, TComponent&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Register a delegate as a component.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.Register.html#Autofac_RegistrationExtensions_Register__5_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext___0___1___2___3___4__">Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TComponent&gt;(ContainerBuilder, Func&lt;IComponentContext, TDependency1, TDependency2, TDependency3, TDependency4, TComponent&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Register a delegate as a component.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.Register.html#Autofac_RegistrationExtensions_Register__5_Autofac_ContainerBuilder_System_Func___0___1___2___3___4__">Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TComponent&gt;(ContainerBuilder, Func&lt;TDependency1, TDependency2, TDependency3, TDependency4, TComponent&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Register a delegate as a component.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.Register.html#Autofac_RegistrationExtensions_Register__6_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext___0___1___2___3___4___5__">Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TComponent&gt;(ContainerBuilder, Func&lt;IComponentContext, TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TComponent&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Register a delegate as a component.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.Register.html#Autofac_RegistrationExtensions_Register__6_Autofac_ContainerBuilder_System_Func___0___1___2___3___4___5__">Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TComponent&gt;(ContainerBuilder, Func&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TComponent&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Register a delegate as a component.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.Register.html#Autofac_RegistrationExtensions_Register__7_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext___0___1___2___3___4___5___6__">Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TComponent&gt;(ContainerBuilder, Func&lt;IComponentContext, TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TComponent&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Register a delegate as a component.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.Register.html#Autofac_RegistrationExtensions_Register__7_Autofac_ContainerBuilder_System_Func___0___1___2___3___4___5___6__">Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TComponent&gt;(ContainerBuilder, Func&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TComponent&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Register a delegate as a component.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.Register.html#Autofac_RegistrationExtensions_Register__8_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext___0___1___2___3___4___5___6___7__">Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TComponent&gt;(ContainerBuilder, Func&lt;IComponentContext, TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TComponent&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Register a delegate as a component.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.Register.html#Autofac_RegistrationExtensions_Register__8_Autofac_ContainerBuilder_System_Func___0___1___2___3___4___5___6___7__">Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TComponent&gt;(ContainerBuilder, Func&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TComponent&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Register a delegate as a component.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.Register.html#Autofac_RegistrationExtensions_Register__9_Autofac_ContainerBuilder_System_Func_Autofac_IComponentContext___0___1___2___3___4___5___6___7___8__">Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TComponent&gt;(ContainerBuilder, Func&lt;IComponentContext, TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TComponent&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Register a delegate as a component.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.Register.html#Autofac_RegistrationExtensions_Register__9_Autofac_ContainerBuilder_System_Func___0___1___2___3___4___5___6___7___8__">Register&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TComponent&gt;(ContainerBuilder, Func&lt;TDependency1, TDependency2, TDependency3, TDependency4, TDependency5, TDependency6, TDependency7, TDependency8, TComponent&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Register a delegate as a component.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.Targeting.html#Autofac_RegistrationExtensions_Targeting__3_Autofac_Builder_IRegistrationBuilder___0___1___2__Autofac_Core_IComponentRegistration_">Targeting&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;, IComponentRegistration)</a></dt>
-    <dd></dd>
+    <dd><p>Sets the target of the registration (used for metadata generation).</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.UsingConstructor.html#Autofac_RegistrationExtensions_UsingConstructor__3_Autofac_Builder_IRegistrationBuilder___0___1___2__Autofac_Core_Activators_Reflection_IConstructorSelector_">UsingConstructor&lt;TLimit, TReflectionActivatorData, TStyle&gt;(IRegistrationBuilder&lt;TLimit, TReflectionActivatorData, TStyle&gt;, IConstructorSelector)</a></dt>
-    <dd></dd>
+    <dd><p>Set the policy used to select from available constructors on the implementation type.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.UsingConstructor.html#Autofac_RegistrationExtensions_UsingConstructor__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Linq_Expressions_Expression_System_Func___0___">UsingConstructor&lt;TLimit, TReflectionActivatorData, TStyle&gt;(IRegistrationBuilder&lt;TLimit, TReflectionActivatorData, TStyle&gt;, Expression&lt;Func&lt;TLimit&gt;&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Set the policy used to select from available constructors on the implementation type.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.UsingConstructor.html#Autofac_RegistrationExtensions_UsingConstructor__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Type___">UsingConstructor&lt;TLimit, TReflectionActivatorData, TStyle&gt;(IRegistrationBuilder&lt;TLimit, TReflectionActivatorData, TStyle&gt;, params Type[])</a></dt>
-    <dd></dd>
+    <dd><p>Set the policy used to select from available constructors on the implementation type.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.Where.html#Autofac_RegistrationExtensions_Where__2_Autofac_Builder_IRegistrationBuilder___0_Autofac_Features_Scanning_OpenGenericScanningActivatorData___1__System_Func_System_Type_System_Boolean__">Where&lt;TLimit, TRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, OpenGenericScanningActivatorData, TRegistrationStyle&gt;, Func&lt;Type, bool&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Specifies a subset of open generic types to register from a scanned assembly.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.Where.html#Autofac_RegistrationExtensions_Where__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Func_System_Type_System_Boolean__">Where&lt;TLimit, TScanningActivatorData, TRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, TScanningActivatorData, TRegistrationStyle&gt;, Func&lt;Type, bool&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Specifies a subset of types to register from a scanned assembly.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.WithMetadataFrom.html#Autofac_RegistrationExtensions_WithMetadataFrom__1_Autofac_Builder_IRegistrationBuilder_System_Object_Autofac_Features_Scanning_OpenGenericScanningActivatorData_Autofac_Builder_DynamicRegistrationStyle__">WithMetadataFrom&lt;TAttribute&gt;(IRegistrationBuilder&lt;object, OpenGenericScanningActivatorData, DynamicRegistrationStyle&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Use the properties of an attribute (or interface implemented by an attribute) on the scanned type
+to provide metadata values.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.WithMetadataFrom.html#Autofac_RegistrationExtensions_WithMetadataFrom__1_Autofac_Builder_IRegistrationBuilder_System_Object_Autofac_Features_Scanning_ScanningActivatorData_Autofac_Builder_DynamicRegistrationStyle__">WithMetadataFrom&lt;TAttribute&gt;(IRegistrationBuilder&lt;object, ScanningActivatorData, DynamicRegistrationStyle&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Use the properties of an attribute (or interface implemented by an attribute) on the scanned type
+to provide metadata values.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.WithMetadata.html#Autofac_RegistrationExtensions_WithMetadata__2_Autofac_Builder_IRegistrationBuilder___0_Autofac_Features_Scanning_OpenGenericScanningActivatorData___1__System_Func_System_Type_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String_System_Object____">WithMetadata&lt;TLimit, TRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, OpenGenericScanningActivatorData, TRegistrationStyle&gt;, Func&lt;Type, IEnumerable&lt;KeyValuePair&lt;string, object?&gt;&gt;&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Specify how a type from a scanned assembly provides metadata.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.WithMetadata.html#Autofac_RegistrationExtensions_WithMetadata__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Func_System_Type_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String_System_Object____">WithMetadata&lt;TLimit, TScanningActivatorData, TRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, TScanningActivatorData, TRegistrationStyle&gt;, Func&lt;Type, IEnumerable&lt;KeyValuePair&lt;string, object?&gt;&gt;&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Specify how a type from a scanned assembly provides metadata.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.WithMetadata.html#Autofac_RegistrationExtensions_WithMetadata__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_String_System_Func_System_Type_System_Object__">WithMetadata&lt;TLimit, TScanningActivatorData, TRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, TScanningActivatorData, TRegistrationStyle&gt;, string, Func&lt;Type, object&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Specify how a type from a scanned assembly provides metadata.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.WithParameter.html#Autofac_RegistrationExtensions_WithParameter__3_Autofac_Builder_IRegistrationBuilder___0___1___2__Autofac_Core_Parameter_">WithParameter&lt;TLimit, TReflectionActivatorData, TStyle&gt;(IRegistrationBuilder&lt;TLimit, TReflectionActivatorData, TStyle&gt;, Parameter)</a></dt>
-    <dd></dd>
+    <dd><p>Configure an explicit value for a constructor parameter.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.WithParameter.html#Autofac_RegistrationExtensions_WithParameter__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Func_System_Reflection_ParameterInfo_Autofac_IComponentContext_System_Boolean__System_Func_System_Reflection_ParameterInfo_Autofac_IComponentContext_System_Object__">WithParameter&lt;TLimit, TReflectionActivatorData, TStyle&gt;(IRegistrationBuilder&lt;TLimit, TReflectionActivatorData, TStyle&gt;, Func&lt;ParameterInfo, IComponentContext, bool&gt;, Func&lt;ParameterInfo, IComponentContext, object?&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Configure an explicit value for a constructor parameter.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.WithParameter.html#Autofac_RegistrationExtensions_WithParameter__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_String_System_Object_">WithParameter&lt;TLimit, TReflectionActivatorData, TStyle&gt;(IRegistrationBuilder&lt;TLimit, TReflectionActivatorData, TStyle&gt;, string, object)</a></dt>
-    <dd></dd>
+    <dd><p>Configure an explicit value for a constructor parameter.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.WithParameters.html#Autofac_RegistrationExtensions_WithParameters__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Collections_Generic_IEnumerable_Autofac_Core_Parameter__">WithParameters&lt;TLimit, TReflectionActivatorData, TStyle&gt;(IRegistrationBuilder&lt;TLimit, TReflectionActivatorData, TStyle&gt;, IEnumerable&lt;Parameter&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Configure explicit values for constructor parameters.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.WithProperties.html#Autofac_RegistrationExtensions_WithProperties__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Collections_Generic_IEnumerable_Autofac_Core_Parameter__">WithProperties&lt;TLimit, TReflectionActivatorData, TStyle&gt;(IRegistrationBuilder&lt;TLimit, TReflectionActivatorData, TStyle&gt;, IEnumerable&lt;Parameter&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Configure explicit values for properties.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.WithProperty.html#Autofac_RegistrationExtensions_WithProperty__3_Autofac_Builder_IRegistrationBuilder___0___1___2__Autofac_Core_Parameter_">WithProperty&lt;TLimit, TReflectionActivatorData, TStyle&gt;(IRegistrationBuilder&lt;TLimit, TReflectionActivatorData, TStyle&gt;, Parameter)</a></dt>
-    <dd></dd>
+    <dd><p>Configure an explicit value for a property.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.WithProperty.html#Autofac_RegistrationExtensions_WithProperty__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_String_System_Object_">WithProperty&lt;TLimit, TReflectionActivatorData, TStyle&gt;(IRegistrationBuilder&lt;TLimit, TReflectionActivatorData, TStyle&gt;, string, object?)</a></dt>
-    <dd></dd>
+    <dd><p>Configure an explicit value for a property.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.RegistrationExtensions.WithProperty.html#Autofac_RegistrationExtensions_WithProperty__4_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Linq_Expressions_Expression_System_Func___0___3_____3_">WithProperty&lt;TLimit, TReflectionActivatorData, TStyle, TProperty&gt;(IRegistrationBuilder&lt;TLimit, TReflectionActivatorData, TStyle&gt;, Expression&lt;Func&lt;TLimit, TProperty&gt;&gt;, TProperty)</a></dt>
-    <dd></dd>
+    <dd><p>Configure an explicit value for a property.</p>
+</dd>
   </dl>
 
 

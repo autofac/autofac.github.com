@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,8 @@ Method InterceptedBy
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Assigns a list of interceptor services to a registration by service.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -133,25 +134,31 @@ Method InterceptedBy
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>builder</code> <a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, TActivatorData, TStyle&gt;</dt>
-  <dd></dd>
+  <dd><p>Registration to apply interception to.</p>
+</dd>
   <dt><code>interceptorServices</code> <a class="xref" href="Autofac.Core.Service.html">Service</a>[]</dt>
-  <dd></dd>
+  <dd><p>The interceptor services.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, TActivatorData, TStyle&gt;</dt>
-  <dd></dd>
+  <dd><p>Registration builder allowing the registration to be configured.</p>
+</dd>
 </dl>
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>TLimit</code></dt>
-  <dd></dd>
+  <dd><p>Registration limit type.</p>
+</dd>
   <dt><code>TActivatorData</code></dt>
-  <dd></dd>
+  <dd><p>Activator data type.</p>
+</dd>
   <dt><code>TStyle</code></dt>
-  <dd></dd>
+  <dd><p>Registration style.</p>
+</dd>
 </dl>
 
 
@@ -160,6 +167,12 @@ Method InterceptedBy
 
 
 
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><span class="xref">ArgumentNullException</span></dt>
+  <dd><p>Thrown when <code class="paramref">builder</code> or <code class="paramref">interceptorServices</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+</dl>
 
 
 
@@ -170,7 +183,8 @@ Method InterceptedBy
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Assigns a list of interceptor services to a registration by name.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -180,25 +194,31 @@ Method InterceptedBy
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>builder</code> <a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, TActivatorData, TStyle&gt;</dt>
-  <dd></dd>
-  <dt><code>interceptorServiceNames</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
-  <dd></dd>
+  <dd><p>Registration to apply interception to.</p>
+</dd>
+  <dt><code>interceptorServiceNames</code> <span class="xref">string</span>[]</dt>
+  <dd><p>The names of the interceptor services.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, TActivatorData, TStyle&gt;</dt>
-  <dd></dd>
+  <dd><p>Registration builder allowing the registration to be configured.</p>
+</dd>
 </dl>
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>TLimit</code></dt>
-  <dd></dd>
+  <dd><p>Registration limit type.</p>
+</dd>
   <dt><code>TActivatorData</code></dt>
-  <dd></dd>
+  <dd><p>Activator data type.</p>
+</dd>
   <dt><code>TStyle</code></dt>
-  <dd></dd>
+  <dd><p>Registration style.</p>
+</dd>
 </dl>
 
 
@@ -207,6 +227,12 @@ Method InterceptedBy
 
 
 
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><span class="xref">ArgumentNullException</span></dt>
+  <dd><p>Thrown when <code class="paramref">builder</code> or <code class="paramref">interceptorServiceNames</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+</dl>
 
 
 
@@ -217,7 +243,9 @@ Method InterceptedBy
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Assigns a list of interceptor services to a registration by interceptor
+type.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -227,25 +255,31 @@ Method InterceptedBy
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>builder</code> <a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, TActivatorData, TStyle&gt;</dt>
-  <dd></dd>
-  <dt><code>interceptorServiceTypes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a>[]</dt>
-  <dd></dd>
+  <dd><p>Registration to apply interception to.</p>
+</dd>
+  <dt><code>interceptorServiceTypes</code> <span class="xref">Type</span>[]</dt>
+  <dd><p>The types of the interceptor services.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, TActivatorData, TStyle&gt;</dt>
-  <dd></dd>
+  <dd><p>Registration builder allowing the registration to be configured.</p>
+</dd>
 </dl>
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>TLimit</code></dt>
-  <dd></dd>
+  <dd><p>Registration limit type.</p>
+</dd>
   <dt><code>TActivatorData</code></dt>
-  <dd></dd>
+  <dd><p>Activator data type.</p>
+</dd>
   <dt><code>TStyle</code></dt>
-  <dd></dd>
+  <dd><p>Registration style.</p>
+</dd>
 </dl>
 
 
@@ -254,6 +288,12 @@ Method InterceptedBy
 
 
 
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><span class="xref">ArgumentNullException</span></dt>
+  <dd><p>Thrown when <code class="paramref">builder</code> or <code class="paramref">interceptorServiceTypes</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+</dl>
 
 
 

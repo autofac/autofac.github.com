@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,8 @@ Method AddBindingParameters
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Implement to pass data at runtime to bindings to support custom behavior.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -133,9 +134,11 @@ Method AddBindingParameters
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>endpoint</code> <span class="xref">ServiceEndpoint</span></dt>
-  <dd></dd>
+  <dd><p>The endpoint to modify.</p>
+</dd>
   <dt><code>bindingParameters</code> <span class="xref">BindingParameterCollection</span></dt>
-  <dd></dd>
+  <dd><p>The objects that binding elements require to support the behavior.</p>
+</dd>
 </dl>
 
 
@@ -156,7 +159,8 @@ Method AddBindingParameters
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Provides the ability to pass custom data to binding elements to support the contract implementation.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -166,13 +170,17 @@ Method AddBindingParameters
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>serviceDescription</code> <span class="xref">ServiceDescription</span></dt>
-  <dd></dd>
+  <dd><p>The service description of the service.</p>
+</dd>
   <dt><code>serviceHostBase</code> <span class="xref">ServiceHostBase</span></dt>
-  <dd></dd>
-  <dt><code>endpoints</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1">Collection</a>&lt;<span class="xref">ServiceEndpoint</span>&gt;</dt>
-  <dd></dd>
+  <dd><p>The host of the service.</p>
+</dd>
+  <dt><code>endpoints</code> <span class="xref">Collection</span>&lt;<span class="xref">ServiceEndpoint</span>&gt;</dt>
+  <dd><p>The service endpoints.</p>
+</dd>
   <dt><code>bindingParameters</code> <span class="xref">BindingParameterCollection</span></dt>
-  <dd></dd>
+  <dd><p>Custom objects to which binding elements have access.</p>
+</dd>
 </dl>
 
 

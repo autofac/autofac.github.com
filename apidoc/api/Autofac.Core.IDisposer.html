@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IDisposer | Autofac ">
       
-      
+      <meta name="description" content="Provided on an object that will dispose of other objects when it is itself disposed.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,9 @@ Interface IDisposer
   <dl><dt>Assembly</dt><dd>Autofac.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Provided on an object that will dispose of other objects when it is
+itself disposed.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -119,11 +121,16 @@ Interface IDisposer
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.IDisposer.AddInstanceForAsyncDisposal.html#Autofac_Core_IDisposer_AddInstanceForAsyncDisposal_System_IAsyncDisposable_">AddInstanceForAsyncDisposal(IAsyncDisposable)</a></dt>
-    <dd></dd>
+    <dd><p>Adds an object to the disposer, where that object implements IAsyncDisposable. When the disposer is
+disposed, so will the object be.
+You should most likely implement IDisposable as well, and call <a class="xref" href="Autofac.Core.IDisposer.AddInstanceForDisposal.html#Autofac_Core_IDisposer_AddInstanceForDisposal_System_IDisposable_">AddInstanceForDisposal(IDisposable)</a> instead of this method.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.IDisposer.AddInstanceForDisposal.html#Autofac_Core_IDisposer_AddInstanceForDisposal_System_IDisposable_">AddInstanceForDisposal(IDisposable)</a></dt>
-    <dd></dd>
+    <dd><p>Adds an object to the disposer. When the disposer is
+disposed, so will the object be.</p>
+</dd>
   </dl>
 
 

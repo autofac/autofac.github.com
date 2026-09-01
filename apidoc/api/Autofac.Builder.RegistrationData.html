@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class RegistrationData | Autofac ">
       
-      
+      <meta name="description" content="Data common to all registrations made in the container, both direct (IComponentRegistration) and dynamic (IRegistrationSource).">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,9 @@ Class RegistrationData
   <dl><dt>Assembly</dt><dd>Autofac.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Data common to all registrations made in the container, both direct (IComponentRegistration)
+and dynamic (IRegistrationSource).</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -109,7 +111,7 @@ Class RegistrationData
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><span class="xref">RegistrationData</span></div>
     </dd>
   </dl>
@@ -126,7 +128,8 @@ Class RegistrationData
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Builder.RegistrationData.-ctor.html#Autofac_Builder_RegistrationData__ctor_Autofac_Core_Service_">RegistrationData(Service)</a></dt>
-    <dd></dd>
+    <dd><p>Initializes a new instance of the <a class="xref" href="Autofac.Builder.RegistrationData.html">RegistrationData</a> class.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="properties">Properties
@@ -134,31 +137,38 @@ Class RegistrationData
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Builder.RegistrationData.DeferredCallback.html#Autofac_Builder_RegistrationData_DeferredCallback">DeferredCallback</a></dt>
-    <dd></dd>
+    <dd><p>Gets or sets the callback used to register this component.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Builder.RegistrationData.Lifetime.html#Autofac_Builder_RegistrationData_Lifetime">Lifetime</a></dt>
-    <dd></dd>
+    <dd><p>Gets or sets the lifetime assigned to the component.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Builder.RegistrationData.Metadata.html#Autofac_Builder_RegistrationData_Metadata">Metadata</a></dt>
-    <dd></dd>
+    <dd><p>Gets the extended properties assigned to the component.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Builder.RegistrationData.Options.html#Autofac_Builder_RegistrationData_Options">Options</a></dt>
-    <dd></dd>
+    <dd><p>Gets or sets the options for the registration.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Builder.RegistrationData.Ownership.html#Autofac_Builder_RegistrationData_Ownership">Ownership</a></dt>
-    <dd></dd>
+    <dd><p>Gets or sets the instance ownership assigned to the component.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Builder.RegistrationData.Services.html#Autofac_Builder_RegistrationData_Services">Services</a></dt>
-    <dd></dd>
+    <dd><p>Gets the services explicitly assigned to the component.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Builder.RegistrationData.Sharing.html#Autofac_Builder_RegistrationData_Sharing">Sharing</a></dt>
-    <dd></dd>
+    <dd><p>Gets or sets the sharing mode assigned to the component.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -166,19 +176,23 @@ Class RegistrationData
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Builder.RegistrationData.AddService.html#Autofac_Builder_RegistrationData_AddService_Autofac_Core_Service_">AddService(Service)</a></dt>
-    <dd></dd>
+    <dd><p>Add a service to the registration, overriding the default.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Builder.RegistrationData.AddServices.html#Autofac_Builder_RegistrationData_AddServices_System_Collections_Generic_IEnumerable_Autofac_Core_Service__">AddServices(IEnumerable&lt;Service&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Add multiple services for the registration, overriding the default.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Builder.RegistrationData.ClearServices.html#Autofac_Builder_RegistrationData_ClearServices">ClearServices()</a></dt>
-    <dd></dd>
+    <dd><p>Empties the configured services.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Builder.RegistrationData.CopyFrom.html#Autofac_Builder_RegistrationData_CopyFrom_Autofac_Builder_RegistrationData_System_Boolean_">CopyFrom(RegistrationData, bool)</a></dt>
-    <dd></dd>
+    <dd><p>Copies the contents of another RegistrationData object into this one.</p>
+</dd>
   </dl>
 
 

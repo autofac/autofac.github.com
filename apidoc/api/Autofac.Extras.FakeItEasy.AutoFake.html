@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class AutoFake | Autofac ">
       
-      
+      <meta name="description" content="Wrapper around  and .">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,8 @@ Class AutoFake
   <dl><dt>Assembly</dt><dd>Autofac.Extras.FakeItEasy.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Wrapper around <a class="xref" href="Autofac.html">Autofac</a> and <a class="xref" href="Autofac.Extras.FakeItEasy.html">Autofac.Extras.FakeItEasy</a>.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -110,7 +111,7 @@ public class AutoFake</code></pre>
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><span class="xref">AutoFake</span></div>
     </dd>
   </dl>
@@ -126,8 +127,9 @@ public class AutoFake</code></pre>
 </h2>
 
   <dl class="jumplist">
-    <dt><a class="xref" href="Autofac.Extras.FakeItEasy.AutoFake.-ctor.html#Autofac_Extras_FakeItEasy_AutoFake__ctor_System_Boolean_System_Boolean_System_Action_System_Object__Autofac_ContainerBuilder_System_Action_Autofac_ContainerBuilder__">AutoFake(bool, bool, Action&lt;object&gt;, ContainerBuilder, Action&lt;ContainerBuilder&gt;)</a></dt>
-    <dd></dd>
+    <dt><a class="xref" href="Autofac.Extras.FakeItEasy.AutoFake.-ctor.html#Autofac_Extras_FakeItEasy_AutoFake__ctor_System_Boolean_System_Boolean_System_Action_System_Object__System_Action_Autofac_ContainerBuilder__">AutoFake(bool, bool, Action&lt;object&gt;?, Action&lt;ContainerBuilder&gt;?)</a></dt>
+    <dd><p>Initializes a new instance of the <a class="xref" href="Autofac.Extras.FakeItEasy.AutoFake.html">AutoFake</a> class.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="properties">Properties
@@ -135,39 +137,32 @@ public class AutoFake</code></pre>
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Extras.FakeItEasy.AutoFake.Container.html#Autofac_Extras_FakeItEasy_AutoFake_Container">Container</a></dt>
-    <dd></dd>
+    <dd><p>Gets the <a class="xref" href="Autofac.IContainer.html">IContainer</a> that handles the component resolution.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
 </h2>
 
   <dl class="jumplist">
-    <dt><a class="xref" href="Autofac.Extras.FakeItEasy.AutoFake.Create.html#Autofac_Extras_FakeItEasy_AutoFake_Create__1_Autofac_Core_Parameter___">Create&lt;T&gt;(params Parameter[])</a></dt>
-    <dd></dd>
-  </dl>
-  <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Extras.FakeItEasy.AutoFake.Dispose.html#Autofac_Extras_FakeItEasy_AutoFake_Dispose">Dispose()</a></dt>
-    <dd></dd>
+    <dd><p>Disposes internal container.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Extras.FakeItEasy.AutoFake.Dispose.html#Autofac_Extras_FakeItEasy_AutoFake_Dispose_System_Boolean_">Dispose(bool)</a></dt>
-    <dd></dd>
+    <dd><p>Handles disposal of managed and unmanaged resources.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Extras.FakeItEasy.AutoFake.Finalize.html#Autofac_Extras_FakeItEasy_AutoFake_Finalize">~AutoFake()</a></dt>
-    <dd></dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="Autofac.Extras.FakeItEasy.AutoFake.Provide.html#Autofac_Extras_FakeItEasy_AutoFake_Provide__1___0_">Provide&lt;TService&gt;(TService)</a></dt>
-    <dd></dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="Autofac.Extras.FakeItEasy.AutoFake.Provide.html#Autofac_Extras_FakeItEasy_AutoFake_Provide__2_Autofac_Core_Parameter___">Provide&lt;TService, TImplementation&gt;(params Parameter[])</a></dt>
-    <dd></dd>
+    <dd><p>Finalizes an instance of the <a class="xref" href="Autofac.Extras.FakeItEasy.AutoFake.html">AutoFake</a> class.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Extras.FakeItEasy.AutoFake.Resolve.html#Autofac_Extras_FakeItEasy_AutoFake_Resolve__1_Autofac_Core_Parameter___">Resolve&lt;T&gt;(params Parameter[])</a></dt>
-    <dd></dd>
+    <dd><p>Resolve the specified type in the container (register it if needed).</p>
+</dd>
   </dl>
 
 

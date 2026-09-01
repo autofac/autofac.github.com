@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,11 @@ Method EnableInterfaceInterceptors
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Enable interface interception on the target type. Interceptors will be
+determined via <a class="xref" href="Autofac.Extras.DynamicProxy.InterceptAttribute.html">InterceptAttribute</a> on the class or
+interface, or added with
+<a class="xref" href="Autofac.Extras.DynamicProxy.RegistrationExtensions.InterceptedBy.html#Autofac_Extras_DynamicProxy_RegistrationExtensions_InterceptedBy__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_String___">InterceptedBy&lt;TLimit, TActivatorData, TStyle&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, TStyle&gt;, params string[])</a>.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -133,25 +137,153 @@ Method EnableInterfaceInterceptors
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>registration</code> <a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;</dt>
-  <dd></dd>
+  <dd><p>Registration to apply interception to.</p>
+</dd>
   <dt><code>options</code> <span class="xref">ProxyGenerationOptions</span></dt>
-  <dd></dd>
+  <dd><p>Proxy generation options to apply.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;</dt>
-  <dd></dd>
+  <dd><p>Registration builder allowing the registration to be configured.</p>
+</dd>
 </dl>
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>TLimit</code></dt>
-  <dd></dd>
+  <dd><p>Registration limit type.</p>
+</dd>
   <dt><code>TActivatorData</code></dt>
-  <dd></dd>
+  <dd><p>Activator data type.</p>
+</dd>
   <dt><code>TSingleRegistrationStyle</code></dt>
-  <dd></dd>
+  <dd><p>Registration style.</p>
+</dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+<a id="Autofac_Extras_DynamicProxy_RegistrationExtensions_EnableInterfaceInterceptors_" data-uid="Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableInterfaceInterceptors*"></a>
+
+<h3 id="Autofac_Extras_DynamicProxy_RegistrationExtensions_EnableInterfaceInterceptors__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Func_System_Type_System_Boolean__" data-uid="Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableInterfaceInterceptors``3(Autofac.Builder.IRegistrationBuilder{``0,``1,``2},System.Func{System.Type,System.Boolean})">
+  EnableInterfaceInterceptors&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;, Func&lt;Type, bool&gt;)
+  
+</h3>
+
+<div class="markdown level1 summary"><p>Enable interface interception on the target type, conditionally based on
+the resolved implementation type. Interceptors will be determined via
+<a class="xref" href="Autofac.Extras.DynamicProxy.InterceptAttribute.html">InterceptAttribute</a> on the class or interface, or added with
+<a class="xref" href="Autofac.Extras.DynamicProxy.RegistrationExtensions.InterceptedBy.html#Autofac_Extras_DynamicProxy_RegistrationExtensions_InterceptedBy__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_String___">InterceptedBy&lt;TLimit, TActivatorData, TStyle&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, TStyle&gt;, params string[])</a>.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static IRegistrationBuilder&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt; EnableInterfaceInterceptors&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;(this IRegistrationBuilder&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt; registration, Func&lt;Type, bool&gt; shouldIntercept)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>registration</code> <a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;</dt>
+  <dd><p>Registration to apply interception to.</p>
+</dd>
+  <dt><code>shouldIntercept</code> <span class="xref">Func</span>&lt;<span class="xref">Type</span>, <span class="xref">bool</span>&gt;</dt>
+  <dd><p>A predicate, evaluated against the resolved implementation type, that
+determines whether interception is applied. When the predicate returns
+<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> the resolved instance is returned without a proxy.</p>
+</dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;</dt>
+  <dd><p>Registration builder allowing the registration to be configured.</p>
+</dd>
+</dl>
+
+<h4 class="section">Type Parameters</h4>
+<dl class="parameters">
+  <dt><code>TLimit</code></dt>
+  <dd><p>Registration limit type.</p>
+</dd>
+  <dt><code>TActivatorData</code></dt>
+  <dd><p>Activator data type.</p>
+</dd>
+  <dt><code>TSingleRegistrationStyle</code></dt>
+  <dd><p>Registration style.</p>
+</dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+<a id="Autofac_Extras_DynamicProxy_RegistrationExtensions_EnableInterfaceInterceptors_" data-uid="Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableInterfaceInterceptors*"></a>
+
+<h3 id="Autofac_Extras_DynamicProxy_RegistrationExtensions_EnableInterfaceInterceptors__3_Autofac_Builder_IRegistrationBuilder___0___1___2__Castle_DynamicProxy_ProxyGenerationOptions_System_Func_System_Type_System_Boolean__" data-uid="Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableInterfaceInterceptors``3(Autofac.Builder.IRegistrationBuilder{``0,``1,``2},Castle.DynamicProxy.ProxyGenerationOptions,System.Func{System.Type,System.Boolean})">
+  EnableInterfaceInterceptors&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;, ProxyGenerationOptions?, Func&lt;Type, bool&gt;?)
+  
+</h3>
+
+<div class="markdown level1 summary"><p>Enable interface interception on the target type, conditionally based on
+the resolved implementation type, with specific options. Interceptors
+will be determined via <a class="xref" href="Autofac.Extras.DynamicProxy.InterceptAttribute.html">InterceptAttribute</a> on the class or
+interface, or added with
+<a class="xref" href="Autofac.Extras.DynamicProxy.RegistrationExtensions.InterceptedBy.html#Autofac_Extras_DynamicProxy_RegistrationExtensions_InterceptedBy__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_String___">InterceptedBy&lt;TLimit, TActivatorData, TStyle&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, TStyle&gt;, params string[])</a>.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static IRegistrationBuilder&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt; EnableInterfaceInterceptors&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;(this IRegistrationBuilder&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt; registration, ProxyGenerationOptions? options, Func&lt;Type, bool&gt;? shouldIntercept)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>registration</code> <a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;</dt>
+  <dd><p>Registration to apply interception to.</p>
+</dd>
+  <dt><code>options</code> <span class="xref">ProxyGenerationOptions</span></dt>
+  <dd><p>Proxy generation options to apply.</p>
+</dd>
+  <dt><code>shouldIntercept</code> <span class="xref">Func</span>&lt;<span class="xref">Type</span>, <span class="xref">bool</span>&gt;</dt>
+  <dd><p>A predicate, evaluated against the resolved implementation type, that
+determines whether interception is applied. When the predicate returns
+<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> the resolved instance is returned without a proxy.</p>
+</dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;</dt>
+  <dd><p>Registration builder allowing the registration to be configured.</p>
+</dd>
+</dl>
+
+<h4 class="section">Type Parameters</h4>
+<dl class="parameters">
+  <dt><code>TLimit</code></dt>
+  <dd><p>Registration limit type.</p>
+</dd>
+  <dt><code>TActivatorData</code></dt>
+  <dd><p>Activator data type.</p>
+</dd>
+  <dt><code>TSingleRegistrationStyle</code></dt>
+  <dd><p>Registration style.</p>
+</dd>
 </dl>
 
 

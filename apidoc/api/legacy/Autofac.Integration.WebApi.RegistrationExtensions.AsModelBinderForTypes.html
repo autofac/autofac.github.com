@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,8 @@ Method AsModelBinderForTypes
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Sets a provided registration to act as an <span class="xref">System.Web.Http.ModelBinding.IModelBinder</span> for the specified list of types.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -133,25 +134,31 @@ Method AsModelBinderForTypes
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>registration</code> <a class="xref" href="../Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, TActivatorData, TRegistrationStyle&gt;</dt>
-  <dd></dd>
-  <dt><code>types</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a>[]</dt>
-  <dd></dd>
+  <dd><p>The registration for the type or object instance that will act as the model binder.</p>
+</dd>
+  <dt><code>types</code> <span class="xref">Type</span>[]</dt>
+  <dd><p>The list of model <span class="xref">System.Type</span> for which the <code class="paramref">registration</code> should be a model binder.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="../Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, TActivatorData, TRegistrationStyle&gt;</dt>
-  <dd></dd>
+  <dd><p>An Autofac registration that can be modified as needed.</p>
+</dd>
 </dl>
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>TLimit</code></dt>
-  <dd></dd>
+  <dd><p>Registration limit type.</p>
+</dd>
   <dt><code>TActivatorData</code></dt>
-  <dd></dd>
+  <dd><p>Activator data type.</p>
+</dd>
   <dt><code>TRegistrationStyle</code></dt>
-  <dd></dd>
+  <dd><p>Registration style.</p>
+</dd>
 </dl>
 
 
@@ -160,6 +167,15 @@ Method AsModelBinderForTypes
 
 
 
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><span class="xref">ArgumentNullException</span></dt>
+  <dd><p>Thrown if <code class="paramref">registration</code> or <code class="paramref">types</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+  <dt><span class="xref">ArgumentException</span></dt>
+  <dd><p>Thrown if <code class="paramref">types</code> is empty or contains all <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> values.</p>
+</dd>
+</dl>
 
 
 

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class DefaultPropertySelector | Autofac ">
       
-      
+      <meta name="description" content="Provides default property selector that applies appropriate filters to ensure only public settable properties are selected (including filtering for value types and indexed properties).">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,10 @@ Class DefaultPropertySelector
   <dl><dt>Assembly</dt><dd>Autofac.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Provides default property selector that applies appropriate filters to ensure only
+public settable properties are selected (including filtering for value types and indexed
+properties).</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -109,7 +112,7 @@ Class DefaultPropertySelector
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><span class="xref">DefaultPropertySelector</span></div>
     </dd>
   </dl>
@@ -132,7 +135,9 @@ Class DefaultPropertySelector
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.DefaultPropertySelector.-ctor.html#Autofac_Core_DefaultPropertySelector__ctor_System_Boolean_">DefaultPropertySelector(bool)</a></dt>
-    <dd></dd>
+    <dd><p>Initializes a new instance of the <a class="xref" href="Autofac.Core.DefaultPropertySelector.html">DefaultPropertySelector</a> class
+that provides default selection criteria.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="properties">Properties
@@ -140,7 +145,9 @@ Class DefaultPropertySelector
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.DefaultPropertySelector.PreserveSetValues.html#Autofac_Core_DefaultPropertySelector_PreserveSetValues">PreserveSetValues</a></dt>
-    <dd></dd>
+    <dd><p>Gets a value indicating whether the value should be set if the value is already
+set (ie non-null).</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -148,7 +155,9 @@ Class DefaultPropertySelector
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.DefaultPropertySelector.InjectProperty.html#Autofac_Core_DefaultPropertySelector_InjectProperty_System_Reflection_PropertyInfo_System_Object_">InjectProperty(PropertyInfo, object)</a></dt>
-    <dd></dd>
+    <dd><p>Provides default filtering to determine if property should be injected by rejecting
+non-public settable properties.</p>
+</dd>
   </dl>
 
 

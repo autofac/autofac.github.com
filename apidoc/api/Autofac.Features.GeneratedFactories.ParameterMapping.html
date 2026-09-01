@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Enum ParameterMapping | Autofac ">
       
-      
+      <meta name="description" content="Determines how the parameters of the delegate type are passed on to the generated Resolve() call as Parameter objects.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -97,7 +97,9 @@ Enum ParameterMapping
   <dl><dt>Assembly</dt><dd>Autofac.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Determines how the parameters of the delegate type are passed on
+to the generated Resolve() call as Parameter objects.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -116,13 +118,29 @@ Enum ParameterMapping
 </h2>
   <dl class="parameters">
     <dt id="Autofac_Features_GeneratedFactories_ParameterMapping_Adaptive"><code>Adaptive = 0</code></dt>
-    <dd></dd>
+  
+  <dd><p>Chooses parameter mapping based on the factory type.
+For Func-based factories this is equivalent to ByType, for all
+others ByName will be used.</p>
+</dd>
     <dt id="Autofac_Features_GeneratedFactories_ParameterMapping_ByName"><code>ByName = 1</code></dt>
-    <dd></dd>
+  
+  <dd><p>Pass the parameters supplied to the delegate through to the
+underlying registration as NamedParameters based on the parameter
+names in the delegate type's formal argument list.</p>
+</dd>
     <dt id="Autofac_Features_GeneratedFactories_ParameterMapping_ByPosition"><code>ByPosition = 3</code></dt>
-    <dd></dd>
+  
+  <dd><p>Pass the parameters supplied to the delegate through to the
+underlying registration as PositionalParameters based on the parameter
+indices in the delegate type's formal argument list.</p>
+</dd>
     <dt id="Autofac_Features_GeneratedFactories_ParameterMapping_ByType"><code>ByType = 2</code></dt>
-    <dd></dd>
+  
+  <dd><p>Pass the parameters supplied to the delegate through to the
+underlying registration as TypedParameters based on the parameter
+types in the delegate type's formal argument list.</p>
+</dd>
   </dl>
 
 

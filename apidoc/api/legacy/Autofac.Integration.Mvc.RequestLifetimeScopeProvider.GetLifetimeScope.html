@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -119,27 +119,30 @@ Method GetLifetimeScope
 <a id="Autofac_Integration_Mvc_RequestLifetimeScopeProvider_GetLifetimeScope_" data-uid="Autofac.Integration.Mvc.RequestLifetimeScopeProvider.GetLifetimeScope*"></a>
 
 <h3 id="Autofac_Integration_Mvc_RequestLifetimeScopeProvider_GetLifetimeScope_System_Action_Autofac_ContainerBuilder__" data-uid="Autofac.Integration.Mvc.RequestLifetimeScopeProvider.GetLifetimeScope(System.Action{Autofac.ContainerBuilder})">
-  GetLifetimeScope(Action&lt;ContainerBuilder&gt;)
+  GetLifetimeScope(Action&lt;ContainerBuilder&gt;?)
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Gets a nested lifetime scope that services can be resolved from.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public ILifetimeScope GetLifetimeScope(Action&lt;ContainerBuilder&gt; configurationAction)</code></pre>
+  <pre><code class="lang-csharp hljs">public ILifetimeScope GetLifetimeScope(Action&lt;ContainerBuilder&gt;? configurationAction)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><code>configurationAction</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="../Autofac.ContainerBuilder.html">ContainerBuilder</a>&gt;</dt>
-  <dd></dd>
+  <dt><code>configurationAction</code> <span class="xref">Action</span>&lt;<a class="xref" href="../Autofac.ContainerBuilder.html">ContainerBuilder</a>&gt;</dt>
+  <dd><p>A configuration action that will execute during lifetime scope creation.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="../Autofac.ILifetimeScope.html">ILifetimeScope</a></dt>
-  <dd></dd>
+  <dd><p>A new or existing nested lifetime scope.</p>
+</dd>
 </dl>
 
 

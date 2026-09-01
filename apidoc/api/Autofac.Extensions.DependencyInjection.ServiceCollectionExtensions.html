@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class ServiceCollectionExtensions | Autofac ">
       
-      
+      <meta name="description" content="Extension methods on  to register the .">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,8 @@ Class ServiceCollectionExtensions
   <dl><dt>Assembly</dt><dd>Autofac.Extensions.DependencyInjection.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Extension methods on <span class="xref">Microsoft.Extensions.DependencyInjection.IServiceCollection</span> to register the <span class="xref">Microsoft.Extensions.DependencyInjection.IServiceProviderFactory&lt;TContainerBuilder&gt;</span>.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -109,7 +110,7 @@ Class ServiceCollectionExtensions
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><span class="xref">ServiceCollectionExtensions</span></div>
     </dd>
   </dl>
@@ -126,7 +127,9 @@ Class ServiceCollectionExtensions
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Extensions.DependencyInjection.ServiceCollectionExtensions.AddAutofac.html#Autofac_Extensions_DependencyInjection_ServiceCollectionExtensions_AddAutofac_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Action_Autofac_ContainerBuilder__">AddAutofac(IServiceCollection, Action&lt;ContainerBuilder&gt;?)</a></dt>
-    <dd></dd>
+    <dd><p>Adds the <a class="xref" href="Autofac.Extensions.DependencyInjection.AutofacServiceProviderFactory.html">AutofacServiceProviderFactory</a> to the service collection. ONLY FOR PRE-ASP.NET 3.0 HOSTING. THIS WON'T WORK
+FOR ASP.NET CORE 3.0+ OR GENERIC HOSTING.</p>
+</dd>
   </dl>
 
 

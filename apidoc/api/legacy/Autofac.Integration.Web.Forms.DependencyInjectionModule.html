@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class DependencyInjectionModule | Autofac ">
       
-      
+      <meta name="description" content="Base for classes that inject dependencies into HTTP Handlers.">
       <link rel="icon" href="../../favicon.ico">
       <link rel="stylesheet" href="../../public/docfx.min.css">
       <link rel="stylesheet" href="../../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,8 @@ Class DependencyInjectionModule
   <dl><dt>Assembly</dt><dd>Autofac.Integration.Web.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Base for classes that inject dependencies into HTTP Handlers.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -109,7 +110,7 @@ Class DependencyInjectionModule
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><span class="xref">DependencyInjectionModule</span></div>
     </dd>
   </dl>
@@ -142,15 +143,18 @@ Class DependencyInjectionModule
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Web.Forms.DependencyInjectionModule.NoInjection.html#Autofac_Integration_Web_Forms_DependencyInjectionModule_NoInjection">NoInjection</a></dt>
-    <dd></dd>
+    <dd><p>Gets a behavior that does not inject dependencies.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Web.Forms.DependencyInjectionModule.PropertyInjection.html#Autofac_Integration_Web_Forms_DependencyInjectionModule_PropertyInjection">PropertyInjection</a></dt>
-    <dd></dd>
+    <dd><p>Gets a behavior that injects resolvable dependencies.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Web.Forms.DependencyInjectionModule.UnsetPropertyInjection.html#Autofac_Integration_Web_Forms_DependencyInjectionModule_UnsetPropertyInjection">UnsetPropertyInjection</a></dt>
-    <dd></dd>
+    <dd><p>Gets a behavior that injects unset, resolvable dependencies.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -158,19 +162,23 @@ Class DependencyInjectionModule
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Web.Forms.DependencyInjectionModule.Dispose.html#Autofac_Integration_Web_Forms_DependencyInjectionModule_Dispose">Dispose()</a></dt>
-    <dd></dd>
+    <dd><p>Disposes of the resources (other than memory) used by the module that implements <span class="xref">System.Web.IHttpModule</span>.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Web.Forms.DependencyInjectionModule.GetInjectionBehavior.html#Autofac_Integration_Web_Forms_DependencyInjectionModule_GetInjectionBehavior_System_Web_IHttpHandler_">GetInjectionBehavior(IHttpHandler)</a></dt>
-    <dd></dd>
+    <dd><p>Internal for testability outside of a web application.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Web.Forms.DependencyInjectionModule.GetInjectionBehaviorForHandlerType.html#Autofac_Integration_Web_Forms_DependencyInjectionModule_GetInjectionBehaviorForHandlerType_System_Type_">GetInjectionBehaviorForHandlerType(Type)</a></dt>
-    <dd></dd>
+    <dd><p>Override to customize injection behavior based on HTTP Handler type.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Web.Forms.DependencyInjectionModule.Init.html#Autofac_Integration_Web_Forms_DependencyInjectionModule_Init_System_Web_HttpApplication_">Init(HttpApplication)</a></dt>
-    <dd></dd>
+    <dd><p>Initializes a module and prepares it to handle requests.</p>
+</dd>
   </dl>
 
 

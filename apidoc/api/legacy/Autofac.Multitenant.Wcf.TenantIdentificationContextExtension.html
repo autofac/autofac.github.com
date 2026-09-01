@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class TenantIdentificationContextExtension | Autofac ">
       
-      
+      <meta name="description" content="Extension for  that allows propagation of the tenant ID.">
       <link rel="icon" href="../../favicon.ico">
       <link rel="stylesheet" href="../../public/docfx.min.css">
       <link rel="stylesheet" href="../../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,9 @@ Class TenantIdentificationContextExtension
   <dl><dt>Assembly</dt><dd>Autofac.Multitenant.Wcf.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Extension for <span class="xref">System.ServiceModel.OperationContext</span>
+that allows propagation of the tenant ID.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -109,7 +111,7 @@ Class TenantIdentificationContextExtension
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><span class="xref">TenantIdentificationContextExtension</span></div>
     </dd>
   </dl>
@@ -120,6 +122,28 @@ Class TenantIdentificationContextExtension
 
 
 
+  <h2 id="Autofac_Multitenant_Wcf_TenantIdentificationContextExtension_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+Use this extension in conjunction with the
+<a class="xref" href="Autofac.Multitenant.Wcf.OperationContextTenantIdentificationStrategy.html">OperationContextTenantIdentificationStrategy</a>
+to determine which tenant a given operation is running under.
+</p>
+<p>
+For example, you could use an <span class="xref">System.ServiceModel.Dispatcher.IDispatchMessageInspector</span>
+that gets the tenant ID from an incoming header and adds a
+<a class="xref" href="Autofac.Multitenant.Wcf.TenantIdentificationContextExtension.html">TenantIdentificationContextExtension</a>
+to the current <span class="xref">System.ServiceModel.OperationContext</span> with
+the tenant ID value. Then you could register the
+<a class="xref" href="Autofac.Multitenant.Wcf.OperationContextTenantIdentificationStrategy.html">OperationContextTenantIdentificationStrategy</a>
+as the mechanism for determining the tenant ID when resolving multitenant dependencies.
+</p>
+<p>
+The <a class="xref" href="Autofac.Multitenant.Wcf.TenantPropagationBehavior-1.html">TenantPropagationBehavior&lt;TTenantId&gt;</a>
+is a behavior that does exactly that - adds the tenant ID to outbound messages on the client
+and parses them on the service side. For a usage example, see
+<a class="xref" href="Autofac.Multitenant.Wcf.TenantPropagationBehavior-1.html">TenantPropagationBehavior&lt;TTenantId&gt;</a>.
+</p>
+</div>
 
   <h2 class="section" id="constructors">Constructors
 </h2>
@@ -134,7 +158,8 @@ Class TenantIdentificationContextExtension
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.Wcf.TenantIdentificationContextExtension.TenantId.html#Autofac_Multitenant_Wcf_TenantIdentificationContextExtension_TenantId">TenantId</a></dt>
-    <dd></dd>
+    <dd><p>Gets or sets the tenant ID.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -142,14 +167,21 @@ Class TenantIdentificationContextExtension
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.Wcf.TenantIdentificationContextExtension.Attach.html#Autofac_Multitenant_Wcf_TenantIdentificationContextExtension_Attach_System_ServiceModel_OperationContext_">Attach(OperationContext)</a></dt>
-    <dd></dd>
+    <dd><p>Enables an extension object to find out when it has been aggregated.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.Wcf.TenantIdentificationContextExtension.Detach.html#Autofac_Multitenant_Wcf_TenantIdentificationContextExtension_Detach_System_ServiceModel_OperationContext_">Detach(OperationContext)</a></dt>
-    <dd></dd>
+    <dd><p>Enables an object to find out when it is no longer aggregated.</p>
+</dd>
   </dl>
 
 
+  <h2 id="seealso">See Also</h2>
+  <div class="seealso">
+      <div><a class="xref" href="Autofac.Multitenant.Wcf.OperationContextTenantIdentificationStrategy.html">OperationContextTenantIdentificationStrategy</a></div>
+      <div><a class="xref" href="Autofac.Multitenant.Wcf.TenantPropagationBehavior-1.html">TenantPropagationBehavior</a>&lt;TTenantId&gt;</div>
+  </div>
 
 </article>
 

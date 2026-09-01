@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,11 @@ Method IfNotRegistered
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Attaches a predicate such that a registration will only be made if
+a specific service type is not already registered.
+The predicate will run at registration time, not runtime, to determine
+whether the registration should execute.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -133,25 +137,32 @@ Method IfNotRegistered
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>registration</code> <a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, TActivatorData, TStyle&gt;</dt>
-  <dd></dd>
-  <dt><code>serviceType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
-  <dd></dd>
+  <dd><p>The registration to configure.</p>
+</dd>
+  <dt><code>serviceType</code> <span class="xref">Type</span></dt>
+  <dd><p>The service type to check for to determine if the registration should be made.
+Note this is the <em>service type</em> - the <code>As&lt;T&gt;</code> part.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, TActivatorData, TStyle&gt;</dt>
-  <dd></dd>
+  <dd><p>A registration builder allowing further configuration of the component.</p>
+</dd>
 </dl>
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>TLimit</code></dt>
-  <dd></dd>
+  <dd><p>Registration limit type.</p>
+</dd>
   <dt><code>TActivatorData</code></dt>
-  <dd></dd>
+  <dd><p>Activator data type.</p>
+</dd>
   <dt><code>TStyle</code></dt>
-  <dd></dd>
+  <dd><p>Registration style.</p>
+</dd>
 </dl>
 
 
@@ -160,6 +171,17 @@ Method IfNotRegistered
 
 
 
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><span class="xref">ArgumentNullException</span></dt>
+  <dd><p>Thrown if <code class="paramref">registration</code> or <code class="paramref">serviceType</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+  <dt><span class="xref">NotSupportedException</span></dt>
+  <dd><p>Thrown if <code class="paramref">registration</code> has no reference to the original callback
+with which it was associated (e.g., it wasn't made with a standard registration method
+as part of a <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a>).</p>
+</dd>
+</dl>
 
 
 

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class ServiceMetadataTypeAttribute | Autofac ">
       
-      
+      <meta name="description" content="Specifies the metadata class to associate with a service implementation.">
       <link rel="icon" href="../../favicon.ico">
       <link rel="stylesheet" href="../../public/docfx.min.css">
       <link rel="stylesheet" href="../../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,8 @@ Class ServiceMetadataTypeAttribute
   <dl><dt>Assembly</dt><dd>Autofac.Multitenant.Wcf.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Specifies the metadata class to associate with a service implementation.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -110,8 +111,8 @@ public sealed class ServiceMetadataTypeAttribute : Attribute</code></pre>
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute">Attribute</a></div>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">Attribute</span></div>
       <div><span class="xref">ServiceMetadataTypeAttribute</span></div>
     </dd>
   </dl>
@@ -122,13 +123,45 @@ public sealed class ServiceMetadataTypeAttribute : Attribute</code></pre>
 
 
 
+  <h2 id="Autofac_Multitenant_Wcf_ServiceMetadataTypeAttribute_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+When hosting a service in a multitenant environment using <a class="xref" href="Autofac.Integration.Wcf.AutofacHostFactory.html">AutofacHostFactory</a>
+and the dynamic proxy generation that occurs therein, you can't really
+mark your "service implementation class" with metadata attributes like
+the <span class="xref">System.ServiceModel.ServiceBehaviorAttribute</span>. Also,
+since many of these attributes require you to mark a class rather than
+the service interface, there's no way to otherwise specify them.
+</p>
+<p>
+This attribute works similar to the <code>System.ComponentModel.DataAnnotations.MetadataTypeAttribute</code>
+and allows you to mark a service interface such that the generated dynamic
+proxy class will use a "metadata buddy class" to retrieve various attributes
+that should be applied during generation.
+</p>
+<p>
+Mark your service interface with one of these attributes, then create an
+empty class with the <span class="xref">System.ServiceModel.ServiceBehaviorAttribute</span>
+(or whatever) associated with it. The dynamic proxy generation will copy
+these attributes, thus allowing you to still make use of service metadata info.
+</p>
+<p>
+This is particularly handy when choosing to specify a service name. Since
+WCF usually infers the service name (which is also the name of the service
+element in configuration that it uses to set up the service host) from the
+type of the implementation, a dynamic proxy implementation results in
+service names like <code>Castle.Proxies.IMyServiceProxy_1</code>. To manually
+specify the name, you use the <span class="xref">System.ServiceModel.ServiceBehaviorAttribute.Name</span>
+property, which can be associated with a service metadata buddy class.
+</p>
+</div>
 
   <h2 class="section" id="constructors">Constructors
 </h2>
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.Wcf.ServiceMetadataTypeAttribute.-ctor.html#Autofac_Multitenant_Wcf_ServiceMetadataTypeAttribute__ctor_System_Type_">ServiceMetadataTypeAttribute(Type)</a></dt>
-    <dd></dd>
+    <dd><p>Initializes a new instance of the <a class="xref" href="Autofac.Multitenant.Wcf.ServiceMetadataTypeAttribute.html">ServiceMetadataTypeAttribute</a> class.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="properties">Properties
@@ -136,7 +169,8 @@ public sealed class ServiceMetadataTypeAttribute : Attribute</code></pre>
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.Wcf.ServiceMetadataTypeAttribute.MetadataClassType.html#Autofac_Multitenant_Wcf_ServiceMetadataTypeAttribute_MetadataClassType">MetadataClassType</a></dt>
-    <dd></dd>
+    <dd><p>Gets the metadata class type.</p>
+</dd>
   </dl>
 
 

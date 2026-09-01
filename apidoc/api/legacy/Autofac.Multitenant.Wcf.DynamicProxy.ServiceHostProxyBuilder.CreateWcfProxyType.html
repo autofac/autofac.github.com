@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,8 @@ Method CreateWcfProxyType
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Creates an interface proxy type that can be used by the WCF host.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -132,14 +133,18 @@ Method CreateWcfProxyType
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><code>interfaceToProxy</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
-  <dd></dd>
+  <dt><code>interfaceToProxy</code> <span class="xref">Type</span></dt>
+  <dd><p>The service interface to proxy.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
-  <dd></dd>
+  <dt><span class="xref">Type</span></dt>
+  <dd><p>A <span class="xref">System.Type</span> that is a proxy for the interface specified
+by <code class="paramref">interfaceToProxy</code> that will be able to be
+hosted by WCF.</p>
+</dd>
 </dl>
 
 
@@ -148,7 +153,34 @@ Method CreateWcfProxyType
 
 
 
+<h4 class="section" id="Autofac_Multitenant_Wcf_DynamicProxy_ServiceHostProxyBuilder_CreateWcfProxyType_System_Type__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>
+As this is a very specialized proxy type, it does not take options like
+other proxy types - the generation options are derived from the service
+interface itself.
+</p>
+<p>
+The generated type receives the class-level attributes of the metadata buddy
+class named by <a class="xref" href="Autofac.Multitenant.Wcf.ServiceMetadataTypeAttribute.html">ServiceMetadataTypeAttribute</a>. It also receives any
+non-inheritable attributes Castle replicates from the contract interface, which
+releases before 7.0 suppressed wholesale - Castle 5 removed the extension point
+that allowed that. In practice only consumer-declared attributes are affected,
+since the WCF contract attributes other than <span class="xref">System.ServiceModel.ServiceContractAttribute</span>
+are inheritable and were never replicated.
+</p>
+</div>
 
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><span class="xref">ArgumentNullException</span></dt>
+  <dd><p>Thrown if <code class="paramref">interfaceToProxy</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+  <dt><span class="xref">ArgumentException</span></dt>
+  <dd><p>Thrown by Castle if <code class="paramref">interfaceToProxy</code> is an open generic
+or is not accessible to the proxy generator. Prior to Castle.Core 5 this was
+a <code>GeneratorException</code>, which Castle has since removed.</p>
+</dd>
+</dl>
 
 
 

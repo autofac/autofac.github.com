@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Enum RegistrationOptions | Autofac ">
       
-      
+      <meta name="description" content="Defines options for a registration.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -97,7 +97,8 @@ Enum RegistrationOptions
   <dl><dt>Assembly</dt><dd>Autofac.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Defines options for a registration.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -124,15 +125,26 @@ public enum RegistrationOptions</code></pre>
 </h2>
   <dl class="parameters">
     <dt id="Autofac_Core_Registration_RegistrationOptions_Composite"><code>Composite = Fixed | DisableDecoration | ExcludeFromCollections</code></dt>
-    <dd></dd>
+  
+  <dd><p>Flag combination for composite registrations.</p>
+</dd>
     <dt id="Autofac_Core_Registration_RegistrationOptions_DisableDecoration"><code>DisableDecoration = 4</code></dt>
-    <dd></dd>
+  
+  <dd><p>Registrations with this flag will not be decorated.</p>
+</dd>
     <dt id="Autofac_Core_Registration_RegistrationOptions_ExcludeFromCollections"><code>ExcludeFromCollections = 8</code></dt>
-    <dd></dd>
+  
+  <dd><p>Registrations with this flag will not be included in any collection resolves (i.e. <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span> and other collection types).</p>
+</dd>
     <dt id="Autofac_Core_Registration_RegistrationOptions_Fixed"><code>Fixed = 2</code></dt>
-    <dd></dd>
+  
+  <dd><p>Indicates that this registration is 'fixed' as the default, ignoring all other registrations when determining the default registration for
+a service.</p>
+</dd>
     <dt id="Autofac_Core_Registration_RegistrationOptions_None"><code>None = 0</code></dt>
-    <dd></dd>
+  
+  <dd><p>No special options; default behaviour.</p>
+</dd>
   </dl>
 
 

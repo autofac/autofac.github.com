@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,8 @@ Property Tag
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Gets the tag applied to the current tenant's <a class="xref" href="Autofac.ILifetimeScope.html">ILifetimeScope</a>.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -136,15 +137,27 @@ Property Tag
 
 <h4 class="section">Property Value</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-  <dd></dd>
+  <dt><span class="xref">object</span></dt>
+  <dd><p>An <span class="xref">object</span> that identifies the current tenant's
+lifetime scope.</p>
+</dd>
 </dl>
 
 
 
 
+<h4 class="section" id="Autofac_Multitenant_MultitenantContainer_Tag_remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>Tags allow a level in the lifetime hierarchy to be identified.
+In most applications, tags are not necessary.</p>
+</div>
 
 
+<dl class="typelist seealso">
+  <dt>See Also</dt>
+  <dd>
+  <div><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.InstancePerMatchingLifetimeScope.html#Autofac_Builder_IRegistrationBuilder_3_InstancePerMatchingLifetimeScope_System_Object___">InstancePerMatchingLifetimeScope</a>(params <span class="xref">object</span>[])</div>
+  </dd>
+</dl>
 
 
 </article>

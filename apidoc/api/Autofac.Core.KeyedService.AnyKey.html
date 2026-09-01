@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,8 @@ Property AnyKey
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Gets a sentinel key representing a wildcard keyed registration.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -136,13 +137,18 @@ Property AnyKey
 
 <h4 class="section">Property Value</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-  <dd></dd>
+  <dt><span class="xref">object</span></dt>
+  <dd><p>A singleton object that can be used as a key to match any keyed registration.</p>
+</dd>
 </dl>
 
 
 
 
+<h4 class="section" id="Autofac_Core_KeyedService_AnyKey_remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>Registering a service with this key will allow it to be resolved by any
+keyed service request for the same service type.</p>
+</div>
 
 
 

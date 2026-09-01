@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IComponentRegistryBuilder | Autofac ">
       
-      
+      <meta name="description" content="Used to build a .">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,8 @@ Interface IComponentRegistryBuilder
   <dl><dt>Assembly</dt><dd>Autofac.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Used to build a <a class="xref" href="Autofac.Core.IComponentRegistry.html">IComponentRegistry</a>.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -119,7 +120,8 @@ Interface IComponentRegistryBuilder
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Registration.IComponentRegistryBuilder.Properties.html#Autofac_Core_Registration_IComponentRegistryBuilder_Properties">Properties</a></dt>
-    <dd></dd>
+    <dd><p>Gets the set of properties used during component registration.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -127,31 +129,38 @@ Interface IComponentRegistryBuilder
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Registration.IComponentRegistryBuilder.AddRegistrationSource.html#Autofac_Core_Registration_IComponentRegistryBuilder_AddRegistrationSource_Autofac_Core_IRegistrationSource_">AddRegistrationSource(IRegistrationSource)</a></dt>
-    <dd></dd>
+    <dd><p>Add a registration source that will provide registrations on-the-fly.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Registration.IComponentRegistryBuilder.AddServiceMiddlewareSource.html#Autofac_Core_Registration_IComponentRegistryBuilder_AddServiceMiddlewareSource_Autofac_Core_Registration_IServiceMiddlewareSource_">AddServiceMiddlewareSource(IServiceMiddlewareSource)</a></dt>
-    <dd></dd>
+    <dd><p>Add a source of service middleware that will provide service registrations on-the-fly.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Registration.IComponentRegistryBuilder.Build.html#Autofac_Core_Registration_IComponentRegistryBuilder_Build">Build()</a></dt>
-    <dd></dd>
+    <dd><p>Create a new <a class="xref" href="Autofac.Core.IComponentRegistry.html">IComponentRegistry</a> with all the component registrations that have been made.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Registration.IComponentRegistryBuilder.IsRegistered.html#Autofac_Core_Registration_IComponentRegistryBuilder_IsRegistered_Autofac_Core_Service_">IsRegistered(Service)</a></dt>
-    <dd></dd>
+    <dd><p>Determines whether the specified service is registered.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Registration.IComponentRegistryBuilder.Register.html#Autofac_Core_Registration_IComponentRegistryBuilder_Register_Autofac_Core_IComponentRegistration_">Register(IComponentRegistration)</a></dt>
-    <dd></dd>
+    <dd><p>Register a component.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Registration.IComponentRegistryBuilder.Register.html#Autofac_Core_Registration_IComponentRegistryBuilder_Register_Autofac_Core_IComponentRegistration_System_Boolean_">Register(IComponentRegistration, bool)</a></dt>
-    <dd></dd>
+    <dd><p>Register a component.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Registration.IComponentRegistryBuilder.RegisterServiceMiddleware.html#Autofac_Core_Registration_IComponentRegistryBuilder_RegisterServiceMiddleware_Autofac_Core_Service_Autofac_Core_Resolving_Pipeline_IResolveMiddleware_Autofac_Core_Resolving_Pipeline_MiddlewareInsertionMode_">RegisterServiceMiddleware(Service, IResolveMiddleware, MiddlewareInsertionMode)</a></dt>
-    <dd></dd>
+    <dd><p>Register a piece of service middleware that will be invoked for all registrations of a service when they are resolved.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="events">Events
@@ -159,11 +168,14 @@ Interface IComponentRegistryBuilder
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Registration.IComponentRegistryBuilder.Registered.html">Registered</a></dt>
-    <dd></dd>
+    <dd><p>Fired whenever a component is registered - either explicitly or via a
+<a class="xref" href="Autofac.Core.IRegistrationSource.html">IRegistrationSource</a>.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Registration.IComponentRegistryBuilder.RegistrationSourceAdded.html">RegistrationSourceAdded</a></dt>
-    <dd></dd>
+    <dd><p>Fired when an <a class="xref" href="Autofac.Core.IRegistrationSource.html">IRegistrationSource</a> is added to the registry.</p>
+</dd>
   </dl>
 
 

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,10 @@ Method Populate
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Populates the Autofac container builder with the set of registered service descriptors
+and makes <span class="xref">System.IServiceProvider</span> and <span class="xref">Microsoft.Extensions.DependencyInjection.IServiceScopeFactory</span>
+available in the container.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -133,9 +136,11 @@ Method Populate
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>builder</code> <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a></dt>
-  <dd></dd>
-  <dt><code>descriptors</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.servicedescriptor">ServiceDescriptor</a>&gt;</dt>
-  <dd></dd>
+  <dd><p>The <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a> into which the registrations should be made.</p>
+</dd>
+  <dt><code>descriptors</code> <span class="xref">IEnumerable</span>&lt;<span class="xref">ServiceDescriptor</span>&gt;</dt>
+  <dd><p>The set of service descriptors to register in the container.</p>
+</dd>
 </dl>
 
 
@@ -156,7 +161,11 @@ Method Populate
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Populates the Autofac container builder with the set of registered service descriptors
+and makes <span class="xref">System.IServiceProvider</span> and <span class="xref">Microsoft.Extensions.DependencyInjection.IServiceScopeFactory</span>
+available in the container. Using this overload is incompatible with the ASP.NET Core
+support for <span class="xref">Microsoft.Extensions.DependencyInjection.IServiceProviderFactory&lt;TContainerBuilder&gt;</span>.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -166,11 +175,17 @@ Method Populate
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>builder</code> <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a></dt>
-  <dd></dd>
-  <dt><code>descriptors</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.servicedescriptor">ServiceDescriptor</a>&gt;</dt>
-  <dd></dd>
-  <dt><code>lifetimeScopeTagForSingletons</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-  <dd></dd>
+  <dd><p>The <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a> into which the registrations should be made.</p>
+</dd>
+  <dt><code>descriptors</code> <span class="xref">IEnumerable</span>&lt;<span class="xref">ServiceDescriptor</span>&gt;</dt>
+  <dd><p>The set of service descriptors to register in the container.</p>
+</dd>
+  <dt><code>lifetimeScopeTagForSingletons</code> <span class="xref">object</span></dt>
+  <dd><p>If provided and not <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> then all registrations with lifetime <span class="xref">Microsoft.Extensions.DependencyInjection.ServiceLifetime.Singleton</span> are registered
+using <a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.InstancePerMatchingLifetimeScope.html#Autofac_Builder_IRegistrationBuilder_3_InstancePerMatchingLifetimeScope_System_Object___">InstancePerMatchingLifetimeScope(params object[])</a>
+with provided <code class="paramref">lifetimeScopeTagForSingletons</code>
+instead of using <a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.SingleInstance.html#Autofac_Builder_IRegistrationBuilder_3_SingleInstance">SingleInstance()</a>.</p>
+</dd>
 </dl>
 
 
@@ -180,6 +195,16 @@ Method Populate
 
 
 
+<h4 class="section" id="Autofac_Extensions_DependencyInjection_AutofacRegistration_Populate_Autofac_ContainerBuilder_System_Collections_Generic_IEnumerable_Microsoft_Extensions_DependencyInjection_ServiceDescriptor__System_Object__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>
+Specifying a <code class="paramref">lifetimeScopeTagForSingletons</code> addresses a specific case where you have
+an application that uses Autofac but where you need to isolate a set of services in a child scope. For example,
+if you have a large application that self-hosts ASP.NET Core items, you may want to isolate the ASP.NET
+Core registrations in a child lifetime scope so they don't show up for the rest of the application.
+This overload allows that. Note it is the developer's responsibility to execute this and create an
+<a class="xref" href="Autofac.Extensions.DependencyInjection.AutofacServiceProvider.html">AutofacServiceProvider</a> using the child lifetime scope.
+</p>
+</div>
 
 
 

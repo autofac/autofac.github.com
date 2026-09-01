@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IResolveOperation | Autofac ">
       
-      
+      <meta name="description" content="An  is a component context that sequences and monitors the multiple activations that go into producing a single requested object graph.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,9 @@ Interface IResolveOperation
   <dl><dt>Assembly</dt><dd>Autofac.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>An <a class="xref" href="Autofac.Core.Resolving.IResolveOperation.html">IResolveOperation</a> is a component context that sequences and monitors the multiple
+activations that go into producing a single requested object graph.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -119,27 +121,34 @@ Interface IResolveOperation
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Resolving.IResolveOperation.ActiveRequestContext.html#Autofac_Core_Resolving_IResolveOperation_ActiveRequestContext">ActiveRequestContext</a></dt>
-    <dd></dd>
+    <dd><p>Gets the active resolve request.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Resolving.IResolveOperation.CurrentScope.html#Autofac_Core_Resolving_IResolveOperation_CurrentScope">CurrentScope</a></dt>
-    <dd></dd>
+    <dd><p>Gets the current lifetime scope of the operation; based on the most recently executed request.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Resolving.IResolveOperation.DiagnosticSource.html#Autofac_Core_Resolving_IResolveOperation_DiagnosticSource">DiagnosticSource</a></dt>
-    <dd></dd>
+    <dd><p>Gets the <span class="xref">System.Diagnostics.DiagnosticListener</span> for the operation.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Resolving.IResolveOperation.InProgressRequests.html#Autofac_Core_Resolving_IResolveOperation_InProgressRequests">InProgressRequests</a></dt>
-    <dd></dd>
+    <dd><p>Gets the set of all in-progress requests on the request stack.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Resolving.IResolveOperation.InitiatingRequest.html#Autofac_Core_Resolving_IResolveOperation_InitiatingRequest">InitiatingRequest</a></dt>
-    <dd></dd>
+    <dd><p>Gets the <a class="xref" href="Autofac.ResolveRequest.html">ResolveRequest</a> that initiated the operation. Other nested requests may have been
+issued as a result of this one.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Resolving.IResolveOperation.RequestDepth.html#Autofac_Core_Resolving_IResolveOperation_RequestDepth">RequestDepth</a></dt>
-    <dd></dd>
+    <dd><p>Gets the current request depth.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -147,7 +156,8 @@ Interface IResolveOperation
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Resolving.IResolveOperation.GetOrCreateInstance.html#Autofac_Core_Resolving_IResolveOperation_GetOrCreateInstance_Autofac_Core_ISharingLifetimeScope_Autofac_ResolveRequest__">GetOrCreateInstance(ISharingLifetimeScope, in ResolveRequest)</a></dt>
-    <dd></dd>
+    <dd><p>Get or create and share an instance of the requested service in the <code class="paramref">currentOperationScope</code>.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="events">Events
@@ -155,11 +165,13 @@ Interface IResolveOperation
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Resolving.IResolveOperation.CurrentOperationEnding.html">CurrentOperationEnding</a></dt>
-    <dd></dd>
+    <dd><p>Raised when the entire operation is complete.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Resolving.IResolveOperation.ResolveRequestBeginning.html">ResolveRequestBeginning</a></dt>
-    <dd></dd>
+    <dd><p>Raised when a resolve request starts.</p>
+</dd>
   </dl>
 
 

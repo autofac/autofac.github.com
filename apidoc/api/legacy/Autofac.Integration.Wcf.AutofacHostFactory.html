@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class AutofacHostFactory | Autofac ">
       
-      
+      <meta name="description" content="Creates service host instances for WCF.">
       <link rel="icon" href="../../favicon.ico">
       <link rel="stylesheet" href="../../public/docfx.min.css">
       <link rel="stylesheet" href="../../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,8 @@ Class AutofacHostFactory
   <dl><dt>Assembly</dt><dd>Autofac.Integration.Wcf.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Creates service host instances for WCF.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -109,7 +110,7 @@ Class AutofacHostFactory
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><span class="xref">AutofacHostFactory</span></div>
     </dd>
   </dl>
@@ -127,6 +128,18 @@ Class AutofacHostFactory
 
 
 
+  <h2 id="Autofac_Integration_Wcf_AutofacHostFactory_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+You can change the strategy by which service implementations are resolved by
+setting <a class="xref" href="Autofac.Integration.Wcf.AutofacHostFactory.ServiceImplementationDataProvider.html#Autofac_Integration_Wcf_AutofacHostFactory_ServiceImplementationDataProvider">ServiceImplementationDataProvider</a>. If it is
+<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, a <a class="xref" href="Autofac.Integration.Wcf.DefaultServiceImplementationDataProvider.html">DefaultServiceImplementationDataProvider</a>
+is used.
+</p>
+<p>
+Set <a class="xref" href="Autofac.Integration.Wcf.AutofacHostFactory.HostConfigurationAction.html#Autofac_Integration_Wcf_AutofacHostFactory_HostConfigurationAction">HostConfigurationAction</a> to configure additional behaviors or
+other aspects of the generated host instances before they are returned.
+</p>
+</div>
 
   <h2 class="section" id="constructors">Constructors
 </h2>
@@ -141,19 +154,26 @@ Class AutofacHostFactory
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Wcf.AutofacHostFactory.Container.html#Autofac_Integration_Wcf_AutofacHostFactory_Container">Container</a></dt>
-    <dd></dd>
+    <dd><p>Gets or sets the container or lifetime scope that service instances are
+resolved from.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Wcf.AutofacHostFactory.Features.html#Autofac_Integration_Wcf_AutofacHostFactory_Features">Features</a></dt>
-    <dd></dd>
+    <dd><p>Gets or sets the <a class="xref" href="Autofac.Integration.Wcf.Features.html">Features</a> flags.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Wcf.AutofacHostFactory.HostConfigurationAction.html#Autofac_Integration_Wcf_AutofacHostFactory_HostConfigurationAction">HostConfigurationAction</a></dt>
-    <dd></dd>
+    <dd><p>Gets or sets an action used to configure the service host instances this
+factory generates before they are returned.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Wcf.AutofacHostFactory.ServiceImplementationDataProvider.html#Autofac_Integration_Wcf_AutofacHostFactory_ServiceImplementationDataProvider">ServiceImplementationDataProvider</a></dt>
-    <dd></dd>
+    <dd><p>Gets or sets the strategy used to determine the service implementation
+for a given constructor string.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -161,11 +181,15 @@ Class AutofacHostFactory
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Wcf.AutofacHostFactory.CreateServiceHost.html#Autofac_Integration_Wcf_AutofacHostFactory_CreateServiceHost_System_String_System_Uri___">CreateServiceHost(string, Uri[])</a></dt>
-    <dd></dd>
+    <dd><p>Creates a <span class="xref">System.ServiceModel.ServiceHost</span> with the specified base addresses and
+initializes it with the specified data.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Wcf.AutofacHostFactory.CreateSingletonServiceHost.html#Autofac_Integration_Wcf_AutofacHostFactory_CreateSingletonServiceHost_System_Object_System_Uri___">CreateSingletonServiceHost(object, Uri[])</a></dt>
-    <dd></dd>
+    <dd><p>Creates a <span class="xref">System.ServiceModel.ServiceHost</span> for a singleton service instance with
+the specified base addresses.</p>
+</dd>
   </dl>
 
 

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,10 @@ Method PooledInstancePerLifetimeScope
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Configures the component so that every dependent component or manual
+resolve within a single <a class="xref" href="Autofac.ILifetimeScope.html">ILifetimeScope</a> shares one instance
+taken from a pool, returning it to the pool when the scope ends.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -133,23 +136,28 @@ Method PooledInstancePerLifetimeScope
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>registration</code> <a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;</dt>
-  <dd></dd>
+  <dd><p>The registration to configure.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;</dt>
-  <dd></dd>
+  <dd><p>The registration builder, to enable further configuration.</p>
+</dd>
 </dl>
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>TLimit</code></dt>
-  <dd></dd>
+  <dd><p>The registration limit type.</p>
+</dd>
   <dt><code>TActivatorData</code></dt>
-  <dd></dd>
+  <dd><p>The activator data type.</p>
+</dd>
   <dt><code>TSingleRegistrationStyle</code></dt>
-  <dd></dd>
+  <dd><p>The registration style.</p>
+</dd>
 </dl>
 
 
@@ -157,7 +165,27 @@ Method PooledInstancePerLifetimeScope
 
 
 
+<h4 class="section" id="Autofac_Pooling_RegistrationExtensions_PooledInstancePerLifetimeScope__3_Autofac_Builder_IRegistrationBuilder___0___1___2___remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>
+The pool retains up to twice the processor count
+(<span class="xref">System.Environment.ProcessorCount</span> x 2) instances. Instances
+requested beyond that are disposed or discarded instead of being
+retained.
+</p>
+<p>
+To run behavior when an instance is taken from or returned to the pool,
+implement <a class="xref" href="Autofac.Pooling.IPooledComponent.html">IPooledComponent</a> on the component, or use an
+overload that accepts a custom
+<a class="xref" href="Autofac.Pooling.IPooledRegistrationPolicy-1.html">IPooledRegistrationPolicy&lt;TPooledObject&gt;</a>.
+</p>
+</div>
 
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><span class="xref">ArgumentNullException</span></dt>
+  <dd><p>Thrown when <code class="paramref">registration</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+</dl>
 
 
 
@@ -168,7 +196,10 @@ Method PooledInstancePerLifetimeScope
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Configures the component so that every dependent component or manual
+resolve within a single <a class="xref" href="Autofac.ILifetimeScope.html">ILifetimeScope</a> shares one instance
+taken from a pool, returning it to the pool when the scope ends.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -178,25 +209,31 @@ Method PooledInstancePerLifetimeScope
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>registration</code> <a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;</dt>
-  <dd></dd>
-  <dt><code>maximumRetainedInstances</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-  <dd></dd>
+  <dd><p>The registration to configure.</p>
+</dd>
+  <dt><code>maximumRetainedInstances</code> <span class="xref">int</span></dt>
+  <dd><p>The maximum number of instances to retain in the pool.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;</dt>
-  <dd></dd>
+  <dd><p>The registration builder, to enable further configuration.</p>
+</dd>
 </dl>
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>TLimit</code></dt>
-  <dd></dd>
+  <dd><p>The registration limit type.</p>
+</dd>
   <dt><code>TActivatorData</code></dt>
-  <dd></dd>
+  <dd><p>The activator data type.</p>
+</dd>
   <dt><code>TSingleRegistrationStyle</code></dt>
-  <dd></dd>
+  <dd><p>The registration style.</p>
+</dd>
 </dl>
 
 
@@ -204,7 +241,26 @@ Method PooledInstancePerLifetimeScope
 
 
 
+<h4 class="section" id="Autofac_Pooling_RegistrationExtensions_PooledInstancePerLifetimeScope__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Int32__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>
+The pool retains up to <code class="paramref">maximumRetainedInstances</code>
+instances. Instances requested beyond that are disposed or discarded
+instead of being retained.
+</p>
+<p>
+To run behavior when an instance is taken from or returned to the pool,
+implement <a class="xref" href="Autofac.Pooling.IPooledComponent.html">IPooledComponent</a> on the component, or use an
+overload that accepts a custom
+<a class="xref" href="Autofac.Pooling.IPooledRegistrationPolicy-1.html">IPooledRegistrationPolicy&lt;TPooledObject&gt;</a>.
+</p>
+</div>
 
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><span class="xref">ArgumentNullException</span></dt>
+  <dd><p>Thrown when <code class="paramref">registration</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+</dl>
 
 
 
@@ -215,7 +271,11 @@ Method PooledInstancePerLifetimeScope
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Configures the component so that every dependent component or manual
+resolve within a single <a class="xref" href="Autofac.ILifetimeScope.html">ILifetimeScope</a> shares one instance
+taken from a pool governed by a custom policy, returning it to the pool
+when the scope ends.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -225,25 +285,31 @@ Method PooledInstancePerLifetimeScope
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>registration</code> <a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;</dt>
-  <dd></dd>
+  <dd><p>The registration to configure.</p>
+</dd>
   <dt><code>poolPolicy</code> <a class="xref" href="Autofac.Pooling.IPooledRegistrationPolicy-1.html">IPooledRegistrationPolicy</a>&lt;TLimit&gt;</dt>
-  <dd></dd>
+  <dd><p>A custom policy that controls pool behavior.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;</dt>
-  <dd></dd>
+  <dd><p>The registration builder, to enable further configuration.</p>
+</dd>
 </dl>
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>TLimit</code></dt>
-  <dd></dd>
+  <dd><p>The registration limit type.</p>
+</dd>
   <dt><code>TActivatorData</code></dt>
-  <dd></dd>
+  <dd><p>The activator data type.</p>
+</dd>
   <dt><code>TSingleRegistrationStyle</code></dt>
-  <dd></dd>
+  <dd><p>The registration style.</p>
+</dd>
 </dl>
 
 
@@ -251,7 +317,287 @@ Method PooledInstancePerLifetimeScope
 
 
 
+<h4 class="section" id="Autofac_Pooling_RegistrationExtensions_PooledInstancePerLifetimeScope__3_Autofac_Builder_IRegistrationBuilder___0___1___2__Autofac_Pooling_IPooledRegistrationPolicy___0___remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>
+The policy gives fine-grained control over how instances are retrieved
+from the pool, including whether an instance is returned to the pool at
+all.
+</p>
+<p>
+The pool retains up to
+<a class="xref" href="Autofac.Pooling.IPooledRegistrationPolicy-1.MaximumRetained.html#Autofac_Pooling_IPooledRegistrationPolicy_1_MaximumRetained">MaximumRetained</a>
+instances. Instances requested beyond that are disposed or discarded
+instead of being retained.
+</p>
+</div>
 
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><span class="xref">ArgumentNullException</span></dt>
+  <dd><p>Thrown when <code class="paramref">registration</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+</dl>
+
+
+
+<a id="Autofac_Pooling_RegistrationExtensions_PooledInstancePerLifetimeScope_" data-uid="Autofac.Pooling.RegistrationExtensions.PooledInstancePerLifetimeScope*"></a>
+
+<h3 id="Autofac_Pooling_RegistrationExtensions_PooledInstancePerLifetimeScope__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Func_Autofac_IComponentContext_Autofac_Pooling_IPooledRegistrationPolicy___0___" data-uid="Autofac.Pooling.RegistrationExtensions.PooledInstancePerLifetimeScope``3(Autofac.Builder.IRegistrationBuilder{``0,``1,``2},System.Func{Autofac.IComponentContext,Autofac.Pooling.IPooledRegistrationPolicy{``0}})">
+  PooledInstancePerLifetimeScope&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;, Func&lt;IComponentContext, IPooledRegistrationPolicy&lt;TLimit&gt;&gt;)
+  
+</h3>
+
+<div class="markdown level1 summary"><p>Configures the component so that every dependent component or manual
+resolve within a single <a class="xref" href="Autofac.ILifetimeScope.html">ILifetimeScope</a> shares one instance
+taken from a pool governed by a policy from the supplied factory,
+returning it to the pool when the scope ends.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static IRegistrationBuilder&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt; PooledInstancePerLifetimeScope&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;(this IRegistrationBuilder&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt; registration, Func&lt;IComponentContext, IPooledRegistrationPolicy&lt;TLimit&gt;&gt; policyFactory) where TLimit : class where TActivatorData : IConcreteActivatorData where TSingleRegistrationStyle : SingleRegistrationStyle</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>registration</code> <a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;</dt>
+  <dd><p>The registration to configure.</p>
+</dd>
+  <dt><code>policyFactory</code> <span class="xref">Func</span>&lt;<a class="xref" href="Autofac.IComponentContext.html">IComponentContext</a>, <a class="xref" href="Autofac.Pooling.IPooledRegistrationPolicy-1.html">IPooledRegistrationPolicy</a>&lt;TLimit&gt;&gt;</dt>
+  <dd><p>A factory that returns the policy to use, invoked when the pool is
+built.</p>
+</dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;</dt>
+  <dd><p>The registration builder, to enable further configuration.</p>
+</dd>
+</dl>
+
+<h4 class="section">Type Parameters</h4>
+<dl class="parameters">
+  <dt><code>TLimit</code></dt>
+  <dd><p>The registration limit type.</p>
+</dd>
+  <dt><code>TActivatorData</code></dt>
+  <dd><p>The activator data type.</p>
+</dd>
+  <dt><code>TSingleRegistrationStyle</code></dt>
+  <dd><p>The registration style.</p>
+</dd>
+</dl>
+
+
+
+
+
+
+<h4 class="section" id="Autofac_Pooling_RegistrationExtensions_PooledInstancePerLifetimeScope__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Func_Autofac_IComponentContext_Autofac_Pooling_IPooledRegistrationPolicy___0____remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>
+The factory is invoked with the current <a class="xref" href="Autofac.IComponentContext.html">IComponentContext</a>,
+so the policy can be resolved as a component and have its dependencies
+managed by the container (for example,
+<code>ctx =&gt; ctx.Resolve&lt;IMyPolicy&gt;()</code>).
+</p>
+<p>
+The pool retains up to the
+<a class="xref" href="Autofac.Pooling.IPooledRegistrationPolicy-1.MaximumRetained.html#Autofac_Pooling_IPooledRegistrationPolicy_1_MaximumRetained">MaximumRetained</a> value
+returned by the factory. Instances requested beyond that are disposed or
+discarded instead of being retained.
+</p>
+</div>
+
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><span class="xref">ArgumentNullException</span></dt>
+  <dd><p>Thrown when <code class="paramref">registration</code> or
+<code class="paramref">policyFactory</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+</dl>
+
+
+
+<a id="Autofac_Pooling_RegistrationExtensions_PooledInstancePerLifetimeScope_" data-uid="Autofac.Pooling.RegistrationExtensions.PooledInstancePerLifetimeScope*"></a>
+
+<h3 id="Autofac_Pooling_RegistrationExtensions_PooledInstancePerLifetimeScope__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Func_Autofac_IComponentContext_Microsoft_Extensions_ObjectPool_ObjectPoolProvider__" data-uid="Autofac.Pooling.RegistrationExtensions.PooledInstancePerLifetimeScope``3(Autofac.Builder.IRegistrationBuilder{``0,``1,``2},System.Func{Autofac.IComponentContext,Microsoft.Extensions.ObjectPool.ObjectPoolProvider})">
+  PooledInstancePerLifetimeScope&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;, Func&lt;IComponentContext, ObjectPoolProvider&gt;)
+  
+</h3>
+
+<div class="markdown level1 summary"><p>Configures the component so that every dependent component or manual
+resolve within a single <a class="xref" href="Autofac.ILifetimeScope.html">ILifetimeScope</a> shares one instance
+taken from a pool whose storage and eviction are controlled by a custom
+<span class="xref">Microsoft.Extensions.ObjectPool.ObjectPoolProvider</span>, returning it to the pool when the
+scope ends.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static IRegistrationBuilder&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt; PooledInstancePerLifetimeScope&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;(this IRegistrationBuilder&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt; registration, Func&lt;IComponentContext, ObjectPoolProvider&gt; providerFactory) where TLimit : class where TActivatorData : IConcreteActivatorData where TSingleRegistrationStyle : SingleRegistrationStyle</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>registration</code> <a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;</dt>
+  <dd><p>The registration to configure.</p>
+</dd>
+  <dt><code>providerFactory</code> <span class="xref">Func</span>&lt;<a class="xref" href="Autofac.IComponentContext.html">IComponentContext</a>, <span class="xref">ObjectPoolProvider</span>&gt;</dt>
+  <dd><p>A factory that returns the <span class="xref">Microsoft.Extensions.ObjectPool.ObjectPoolProvider</span> that creates
+the backing pool, invoked once when the pool is built.</p>
+</dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;</dt>
+  <dd><p>The registration builder, to enable further configuration.</p>
+</dd>
+</dl>
+
+<h4 class="section">Type Parameters</h4>
+<dl class="parameters">
+  <dt><code>TLimit</code></dt>
+  <dd><p>The registration limit type.</p>
+</dd>
+  <dt><code>TActivatorData</code></dt>
+  <dd><p>The activator data type.</p>
+</dd>
+  <dt><code>TSingleRegistrationStyle</code></dt>
+  <dd><p>The registration style.</p>
+</dd>
+</dl>
+
+
+
+
+
+
+<h4 class="section" id="Autofac_Pooling_RegistrationExtensions_PooledInstancePerLifetimeScope__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Func_Autofac_IComponentContext_Microsoft_Extensions_ObjectPool_ObjectPoolProvider___remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>
+The factory is invoked once, resolved from the pool-owning (root) scope,
+so it can resolve dependencies from the <a class="xref" href="Autofac.IComponentContext.html">IComponentContext</a>
+(for example, <code>ctx =&gt; ctx.Resolve&lt;ObjectPoolProvider&gt;()</code>).
+Autofac still owns construction of the pooled instances and the pooling
+callbacks; the provider only controls where instances are stored and
+when they are evicted.
+</p>
+<p>
+Because the provider owns sizing and eviction,
+<a class="xref" href="Autofac.Pooling.IPooledRegistrationPolicy-1.MaximumRetained.html#Autofac_Pooling_IPooledRegistrationPolicy_1_MaximumRetained">MaximumRetained</a> does not
+size the pool. The pool must be thread-safe, because it is shared
+across all lifetime scopes and threads.
+</p>
+<p>
+If the pool implements <span class="xref">System.IDisposable</span>, the container disposes
+it at shutdown. Because <span class="xref">Microsoft.Extensions.ObjectPool.ObjectPool&lt;T&gt;.Return(T)</span> reports no
+result and there is no eviction callback, the pool is responsible for
+disposing instances it declines on return or evicts asynchronously.
+</p>
+</div>
+
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><span class="xref">ArgumentNullException</span></dt>
+  <dd><p>Thrown when <code class="paramref">registration</code> or
+<code class="paramref">providerFactory</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+</dl>
+
+
+
+<a id="Autofac_Pooling_RegistrationExtensions_PooledInstancePerLifetimeScope_" data-uid="Autofac.Pooling.RegistrationExtensions.PooledInstancePerLifetimeScope*"></a>
+
+<h3 id="Autofac_Pooling_RegistrationExtensions_PooledInstancePerLifetimeScope__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Func_Autofac_IComponentContext_Autofac_Pooling_IPooledRegistrationPolicy___0___System_Func_Autofac_IComponentContext_Microsoft_Extensions_ObjectPool_ObjectPoolProvider__" data-uid="Autofac.Pooling.RegistrationExtensions.PooledInstancePerLifetimeScope``3(Autofac.Builder.IRegistrationBuilder{``0,``1,``2},System.Func{Autofac.IComponentContext,Autofac.Pooling.IPooledRegistrationPolicy{``0}},System.Func{Autofac.IComponentContext,Microsoft.Extensions.ObjectPool.ObjectPoolProvider})">
+  PooledInstancePerLifetimeScope&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;, Func&lt;IComponentContext, IPooledRegistrationPolicy&lt;TLimit&gt;&gt;, Func&lt;IComponentContext, ObjectPoolProvider&gt;)
+  
+</h3>
+
+<div class="markdown level1 summary"><p>Configures the component so that every dependent component or manual
+resolve within a single <a class="xref" href="Autofac.ILifetimeScope.html">ILifetimeScope</a> shares one instance
+taken from a pool whose behavior is controlled by a custom policy and
+whose storage and eviction are controlled by a custom
+<span class="xref">Microsoft.Extensions.ObjectPool.ObjectPoolProvider</span>, returning it to the pool when the
+scope ends.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static IRegistrationBuilder&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt; PooledInstancePerLifetimeScope&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;(this IRegistrationBuilder&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt; registration, Func&lt;IComponentContext, IPooledRegistrationPolicy&lt;TLimit&gt;&gt; policyFactory, Func&lt;IComponentContext, ObjectPoolProvider&gt; providerFactory) where TLimit : class where TActivatorData : IConcreteActivatorData where TSingleRegistrationStyle : SingleRegistrationStyle</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>registration</code> <a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;</dt>
+  <dd><p>The registration to configure.</p>
+</dd>
+  <dt><code>policyFactory</code> <span class="xref">Func</span>&lt;<a class="xref" href="Autofac.IComponentContext.html">IComponentContext</a>, <a class="xref" href="Autofac.Pooling.IPooledRegistrationPolicy-1.html">IPooledRegistrationPolicy</a>&lt;TLimit&gt;&gt;</dt>
+  <dd><p>A factory that returns the policy to use, invoked when the pool is
+built.</p>
+</dd>
+  <dt><code>providerFactory</code> <span class="xref">Func</span>&lt;<a class="xref" href="Autofac.IComponentContext.html">IComponentContext</a>, <span class="xref">ObjectPoolProvider</span>&gt;</dt>
+  <dd><p>A factory that returns the <span class="xref">Microsoft.Extensions.ObjectPool.ObjectPoolProvider</span> that creates
+the backing pool, invoked once when the pool is built.</p>
+</dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;</dt>
+  <dd><p>The registration builder, to enable further configuration.</p>
+</dd>
+</dl>
+
+<h4 class="section">Type Parameters</h4>
+<dl class="parameters">
+  <dt><code>TLimit</code></dt>
+  <dd><p>The registration limit type.</p>
+</dd>
+  <dt><code>TActivatorData</code></dt>
+  <dd><p>The activator data type.</p>
+</dd>
+  <dt><code>TSingleRegistrationStyle</code></dt>
+  <dd><p>The registration style.</p>
+</dd>
+</dl>
+
+
+
+
+
+
+<h4 class="section" id="Autofac_Pooling_RegistrationExtensions_PooledInstancePerLifetimeScope__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Func_Autofac_IComponentContext_Autofac_Pooling_IPooledRegistrationPolicy___0___System_Func_Autofac_IComponentContext_Microsoft_Extensions_ObjectPool_ObjectPoolProvider___remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>
+Both factories are invoked once, resolved from the pool-owning (root)
+scope, so they can resolve dependencies from the
+<a class="xref" href="Autofac.IComponentContext.html">IComponentContext</a>. The policy controls how instances are
+retrieved from and returned to the pool; the provider controls where
+instances are stored and when they are evicted. Autofac still owns
+construction of the pooled instances and the pooling callbacks.
+</p>
+<p>
+Because the provider owns sizing and eviction,
+<a class="xref" href="Autofac.Pooling.IPooledRegistrationPolicy-1.MaximumRetained.html#Autofac_Pooling_IPooledRegistrationPolicy_1_MaximumRetained">MaximumRetained</a> does not
+size the pool. The pool must be thread-safe, because it is shared
+across all lifetime scopes and threads.
+</p>
+<p>
+If the pool implements <span class="xref">System.IDisposable</span>, the container disposes
+it at shutdown. Because <span class="xref">Microsoft.Extensions.ObjectPool.ObjectPool&lt;T&gt;.Return(T)</span> reports no
+result and there is no eviction callback, the pool is responsible for
+disposing instances it declines on return or evicts asynchronously.
+</p>
+</div>
+
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><span class="xref">ArgumentNullException</span></dt>
+  <dd><p>Thrown when <code class="paramref">registration</code>,
+<code class="paramref">policyFactory</code>, or
+<code class="paramref">providerFactory</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+</dl>
 
 
 

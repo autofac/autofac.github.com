@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class ConstructorBinder | Autofac ">
       
-      
+      <meta name="description" content="Provides the functionality to bind a single constructor at resolve time.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,8 @@ Class ConstructorBinder
   <dl><dt>Assembly</dt><dd>Autofac.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Provides the functionality to bind a single constructor at resolve time.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -109,7 +110,7 @@ Class ConstructorBinder
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><span class="xref">ConstructorBinder</span></div>
     </dd>
   </dl>
@@ -126,7 +127,8 @@ Class ConstructorBinder
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Activators.Reflection.ConstructorBinder.-ctor.html#Autofac_Core_Activators_Reflection_ConstructorBinder__ctor_System_Reflection_ConstructorInfo_">ConstructorBinder(ConstructorInfo)</a></dt>
-    <dd></dd>
+    <dd><p>Initializes a new instance of the <a class="xref" href="Autofac.Core.Activators.Reflection.ConstructorBinder.html">ConstructorBinder</a> class.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="properties">Properties
@@ -134,19 +136,24 @@ Class ConstructorBinder
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Activators.Reflection.ConstructorBinder.Constructor.html#Autofac_Core_Activators_Reflection_ConstructorBinder_Constructor">Constructor</a></dt>
-    <dd></dd>
+    <dd><p>Gets the constructor this binder is responsible for binding.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Activators.Reflection.ConstructorBinder.ParameterCount.html#Autofac_Core_Activators_Reflection_ConstructorBinder_ParameterCount">ParameterCount</a></dt>
-    <dd></dd>
+    <dd><p>Gets the number of parameters.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Activators.Reflection.ConstructorBinder.Parameters.html#Autofac_Core_Activators_Reflection_ConstructorBinder_Parameters">Parameters</a></dt>
-    <dd></dd>
+    <dd><p>Gets the set of parameters to bind against.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Activators.Reflection.ConstructorBinder.SetsRequiredMembers.html#Autofac_Core_Activators_Reflection_ConstructorBinder_SetsRequiredMembers">SetsRequiredMembers</a></dt>
-    <dd></dd>
+    <dd><p>Gets a value indicating whether the constructor has the SetsRequiredMembers attribute,
+indicating we can skip population of required properties.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -154,7 +161,8 @@ Class ConstructorBinder
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Activators.Reflection.ConstructorBinder.Bind.html#Autofac_Core_Activators_Reflection_ConstructorBinder_Bind_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter__Autofac_IComponentContext_">Bind(IEnumerable&lt;Parameter&gt;, IComponentContext)</a></dt>
-    <dd></dd>
+    <dd><p>Binds the set of parameters to the constructor. <a class="xref" href="Autofac.Core.Activators.Reflection.BoundConstructor.CanInstantiate.html#Autofac_Core_Activators_Reflection_BoundConstructor_CanInstantiate">CanInstantiate</a> indicates success.</p>
+</dd>
   </dl>
 
 

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Enum PipelinePhase | Autofac ">
       
-      
+      <meta name="description" content="Defines the possibles phases of the resolve pipeline.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -97,7 +97,8 @@ Enum PipelinePhase
   <dl><dt>Assembly</dt><dd>Autofac.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Defines the possibles phases of the resolve pipeline.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -116,24 +117,49 @@ Enum PipelinePhase
 </h2>
   <dl class="parameters">
     <dt id="Autofac_Core_Resolving_Pipeline_PipelinePhase_Activation"><code>Activation = 300</code></dt>
-    <dd></dd>
+  
+  <dd><p>The Activation phase is the last phase of a pipeline, where a new instance of a component is created.</p>
+</dd>
     <dt id="Autofac_Core_Resolving_Pipeline_PipelinePhase_Decoration"><code>Decoration = 75</code></dt>
-    <dd></dd>
+  
+  <dd><p>In this phase, instance decoration will take place (on the way 'out' of the pipeline).</p>
+</dd>
     <dt id="Autofac_Core_Resolving_Pipeline_PipelinePhase_ParameterSelection"><code>ParameterSelection = 250</code></dt>
-    <dd></dd>
+  
+  <dd><p>This phase runs just before Activation, is the recommended point at which the resolve parameters should be replaced
+(using <a class="xref" href="Autofac.Core.Resolving.Pipeline.ResolveRequestContext.ChangeParameters.html#Autofac_Core_Resolving_Pipeline_ResolveRequestContext_ChangeParameters_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter__">ChangeParameters(IEnumerable&lt;Parameter&gt;)</a>).</p>
+</dd>
     <dt id="Autofac_Core_Resolving_Pipeline_PipelinePhase_RegistrationPipelineStart"><code>RegistrationPipelineStart = 200</code></dt>
-    <dd></dd>
+  
+  <dd><p>This phase occurs at the start of the registration pipeline.</p>
+</dd>
     <dt id="Autofac_Core_Resolving_Pipeline_PipelinePhase_ResolveRequestStart"><code>ResolveRequestStart = 0</code></dt>
-    <dd></dd>
+  
+  <dd><p>The start of a resolve request. Custom middleware added to this phase executes before circular dependency detection.</p>
+</dd>
     <dt id="Autofac_Core_Resolving_Pipeline_PipelinePhase_ScopeSelection"><code>ScopeSelection = 10</code></dt>
-    <dd></dd>
+  
+  <dd><p>In this phase, the lifetime scope selection takes place. If some middleware needs to change the lifetime scope for resolving against,
+it happens here (but bear in mind that the configured Autofac lifetime for the registration will take effect).</p>
+</dd>
     <dt id="Autofac_Core_Resolving_Pipeline_PipelinePhase_ServicePipelineEnd"><code>ServicePipelineEnd = 150</code></dt>
-    <dd></dd>
+  
+  <dd><p>This phase occurs just before the service pipeline ends (and the registration pipeline is about to start).</p>
+</dd>
     <dt id="Autofac_Core_Resolving_Pipeline_PipelinePhase_Sharing"><code>Sharing = 100</code></dt>
-    <dd></dd>
+  
+  <dd><p>At the end of this phase, if a shared instance satisfies the request, the pipeline will stop executing and exit. Add custom
+middleware to this phase to choose your own shared instance.</p>
+</dd>
   </dl>
 
 
+  <h2 id="Autofac_Core_Resolving_Pipeline_PipelinePhase_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>A resolve pipeline is split into these distinct phases, that control general ordering
+of middlewares and allow integrations and consuming code to specify what point in the pipeline to run their middleware.</p>
+<p>As a general principle, order between phases is strict, and always executes in the same order, but order within a phase should
+not be important for most cases, and handlers should be able to run in any order.</p>
+</div>
 
 </article>
 

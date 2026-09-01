@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -114,171 +114,227 @@ Classes
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Core.ActivatedEventArgs-1.html">ActivatedEventArgs&lt;T&gt;</a></dt>
-      <dd></dd>
+      <dd><p>Fired when the activation process for a new instance is complete.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Core.ActivatingEventArgs-1.html">ActivatingEventArgs&lt;T&gt;</a></dt>
-      <dd></dd>
+      <dd><p>Fired after the construction of an instance but before that instance
+is shared with any other or any members are invoked on it.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Core.ComponentRegisteredEventArgs.html">ComponentRegisteredEventArgs</a></dt>
-      <dd></dd>
+      <dd><p>Information about the occurrence of a component being registered
+with a container.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Core.ComponentRegistrationExtensions.html">ComponentRegistrationExtensions</a></dt>
-      <dd></dd>
+      <dd><p>Extension methods for <a class="xref" href="Autofac.Core.IComponentRegistration.html">IComponentRegistration</a>.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Core.ConstantParameter.html">ConstantParameter</a></dt>
-      <dd></dd>
+      <dd><p>Base class for parameters that provide a constant value.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Core.Container.html">Container</a></dt>
-      <dd></dd>
+      <dd><p>Standard container implementation.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Core.DefaultPropertySelector.html">DefaultPropertySelector</a></dt>
-      <dd></dd>
+      <dd><p>Provides default property selector that applies appropriate filters to ensure only
+public settable properties are selected (including filtering for value types and indexed
+properties).</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Core.DelegatePropertySelector.html">DelegatePropertySelector</a></dt>
-      <dd></dd>
+      <dd><p>Provides a property selector that applies a filter defined by a delegate.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Core.DependencyResolutionException.html">DependencyResolutionException</a></dt>
-      <dd></dd>
+      <dd><p>Base exception type thrown whenever the dependency resolution process fails. This is a fatal
+exception, as Autofac is unable to 'roll back' changes to components that may have already
+been made during the operation. For example, 'on activated' handlers may have already been
+fired, or 'single instance' components partially constructed.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Core.ImplicitRegistrationSource.html">ImplicitRegistrationSource</a></dt>
-      <dd></dd>
+      <dd><p>Support simple definition of implicit relationships such as <span class="xref">System.Lazy&lt;T&gt;</span>.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Core.KeyedService.html">KeyedService</a></dt>
-      <dd></dd>
+      <dd><p>Identifies a service using a key in addition to its type.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Core.NamedPropertyParameter.html">NamedPropertyParameter</a></dt>
-      <dd></dd>
+      <dd><p>A property identified by name. When applied to a reflection-based
+component, the name will be matched against property names.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Core.Parameter.html">Parameter</a></dt>
-      <dd></dd>
+      <dd><p>Used in order to provide a value to a constructor parameter or property on an instance
+being created by the container.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Core.PreparingEventArgs.html">PreparingEventArgs</a></dt>
-      <dd></dd>
+      <dd><p>Fired before the activation process to allow parameters to be changed or an alternative
+instance to be provided.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Core.ReflectionCacheSet.html">ReflectionCacheSet</a></dt>
-      <dd></dd>
+      <dd><p>Defines the set of all caches of reflection-related data.
+Access the shared instance using <a class="xref" href="Autofac.Core.ReflectionCacheSet.Shared.html#Autofac_Core_ReflectionCacheSet_Shared">Shared</a>.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Core.RegistrationSourceAddedEventArgs.html">RegistrationSourceAddedEventArgs</a></dt>
-      <dd></dd>
+      <dd><p>Fired when an <a class="xref" href="Autofac.Core.IRegistrationSource.html">IRegistrationSource</a> is added to the registry.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Core.ResolvedParameter.html">ResolvedParameter</a></dt>
-      <dd></dd>
+      <dd><p>Flexible parameter type allows arbitrary values to be retrieved
+from the resolution context.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Core.Service.html">Service</a></dt>
-      <dd></dd>
+      <dd><p>Services are the lookup keys used to locate component instances.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Core.TypedService.html">TypedService</a></dt>
-      <dd></dd>
+      <dd><p>Identifies a service according to a type to which it can be assigned.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Core.UniqueService.html">UniqueService</a></dt>
-      <dd></dd>
+      <dd><p>A handy unique service identifier type - all instances will be regarded as unequal.</p>
+</dd>
     </dl>
     <h3 id="structs">
 Structs
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Core.ServiceRegistration.html">ServiceRegistration</a></dt>
-      <dd></dd>
+      <dd><p>Defines a combination of a service pipeline and a registration. Used to instantiate a <a class="xref" href="Autofac.ResolveRequest.html">ResolveRequest</a>.</p>
+</dd>
     </dl>
     <h3 id="interfaces">
 Interfaces
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Core.IActivatedEventArgs-1.html">IActivatedEventArgs&lt;T&gt;</a></dt>
-      <dd></dd>
+      <dd><p>Fired when the activation process for a new instance is complete.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Core.IActivatingEventArgs-1.html">IActivatingEventArgs&lt;T&gt;</a></dt>
-      <dd></dd>
+      <dd><p>Fired after the construction of an instance but before that instance
+is shared with any other or any members are invoked on it.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Core.IComponentLifetime.html">IComponentLifetime</a></dt>
-      <dd></dd>
+      <dd><p>Locates the lifetime to which instances of a component should be attached.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Core.IComponentRegistration.html">IComponentRegistration</a></dt>
-      <dd></dd>
+      <dd><p>Describes a logical component within the container.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Core.IComponentRegistry.html">IComponentRegistry</a></dt>
-      <dd></dd>
+      <dd><p>Provides component registrations according to the services they provide.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Core.IComponentRegistryServices.html">IComponentRegistryServices</a></dt>
-      <dd></dd>
+      <dd><p>Defines an interface for accessing the set of services available during pipeline build time.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Core.IDisposer.html">IDisposer</a></dt>
-      <dd></dd>
+      <dd><p>Provided on an object that will dispose of other objects when it is
+itself disposed.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Core.IInstanceActivator.html">IInstanceActivator</a></dt>
-      <dd></dd>
+      <dd><p>Activates component instances.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Core.IModule.html">IModule</a></dt>
-      <dd></dd>
+      <dd><p>Represents a set of components and related functionality
+packaged together.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Core.IPropertySelector.html">IPropertySelector</a></dt>
-      <dd></dd>
+      <dd><p>Finds suitable properties to inject.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Core.IReflectionCache.html">IReflectionCache</a></dt>
-      <dd></dd>
+      <dd><p>Defines an individual store of cached reflection data.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Core.IRegistrationSource.html">IRegistrationSource</a></dt>
-      <dd></dd>
+      <dd><p>Allows registrations to be made on-the-fly when unregistered
+services are requested (lazy registrations.)</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Core.IServiceWithType.html">IServiceWithType</a></dt>
-      <dd></dd>
+      <dd><p>Interface supported by services that carry type information.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Core.ISharingLifetimeScope.html">ISharingLifetimeScope</a></dt>
-      <dd></dd>
+      <dd><p>Defines a nested structure of lifetimes.</p>
+</dd>
     </dl>
     <h3 id="enums">
 Enums
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Core.InstanceOwnership.html">InstanceOwnership</a></dt>
-      <dd></dd>
+      <dd><p>Determines when instances supporting IDisposable are disposed.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Core.InstanceSharing.html">InstanceSharing</a></dt>
-      <dd></dd>
+      <dd><p>Determines whether instances are shared within a lifetime scope.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Core.ReflectionCacheUsage.html">ReflectionCacheUsage</a></dt>
-      <dd></dd>
+      <dd><p>Defines the possible reflection cache usage types.</p>
+</dd>
     </dl>
     <h3 id="delegates">
 Delegates
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Core.ReflectionCacheClearPredicate.html">ReflectionCacheClearPredicate</a></dt>
-      <dd></dd>
+      <dd><p>Delegate for predicates that can choose whether to remove a member from the
+reflection cache.</p>
+</dd>
     </dl>
 
 

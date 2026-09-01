@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,29 +123,35 @@ Method AsImplementedInterfaces
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Specifies that a type from a scanned assembly is registered as providing all of its
+implemented interfaces.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static IRegistrationBuilder&lt;TLimit, ScanningActivatorData, DynamicRegistrationStyle&gt; AsImplementedInterfaces&lt;TLimit&gt;(this IRegistrationBuilder&lt;TLimit, ScanningActivatorData, DynamicRegistrationStyle&gt; registration)</code></pre>
+  <pre><code class="lang-csharp hljs">[UnconditionalSuppressMessage(&quot;Trimming&quot;, &quot;IL2067:UnrecognizedReflectionPattern&quot;, Justification = &quot;Maps scanned types to their implemented interfaces. The types are discovered by assembly scanning, whose public entry points already carry [RequiresUnreferencedCode]; the consumer that opted into scanning is responsible for preserving the interfaces of scanned types.&quot;)]
+public static IRegistrationBuilder&lt;TLimit, ScanningActivatorData, DynamicRegistrationStyle&gt; AsImplementedInterfaces&lt;TLimit&gt;(this IRegistrationBuilder&lt;TLimit, ScanningActivatorData, DynamicRegistrationStyle&gt; registration)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>registration</code> <a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, <a class="xref" href="Autofac.Features.Scanning.ScanningActivatorData.html">ScanningActivatorData</a>, <a class="xref" href="Autofac.Builder.DynamicRegistrationStyle.html">DynamicRegistrationStyle</a>&gt;</dt>
-  <dd></dd>
+  <dd><p>Registration to set service mapping on.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, <a class="xref" href="Autofac.Features.Scanning.ScanningActivatorData.html">ScanningActivatorData</a>, <a class="xref" href="Autofac.Builder.DynamicRegistrationStyle.html">DynamicRegistrationStyle</a>&gt;</dt>
-  <dd></dd>
+  <dd><p>Registration builder allowing the registration to be configured.</p>
+</dd>
 </dl>
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>TLimit</code></dt>
-  <dd></dd>
+  <dd><p>Registration limit type.</p>
+</dd>
 </dl>
 
 
@@ -164,31 +170,37 @@ Method AsImplementedInterfaces
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Specifies that a type is registered as providing all of its implemented interfaces.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static IRegistrationBuilder&lt;TLimit, TConcreteActivatorData, SingleRegistrationStyle&gt; AsImplementedInterfaces&lt;TLimit, TConcreteActivatorData&gt;(this IRegistrationBuilder&lt;TLimit, TConcreteActivatorData, SingleRegistrationStyle&gt; registration) where TConcreteActivatorData : IConcreteActivatorData</code></pre>
+  <pre><code class="lang-csharp hljs">[UnconditionalSuppressMessage(&quot;Trimming&quot;, &quot;IL2072:UnrecognizedReflectionPattern&quot;, Justification = &quot;Maps the registered component&#39;s limit type to its implemented interfaces. The interfaces of a type the consumer explicitly registered are reachable; the LimitType getter cannot carry the annotation, so the requirement is asserted here.&quot;)]
+public static IRegistrationBuilder&lt;TLimit, TConcreteActivatorData, SingleRegistrationStyle&gt; AsImplementedInterfaces&lt;TLimit, TConcreteActivatorData&gt;(this IRegistrationBuilder&lt;TLimit, TConcreteActivatorData, SingleRegistrationStyle&gt; registration) where TConcreteActivatorData : IConcreteActivatorData</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>registration</code> <a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, TConcreteActivatorData, <a class="xref" href="Autofac.Builder.SingleRegistrationStyle.html">SingleRegistrationStyle</a>&gt;</dt>
-  <dd></dd>
+  <dd><p>Registration to set service mapping on.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, TConcreteActivatorData, <a class="xref" href="Autofac.Builder.SingleRegistrationStyle.html">SingleRegistrationStyle</a>&gt;</dt>
-  <dd></dd>
+  <dd><p>Registration builder allowing the registration to be configured.</p>
+</dd>
 </dl>
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>TLimit</code></dt>
-  <dd></dd>
+  <dd><p>Registration limit type.</p>
+</dd>
   <dt><code>TConcreteActivatorData</code></dt>
-  <dd></dd>
+  <dd><p>Activator data type.</p>
+</dd>
 </dl>
 
 
@@ -207,29 +219,34 @@ Method AsImplementedInterfaces
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Specifies that a type is registered as providing all of its implemented interfaces.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static IRegistrationBuilder&lt;TLimit, ReflectionActivatorData, DynamicRegistrationStyle&gt; AsImplementedInterfaces&lt;TLimit&gt;(this IRegistrationBuilder&lt;TLimit, ReflectionActivatorData, DynamicRegistrationStyle&gt; registration)</code></pre>
+  <pre><code class="lang-csharp hljs">[UnconditionalSuppressMessage(&quot;Trimming&quot;, &quot;IL2072:UnrecognizedReflectionPattern&quot;, Justification = &quot;Maps the registered component&#39;s implementation type to its implemented interfaces. The interfaces of a type the consumer explicitly registered are reachable; the ImplementationType getter cannot carry the Interfaces annotation, so the requirement is asserted here.&quot;)]
+public static IRegistrationBuilder&lt;TLimit, ReflectionActivatorData, DynamicRegistrationStyle&gt; AsImplementedInterfaces&lt;TLimit&gt;(this IRegistrationBuilder&lt;TLimit, ReflectionActivatorData, DynamicRegistrationStyle&gt; registration)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>registration</code> <a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, <a class="xref" href="Autofac.Builder.ReflectionActivatorData.html">ReflectionActivatorData</a>, <a class="xref" href="Autofac.Builder.DynamicRegistrationStyle.html">DynamicRegistrationStyle</a>&gt;</dt>
-  <dd></dd>
+  <dd><p>Registration to set service mapping on.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, <a class="xref" href="Autofac.Builder.ReflectionActivatorData.html">ReflectionActivatorData</a>, <a class="xref" href="Autofac.Builder.DynamicRegistrationStyle.html">DynamicRegistrationStyle</a>&gt;</dt>
-  <dd></dd>
+  <dd><p>Registration builder allowing the registration to be configured.</p>
+</dd>
 </dl>
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>TLimit</code></dt>
-  <dd></dd>
+  <dd><p>Registration limit type.</p>
+</dd>
 </dl>
 
 
@@ -248,29 +265,35 @@ Method AsImplementedInterfaces
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Specifies that an open generic type from a scanned assembly is registered as providing all of its
+implemented interfaces.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static IRegistrationBuilder&lt;TLimit, OpenGenericScanningActivatorData, DynamicRegistrationStyle&gt; AsImplementedInterfaces&lt;TLimit&gt;(this IRegistrationBuilder&lt;TLimit, OpenGenericScanningActivatorData, DynamicRegistrationStyle&gt; registration)</code></pre>
+  <pre><code class="lang-csharp hljs">[UnconditionalSuppressMessage(&quot;Trimming&quot;, &quot;IL2067:UnrecognizedReflectionPattern&quot;, Justification = &quot;Maps scanned open generic types to their implemented interfaces. The types are discovered by assembly scanning, whose public entry points already carry [RequiresUnreferencedCode]; the consumer that opted into scanning is responsible for preserving the interfaces of scanned types.&quot;)]
+public static IRegistrationBuilder&lt;TLimit, OpenGenericScanningActivatorData, DynamicRegistrationStyle&gt; AsImplementedInterfaces&lt;TLimit&gt;(this IRegistrationBuilder&lt;TLimit, OpenGenericScanningActivatorData, DynamicRegistrationStyle&gt; registration)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>registration</code> <a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, <a class="xref" href="Autofac.Features.Scanning.OpenGenericScanningActivatorData.html">OpenGenericScanningActivatorData</a>, <a class="xref" href="Autofac.Builder.DynamicRegistrationStyle.html">DynamicRegistrationStyle</a>&gt;</dt>
-  <dd></dd>
+  <dd><p>Registration to set service mapping on.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, <a class="xref" href="Autofac.Features.Scanning.OpenGenericScanningActivatorData.html">OpenGenericScanningActivatorData</a>, <a class="xref" href="Autofac.Builder.DynamicRegistrationStyle.html">DynamicRegistrationStyle</a>&gt;</dt>
-  <dd></dd>
+  <dd><p>Registration builder allowing the registration to be configured.</p>
+</dd>
 </dl>
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>TLimit</code></dt>
-  <dd></dd>
+  <dd><p>Registration limit type.</p>
+</dd>
 </dl>
 
 

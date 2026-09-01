@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,13 @@ Property Instance
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Gets or sets the instance that will be returned as the result of the
+resolve request. On the way back up the pipeline, after calling the next
+middleware in the chain, this value will be populated with the resolved
+instance. Check the <a class="xref" href="Autofac.Core.Resolving.Pipeline.ResolveRequestContext.NewInstanceActivated.html#Autofac_Core_Resolving_Pipeline_ResolveRequestContext_NewInstanceActivated">NewInstanceActivated</a> property to
+determine whether the object here was a newly activated instance, or a
+shared instance previously activated.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -136,7 +142,7 @@ Property Instance
 
 <h4 class="section">Property Value</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+  <dt><span class="xref">object</span></dt>
   <dd></dd>
 </dl>
 

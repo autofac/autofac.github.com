@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,8 @@ Method RegisterAggregateService
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Register <code class="typeparamref">TInterface</code> as an aggregate service.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -133,14 +134,16 @@ Method RegisterAggregateService
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>builder</code> <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a></dt>
-  <dd></dd>
+  <dd><p>The container builder.</p>
+</dd>
 </dl>
 
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>TInterface</code></dt>
-  <dd></dd>
+  <dd><p>The interface type to register.</p>
+</dd>
 </dl>
 
 
@@ -149,6 +152,15 @@ Method RegisterAggregateService
 
 
 
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><span class="xref">ArgumentNullException</span></dt>
+  <dd><p>If <code class="typeparamref">TInterface</code> is null.</p>
+</dd>
+  <dt><span class="xref">ArgumentException</span></dt>
+  <dd><p>If <code class="typeparamref">TInterface</code> is not an interface.</p>
+</dd>
+</dl>
 
 
 
@@ -159,7 +171,8 @@ Method RegisterAggregateService
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Register <code class="paramref">interfaceType</code> as an aggregate service.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -169,9 +182,11 @@ Method RegisterAggregateService
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>builder</code> <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a></dt>
-  <dd></dd>
-  <dt><code>interfaceType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
-  <dd></dd>
+  <dd><p>The container builder.</p>
+</dd>
+  <dt><code>interfaceType</code> <span class="xref">Type</span></dt>
+  <dd><p>The interface type to register.</p>
+</dd>
 </dl>
 
 
@@ -182,6 +197,15 @@ Method RegisterAggregateService
 
 
 
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><span class="xref">ArgumentNullException</span></dt>
+  <dd><p>If <code class="paramref">interfaceType</code> is null.</p>
+</dd>
+  <dt><span class="xref">ArgumentException</span></dt>
+  <dd><p>If <code class="paramref">interfaceType</code> is not an interface.</p>
+</dd>
+</dl>
 
 
 

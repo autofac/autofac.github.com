@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,25 +123,31 @@ Method GetProperties
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Given a target attribute object, returns a set of public readable properties and associated values.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static IEnumerable&lt;KeyValuePair&lt;string, object&gt;&gt; GetProperties(object target, Type instanceType)</code></pre>
+  <pre><code class="lang-csharp hljs">public static IEnumerable&lt;KeyValuePair&lt;string, object?&gt;&gt; GetProperties(object target, Type instanceType)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><code>target</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-  <dd></dd>
-  <dt><code>instanceType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
-  <dd></dd>
+  <dt><code>target</code> <span class="xref">object</span></dt>
+  <dd><p>Target attribute instance to be scanned.</p>
+</dd>
+  <dt><code>instanceType</code> <span class="xref">Type</span></dt>
+  <dd><p>The <span class="xref">System.Type</span> on which the <code class="paramref">target</code> attribute
+is associated. Used when the <code class="paramref">target</code> is an
+<a class="xref" href="Autofac.Extras.AttributeMetadata.IMetadataProvider.html">IMetadataProvider</a>.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;&gt;</dt>
-  <dd></dd>
+  <dt><span class="xref">IEnumerable</span>&lt;<span class="xref">KeyValuePair</span>&lt;<span class="xref">string</span>, <span class="xref">object</span>&gt;&gt;</dt>
+  <dd><p>Enumerable set of property names and associated values.</p>
+</dd>
 </dl>
 
 
@@ -151,6 +157,12 @@ Method GetProperties
 
 
 
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><span class="xref">ArgumentNullException</span></dt>
+  <dd><p>Thrown if <code class="paramref">target</code> or <code class="paramref">instanceType</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+</dl>
 
 
 

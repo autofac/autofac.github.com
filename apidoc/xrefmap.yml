@@ -8884,6 +8884,39 @@ references:
   fullName.vb: Autofac.Extras.AggregateService.ContainerBuilderExtensions.RegisterAggregateService(Of TInterface)(Autofac.ContainerBuilder)
   nameWithType: ContainerBuilderExtensions.RegisterAggregateService<TInterface>(ContainerBuilder)
   nameWithType.vb: ContainerBuilderExtensions.RegisterAggregateService(Of TInterface)(ContainerBuilder)
+- uid: Autofac.Extras.AggregateService.GeneratedAggregateServiceRegistry
+  name: GeneratedAggregateServiceRegistry
+  href: api/Autofac.Extras.AggregateService.GeneratedAggregateServiceRegistry.html
+  commentId: T:Autofac.Extras.AggregateService.GeneratedAggregateServiceRegistry
+  fullName: Autofac.Extras.AggregateService.GeneratedAggregateServiceRegistry
+  nameWithType: GeneratedAggregateServiceRegistry
+- uid: Autofac.Extras.AggregateService.GeneratedAggregateServiceRegistry.Register(System.Type,System.Func{Autofac.IComponentContext,System.Object})
+  name: Register(Type, Func<IComponentContext, object>)
+  href: api/Autofac.Extras.AggregateService.GeneratedAggregateServiceRegistry.Register.html#Autofac_Extras_AggregateService_GeneratedAggregateServiceRegistry_Register_System_Type_System_Func_Autofac_IComponentContext_System_Object__
+  commentId: M:Autofac.Extras.AggregateService.GeneratedAggregateServiceRegistry.Register(System.Type,System.Func{Autofac.IComponentContext,System.Object})
+  name.vb: Register(Type, Func(Of IComponentContext, Object))
+  fullName: Autofac.Extras.AggregateService.GeneratedAggregateServiceRegistry.Register(System.Type, System.Func<Autofac.IComponentContext, object>)
+  fullName.vb: Autofac.Extras.AggregateService.GeneratedAggregateServiceRegistry.Register(System.Type, System.Func(Of Autofac.IComponentContext, Object))
+  nameWithType: GeneratedAggregateServiceRegistry.Register(Type, Func<IComponentContext, object>)
+  nameWithType.vb: GeneratedAggregateServiceRegistry.Register(Type, Func(Of IComponentContext, Object))
+- uid: Autofac.Extras.AggregateService.GeneratedAggregateServiceRegistry.Register*
+  name: Register
+  href: api/Autofac.Extras.AggregateService.GeneratedAggregateServiceRegistry.Register.html
+  commentId: Overload:Autofac.Extras.AggregateService.GeneratedAggregateServiceRegistry.Register
+  fullName: Autofac.Extras.AggregateService.GeneratedAggregateServiceRegistry.Register
+  nameWithType: GeneratedAggregateServiceRegistry.Register
+- uid: Autofac.Extras.AggregateService.GeneratedAggregateServiceRegistry.RegisterOpenGeneric(System.Type,System.Type)
+  name: RegisterOpenGeneric(Type, Type)
+  href: api/Autofac.Extras.AggregateService.GeneratedAggregateServiceRegistry.RegisterOpenGeneric.html#Autofac_Extras_AggregateService_GeneratedAggregateServiceRegistry_RegisterOpenGeneric_System_Type_System_Type_
+  commentId: M:Autofac.Extras.AggregateService.GeneratedAggregateServiceRegistry.RegisterOpenGeneric(System.Type,System.Type)
+  fullName: Autofac.Extras.AggregateService.GeneratedAggregateServiceRegistry.RegisterOpenGeneric(System.Type, System.Type)
+  nameWithType: GeneratedAggregateServiceRegistry.RegisterOpenGeneric(Type, Type)
+- uid: Autofac.Extras.AggregateService.GeneratedAggregateServiceRegistry.RegisterOpenGeneric*
+  name: RegisterOpenGeneric
+  href: api/Autofac.Extras.AggregateService.GeneratedAggregateServiceRegistry.RegisterOpenGeneric.html
+  commentId: Overload:Autofac.Extras.AggregateService.GeneratedAggregateServiceRegistry.RegisterOpenGeneric
+  fullName: Autofac.Extras.AggregateService.GeneratedAggregateServiceRegistry.RegisterOpenGeneric
+  nameWithType: GeneratedAggregateServiceRegistry.RegisterOpenGeneric
 - uid: Autofac.Extras.AggregateService.ResolvingInterceptor
   name: ResolvingInterceptor
   href: api/Autofac.Extras.AggregateService.ResolvingInterceptor.html
@@ -8968,21 +9001,6 @@ references:
   commentId: T:Autofac.Extras.AttributeMetadata.AutofacAttributeExtensions
   fullName: Autofac.Extras.AttributeMetadata.AutofacAttributeExtensions
   nameWithType: AutofacAttributeExtensions
-- uid: Autofac.Extras.AttributeMetadata.AutofacAttributeExtensions.WithAttributeFilter*
-  name: WithAttributeFilter
-  href: api/Autofac.Extras.AttributeMetadata.AutofacAttributeExtensions.WithAttributeFilter.html
-  commentId: Overload:Autofac.Extras.AttributeMetadata.AutofacAttributeExtensions.WithAttributeFilter
-  fullName: Autofac.Extras.AttributeMetadata.AutofacAttributeExtensions.WithAttributeFilter
-  nameWithType: AutofacAttributeExtensions.WithAttributeFilter
-- uid: Autofac.Extras.AttributeMetadata.AutofacAttributeExtensions.WithAttributeFilter``3(Autofac.Builder.IRegistrationBuilder{``0,``1,``2})
-  name: WithAttributeFilter<TLimit, TReflectionActivatorData, TRegistrationStyle>(IRegistrationBuilder<TLimit, TReflectionActivatorData, TRegistrationStyle>)
-  href: api/Autofac.Extras.AttributeMetadata.AutofacAttributeExtensions.WithAttributeFilter.html#Autofac_Extras_AttributeMetadata_AutofacAttributeExtensions_WithAttributeFilter__3_Autofac_Builder_IRegistrationBuilder___0___1___2__
-  commentId: M:Autofac.Extras.AttributeMetadata.AutofacAttributeExtensions.WithAttributeFilter``3(Autofac.Builder.IRegistrationBuilder{``0,``1,``2})
-  name.vb: WithAttributeFilter(Of TLimit, TReflectionActivatorData, TRegistrationStyle)(IRegistrationBuilder(Of TLimit, TReflectionActivatorData, TRegistrationStyle))
-  fullName: Autofac.Extras.AttributeMetadata.AutofacAttributeExtensions.WithAttributeFilter<TLimit, TReflectionActivatorData, TRegistrationStyle>(Autofac.Builder.IRegistrationBuilder<TLimit, TReflectionActivatorData, TRegistrationStyle>)
-  fullName.vb: Autofac.Extras.AttributeMetadata.AutofacAttributeExtensions.WithAttributeFilter(Of TLimit, TReflectionActivatorData, TRegistrationStyle)(Autofac.Builder.IRegistrationBuilder(Of TLimit, TReflectionActivatorData, TRegistrationStyle))
-  nameWithType: AutofacAttributeExtensions.WithAttributeFilter<TLimit, TReflectionActivatorData, TRegistrationStyle>(IRegistrationBuilder<TLimit, TReflectionActivatorData, TRegistrationStyle>)
-  nameWithType.vb: AutofacAttributeExtensions.WithAttributeFilter(Of TLimit, TReflectionActivatorData, TRegistrationStyle)(IRegistrationBuilder(Of TLimit, TReflectionActivatorData, TRegistrationStyle))
 - uid: Autofac.Extras.AttributeMetadata.AutofacAttributeExtensions.WithAttributedMetadata*
   name: WithAttributedMetadata
   href: api/Autofac.Extras.AttributeMetadata.AutofacAttributeExtensions.WithAttributedMetadata.html
@@ -8998,6 +9016,15 @@ references:
   fullName.vb: Autofac.Extras.AttributeMetadata.AutofacAttributeExtensions.WithAttributedMetadata(Of TMetadata)(Autofac.Builder.IRegistrationBuilder(Of Object, Autofac.Features.Scanning.ScanningActivatorData, Autofac.Builder.DynamicRegistrationStyle))
   nameWithType: AutofacAttributeExtensions.WithAttributedMetadata<TMetadata>(IRegistrationBuilder<object, ScanningActivatorData, DynamicRegistrationStyle>)
   nameWithType.vb: AutofacAttributeExtensions.WithAttributedMetadata(Of TMetadata)(IRegistrationBuilder(Of Object, ScanningActivatorData, DynamicRegistrationStyle))
+- uid: Autofac.Extras.AttributeMetadata.AutofacAttributeExtensions.WithAttributedMetadata``1(Autofac.Builder.IRegistrationBuilder{``0,Autofac.Builder.ConcreteReflectionActivatorData,Autofac.Builder.SingleRegistrationStyle})
+  name: WithAttributedMetadata<TLimit>(IRegistrationBuilder<TLimit, ConcreteReflectionActivatorData, SingleRegistrationStyle>)
+  href: api/Autofac.Extras.AttributeMetadata.AutofacAttributeExtensions.WithAttributedMetadata.html#Autofac_Extras_AttributeMetadata_AutofacAttributeExtensions_WithAttributedMetadata__1_Autofac_Builder_IRegistrationBuilder___0_Autofac_Builder_ConcreteReflectionActivatorData_Autofac_Builder_SingleRegistrationStyle__
+  commentId: M:Autofac.Extras.AttributeMetadata.AutofacAttributeExtensions.WithAttributedMetadata``1(Autofac.Builder.IRegistrationBuilder{``0,Autofac.Builder.ConcreteReflectionActivatorData,Autofac.Builder.SingleRegistrationStyle})
+  name.vb: WithAttributedMetadata(Of TLimit)(IRegistrationBuilder(Of TLimit, ConcreteReflectionActivatorData, SingleRegistrationStyle))
+  fullName: Autofac.Extras.AttributeMetadata.AutofacAttributeExtensions.WithAttributedMetadata<TLimit>(Autofac.Builder.IRegistrationBuilder<TLimit, Autofac.Builder.ConcreteReflectionActivatorData, Autofac.Builder.SingleRegistrationStyle>)
+  fullName.vb: Autofac.Extras.AttributeMetadata.AutofacAttributeExtensions.WithAttributedMetadata(Of TLimit)(Autofac.Builder.IRegistrationBuilder(Of TLimit, Autofac.Builder.ConcreteReflectionActivatorData, Autofac.Builder.SingleRegistrationStyle))
+  nameWithType: AutofacAttributeExtensions.WithAttributedMetadata<TLimit>(IRegistrationBuilder<TLimit, ConcreteReflectionActivatorData, SingleRegistrationStyle>)
+  nameWithType.vb: AutofacAttributeExtensions.WithAttributedMetadata(Of TLimit)(IRegistrationBuilder(Of TLimit, ConcreteReflectionActivatorData, SingleRegistrationStyle))
 - uid: Autofac.Extras.AttributeMetadata.AutofacAttributeExtensions.WithAttributedMetadata``3(Autofac.Builder.IRegistrationBuilder{``0,``1,``2})
   name: WithAttributedMetadata<TLimit, TScanningActivatorData, TRegistrationStyle>(IRegistrationBuilder<TLimit, TScanningActivatorData, TRegistrationStyle>)
   href: api/Autofac.Extras.AttributeMetadata.AutofacAttributeExtensions.WithAttributedMetadata.html#Autofac_Extras_AttributeMetadata_AutofacAttributeExtensions_WithAttributedMetadata__3_Autofac_Builder_IRegistrationBuilder___0___1___2__
@@ -9268,150 +9295,6 @@ references:
   fullName.vb: Autofac.Extras.AttributeMetadata.MetadataModule(Of TInterface, TMetadata).RegisterType(Of TInstance)(TMetadata)
   nameWithType: MetadataModule<TInterface, TMetadata>.RegisterType<TInstance>(TMetadata)
   nameWithType.vb: MetadataModule(Of TInterface, TMetadata).RegisterType(Of TInstance)(TMetadata)
-- uid: Autofac.Extras.AttributeMetadata.ParameterFilterAttribute
-  name: ParameterFilterAttribute
-  href: api/Autofac.Extras.AttributeMetadata.ParameterFilterAttribute.html
-  commentId: T:Autofac.Extras.AttributeMetadata.ParameterFilterAttribute
-  fullName: Autofac.Extras.AttributeMetadata.ParameterFilterAttribute
-  nameWithType: ParameterFilterAttribute
-- uid: Autofac.Extras.AttributeMetadata.ParameterFilterAttribute.#ctor
-  name: ParameterFilterAttribute()
-  href: api/Autofac.Extras.AttributeMetadata.ParameterFilterAttribute.-ctor.html#Autofac_Extras_AttributeMetadata_ParameterFilterAttribute__ctor
-  commentId: M:Autofac.Extras.AttributeMetadata.ParameterFilterAttribute.#ctor
-  name.vb: New()
-  fullName: Autofac.Extras.AttributeMetadata.ParameterFilterAttribute.ParameterFilterAttribute()
-  fullName.vb: Autofac.Extras.AttributeMetadata.ParameterFilterAttribute.New()
-  nameWithType: ParameterFilterAttribute.ParameterFilterAttribute()
-  nameWithType.vb: ParameterFilterAttribute.New()
-- uid: Autofac.Extras.AttributeMetadata.ParameterFilterAttribute.#ctor*
-  name: ParameterFilterAttribute
-  href: api/Autofac.Extras.AttributeMetadata.ParameterFilterAttribute.-ctor.html
-  commentId: Overload:Autofac.Extras.AttributeMetadata.ParameterFilterAttribute.#ctor
-  name.vb: New
-  fullName: Autofac.Extras.AttributeMetadata.ParameterFilterAttribute.ParameterFilterAttribute
-  fullName.vb: Autofac.Extras.AttributeMetadata.ParameterFilterAttribute.New
-  nameWithType: ParameterFilterAttribute.ParameterFilterAttribute
-  nameWithType.vb: ParameterFilterAttribute.New
-- uid: Autofac.Extras.AttributeMetadata.ParameterFilterAttribute.ResolveParameter(System.Reflection.ParameterInfo,Autofac.IComponentContext)
-  name: ResolveParameter(ParameterInfo, IComponentContext)
-  href: api/Autofac.Extras.AttributeMetadata.ParameterFilterAttribute.ResolveParameter.html#Autofac_Extras_AttributeMetadata_ParameterFilterAttribute_ResolveParameter_System_Reflection_ParameterInfo_Autofac_IComponentContext_
-  commentId: M:Autofac.Extras.AttributeMetadata.ParameterFilterAttribute.ResolveParameter(System.Reflection.ParameterInfo,Autofac.IComponentContext)
-  fullName: Autofac.Extras.AttributeMetadata.ParameterFilterAttribute.ResolveParameter(System.Reflection.ParameterInfo, Autofac.IComponentContext)
-  nameWithType: ParameterFilterAttribute.ResolveParameter(ParameterInfo, IComponentContext)
-- uid: Autofac.Extras.AttributeMetadata.ParameterFilterAttribute.ResolveParameter*
-  name: ResolveParameter
-  href: api/Autofac.Extras.AttributeMetadata.ParameterFilterAttribute.ResolveParameter.html
-  commentId: Overload:Autofac.Extras.AttributeMetadata.ParameterFilterAttribute.ResolveParameter
-  fullName: Autofac.Extras.AttributeMetadata.ParameterFilterAttribute.ResolveParameter
-  nameWithType: ParameterFilterAttribute.ResolveParameter
-- uid: Autofac.Extras.AttributeMetadata.WithKeyAttribute
-  name: WithKeyAttribute
-  href: api/Autofac.Extras.AttributeMetadata.WithKeyAttribute.html
-  commentId: T:Autofac.Extras.AttributeMetadata.WithKeyAttribute
-  fullName: Autofac.Extras.AttributeMetadata.WithKeyAttribute
-  nameWithType: WithKeyAttribute
-- uid: Autofac.Extras.AttributeMetadata.WithKeyAttribute.#ctor(System.Object)
-  name: WithKeyAttribute(object)
-  href: api/Autofac.Extras.AttributeMetadata.WithKeyAttribute.-ctor.html#Autofac_Extras_AttributeMetadata_WithKeyAttribute__ctor_System_Object_
-  commentId: M:Autofac.Extras.AttributeMetadata.WithKeyAttribute.#ctor(System.Object)
-  name.vb: New(Object)
-  fullName: Autofac.Extras.AttributeMetadata.WithKeyAttribute.WithKeyAttribute(object)
-  fullName.vb: Autofac.Extras.AttributeMetadata.WithKeyAttribute.New(Object)
-  nameWithType: WithKeyAttribute.WithKeyAttribute(object)
-  nameWithType.vb: WithKeyAttribute.New(Object)
-- uid: Autofac.Extras.AttributeMetadata.WithKeyAttribute.#ctor*
-  name: WithKeyAttribute
-  href: api/Autofac.Extras.AttributeMetadata.WithKeyAttribute.-ctor.html
-  commentId: Overload:Autofac.Extras.AttributeMetadata.WithKeyAttribute.#ctor
-  name.vb: New
-  fullName: Autofac.Extras.AttributeMetadata.WithKeyAttribute.WithKeyAttribute
-  fullName.vb: Autofac.Extras.AttributeMetadata.WithKeyAttribute.New
-  nameWithType: WithKeyAttribute.WithKeyAttribute
-  nameWithType.vb: WithKeyAttribute.New
-- uid: Autofac.Extras.AttributeMetadata.WithKeyAttribute.Key
-  name: Key
-  href: api/Autofac.Extras.AttributeMetadata.WithKeyAttribute.Key.html#Autofac_Extras_AttributeMetadata_WithKeyAttribute_Key
-  commentId: P:Autofac.Extras.AttributeMetadata.WithKeyAttribute.Key
-  fullName: Autofac.Extras.AttributeMetadata.WithKeyAttribute.Key
-  nameWithType: WithKeyAttribute.Key
-- uid: Autofac.Extras.AttributeMetadata.WithKeyAttribute.Key*
-  name: Key
-  href: api/Autofac.Extras.AttributeMetadata.WithKeyAttribute.Key.html
-  commentId: Overload:Autofac.Extras.AttributeMetadata.WithKeyAttribute.Key
-  fullName: Autofac.Extras.AttributeMetadata.WithKeyAttribute.Key
-  nameWithType: WithKeyAttribute.Key
-- uid: Autofac.Extras.AttributeMetadata.WithKeyAttribute.ResolveParameter(System.Reflection.ParameterInfo,Autofac.IComponentContext)
-  name: ResolveParameter(ParameterInfo, IComponentContext)
-  href: api/Autofac.Extras.AttributeMetadata.WithKeyAttribute.ResolveParameter.html#Autofac_Extras_AttributeMetadata_WithKeyAttribute_ResolveParameter_System_Reflection_ParameterInfo_Autofac_IComponentContext_
-  commentId: M:Autofac.Extras.AttributeMetadata.WithKeyAttribute.ResolveParameter(System.Reflection.ParameterInfo,Autofac.IComponentContext)
-  fullName: Autofac.Extras.AttributeMetadata.WithKeyAttribute.ResolveParameter(System.Reflection.ParameterInfo, Autofac.IComponentContext)
-  nameWithType: WithKeyAttribute.ResolveParameter(ParameterInfo, IComponentContext)
-- uid: Autofac.Extras.AttributeMetadata.WithKeyAttribute.ResolveParameter*
-  name: ResolveParameter
-  href: api/Autofac.Extras.AttributeMetadata.WithKeyAttribute.ResolveParameter.html
-  commentId: Overload:Autofac.Extras.AttributeMetadata.WithKeyAttribute.ResolveParameter
-  fullName: Autofac.Extras.AttributeMetadata.WithKeyAttribute.ResolveParameter
-  nameWithType: WithKeyAttribute.ResolveParameter
-- uid: Autofac.Extras.AttributeMetadata.WithMetadataAttribute
-  name: WithMetadataAttribute
-  href: api/Autofac.Extras.AttributeMetadata.WithMetadataAttribute.html
-  commentId: T:Autofac.Extras.AttributeMetadata.WithMetadataAttribute
-  fullName: Autofac.Extras.AttributeMetadata.WithMetadataAttribute
-  nameWithType: WithMetadataAttribute
-- uid: Autofac.Extras.AttributeMetadata.WithMetadataAttribute.#ctor(System.String,System.Object)
-  name: WithMetadataAttribute(string, object)
-  href: api/Autofac.Extras.AttributeMetadata.WithMetadataAttribute.-ctor.html#Autofac_Extras_AttributeMetadata_WithMetadataAttribute__ctor_System_String_System_Object_
-  commentId: M:Autofac.Extras.AttributeMetadata.WithMetadataAttribute.#ctor(System.String,System.Object)
-  name.vb: New(String, Object)
-  fullName: Autofac.Extras.AttributeMetadata.WithMetadataAttribute.WithMetadataAttribute(string, object)
-  fullName.vb: Autofac.Extras.AttributeMetadata.WithMetadataAttribute.New(String, Object)
-  nameWithType: WithMetadataAttribute.WithMetadataAttribute(string, object)
-  nameWithType.vb: WithMetadataAttribute.New(String, Object)
-- uid: Autofac.Extras.AttributeMetadata.WithMetadataAttribute.#ctor*
-  name: WithMetadataAttribute
-  href: api/Autofac.Extras.AttributeMetadata.WithMetadataAttribute.-ctor.html
-  commentId: Overload:Autofac.Extras.AttributeMetadata.WithMetadataAttribute.#ctor
-  name.vb: New
-  fullName: Autofac.Extras.AttributeMetadata.WithMetadataAttribute.WithMetadataAttribute
-  fullName.vb: Autofac.Extras.AttributeMetadata.WithMetadataAttribute.New
-  nameWithType: WithMetadataAttribute.WithMetadataAttribute
-  nameWithType.vb: WithMetadataAttribute.New
-- uid: Autofac.Extras.AttributeMetadata.WithMetadataAttribute.Key
-  name: Key
-  href: api/Autofac.Extras.AttributeMetadata.WithMetadataAttribute.Key.html#Autofac_Extras_AttributeMetadata_WithMetadataAttribute_Key
-  commentId: P:Autofac.Extras.AttributeMetadata.WithMetadataAttribute.Key
-  fullName: Autofac.Extras.AttributeMetadata.WithMetadataAttribute.Key
-  nameWithType: WithMetadataAttribute.Key
-- uid: Autofac.Extras.AttributeMetadata.WithMetadataAttribute.Key*
-  name: Key
-  href: api/Autofac.Extras.AttributeMetadata.WithMetadataAttribute.Key.html
-  commentId: Overload:Autofac.Extras.AttributeMetadata.WithMetadataAttribute.Key
-  fullName: Autofac.Extras.AttributeMetadata.WithMetadataAttribute.Key
-  nameWithType: WithMetadataAttribute.Key
-- uid: Autofac.Extras.AttributeMetadata.WithMetadataAttribute.ResolveParameter(System.Reflection.ParameterInfo,Autofac.IComponentContext)
-  name: ResolveParameter(ParameterInfo, IComponentContext)
-  href: api/Autofac.Extras.AttributeMetadata.WithMetadataAttribute.ResolveParameter.html#Autofac_Extras_AttributeMetadata_WithMetadataAttribute_ResolveParameter_System_Reflection_ParameterInfo_Autofac_IComponentContext_
-  commentId: M:Autofac.Extras.AttributeMetadata.WithMetadataAttribute.ResolveParameter(System.Reflection.ParameterInfo,Autofac.IComponentContext)
-  fullName: Autofac.Extras.AttributeMetadata.WithMetadataAttribute.ResolveParameter(System.Reflection.ParameterInfo, Autofac.IComponentContext)
-  nameWithType: WithMetadataAttribute.ResolveParameter(ParameterInfo, IComponentContext)
-- uid: Autofac.Extras.AttributeMetadata.WithMetadataAttribute.ResolveParameter*
-  name: ResolveParameter
-  href: api/Autofac.Extras.AttributeMetadata.WithMetadataAttribute.ResolveParameter.html
-  commentId: Overload:Autofac.Extras.AttributeMetadata.WithMetadataAttribute.ResolveParameter
-  fullName: Autofac.Extras.AttributeMetadata.WithMetadataAttribute.ResolveParameter
-  nameWithType: WithMetadataAttribute.ResolveParameter
-- uid: Autofac.Extras.AttributeMetadata.WithMetadataAttribute.Value
-  name: Value
-  href: api/Autofac.Extras.AttributeMetadata.WithMetadataAttribute.Value.html#Autofac_Extras_AttributeMetadata_WithMetadataAttribute_Value
-  commentId: P:Autofac.Extras.AttributeMetadata.WithMetadataAttribute.Value
-  fullName: Autofac.Extras.AttributeMetadata.WithMetadataAttribute.Value
-  nameWithType: WithMetadataAttribute.Value
-- uid: Autofac.Extras.AttributeMetadata.WithMetadataAttribute.Value*
-  name: Value
-  href: api/Autofac.Extras.AttributeMetadata.WithMetadataAttribute.Value.html
-  commentId: Overload:Autofac.Extras.AttributeMetadata.WithMetadataAttribute.Value
-  fullName: Autofac.Extras.AttributeMetadata.WithMetadataAttribute.Value
-  nameWithType: WithMetadataAttribute.Value
 - uid: Autofac.Extras.CommonServiceLocator
   name: Autofac.Extras.CommonServiceLocator
   href: api/Autofac.Extras.CommonServiceLocator.html
@@ -9550,6 +9433,15 @@ references:
   fullName.vb: Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableClassInterceptors(Of TLimit, TRegistrationStyle)(Autofac.Builder.IRegistrationBuilder(Of TLimit, Autofac.Features.Scanning.ScanningActivatorData, TRegistrationStyle))
   nameWithType: RegistrationExtensions.EnableClassInterceptors<TLimit, TRegistrationStyle>(IRegistrationBuilder<TLimit, ScanningActivatorData, TRegistrationStyle>)
   nameWithType.vb: RegistrationExtensions.EnableClassInterceptors(Of TLimit, TRegistrationStyle)(IRegistrationBuilder(Of TLimit, ScanningActivatorData, TRegistrationStyle))
+- uid: Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableClassInterceptors``2(Autofac.Builder.IRegistrationBuilder{``0,Autofac.Features.Scanning.ScanningActivatorData,``1},Castle.DynamicProxy.ProxyGenerationOptions,System.Func{System.Type,System.Boolean},System.Type[])
+  name: EnableClassInterceptors<TLimit, TRegistrationStyle>(IRegistrationBuilder<TLimit, ScanningActivatorData, TRegistrationStyle>, ProxyGenerationOptions, Func<Type, bool>?, params Type[])
+  href: api/Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableClassInterceptors.html#Autofac_Extras_DynamicProxy_RegistrationExtensions_EnableClassInterceptors__2_Autofac_Builder_IRegistrationBuilder___0_Autofac_Features_Scanning_ScanningActivatorData___1__Castle_DynamicProxy_ProxyGenerationOptions_System_Func_System_Type_System_Boolean__System_Type___
+  commentId: M:Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableClassInterceptors``2(Autofac.Builder.IRegistrationBuilder{``0,Autofac.Features.Scanning.ScanningActivatorData,``1},Castle.DynamicProxy.ProxyGenerationOptions,System.Func{System.Type,System.Boolean},System.Type[])
+  name.vb: EnableClassInterceptors(Of TLimit, TRegistrationStyle)(IRegistrationBuilder(Of TLimit, ScanningActivatorData, TRegistrationStyle), ProxyGenerationOptions, Func(Of Type, Boolean), ParamArray Type())
+  fullName: Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableClassInterceptors<TLimit, TRegistrationStyle>(Autofac.Builder.IRegistrationBuilder<TLimit, Autofac.Features.Scanning.ScanningActivatorData, TRegistrationStyle>, Castle.DynamicProxy.ProxyGenerationOptions, System.Func<System.Type, bool>?, params System.Type[])
+  fullName.vb: Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableClassInterceptors(Of TLimit, TRegistrationStyle)(Autofac.Builder.IRegistrationBuilder(Of TLimit, Autofac.Features.Scanning.ScanningActivatorData, TRegistrationStyle), Castle.DynamicProxy.ProxyGenerationOptions, System.Func(Of System.Type, Boolean), ParamArray System.Type())
+  nameWithType: RegistrationExtensions.EnableClassInterceptors<TLimit, TRegistrationStyle>(IRegistrationBuilder<TLimit, ScanningActivatorData, TRegistrationStyle>, ProxyGenerationOptions, Func<Type, bool>?, params Type[])
+  nameWithType.vb: RegistrationExtensions.EnableClassInterceptors(Of TLimit, TRegistrationStyle)(IRegistrationBuilder(Of TLimit, ScanningActivatorData, TRegistrationStyle), ProxyGenerationOptions, Func(Of Type, Boolean), ParamArray Type())
 - uid: Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableClassInterceptors``2(Autofac.Builder.IRegistrationBuilder{``0,Autofac.Features.Scanning.ScanningActivatorData,``1},Castle.DynamicProxy.ProxyGenerationOptions,System.Type[])
   name: EnableClassInterceptors<TLimit, TRegistrationStyle>(IRegistrationBuilder<TLimit, ScanningActivatorData, TRegistrationStyle>, ProxyGenerationOptions, params Type[])
   href: api/Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableClassInterceptors.html#Autofac_Extras_DynamicProxy_RegistrationExtensions_EnableClassInterceptors__2_Autofac_Builder_IRegistrationBuilder___0_Autofac_Features_Scanning_ScanningActivatorData___1__Castle_DynamicProxy_ProxyGenerationOptions_System_Type___
@@ -9559,6 +9451,15 @@ references:
   fullName.vb: Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableClassInterceptors(Of TLimit, TRegistrationStyle)(Autofac.Builder.IRegistrationBuilder(Of TLimit, Autofac.Features.Scanning.ScanningActivatorData, TRegistrationStyle), Castle.DynamicProxy.ProxyGenerationOptions, ParamArray System.Type())
   nameWithType: RegistrationExtensions.EnableClassInterceptors<TLimit, TRegistrationStyle>(IRegistrationBuilder<TLimit, ScanningActivatorData, TRegistrationStyle>, ProxyGenerationOptions, params Type[])
   nameWithType.vb: RegistrationExtensions.EnableClassInterceptors(Of TLimit, TRegistrationStyle)(IRegistrationBuilder(Of TLimit, ScanningActivatorData, TRegistrationStyle), ProxyGenerationOptions, ParamArray Type())
+- uid: Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableClassInterceptors``2(Autofac.Builder.IRegistrationBuilder{``0,Autofac.Features.Scanning.ScanningActivatorData,``1},System.Func{System.Type,System.Boolean})
+  name: EnableClassInterceptors<TLimit, TRegistrationStyle>(IRegistrationBuilder<TLimit, ScanningActivatorData, TRegistrationStyle>, Func<Type, bool>)
+  href: api/Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableClassInterceptors.html#Autofac_Extras_DynamicProxy_RegistrationExtensions_EnableClassInterceptors__2_Autofac_Builder_IRegistrationBuilder___0_Autofac_Features_Scanning_ScanningActivatorData___1__System_Func_System_Type_System_Boolean__
+  commentId: M:Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableClassInterceptors``2(Autofac.Builder.IRegistrationBuilder{``0,Autofac.Features.Scanning.ScanningActivatorData,``1},System.Func{System.Type,System.Boolean})
+  name.vb: EnableClassInterceptors(Of TLimit, TRegistrationStyle)(IRegistrationBuilder(Of TLimit, ScanningActivatorData, TRegistrationStyle), Func(Of Type, Boolean))
+  fullName: Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableClassInterceptors<TLimit, TRegistrationStyle>(Autofac.Builder.IRegistrationBuilder<TLimit, Autofac.Features.Scanning.ScanningActivatorData, TRegistrationStyle>, System.Func<System.Type, bool>)
+  fullName.vb: Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableClassInterceptors(Of TLimit, TRegistrationStyle)(Autofac.Builder.IRegistrationBuilder(Of TLimit, Autofac.Features.Scanning.ScanningActivatorData, TRegistrationStyle), System.Func(Of System.Type, Boolean))
+  nameWithType: RegistrationExtensions.EnableClassInterceptors<TLimit, TRegistrationStyle>(IRegistrationBuilder<TLimit, ScanningActivatorData, TRegistrationStyle>, Func<Type, bool>)
+  nameWithType.vb: RegistrationExtensions.EnableClassInterceptors(Of TLimit, TRegistrationStyle)(IRegistrationBuilder(Of TLimit, ScanningActivatorData, TRegistrationStyle), Func(Of Type, Boolean))
 - uid: Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableClassInterceptors``3(Autofac.Builder.IRegistrationBuilder{``0,``1,``2})
   name: EnableClassInterceptors<TLimit, TConcreteReflectionActivatorData, TRegistrationStyle>(IRegistrationBuilder<TLimit, TConcreteReflectionActivatorData, TRegistrationStyle>)
   href: api/Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableClassInterceptors.html#Autofac_Extras_DynamicProxy_RegistrationExtensions_EnableClassInterceptors__3_Autofac_Builder_IRegistrationBuilder___0___1___2__
@@ -9568,6 +9469,15 @@ references:
   fullName.vb: Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableClassInterceptors(Of TLimit, TConcreteReflectionActivatorData, TRegistrationStyle)(Autofac.Builder.IRegistrationBuilder(Of TLimit, TConcreteReflectionActivatorData, TRegistrationStyle))
   nameWithType: RegistrationExtensions.EnableClassInterceptors<TLimit, TConcreteReflectionActivatorData, TRegistrationStyle>(IRegistrationBuilder<TLimit, TConcreteReflectionActivatorData, TRegistrationStyle>)
   nameWithType.vb: RegistrationExtensions.EnableClassInterceptors(Of TLimit, TConcreteReflectionActivatorData, TRegistrationStyle)(IRegistrationBuilder(Of TLimit, TConcreteReflectionActivatorData, TRegistrationStyle))
+- uid: Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableClassInterceptors``3(Autofac.Builder.IRegistrationBuilder{``0,``1,``2},Castle.DynamicProxy.ProxyGenerationOptions,System.Func{System.Type,System.Boolean},System.Type[])
+  name: EnableClassInterceptors<TLimit, TConcreteReflectionActivatorData, TRegistrationStyle>(IRegistrationBuilder<TLimit, TConcreteReflectionActivatorData, TRegistrationStyle>, ProxyGenerationOptions, Func<Type, bool>?, params Type[])
+  href: api/Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableClassInterceptors.html#Autofac_Extras_DynamicProxy_RegistrationExtensions_EnableClassInterceptors__3_Autofac_Builder_IRegistrationBuilder___0___1___2__Castle_DynamicProxy_ProxyGenerationOptions_System_Func_System_Type_System_Boolean__System_Type___
+  commentId: M:Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableClassInterceptors``3(Autofac.Builder.IRegistrationBuilder{``0,``1,``2},Castle.DynamicProxy.ProxyGenerationOptions,System.Func{System.Type,System.Boolean},System.Type[])
+  name.vb: EnableClassInterceptors(Of TLimit, TConcreteReflectionActivatorData, TRegistrationStyle)(IRegistrationBuilder(Of TLimit, TConcreteReflectionActivatorData, TRegistrationStyle), ProxyGenerationOptions, Func(Of Type, Boolean), ParamArray Type())
+  fullName: Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableClassInterceptors<TLimit, TConcreteReflectionActivatorData, TRegistrationStyle>(Autofac.Builder.IRegistrationBuilder<TLimit, TConcreteReflectionActivatorData, TRegistrationStyle>, Castle.DynamicProxy.ProxyGenerationOptions, System.Func<System.Type, bool>?, params System.Type[])
+  fullName.vb: Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableClassInterceptors(Of TLimit, TConcreteReflectionActivatorData, TRegistrationStyle)(Autofac.Builder.IRegistrationBuilder(Of TLimit, TConcreteReflectionActivatorData, TRegistrationStyle), Castle.DynamicProxy.ProxyGenerationOptions, System.Func(Of System.Type, Boolean), ParamArray System.Type())
+  nameWithType: RegistrationExtensions.EnableClassInterceptors<TLimit, TConcreteReflectionActivatorData, TRegistrationStyle>(IRegistrationBuilder<TLimit, TConcreteReflectionActivatorData, TRegistrationStyle>, ProxyGenerationOptions, Func<Type, bool>?, params Type[])
+  nameWithType.vb: RegistrationExtensions.EnableClassInterceptors(Of TLimit, TConcreteReflectionActivatorData, TRegistrationStyle)(IRegistrationBuilder(Of TLimit, TConcreteReflectionActivatorData, TRegistrationStyle), ProxyGenerationOptions, Func(Of Type, Boolean), ParamArray Type())
 - uid: Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableClassInterceptors``3(Autofac.Builder.IRegistrationBuilder{``0,``1,``2},Castle.DynamicProxy.ProxyGenerationOptions,System.Type[])
   name: EnableClassInterceptors<TLimit, TConcreteReflectionActivatorData, TRegistrationStyle>(IRegistrationBuilder<TLimit, TConcreteReflectionActivatorData, TRegistrationStyle>, ProxyGenerationOptions, params Type[])
   href: api/Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableClassInterceptors.html#Autofac_Extras_DynamicProxy_RegistrationExtensions_EnableClassInterceptors__3_Autofac_Builder_IRegistrationBuilder___0___1___2__Castle_DynamicProxy_ProxyGenerationOptions_System_Type___
@@ -9577,6 +9487,15 @@ references:
   fullName.vb: Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableClassInterceptors(Of TLimit, TConcreteReflectionActivatorData, TRegistrationStyle)(Autofac.Builder.IRegistrationBuilder(Of TLimit, TConcreteReflectionActivatorData, TRegistrationStyle), Castle.DynamicProxy.ProxyGenerationOptions, ParamArray System.Type())
   nameWithType: RegistrationExtensions.EnableClassInterceptors<TLimit, TConcreteReflectionActivatorData, TRegistrationStyle>(IRegistrationBuilder<TLimit, TConcreteReflectionActivatorData, TRegistrationStyle>, ProxyGenerationOptions, params Type[])
   nameWithType.vb: RegistrationExtensions.EnableClassInterceptors(Of TLimit, TConcreteReflectionActivatorData, TRegistrationStyle)(IRegistrationBuilder(Of TLimit, TConcreteReflectionActivatorData, TRegistrationStyle), ProxyGenerationOptions, ParamArray Type())
+- uid: Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableClassInterceptors``3(Autofac.Builder.IRegistrationBuilder{``0,``1,``2},System.Func{System.Type,System.Boolean})
+  name: EnableClassInterceptors<TLimit, TConcreteReflectionActivatorData, TRegistrationStyle>(IRegistrationBuilder<TLimit, TConcreteReflectionActivatorData, TRegistrationStyle>, Func<Type, bool>)
+  href: api/Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableClassInterceptors.html#Autofac_Extras_DynamicProxy_RegistrationExtensions_EnableClassInterceptors__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Func_System_Type_System_Boolean__
+  commentId: M:Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableClassInterceptors``3(Autofac.Builder.IRegistrationBuilder{``0,``1,``2},System.Func{System.Type,System.Boolean})
+  name.vb: EnableClassInterceptors(Of TLimit, TConcreteReflectionActivatorData, TRegistrationStyle)(IRegistrationBuilder(Of TLimit, TConcreteReflectionActivatorData, TRegistrationStyle), Func(Of Type, Boolean))
+  fullName: Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableClassInterceptors<TLimit, TConcreteReflectionActivatorData, TRegistrationStyle>(Autofac.Builder.IRegistrationBuilder<TLimit, TConcreteReflectionActivatorData, TRegistrationStyle>, System.Func<System.Type, bool>)
+  fullName.vb: Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableClassInterceptors(Of TLimit, TConcreteReflectionActivatorData, TRegistrationStyle)(Autofac.Builder.IRegistrationBuilder(Of TLimit, TConcreteReflectionActivatorData, TRegistrationStyle), System.Func(Of System.Type, Boolean))
+  nameWithType: RegistrationExtensions.EnableClassInterceptors<TLimit, TConcreteReflectionActivatorData, TRegistrationStyle>(IRegistrationBuilder<TLimit, TConcreteReflectionActivatorData, TRegistrationStyle>, Func<Type, bool>)
+  nameWithType.vb: RegistrationExtensions.EnableClassInterceptors(Of TLimit, TConcreteReflectionActivatorData, TRegistrationStyle)(IRegistrationBuilder(Of TLimit, TConcreteReflectionActivatorData, TRegistrationStyle), Func(Of Type, Boolean))
 - uid: Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableInterfaceInterceptors*
   name: EnableInterfaceInterceptors
   href: api/Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableInterfaceInterceptors.html
@@ -9592,6 +9511,24 @@ references:
   fullName.vb: Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableInterfaceInterceptors(Of TLimit, TActivatorData, TSingleRegistrationStyle)(Autofac.Builder.IRegistrationBuilder(Of TLimit, TActivatorData, TSingleRegistrationStyle), Castle.DynamicProxy.ProxyGenerationOptions)
   nameWithType: RegistrationExtensions.EnableInterfaceInterceptors<TLimit, TActivatorData, TSingleRegistrationStyle>(IRegistrationBuilder<TLimit, TActivatorData, TSingleRegistrationStyle>, ProxyGenerationOptions?)
   nameWithType.vb: RegistrationExtensions.EnableInterfaceInterceptors(Of TLimit, TActivatorData, TSingleRegistrationStyle)(IRegistrationBuilder(Of TLimit, TActivatorData, TSingleRegistrationStyle), ProxyGenerationOptions)
+- uid: Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableInterfaceInterceptors``3(Autofac.Builder.IRegistrationBuilder{``0,``1,``2},Castle.DynamicProxy.ProxyGenerationOptions,System.Func{System.Type,System.Boolean})
+  name: EnableInterfaceInterceptors<TLimit, TActivatorData, TSingleRegistrationStyle>(IRegistrationBuilder<TLimit, TActivatorData, TSingleRegistrationStyle>, ProxyGenerationOptions?, Func<Type, bool>?)
+  href: api/Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableInterfaceInterceptors.html#Autofac_Extras_DynamicProxy_RegistrationExtensions_EnableInterfaceInterceptors__3_Autofac_Builder_IRegistrationBuilder___0___1___2__Castle_DynamicProxy_ProxyGenerationOptions_System_Func_System_Type_System_Boolean__
+  commentId: M:Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableInterfaceInterceptors``3(Autofac.Builder.IRegistrationBuilder{``0,``1,``2},Castle.DynamicProxy.ProxyGenerationOptions,System.Func{System.Type,System.Boolean})
+  name.vb: EnableInterfaceInterceptors(Of TLimit, TActivatorData, TSingleRegistrationStyle)(IRegistrationBuilder(Of TLimit, TActivatorData, TSingleRegistrationStyle), ProxyGenerationOptions, Func(Of Type, Boolean))
+  fullName: Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableInterfaceInterceptors<TLimit, TActivatorData, TSingleRegistrationStyle>(Autofac.Builder.IRegistrationBuilder<TLimit, TActivatorData, TSingleRegistrationStyle>, Castle.DynamicProxy.ProxyGenerationOptions?, System.Func<System.Type, bool>?)
+  fullName.vb: Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableInterfaceInterceptors(Of TLimit, TActivatorData, TSingleRegistrationStyle)(Autofac.Builder.IRegistrationBuilder(Of TLimit, TActivatorData, TSingleRegistrationStyle), Castle.DynamicProxy.ProxyGenerationOptions, System.Func(Of System.Type, Boolean))
+  nameWithType: RegistrationExtensions.EnableInterfaceInterceptors<TLimit, TActivatorData, TSingleRegistrationStyle>(IRegistrationBuilder<TLimit, TActivatorData, TSingleRegistrationStyle>, ProxyGenerationOptions?, Func<Type, bool>?)
+  nameWithType.vb: RegistrationExtensions.EnableInterfaceInterceptors(Of TLimit, TActivatorData, TSingleRegistrationStyle)(IRegistrationBuilder(Of TLimit, TActivatorData, TSingleRegistrationStyle), ProxyGenerationOptions, Func(Of Type, Boolean))
+- uid: Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableInterfaceInterceptors``3(Autofac.Builder.IRegistrationBuilder{``0,``1,``2},System.Func{System.Type,System.Boolean})
+  name: EnableInterfaceInterceptors<TLimit, TActivatorData, TSingleRegistrationStyle>(IRegistrationBuilder<TLimit, TActivatorData, TSingleRegistrationStyle>, Func<Type, bool>)
+  href: api/Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableInterfaceInterceptors.html#Autofac_Extras_DynamicProxy_RegistrationExtensions_EnableInterfaceInterceptors__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Func_System_Type_System_Boolean__
+  commentId: M:Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableInterfaceInterceptors``3(Autofac.Builder.IRegistrationBuilder{``0,``1,``2},System.Func{System.Type,System.Boolean})
+  name.vb: EnableInterfaceInterceptors(Of TLimit, TActivatorData, TSingleRegistrationStyle)(IRegistrationBuilder(Of TLimit, TActivatorData, TSingleRegistrationStyle), Func(Of Type, Boolean))
+  fullName: Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableInterfaceInterceptors<TLimit, TActivatorData, TSingleRegistrationStyle>(Autofac.Builder.IRegistrationBuilder<TLimit, TActivatorData, TSingleRegistrationStyle>, System.Func<System.Type, bool>)
+  fullName.vb: Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableInterfaceInterceptors(Of TLimit, TActivatorData, TSingleRegistrationStyle)(Autofac.Builder.IRegistrationBuilder(Of TLimit, TActivatorData, TSingleRegistrationStyle), System.Func(Of System.Type, Boolean))
+  nameWithType: RegistrationExtensions.EnableInterfaceInterceptors<TLimit, TActivatorData, TSingleRegistrationStyle>(IRegistrationBuilder<TLimit, TActivatorData, TSingleRegistrationStyle>, Func<Type, bool>)
+  nameWithType.vb: RegistrationExtensions.EnableInterfaceInterceptors(Of TLimit, TActivatorData, TSingleRegistrationStyle)(IRegistrationBuilder(Of TLimit, TActivatorData, TSingleRegistrationStyle), Func(Of Type, Boolean))
 - uid: Autofac.Extras.DynamicProxy.RegistrationExtensions.InterceptedBy*
   name: InterceptedBy
   href: api/Autofac.Extras.DynamicProxy.RegistrationExtensions.InterceptedBy.html
@@ -9637,15 +9574,15 @@ references:
   commentId: T:Autofac.Extras.FakeItEasy.AutoFake
   fullName: Autofac.Extras.FakeItEasy.AutoFake
   nameWithType: AutoFake
-- uid: Autofac.Extras.FakeItEasy.AutoFake.#ctor(System.Boolean,System.Boolean,System.Action{System.Object},Autofac.ContainerBuilder,System.Action{Autofac.ContainerBuilder})
-  name: AutoFake(bool, bool, Action<object>, ContainerBuilder, Action<ContainerBuilder>)
-  href: api/Autofac.Extras.FakeItEasy.AutoFake.-ctor.html#Autofac_Extras_FakeItEasy_AutoFake__ctor_System_Boolean_System_Boolean_System_Action_System_Object__Autofac_ContainerBuilder_System_Action_Autofac_ContainerBuilder__
-  commentId: M:Autofac.Extras.FakeItEasy.AutoFake.#ctor(System.Boolean,System.Boolean,System.Action{System.Object},Autofac.ContainerBuilder,System.Action{Autofac.ContainerBuilder})
-  name.vb: New(Boolean, Boolean, Action(Of Object), ContainerBuilder, Action(Of ContainerBuilder))
-  fullName: Autofac.Extras.FakeItEasy.AutoFake.AutoFake(bool, bool, System.Action<object>, Autofac.ContainerBuilder, System.Action<Autofac.ContainerBuilder>)
-  fullName.vb: Autofac.Extras.FakeItEasy.AutoFake.New(Boolean, Boolean, System.Action(Of Object), Autofac.ContainerBuilder, System.Action(Of Autofac.ContainerBuilder))
-  nameWithType: AutoFake.AutoFake(bool, bool, Action<object>, ContainerBuilder, Action<ContainerBuilder>)
-  nameWithType.vb: AutoFake.New(Boolean, Boolean, Action(Of Object), ContainerBuilder, Action(Of ContainerBuilder))
+- uid: Autofac.Extras.FakeItEasy.AutoFake.#ctor(System.Boolean,System.Boolean,System.Action{System.Object},System.Action{Autofac.ContainerBuilder})
+  name: AutoFake(bool, bool, Action<object>?, Action<ContainerBuilder>?)
+  href: api/Autofac.Extras.FakeItEasy.AutoFake.-ctor.html#Autofac_Extras_FakeItEasy_AutoFake__ctor_System_Boolean_System_Boolean_System_Action_System_Object__System_Action_Autofac_ContainerBuilder__
+  commentId: M:Autofac.Extras.FakeItEasy.AutoFake.#ctor(System.Boolean,System.Boolean,System.Action{System.Object},System.Action{Autofac.ContainerBuilder})
+  name.vb: New(Boolean, Boolean, Action(Of Object), Action(Of ContainerBuilder))
+  fullName: Autofac.Extras.FakeItEasy.AutoFake.AutoFake(bool, bool, System.Action<object>?, System.Action<Autofac.ContainerBuilder>?)
+  fullName.vb: Autofac.Extras.FakeItEasy.AutoFake.New(Boolean, Boolean, System.Action(Of Object), System.Action(Of Autofac.ContainerBuilder))
+  nameWithType: AutoFake.AutoFake(bool, bool, Action<object>?, Action<ContainerBuilder>?)
+  nameWithType.vb: AutoFake.New(Boolean, Boolean, Action(Of Object), Action(Of ContainerBuilder))
 - uid: Autofac.Extras.FakeItEasy.AutoFake.#ctor*
   name: AutoFake
   href: api/Autofac.Extras.FakeItEasy.AutoFake.-ctor.html
@@ -9667,21 +9604,6 @@ references:
   commentId: Overload:Autofac.Extras.FakeItEasy.AutoFake.Container
   fullName: Autofac.Extras.FakeItEasy.AutoFake.Container
   nameWithType: AutoFake.Container
-- uid: Autofac.Extras.FakeItEasy.AutoFake.Create*
-  name: Create
-  href: api/Autofac.Extras.FakeItEasy.AutoFake.Create.html
-  commentId: Overload:Autofac.Extras.FakeItEasy.AutoFake.Create
-  fullName: Autofac.Extras.FakeItEasy.AutoFake.Create
-  nameWithType: AutoFake.Create
-- uid: Autofac.Extras.FakeItEasy.AutoFake.Create``1(Autofac.Core.Parameter[])
-  name: Create<T>(params Parameter[])
-  href: api/Autofac.Extras.FakeItEasy.AutoFake.Create.html#Autofac_Extras_FakeItEasy_AutoFake_Create__1_Autofac_Core_Parameter___
-  commentId: M:Autofac.Extras.FakeItEasy.AutoFake.Create``1(Autofac.Core.Parameter[])
-  name.vb: Create(Of T)(ParamArray Parameter())
-  fullName: Autofac.Extras.FakeItEasy.AutoFake.Create<T>(params Autofac.Core.Parameter[])
-  fullName.vb: Autofac.Extras.FakeItEasy.AutoFake.Create(Of T)(ParamArray Autofac.Core.Parameter())
-  nameWithType: AutoFake.Create<T>(params Parameter[])
-  nameWithType.vb: AutoFake.Create(Of T)(ParamArray Parameter())
 - uid: Autofac.Extras.FakeItEasy.AutoFake.Dispose
   name: Dispose()
   href: api/Autofac.Extras.FakeItEasy.AutoFake.Dispose.html#Autofac_Extras_FakeItEasy_AutoFake_Dispose
@@ -9718,30 +9640,6 @@ references:
   commentId: Overload:Autofac.Extras.FakeItEasy.AutoFake.Finalize
   fullName: Autofac.Extras.FakeItEasy.AutoFake.~AutoFake
   nameWithType: AutoFake.~AutoFake
-- uid: Autofac.Extras.FakeItEasy.AutoFake.Provide*
-  name: Provide
-  href: api/Autofac.Extras.FakeItEasy.AutoFake.Provide.html
-  commentId: Overload:Autofac.Extras.FakeItEasy.AutoFake.Provide
-  fullName: Autofac.Extras.FakeItEasy.AutoFake.Provide
-  nameWithType: AutoFake.Provide
-- uid: Autofac.Extras.FakeItEasy.AutoFake.Provide``1(``0)
-  name: Provide<TService>(TService)
-  href: api/Autofac.Extras.FakeItEasy.AutoFake.Provide.html#Autofac_Extras_FakeItEasy_AutoFake_Provide__1___0_
-  commentId: M:Autofac.Extras.FakeItEasy.AutoFake.Provide``1(``0)
-  name.vb: Provide(Of TService)(TService)
-  fullName: Autofac.Extras.FakeItEasy.AutoFake.Provide<TService>(TService)
-  fullName.vb: Autofac.Extras.FakeItEasy.AutoFake.Provide(Of TService)(TService)
-  nameWithType: AutoFake.Provide<TService>(TService)
-  nameWithType.vb: AutoFake.Provide(Of TService)(TService)
-- uid: Autofac.Extras.FakeItEasy.AutoFake.Provide``2(Autofac.Core.Parameter[])
-  name: Provide<TService, TImplementation>(params Parameter[])
-  href: api/Autofac.Extras.FakeItEasy.AutoFake.Provide.html#Autofac_Extras_FakeItEasy_AutoFake_Provide__2_Autofac_Core_Parameter___
-  commentId: M:Autofac.Extras.FakeItEasy.AutoFake.Provide``2(Autofac.Core.Parameter[])
-  name.vb: Provide(Of TService, TImplementation)(ParamArray Parameter())
-  fullName: Autofac.Extras.FakeItEasy.AutoFake.Provide<TService, TImplementation>(params Autofac.Core.Parameter[])
-  fullName.vb: Autofac.Extras.FakeItEasy.AutoFake.Provide(Of TService, TImplementation)(ParamArray Autofac.Core.Parameter())
-  nameWithType: AutoFake.Provide<TService, TImplementation>(params Parameter[])
-  nameWithType.vb: AutoFake.Provide(Of TService, TImplementation)(ParamArray Parameter())
 - uid: Autofac.Extras.FakeItEasy.AutoFake.Resolve*
   name: Resolve
   href: api/Autofac.Extras.FakeItEasy.AutoFake.Resolve.html
@@ -11554,13 +11452,13 @@ references:
   fullName: Autofac.Integration.Mef.ContractBasedService.Description
   nameWithType: ContractBasedService.Description
 - uid: Autofac.Integration.Mef.ContractBasedService.Equals(System.Object)
-  name: Equals(object)
+  name: Equals(object?)
   href: api/Autofac.Integration.Mef.ContractBasedService.Equals.html#Autofac_Integration_Mef_ContractBasedService_Equals_System_Object_
   commentId: M:Autofac.Integration.Mef.ContractBasedService.Equals(System.Object)
   name.vb: Equals(Object)
-  fullName: Autofac.Integration.Mef.ContractBasedService.Equals(object)
+  fullName: Autofac.Integration.Mef.ContractBasedService.Equals(object?)
   fullName.vb: Autofac.Integration.Mef.ContractBasedService.Equals(Object)
-  nameWithType: ContractBasedService.Equals(object)
+  nameWithType: ContractBasedService.Equals(object?)
   nameWithType.vb: ContractBasedService.Equals(Object)
 - uid: Autofac.Integration.Mef.ContractBasedService.Equals*
   name: Equals
@@ -11616,12 +11514,27 @@ references:
   fullName.vb: Autofac.Integration.Mef.ExportConfigurationBuilder.New
   nameWithType: ExportConfigurationBuilder.ExportConfigurationBuilder
   nameWithType.vb: ExportConfigurationBuilder.New
+- uid: Autofac.Integration.Mef.ExportConfigurationBuilder.As(System.Type)
+  name: As(Type)
+  href: api/Autofac.Integration.Mef.ExportConfigurationBuilder.As.html#Autofac_Integration_Mef_ExportConfigurationBuilder_As_System_Type_
+  commentId: M:Autofac.Integration.Mef.ExportConfigurationBuilder.As(System.Type)
+  fullName: Autofac.Integration.Mef.ExportConfigurationBuilder.As(System.Type)
+  nameWithType: ExportConfigurationBuilder.As(Type)
 - uid: Autofac.Integration.Mef.ExportConfigurationBuilder.As*
   name: As
   href: api/Autofac.Integration.Mef.ExportConfigurationBuilder.As.html
   commentId: Overload:Autofac.Integration.Mef.ExportConfigurationBuilder.As
   fullName: Autofac.Integration.Mef.ExportConfigurationBuilder.As
   nameWithType: ExportConfigurationBuilder.As
+- uid: Autofac.Integration.Mef.ExportConfigurationBuilder.AsNamed(System.Type,System.String)
+  name: AsNamed(Type, string)
+  href: api/Autofac.Integration.Mef.ExportConfigurationBuilder.AsNamed.html#Autofac_Integration_Mef_ExportConfigurationBuilder_AsNamed_System_Type_System_String_
+  commentId: M:Autofac.Integration.Mef.ExportConfigurationBuilder.AsNamed(System.Type,System.String)
+  name.vb: AsNamed(Type, String)
+  fullName: Autofac.Integration.Mef.ExportConfigurationBuilder.AsNamed(System.Type, string)
+  fullName.vb: Autofac.Integration.Mef.ExportConfigurationBuilder.AsNamed(System.Type, String)
+  nameWithType: ExportConfigurationBuilder.AsNamed(Type, string)
+  nameWithType.vb: ExportConfigurationBuilder.AsNamed(Type, String)
 - uid: Autofac.Integration.Mef.ExportConfigurationBuilder.AsNamed*
   name: AsNamed
   href: api/Autofac.Integration.Mef.ExportConfigurationBuilder.AsNamed.html
@@ -12127,13 +12040,13 @@ references:
   fullName: Autofac.Integration.Mvc.ILifetimeScopeProvider.EndLifetimeScope
   nameWithType: ILifetimeScopeProvider.EndLifetimeScope
 - uid: Autofac.Integration.Mvc.ILifetimeScopeProvider.GetLifetimeScope(System.Action{Autofac.ContainerBuilder})
-  name: GetLifetimeScope(Action<ContainerBuilder>)
+  name: GetLifetimeScope(Action<ContainerBuilder>?)
   href: api/legacy/Autofac.Integration.Mvc.ILifetimeScopeProvider.GetLifetimeScope.html#Autofac_Integration_Mvc_ILifetimeScopeProvider_GetLifetimeScope_System_Action_Autofac_ContainerBuilder__
   commentId: M:Autofac.Integration.Mvc.ILifetimeScopeProvider.GetLifetimeScope(System.Action{Autofac.ContainerBuilder})
   name.vb: GetLifetimeScope(Action(Of ContainerBuilder))
-  fullName: Autofac.Integration.Mvc.ILifetimeScopeProvider.GetLifetimeScope(System.Action<Autofac.ContainerBuilder>)
+  fullName: Autofac.Integration.Mvc.ILifetimeScopeProvider.GetLifetimeScope(System.Action<Autofac.ContainerBuilder>?)
   fullName.vb: Autofac.Integration.Mvc.ILifetimeScopeProvider.GetLifetimeScope(System.Action(Of Autofac.ContainerBuilder))
-  nameWithType: ILifetimeScopeProvider.GetLifetimeScope(Action<ContainerBuilder>)
+  nameWithType: ILifetimeScopeProvider.GetLifetimeScope(Action<ContainerBuilder>?)
   nameWithType.vb: ILifetimeScopeProvider.GetLifetimeScope(Action(Of ContainerBuilder))
 - uid: Autofac.Integration.Mvc.ILifetimeScopeProvider.GetLifetimeScope*
   name: GetLifetimeScope
@@ -12724,13 +12637,13 @@ references:
   fullName: Autofac.Integration.Mvc.RequestLifetimeScopeProvider.EndLifetimeScope
   nameWithType: RequestLifetimeScopeProvider.EndLifetimeScope
 - uid: Autofac.Integration.Mvc.RequestLifetimeScopeProvider.GetLifetimeScope(System.Action{Autofac.ContainerBuilder})
-  name: GetLifetimeScope(Action<ContainerBuilder>)
+  name: GetLifetimeScope(Action<ContainerBuilder>?)
   href: api/legacy/Autofac.Integration.Mvc.RequestLifetimeScopeProvider.GetLifetimeScope.html#Autofac_Integration_Mvc_RequestLifetimeScopeProvider_GetLifetimeScope_System_Action_Autofac_ContainerBuilder__
   commentId: M:Autofac.Integration.Mvc.RequestLifetimeScopeProvider.GetLifetimeScope(System.Action{Autofac.ContainerBuilder})
   name.vb: GetLifetimeScope(Action(Of ContainerBuilder))
-  fullName: Autofac.Integration.Mvc.RequestLifetimeScopeProvider.GetLifetimeScope(System.Action<Autofac.ContainerBuilder>)
+  fullName: Autofac.Integration.Mvc.RequestLifetimeScopeProvider.GetLifetimeScope(System.Action<Autofac.ContainerBuilder>?)
   fullName.vb: Autofac.Integration.Mvc.RequestLifetimeScopeProvider.GetLifetimeScope(System.Action(Of Autofac.ContainerBuilder))
-  nameWithType: RequestLifetimeScopeProvider.GetLifetimeScope(Action<ContainerBuilder>)
+  nameWithType: RequestLifetimeScopeProvider.GetLifetimeScope(Action<ContainerBuilder>?)
   nameWithType.vb: RequestLifetimeScopeProvider.GetLifetimeScope(Action(Of ContainerBuilder))
 - uid: Autofac.Integration.Mvc.RequestLifetimeScopeProvider.GetLifetimeScope*
   name: GetLifetimeScope
@@ -12739,13 +12652,13 @@ references:
   fullName: Autofac.Integration.Mvc.RequestLifetimeScopeProvider.GetLifetimeScope
   nameWithType: RequestLifetimeScopeProvider.GetLifetimeScope
 - uid: Autofac.Integration.Mvc.RequestLifetimeScopeProvider.GetLifetimeScopeCore(System.Action{Autofac.ContainerBuilder})
-  name: GetLifetimeScopeCore(Action<ContainerBuilder>)
+  name: GetLifetimeScopeCore(Action<ContainerBuilder>?)
   href: api/legacy/Autofac.Integration.Mvc.RequestLifetimeScopeProvider.GetLifetimeScopeCore.html#Autofac_Integration_Mvc_RequestLifetimeScopeProvider_GetLifetimeScopeCore_System_Action_Autofac_ContainerBuilder__
   commentId: M:Autofac.Integration.Mvc.RequestLifetimeScopeProvider.GetLifetimeScopeCore(System.Action{Autofac.ContainerBuilder})
   name.vb: GetLifetimeScopeCore(Action(Of ContainerBuilder))
-  fullName: Autofac.Integration.Mvc.RequestLifetimeScopeProvider.GetLifetimeScopeCore(System.Action<Autofac.ContainerBuilder>)
+  fullName: Autofac.Integration.Mvc.RequestLifetimeScopeProvider.GetLifetimeScopeCore(System.Action<Autofac.ContainerBuilder>?)
   fullName.vb: Autofac.Integration.Mvc.RequestLifetimeScopeProvider.GetLifetimeScopeCore(System.Action(Of Autofac.ContainerBuilder))
-  nameWithType: RequestLifetimeScopeProvider.GetLifetimeScopeCore(Action<ContainerBuilder>)
+  nameWithType: RequestLifetimeScopeProvider.GetLifetimeScopeCore(Action<ContainerBuilder>?)
   nameWithType.vb: RequestLifetimeScopeProvider.GetLifetimeScopeCore(Action(Of ContainerBuilder))
 - uid: Autofac.Integration.Mvc.RequestLifetimeScopeProvider.GetLifetimeScopeCore*
   name: GetLifetimeScopeCore
@@ -12854,85 +12767,85 @@ references:
   nameWithType: OwinContextExtensions.SetAutofacLifetimeScope
 - uid: Autofac.Integration.ServiceFabric
   name: Autofac.Integration.ServiceFabric
-  href: api/legacy/Autofac.Integration.ServiceFabric.html
+  href: api/Autofac.Integration.ServiceFabric.html
   commentId: N:Autofac.Integration.ServiceFabric
   fullName: Autofac.Integration.ServiceFabric
   nameWithType: Autofac.Integration.ServiceFabric
 - uid: Autofac.Integration.ServiceFabric.AutofacActorExtensions
   name: AutofacActorExtensions
-  href: api/legacy/Autofac.Integration.ServiceFabric.AutofacActorExtensions.html
+  href: api/Autofac.Integration.ServiceFabric.AutofacActorExtensions.html
   commentId: T:Autofac.Integration.ServiceFabric.AutofacActorExtensions
   fullName: Autofac.Integration.ServiceFabric.AutofacActorExtensions
   nameWithType: AutofacActorExtensions
 - uid: Autofac.Integration.ServiceFabric.AutofacActorExtensions.RegisterActor*
   name: RegisterActor
-  href: api/legacy/Autofac.Integration.ServiceFabric.AutofacActorExtensions.RegisterActor.html
+  href: api/Autofac.Integration.ServiceFabric.AutofacActorExtensions.RegisterActor.html
   commentId: Overload:Autofac.Integration.ServiceFabric.AutofacActorExtensions.RegisterActor
   fullName: Autofac.Integration.ServiceFabric.AutofacActorExtensions.RegisterActor
   nameWithType: AutofacActorExtensions.RegisterActor
 - uid: Autofac.Integration.ServiceFabric.AutofacActorExtensions.RegisterActor``1(Autofac.ContainerBuilder,System.Type,System.Func{Microsoft.ServiceFabric.Actors.Runtime.ActorBase,Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider,Microsoft.ServiceFabric.Actors.Runtime.IActorStateManager},Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider,Microsoft.ServiceFabric.Actors.Runtime.ActorServiceSettings,System.Object)
-  name: RegisterActor<TActor>(ContainerBuilder, Type, Func<ActorBase, IActorStateProvider, IActorStateManager>, IActorStateProvider, ActorServiceSettings, object)
-  href: api/legacy/Autofac.Integration.ServiceFabric.AutofacActorExtensions.RegisterActor.html#Autofac_Integration_ServiceFabric_AutofacActorExtensions_RegisterActor__1_Autofac_ContainerBuilder_System_Type_System_Func_Microsoft_ServiceFabric_Actors_Runtime_ActorBase_Microsoft_ServiceFabric_Actors_Runtime_IActorStateProvider_Microsoft_ServiceFabric_Actors_Runtime_IActorStateManager__Microsoft_ServiceFabric_Actors_Runtime_IActorStateProvider_Microsoft_ServiceFabric_Actors_Runtime_ActorServiceSettings_System_Object_
+  name: RegisterActor<TActor>(ContainerBuilder, Type?, Func<ActorBase, IActorStateProvider, IActorStateManager>?, IActorStateProvider?, ActorServiceSettings?, object?)
+  href: api/Autofac.Integration.ServiceFabric.AutofacActorExtensions.RegisterActor.html#Autofac_Integration_ServiceFabric_AutofacActorExtensions_RegisterActor__1_Autofac_ContainerBuilder_System_Type_System_Func_Microsoft_ServiceFabric_Actors_Runtime_ActorBase_Microsoft_ServiceFabric_Actors_Runtime_IActorStateProvider_Microsoft_ServiceFabric_Actors_Runtime_IActorStateManager__Microsoft_ServiceFabric_Actors_Runtime_IActorStateProvider_Microsoft_ServiceFabric_Actors_Runtime_ActorServiceSettings_System_Object_
   commentId: M:Autofac.Integration.ServiceFabric.AutofacActorExtensions.RegisterActor``1(Autofac.ContainerBuilder,System.Type,System.Func{Microsoft.ServiceFabric.Actors.Runtime.ActorBase,Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider,Microsoft.ServiceFabric.Actors.Runtime.IActorStateManager},Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider,Microsoft.ServiceFabric.Actors.Runtime.ActorServiceSettings,System.Object)
   name.vb: RegisterActor(Of TActor)(ContainerBuilder, Type, Func(Of ActorBase, IActorStateProvider, IActorStateManager), IActorStateProvider, ActorServiceSettings, Object)
-  fullName: Autofac.Integration.ServiceFabric.AutofacActorExtensions.RegisterActor<TActor>(Autofac.ContainerBuilder, System.Type, System.Func<Microsoft.ServiceFabric.Actors.Runtime.ActorBase, Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider, Microsoft.ServiceFabric.Actors.Runtime.IActorStateManager>, Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider, Microsoft.ServiceFabric.Actors.Runtime.ActorServiceSettings, object)
+  fullName: Autofac.Integration.ServiceFabric.AutofacActorExtensions.RegisterActor<TActor>(Autofac.ContainerBuilder, System.Type?, System.Func<Microsoft.ServiceFabric.Actors.Runtime.ActorBase, Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider, Microsoft.ServiceFabric.Actors.Runtime.IActorStateManager>?, Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider?, Microsoft.ServiceFabric.Actors.Runtime.ActorServiceSettings?, object?)
   fullName.vb: Autofac.Integration.ServiceFabric.AutofacActorExtensions.RegisterActor(Of TActor)(Autofac.ContainerBuilder, System.Type, System.Func(Of Microsoft.ServiceFabric.Actors.Runtime.ActorBase, Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider, Microsoft.ServiceFabric.Actors.Runtime.IActorStateManager), Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider, Microsoft.ServiceFabric.Actors.Runtime.ActorServiceSettings, Object)
-  nameWithType: AutofacActorExtensions.RegisterActor<TActor>(ContainerBuilder, Type, Func<ActorBase, IActorStateProvider, IActorStateManager>, IActorStateProvider, ActorServiceSettings, object)
+  nameWithType: AutofacActorExtensions.RegisterActor<TActor>(ContainerBuilder, Type?, Func<ActorBase, IActorStateProvider, IActorStateManager>?, IActorStateProvider?, ActorServiceSettings?, object?)
   nameWithType.vb: AutofacActorExtensions.RegisterActor(Of TActor)(ContainerBuilder, Type, Func(Of ActorBase, IActorStateProvider, IActorStateManager), IActorStateProvider, ActorServiceSettings, Object)
 - uid: Autofac.Integration.ServiceFabric.AutofacServiceExtensions
   name: AutofacServiceExtensions
-  href: api/legacy/Autofac.Integration.ServiceFabric.AutofacServiceExtensions.html
+  href: api/Autofac.Integration.ServiceFabric.AutofacServiceExtensions.html
   commentId: T:Autofac.Integration.ServiceFabric.AutofacServiceExtensions
   fullName: Autofac.Integration.ServiceFabric.AutofacServiceExtensions
   nameWithType: AutofacServiceExtensions
 - uid: Autofac.Integration.ServiceFabric.AutofacServiceExtensions.RegisterStatefulService*
   name: RegisterStatefulService
-  href: api/legacy/Autofac.Integration.ServiceFabric.AutofacServiceExtensions.RegisterStatefulService.html
+  href: api/Autofac.Integration.ServiceFabric.AutofacServiceExtensions.RegisterStatefulService.html
   commentId: Overload:Autofac.Integration.ServiceFabric.AutofacServiceExtensions.RegisterStatefulService
   fullName: Autofac.Integration.ServiceFabric.AutofacServiceExtensions.RegisterStatefulService
   nameWithType: AutofacServiceExtensions.RegisterStatefulService
 - uid: Autofac.Integration.ServiceFabric.AutofacServiceExtensions.RegisterStatefulService``1(Autofac.ContainerBuilder,System.String,System.Object)
-  name: RegisterStatefulService<TService>(ContainerBuilder, string, object)
-  href: api/legacy/Autofac.Integration.ServiceFabric.AutofacServiceExtensions.RegisterStatefulService.html#Autofac_Integration_ServiceFabric_AutofacServiceExtensions_RegisterStatefulService__1_Autofac_ContainerBuilder_System_String_System_Object_
+  name: RegisterStatefulService<TService>(ContainerBuilder, string, object?)
+  href: api/Autofac.Integration.ServiceFabric.AutofacServiceExtensions.RegisterStatefulService.html#Autofac_Integration_ServiceFabric_AutofacServiceExtensions_RegisterStatefulService__1_Autofac_ContainerBuilder_System_String_System_Object_
   commentId: M:Autofac.Integration.ServiceFabric.AutofacServiceExtensions.RegisterStatefulService``1(Autofac.ContainerBuilder,System.String,System.Object)
   name.vb: RegisterStatefulService(Of TService)(ContainerBuilder, String, Object)
-  fullName: Autofac.Integration.ServiceFabric.AutofacServiceExtensions.RegisterStatefulService<TService>(Autofac.ContainerBuilder, string, object)
+  fullName: Autofac.Integration.ServiceFabric.AutofacServiceExtensions.RegisterStatefulService<TService>(Autofac.ContainerBuilder, string, object?)
   fullName.vb: Autofac.Integration.ServiceFabric.AutofacServiceExtensions.RegisterStatefulService(Of TService)(Autofac.ContainerBuilder, String, Object)
-  nameWithType: AutofacServiceExtensions.RegisterStatefulService<TService>(ContainerBuilder, string, object)
+  nameWithType: AutofacServiceExtensions.RegisterStatefulService<TService>(ContainerBuilder, string, object?)
   nameWithType.vb: AutofacServiceExtensions.RegisterStatefulService(Of TService)(ContainerBuilder, String, Object)
 - uid: Autofac.Integration.ServiceFabric.AutofacServiceExtensions.RegisterStatelessService*
   name: RegisterStatelessService
-  href: api/legacy/Autofac.Integration.ServiceFabric.AutofacServiceExtensions.RegisterStatelessService.html
+  href: api/Autofac.Integration.ServiceFabric.AutofacServiceExtensions.RegisterStatelessService.html
   commentId: Overload:Autofac.Integration.ServiceFabric.AutofacServiceExtensions.RegisterStatelessService
   fullName: Autofac.Integration.ServiceFabric.AutofacServiceExtensions.RegisterStatelessService
   nameWithType: AutofacServiceExtensions.RegisterStatelessService
 - uid: Autofac.Integration.ServiceFabric.AutofacServiceExtensions.RegisterStatelessService``1(Autofac.ContainerBuilder,System.String,System.Object)
-  name: RegisterStatelessService<TService>(ContainerBuilder, string, object)
-  href: api/legacy/Autofac.Integration.ServiceFabric.AutofacServiceExtensions.RegisterStatelessService.html#Autofac_Integration_ServiceFabric_AutofacServiceExtensions_RegisterStatelessService__1_Autofac_ContainerBuilder_System_String_System_Object_
+  name: RegisterStatelessService<TService>(ContainerBuilder, string, object?)
+  href: api/Autofac.Integration.ServiceFabric.AutofacServiceExtensions.RegisterStatelessService.html#Autofac_Integration_ServiceFabric_AutofacServiceExtensions_RegisterStatelessService__1_Autofac_ContainerBuilder_System_String_System_Object_
   commentId: M:Autofac.Integration.ServiceFabric.AutofacServiceExtensions.RegisterStatelessService``1(Autofac.ContainerBuilder,System.String,System.Object)
   name.vb: RegisterStatelessService(Of TService)(ContainerBuilder, String, Object)
-  fullName: Autofac.Integration.ServiceFabric.AutofacServiceExtensions.RegisterStatelessService<TService>(Autofac.ContainerBuilder, string, object)
+  fullName: Autofac.Integration.ServiceFabric.AutofacServiceExtensions.RegisterStatelessService<TService>(Autofac.ContainerBuilder, string, object?)
   fullName.vb: Autofac.Integration.ServiceFabric.AutofacServiceExtensions.RegisterStatelessService(Of TService)(Autofac.ContainerBuilder, String, Object)
-  nameWithType: AutofacServiceExtensions.RegisterStatelessService<TService>(ContainerBuilder, string, object)
+  nameWithType: AutofacServiceExtensions.RegisterStatelessService<TService>(ContainerBuilder, string, object?)
   nameWithType.vb: AutofacServiceExtensions.RegisterStatelessService(Of TService)(ContainerBuilder, String, Object)
 - uid: Autofac.Integration.ServiceFabric.RegistrationExtensions
   name: RegistrationExtensions
-  href: api/legacy/Autofac.Integration.ServiceFabric.RegistrationExtensions.html
+  href: api/Autofac.Integration.ServiceFabric.RegistrationExtensions.html
   commentId: T:Autofac.Integration.ServiceFabric.RegistrationExtensions
   fullName: Autofac.Integration.ServiceFabric.RegistrationExtensions
   nameWithType: RegistrationExtensions
-- uid: Autofac.Integration.ServiceFabric.RegistrationExtensions.RegisterServiceFabricSupport(Autofac.ContainerBuilder,System.Action{System.Exception},System.Action{Autofac.ContainerBuilder})
-  name: RegisterServiceFabricSupport(ContainerBuilder, Action<Exception>, Action<ContainerBuilder>)
-  href: api/legacy/Autofac.Integration.ServiceFabric.RegistrationExtensions.RegisterServiceFabricSupport.html#Autofac_Integration_ServiceFabric_RegistrationExtensions_RegisterServiceFabricSupport_Autofac_ContainerBuilder_System_Action_System_Exception__System_Action_Autofac_ContainerBuilder__
-  commentId: M:Autofac.Integration.ServiceFabric.RegistrationExtensions.RegisterServiceFabricSupport(Autofac.ContainerBuilder,System.Action{System.Exception},System.Action{Autofac.ContainerBuilder})
-  name.vb: RegisterServiceFabricSupport(ContainerBuilder, Action(Of Exception), Action(Of ContainerBuilder))
-  fullName: Autofac.Integration.ServiceFabric.RegistrationExtensions.RegisterServiceFabricSupport(Autofac.ContainerBuilder, System.Action<System.Exception>, System.Action<Autofac.ContainerBuilder>)
-  fullName.vb: Autofac.Integration.ServiceFabric.RegistrationExtensions.RegisterServiceFabricSupport(Autofac.ContainerBuilder, System.Action(Of System.Exception), System.Action(Of Autofac.ContainerBuilder))
-  nameWithType: RegistrationExtensions.RegisterServiceFabricSupport(ContainerBuilder, Action<Exception>, Action<ContainerBuilder>)
-  nameWithType.vb: RegistrationExtensions.RegisterServiceFabricSupport(ContainerBuilder, Action(Of Exception), Action(Of ContainerBuilder))
+- uid: Autofac.Integration.ServiceFabric.RegistrationExtensions.RegisterServiceFabricSupport(Autofac.ContainerBuilder,System.Action{Autofac.ILifetimeScope,System.Exception},System.Action{Autofac.ContainerBuilder})
+  name: RegisterServiceFabricSupport(ContainerBuilder, Action<ILifetimeScope, Exception>?, Action<ContainerBuilder>?)
+  href: api/Autofac.Integration.ServiceFabric.RegistrationExtensions.RegisterServiceFabricSupport.html#Autofac_Integration_ServiceFabric_RegistrationExtensions_RegisterServiceFabricSupport_Autofac_ContainerBuilder_System_Action_Autofac_ILifetimeScope_System_Exception__System_Action_Autofac_ContainerBuilder__
+  commentId: M:Autofac.Integration.ServiceFabric.RegistrationExtensions.RegisterServiceFabricSupport(Autofac.ContainerBuilder,System.Action{Autofac.ILifetimeScope,System.Exception},System.Action{Autofac.ContainerBuilder})
+  name.vb: RegisterServiceFabricSupport(ContainerBuilder, Action(Of ILifetimeScope, Exception), Action(Of ContainerBuilder))
+  fullName: Autofac.Integration.ServiceFabric.RegistrationExtensions.RegisterServiceFabricSupport(Autofac.ContainerBuilder, System.Action<Autofac.ILifetimeScope, System.Exception>?, System.Action<Autofac.ContainerBuilder>?)
+  fullName.vb: Autofac.Integration.ServiceFabric.RegistrationExtensions.RegisterServiceFabricSupport(Autofac.ContainerBuilder, System.Action(Of Autofac.ILifetimeScope, System.Exception), System.Action(Of Autofac.ContainerBuilder))
+  nameWithType: RegistrationExtensions.RegisterServiceFabricSupport(ContainerBuilder, Action<ILifetimeScope, Exception>?, Action<ContainerBuilder>?)
+  nameWithType.vb: RegistrationExtensions.RegisterServiceFabricSupport(ContainerBuilder, Action(Of ILifetimeScope, Exception), Action(Of ContainerBuilder))
 - uid: Autofac.Integration.ServiceFabric.RegistrationExtensions.RegisterServiceFabricSupport*
   name: RegisterServiceFabricSupport
-  href: api/legacy/Autofac.Integration.ServiceFabric.RegistrationExtensions.RegisterServiceFabricSupport.html
+  href: api/Autofac.Integration.ServiceFabric.RegistrationExtensions.RegisterServiceFabricSupport.html
   commentId: Overload:Autofac.Integration.ServiceFabric.RegistrationExtensions.RegisterServiceFabricSupport
   fullName: Autofac.Integration.ServiceFabric.RegistrationExtensions.RegisterServiceFabricSupport
   nameWithType: RegistrationExtensions.RegisterServiceFabricSupport
@@ -13536,6 +13449,45 @@ references:
   commentId: Overload:Autofac.Integration.Wcf.AutofacWebServiceHostFactory.CreateSingletonServiceHost
   fullName: Autofac.Integration.Wcf.AutofacWebServiceHostFactory.CreateSingletonServiceHost
   nameWithType: AutofacWebServiceHostFactory.CreateSingletonServiceHost
+- uid: Autofac.Integration.Wcf.ContractForwardingProxy
+  name: ContractForwardingProxy
+  href: api/legacy/Autofac.Integration.Wcf.ContractForwardingProxy.html
+  commentId: T:Autofac.Integration.Wcf.ContractForwardingProxy
+  fullName: Autofac.Integration.Wcf.ContractForwardingProxy
+  nameWithType: ContractForwardingProxy
+- uid: Autofac.Integration.Wcf.ContractForwardingProxy.#ctor
+  name: ContractForwardingProxy()
+  href: api/legacy/Autofac.Integration.Wcf.ContractForwardingProxy.-ctor.html#Autofac_Integration_Wcf_ContractForwardingProxy__ctor
+  commentId: M:Autofac.Integration.Wcf.ContractForwardingProxy.#ctor
+  name.vb: New()
+  fullName: Autofac.Integration.Wcf.ContractForwardingProxy.ContractForwardingProxy()
+  fullName.vb: Autofac.Integration.Wcf.ContractForwardingProxy.New()
+  nameWithType: ContractForwardingProxy.ContractForwardingProxy()
+  nameWithType.vb: ContractForwardingProxy.New()
+- uid: Autofac.Integration.Wcf.ContractForwardingProxy.#ctor*
+  name: ContractForwardingProxy
+  href: api/legacy/Autofac.Integration.Wcf.ContractForwardingProxy.-ctor.html
+  commentId: Overload:Autofac.Integration.Wcf.ContractForwardingProxy.#ctor
+  name.vb: New
+  fullName: Autofac.Integration.Wcf.ContractForwardingProxy.ContractForwardingProxy
+  fullName.vb: Autofac.Integration.Wcf.ContractForwardingProxy.New
+  nameWithType: ContractForwardingProxy.ContractForwardingProxy
+  nameWithType.vb: ContractForwardingProxy.New
+- uid: Autofac.Integration.Wcf.ContractForwardingProxy.Invoke(System.Reflection.MethodInfo,System.Object[])
+  name: Invoke(MethodInfo?, object?[]?)
+  href: api/legacy/Autofac.Integration.Wcf.ContractForwardingProxy.Invoke.html#Autofac_Integration_Wcf_ContractForwardingProxy_Invoke_System_Reflection_MethodInfo_System_Object___
+  commentId: M:Autofac.Integration.Wcf.ContractForwardingProxy.Invoke(System.Reflection.MethodInfo,System.Object[])
+  name.vb: Invoke(MethodInfo, Object())
+  fullName: Autofac.Integration.Wcf.ContractForwardingProxy.Invoke(System.Reflection.MethodInfo?, object?[]?)
+  fullName.vb: Autofac.Integration.Wcf.ContractForwardingProxy.Invoke(System.Reflection.MethodInfo, Object())
+  nameWithType: ContractForwardingProxy.Invoke(MethodInfo?, object?[]?)
+  nameWithType.vb: ContractForwardingProxy.Invoke(MethodInfo, Object())
+- uid: Autofac.Integration.Wcf.ContractForwardingProxy.Invoke*
+  name: Invoke
+  href: api/legacy/Autofac.Integration.Wcf.ContractForwardingProxy.Invoke.html
+  commentId: Overload:Autofac.Integration.Wcf.ContractForwardingProxy.Invoke
+  fullName: Autofac.Integration.Wcf.ContractForwardingProxy.Invoke
+  nameWithType: ContractForwardingProxy.Invoke
 - uid: Autofac.Integration.Wcf.DefaultServiceImplementationDataProvider
   name: DefaultServiceImplementationDataProvider
   href: api/legacy/Autofac.Integration.Wcf.DefaultServiceImplementationDataProvider.html
@@ -14340,6 +14292,45 @@ references:
   commentId: Overload:Autofac.Integration.Web.Forms.PropertyInjectionModule.GetInjectionBehaviorForHandlerType
   fullName: Autofac.Integration.Web.Forms.PropertyInjectionModule.GetInjectionBehaviorForHandlerType
   nameWithType: PropertyInjectionModule.GetInjectionBehaviorForHandlerType
+- uid: Autofac.Integration.Web.Forms.RequiredPropertySelector
+  name: RequiredPropertySelector
+  href: api/legacy/Autofac.Integration.Web.Forms.RequiredPropertySelector.html
+  commentId: T:Autofac.Integration.Web.Forms.RequiredPropertySelector
+  fullName: Autofac.Integration.Web.Forms.RequiredPropertySelector
+  nameWithType: RequiredPropertySelector
+- uid: Autofac.Integration.Web.Forms.RequiredPropertySelector.#ctor
+  name: RequiredPropertySelector()
+  href: api/legacy/Autofac.Integration.Web.Forms.RequiredPropertySelector.-ctor.html#Autofac_Integration_Web_Forms_RequiredPropertySelector__ctor
+  commentId: M:Autofac.Integration.Web.Forms.RequiredPropertySelector.#ctor
+  name.vb: New()
+  fullName: Autofac.Integration.Web.Forms.RequiredPropertySelector.RequiredPropertySelector()
+  fullName.vb: Autofac.Integration.Web.Forms.RequiredPropertySelector.New()
+  nameWithType: RequiredPropertySelector.RequiredPropertySelector()
+  nameWithType.vb: RequiredPropertySelector.New()
+- uid: Autofac.Integration.Web.Forms.RequiredPropertySelector.#ctor*
+  name: RequiredPropertySelector
+  href: api/legacy/Autofac.Integration.Web.Forms.RequiredPropertySelector.-ctor.html
+  commentId: Overload:Autofac.Integration.Web.Forms.RequiredPropertySelector.#ctor
+  name.vb: New
+  fullName: Autofac.Integration.Web.Forms.RequiredPropertySelector.RequiredPropertySelector
+  fullName.vb: Autofac.Integration.Web.Forms.RequiredPropertySelector.New
+  nameWithType: RequiredPropertySelector.RequiredPropertySelector
+  nameWithType.vb: RequiredPropertySelector.New
+- uid: Autofac.Integration.Web.Forms.RequiredPropertySelector.InjectProperty(System.Reflection.PropertyInfo,System.Object)
+  name: InjectProperty(PropertyInfo, object)
+  href: api/legacy/Autofac.Integration.Web.Forms.RequiredPropertySelector.InjectProperty.html#Autofac_Integration_Web_Forms_RequiredPropertySelector_InjectProperty_System_Reflection_PropertyInfo_System_Object_
+  commentId: M:Autofac.Integration.Web.Forms.RequiredPropertySelector.InjectProperty(System.Reflection.PropertyInfo,System.Object)
+  name.vb: InjectProperty(PropertyInfo, Object)
+  fullName: Autofac.Integration.Web.Forms.RequiredPropertySelector.InjectProperty(System.Reflection.PropertyInfo, object)
+  fullName.vb: Autofac.Integration.Web.Forms.RequiredPropertySelector.InjectProperty(System.Reflection.PropertyInfo, Object)
+  nameWithType: RequiredPropertySelector.InjectProperty(PropertyInfo, object)
+  nameWithType.vb: RequiredPropertySelector.InjectProperty(PropertyInfo, Object)
+- uid: Autofac.Integration.Web.Forms.RequiredPropertySelector.InjectProperty*
+  name: InjectProperty
+  href: api/legacy/Autofac.Integration.Web.Forms.RequiredPropertySelector.InjectProperty.html
+  commentId: Overload:Autofac.Integration.Web.Forms.RequiredPropertySelector.InjectProperty
+  fullName: Autofac.Integration.Web.Forms.RequiredPropertySelector.InjectProperty
+  nameWithType: RequiredPropertySelector.InjectProperty
 - uid: Autofac.Integration.Web.Forms.UnsetPropertyInjectionModule
   name: UnsetPropertyInjectionModule
   href: api/legacy/Autofac.Integration.Web.Forms.UnsetPropertyInjectionModule.html
@@ -16572,105 +16563,18 @@ references:
   commentId: T:Autofac.Multitenant.Wcf.DynamicProxy.CustomAttributeDataExtensions
   fullName: Autofac.Multitenant.Wcf.DynamicProxy.CustomAttributeDataExtensions
   nameWithType: CustomAttributeDataExtensions
-- uid: Autofac.Multitenant.Wcf.DynamicProxy.CustomAttributeDataExtensions.ToAttributeBuilder(System.Reflection.CustomAttributeData)
-  name: ToAttributeBuilder(CustomAttributeData)
-  href: api/legacy/Autofac.Multitenant.Wcf.DynamicProxy.CustomAttributeDataExtensions.ToAttributeBuilder.html#Autofac_Multitenant_Wcf_DynamicProxy_CustomAttributeDataExtensions_ToAttributeBuilder_System_Reflection_CustomAttributeData_
-  commentId: M:Autofac.Multitenant.Wcf.DynamicProxy.CustomAttributeDataExtensions.ToAttributeBuilder(System.Reflection.CustomAttributeData)
-  fullName: Autofac.Multitenant.Wcf.DynamicProxy.CustomAttributeDataExtensions.ToAttributeBuilder(System.Reflection.CustomAttributeData)
-  nameWithType: CustomAttributeDataExtensions.ToAttributeBuilder(CustomAttributeData)
-- uid: Autofac.Multitenant.Wcf.DynamicProxy.CustomAttributeDataExtensions.ToAttributeBuilder*
-  name: ToAttributeBuilder
-  href: api/legacy/Autofac.Multitenant.Wcf.DynamicProxy.CustomAttributeDataExtensions.ToAttributeBuilder.html
-  commentId: Overload:Autofac.Multitenant.Wcf.DynamicProxy.CustomAttributeDataExtensions.ToAttributeBuilder
-  fullName: Autofac.Multitenant.Wcf.DynamicProxy.CustomAttributeDataExtensions.ToAttributeBuilder
-  nameWithType: CustomAttributeDataExtensions.ToAttributeBuilder
-- uid: Autofac.Multitenant.Wcf.DynamicProxy.IgnoreAttributeInterfaceProxyInstanceContributor
-  name: IgnoreAttributeInterfaceProxyInstanceContributor
-  href: api/legacy/Autofac.Multitenant.Wcf.DynamicProxy.IgnoreAttributeInterfaceProxyInstanceContributor.html
-  commentId: T:Autofac.Multitenant.Wcf.DynamicProxy.IgnoreAttributeInterfaceProxyInstanceContributor
-  fullName: Autofac.Multitenant.Wcf.DynamicProxy.IgnoreAttributeInterfaceProxyInstanceContributor
-  nameWithType: IgnoreAttributeInterfaceProxyInstanceContributor
-- uid: Autofac.Multitenant.Wcf.DynamicProxy.IgnoreAttributeInterfaceProxyInstanceContributor.#ctor(System.Type,System.String,System.Type[])
-  name: IgnoreAttributeInterfaceProxyInstanceContributor(Type, string, Type[])
-  href: api/legacy/Autofac.Multitenant.Wcf.DynamicProxy.IgnoreAttributeInterfaceProxyInstanceContributor.-ctor.html#Autofac_Multitenant_Wcf_DynamicProxy_IgnoreAttributeInterfaceProxyInstanceContributor__ctor_System_Type_System_String_System_Type___
-  commentId: M:Autofac.Multitenant.Wcf.DynamicProxy.IgnoreAttributeInterfaceProxyInstanceContributor.#ctor(System.Type,System.String,System.Type[])
-  name.vb: New(Type, String, Type())
-  fullName: Autofac.Multitenant.Wcf.DynamicProxy.IgnoreAttributeInterfaceProxyInstanceContributor.IgnoreAttributeInterfaceProxyInstanceContributor(System.Type, string, System.Type[])
-  fullName.vb: Autofac.Multitenant.Wcf.DynamicProxy.IgnoreAttributeInterfaceProxyInstanceContributor.New(System.Type, String, System.Type())
-  nameWithType: IgnoreAttributeInterfaceProxyInstanceContributor.IgnoreAttributeInterfaceProxyInstanceContributor(Type, string, Type[])
-  nameWithType.vb: IgnoreAttributeInterfaceProxyInstanceContributor.New(Type, String, Type())
-- uid: Autofac.Multitenant.Wcf.DynamicProxy.IgnoreAttributeInterfaceProxyInstanceContributor.#ctor*
-  name: IgnoreAttributeInterfaceProxyInstanceContributor
-  href: api/legacy/Autofac.Multitenant.Wcf.DynamicProxy.IgnoreAttributeInterfaceProxyInstanceContributor.-ctor.html
-  commentId: Overload:Autofac.Multitenant.Wcf.DynamicProxy.IgnoreAttributeInterfaceProxyInstanceContributor.#ctor
-  name.vb: New
-  fullName: Autofac.Multitenant.Wcf.DynamicProxy.IgnoreAttributeInterfaceProxyInstanceContributor.IgnoreAttributeInterfaceProxyInstanceContributor
-  fullName.vb: Autofac.Multitenant.Wcf.DynamicProxy.IgnoreAttributeInterfaceProxyInstanceContributor.New
-  nameWithType: IgnoreAttributeInterfaceProxyInstanceContributor.IgnoreAttributeInterfaceProxyInstanceContributor
-  nameWithType.vb: IgnoreAttributeInterfaceProxyInstanceContributor.New
-- uid: Autofac.Multitenant.Wcf.DynamicProxy.IgnoreAttributeInterfaceProxyInstanceContributor.Generate(Castle.DynamicProxy.Generators.Emitters.ClassEmitter,Castle.DynamicProxy.ProxyGenerationOptions)
-  name: Generate(ClassEmitter, ProxyGenerationOptions)
-  href: api/legacy/Autofac.Multitenant.Wcf.DynamicProxy.IgnoreAttributeInterfaceProxyInstanceContributor.Generate.html#Autofac_Multitenant_Wcf_DynamicProxy_IgnoreAttributeInterfaceProxyInstanceContributor_Generate_Castle_DynamicProxy_Generators_Emitters_ClassEmitter_Castle_DynamicProxy_ProxyGenerationOptions_
-  commentId: M:Autofac.Multitenant.Wcf.DynamicProxy.IgnoreAttributeInterfaceProxyInstanceContributor.Generate(Castle.DynamicProxy.Generators.Emitters.ClassEmitter,Castle.DynamicProxy.ProxyGenerationOptions)
-  fullName: Autofac.Multitenant.Wcf.DynamicProxy.IgnoreAttributeInterfaceProxyInstanceContributor.Generate(Castle.DynamicProxy.Generators.Emitters.ClassEmitter, Castle.DynamicProxy.ProxyGenerationOptions)
-  nameWithType: IgnoreAttributeInterfaceProxyInstanceContributor.Generate(ClassEmitter, ProxyGenerationOptions)
-- uid: Autofac.Multitenant.Wcf.DynamicProxy.IgnoreAttributeInterfaceProxyInstanceContributor.Generate*
-  name: Generate
-  href: api/legacy/Autofac.Multitenant.Wcf.DynamicProxy.IgnoreAttributeInterfaceProxyInstanceContributor.Generate.html
-  commentId: Overload:Autofac.Multitenant.Wcf.DynamicProxy.IgnoreAttributeInterfaceProxyInstanceContributor.Generate
-  fullName: Autofac.Multitenant.Wcf.DynamicProxy.IgnoreAttributeInterfaceProxyInstanceContributor.Generate
-  nameWithType: IgnoreAttributeInterfaceProxyInstanceContributor.Generate
-- uid: Autofac.Multitenant.Wcf.DynamicProxy.ServiceHostInterfaceProxyGenerator
-  name: ServiceHostInterfaceProxyGenerator
-  href: api/legacy/Autofac.Multitenant.Wcf.DynamicProxy.ServiceHostInterfaceProxyGenerator.html
-  commentId: T:Autofac.Multitenant.Wcf.DynamicProxy.ServiceHostInterfaceProxyGenerator
-  fullName: Autofac.Multitenant.Wcf.DynamicProxy.ServiceHostInterfaceProxyGenerator
-  nameWithType: ServiceHostInterfaceProxyGenerator
-- uid: Autofac.Multitenant.Wcf.DynamicProxy.ServiceHostInterfaceProxyGenerator.#ctor(Castle.DynamicProxy.ModuleScope,System.Type)
-  name: ServiceHostInterfaceProxyGenerator(ModuleScope, Type)
-  href: api/legacy/Autofac.Multitenant.Wcf.DynamicProxy.ServiceHostInterfaceProxyGenerator.-ctor.html#Autofac_Multitenant_Wcf_DynamicProxy_ServiceHostInterfaceProxyGenerator__ctor_Castle_DynamicProxy_ModuleScope_System_Type_
-  commentId: M:Autofac.Multitenant.Wcf.DynamicProxy.ServiceHostInterfaceProxyGenerator.#ctor(Castle.DynamicProxy.ModuleScope,System.Type)
-  name.vb: New(ModuleScope, Type)
-  fullName: Autofac.Multitenant.Wcf.DynamicProxy.ServiceHostInterfaceProxyGenerator.ServiceHostInterfaceProxyGenerator(Castle.DynamicProxy.ModuleScope, System.Type)
-  fullName.vb: Autofac.Multitenant.Wcf.DynamicProxy.ServiceHostInterfaceProxyGenerator.New(Castle.DynamicProxy.ModuleScope, System.Type)
-  nameWithType: ServiceHostInterfaceProxyGenerator.ServiceHostInterfaceProxyGenerator(ModuleScope, Type)
-  nameWithType.vb: ServiceHostInterfaceProxyGenerator.New(ModuleScope, Type)
-- uid: Autofac.Multitenant.Wcf.DynamicProxy.ServiceHostInterfaceProxyGenerator.#ctor*
-  name: ServiceHostInterfaceProxyGenerator
-  href: api/legacy/Autofac.Multitenant.Wcf.DynamicProxy.ServiceHostInterfaceProxyGenerator.-ctor.html
-  commentId: Overload:Autofac.Multitenant.Wcf.DynamicProxy.ServiceHostInterfaceProxyGenerator.#ctor
-  name.vb: New
-  fullName: Autofac.Multitenant.Wcf.DynamicProxy.ServiceHostInterfaceProxyGenerator.ServiceHostInterfaceProxyGenerator
-  fullName.vb: Autofac.Multitenant.Wcf.DynamicProxy.ServiceHostInterfaceProxyGenerator.New
-  nameWithType: ServiceHostInterfaceProxyGenerator.ServiceHostInterfaceProxyGenerator
-  nameWithType.vb: ServiceHostInterfaceProxyGenerator.New
-- uid: Autofac.Multitenant.Wcf.DynamicProxy.ServiceHostInterfaceProxyGenerator.CreateTypeAttributes(Castle.DynamicProxy.Generators.Emitters.ClassEmitter)
-  name: CreateTypeAttributes(ClassEmitter)
-  href: api/legacy/Autofac.Multitenant.Wcf.DynamicProxy.ServiceHostInterfaceProxyGenerator.CreateTypeAttributes.html#Autofac_Multitenant_Wcf_DynamicProxy_ServiceHostInterfaceProxyGenerator_CreateTypeAttributes_Castle_DynamicProxy_Generators_Emitters_ClassEmitter_
-  commentId: M:Autofac.Multitenant.Wcf.DynamicProxy.ServiceHostInterfaceProxyGenerator.CreateTypeAttributes(Castle.DynamicProxy.Generators.Emitters.ClassEmitter)
-  fullName: Autofac.Multitenant.Wcf.DynamicProxy.ServiceHostInterfaceProxyGenerator.CreateTypeAttributes(Castle.DynamicProxy.Generators.Emitters.ClassEmitter)
-  nameWithType: ServiceHostInterfaceProxyGenerator.CreateTypeAttributes(ClassEmitter)
-- uid: Autofac.Multitenant.Wcf.DynamicProxy.ServiceHostInterfaceProxyGenerator.CreateTypeAttributes*
-  name: CreateTypeAttributes
-  href: api/legacy/Autofac.Multitenant.Wcf.DynamicProxy.ServiceHostInterfaceProxyGenerator.CreateTypeAttributes.html
-  commentId: Overload:Autofac.Multitenant.Wcf.DynamicProxy.ServiceHostInterfaceProxyGenerator.CreateTypeAttributes
-  fullName: Autofac.Multitenant.Wcf.DynamicProxy.ServiceHostInterfaceProxyGenerator.CreateTypeAttributes
-  nameWithType: ServiceHostInterfaceProxyGenerator.CreateTypeAttributes
-- uid: Autofac.Multitenant.Wcf.DynamicProxy.ServiceHostInterfaceProxyGenerator.GetTypeImplementerMapping(System.Type[],System.Type,System.Collections.Generic.IEnumerable{Castle.DynamicProxy.Contributors.ITypeContributor}@,Castle.DynamicProxy.Generators.INamingScope)
-  name: GetTypeImplementerMapping(Type[], Type, out IEnumerable<ITypeContributor>, INamingScope)
-  href: api/legacy/Autofac.Multitenant.Wcf.DynamicProxy.ServiceHostInterfaceProxyGenerator.GetTypeImplementerMapping.html#Autofac_Multitenant_Wcf_DynamicProxy_ServiceHostInterfaceProxyGenerator_GetTypeImplementerMapping_System_Type___System_Type_System_Collections_Generic_IEnumerable_Castle_DynamicProxy_Contributors_ITypeContributor___Castle_DynamicProxy_Generators_INamingScope_
-  commentId: M:Autofac.Multitenant.Wcf.DynamicProxy.ServiceHostInterfaceProxyGenerator.GetTypeImplementerMapping(System.Type[],System.Type,System.Collections.Generic.IEnumerable{Castle.DynamicProxy.Contributors.ITypeContributor}@,Castle.DynamicProxy.Generators.INamingScope)
-  name.vb: GetTypeImplementerMapping(Type(), Type, IEnumerable(Of ITypeContributor), INamingScope)
-  fullName: Autofac.Multitenant.Wcf.DynamicProxy.ServiceHostInterfaceProxyGenerator.GetTypeImplementerMapping(System.Type[], System.Type, out System.Collections.Generic.IEnumerable<Castle.DynamicProxy.Contributors.ITypeContributor>, Castle.DynamicProxy.Generators.INamingScope)
-  fullName.vb: Autofac.Multitenant.Wcf.DynamicProxy.ServiceHostInterfaceProxyGenerator.GetTypeImplementerMapping(System.Type(), System.Type, System.Collections.Generic.IEnumerable(Of Castle.DynamicProxy.Contributors.ITypeContributor), Castle.DynamicProxy.Generators.INamingScope)
-  nameWithType: ServiceHostInterfaceProxyGenerator.GetTypeImplementerMapping(Type[], Type, out IEnumerable<ITypeContributor>, INamingScope)
-  nameWithType.vb: ServiceHostInterfaceProxyGenerator.GetTypeImplementerMapping(Type(), Type, IEnumerable(Of ITypeContributor), INamingScope)
-- uid: Autofac.Multitenant.Wcf.DynamicProxy.ServiceHostInterfaceProxyGenerator.GetTypeImplementerMapping*
-  name: GetTypeImplementerMapping
-  href: api/legacy/Autofac.Multitenant.Wcf.DynamicProxy.ServiceHostInterfaceProxyGenerator.GetTypeImplementerMapping.html
-  commentId: Overload:Autofac.Multitenant.Wcf.DynamicProxy.ServiceHostInterfaceProxyGenerator.GetTypeImplementerMapping
-  fullName: Autofac.Multitenant.Wcf.DynamicProxy.ServiceHostInterfaceProxyGenerator.GetTypeImplementerMapping
-  nameWithType: ServiceHostInterfaceProxyGenerator.GetTypeImplementerMapping
+- uid: Autofac.Multitenant.Wcf.DynamicProxy.CustomAttributeDataExtensions.ToCustomAttributeInfo(System.Reflection.CustomAttributeData)
+  name: ToCustomAttributeInfo(CustomAttributeData)
+  href: api/legacy/Autofac.Multitenant.Wcf.DynamicProxy.CustomAttributeDataExtensions.ToCustomAttributeInfo.html#Autofac_Multitenant_Wcf_DynamicProxy_CustomAttributeDataExtensions_ToCustomAttributeInfo_System_Reflection_CustomAttributeData_
+  commentId: M:Autofac.Multitenant.Wcf.DynamicProxy.CustomAttributeDataExtensions.ToCustomAttributeInfo(System.Reflection.CustomAttributeData)
+  fullName: Autofac.Multitenant.Wcf.DynamicProxy.CustomAttributeDataExtensions.ToCustomAttributeInfo(System.Reflection.CustomAttributeData)
+  nameWithType: CustomAttributeDataExtensions.ToCustomAttributeInfo(CustomAttributeData)
+- uid: Autofac.Multitenant.Wcf.DynamicProxy.CustomAttributeDataExtensions.ToCustomAttributeInfo*
+  name: ToCustomAttributeInfo
+  href: api/legacy/Autofac.Multitenant.Wcf.DynamicProxy.CustomAttributeDataExtensions.ToCustomAttributeInfo.html
+  commentId: Overload:Autofac.Multitenant.Wcf.DynamicProxy.CustomAttributeDataExtensions.ToCustomAttributeInfo
+  fullName: Autofac.Multitenant.Wcf.DynamicProxy.CustomAttributeDataExtensions.ToCustomAttributeInfo
+  nameWithType: CustomAttributeDataExtensions.ToCustomAttributeInfo
 - uid: Autofac.Multitenant.Wcf.DynamicProxy.ServiceHostProxyBuilder
   name: ServiceHostProxyBuilder
   href: api/legacy/Autofac.Multitenant.Wcf.DynamicProxy.ServiceHostProxyBuilder.html
@@ -16840,13 +16744,13 @@ references:
   nameWithType: OperationContextTenantIdentificationStrategy.OperationContextTenantIdentificationStrategy
   nameWithType.vb: OperationContextTenantIdentificationStrategy.New
 - uid: Autofac.Multitenant.Wcf.OperationContextTenantIdentificationStrategy.TryIdentifyTenant(System.Object@)
-  name: TryIdentifyTenant(out object)
+  name: TryIdentifyTenant(out object?)
   href: api/legacy/Autofac.Multitenant.Wcf.OperationContextTenantIdentificationStrategy.TryIdentifyTenant.html#Autofac_Multitenant_Wcf_OperationContextTenantIdentificationStrategy_TryIdentifyTenant_System_Object__
   commentId: M:Autofac.Multitenant.Wcf.OperationContextTenantIdentificationStrategy.TryIdentifyTenant(System.Object@)
   name.vb: TryIdentifyTenant(Object)
-  fullName: Autofac.Multitenant.Wcf.OperationContextTenantIdentificationStrategy.TryIdentifyTenant(out object)
+  fullName: Autofac.Multitenant.Wcf.OperationContextTenantIdentificationStrategy.TryIdentifyTenant(out object?)
   fullName.vb: Autofac.Multitenant.Wcf.OperationContextTenantIdentificationStrategy.TryIdentifyTenant(Object)
-  nameWithType: OperationContextTenantIdentificationStrategy.TryIdentifyTenant(out object)
+  nameWithType: OperationContextTenantIdentificationStrategy.TryIdentifyTenant(out object?)
   nameWithType.vb: OperationContextTenantIdentificationStrategy.TryIdentifyTenant(Object)
 - uid: Autofac.Multitenant.Wcf.OperationContextTenantIdentificationStrategy.TryIdentifyTenant*
   name: TryIdentifyTenant
@@ -16854,198 +16758,6 @@ references:
   commentId: Overload:Autofac.Multitenant.Wcf.OperationContextTenantIdentificationStrategy.TryIdentifyTenant
   fullName: Autofac.Multitenant.Wcf.OperationContextTenantIdentificationStrategy.TryIdentifyTenant
   nameWithType: OperationContextTenantIdentificationStrategy.TryIdentifyTenant
-- uid: Autofac.Multitenant.Wcf.Properties
-  name: Autofac.Multitenant.Wcf.Properties
-  href: api/legacy/Autofac.Multitenant.Wcf.Properties.html
-  commentId: N:Autofac.Multitenant.Wcf.Properties
-  fullName: Autofac.Multitenant.Wcf.Properties
-  nameWithType: Autofac.Multitenant.Wcf.Properties
-- uid: Autofac.Multitenant.Wcf.Properties.Resources
-  name: Resources
-  href: api/legacy/Autofac.Multitenant.Wcf.Properties.Resources.html
-  commentId: T:Autofac.Multitenant.Wcf.Properties.Resources
-  fullName: Autofac.Multitenant.Wcf.Properties.Resources
-  nameWithType: Resources
-- uid: Autofac.Multitenant.Wcf.Properties.Resources.ArgumentException_StringEmpty
-  name: ArgumentException_StringEmpty
-  href: api/legacy/Autofac.Multitenant.Wcf.Properties.Resources.ArgumentException_StringEmpty.html#Autofac_Multitenant_Wcf_Properties_Resources_ArgumentException_StringEmpty
-  commentId: P:Autofac.Multitenant.Wcf.Properties.Resources.ArgumentException_StringEmpty
-  fullName: Autofac.Multitenant.Wcf.Properties.Resources.ArgumentException_StringEmpty
-  nameWithType: Resources.ArgumentException_StringEmpty
-- uid: Autofac.Multitenant.Wcf.Properties.Resources.ArgumentException_StringEmpty*
-  name: ArgumentException_StringEmpty
-  href: api/legacy/Autofac.Multitenant.Wcf.Properties.Resources.ArgumentException_StringEmpty.html
-  commentId: Overload:Autofac.Multitenant.Wcf.Properties.Resources.ArgumentException_StringEmpty
-  fullName: Autofac.Multitenant.Wcf.Properties.Resources.ArgumentException_StringEmpty
-  nameWithType: Resources.ArgumentException_StringEmpty
-- uid: Autofac.Multitenant.Wcf.Properties.Resources.AutofacHostFactory_ContainerIsNull
-  name: AutofacHostFactory_ContainerIsNull
-  href: api/legacy/Autofac.Multitenant.Wcf.Properties.Resources.AutofacHostFactory_ContainerIsNull.html#Autofac_Multitenant_Wcf_Properties_Resources_AutofacHostFactory_ContainerIsNull
-  commentId: P:Autofac.Multitenant.Wcf.Properties.Resources.AutofacHostFactory_ContainerIsNull
-  fullName: Autofac.Multitenant.Wcf.Properties.Resources.AutofacHostFactory_ContainerIsNull
-  nameWithType: Resources.AutofacHostFactory_ContainerIsNull
-- uid: Autofac.Multitenant.Wcf.Properties.Resources.AutofacHostFactory_ContainerIsNull*
-  name: AutofacHostFactory_ContainerIsNull
-  href: api/legacy/Autofac.Multitenant.Wcf.Properties.Resources.AutofacHostFactory_ContainerIsNull.html
-  commentId: Overload:Autofac.Multitenant.Wcf.Properties.Resources.AutofacHostFactory_ContainerIsNull
-  fullName: Autofac.Multitenant.Wcf.Properties.Resources.AutofacHostFactory_ContainerIsNull
-  nameWithType: Resources.AutofacHostFactory_ContainerIsNull
-- uid: Autofac.Multitenant.Wcf.Properties.Resources.AutofacHostFactory_NoServiceHostType
-  name: AutofacHostFactory_NoServiceHostType
-  href: api/legacy/Autofac.Multitenant.Wcf.Properties.Resources.AutofacHostFactory_NoServiceHostType.html#Autofac_Multitenant_Wcf_Properties_Resources_AutofacHostFactory_NoServiceHostType
-  commentId: P:Autofac.Multitenant.Wcf.Properties.Resources.AutofacHostFactory_NoServiceHostType
-  fullName: Autofac.Multitenant.Wcf.Properties.Resources.AutofacHostFactory_NoServiceHostType
-  nameWithType: Resources.AutofacHostFactory_NoServiceHostType
-- uid: Autofac.Multitenant.Wcf.Properties.Resources.AutofacHostFactory_NoServiceHostType*
-  name: AutofacHostFactory_NoServiceHostType
-  href: api/legacy/Autofac.Multitenant.Wcf.Properties.Resources.AutofacHostFactory_NoServiceHostType.html
-  commentId: Overload:Autofac.Multitenant.Wcf.Properties.Resources.AutofacHostFactory_NoServiceHostType
-  fullName: Autofac.Multitenant.Wcf.Properties.Resources.AutofacHostFactory_NoServiceHostType
-  nameWithType: Resources.AutofacHostFactory_NoServiceHostType
-- uid: Autofac.Multitenant.Wcf.Properties.Resources.AutofacHostFactory_ServiceHostTypeNotClass
-  name: AutofacHostFactory_ServiceHostTypeNotClass
-  href: api/legacy/Autofac.Multitenant.Wcf.Properties.Resources.AutofacHostFactory_ServiceHostTypeNotClass.html#Autofac_Multitenant_Wcf_Properties_Resources_AutofacHostFactory_ServiceHostTypeNotClass
-  commentId: P:Autofac.Multitenant.Wcf.Properties.Resources.AutofacHostFactory_ServiceHostTypeNotClass
-  fullName: Autofac.Multitenant.Wcf.Properties.Resources.AutofacHostFactory_ServiceHostTypeNotClass
-  nameWithType: Resources.AutofacHostFactory_ServiceHostTypeNotClass
-- uid: Autofac.Multitenant.Wcf.Properties.Resources.AutofacHostFactory_ServiceHostTypeNotClass*
-  name: AutofacHostFactory_ServiceHostTypeNotClass
-  href: api/legacy/Autofac.Multitenant.Wcf.Properties.Resources.AutofacHostFactory_ServiceHostTypeNotClass.html
-  commentId: Overload:Autofac.Multitenant.Wcf.Properties.Resources.AutofacHostFactory_ServiceHostTypeNotClass
-  fullName: Autofac.Multitenant.Wcf.Properties.Resources.AutofacHostFactory_ServiceHostTypeNotClass
-  nameWithType: Resources.AutofacHostFactory_ServiceHostTypeNotClass
-- uid: Autofac.Multitenant.Wcf.Properties.Resources.AutofacHostFactory_ServiceNotRegistered
-  name: AutofacHostFactory_ServiceNotRegistered
-  href: api/legacy/Autofac.Multitenant.Wcf.Properties.Resources.AutofacHostFactory_ServiceNotRegistered.html#Autofac_Multitenant_Wcf_Properties_Resources_AutofacHostFactory_ServiceNotRegistered
-  commentId: P:Autofac.Multitenant.Wcf.Properties.Resources.AutofacHostFactory_ServiceNotRegistered
-  fullName: Autofac.Multitenant.Wcf.Properties.Resources.AutofacHostFactory_ServiceNotRegistered
-  nameWithType: Resources.AutofacHostFactory_ServiceNotRegistered
-- uid: Autofac.Multitenant.Wcf.Properties.Resources.AutofacHostFactory_ServiceNotRegistered*
-  name: AutofacHostFactory_ServiceNotRegistered
-  href: api/legacy/Autofac.Multitenant.Wcf.Properties.Resources.AutofacHostFactory_ServiceNotRegistered.html
-  commentId: Overload:Autofac.Multitenant.Wcf.Properties.Resources.AutofacHostFactory_ServiceNotRegistered
-  fullName: Autofac.Multitenant.Wcf.Properties.Resources.AutofacHostFactory_ServiceNotRegistered
-  nameWithType: Resources.AutofacHostFactory_ServiceNotRegistered
-- uid: Autofac.Multitenant.Wcf.Properties.Resources.Culture
-  name: Culture
-  href: api/legacy/Autofac.Multitenant.Wcf.Properties.Resources.Culture.html#Autofac_Multitenant_Wcf_Properties_Resources_Culture
-  commentId: P:Autofac.Multitenant.Wcf.Properties.Resources.Culture
-  fullName: Autofac.Multitenant.Wcf.Properties.Resources.Culture
-  nameWithType: Resources.Culture
-- uid: Autofac.Multitenant.Wcf.Properties.Resources.Culture*
-  name: Culture
-  href: api/legacy/Autofac.Multitenant.Wcf.Properties.Resources.Culture.html
-  commentId: Overload:Autofac.Multitenant.Wcf.Properties.Resources.Culture
-  fullName: Autofac.Multitenant.Wcf.Properties.Resources.Culture
-  nameWithType: Resources.Culture
-- uid: Autofac.Multitenant.Wcf.Properties.Resources.DynamicProxy_InterfaceTypeToProxyIsGeneric
-  name: DynamicProxy_InterfaceTypeToProxyIsGeneric
-  href: api/legacy/Autofac.Multitenant.Wcf.Properties.Resources.DynamicProxy_InterfaceTypeToProxyIsGeneric.html#Autofac_Multitenant_Wcf_Properties_Resources_DynamicProxy_InterfaceTypeToProxyIsGeneric
-  commentId: P:Autofac.Multitenant.Wcf.Properties.Resources.DynamicProxy_InterfaceTypeToProxyIsGeneric
-  fullName: Autofac.Multitenant.Wcf.Properties.Resources.DynamicProxy_InterfaceTypeToProxyIsGeneric
-  nameWithType: Resources.DynamicProxy_InterfaceTypeToProxyIsGeneric
-- uid: Autofac.Multitenant.Wcf.Properties.Resources.DynamicProxy_InterfaceTypeToProxyIsGeneric*
-  name: DynamicProxy_InterfaceTypeToProxyIsGeneric
-  href: api/legacy/Autofac.Multitenant.Wcf.Properties.Resources.DynamicProxy_InterfaceTypeToProxyIsGeneric.html
-  commentId: Overload:Autofac.Multitenant.Wcf.Properties.Resources.DynamicProxy_InterfaceTypeToProxyIsGeneric
-  fullName: Autofac.Multitenant.Wcf.Properties.Resources.DynamicProxy_InterfaceTypeToProxyIsGeneric
-  nameWithType: Resources.DynamicProxy_InterfaceTypeToProxyIsGeneric
-- uid: Autofac.Multitenant.Wcf.Properties.Resources.DynamicProxy_InterfaceTypeToProxyNotInterface
-  name: DynamicProxy_InterfaceTypeToProxyNotInterface
-  href: api/legacy/Autofac.Multitenant.Wcf.Properties.Resources.DynamicProxy_InterfaceTypeToProxyNotInterface.html#Autofac_Multitenant_Wcf_Properties_Resources_DynamicProxy_InterfaceTypeToProxyNotInterface
-  commentId: P:Autofac.Multitenant.Wcf.Properties.Resources.DynamicProxy_InterfaceTypeToProxyNotInterface
-  fullName: Autofac.Multitenant.Wcf.Properties.Resources.DynamicProxy_InterfaceTypeToProxyNotInterface
-  nameWithType: Resources.DynamicProxy_InterfaceTypeToProxyNotInterface
-- uid: Autofac.Multitenant.Wcf.Properties.Resources.DynamicProxy_InterfaceTypeToProxyNotInterface*
-  name: DynamicProxy_InterfaceTypeToProxyNotInterface
-  href: api/legacy/Autofac.Multitenant.Wcf.Properties.Resources.DynamicProxy_InterfaceTypeToProxyNotInterface.html
-  commentId: Overload:Autofac.Multitenant.Wcf.Properties.Resources.DynamicProxy_InterfaceTypeToProxyNotInterface
-  fullName: Autofac.Multitenant.Wcf.Properties.Resources.DynamicProxy_InterfaceTypeToProxyNotInterface
-  nameWithType: Resources.DynamicProxy_InterfaceTypeToProxyNotInterface
-- uid: Autofac.Multitenant.Wcf.Properties.Resources.DynamicProxy_InterfaceTypeToProxyNotPublic
-  name: DynamicProxy_InterfaceTypeToProxyNotPublic
-  href: api/legacy/Autofac.Multitenant.Wcf.Properties.Resources.DynamicProxy_InterfaceTypeToProxyNotPublic.html#Autofac_Multitenant_Wcf_Properties_Resources_DynamicProxy_InterfaceTypeToProxyNotPublic
-  commentId: P:Autofac.Multitenant.Wcf.Properties.Resources.DynamicProxy_InterfaceTypeToProxyNotPublic
-  fullName: Autofac.Multitenant.Wcf.Properties.Resources.DynamicProxy_InterfaceTypeToProxyNotPublic
-  nameWithType: Resources.DynamicProxy_InterfaceTypeToProxyNotPublic
-- uid: Autofac.Multitenant.Wcf.Properties.Resources.DynamicProxy_InterfaceTypeToProxyNotPublic*
-  name: DynamicProxy_InterfaceTypeToProxyNotPublic
-  href: api/legacy/Autofac.Multitenant.Wcf.Properties.Resources.DynamicProxy_InterfaceTypeToProxyNotPublic.html
-  commentId: Overload:Autofac.Multitenant.Wcf.Properties.Resources.DynamicProxy_InterfaceTypeToProxyNotPublic
-  fullName: Autofac.Multitenant.Wcf.Properties.Resources.DynamicProxy_InterfaceTypeToProxyNotPublic
-  nameWithType: Resources.DynamicProxy_InterfaceTypeToProxyNotPublic
-- uid: Autofac.Multitenant.Wcf.Properties.Resources.DynamicProxy_InterfaceTypeToProxyNotServiceContract
-  name: DynamicProxy_InterfaceTypeToProxyNotServiceContract
-  href: api/legacy/Autofac.Multitenant.Wcf.Properties.Resources.DynamicProxy_InterfaceTypeToProxyNotServiceContract.html#Autofac_Multitenant_Wcf_Properties_Resources_DynamicProxy_InterfaceTypeToProxyNotServiceContract
-  commentId: P:Autofac.Multitenant.Wcf.Properties.Resources.DynamicProxy_InterfaceTypeToProxyNotServiceContract
-  fullName: Autofac.Multitenant.Wcf.Properties.Resources.DynamicProxy_InterfaceTypeToProxyNotServiceContract
-  nameWithType: Resources.DynamicProxy_InterfaceTypeToProxyNotServiceContract
-- uid: Autofac.Multitenant.Wcf.Properties.Resources.DynamicProxy_InterfaceTypeToProxyNotServiceContract*
-  name: DynamicProxy_InterfaceTypeToProxyNotServiceContract
-  href: api/legacy/Autofac.Multitenant.Wcf.Properties.Resources.DynamicProxy_InterfaceTypeToProxyNotServiceContract.html
-  commentId: Overload:Autofac.Multitenant.Wcf.Properties.Resources.DynamicProxy_InterfaceTypeToProxyNotServiceContract
-  fullName: Autofac.Multitenant.Wcf.Properties.Resources.DynamicProxy_InterfaceTypeToProxyNotServiceContract
-  nameWithType: Resources.DynamicProxy_InterfaceTypeToProxyNotServiceContract
-- uid: Autofac.Multitenant.Wcf.Properties.Resources.DynamicProxy_ProxyTargetDoesNotImplementInterface
-  name: DynamicProxy_ProxyTargetDoesNotImplementInterface
-  href: api/legacy/Autofac.Multitenant.Wcf.Properties.Resources.DynamicProxy_ProxyTargetDoesNotImplementInterface.html#Autofac_Multitenant_Wcf_Properties_Resources_DynamicProxy_ProxyTargetDoesNotImplementInterface
-  commentId: P:Autofac.Multitenant.Wcf.Properties.Resources.DynamicProxy_ProxyTargetDoesNotImplementInterface
-  fullName: Autofac.Multitenant.Wcf.Properties.Resources.DynamicProxy_ProxyTargetDoesNotImplementInterface
-  nameWithType: Resources.DynamicProxy_ProxyTargetDoesNotImplementInterface
-- uid: Autofac.Multitenant.Wcf.Properties.Resources.DynamicProxy_ProxyTargetDoesNotImplementInterface*
-  name: DynamicProxy_ProxyTargetDoesNotImplementInterface
-  href: api/legacy/Autofac.Multitenant.Wcf.Properties.Resources.DynamicProxy_ProxyTargetDoesNotImplementInterface.html
-  commentId: Overload:Autofac.Multitenant.Wcf.Properties.Resources.DynamicProxy_ProxyTargetDoesNotImplementInterface
-  fullName: Autofac.Multitenant.Wcf.Properties.Resources.DynamicProxy_ProxyTargetDoesNotImplementInterface
-  nameWithType: Resources.DynamicProxy_ProxyTargetDoesNotImplementInterface
-- uid: Autofac.Multitenant.Wcf.Properties.Resources.MultitenantServiceImplementationDataProvider_ServiceInterfaceTypeNotInterface
-  name: MultitenantServiceImplementationDataProvider_ServiceInterfaceTypeNotInterface
-  href: api/legacy/Autofac.Multitenant.Wcf.Properties.Resources.MultitenantServiceImplementationDataProvider_ServiceInterfaceTypeNotInterface.html#Autofac_Multitenant_Wcf_Properties_Resources_MultitenantServiceImplementationDataProvider_ServiceInterfaceTypeNotInterface
-  commentId: P:Autofac.Multitenant.Wcf.Properties.Resources.MultitenantServiceImplementationDataProvider_ServiceInterfaceTypeNotInterface
-  fullName: Autofac.Multitenant.Wcf.Properties.Resources.MultitenantServiceImplementationDataProvider_ServiceInterfaceTypeNotInterface
-  nameWithType: Resources.MultitenantServiceImplementationDataProvider_ServiceInterfaceTypeNotInterface
-- uid: Autofac.Multitenant.Wcf.Properties.Resources.MultitenantServiceImplementationDataProvider_ServiceInterfaceTypeNotInterface*
-  name: MultitenantServiceImplementationDataProvider_ServiceInterfaceTypeNotInterface
-  href: api/legacy/Autofac.Multitenant.Wcf.Properties.Resources.MultitenantServiceImplementationDataProvider_ServiceInterfaceTypeNotInterface.html
-  commentId: Overload:Autofac.Multitenant.Wcf.Properties.Resources.MultitenantServiceImplementationDataProvider_ServiceInterfaceTypeNotInterface
-  fullName: Autofac.Multitenant.Wcf.Properties.Resources.MultitenantServiceImplementationDataProvider_ServiceInterfaceTypeNotInterface
-  nameWithType: Resources.MultitenantServiceImplementationDataProvider_ServiceInterfaceTypeNotInterface
-- uid: Autofac.Multitenant.Wcf.Properties.Resources.MultitenantServiceImplementationDataProvider_ServiceInterfaceTypeNotResolvable
-  name: MultitenantServiceImplementationDataProvider_ServiceInterfaceTypeNotResolvable
-  href: api/legacy/Autofac.Multitenant.Wcf.Properties.Resources.MultitenantServiceImplementationDataProvider_ServiceInterfaceTypeNotResolvable.html#Autofac_Multitenant_Wcf_Properties_Resources_MultitenantServiceImplementationDataProvider_ServiceInterfaceTypeNotResolvable
-  commentId: P:Autofac.Multitenant.Wcf.Properties.Resources.MultitenantServiceImplementationDataProvider_ServiceInterfaceTypeNotResolvable
-  fullName: Autofac.Multitenant.Wcf.Properties.Resources.MultitenantServiceImplementationDataProvider_ServiceInterfaceTypeNotResolvable
-  nameWithType: Resources.MultitenantServiceImplementationDataProvider_ServiceInterfaceTypeNotResolvable
-- uid: Autofac.Multitenant.Wcf.Properties.Resources.MultitenantServiceImplementationDataProvider_ServiceInterfaceTypeNotResolvable*
-  name: MultitenantServiceImplementationDataProvider_ServiceInterfaceTypeNotResolvable
-  href: api/legacy/Autofac.Multitenant.Wcf.Properties.Resources.MultitenantServiceImplementationDataProvider_ServiceInterfaceTypeNotResolvable.html
-  commentId: Overload:Autofac.Multitenant.Wcf.Properties.Resources.MultitenantServiceImplementationDataProvider_ServiceInterfaceTypeNotResolvable
-  fullName: Autofac.Multitenant.Wcf.Properties.Resources.MultitenantServiceImplementationDataProvider_ServiceInterfaceTypeNotResolvable
-  nameWithType: Resources.MultitenantServiceImplementationDataProvider_ServiceInterfaceTypeNotResolvable
-- uid: Autofac.Multitenant.Wcf.Properties.Resources.MultitenantServiceImplementationDataProvider_ServiceInterfaceTypeNotServiceContract
-  name: MultitenantServiceImplementationDataProvider_ServiceInterfaceTypeNotServiceContract
-  href: api/legacy/Autofac.Multitenant.Wcf.Properties.Resources.MultitenantServiceImplementationDataProvider_ServiceInterfaceTypeNotServiceContract.html#Autofac_Multitenant_Wcf_Properties_Resources_MultitenantServiceImplementationDataProvider_ServiceInterfaceTypeNotServiceContract
-  commentId: P:Autofac.Multitenant.Wcf.Properties.Resources.MultitenantServiceImplementationDataProvider_ServiceInterfaceTypeNotServiceContract
-  fullName: Autofac.Multitenant.Wcf.Properties.Resources.MultitenantServiceImplementationDataProvider_ServiceInterfaceTypeNotServiceContract
-  nameWithType: Resources.MultitenantServiceImplementationDataProvider_ServiceInterfaceTypeNotServiceContract
-- uid: Autofac.Multitenant.Wcf.Properties.Resources.MultitenantServiceImplementationDataProvider_ServiceInterfaceTypeNotServiceContract*
-  name: MultitenantServiceImplementationDataProvider_ServiceInterfaceTypeNotServiceContract
-  href: api/legacy/Autofac.Multitenant.Wcf.Properties.Resources.MultitenantServiceImplementationDataProvider_ServiceInterfaceTypeNotServiceContract.html
-  commentId: Overload:Autofac.Multitenant.Wcf.Properties.Resources.MultitenantServiceImplementationDataProvider_ServiceInterfaceTypeNotServiceContract
-  fullName: Autofac.Multitenant.Wcf.Properties.Resources.MultitenantServiceImplementationDataProvider_ServiceInterfaceTypeNotServiceContract
-  nameWithType: Resources.MultitenantServiceImplementationDataProvider_ServiceInterfaceTypeNotServiceContract
-- uid: Autofac.Multitenant.Wcf.Properties.Resources.ResourceManager
-  name: ResourceManager
-  href: api/legacy/Autofac.Multitenant.Wcf.Properties.Resources.ResourceManager.html#Autofac_Multitenant_Wcf_Properties_Resources_ResourceManager
-  commentId: P:Autofac.Multitenant.Wcf.Properties.Resources.ResourceManager
-  fullName: Autofac.Multitenant.Wcf.Properties.Resources.ResourceManager
-  nameWithType: Resources.ResourceManager
-- uid: Autofac.Multitenant.Wcf.Properties.Resources.ResourceManager*
-  name: ResourceManager
-  href: api/legacy/Autofac.Multitenant.Wcf.Properties.Resources.ResourceManager.html
-  commentId: Overload:Autofac.Multitenant.Wcf.Properties.Resources.ResourceManager
-  fullName: Autofac.Multitenant.Wcf.Properties.Resources.ResourceManager
-  nameWithType: Resources.ResourceManager
 - uid: Autofac.Multitenant.Wcf.ServiceMetadataTypeAttribute
   name: ServiceMetadataTypeAttribute
   href: api/legacy/Autofac.Multitenant.Wcf.ServiceMetadataTypeAttribute.html
@@ -17802,6 +17514,33 @@ references:
   fullName.vb: Autofac.Pooling.RegistrationExtensions.PooledInstancePerLifetimeScope(Of TLimit, TActivatorData, TSingleRegistrationStyle)(Autofac.Builder.IRegistrationBuilder(Of TLimit, TActivatorData, TSingleRegistrationStyle), Autofac.Pooling.IPooledRegistrationPolicy(Of TLimit))
   nameWithType: RegistrationExtensions.PooledInstancePerLifetimeScope<TLimit, TActivatorData, TSingleRegistrationStyle>(IRegistrationBuilder<TLimit, TActivatorData, TSingleRegistrationStyle>, IPooledRegistrationPolicy<TLimit>)
   nameWithType.vb: RegistrationExtensions.PooledInstancePerLifetimeScope(Of TLimit, TActivatorData, TSingleRegistrationStyle)(IRegistrationBuilder(Of TLimit, TActivatorData, TSingleRegistrationStyle), IPooledRegistrationPolicy(Of TLimit))
+- uid: Autofac.Pooling.RegistrationExtensions.PooledInstancePerLifetimeScope``3(Autofac.Builder.IRegistrationBuilder{``0,``1,``2},System.Func{Autofac.IComponentContext,Autofac.Pooling.IPooledRegistrationPolicy{``0}})
+  name: PooledInstancePerLifetimeScope<TLimit, TActivatorData, TSingleRegistrationStyle>(IRegistrationBuilder<TLimit, TActivatorData, TSingleRegistrationStyle>, Func<IComponentContext, IPooledRegistrationPolicy<TLimit>>)
+  href: api/Autofac.Pooling.RegistrationExtensions.PooledInstancePerLifetimeScope.html#Autofac_Pooling_RegistrationExtensions_PooledInstancePerLifetimeScope__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Func_Autofac_IComponentContext_Autofac_Pooling_IPooledRegistrationPolicy___0___
+  commentId: M:Autofac.Pooling.RegistrationExtensions.PooledInstancePerLifetimeScope``3(Autofac.Builder.IRegistrationBuilder{``0,``1,``2},System.Func{Autofac.IComponentContext,Autofac.Pooling.IPooledRegistrationPolicy{``0}})
+  name.vb: PooledInstancePerLifetimeScope(Of TLimit, TActivatorData, TSingleRegistrationStyle)(IRegistrationBuilder(Of TLimit, TActivatorData, TSingleRegistrationStyle), Func(Of IComponentContext, IPooledRegistrationPolicy(Of TLimit)))
+  fullName: Autofac.Pooling.RegistrationExtensions.PooledInstancePerLifetimeScope<TLimit, TActivatorData, TSingleRegistrationStyle>(Autofac.Builder.IRegistrationBuilder<TLimit, TActivatorData, TSingleRegistrationStyle>, System.Func<Autofac.IComponentContext, Autofac.Pooling.IPooledRegistrationPolicy<TLimit>>)
+  fullName.vb: Autofac.Pooling.RegistrationExtensions.PooledInstancePerLifetimeScope(Of TLimit, TActivatorData, TSingleRegistrationStyle)(Autofac.Builder.IRegistrationBuilder(Of TLimit, TActivatorData, TSingleRegistrationStyle), System.Func(Of Autofac.IComponentContext, Autofac.Pooling.IPooledRegistrationPolicy(Of TLimit)))
+  nameWithType: RegistrationExtensions.PooledInstancePerLifetimeScope<TLimit, TActivatorData, TSingleRegistrationStyle>(IRegistrationBuilder<TLimit, TActivatorData, TSingleRegistrationStyle>, Func<IComponentContext, IPooledRegistrationPolicy<TLimit>>)
+  nameWithType.vb: RegistrationExtensions.PooledInstancePerLifetimeScope(Of TLimit, TActivatorData, TSingleRegistrationStyle)(IRegistrationBuilder(Of TLimit, TActivatorData, TSingleRegistrationStyle), Func(Of IComponentContext, IPooledRegistrationPolicy(Of TLimit)))
+- uid: Autofac.Pooling.RegistrationExtensions.PooledInstancePerLifetimeScope``3(Autofac.Builder.IRegistrationBuilder{``0,``1,``2},System.Func{Autofac.IComponentContext,Autofac.Pooling.IPooledRegistrationPolicy{``0}},System.Func{Autofac.IComponentContext,Microsoft.Extensions.ObjectPool.ObjectPoolProvider})
+  name: PooledInstancePerLifetimeScope<TLimit, TActivatorData, TSingleRegistrationStyle>(IRegistrationBuilder<TLimit, TActivatorData, TSingleRegistrationStyle>, Func<IComponentContext, IPooledRegistrationPolicy<TLimit>>, Func<IComponentContext, ObjectPoolProvider>)
+  href: api/Autofac.Pooling.RegistrationExtensions.PooledInstancePerLifetimeScope.html#Autofac_Pooling_RegistrationExtensions_PooledInstancePerLifetimeScope__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Func_Autofac_IComponentContext_Autofac_Pooling_IPooledRegistrationPolicy___0___System_Func_Autofac_IComponentContext_Microsoft_Extensions_ObjectPool_ObjectPoolProvider__
+  commentId: M:Autofac.Pooling.RegistrationExtensions.PooledInstancePerLifetimeScope``3(Autofac.Builder.IRegistrationBuilder{``0,``1,``2},System.Func{Autofac.IComponentContext,Autofac.Pooling.IPooledRegistrationPolicy{``0}},System.Func{Autofac.IComponentContext,Microsoft.Extensions.ObjectPool.ObjectPoolProvider})
+  name.vb: PooledInstancePerLifetimeScope(Of TLimit, TActivatorData, TSingleRegistrationStyle)(IRegistrationBuilder(Of TLimit, TActivatorData, TSingleRegistrationStyle), Func(Of IComponentContext, IPooledRegistrationPolicy(Of TLimit)), Func(Of IComponentContext, ObjectPoolProvider))
+  fullName: Autofac.Pooling.RegistrationExtensions.PooledInstancePerLifetimeScope<TLimit, TActivatorData, TSingleRegistrationStyle>(Autofac.Builder.IRegistrationBuilder<TLimit, TActivatorData, TSingleRegistrationStyle>, System.Func<Autofac.IComponentContext, Autofac.Pooling.IPooledRegistrationPolicy<TLimit>>, System.Func<Autofac.IComponentContext, Microsoft.Extensions.ObjectPool.ObjectPoolProvider>)
+  fullName.vb: Autofac.Pooling.RegistrationExtensions.PooledInstancePerLifetimeScope(Of TLimit, TActivatorData, TSingleRegistrationStyle)(Autofac.Builder.IRegistrationBuilder(Of TLimit, TActivatorData, TSingleRegistrationStyle), System.Func(Of Autofac.IComponentContext, Autofac.Pooling.IPooledRegistrationPolicy(Of TLimit)), System.Func(Of Autofac.IComponentContext, Microsoft.Extensions.ObjectPool.ObjectPoolProvider))
+  nameWithType: RegistrationExtensions.PooledInstancePerLifetimeScope<TLimit, TActivatorData, TSingleRegistrationStyle>(IRegistrationBuilder<TLimit, TActivatorData, TSingleRegistrationStyle>, Func<IComponentContext, IPooledRegistrationPolicy<TLimit>>, Func<IComponentContext, ObjectPoolProvider>)
+  nameWithType.vb: RegistrationExtensions.PooledInstancePerLifetimeScope(Of TLimit, TActivatorData, TSingleRegistrationStyle)(IRegistrationBuilder(Of TLimit, TActivatorData, TSingleRegistrationStyle), Func(Of IComponentContext, IPooledRegistrationPolicy(Of TLimit)), Func(Of IComponentContext, ObjectPoolProvider))
+- uid: Autofac.Pooling.RegistrationExtensions.PooledInstancePerLifetimeScope``3(Autofac.Builder.IRegistrationBuilder{``0,``1,``2},System.Func{Autofac.IComponentContext,Microsoft.Extensions.ObjectPool.ObjectPoolProvider})
+  name: PooledInstancePerLifetimeScope<TLimit, TActivatorData, TSingleRegistrationStyle>(IRegistrationBuilder<TLimit, TActivatorData, TSingleRegistrationStyle>, Func<IComponentContext, ObjectPoolProvider>)
+  href: api/Autofac.Pooling.RegistrationExtensions.PooledInstancePerLifetimeScope.html#Autofac_Pooling_RegistrationExtensions_PooledInstancePerLifetimeScope__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Func_Autofac_IComponentContext_Microsoft_Extensions_ObjectPool_ObjectPoolProvider__
+  commentId: M:Autofac.Pooling.RegistrationExtensions.PooledInstancePerLifetimeScope``3(Autofac.Builder.IRegistrationBuilder{``0,``1,``2},System.Func{Autofac.IComponentContext,Microsoft.Extensions.ObjectPool.ObjectPoolProvider})
+  name.vb: PooledInstancePerLifetimeScope(Of TLimit, TActivatorData, TSingleRegistrationStyle)(IRegistrationBuilder(Of TLimit, TActivatorData, TSingleRegistrationStyle), Func(Of IComponentContext, ObjectPoolProvider))
+  fullName: Autofac.Pooling.RegistrationExtensions.PooledInstancePerLifetimeScope<TLimit, TActivatorData, TSingleRegistrationStyle>(Autofac.Builder.IRegistrationBuilder<TLimit, TActivatorData, TSingleRegistrationStyle>, System.Func<Autofac.IComponentContext, Microsoft.Extensions.ObjectPool.ObjectPoolProvider>)
+  fullName.vb: Autofac.Pooling.RegistrationExtensions.PooledInstancePerLifetimeScope(Of TLimit, TActivatorData, TSingleRegistrationStyle)(Autofac.Builder.IRegistrationBuilder(Of TLimit, TActivatorData, TSingleRegistrationStyle), System.Func(Of Autofac.IComponentContext, Microsoft.Extensions.ObjectPool.ObjectPoolProvider))
+  nameWithType: RegistrationExtensions.PooledInstancePerLifetimeScope<TLimit, TActivatorData, TSingleRegistrationStyle>(IRegistrationBuilder<TLimit, TActivatorData, TSingleRegistrationStyle>, Func<IComponentContext, ObjectPoolProvider>)
+  nameWithType.vb: RegistrationExtensions.PooledInstancePerLifetimeScope(Of TLimit, TActivatorData, TSingleRegistrationStyle)(IRegistrationBuilder(Of TLimit, TActivatorData, TSingleRegistrationStyle), Func(Of IComponentContext, ObjectPoolProvider))
 - uid: Autofac.Pooling.RegistrationExtensions.PooledInstancePerLifetimeScope``3(Autofac.Builder.IRegistrationBuilder{``0,``1,``2},System.Int32)
   name: PooledInstancePerLifetimeScope<TLimit, TActivatorData, TSingleRegistrationStyle>(IRegistrationBuilder<TLimit, TActivatorData, TSingleRegistrationStyle>, int)
   href: api/Autofac.Pooling.RegistrationExtensions.PooledInstancePerLifetimeScope.html#Autofac_Pooling_RegistrationExtensions_PooledInstancePerLifetimeScope__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Int32_
@@ -17826,6 +17565,33 @@ references:
   fullName.vb: Autofac.Pooling.RegistrationExtensions.PooledInstancePerMatchingLifetimeScope(Of TLimit, TActivatorData, TSingleRegistrationStyle)(Autofac.Builder.IRegistrationBuilder(Of TLimit, TActivatorData, TSingleRegistrationStyle), Autofac.Pooling.IPooledRegistrationPolicy(Of TLimit), ParamArray Object())
   nameWithType: RegistrationExtensions.PooledInstancePerMatchingLifetimeScope<TLimit, TActivatorData, TSingleRegistrationStyle>(IRegistrationBuilder<TLimit, TActivatorData, TSingleRegistrationStyle>, IPooledRegistrationPolicy<TLimit>, params object[])
   nameWithType.vb: RegistrationExtensions.PooledInstancePerMatchingLifetimeScope(Of TLimit, TActivatorData, TSingleRegistrationStyle)(IRegistrationBuilder(Of TLimit, TActivatorData, TSingleRegistrationStyle), IPooledRegistrationPolicy(Of TLimit), ParamArray Object())
+- uid: Autofac.Pooling.RegistrationExtensions.PooledInstancePerMatchingLifetimeScope``3(Autofac.Builder.IRegistrationBuilder{``0,``1,``2},System.Func{Autofac.IComponentContext,Autofac.Pooling.IPooledRegistrationPolicy{``0}},System.Func{Autofac.IComponentContext,Microsoft.Extensions.ObjectPool.ObjectPoolProvider},System.Object[])
+  name: PooledInstancePerMatchingLifetimeScope<TLimit, TActivatorData, TSingleRegistrationStyle>(IRegistrationBuilder<TLimit, TActivatorData, TSingleRegistrationStyle>, Func<IComponentContext, IPooledRegistrationPolicy<TLimit>>, Func<IComponentContext, ObjectPoolProvider>, params object[])
+  href: api/Autofac.Pooling.RegistrationExtensions.PooledInstancePerMatchingLifetimeScope.html#Autofac_Pooling_RegistrationExtensions_PooledInstancePerMatchingLifetimeScope__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Func_Autofac_IComponentContext_Autofac_Pooling_IPooledRegistrationPolicy___0___System_Func_Autofac_IComponentContext_Microsoft_Extensions_ObjectPool_ObjectPoolProvider__System_Object___
+  commentId: M:Autofac.Pooling.RegistrationExtensions.PooledInstancePerMatchingLifetimeScope``3(Autofac.Builder.IRegistrationBuilder{``0,``1,``2},System.Func{Autofac.IComponentContext,Autofac.Pooling.IPooledRegistrationPolicy{``0}},System.Func{Autofac.IComponentContext,Microsoft.Extensions.ObjectPool.ObjectPoolProvider},System.Object[])
+  name.vb: PooledInstancePerMatchingLifetimeScope(Of TLimit, TActivatorData, TSingleRegistrationStyle)(IRegistrationBuilder(Of TLimit, TActivatorData, TSingleRegistrationStyle), Func(Of IComponentContext, IPooledRegistrationPolicy(Of TLimit)), Func(Of IComponentContext, ObjectPoolProvider), ParamArray Object())
+  fullName: Autofac.Pooling.RegistrationExtensions.PooledInstancePerMatchingLifetimeScope<TLimit, TActivatorData, TSingleRegistrationStyle>(Autofac.Builder.IRegistrationBuilder<TLimit, TActivatorData, TSingleRegistrationStyle>, System.Func<Autofac.IComponentContext, Autofac.Pooling.IPooledRegistrationPolicy<TLimit>>, System.Func<Autofac.IComponentContext, Microsoft.Extensions.ObjectPool.ObjectPoolProvider>, params object[])
+  fullName.vb: Autofac.Pooling.RegistrationExtensions.PooledInstancePerMatchingLifetimeScope(Of TLimit, TActivatorData, TSingleRegistrationStyle)(Autofac.Builder.IRegistrationBuilder(Of TLimit, TActivatorData, TSingleRegistrationStyle), System.Func(Of Autofac.IComponentContext, Autofac.Pooling.IPooledRegistrationPolicy(Of TLimit)), System.Func(Of Autofac.IComponentContext, Microsoft.Extensions.ObjectPool.ObjectPoolProvider), ParamArray Object())
+  nameWithType: RegistrationExtensions.PooledInstancePerMatchingLifetimeScope<TLimit, TActivatorData, TSingleRegistrationStyle>(IRegistrationBuilder<TLimit, TActivatorData, TSingleRegistrationStyle>, Func<IComponentContext, IPooledRegistrationPolicy<TLimit>>, Func<IComponentContext, ObjectPoolProvider>, params object[])
+  nameWithType.vb: RegistrationExtensions.PooledInstancePerMatchingLifetimeScope(Of TLimit, TActivatorData, TSingleRegistrationStyle)(IRegistrationBuilder(Of TLimit, TActivatorData, TSingleRegistrationStyle), Func(Of IComponentContext, IPooledRegistrationPolicy(Of TLimit)), Func(Of IComponentContext, ObjectPoolProvider), ParamArray Object())
+- uid: Autofac.Pooling.RegistrationExtensions.PooledInstancePerMatchingLifetimeScope``3(Autofac.Builder.IRegistrationBuilder{``0,``1,``2},System.Func{Autofac.IComponentContext,Autofac.Pooling.IPooledRegistrationPolicy{``0}},System.Object[])
+  name: PooledInstancePerMatchingLifetimeScope<TLimit, TActivatorData, TSingleRegistrationStyle>(IRegistrationBuilder<TLimit, TActivatorData, TSingleRegistrationStyle>, Func<IComponentContext, IPooledRegistrationPolicy<TLimit>>, params object[])
+  href: api/Autofac.Pooling.RegistrationExtensions.PooledInstancePerMatchingLifetimeScope.html#Autofac_Pooling_RegistrationExtensions_PooledInstancePerMatchingLifetimeScope__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Func_Autofac_IComponentContext_Autofac_Pooling_IPooledRegistrationPolicy___0___System_Object___
+  commentId: M:Autofac.Pooling.RegistrationExtensions.PooledInstancePerMatchingLifetimeScope``3(Autofac.Builder.IRegistrationBuilder{``0,``1,``2},System.Func{Autofac.IComponentContext,Autofac.Pooling.IPooledRegistrationPolicy{``0}},System.Object[])
+  name.vb: PooledInstancePerMatchingLifetimeScope(Of TLimit, TActivatorData, TSingleRegistrationStyle)(IRegistrationBuilder(Of TLimit, TActivatorData, TSingleRegistrationStyle), Func(Of IComponentContext, IPooledRegistrationPolicy(Of TLimit)), ParamArray Object())
+  fullName: Autofac.Pooling.RegistrationExtensions.PooledInstancePerMatchingLifetimeScope<TLimit, TActivatorData, TSingleRegistrationStyle>(Autofac.Builder.IRegistrationBuilder<TLimit, TActivatorData, TSingleRegistrationStyle>, System.Func<Autofac.IComponentContext, Autofac.Pooling.IPooledRegistrationPolicy<TLimit>>, params object[])
+  fullName.vb: Autofac.Pooling.RegistrationExtensions.PooledInstancePerMatchingLifetimeScope(Of TLimit, TActivatorData, TSingleRegistrationStyle)(Autofac.Builder.IRegistrationBuilder(Of TLimit, TActivatorData, TSingleRegistrationStyle), System.Func(Of Autofac.IComponentContext, Autofac.Pooling.IPooledRegistrationPolicy(Of TLimit)), ParamArray Object())
+  nameWithType: RegistrationExtensions.PooledInstancePerMatchingLifetimeScope<TLimit, TActivatorData, TSingleRegistrationStyle>(IRegistrationBuilder<TLimit, TActivatorData, TSingleRegistrationStyle>, Func<IComponentContext, IPooledRegistrationPolicy<TLimit>>, params object[])
+  nameWithType.vb: RegistrationExtensions.PooledInstancePerMatchingLifetimeScope(Of TLimit, TActivatorData, TSingleRegistrationStyle)(IRegistrationBuilder(Of TLimit, TActivatorData, TSingleRegistrationStyle), Func(Of IComponentContext, IPooledRegistrationPolicy(Of TLimit)), ParamArray Object())
+- uid: Autofac.Pooling.RegistrationExtensions.PooledInstancePerMatchingLifetimeScope``3(Autofac.Builder.IRegistrationBuilder{``0,``1,``2},System.Func{Autofac.IComponentContext,Microsoft.Extensions.ObjectPool.ObjectPoolProvider},System.Object[])
+  name: PooledInstancePerMatchingLifetimeScope<TLimit, TActivatorData, TSingleRegistrationStyle>(IRegistrationBuilder<TLimit, TActivatorData, TSingleRegistrationStyle>, Func<IComponentContext, ObjectPoolProvider>, params object[])
+  href: api/Autofac.Pooling.RegistrationExtensions.PooledInstancePerMatchingLifetimeScope.html#Autofac_Pooling_RegistrationExtensions_PooledInstancePerMatchingLifetimeScope__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Func_Autofac_IComponentContext_Microsoft_Extensions_ObjectPool_ObjectPoolProvider__System_Object___
+  commentId: M:Autofac.Pooling.RegistrationExtensions.PooledInstancePerMatchingLifetimeScope``3(Autofac.Builder.IRegistrationBuilder{``0,``1,``2},System.Func{Autofac.IComponentContext,Microsoft.Extensions.ObjectPool.ObjectPoolProvider},System.Object[])
+  name.vb: PooledInstancePerMatchingLifetimeScope(Of TLimit, TActivatorData, TSingleRegistrationStyle)(IRegistrationBuilder(Of TLimit, TActivatorData, TSingleRegistrationStyle), Func(Of IComponentContext, ObjectPoolProvider), ParamArray Object())
+  fullName: Autofac.Pooling.RegistrationExtensions.PooledInstancePerMatchingLifetimeScope<TLimit, TActivatorData, TSingleRegistrationStyle>(Autofac.Builder.IRegistrationBuilder<TLimit, TActivatorData, TSingleRegistrationStyle>, System.Func<Autofac.IComponentContext, Microsoft.Extensions.ObjectPool.ObjectPoolProvider>, params object[])
+  fullName.vb: Autofac.Pooling.RegistrationExtensions.PooledInstancePerMatchingLifetimeScope(Of TLimit, TActivatorData, TSingleRegistrationStyle)(Autofac.Builder.IRegistrationBuilder(Of TLimit, TActivatorData, TSingleRegistrationStyle), System.Func(Of Autofac.IComponentContext, Microsoft.Extensions.ObjectPool.ObjectPoolProvider), ParamArray Object())
+  nameWithType: RegistrationExtensions.PooledInstancePerMatchingLifetimeScope<TLimit, TActivatorData, TSingleRegistrationStyle>(IRegistrationBuilder<TLimit, TActivatorData, TSingleRegistrationStyle>, Func<IComponentContext, ObjectPoolProvider>, params object[])
+  nameWithType.vb: RegistrationExtensions.PooledInstancePerMatchingLifetimeScope(Of TLimit, TActivatorData, TSingleRegistrationStyle)(IRegistrationBuilder(Of TLimit, TActivatorData, TSingleRegistrationStyle), Func(Of IComponentContext, ObjectPoolProvider), ParamArray Object())
 - uid: Autofac.Pooling.RegistrationExtensions.PooledInstancePerMatchingLifetimeScope``3(Autofac.Builder.IRegistrationBuilder{``0,``1,``2},System.Int32,System.Object[])
   name: PooledInstancePerMatchingLifetimeScope<TLimit, TActivatorData, TSingleRegistrationStyle>(IRegistrationBuilder<TLimit, TActivatorData, TSingleRegistrationStyle>, int, params object[])
   href: api/Autofac.Pooling.RegistrationExtensions.PooledInstancePerMatchingLifetimeScope.html#Autofac_Pooling_RegistrationExtensions_PooledInstancePerMatchingLifetimeScope__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Int32_System_Object___
@@ -18237,6 +18003,21 @@ references:
   fullName.vb: Autofac.RegistrationExtensions.FindConstructorsWith(Of TLimit, TReflectionActivatorData, TStyle)(Autofac.Builder.IRegistrationBuilder(Of TLimit, TReflectionActivatorData, TStyle), System.Func(Of System.Type, System.Reflection.ConstructorInfo()))
   nameWithType: RegistrationExtensions.FindConstructorsWith<TLimit, TReflectionActivatorData, TStyle>(IRegistrationBuilder<TLimit, TReflectionActivatorData, TStyle>, Func<Type, ConstructorInfo[]>)
   nameWithType.vb: RegistrationExtensions.FindConstructorsWith(Of TLimit, TReflectionActivatorData, TStyle)(IRegistrationBuilder(Of TLimit, TReflectionActivatorData, TStyle), Func(Of Type, ConstructorInfo()))
+- uid: Autofac.RegistrationExtensions.GetRegistrationId*
+  name: GetRegistrationId
+  href: api/Autofac.RegistrationExtensions.GetRegistrationId.html
+  commentId: Overload:Autofac.RegistrationExtensions.GetRegistrationId
+  fullName: Autofac.RegistrationExtensions.GetRegistrationId
+  nameWithType: RegistrationExtensions.GetRegistrationId
+- uid: Autofac.RegistrationExtensions.GetRegistrationId``2(Autofac.Builder.IRegistrationBuilder{``0,``1,Autofac.Builder.SingleRegistrationStyle})
+  name: GetRegistrationId<TLimit, TActivatorData>(IRegistrationBuilder<TLimit, TActivatorData, SingleRegistrationStyle>)
+  href: api/Autofac.RegistrationExtensions.GetRegistrationId.html#Autofac_RegistrationExtensions_GetRegistrationId__2_Autofac_Builder_IRegistrationBuilder___0___1_Autofac_Builder_SingleRegistrationStyle__
+  commentId: M:Autofac.RegistrationExtensions.GetRegistrationId``2(Autofac.Builder.IRegistrationBuilder{``0,``1,Autofac.Builder.SingleRegistrationStyle})
+  name.vb: GetRegistrationId(Of TLimit, TActivatorData)(IRegistrationBuilder(Of TLimit, TActivatorData, SingleRegistrationStyle))
+  fullName: Autofac.RegistrationExtensions.GetRegistrationId<TLimit, TActivatorData>(Autofac.Builder.IRegistrationBuilder<TLimit, TActivatorData, Autofac.Builder.SingleRegistrationStyle>)
+  fullName.vb: Autofac.RegistrationExtensions.GetRegistrationId(Of TLimit, TActivatorData)(Autofac.Builder.IRegistrationBuilder(Of TLimit, TActivatorData, Autofac.Builder.SingleRegistrationStyle))
+  nameWithType: RegistrationExtensions.GetRegistrationId<TLimit, TActivatorData>(IRegistrationBuilder<TLimit, TActivatorData, SingleRegistrationStyle>)
+  nameWithType.vb: RegistrationExtensions.GetRegistrationId(Of TLimit, TActivatorData)(IRegistrationBuilder(Of TLimit, TActivatorData, SingleRegistrationStyle))
 - uid: Autofac.RegistrationExtensions.IfNotRegistered*
   name: IfNotRegistered
   href: api/Autofac.RegistrationExtensions.IfNotRegistered.html

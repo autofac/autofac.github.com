@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IPooledComponent | Autofac ">
       
-      
+      <meta name="description" content="Components implementing this interface are aware that they are pooled, so will be notified when they are retrieved from the pool, and when they are returned to the pool.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,9 @@ Interface IPooledComponent
   <dl><dt>Assembly</dt><dd>Autofac.Pooling.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Components implementing this interface are aware that they are pooled, so will be notified when they are retrieved from the pool,
+and when they are returned to the pool.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -119,11 +121,22 @@ Interface IPooledComponent
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Pooling.IPooledComponent.OnGetFromPool.html#Autofac_Pooling_IPooledComponent_OnGetFromPool_Autofac_IComponentContext_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter__">OnGetFromPool(IComponentContext, IEnumerable&lt;Parameter&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Invoked when this instance is retrieved from the pool. Any dependencies retrieved using the provided <a class="xref" href="Autofac.IComponentContext.html">IComponentContext</a>
+MUST be discarded in <a class="xref" href="Autofac.Pooling.IPooledComponent.OnReturnToPool.html#Autofac_Pooling_IPooledComponent_OnReturnToPool">OnReturnToPool()</a>, otherwise memory leaks may occur.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Pooling.IPooledComponent.OnReturnToPool.html#Autofac_Pooling_IPooledComponent_OnReturnToPool">OnReturnToPool()</a></dt>
-    <dd></dd>
+    <dd><p>
+Invoked when this instance is being returned to the pool. Any dependencies retrieved in <a class="xref" href="Autofac.Pooling.IPooledComponent.OnGetFromPool.html#Autofac_Pooling_IPooledComponent_OnGetFromPool_Autofac_IComponentContext_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter__">OnGetFromPool(IComponentContext, IEnumerable&lt;Parameter&gt;)</a> should
+be discarded in this method.
+</p>
+<p>
+If the maximum pool capacity has been reached (or a custom <a class="xref" href="Autofac.Pooling.IPooledRegistrationPolicy-1.html">IPooledRegistrationPolicy&lt;TPooledObject&gt;</a> decides not to return the instance to the pool),
+this method will be invoked, but then the object will not be put back in
+the pool (and may be disposed if the component implements <span class="xref">System.IDisposable</span>).
+</p>
+</dd>
   </dl>
 
 

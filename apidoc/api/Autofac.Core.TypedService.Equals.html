@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,8 @@ Method Equals
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -133,13 +134,15 @@ Method Equals
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>other</code> <a class="xref" href="Autofac.Core.TypedService.html">TypedService</a></dt>
-  <dd></dd>
+  <dd><p>An object to compare with this object.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-  <dd></dd>
+  <dt><span class="xref">bool</span></dt>
+  <dd><p>true if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, false.</p>
+</dd>
 </dl>
 
 
@@ -159,7 +162,8 @@ Method Equals
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Determines whether the specified <span class="xref">object</span> is equal to the current <span class="xref">object</span>.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -168,14 +172,16 @@ Method Equals
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-  <dd></dd>
+  <dt><code>obj</code> <span class="xref">object</span></dt>
+  <dd><p>The <span class="xref">object</span> to compare with the current <span class="xref">object</span>.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-  <dd></dd>
+  <dt><span class="xref">bool</span></dt>
+  <dd><p>true if the specified <span class="xref">object</span> is equal to the current <span class="xref">object</span>; otherwise, false.</p>
+</dd>
 </dl>
 
 
@@ -185,6 +191,12 @@ Method Equals
 
 
 
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><span class="xref">NullReferenceException</span></dt>
+  <dd><p>The <code class="paramref">obj</code> parameter is null.</p>
+</dd>
+</dl>
 
 
 

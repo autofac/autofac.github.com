@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -97,36 +97,44 @@ Namespaces
       <dt><a class="xref" href="Autofac.Multitenant.Wcf.DynamicProxy.html">Autofac.Multitenant.Wcf.DynamicProxy</a></dt>
       <dd></dd>
     </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Autofac.Multitenant.Wcf.Properties.html">Autofac.Multitenant.Wcf.Properties</a></dt>
-      <dd></dd>
-    </dl>
     <h3 id="classes">
 Classes
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Multitenant.Wcf.MultitenantServiceImplementationDataProvider.html">MultitenantServiceImplementationDataProvider</a></dt>
-      <dd></dd>
+      <dd><p>Service implementation data provider that returns multitenant-aware
+service hosting information.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Multitenant.Wcf.OperationContextTenantIdentificationStrategy.html">OperationContextTenantIdentificationStrategy</a></dt>
-      <dd></dd>
+      <dd><p>An <a class="xref" href="../Autofac.Multitenant.ITenantIdentificationStrategy.html">ITenantIdentificationStrategy</a>
+implementation that gets the tenant ID from a <a class="xref" href="Autofac.Multitenant.Wcf.TenantIdentificationContextExtension.html">TenantIdentificationContextExtension</a>
+attached to the current <span class="xref">System.ServiceModel.OperationContext</span>.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Multitenant.Wcf.ServiceMetadataTypeAttribute.html">ServiceMetadataTypeAttribute</a></dt>
-      <dd></dd>
+      <dd><p>Specifies the metadata class to associate with a service implementation.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Multitenant.Wcf.TenantIdentificationContextExtension.html">TenantIdentificationContextExtension</a></dt>
-      <dd></dd>
+      <dd><p>Extension for <span class="xref">System.ServiceModel.OperationContext</span>
+that allows propagation of the tenant ID.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Multitenant.Wcf.TenantPropagationBehavior-1.html">TenantPropagationBehavior&lt;TTenantId&gt;</a></dt>
-      <dd></dd>
+      <dd><p>Behavior for WCF clients and service hosts that is used to propagate
+tenant ID from client to service.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Multitenant.Wcf.TenantPropagationMessageInspector-1.html">TenantPropagationMessageInspector&lt;TTenantId&gt;</a></dt>
-      <dd></dd>
+      <dd><p>Message inspector that helps in passing the tenant ID from a WCF client
+to the respective service.</p>
+</dd>
     </dl>
 
 

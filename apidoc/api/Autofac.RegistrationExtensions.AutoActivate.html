@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,9 @@ Method AutoActivate
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Wraps a registration in an implicit <a class="xref" href="Autofac.IStartable.html">IStartable</a> and automatically
+activates the registration after the container is built.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -133,23 +135,28 @@ Method AutoActivate
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>registration</code> <a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, TActivatorData, TRegistrationStyle&gt;</dt>
-  <dd></dd>
+  <dd><p>Registration to set release action for.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, TActivatorData, TRegistrationStyle&gt;</dt>
-  <dd></dd>
+  <dd><p>A registration builder allowing further configuration of the component.</p>
+</dd>
 </dl>
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>TLimit</code></dt>
-  <dd></dd>
+  <dd><p>Registration limit type.</p>
+</dd>
   <dt><code>TActivatorData</code></dt>
-  <dd></dd>
+  <dd><p>Activator data type.</p>
+</dd>
   <dt><code>TRegistrationStyle</code></dt>
-  <dd></dd>
+  <dd><p>Registration style.</p>
+</dd>
 </dl>
 
 
@@ -157,6 +164,21 @@ Method AutoActivate
 
 
 
+<h4 class="section" id="Autofac_RegistrationExtensions_AutoActivate__3_Autofac_Builder_IRegistrationBuilder___0___1___2___remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>
+While you can implement an <a class="xref" href="Autofac.IStartable.html">IStartable</a> to perform some logic at
+container build time, sometimes you need to just activate a registered component and
+that's it. This extension allows you to automatically activate a registration on
+container build. No additional logic is executed and the resolved instance is not held
+so container disposal will end up disposing of the instance.
+</p>
+<p>
+Depending on how you register the lifetime of the component, you may get an exception
+when you build the container - components that are scoped to specific lifetimes (like
+ASP.NET components scoped to a request lifetime) will fail to resolve because the
+appropriate lifetime is not available.
+</p>
+</div>
 
 
 

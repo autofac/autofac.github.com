@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,8 @@ Method RegisterBuildCallback
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Register a callback that will be invoked when the container (or lifetime scope) is built.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -132,14 +133,16 @@ Method RegisterBuildCallback
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><code>buildCallback</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Autofac.ILifetimeScope.html">ILifetimeScope</a>&gt;</dt>
-  <dd></dd>
+  <dt><code>buildCallback</code> <span class="xref">Action</span>&lt;<a class="xref" href="Autofac.ILifetimeScope.html">ILifetimeScope</a>&gt;</dt>
+  <dd><p>Callback to execute.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a></dt>
-  <dd></dd>
+  <dd><p>The <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a> instance to continue registration calls.</p>
+</dd>
 </dl>
 
 
@@ -148,6 +151,11 @@ Method RegisterBuildCallback
 
 
 
+<h4 class="section" id="Autofac_ContainerBuilder_RegisterBuildCallback_System_Action_Autofac_ILifetimeScope___remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>The argument to the registered build callback will be an instance of the derived <a class="xref" href="Autofac.IContainer.html">IContainer</a> if this
+builder is being used to build a fresh container, or an <a class="xref" href="Autofac.ILifetimeScope.html">ILifetimeScope</a> if it's being used to
+create custom registrations for a new lifetime scope.</p>
+</div>
 
 
 

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class ComponentRegistrar | Autofac ">
       
-      
+      <meta name="description" content="Default component configuration processor.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,8 @@ Class ComponentRegistrar
   <dl><dt>Assembly</dt><dd>Autofac.Configuration.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Default component configuration processor.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -109,7 +110,7 @@ Class ComponentRegistrar
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><span class="xref">ComponentRegistrar</span></div>
     </dd>
   </dl>
@@ -140,46 +141,65 @@ Class ComponentRegistrar
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Configuration.Core.ComponentRegistrar.EnumerateComponentServices.html#Autofac_Configuration_Core_ComponentRegistrar_EnumerateComponentServices_Microsoft_Extensions_Configuration_IConfiguration_System_Reflection_Assembly_">EnumerateComponentServices(IConfiguration, Assembly?)</a></dt>
-    <dd></dd>
+    <dd><p>Reads configuration data for a component and enumerates the set
+of configured services for the component.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Configuration.Core.ComponentRegistrar.RegisterComponentMetadata.html#Autofac_Configuration_Core_ComponentRegistrar_RegisterComponentMetadata__2_Microsoft_Extensions_Configuration_IConfiguration_Autofac_Builder_IRegistrationBuilder_System_Object___0___1__System_Reflection_Assembly_">RegisterComponentMetadata&lt;TReflectionActivatorData, TSingleRegistrationStyle&gt;(IConfiguration, IRegistrationBuilder&lt;object, TReflectionActivatorData, TSingleRegistrationStyle&gt;, Assembly?)</a></dt>
-    <dd></dd>
+    <dd><p>Reads configuration data for a component's metadata
+and updates the component registration as needed.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Configuration.Core.ComponentRegistrar.RegisterComponentParameters.html#Autofac_Configuration_Core_ComponentRegistrar_RegisterComponentParameters__2_Microsoft_Extensions_Configuration_IConfiguration_Autofac_Builder_IRegistrationBuilder_System_Object___0___1__">RegisterComponentParameters&lt;TReflectionActivatorData, TSingleRegistrationStyle&gt;(IConfiguration, IRegistrationBuilder&lt;object, TReflectionActivatorData, TSingleRegistrationStyle&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Reads configuration data for a component's configured constructor parameter values
+and updates the component registration as needed.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Configuration.Core.ComponentRegistrar.RegisterComponentProperties.html#Autofac_Configuration_Core_ComponentRegistrar_RegisterComponentProperties__2_Microsoft_Extensions_Configuration_IConfiguration_Autofac_Builder_IRegistrationBuilder_System_Object___0___1__">RegisterComponentProperties&lt;TReflectionActivatorData, TSingleRegistrationStyle&gt;(IConfiguration, IRegistrationBuilder&lt;object, TReflectionActivatorData, TSingleRegistrationStyle&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Reads configuration data for a component's configured property values
+and updates the component registration as needed.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Configuration.Core.ComponentRegistrar.RegisterComponentServices.html#Autofac_Configuration_Core_ComponentRegistrar_RegisterComponentServices__2_Microsoft_Extensions_Configuration_IConfiguration_Autofac_Builder_IRegistrationBuilder_System_Object___0___1__System_Reflection_Assembly_">RegisterComponentServices&lt;TReflectionActivatorData, TSingleRegistrationStyle&gt;(IConfiguration, IRegistrationBuilder&lt;object, TReflectionActivatorData, TSingleRegistrationStyle&gt;, Assembly?)</a></dt>
-    <dd></dd>
+    <dd><p>Reads configuration data for a component's exposed services
+and updates the component registration as needed.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Configuration.Core.ComponentRegistrar.RegisterConfiguredComponents.html#Autofac_Configuration_Core_ComponentRegistrar_RegisterConfiguredComponents_Autofac_ContainerBuilder_Microsoft_Extensions_Configuration_IConfiguration_">RegisterConfiguredComponents(ContainerBuilder, IConfiguration)</a></dt>
-    <dd></dd>
+    <dd><p>Registers individual configured components into a container builder.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Configuration.Core.ComponentRegistrar.SetAutoActivate.html#Autofac_Configuration_Core_ComponentRegistrar_SetAutoActivate__2_Microsoft_Extensions_Configuration_IConfiguration_Autofac_Builder_IRegistrationBuilder_System_Object___0___1__">SetAutoActivate&lt;TReflectionActivatorData, TSingleRegistrationStyle&gt;(IConfiguration, IRegistrationBuilder&lt;object, TReflectionActivatorData, TSingleRegistrationStyle&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Sets the auto activation mode for the component.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Configuration.Core.ComponentRegistrar.SetComponentOwnership.html#Autofac_Configuration_Core_ComponentRegistrar_SetComponentOwnership__2_Microsoft_Extensions_Configuration_IConfiguration_Autofac_Builder_IRegistrationBuilder_System_Object___0___1__">SetComponentOwnership&lt;TReflectionActivatorData, TSingleRegistrationStyle&gt;(IConfiguration, IRegistrationBuilder&lt;object, TReflectionActivatorData, TSingleRegistrationStyle&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Sets the ownership model for the component.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Configuration.Core.ComponentRegistrar.SetInjectProperties.html#Autofac_Configuration_Core_ComponentRegistrar_SetInjectProperties__2_Microsoft_Extensions_Configuration_IConfiguration_Autofac_Builder_IRegistrationBuilder_System_Object___0___1__">SetInjectProperties&lt;TReflectionActivatorData, TSingleRegistrationStyle&gt;(IConfiguration, IRegistrationBuilder&lt;object, TReflectionActivatorData, TSingleRegistrationStyle&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Sets the property injection mode for the component.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Configuration.Core.ComponentRegistrar.SetLifetimeScope.html#Autofac_Configuration_Core_ComponentRegistrar_SetLifetimeScope__2_Microsoft_Extensions_Configuration_IConfiguration_Autofac_Builder_IRegistrationBuilder_System_Object___0___1__">SetLifetimeScope&lt;TReflectionActivatorData, TSingleRegistrationStyle&gt;(IConfiguration, IRegistrationBuilder&lt;object, TReflectionActivatorData, TSingleRegistrationStyle&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Sets the lifetime scope for the component.</p>
+</dd>
   </dl>
 
 
+  <h2 id="seealso">See Also</h2>
+  <div class="seealso">
+      <div><a class="xref" href="Autofac.Configuration.IComponentRegistrar.html">IComponentRegistrar</a></div>
+  </div>
 
 </article>
 

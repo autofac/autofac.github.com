@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Enum ResolveEventType | Autofac ">
       
-      
+      <meta name="description" content="Defines the standard set of in-built resolve events, executed by the .">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -97,7 +97,8 @@ Enum ResolveEventType
   <dl><dt>Assembly</dt><dd>Autofac.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Defines the standard set of in-built resolve events, executed by the <a class="xref" href="Autofac.Core.Resolving.Middleware.CoreEventMiddleware.html">CoreEventMiddleware</a>.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -116,13 +117,21 @@ Enum ResolveEventType
 </h2>
   <dl class="parameters">
     <dt id="Autofac_Core_Resolving_Middleware_ResolveEventType_OnActivated"><code>OnActivated = 2</code></dt>
-    <dd></dd>
+  
+  <dd><p>Event type for the OnActivated event registered by <a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.OnActivated.html#Autofac_Builder_IRegistrationBuilder_3_OnActivated_System_Action_Autofac_Core_IActivatedEventArgs__0___">OnActivated(Action&lt;IActivatedEventArgs&lt;TLimit&gt;&gt;)</a>.</p>
+</dd>
     <dt id="Autofac_Core_Resolving_Middleware_ResolveEventType_OnActivating"><code>OnActivating = 1</code></dt>
-    <dd></dd>
+  
+  <dd><p>Event type for the OnActivating event registered by <a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.OnActivating.html#Autofac_Builder_IRegistrationBuilder_3_OnActivating_System_Action_Autofac_Core_IActivatingEventArgs__0___">OnActivating(Action&lt;IActivatingEventArgs&lt;TLimit&gt;&gt;)</a>.</p>
+</dd>
     <dt id="Autofac_Core_Resolving_Middleware_ResolveEventType_OnPreparing"><code>OnPreparing = 0</code></dt>
-    <dd></dd>
+  
+  <dd><p>Event type for the OnPreparing event registered by <a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.OnPreparing.html#Autofac_Builder_IRegistrationBuilder_3_OnPreparing_System_Action_Autofac_Core_PreparingEventArgs__">OnPreparing(Action&lt;PreparingEventArgs&gt;)</a>.</p>
+</dd>
     <dt id="Autofac_Core_Resolving_Middleware_ResolveEventType_OnRelease"><code>OnRelease = 3</code></dt>
-    <dd></dd>
+  
+  <dd><p>Event type for the OnRelease event registered by <a class="xref" href="Autofac.RegistrationExtensions.OnRelease.html#Autofac_RegistrationExtensions_OnRelease__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Action___0__">OnRelease&lt;TLimit, TActivatorData, TRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, TRegistrationStyle&gt;, Action&lt;TLimit&gt;)</a>.</p>
+</dd>
   </dl>
 
 

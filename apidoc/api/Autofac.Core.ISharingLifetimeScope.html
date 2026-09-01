@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface ISharingLifetimeScope | Autofac ">
       
-      
+      <meta name="description" content="Defines a nested structure of lifetimes.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,8 @@ Interface ISharingLifetimeScope
   <dl><dt>Assembly</dt><dd>Autofac.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Defines a nested structure of lifetimes.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -376,11 +377,13 @@ Interface ISharingLifetimeScope
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.ISharingLifetimeScope.ParentLifetimeScope.html#Autofac_Core_ISharingLifetimeScope_ParentLifetimeScope">ParentLifetimeScope</a></dt>
-    <dd></dd>
+    <dd><p>Gets the parent of this node of the hierarchy, or null.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.ISharingLifetimeScope.RootLifetimeScope.html#Autofac_Core_ISharingLifetimeScope_RootLifetimeScope">RootLifetimeScope</a></dt>
-    <dd></dd>
+    <dd><p>Gets the root of the sharing hierarchy.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -388,19 +391,25 @@ Interface ISharingLifetimeScope
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.ISharingLifetimeScope.CreateSharedInstance.html#Autofac_Core_ISharingLifetimeScope_CreateSharedInstance_System_Guid_System_Func_System_Object__">CreateSharedInstance(Guid, Func&lt;object&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Creates a shared instance with a GUID key.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.ISharingLifetimeScope.CreateSharedInstance.html#Autofac_Core_ISharingLifetimeScope_CreateSharedInstance_System_Guid_System_Nullable_System_Guid__System_Func_System_Object__">CreateSharedInstance(Guid, Guid?, Func&lt;object&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Creates a shared instance with a primary GUID key and
+possible secondary qualifying GUID key.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.ISharingLifetimeScope.TryGetSharedInstance.html#Autofac_Core_ISharingLifetimeScope_TryGetSharedInstance_System_Guid_System_Nullable_System_Guid__System_Object__">TryGetSharedInstance(Guid, Guid?, out object?)</a></dt>
-    <dd></dd>
+    <dd><p>Try to retrieve a shared instance based on a primary GUID key and
+possible secondary qualifying GUID key.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.ISharingLifetimeScope.TryGetSharedInstance.html#Autofac_Core_ISharingLifetimeScope_TryGetSharedInstance_System_Guid_System_Object__">TryGetSharedInstance(Guid, out object?)</a></dt>
-    <dd></dd>
+    <dd><p>Try to retrieve a shared instance based on a GUID key.</p>
+</dd>
   </dl>
 
 

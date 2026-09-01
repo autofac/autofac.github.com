@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class AutofacInstanceContext | Autofac ">
       
-      
+      <meta name="description" content="Manages instance lifecycle using an Autofac inner container.">
       <link rel="icon" href="../../favicon.ico">
       <link rel="stylesheet" href="../../public/docfx.min.css">
       <link rel="stylesheet" href="../../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,8 @@ Class AutofacInstanceContext
   <dl><dt>Assembly</dt><dd>Autofac.Integration.Wcf.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Manages instance lifecycle using an Autofac inner container.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -109,7 +110,7 @@ Class AutofacInstanceContext
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><span class="xref">AutofacInstanceContext</span></div>
     </dd>
   </dl>
@@ -126,13 +127,24 @@ Class AutofacInstanceContext
 
 
 
+  <h2 id="Autofac_Integration_Wcf_AutofacInstanceContext_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+This instance context extension creates a child lifetime scope based
+on a scope provided and resolves service instances from that child scope.
+</p>
+<p>
+When this instance context is disposed, the lifetime scope it creates
+(which contains the resolved service instance) is also disposed.
+</p>
+</div>
 
   <h2 class="section" id="constructors">Constructors
 </h2>
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Wcf.AutofacInstanceContext.-ctor.html#Autofac_Integration_Wcf_AutofacInstanceContext__ctor_Autofac_ILifetimeScope_">AutofacInstanceContext(ILifetimeScope)</a></dt>
-    <dd></dd>
+    <dd><p>Initializes a new instance of the <a class="xref" href="Autofac.Integration.Wcf.AutofacInstanceContext.html">AutofacInstanceContext</a> class.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="properties">Properties
@@ -140,15 +152,18 @@ Class AutofacInstanceContext
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Wcf.AutofacInstanceContext.ComponentRegistry.html#Autofac_Integration_Wcf_AutofacInstanceContext_ComponentRegistry">ComponentRegistry</a></dt>
-    <dd></dd>
+    <dd><p>Gets the associated services with the components that provide them.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Wcf.AutofacInstanceContext.Current.html#Autofac_Integration_Wcf_AutofacInstanceContext_Current">Current</a></dt>
-    <dd></dd>
+    <dd><p>Gets the current <a class="xref" href="Autofac.Integration.Wcf.AutofacInstanceContext.html">AutofacInstanceContext</a> for the operation.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Wcf.AutofacInstanceContext.OperationLifetime.html#Autofac_Integration_Wcf_AutofacInstanceContext_OperationLifetime">OperationLifetime</a></dt>
-    <dd></dd>
+    <dd><p>Gets the request/operation lifetime.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -156,27 +171,36 @@ Class AutofacInstanceContext
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Wcf.AutofacInstanceContext.Attach.html#Autofac_Integration_Wcf_AutofacInstanceContext_Attach_System_ServiceModel_InstanceContext_">Attach(InstanceContext)</a></dt>
-    <dd></dd>
+    <dd><p>Called when the extension is added to the
+<span class="xref">System.ServiceModel.IExtensibleObject`1.Extensions</span> property.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Wcf.AutofacInstanceContext.Detach.html#Autofac_Integration_Wcf_AutofacInstanceContext_Detach_System_ServiceModel_InstanceContext_">Detach(InstanceContext)</a></dt>
-    <dd></dd>
+    <dd><p>Called when an extension is removed from the
+<span class="xref">System.ServiceModel.IExtensibleObject`1.Extensions</span> property.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Wcf.AutofacInstanceContext.Dispose.html#Autofac_Integration_Wcf_AutofacInstanceContext_Dispose">Dispose()</a></dt>
-    <dd></dd>
+    <dd><p>Performs application-defined tasks associated with freeing or releasing
+resources.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Wcf.AutofacInstanceContext.Dispose.html#Autofac_Integration_Wcf_AutofacInstanceContext_Dispose_System_Boolean_">Dispose(bool)</a></dt>
-    <dd></dd>
+    <dd><p>Handles disposal of managed and unmanaged resources.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Wcf.AutofacInstanceContext.Finalize.html#Autofac_Integration_Wcf_AutofacInstanceContext_Finalize">~AutofacInstanceContext()</a></dt>
-    <dd></dd>
+    <dd><p>Finalizes an instance of the <a class="xref" href="Autofac.Integration.Wcf.AutofacInstanceContext.html">AutofacInstanceContext</a> class.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Wcf.AutofacInstanceContext.Resolve.html#Autofac_Integration_Wcf_AutofacInstanceContext_Resolve_Autofac_Integration_Wcf_ServiceImplementationData_">Resolve(ServiceImplementationData)</a></dt>
-    <dd></dd>
+    <dd><p>Retrieves a service instance from the context.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Wcf.AutofacInstanceContext.ResolveComponent.html#Autofac_Integration_Wcf_AutofacInstanceContext_ResolveComponent_Autofac_ResolveRequest__">ResolveComponent(in ResolveRequest)</a></dt>

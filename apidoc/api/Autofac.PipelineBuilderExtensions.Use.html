@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,8 @@ Method Use
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Use a middleware callback in a resolve pipeline.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -133,17 +134,23 @@ Method Use
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>builder</code> <a class="xref" href="Autofac.Core.Resolving.Pipeline.IResolvePipelineBuilder.html">IResolvePipelineBuilder</a></dt>
-  <dd></dd>
+  <dd><p>The container builder.</p>
+</dd>
   <dt><code>phase</code> <a class="xref" href="Autofac.Core.Resolving.Pipeline.PipelinePhase.html">PipelinePhase</a></dt>
-  <dd></dd>
-  <dt><code>callback</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="Autofac.Core.Resolving.Pipeline.ResolveRequestContext.html">ResolveRequestContext</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Autofac.Core.Resolving.Pipeline.ResolveRequestContext.html">ResolveRequestContext</a>&gt;&gt;</dt>
-  <dd></dd>
+  <dd><p>The phase of the pipeline the middleware should run at.</p>
+</dd>
+  <dt><code>callback</code> <span class="xref">Action</span>&lt;<a class="xref" href="Autofac.Core.Resolving.Pipeline.ResolveRequestContext.html">ResolveRequestContext</a>, <span class="xref">Action</span>&lt;<a class="xref" href="Autofac.Core.Resolving.Pipeline.ResolveRequestContext.html">ResolveRequestContext</a>&gt;&gt;</dt>
+  <dd><p>A callback invoked to run your middleware.
+This callback takes a <a class="xref" href="Autofac.Core.Resolving.Pipeline.ResolveRequestContext.html">ResolveRequestContext</a>, containing the context for the resolve request, plus
+a callback to invoke to continue the pipeline.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="Autofac.Core.Resolving.Pipeline.IResolvePipelineBuilder.html">IResolvePipelineBuilder</a></dt>
-  <dd></dd>
+  <dd><p>The same builder instance.</p>
+</dd>
 </dl>
 
 
@@ -163,7 +170,8 @@ Method Use
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Use a middleware callback in a resolve pipeline.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -173,19 +181,26 @@ Method Use
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>builder</code> <a class="xref" href="Autofac.Core.Resolving.Pipeline.IResolvePipelineBuilder.html">IResolvePipelineBuilder</a></dt>
-  <dd></dd>
+  <dd><p>The container builder.</p>
+</dd>
   <dt><code>phase</code> <a class="xref" href="Autofac.Core.Resolving.Pipeline.PipelinePhase.html">PipelinePhase</a></dt>
-  <dd></dd>
+  <dd><p>The phase of the pipeline the middleware should run at.</p>
+</dd>
   <dt><code>insertionMode</code> <a class="xref" href="Autofac.Core.Resolving.Pipeline.MiddlewareInsertionMode.html">MiddlewareInsertionMode</a></dt>
-  <dd></dd>
-  <dt><code>callback</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="Autofac.Core.Resolving.Pipeline.ResolveRequestContext.html">ResolveRequestContext</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Autofac.Core.Resolving.Pipeline.ResolveRequestContext.html">ResolveRequestContext</a>&gt;&gt;</dt>
-  <dd></dd>
+  <dd><p>The insertion mode specifying whether to add at the start or end of the phase.</p>
+</dd>
+  <dt><code>callback</code> <span class="xref">Action</span>&lt;<a class="xref" href="Autofac.Core.Resolving.Pipeline.ResolveRequestContext.html">ResolveRequestContext</a>, <span class="xref">Action</span>&lt;<a class="xref" href="Autofac.Core.Resolving.Pipeline.ResolveRequestContext.html">ResolveRequestContext</a>&gt;&gt;</dt>
+  <dd><p>A callback invoked to run your middleware.
+This callback takes a <a class="xref" href="Autofac.Core.Resolving.Pipeline.ResolveRequestContext.html">ResolveRequestContext</a>, containing the context for the resolve request, plus
+a callback to invoke to continue the pipeline.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="Autofac.Core.Resolving.Pipeline.IResolvePipelineBuilder.html">IResolvePipelineBuilder</a></dt>
-  <dd></dd>
+  <dd><p>The same builder instance.</p>
+</dd>
 </dl>
 
 
@@ -205,7 +220,8 @@ Method Use
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Use a middleware callback in a resolve pipeline.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -215,19 +231,26 @@ Method Use
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>builder</code> <a class="xref" href="Autofac.Core.Resolving.Pipeline.IResolvePipelineBuilder.html">IResolvePipelineBuilder</a></dt>
-  <dd></dd>
-  <dt><code>descriptor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-  <dd></dd>
+  <dd><p>The container builder.</p>
+</dd>
+  <dt><code>descriptor</code> <span class="xref">string</span></dt>
+  <dd><p>A description for the middleware; this will show up in any resolve tracing.</p>
+</dd>
   <dt><code>phase</code> <a class="xref" href="Autofac.Core.Resolving.Pipeline.PipelinePhase.html">PipelinePhase</a></dt>
-  <dd></dd>
-  <dt><code>callback</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="Autofac.Core.Resolving.Pipeline.ResolveRequestContext.html">ResolveRequestContext</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Autofac.Core.Resolving.Pipeline.ResolveRequestContext.html">ResolveRequestContext</a>&gt;&gt;</dt>
-  <dd></dd>
+  <dd><p>The phase of the pipeline the middleware should run at.</p>
+</dd>
+  <dt><code>callback</code> <span class="xref">Action</span>&lt;<a class="xref" href="Autofac.Core.Resolving.Pipeline.ResolveRequestContext.html">ResolveRequestContext</a>, <span class="xref">Action</span>&lt;<a class="xref" href="Autofac.Core.Resolving.Pipeline.ResolveRequestContext.html">ResolveRequestContext</a>&gt;&gt;</dt>
+  <dd><p>A callback invoked to run your middleware.
+This callback takes a <a class="xref" href="Autofac.Core.Resolving.Pipeline.ResolveRequestContext.html">ResolveRequestContext</a>, containing the context for the resolve request, plus
+a callback to invoke to continue the pipeline.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="Autofac.Core.Resolving.Pipeline.IResolvePipelineBuilder.html">IResolvePipelineBuilder</a></dt>
-  <dd></dd>
+  <dd><p>The same builder instance.</p>
+</dd>
 </dl>
 
 
@@ -247,7 +270,8 @@ Method Use
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Use a middleware callback in a resolve pipeline.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -257,21 +281,29 @@ Method Use
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>builder</code> <a class="xref" href="Autofac.Core.Resolving.Pipeline.IResolvePipelineBuilder.html">IResolvePipelineBuilder</a></dt>
-  <dd></dd>
-  <dt><code>descriptor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-  <dd></dd>
+  <dd><p>The container builder.</p>
+</dd>
+  <dt><code>descriptor</code> <span class="xref">string</span></dt>
+  <dd><p>A description for the middleware; this will show up in any resolve tracing.</p>
+</dd>
   <dt><code>phase</code> <a class="xref" href="Autofac.Core.Resolving.Pipeline.PipelinePhase.html">PipelinePhase</a></dt>
-  <dd></dd>
+  <dd><p>The phase of the pipeline the middleware should run at.</p>
+</dd>
   <dt><code>insertionMode</code> <a class="xref" href="Autofac.Core.Resolving.Pipeline.MiddlewareInsertionMode.html">MiddlewareInsertionMode</a></dt>
-  <dd></dd>
-  <dt><code>callback</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="Autofac.Core.Resolving.Pipeline.ResolveRequestContext.html">ResolveRequestContext</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Autofac.Core.Resolving.Pipeline.ResolveRequestContext.html">ResolveRequestContext</a>&gt;&gt;</dt>
-  <dd></dd>
+  <dd><p>The insertion mode specifying whether to add at the start or end of the phase.</p>
+</dd>
+  <dt><code>callback</code> <span class="xref">Action</span>&lt;<a class="xref" href="Autofac.Core.Resolving.Pipeline.ResolveRequestContext.html">ResolveRequestContext</a>, <span class="xref">Action</span>&lt;<a class="xref" href="Autofac.Core.Resolving.Pipeline.ResolveRequestContext.html">ResolveRequestContext</a>&gt;&gt;</dt>
+  <dd><p>A callback invoked to run your middleware.
+This callback takes a <a class="xref" href="Autofac.Core.Resolving.Pipeline.ResolveRequestContext.html">ResolveRequestContext</a>, containing the context for the resolve request, plus
+a callback to invoke to continue the pipeline.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="Autofac.Core.Resolving.Pipeline.IResolvePipelineBuilder.html">IResolvePipelineBuilder</a></dt>
-  <dd></dd>
+  <dd><p>The same builder instance.</p>
+</dd>
 </dl>
 
 

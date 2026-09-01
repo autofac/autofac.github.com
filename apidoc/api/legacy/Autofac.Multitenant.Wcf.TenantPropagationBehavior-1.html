@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class TenantPropagationBehavior&lt;TTenantId&gt; | Autofac ">
       
-      
+      <meta name="description" content="Behavior for WCF clients and service hosts that is used to propagate tenant ID from client to service.">
       <link rel="icon" href="../../favicon.ico">
       <link rel="stylesheet" href="../../public/docfx.min.css">
       <link rel="stylesheet" href="../../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,9 @@ Class TenantPropagationBehavior&lt;TTenantId&gt;
   <dl><dt>Assembly</dt><dd>Autofac.Multitenant.Wcf.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Behavior for WCF clients and service hosts that is used to propagate
+tenant ID from client to service.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -108,13 +110,15 @@ Class TenantPropagationBehavior&lt;TTenantId&gt;
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>TTenantId</code></dt>
-    <dd></dd>
+    <dd><p>The type of the tenant ID to propagate. Must be nullable and
+serializable so it can be added to a message header.</p>
+</dd>
   </dl>
 
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><span class="xref">TenantPropagationBehavior&lt;TTenantId&gt;</span></div>
     </dd>
   </dl>
@@ -124,14 +128,139 @@ Class TenantPropagationBehavior&lt;TTenantId&gt;
 
 
 
+  <h2 id="Autofac_Multitenant_Wcf_TenantPropagationBehavior_1_examples">Examples</h2>
+  <p>
+In the following examples, the tenant ID is a <span class="xref">string</span>,
+so the <code class="typeparamref">TTenantId</code> in the examples corresponds.
+In your application, your tenant ID may be a nullable GUID or some other
+object, so you'd need to update accordingly. That would mean passing
+a different type as <code class="typeparamref">TTenantId</code> and implementing
+a custom <a class="xref" href="../Autofac.Multitenant.ITenantIdentificationStrategy.html">ITenantIdentificationStrategy</a>
+that parses the appropriate tenant ID from the execution context.
+</p>
+<p>
+The following snippet shows what registration of this behavior
+might look like in an ASP.NET application that consumes WCF services.
+</p>
+<pre><code class="lang-csharp">public class MvcApplication : HttpApplication, IContainerProviderAccessor
+{
+  private static IContainerProvider _containerProvider;
+<p>public IContainerProvider ContainerProvider
+{
+get { return _containerProvider; }
+}</p>
+<p>public static void RegisterRoutes(RouteCollection routes)
+{
+// Register your routes as normal.
+}</p>
+<p>protected void Application_Start()
+{
+// Create a tenant ID strategy that will get the tenant from
+// your ASP.NET request context.
+var tenantIdStrategy = new RequestParameterTenantIdentificationStrategy(&quot;tenant&quot;);</p>
+<pre><code>// Register application-level dependencies and controllers.
+var builder = new ContainerBuilder();
+builder.RegisterType&lt;HomeController&gt;();
+// ... and so on.
 
+// When you register the WCF service client, add the
+// TenantPropagationBehavior to the Opening event:
+
+builder.Register(
+  c =&gt; new ChannelFactory&lt;IMultitenantService&gt;(
+    new BasicHttpBinding(),
+    new EndpointAddress(&quot;http://server/TheService.svc&quot;))).SingleInstance();
+builder.Register(
+  c =&gt;
+  {
+    var factory = c.Resolve&lt;ChannelFactory&lt;IMultitenantService&gt;&gt;();
+    factory.Opening +=
+      (sender, args) =&gt;
+        factory.Endpoint.Behaviors.Add(
+        new TenantPropagationBehavior&lt;string&gt;(tenantIdStrategy);
+    return factory.CreateChannel()
+  }).InstancePerHttpRequest();
+
+// Create the multitenant container.
+var mtc = new MultitenantContainer(tenantIdStrategy, builder.Build());
+
+// Register tenant specific overrides and set up the
+// application container provider.
+_containerProvider = new ContainerProvider(mtc);
+
+// Do other MVC setup like route registration, etc.
+ControllerBuilder.Current.SetControllerFactory(new AutofacControllerFactory(this.ContainerProvider));
+AreaRegistration.RegisterAllAreas();
+RegisterRoutes(RouteTable.Routes);
+</code></pre>
+<p>}
+}</p></code></pre>
+<p>
+Note that much of the above code is the standard ASP.NET application
+wireup with Autofac. The important part is when you register the service
+client - it needs to have a <a class="xref" href="Autofac.Multitenant.Wcf.TenantPropagationBehavior-1.html">TenantPropagationBehavior&lt;TTenantId&gt;</a>
+attached to it that can get the container provider from the
+current application.
+</p>
+<p>
+The following snippet shows what registration of this behavior
+looks like in a WCF application hosted in IIS:
+</p>
+<pre><code class="lang-csharp">public class Global : System.Web.HttpApplication
+{
+  protected void Application_Start(object sender, EventArgs e)
+  {
+      // Create the tenant ID strategy. Required for multitenant integration.
+      var tenantIdStrategy = new OperationContextTenantIdentificationStrategy();
+<pre><code>  // Register application-level dependencies and service implementations.
+  var builder = new ContainerBuilder();
+  builder.RegisterType&lt;BaseImplementation&gt;().As&lt;IMultitenantService&gt;();
+  // ... and so on.
+
+  // Create the multitenant container.
+  var mtc = new MultitenantContainer(tenantIdStrategy, builder.Build());
+
+  // Configure tenant-specific overrides and set the WCF host container.
+  Autofac.Multitenant.Wcf.AutofacHostFactory.Container = mtc;
+
+  // Add a behavior to service hosts that get created so incoming messages
+  // get inspected and the tenant ID can be parsed from message headers.
+  Autofac.Multitenant.Wcf.AutofacHostFactory.HostConfigurationAction =
+    host =&gt;
+      host.Opening += (s, args) =&gt;
+        host.Description.Behaviors.Add(new TenantPropagationBehavior&lt;string&gt;(tenantIdStrategy));
+</code></pre>
+<p>}
+}</p></code></pre>
+<p>
+Note that it is also very similar to standard wireup with Autofac WCF
+integration, just that you use the multitenant WCF host, a multitenant
+container, and a behavior to get the tenant ID from the operation context.
+</p>
+
+
+  <h2 id="Autofac_Multitenant_Wcf_TenantPropagationBehavior_1_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+This behavior applies the <a class="xref" href="Autofac.Multitenant.Wcf.TenantPropagationMessageInspector-1.html">TenantPropagationMessageInspector&lt;TTenantId&gt;</a>
+to WCF clients and service hosts to automatically get the tenant ID on
+the WCF client end, add the ID to a header on the outbound message, and
+have the tenant ID read from headers on the service side and added to the
+operation context in an
+<a class="xref" href="Autofac.Multitenant.Wcf.TenantIdentificationContextExtension.html">TenantIdentificationContextExtension</a>.
+This allows you, on the service side, to use the
+<a class="xref" href="Autofac.Multitenant.Wcf.OperationContextTenantIdentificationStrategy.html">OperationContextTenantIdentificationStrategy</a>
+as your registered <a class="xref" href="../Autofac.Multitenant.ITenantIdentificationStrategy.html">ITenantIdentificationStrategy</a>.
+</p>
+</div>
 
   <h2 class="section" id="constructors">Constructors
 </h2>
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.Wcf.TenantPropagationBehavior-1.-ctor.html#Autofac_Multitenant_Wcf_TenantPropagationBehavior_1__ctor_Autofac_Multitenant_ITenantIdentificationStrategy_">TenantPropagationBehavior(ITenantIdentificationStrategy)</a></dt>
-    <dd></dd>
+    <dd><p>Initializes a new instance of the
+<a class="xref" href="Autofac.Multitenant.Wcf.TenantPropagationBehavior-1.html">TenantPropagationBehavior&lt;TTenantId&gt;</a> class.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="properties">Properties
@@ -139,7 +268,8 @@ Class TenantPropagationBehavior&lt;TTenantId&gt;
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.Wcf.TenantPropagationBehavior-1.TenantIdentificationStrategy.html#Autofac_Multitenant_Wcf_TenantPropagationBehavior_1_TenantIdentificationStrategy">TenantIdentificationStrategy</a></dt>
-    <dd></dd>
+    <dd><p>Gets the strategy used for identifying the current tenant.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -147,34 +277,48 @@ Class TenantPropagationBehavior&lt;TTenantId&gt;
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.Wcf.TenantPropagationBehavior-1.AddBindingParameters.html#Autofac_Multitenant_Wcf_TenantPropagationBehavior_1_AddBindingParameters_System_ServiceModel_Description_ServiceDescription_System_ServiceModel_ServiceHostBase_System_Collections_ObjectModel_Collection_System_ServiceModel_Description_ServiceEndpoint__System_ServiceModel_Channels_BindingParameterCollection_">AddBindingParameters(ServiceDescription, ServiceHostBase, Collection&lt;ServiceEndpoint&gt;, BindingParameterCollection)</a></dt>
-    <dd></dd>
+    <dd><p>Provides the ability to pass custom data to binding elements to support the contract implementation.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.Wcf.TenantPropagationBehavior-1.AddBindingParameters.html#Autofac_Multitenant_Wcf_TenantPropagationBehavior_1_AddBindingParameters_System_ServiceModel_Description_ServiceEndpoint_System_ServiceModel_Channels_BindingParameterCollection_">AddBindingParameters(ServiceEndpoint, BindingParameterCollection)</a></dt>
-    <dd></dd>
+    <dd><p>Implement to pass data at runtime to bindings to support custom behavior.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.Wcf.TenantPropagationBehavior-1.ApplyClientBehavior.html#Autofac_Multitenant_Wcf_TenantPropagationBehavior_1_ApplyClientBehavior_System_ServiceModel_Description_ServiceEndpoint_System_ServiceModel_Dispatcher_ClientRuntime_">ApplyClientBehavior(ServiceEndpoint, ClientRuntime)</a></dt>
-    <dd></dd>
+    <dd><p>Adds the <a class="xref" href="Autofac.Multitenant.Wcf.TenantPropagationMessageInspector-1.html">TenantPropagationMessageInspector&lt;TTenantId&gt;</a>
+to the client.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.Wcf.TenantPropagationBehavior-1.ApplyDispatchBehavior.html#Autofac_Multitenant_Wcf_TenantPropagationBehavior_1_ApplyDispatchBehavior_System_ServiceModel_Description_ServiceDescription_System_ServiceModel_ServiceHostBase_">ApplyDispatchBehavior(ServiceDescription, ServiceHostBase)</a></dt>
-    <dd></dd>
+    <dd><p>Adds the <a class="xref" href="Autofac.Multitenant.Wcf.TenantPropagationMessageInspector-1.html">TenantPropagationMessageInspector&lt;TTenantId&gt;</a>
+to the service endpoints.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.Wcf.TenantPropagationBehavior-1.ApplyDispatchBehavior.html#Autofac_Multitenant_Wcf_TenantPropagationBehavior_1_ApplyDispatchBehavior_System_ServiceModel_Description_ServiceEndpoint_System_ServiceModel_Dispatcher_EndpointDispatcher_">ApplyDispatchBehavior(ServiceEndpoint, EndpointDispatcher)</a></dt>
-    <dd></dd>
+    <dd><p>Implements a modification or extension of the service across an endpoint.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.Wcf.TenantPropagationBehavior-1.Validate.html#Autofac_Multitenant_Wcf_TenantPropagationBehavior_1_Validate_System_ServiceModel_Description_ServiceDescription_System_ServiceModel_ServiceHostBase_">Validate(ServiceDescription, ServiceHostBase)</a></dt>
-    <dd></dd>
+    <dd><p>Provides the ability to inspect the service host and the service description to confirm that the service can run successfully.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.Wcf.TenantPropagationBehavior-1.Validate.html#Autofac_Multitenant_Wcf_TenantPropagationBehavior_1_Validate_System_ServiceModel_Description_ServiceEndpoint_">Validate(ServiceEndpoint)</a></dt>
-    <dd></dd>
+    <dd><p>Implement to confirm that the endpoint meets some intended criteria.</p>
+</dd>
   </dl>
 
 
+  <h2 id="seealso">See Also</h2>
+  <div class="seealso">
+      <div><a class="xref" href="Autofac.Multitenant.Wcf.TenantPropagationMessageInspector-1.html">TenantPropagationMessageInspector</a>&lt;TTenantId&gt;</div>
+      <div><a class="xref" href="Autofac.Multitenant.Wcf.OperationContextTenantIdentificationStrategy.html">OperationContextTenantIdentificationStrategy</a></div>
+  </div>
 
 </article>
 

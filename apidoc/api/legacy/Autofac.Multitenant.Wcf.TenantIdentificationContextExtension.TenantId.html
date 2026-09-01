@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,11 +123,12 @@ Property TenantId
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Gets or sets the tenant ID.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public object TenantId { get; set; }</code></pre>
+  <pre><code class="lang-csharp hljs">public object? TenantId { get; set; }</code></pre>
 </div>
 
 
@@ -136,8 +137,11 @@ Property TenantId
 
 <h4 class="section">Property Value</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-  <dd></dd>
+  <dt><span class="xref">object</span></dt>
+  <dd><p>An <span class="xref">object</span> that uniquely identifies the tenant
+under which the current operation is executing, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>
+to indicate the default tenant.</p>
+</dd>
 </dl>
 
 

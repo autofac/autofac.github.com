@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,8 @@ Method RegisterGeneratedFactory
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Registers a factory delegate.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -134,15 +135,18 @@ public static IRegistrationBuilder&lt;Delegate, GeneratedFactoryActivatorData, S
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>builder</code> <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a></dt>
-  <dd></dd>
-  <dt><code>delegateType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
-  <dd></dd>
+  <dd><p>Container builder.</p>
+</dd>
+  <dt><code>delegateType</code> <span class="xref">Type</span></dt>
+  <dd><p>Factory type to generate.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.delegate">Delegate</a>, <a class="xref" href="Autofac.Features.GeneratedFactories.GeneratedFactoryActivatorData.html">GeneratedFactoryActivatorData</a>, <a class="xref" href="Autofac.Builder.SingleRegistrationStyle.html">SingleRegistrationStyle</a>&gt;</dt>
-  <dd></dd>
+  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;<span class="xref">Delegate</span>, <a class="xref" href="Autofac.Features.GeneratedFactories.GeneratedFactoryActivatorData.html">GeneratedFactoryActivatorData</a>, <a class="xref" href="Autofac.Builder.SingleRegistrationStyle.html">SingleRegistrationStyle</a>&gt;</dt>
+  <dd><p>Registration builder allowing the registration to be configured.</p>
+</dd>
 </dl>
 
 
@@ -151,6 +155,10 @@ public static IRegistrationBuilder&lt;Delegate, GeneratedFactoryActivatorData, S
 
 
 
+<h4 class="section" id="Autofac_Builder_RegistrationExtensions_RegisterGeneratedFactory_Autofac_ContainerBuilder_System_Type__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>Factory delegates are provided automatically in Autofac 2,
+and this method is generally not required.</p>
+</div>
 
 
 
@@ -162,7 +170,8 @@ public static IRegistrationBuilder&lt;Delegate, GeneratedFactoryActivatorData, S
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Registers a factory delegate.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -173,17 +182,21 @@ public static IRegistrationBuilder&lt;Delegate, GeneratedFactoryActivatorData, S
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>builder</code> <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a></dt>
-  <dd></dd>
-  <dt><code>delegateType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
-  <dd></dd>
+  <dd><p>Container builder.</p>
+</dd>
+  <dt><code>delegateType</code> <span class="xref">Type</span></dt>
+  <dd><p>Factory type to generate.</p>
+</dd>
   <dt><code>service</code> <a class="xref" href="Autofac.Core.Service.html">Service</a></dt>
-  <dd></dd>
+  <dd><p>The service that the delegate will return instances of.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.delegate">Delegate</a>, <a class="xref" href="Autofac.Features.GeneratedFactories.GeneratedFactoryActivatorData.html">GeneratedFactoryActivatorData</a>, <a class="xref" href="Autofac.Builder.SingleRegistrationStyle.html">SingleRegistrationStyle</a>&gt;</dt>
-  <dd></dd>
+  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;<span class="xref">Delegate</span>, <a class="xref" href="Autofac.Features.GeneratedFactories.GeneratedFactoryActivatorData.html">GeneratedFactoryActivatorData</a>, <a class="xref" href="Autofac.Builder.SingleRegistrationStyle.html">SingleRegistrationStyle</a>&gt;</dt>
+  <dd><p>Registration builder allowing the registration to be configured.</p>
+</dd>
 </dl>
 
 
@@ -192,6 +205,10 @@ public static IRegistrationBuilder&lt;Delegate, GeneratedFactoryActivatorData, S
 
 
 
+<h4 class="section" id="Autofac_Builder_RegistrationExtensions_RegisterGeneratedFactory_Autofac_ContainerBuilder_System_Type_Autofac_Core_Service__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>Factory delegates are provided automatically in Autofac 2, and
+this method is generally not required.</p>
+</div>
 
 
 
@@ -203,7 +220,8 @@ public static IRegistrationBuilder&lt;Delegate, GeneratedFactoryActivatorData, S
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Registers a factory delegate.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -214,21 +232,25 @@ public static IRegistrationBuilder&lt;TDelegate, GeneratedFactoryActivatorData, 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>builder</code> <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a></dt>
-  <dd></dd>
+  <dd><p>Container builder.</p>
+</dd>
   <dt><code>service</code> <a class="xref" href="Autofac.Core.Service.html">Service</a></dt>
-  <dd></dd>
+  <dd><p>The service that the delegate will return instances of.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TDelegate, <a class="xref" href="Autofac.Features.GeneratedFactories.GeneratedFactoryActivatorData.html">GeneratedFactoryActivatorData</a>, <a class="xref" href="Autofac.Builder.SingleRegistrationStyle.html">SingleRegistrationStyle</a>&gt;</dt>
-  <dd></dd>
+  <dd><p>Registration builder allowing the registration to be configured.</p>
+</dd>
 </dl>
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>TDelegate</code></dt>
-  <dd></dd>
+  <dd><p>The type of the delegate.</p>
+</dd>
 </dl>
 
 
@@ -236,6 +258,10 @@ public static IRegistrationBuilder&lt;TDelegate, GeneratedFactoryActivatorData, 
 
 
 
+<h4 class="section" id="Autofac_Builder_RegistrationExtensions_RegisterGeneratedFactory__1_Autofac_ContainerBuilder_Autofac_Core_Service__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>Factory delegates are provided automatically in Autofac 2,
+and this method is generally not required.</p>
+</div>
 
 
 
@@ -247,7 +273,8 @@ public static IRegistrationBuilder&lt;TDelegate, GeneratedFactoryActivatorData, 
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Registers a factory delegate.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -258,19 +285,22 @@ public static IRegistrationBuilder&lt;TDelegate, GeneratedFactoryActivatorData, 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>builder</code> <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a></dt>
-  <dd></dd>
+  <dd><p>Container builder.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TDelegate, <a class="xref" href="Autofac.Features.GeneratedFactories.GeneratedFactoryActivatorData.html">GeneratedFactoryActivatorData</a>, <a class="xref" href="Autofac.Builder.SingleRegistrationStyle.html">SingleRegistrationStyle</a>&gt;</dt>
-  <dd></dd>
+  <dd><p>Registration builder allowing the registration to be configured.</p>
+</dd>
 </dl>
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>TDelegate</code></dt>
-  <dd></dd>
+  <dd><p>The type of the delegate.</p>
+</dd>
 </dl>
 
 
@@ -278,6 +308,10 @@ public static IRegistrationBuilder&lt;TDelegate, GeneratedFactoryActivatorData, 
 
 
 
+<h4 class="section" id="Autofac_Builder_RegistrationExtensions_RegisterGeneratedFactory__1_Autofac_ContainerBuilder__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>Factory delegates are provided automatically in Autofac 2,
+and this method is generally not required.</p>
+</div>
 
 
 

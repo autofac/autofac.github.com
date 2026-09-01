@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class ResolutionValueExtensions | Autofac ">
       
-      
+      <meta name="description" content="Adds syntactic convenience methods to the  interface, specifically to support value types in the nullable reference scenario.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,9 @@ Class ResolutionValueExtensions
   <dl><dt>Assembly</dt><dd>Autofac.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Adds syntactic convenience methods to the <a class="xref" href="Autofac.IComponentContext.html">IComponentContext</a> interface,
+specifically to support value types in the nullable reference scenario.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -109,7 +111,7 @@ Class ResolutionValueExtensions
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><span class="xref">ResolutionValueExtensions</span></div>
     </dd>
   </dl>
@@ -126,43 +128,62 @@ Class ResolutionValueExtensions
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.ResolutionValueExtensions.ResolveOptionalKeyed.html#Autofac_ResolutionValueExtensions_ResolveOptionalKeyed__1_Autofac_IComponentContext_System_Object_">ResolveOptionalKeyed&lt;TService&gt;(IComponentContext, object)</a></dt>
-    <dd></dd>
+    <dd><p>Retrieve a service from the context, or null if the service is not
+registered.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.ResolutionValueExtensions.ResolveOptionalKeyed.html#Autofac_ResolutionValueExtensions_ResolveOptionalKeyed__1_Autofac_IComponentContext_System_Object_Autofac_Core_Parameter___">ResolveOptionalKeyed&lt;TService&gt;(IComponentContext, object, params Parameter[])</a></dt>
-    <dd></dd>
+    <dd><p>Retrieve a service from the context, or null if the service is not
+registered.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.ResolutionValueExtensions.ResolveOptionalKeyed.html#Autofac_ResolutionValueExtensions_ResolveOptionalKeyed__1_Autofac_IComponentContext_System_Object_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter__">ResolveOptionalKeyed&lt;TService&gt;(IComponentContext, object, IEnumerable&lt;Parameter&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Retrieve a service from the context, or null if the service is not
+registered.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.ResolutionValueExtensions.ResolveOptionalNamed.html#Autofac_ResolutionValueExtensions_ResolveOptionalNamed__1_Autofac_IComponentContext_System_String_">ResolveOptionalNamed&lt;TService&gt;(IComponentContext, string)</a></dt>
-    <dd></dd>
+    <dd><p>Retrieve a service from the context, or null if the service is not
+registered.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.ResolutionValueExtensions.ResolveOptionalNamed.html#Autofac_ResolutionValueExtensions_ResolveOptionalNamed__1_Autofac_IComponentContext_System_String_Autofac_Core_Parameter___">ResolveOptionalNamed&lt;TService&gt;(IComponentContext, string, params Parameter[])</a></dt>
-    <dd></dd>
+    <dd><p>Retrieve a service from the context, or null if the service is not
+registered.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.ResolutionValueExtensions.ResolveOptionalNamed.html#Autofac_ResolutionValueExtensions_ResolveOptionalNamed__1_Autofac_IComponentContext_System_String_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter__">ResolveOptionalNamed&lt;TService&gt;(IComponentContext, string, IEnumerable&lt;Parameter&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Retrieve a service from the context, or null if the service is not
+registered.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.ResolutionValueExtensions.ResolveOptional.html#Autofac_ResolutionValueExtensions_ResolveOptional__1_Autofac_IComponentContext_">ResolveOptional&lt;TService&gt;(IComponentContext)</a></dt>
-    <dd></dd>
+    <dd><p>Retrieve a service from the context, or null if the service is not
+registered.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.ResolutionValueExtensions.ResolveOptional.html#Autofac_ResolutionValueExtensions_ResolveOptional__1_Autofac_IComponentContext_Autofac_Core_Parameter___">ResolveOptional&lt;TService&gt;(IComponentContext, params Parameter[])</a></dt>
-    <dd></dd>
+    <dd><p>Retrieve a service from the context, or null if the service is not
+registered.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.ResolutionValueExtensions.ResolveOptional.html#Autofac_ResolutionValueExtensions_ResolveOptional__1_Autofac_IComponentContext_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter__">ResolveOptional&lt;TService&gt;(IComponentContext, IEnumerable&lt;Parameter&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Retrieve a service from the context, or null if the service is not
+registered.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.ResolutionValueExtensions.TryResolve.html#Autofac_ResolutionValueExtensions_TryResolve__1_Autofac_IComponentContext_System_Nullable___0___">TryResolve&lt;T&gt;(IComponentContext, out T?)</a></dt>
-    <dd></dd>
+    <dd><p>Try to retrieve a service from the context.</p>
+</dd>
   </dl>
 
 

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class TenantPropagationMessageInspector&lt;TTenantId&gt; | Autofac ">
       
-      
+      <meta name="description" content="Message inspector that helps in passing the tenant ID from a WCF client to the respective service.">
       <link rel="icon" href="../../favicon.ico">
       <link rel="stylesheet" href="../../public/docfx.min.css">
       <link rel="stylesheet" href="../../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,9 @@ Class TenantPropagationMessageInspector&lt;TTenantId&gt;
   <dl><dt>Assembly</dt><dd>Autofac.Multitenant.Wcf.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Message inspector that helps in passing the tenant ID from a WCF client
+to the respective service.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -108,13 +110,15 @@ Class TenantPropagationMessageInspector&lt;TTenantId&gt;
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>TTenantId</code></dt>
-    <dd></dd>
+    <dd><p>The type of the tenant ID to propagate. Must be nullable and
+serializable so it can be added to a message header.</p>
+</dd>
   </dl>
 
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><span class="xref">TenantPropagationMessageInspector&lt;TTenantId&gt;</span></div>
     </dd>
   </dl>
@@ -125,13 +129,30 @@ Class TenantPropagationMessageInspector&lt;TTenantId&gt;
 
 
 
+  <h2 id="Autofac_Multitenant_Wcf_TenantPropagationMessageInspector_1_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+Use this in conjunction with the <a class="xref" href="Autofac.Multitenant.Wcf.TenantPropagationBehavior-1.html">TenantPropagationBehavior&lt;TTenantId&gt;</a>
+to automatically get the tenant ID on the WCF client end, add the ID
+to a header on the outbound message, and have the tenant ID read from
+headers on the service side and added to the operation context in an
+<a class="xref" href="Autofac.Multitenant.Wcf.TenantIdentificationContextExtension.html">TenantIdentificationContextExtension</a>.
+This allows you, on the service side, to use the
+<a class="xref" href="Autofac.Multitenant.Wcf.OperationContextTenantIdentificationStrategy.html">OperationContextTenantIdentificationStrategy</a>
+as your registered <a class="xref" href="../Autofac.Multitenant.ITenantIdentificationStrategy.html">ITenantIdentificationStrategy</a>.
+</p>
+<p>
+For a usage example, see <a class="xref" href="Autofac.Multitenant.Wcf.TenantPropagationBehavior-1.html">TenantPropagationBehavior&lt;TTenantId&gt;</a>.
+</p>
+</div>
 
   <h2 class="section" id="constructors">Constructors
 </h2>
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.Wcf.TenantPropagationMessageInspector-1.-ctor.html#Autofac_Multitenant_Wcf_TenantPropagationMessageInspector_1__ctor_Autofac_Multitenant_ITenantIdentificationStrategy_">TenantPropagationMessageInspector(ITenantIdentificationStrategy)</a></dt>
-    <dd></dd>
+    <dd><p>Initializes a new instance of the
+<a class="xref" href="Autofac.Multitenant.Wcf.TenantPropagationMessageInspector-1.html">TenantPropagationMessageInspector&lt;TTenantId&gt;</a> class.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="fields">Fields
@@ -139,11 +160,13 @@ Class TenantPropagationMessageInspector&lt;TTenantId&gt;
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.Wcf.TenantPropagationMessageInspector-1.TenantHeaderName.html">TenantHeaderName</a></dt>
-    <dd></dd>
+    <dd><p>Name of the header that gets added to messages and carries the tenant ID.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.Wcf.TenantPropagationMessageInspector-1.TenantHeaderNamespace.html">TenantHeaderNamespace</a></dt>
-    <dd></dd>
+    <dd><p>Namespace of the header that gets added to messages and carries tenant information.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="properties">Properties
@@ -151,7 +174,8 @@ Class TenantPropagationMessageInspector&lt;TTenantId&gt;
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.Wcf.TenantPropagationMessageInspector-1.TenantIdentificationStrategy.html#Autofac_Multitenant_Wcf_TenantPropagationMessageInspector_1_TenantIdentificationStrategy">TenantIdentificationStrategy</a></dt>
-    <dd></dd>
+    <dd><p>Gets the strategy used for identifying the current tenant.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -159,22 +183,34 @@ Class TenantPropagationMessageInspector&lt;TTenantId&gt;
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.Wcf.TenantPropagationMessageInspector-1.AfterReceiveReply.html#Autofac_Multitenant_Wcf_TenantPropagationMessageInspector_1_AfterReceiveReply_System_ServiceModel_Channels_Message__System_Object_">AfterReceiveReply(ref Message, object)</a></dt>
-    <dd></dd>
+    <dd><p>Enables inspection or modification of a message after a reply message
+is received but prior to passing it back to the client application.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.Wcf.TenantPropagationMessageInspector-1.AfterReceiveRequest.html#Autofac_Multitenant_Wcf_TenantPropagationMessageInspector_1_AfterReceiveRequest_System_ServiceModel_Channels_Message__System_ServiceModel_IClientChannel_System_ServiceModel_InstanceContext_">AfterReceiveRequest(ref Message, IClientChannel, InstanceContext)</a></dt>
-    <dd></dd>
+    <dd><p>Inspects inbound message headers and adds an
+<a class="xref" href="Autofac.Multitenant.Wcf.TenantIdentificationContextExtension.html">TenantIdentificationContextExtension</a>
+to the current operation context with the tenant ID.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.Wcf.TenantPropagationMessageInspector-1.BeforeSendReply.html#Autofac_Multitenant_Wcf_TenantPropagationMessageInspector_1_BeforeSendReply_System_ServiceModel_Channels_Message__System_Object_">BeforeSendReply(ref Message, object)</a></dt>
-    <dd></dd>
+    <dd><p>Called after the operation has returned but before the reply message
+is sent.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.Wcf.TenantPropagationMessageInspector-1.BeforeSendRequest.html#Autofac_Multitenant_Wcf_TenantPropagationMessageInspector_1_BeforeSendRequest_System_ServiceModel_Channels_Message__System_ServiceModel_IClientChannel_">BeforeSendRequest(ref Message, IClientChannel)</a></dt>
-    <dd></dd>
+    <dd><p>Adds the tenant ID to the outbound message headers.</p>
+</dd>
   </dl>
 
 
+  <h2 id="seealso">See Also</h2>
+  <div class="seealso">
+      <div><a class="xref" href="Autofac.Multitenant.Wcf.TenantPropagationBehavior-1.html">TenantPropagationBehavior</a>&lt;TTenantId&gt;</div>
+  </div>
 
 </article>
 

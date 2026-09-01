@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,8 @@ Method GetAssembly
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Reads an assembly name from configuration and parses the assembly name into an assembly.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -132,16 +133,22 @@ Method GetAssembly
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><code>configuration</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration.iconfiguration">IConfiguration</a></dt>
-  <dd></dd>
-  <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-  <dd></dd>
+  <dt><code>configuration</code> <span class="xref">IConfiguration</span></dt>
+  <dd><p>An <span class="xref">Microsoft.Extensions.Configuration.IConfiguration</span> from which the default assembly
+should be read.</p>
+</dd>
+  <dt><code>key</code> <span class="xref">string</span></dt>
+  <dd><p>The <span class="xref">string</span> key in configuration where the assembly name
+is specified.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.assembly">Assembly</a></dt>
-  <dd></dd>
+  <dt><span class="xref">Assembly</span></dt>
+  <dd><p>An <span class="xref">System.Reflection.Assembly</span> if the assembly is specified on
+<code class="paramref">configuration</code>; or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if not.</p>
+</dd>
 </dl>
 
 
@@ -151,6 +158,15 @@ Method GetAssembly
 
 
 
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><span class="xref">ArgumentNullException</span></dt>
+  <dd><p>Thrown if <code class="paramref">configuration</code> or <code class="paramref">key</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+  <dt><span class="xref">ArgumentException</span></dt>
+  <dd><p>Thrown if <code class="paramref">key</code> is empty or whitespace.</p>
+</dd>
+</dl>
 
 
 

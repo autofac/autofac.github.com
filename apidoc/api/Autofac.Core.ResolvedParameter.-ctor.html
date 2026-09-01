@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,8 @@ Constructor ResolvedParameter
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Autofac.Core.ResolvedParameter.html">ResolvedParameter</a> class.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -132,10 +133,12 @@ Constructor ResolvedParameter
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><code>predicate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo">ParameterInfo</a>, <a class="xref" href="Autofac.IComponentContext.html">IComponentContext</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
-  <dd></dd>
-  <dt><code>valueAccessor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo">ParameterInfo</a>, <a class="xref" href="Autofac.IComponentContext.html">IComponentContext</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
-  <dd></dd>
+  <dt><code>predicate</code> <span class="xref">Func</span>&lt;<span class="xref">ParameterInfo</span>, <a class="xref" href="Autofac.IComponentContext.html">IComponentContext</a>, <span class="xref">bool</span>&gt;</dt>
+  <dd><p>A predicate that determines which parameters on a constructor will be supplied by this instance.</p>
+</dd>
+  <dt><code>valueAccessor</code> <span class="xref">Func</span>&lt;<span class="xref">ParameterInfo</span>, <a class="xref" href="Autofac.IComponentContext.html">IComponentContext</a>, <span class="xref">object</span>&gt;</dt>
+  <dd><p>A function that supplies the parameter value given the context.</p>
+</dd>
 </dl>
 
 

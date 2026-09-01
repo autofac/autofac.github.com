@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class RegistrationExtensions | Autofac ">
       
-      
+      <meta name="description" content="Extends registration syntax for common web scenarios.">
       <link rel="icon" href="../../favicon.ico">
       <link rel="stylesheet" href="../../public/docfx.min.css">
       <link rel="stylesheet" href="../../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,8 @@ Class RegistrationExtensions
   <dl><dt>Assembly</dt><dd>Autofac.Integration.Web.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Extends registration syntax for common web scenarios.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -109,7 +110,7 @@ Class RegistrationExtensions
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><span class="xref">RegistrationExtensions</span></div>
     </dd>
   </dl>
@@ -126,11 +127,15 @@ Class RegistrationExtensions
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Web.RegistrationExtensions.CacheInSession.html#Autofac_Integration_Web_RegistrationExtensions_CacheInSession__3_Autofac_Builder_IRegistrationBuilder___0___1___2__">CacheInSession&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Cache instances in the web session. This implies external ownership (disposal is not
+available.) All dependencies must also have external ownership.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Web.RegistrationExtensions.InstancePerHttpRequest.html#Autofac_Integration_Web_RegistrationExtensions_InstancePerHttpRequest__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Object___">InstancePerHttpRequest&lt;TLimit, TActivatorData, TStyle&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, TStyle&gt;, params object[])</a></dt>
-    <dd></dd>
+    <dd><p>Share one instance of the component within the context of a single
+HTTP request.</p>
+</dd>
   </dl>
 
 

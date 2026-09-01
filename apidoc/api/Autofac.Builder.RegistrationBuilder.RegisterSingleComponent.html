@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,9 @@ Method RegisterSingleComponent
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Register a component in the component registry. This helper method is necessary
+in order to execute OnRegistered hooks and respect PreserveDefaults.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -133,20 +135,25 @@ Method RegisterSingleComponent
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>cr</code> <a class="xref" href="Autofac.Core.Registration.IComponentRegistryBuilder.html">IComponentRegistryBuilder</a></dt>
-  <dd></dd>
+  <dd><p>Component registry to make registration in.</p>
+</dd>
   <dt><code>builder</code> <a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;</dt>
-  <dd></dd>
+  <dd><p>Registration builder with data for new registration.</p>
+</dd>
 </dl>
 
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>TLimit</code></dt>
-  <dd></dd>
+  <dd><p>The most specific type to which instances of the registration can be cast.</p>
+</dd>
   <dt><code>TActivatorData</code></dt>
-  <dd></dd>
+  <dd><p>Activator builder type.</p>
+</dd>
   <dt><code>TSingleRegistrationStyle</code></dt>
-  <dd></dd>
+  <dd><p>Registration style for individual components.</p>
+</dd>
 </dl>
 
 

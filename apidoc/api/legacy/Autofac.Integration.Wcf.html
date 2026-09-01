@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -95,61 +95,83 @@ Classes
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Integration.Wcf.AutofacDependencyInjectionServiceBehavior.html">AutofacDependencyInjectionServiceBehavior</a></dt>
-      <dd></dd>
+      <dd><p>Sets the <span class="xref">System.ServiceModel.Dispatcher.IInstanceProvider</span> on all endpoint dispatchers to use
+an <a class="xref" href="Autofac.Integration.Wcf.AutofacInstanceProvider.html">AutofacInstanceProvider</a>.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Integration.Wcf.AutofacHostFactory.html">AutofacHostFactory</a></dt>
-      <dd></dd>
+      <dd><p>Creates service host instances for WCF.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Integration.Wcf.AutofacInstanceContext.html">AutofacInstanceContext</a></dt>
-      <dd></dd>
+      <dd><p>Manages instance lifecycle using an Autofac inner container.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Integration.Wcf.AutofacInstanceProvider.html">AutofacInstanceProvider</a></dt>
-      <dd></dd>
+      <dd><p>Retrieves service instances from an Autofac container.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Integration.Wcf.AutofacServiceHostFactory.html">AutofacServiceHostFactory</a></dt>
-      <dd></dd>
+      <dd><p>Creates <span class="xref">System.ServiceModel.ServiceHost</span> instances for WCF.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Integration.Wcf.AutofacWebServiceHostFactory.html">AutofacWebServiceHostFactory</a></dt>
-      <dd></dd>
+      <dd><p>Creates <span class="xref">System.ServiceModel.Web.WebServiceHost</span> instances for WCF.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Autofac.Integration.Wcf.ContractForwardingProxy.html">ContractForwardingProxy</a></dt>
+      <dd><p>A <span class="xref">System.Reflection.DispatchProxy</span> that implements a WCF service contract
+interface and forwards every call to a wrapped target instance.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Integration.Wcf.DefaultServiceImplementationDataProvider.html">DefaultServiceImplementationDataProvider</a></dt>
-      <dd></dd>
+      <dd><p>Simple resolver for WCF service implementations. Allows for single-tenant
+handling of named or typed services.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Integration.Wcf.RegistrationExtensions.html">RegistrationExtensions</a></dt>
-      <dd></dd>
+      <dd><p>Extend the registration syntax with WCF-specific helpers.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Integration.Wcf.ServiceHostExtensions.html">ServiceHostExtensions</a></dt>
-      <dd></dd>
+      <dd><p>Adds dependency injection related methods to service hosts.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Integration.Wcf.ServiceImplementationData.html">ServiceImplementationData</a></dt>
-      <dd></dd>
+      <dd><p>Contains data about a WCF service implementation.</p>
+</dd>
     </dl>
     <h3 id="interfaces">
 Interfaces
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Integration.Wcf.IPerInstanceContextModuleAccessor.html">IPerInstanceContextModuleAccessor</a></dt>
-      <dd></dd>
+      <dd><p>Provides Autofac modules to register per <span class="xref">System.ServiceModel.InstanceContext</span>.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Integration.Wcf.IServiceImplementationDataProvider.html">IServiceImplementationDataProvider</a></dt>
-      <dd></dd>
+      <dd><p>Defines a strategy for resolving which service type should be
+used for hosting vs. which type is the actual service implementation.</p>
+</dd>
     </dl>
     <h3 id="enums">
 Enums
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Integration.Wcf.Features.html">Features</a></dt>
-      <dd></dd>
+      <dd><p>Feature flags.</p>
+</dd>
     </dl>
 
 

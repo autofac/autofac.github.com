@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,8 @@ Method GetTenantScope
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Retrieves the lifetime scope for a specific tenant.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -132,14 +133,18 @@ Method GetTenantScope
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><code>tenantId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-  <dd></dd>
+  <dt><code>tenantId</code> <span class="xref">object</span></dt>
+  <dd><p>The ID of the tenant for which the lifetime scope should be retrieved. If this
+value is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, the scope is returned for the &quot;default
+tenant&quot; - the tenant that is used when no tenant ID can be determined.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="Autofac.ILifetimeScope.html">ILifetimeScope</a></dt>
-  <dd></dd>
+  <dd><p>The specified tenant's lifetime scope.</p>
+</dd>
 </dl>
 
 

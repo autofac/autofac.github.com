@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class OperationContextTenantIdentificationStrategy | Autofac ">
       
-      
+      <meta name="description" content="An  implementation that gets the tenant ID from a  attached to the current .">
       <link rel="icon" href="../../favicon.ico">
       <link rel="stylesheet" href="../../public/docfx.min.css">
       <link rel="stylesheet" href="../../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,10 @@ Class OperationContextTenantIdentificationStrategy
   <dl><dt>Assembly</dt><dd>Autofac.Multitenant.Wcf.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>An <a class="xref" href="../Autofac.Multitenant.ITenantIdentificationStrategy.html">ITenantIdentificationStrategy</a>
+implementation that gets the tenant ID from a <a class="xref" href="Autofac.Multitenant.Wcf.TenantIdentificationContextExtension.html">TenantIdentificationContextExtension</a>
+attached to the current <span class="xref">System.ServiceModel.OperationContext</span>.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -109,7 +112,7 @@ Class OperationContextTenantIdentificationStrategy
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><span class="xref">OperationContextTenantIdentificationStrategy</span></div>
     </dd>
   </dl>
@@ -126,6 +129,28 @@ Class OperationContextTenantIdentificationStrategy
 
 
 
+  <h2 id="Autofac_Multitenant_Wcf_OperationContextTenantIdentificationStrategy_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+Use this <a class="xref" href="../Autofac.Multitenant.ITenantIdentificationStrategy.html">ITenantIdentificationStrategy</a>
+if you are using the <a class="xref" href="Autofac.Multitenant.Wcf.TenantIdentificationContextExtension.html">TenantIdentificationContextExtension</a>
+as the mechanism for tracking which tenant a given operation is running
+under.
+</p>
+<p>
+For example, you could use an <span class="xref">System.ServiceModel.Dispatcher.IDispatchMessageInspector</span>
+that gets the tenant ID from an incoming header and adds a
+<a class="xref" href="Autofac.Multitenant.Wcf.TenantIdentificationContextExtension.html">TenantIdentificationContextExtension</a>
+to the current <span class="xref">System.ServiceModel.OperationContext</span> with
+the tenant ID value. Then you could register this provider as the
+mechanism for determining the tenant ID when resolving multitenant dependencies.
+</p>
+<p>
+The <a class="xref" href="Autofac.Multitenant.Wcf.TenantPropagationBehavior-1.html">TenantPropagationBehavior&lt;TTenantId&gt;</a>
+does exactly that - adds the tenant ID to outbound messages on the client
+and parses them on the service side. For a usage example, see
+<a class="xref" href="Autofac.Multitenant.Wcf.TenantPropagationBehavior-1.html">TenantPropagationBehavior&lt;TTenantId&gt;</a>.
+</p>
+</div>
 
   <h2 class="section" id="constructors">Constructors
 </h2>
@@ -139,11 +164,17 @@ Class OperationContextTenantIdentificationStrategy
 </h2>
 
   <dl class="jumplist">
-    <dt><a class="xref" href="Autofac.Multitenant.Wcf.OperationContextTenantIdentificationStrategy.TryIdentifyTenant.html#Autofac_Multitenant_Wcf_OperationContextTenantIdentificationStrategy_TryIdentifyTenant_System_Object__">TryIdentifyTenant(out object)</a></dt>
-    <dd></dd>
+    <dt><a class="xref" href="Autofac.Multitenant.Wcf.OperationContextTenantIdentificationStrategy.TryIdentifyTenant.html#Autofac_Multitenant_Wcf_OperationContextTenantIdentificationStrategy_TryIdentifyTenant_System_Object__">TryIdentifyTenant(out object?)</a></dt>
+    <dd><p>Attempts to identify the tenant from the current operation context.</p>
+</dd>
   </dl>
 
 
+  <h2 id="seealso">See Also</h2>
+  <div class="seealso">
+      <div><a class="xref" href="Autofac.Multitenant.Wcf.TenantIdentificationContextExtension.html">TenantIdentificationContextExtension</a></div>
+      <div><a class="xref" href="Autofac.Multitenant.Wcf.TenantPropagationBehavior-1.html">TenantPropagationBehavior</a>&lt;TTenantId&gt;</div>
+  </div>
 
 </article>
 

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class ContainerProviderContainer | Autofac ">
       
-      
+      <meta name="description" content="Provides an implementation of  which uses the configured  to route calls to the current request container.">
       <link rel="icon" href="../../favicon.ico">
       <link rel="stylesheet" href="../../public/docfx.min.css">
       <link rel="stylesheet" href="../../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,9 @@ Class ContainerProviderContainer
   <dl><dt>Assembly</dt><dd>Autofac.Integration.Web.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Provides an implementation of <a class="xref" href="../Autofac.IContainer.html">IContainer</a> which uses the configured
+<a class="xref" href="Autofac.Integration.Web.IContainerProvider.html">IContainerProvider</a> to route calls to the current request container.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -109,7 +111,7 @@ Class ContainerProviderContainer
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><span class="xref">ContainerProviderContainer</span></div>
     </dd>
   </dl>
@@ -134,7 +136,8 @@ Class ContainerProviderContainer
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Web.ContainerProviderContainer.-ctor.html#Autofac_Integration_Web_ContainerProviderContainer__ctor_Autofac_Integration_Web_IContainerProvider_">ContainerProviderContainer(IContainerProvider)</a></dt>
-    <dd></dd>
+    <dd><p>Initializes a new instance of the <a class="xref" href="Autofac.Integration.Web.ContainerProviderContainer.html">ContainerProviderContainer</a> class.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="properties">Properties
@@ -142,19 +145,25 @@ Class ContainerProviderContainer
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Web.ContainerProviderContainer.ComponentRegistry.html#Autofac_Integration_Web_ContainerProviderContainer_ComponentRegistry">ComponentRegistry</a></dt>
-    <dd></dd>
+    <dd><p>Gets the registry that associates services with the components that provide them.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Web.ContainerProviderContainer.DiagnosticSource.html#Autofac_Integration_Web_ContainerProviderContainer_DiagnosticSource">DiagnosticSource</a></dt>
-    <dd></dd>
+    <dd><p>Gets the <span class="xref">System.Diagnostics.DiagnosticListener</span> to which
+trace events should be written.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Web.ContainerProviderContainer.Disposer.html#Autofac_Integration_Web_ContainerProviderContainer_Disposer">Disposer</a></dt>
-    <dd></dd>
+    <dd><p>Gets the disposer associated with this <a class="xref" href="../Autofac.ILifetimeScope.html">ILifetimeScope</a>.
+Component instances can be associated with it manually if required.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Web.ContainerProviderContainer.Tag.html#Autofac_Integration_Web_ContainerProviderContainer_Tag">Tag</a></dt>
-    <dd></dd>
+    <dd><p>Gets the tag applied to the <a class="xref" href="../Autofac.ILifetimeScope.html">ILifetimeScope</a>.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -162,31 +171,45 @@ Class ContainerProviderContainer
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Web.ContainerProviderContainer.BeginLifetimeScope.html#Autofac_Integration_Web_ContainerProviderContainer_BeginLifetimeScope">BeginLifetimeScope()</a></dt>
-    <dd></dd>
+    <dd><p>Begin a new nested scope. Component instances created via the new scope
+will be disposed along with it.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Web.ContainerProviderContainer.BeginLifetimeScope.html#Autofac_Integration_Web_ContainerProviderContainer_BeginLifetimeScope_System_Action_Autofac_ContainerBuilder__">BeginLifetimeScope(Action&lt;ContainerBuilder&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Begin a new nested scope, with additional components available to it.
+Component instances created via the new scope
+will be disposed along with it.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Web.ContainerProviderContainer.BeginLifetimeScope.html#Autofac_Integration_Web_ContainerProviderContainer_BeginLifetimeScope_System_Object_">BeginLifetimeScope(object)</a></dt>
-    <dd></dd>
+    <dd><p>Begin a new nested scope. Component instances created via the new scope
+will be disposed along with it.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Web.ContainerProviderContainer.BeginLifetimeScope.html#Autofac_Integration_Web_ContainerProviderContainer_BeginLifetimeScope_System_Object_System_Action_Autofac_ContainerBuilder__">BeginLifetimeScope(object, Action&lt;ContainerBuilder&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Begin a new nested scope, with additional components available to it.
+Component instances created via the new scope
+will be disposed along with it.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Web.ContainerProviderContainer.Dispose.html#Autofac_Integration_Web_ContainerProviderContainer_Dispose">Dispose()</a></dt>
-    <dd></dd>
+    <dd><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Web.ContainerProviderContainer.DisposeAsync.html#Autofac_Integration_Web_ContainerProviderContainer_DisposeAsync">DisposeAsync()</a></dt>
-    <dd></dd>
+    <dd><p>Performs application-defined tasks associated with freeing, releasing, or
+resetting unmanaged resources asynchronously.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Web.ContainerProviderContainer.ResolveComponent.html#Autofac_Integration_Web_ContainerProviderContainer_ResolveComponent_Autofac_ResolveRequest__">ResolveComponent(in ResolveRequest)</a></dt>
-    <dd></dd>
+    <dd><p>Resolve an instance of the provided registration within the context.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="events">Events
@@ -194,15 +217,18 @@ Class ContainerProviderContainer
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Web.ContainerProviderContainer.ChildLifetimeScopeBeginning.html">ChildLifetimeScopeBeginning</a></dt>
-    <dd></dd>
+    <dd><p>Fired when a new scope based on the current scope is beginning.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Web.ContainerProviderContainer.CurrentScopeEnding.html">CurrentScopeEnding</a></dt>
-    <dd></dd>
+    <dd><p>Fired when this scope is ending.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Web.ContainerProviderContainer.ResolveOperationBeginning.html">ResolveOperationBeginning</a></dt>
-    <dd></dd>
+    <dd><p>Fired when a resolve operation is beginning in this scope.</p>
+</dd>
   </dl>
 
 

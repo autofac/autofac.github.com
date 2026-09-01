@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class ConfigurationActionBuilder | Autofac ">
       
-      
+      <meta name="description" content="Allows you to build up a set of configuration actions that can be used all at once to configure a new .">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,9 @@ Class ConfigurationActionBuilder
   <dl><dt>Assembly</dt><dd>Autofac.Multitenant.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Allows you to build up a set of configuration actions that can be used
+all at once to configure a new <a class="xref" href="Autofac.ILifetimeScope.html">ILifetimeScope</a>.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -109,8 +111,8 @@ Class ConfigurationActionBuilder
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a>&gt;&gt;</div>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">List</span>&lt;<span class="xref">Action</span>&lt;<a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a>&gt;&gt;</div>
       <div><span class="xref">ConfigurationActionBuilder</span></div>
     </dd>
   </dl>
@@ -121,6 +123,22 @@ Class ConfigurationActionBuilder
 
 
 
+  <h2 id="Autofac_Multitenant_ConfigurationActionBuilder_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+Usually when you are building an <a class="xref" href="Autofac.ILifetimeScope.html">ILifetimeScope</a>
+and you wish to update the registrations in the new scope, you are
+required to pass in a single lambda configuration action. Sometimes,
+though, there is a need to perform some logic, or otherwise programmatically
+register several things into the new lifetime across different calls or
+in different locations in your application.
+</p>
+<p>
+This builder allows you to collect a set of configuration actions and
+use a final <a class="xref" href="Autofac.Multitenant.ConfigurationActionBuilder.Build.html#Autofac_Multitenant_ConfigurationActionBuilder_Build">Build()</a>
+method to create a single aggregate action that can be used to finally
+create the lifetime scope.
+</p>
+</div>
 
   <h2 class="section" id="constructors">Constructors
 </h2>
@@ -135,7 +153,9 @@ Class ConfigurationActionBuilder
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.ConfigurationActionBuilder.Build.html#Autofac_Multitenant_ConfigurationActionBuilder_Build">Build()</a></dt>
-    <dd></dd>
+    <dd><p>Creates an aggregated action based on the list of actions contained
+in the builder.</p>
+</dd>
   </dl>
 
 

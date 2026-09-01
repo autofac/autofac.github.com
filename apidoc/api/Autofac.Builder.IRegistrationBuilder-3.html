@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IRegistrationBuilder&lt;TLimit, TActivatorData, TRegistrationStyle&gt; | Autofac ">
       
-      
+      <meta name="description" content="Data structure used to construct registrations.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,8 @@ Interface IRegistrationBuilder&lt;TLimit, TActivatorData, TRegistrationStyle&gt;
   <dl><dt>Assembly</dt><dd>Autofac.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Data structure used to construct registrations.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -108,11 +109,14 @@ Interface IRegistrationBuilder&lt;TLimit, TActivatorData, TRegistrationStyle&gt;
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>TLimit</code></dt>
-    <dd></dd>
+    <dd><p>The most specific type to which instances of the registration can be cast.</p>
+</dd>
     <dt><code>TActivatorData</code></dt>
-    <dd></dd>
+    <dd><p>Activator builder type.</p>
+</dd>
     <dt><code>TRegistrationStyle</code></dt>
-    <dd></dd>
+    <dd><p>Registration style type.</p>
+</dd>
   </dl>
 
 
@@ -156,127 +160,193 @@ Interface IRegistrationBuilder&lt;TLimit, TActivatorData, TRegistrationStyle&gt;
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.As.html#Autofac_Builder_IRegistrationBuilder_3_As_Autofac_Core_Service___">As(params Service[])</a></dt>
-    <dd></dd>
+    <dd><p>Configure the services that the component will provide.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.As.html#Autofac_Builder_IRegistrationBuilder_3_As_System_Type___">As(params Type[])</a></dt>
-    <dd></dd>
+    <dd><p>Configure the services that the component will provide.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.As.html#Autofac_Builder_IRegistrationBuilder_3_As__1">As&lt;TService&gt;()</a></dt>
-    <dd></dd>
+    <dd><p>Configure the services that the component will provide. The generic parameter(s) to As()
+will be exposed as TypedService instances.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.As.html#Autofac_Builder_IRegistrationBuilder_3_As__2">As&lt;TService1, TService2&gt;()</a></dt>
-    <dd></dd>
+    <dd><p>Configure the services that the component will provide. The generic parameter(s) to As()
+will be exposed as TypedService instances.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.As.html#Autofac_Builder_IRegistrationBuilder_3_As__3">As&lt;TService1, TService2, TService3&gt;()</a></dt>
-    <dd></dd>
+    <dd><p>Configure the services that the component will provide. The generic parameter(s) to As()
+will be exposed as TypedService instances.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.ConfigurePipeline.html#Autofac_Builder_IRegistrationBuilder_3_ConfigurePipeline_System_Action_Autofac_Core_Resolving_Pipeline_IResolvePipelineBuilder__">ConfigurePipeline(Action&lt;IResolvePipelineBuilder&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Provides access to the registration's pipeline builder, allowing custom middleware to be added.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.ExternallyOwned.html#Autofac_Builder_IRegistrationBuilder_3_ExternallyOwned">ExternallyOwned()</a></dt>
-    <dd></dd>
+    <dd><p>Configure the component so that instances are never disposed by the container.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.InstancePerDependency.html#Autofac_Builder_IRegistrationBuilder_3_InstancePerDependency">InstancePerDependency()</a></dt>
-    <dd></dd>
+    <dd><p>Configure the component so that every dependent component or call to Resolve()
+gets a new, unique instance (default).</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.InstancePerLifetimeScope.html#Autofac_Builder_IRegistrationBuilder_3_InstancePerLifetimeScope">InstancePerLifetimeScope()</a></dt>
-    <dd></dd>
+    <dd><p>Configure the component so that every dependent component or call to Resolve()
+within a single ILifetimeScope gets the same, shared instance. Dependent components in
+different lifetime scopes will get different instances.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.InstancePerMatchingLifetimeScope.html#Autofac_Builder_IRegistrationBuilder_3_InstancePerMatchingLifetimeScope_System_Object___">InstancePerMatchingLifetimeScope(params object[])</a></dt>
-    <dd></dd>
+    <dd><p>Configure the component so that every dependent component or call to Resolve() within
+a ILifetimeScope tagged with any of the provided tags value gets the same, shared instance.
+Dependent components in lifetime scopes that are children of the tagged scope will
+share the parent's instance. If no appropriately tagged scope can be found in the
+hierarchy an <a class="xref" href="Autofac.Core.DependencyResolutionException.html">DependencyResolutionException</a> is thrown.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.InstancePerOwned.html#Autofac_Builder_IRegistrationBuilder_3_InstancePerOwned_System_Object_System_Type_">InstancePerOwned(object, Type)</a></dt>
-    <dd></dd>
+    <dd><p>Configure the component so that every dependent component or call to Resolve()
+within a ILifetimeScope created by an owned instance gets the same, shared instance.
+Dependent components in lifetime scopes that are children of the owned instance scope will
+share the parent's instance. If no appropriate owned instance scope can be found in the
+hierarchy an <a class="xref" href="Autofac.Core.DependencyResolutionException.html">DependencyResolutionException</a> is thrown.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.InstancePerOwned.html#Autofac_Builder_IRegistrationBuilder_3_InstancePerOwned_System_Type_">InstancePerOwned(Type)</a></dt>
-    <dd></dd>
+    <dd><p>Configure the component so that every dependent component or call to Resolve()
+within a ILifetimeScope created by an owned instance gets the same, shared instance.
+Dependent components in lifetime scopes that are children of the owned instance scope will
+share the parent's instance. If no appropriate owned instance scope can be found in the
+hierarchy an <a class="xref" href="Autofac.Core.DependencyResolutionException.html">DependencyResolutionException</a> is thrown.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.InstancePerOwned.html#Autofac_Builder_IRegistrationBuilder_3_InstancePerOwned__1">InstancePerOwned&lt;TService&gt;()</a></dt>
-    <dd></dd>
+    <dd><p>Configure the component so that every dependent component or call to Resolve()
+within a ILifetimeScope created by an owned instance gets the same, shared instance.
+Dependent components in lifetime scopes that are children of the owned instance scope will
+share the parent's instance. If no appropriate owned instance scope can be found in the
+hierarchy an <a class="xref" href="Autofac.Core.DependencyResolutionException.html">DependencyResolutionException</a> is thrown.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.InstancePerOwned.html#Autofac_Builder_IRegistrationBuilder_3_InstancePerOwned__1_System_Object_">InstancePerOwned&lt;TService&gt;(object)</a></dt>
-    <dd></dd>
+    <dd><p>Configure the component so that every dependent component or call to Resolve()
+within a ILifetimeScope created by an owned instance gets the same, shared instance.
+Dependent components in lifetime scopes that are children of the owned instance scope will
+share the parent's instance. If no appropriate owned instance scope can be found in the
+hierarchy an <a class="xref" href="Autofac.Core.DependencyResolutionException.html">DependencyResolutionException</a> is thrown.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.InstancePerOwned.html#Autofac_Builder_IRegistrationBuilder_3_InstancePerOwned__1_System_Object___">InstancePerOwned&lt;TService&gt;(params object[])</a></dt>
-    <dd></dd>
+    <dd><p>Configure the component so that every dependent component or call to Resolve()
+within a ILifetimeScope created by an owned instance gets the same, shared instance.
+Dependent components in lifetime scopes that are children of the owned instance scope will
+share the parent's instance. If no appropriate owned instance scope can be found in the
+hierarchy an <a class="xref" href="Autofac.Core.DependencyResolutionException.html">DependencyResolutionException</a> is thrown.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.Keyed.html#Autofac_Builder_IRegistrationBuilder_3_Keyed_System_Object_System_Type_">Keyed(object, Type)</a></dt>
-    <dd></dd>
+    <dd><p>Provide a key that can be used to retrieve the component.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.Keyed.html#Autofac_Builder_IRegistrationBuilder_3_Keyed__1_System_Object_">Keyed&lt;TService&gt;(object)</a></dt>
-    <dd></dd>
+    <dd><p>Provide a key that can be used to retrieve the component.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.Named.html#Autofac_Builder_IRegistrationBuilder_3_Named_System_String_System_Type_">Named(string, Type)</a></dt>
-    <dd></dd>
+    <dd><p>Provide a textual name that can be used to retrieve the component.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.Named.html#Autofac_Builder_IRegistrationBuilder_3_Named__1_System_String_">Named&lt;TService&gt;(string)</a></dt>
-    <dd></dd>
+    <dd><p>Provide a textual name that can be used to retrieve the component.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.OnActivated.html#Autofac_Builder_IRegistrationBuilder_3_OnActivated_System_Action_Autofac_Core_IActivatedEventArgs__0___">OnActivated(Action&lt;IActivatedEventArgs&lt;TLimit&gt;&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Add a handler for the Activated event.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.OnActivated.html#Autofac_Builder_IRegistrationBuilder_3_OnActivated_System_Func_Autofac_Core_IActivatedEventArgs__0__System_Threading_Tasks_ValueTask__">OnActivated(Func&lt;IActivatedEventArgs&lt;TLimit&gt;, ValueTask&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Add a handler for the Activated event.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.OnActivating.html#Autofac_Builder_IRegistrationBuilder_3_OnActivating_System_Action_Autofac_Core_IActivatingEventArgs__0___">OnActivating(Action&lt;IActivatingEventArgs&lt;TLimit&gt;&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Add a handler for the Activating event.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.OnActivating.html#Autofac_Builder_IRegistrationBuilder_3_OnActivating_System_Func_Autofac_Core_IActivatingEventArgs__0__System_Threading_Tasks_ValueTask__">OnActivating(Func&lt;IActivatingEventArgs&lt;TLimit&gt;, ValueTask&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Add an async handler for the Activating event.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.OnPreparing.html#Autofac_Builder_IRegistrationBuilder_3_OnPreparing_System_Action_Autofac_Core_PreparingEventArgs__">OnPreparing(Action&lt;PreparingEventArgs&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Add a handler for the Preparing event. This event allows manipulating of the parameters
+that will be provided to the component.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.OnPreparing.html#Autofac_Builder_IRegistrationBuilder_3_OnPreparing_System_Func_Autofac_Core_PreparingEventArgs_System_Threading_Tasks_ValueTask__">OnPreparing(Func&lt;PreparingEventArgs, ValueTask&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Add an async handler for the Preparing event. This event allows manipulating of the parameters
+that will be provided to the component.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.OwnedByLifetimeScope.html#Autofac_Builder_IRegistrationBuilder_3_OwnedByLifetimeScope">OwnedByLifetimeScope()</a></dt>
-    <dd></dd>
+    <dd><p>Configure the component so that instances that support IDisposable are
+disposed by the container (default).</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.PropertiesAutowired.html#Autofac_Builder_IRegistrationBuilder_3_PropertiesAutowired_Autofac_Core_IPropertySelector_System_Boolean_">PropertiesAutowired(IPropertySelector, bool)</a></dt>
-    <dd></dd>
+    <dd><p>Configure the component so that any properties whose types are registered in the
+container and follow specific criteria will be wired to instances of the appropriate service.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.SingleInstance.html#Autofac_Builder_IRegistrationBuilder_3_SingleInstance">SingleInstance()</a></dt>
-    <dd></dd>
+    <dd><p>Configure the component so that every dependent component or call to Resolve()
+gets the same, shared instance.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.WithMetadata.html#Autofac_Builder_IRegistrationBuilder_3_WithMetadata_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String_System_Object___">WithMetadata(IEnumerable&lt;KeyValuePair&lt;string, object?&gt;&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Associates data with the component.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.WithMetadata.html#Autofac_Builder_IRegistrationBuilder_3_WithMetadata_System_String_System_Object_">WithMetadata(string, object?)</a></dt>
-    <dd></dd>
+    <dd><p>Associates data with the component.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.WithMetadata.html#Autofac_Builder_IRegistrationBuilder_3_WithMetadata__1_System_Action_Autofac_Builder_MetadataConfiguration___0___">WithMetadata&lt;TMetadata&gt;(Action&lt;MetadataConfiguration&lt;TMetadata&gt;&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Associates data with the component.</p>
+</dd>
   </dl>
 
 

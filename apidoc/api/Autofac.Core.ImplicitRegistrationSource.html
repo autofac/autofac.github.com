@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class ImplicitRegistrationSource | Autofac ">
       
-      
+      <meta name="description" content="Support simple definition of implicit relationships such as .">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,8 @@ Class ImplicitRegistrationSource
   <dl><dt>Assembly</dt><dd>Autofac.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Support simple definition of implicit relationships such as <span class="xref">System.Lazy&lt;T&gt;</span>.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -109,7 +110,7 @@ Class ImplicitRegistrationSource
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><span class="xref">ImplicitRegistrationSource</span></div>
     </dd>
   </dl>
@@ -132,7 +133,8 @@ Class ImplicitRegistrationSource
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.ImplicitRegistrationSource.-ctor.html#Autofac_Core_ImplicitRegistrationSource__ctor_System_Type_">ImplicitRegistrationSource(Type)</a></dt>
-    <dd></dd>
+    <dd><p>Initializes a new instance of the <a class="xref" href="Autofac.Core.ImplicitRegistrationSource.html">ImplicitRegistrationSource</a> class.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="properties">Properties
@@ -140,11 +142,14 @@ Class ImplicitRegistrationSource
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.ImplicitRegistrationSource.Description.html#Autofac_Core_ImplicitRegistrationSource_Description">Description</a></dt>
-    <dd></dd>
+    <dd><p>Gets the description of the registration source.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.ImplicitRegistrationSource.IsAdapterForIndividualComponents.html#Autofac_Core_ImplicitRegistrationSource_IsAdapterForIndividualComponents">IsAdapterForIndividualComponents</a></dt>
-    <dd></dd>
+    <dd><p>Gets a value indicating whether the registrations provided by this source are 1:1 adapters on top
+of other components (e.g., Meta, Func, or Owned).</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -152,15 +157,19 @@ Class ImplicitRegistrationSource
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.ImplicitRegistrationSource.BuildRegistration.html#Autofac_Core_ImplicitRegistrationSource_BuildRegistration_Autofac_Builder_IRegistrationBuilder_System_Object_Autofac_Builder_SimpleActivatorData_Autofac_Builder_SingleRegistrationStyle__">BuildRegistration(IRegistrationBuilder&lt;object, SimpleActivatorData, SingleRegistrationStyle&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Allows hooking into the registration pipeline of the registration source, useful for such things as marking a registration as externally owned.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.ImplicitRegistrationSource.RegistrationsFor.html#Autofac_Core_ImplicitRegistrationSource_RegistrationsFor_Autofac_Core_Service_System_Func_Autofac_Core_Service_System_Collections_Generic_IEnumerable_Autofac_Core_ServiceRegistration___">RegistrationsFor(Service, Func&lt;Service, IEnumerable&lt;ServiceRegistration&gt;&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Retrieve registrations for an unregistered service, to be used
+by the container.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.ImplicitRegistrationSource.ResolveInstance.html#Autofac_Core_ImplicitRegistrationSource_ResolveInstance__1_Autofac_IComponentContext_Autofac_ResolveRequest__">ResolveInstance&lt;T&gt;(IComponentContext, in ResolveRequest)</a></dt>
-    <dd></dd>
+    <dd><p>Resolves an instance of the implicit type.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.ImplicitRegistrationSource.ToString.html#Autofac_Core_ImplicitRegistrationSource_ToString">ToString()</a></dt>

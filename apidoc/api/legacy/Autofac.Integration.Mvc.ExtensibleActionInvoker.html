@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class ExtensibleActionInvoker | Autofac ">
       
-      
+      <meta name="description" content="Injects services from the container into the ASP.NET MVC invocation pipeline. This is a Async Controller Action Invoker which can be used for both async and non-async scenarios.">
       <link rel="icon" href="../../favicon.ico">
       <link rel="stylesheet" href="../../public/docfx.min.css">
       <link rel="stylesheet" href="../../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,9 @@ Class ExtensibleActionInvoker
   <dl><dt>Assembly</dt><dd>Autofac.Integration.Mvc.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Injects services from the container into the ASP.NET MVC invocation pipeline.
+This is a Async Controller Action Invoker which can be used for both async and non-async scenarios.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -109,9 +111,9 @@ Class ExtensibleActionInvoker
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.web.mvc.controlleractioninvoker">ControllerActionInvoker</a></div>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.web.mvc.async.asynccontrolleractioninvoker">AsyncControllerActionInvoker</a></div>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">ControllerActionInvoker</span></div>
+      <div><span class="xref">AsyncControllerActionInvoker</span></div>
       <div><span class="xref">ExtensibleActionInvoker</span></div>
     </dd>
   </dl>
@@ -122,17 +124,25 @@ Class ExtensibleActionInvoker
 
 
 
+  <h2 id="Autofac_Integration_Mvc_ExtensibleActionInvoker_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+Action methods can include parameters that will be resolved from the
+container, along with regular parameters.
+</p>
+</div>
 
   <h2 class="section" id="constructors">Constructors
 </h2>
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Mvc.ExtensibleActionInvoker.-ctor.html#Autofac_Integration_Mvc_ExtensibleActionInvoker__ctor">ExtensibleActionInvoker()</a></dt>
-    <dd></dd>
+    <dd><p>Initializes a new instance of the <a class="xref" href="Autofac.Integration.Mvc.ExtensibleActionInvoker.html">ExtensibleActionInvoker</a> class.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Mvc.ExtensibleActionInvoker.-ctor.html#Autofac_Integration_Mvc_ExtensibleActionInvoker__ctor_Autofac_Core_IPropertySelector_">ExtensibleActionInvoker(IPropertySelector)</a></dt>
-    <dd></dd>
+    <dd><p>Initializes a new instance of the <a class="xref" href="Autofac.Integration.Mvc.ExtensibleActionInvoker.html">ExtensibleActionInvoker</a> class.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -140,7 +150,8 @@ Class ExtensibleActionInvoker
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Mvc.ExtensibleActionInvoker.GetParameterValue.html#Autofac_Integration_Mvc_ExtensibleActionInvoker_GetParameterValue_System_Web_Mvc_ControllerContext_System_Web_Mvc_ParameterDescriptor_">GetParameterValue(ControllerContext, ParameterDescriptor)</a></dt>
-    <dd></dd>
+    <dd><p>Gets the parameter value.</p>
+</dd>
   </dl>
 
 

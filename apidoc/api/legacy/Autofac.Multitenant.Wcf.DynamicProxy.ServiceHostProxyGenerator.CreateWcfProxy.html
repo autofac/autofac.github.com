@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,8 @@ Method CreateWcfProxy
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Creates a proxy object that can be used by the WCF service host.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -132,16 +133,20 @@ Method CreateWcfProxy
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><code>interfaceToProxy</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
-  <dd></dd>
-  <dt><code>target</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-  <dd></dd>
+  <dt><code>interfaceToProxy</code> <span class="xref">Type</span></dt>
+  <dd><p>The WCF service interface for service implementations.</p>
+</dd>
+  <dt><code>target</code> <span class="xref">object</span></dt>
+  <dd><p>The target of the proxy object that will receive the actual calls.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-  <dd></dd>
+  <dt><span class="xref">object</span></dt>
+  <dd><p>An object that implements the interface <code class="paramref">interfaceToProxy</code>
+and proxies calls to the <code class="paramref">target</code>.</p>
+</dd>
 </dl>
 
 
@@ -150,7 +155,28 @@ Method CreateWcfProxy
 
 
 
+<h4 class="section" id="Autofac_Multitenant_Wcf_DynamicProxy_ServiceHostProxyGenerator_CreateWcfProxy_System_Type_System_Object__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>
+When initializing the service host, call this method with a dummy
+<code class="paramref">target</code> object, just to create the dynamic proxy
+type for the first time and get the service host up and running.
+Subsequent proxies for that interface should have a valid target
+implementation type to which service calls will be proxied.
+</p>
+</div>
 
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><span class="xref">ArgumentNullException</span></dt>
+  <dd><p>Thrown if <code class="paramref">interfaceToProxy</code> or <code class="paramref">target</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+  <dt><span class="xref">ArgumentException</span></dt>
+  <dd><p>
+Thrown if:
+</p>
+<ul><li><span class="term"><code class="paramref">interfaceToProxy</code> is not an interface.</span></li><li><span class="term"><code class="paramref">interfaceToProxy</code> is an open generic.</span></li><li><span class="term"><code class="paramref">target</code> cannot be cast to <code class="paramref">interfaceToProxy</code>.</span></li></ul>
+</dd>
+</dl>
 
 
 

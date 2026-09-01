@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,8 @@ Method GetServiceImplementationData
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Gets data about a service implementation.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -132,14 +133,18 @@ Method GetServiceImplementationData
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-  <dd></dd>
+  <dt><code>value</code> <span class="xref">string</span></dt>
+  <dd><p>The constructor string from the service host factory, identifying
+the service type to host.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="Autofac.Integration.Wcf.ServiceImplementationData.html">ServiceImplementationData</a></dt>
-  <dd></dd>
+  <dd><p>A <a class="xref" href="Autofac.Integration.Wcf.ServiceImplementationData.html">ServiceImplementationData</a> with the service host
+type and implementation resolver.</p>
+</dd>
 </dl>
 
 
@@ -148,7 +153,31 @@ Method GetServiceImplementationData
 
 
 
+<h4 class="section" id="Autofac_Integration_Wcf_DefaultServiceImplementationDataProvider_GetServiceImplementationData_System_String__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>
+This resolver takes the constructor string stored in the .svc file
+and resolves a matching keyed or typed service from the root
+application container. That resolved type is used for both the
+service host and the implementation type.
+</p>
+</div>
 
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><span class="xref">InvalidOperationException</span></dt>
+  <dd><p>Thrown if the <a class="xref" href="Autofac.Integration.Wcf.AutofacHostFactory.Container.html#Autofac_Integration_Wcf_AutofacHostFactory_Container">Container</a>
+is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>;
+if the service indicated by <code class="paramref">value</code>
+is not registered with the <a class="xref" href="Autofac.Integration.Wcf.AutofacHostFactory.Container.html#Autofac_Integration_Wcf_AutofacHostFactory_Container">Container</a>;
+or if the service is a singleton that isn't registered as a singleton.</p>
+</dd>
+  <dt><span class="xref">ArgumentNullException</span></dt>
+  <dd><p>Thrown if <code class="paramref">value</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+  <dt><span class="xref">ArgumentException</span></dt>
+  <dd><p>Thrown if <code class="paramref">value</code> is empty.</p>
+</dd>
+</dl>
 
 
 

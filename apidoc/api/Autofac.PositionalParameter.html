@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class PositionalParameter | Autofac ">
       
-      
+      <meta name="description" content="A parameter that is identified according to an integer representing its position in an argument list. When applied to a reflection-based component,  will be matched against the indices of the component&#39;s constructor arguments. When applied to a delegate-based component, the parameter can be accessed using .">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,13 @@ Class PositionalParameter
   <dl><dt>Assembly</dt><dd>Autofac.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>A parameter that is identified according to an integer representing its
+position in an argument list. When applied to a reflection-based
+component, <a class="xref" href="Autofac.PositionalParameter.Position.html#Autofac_PositionalParameter_Position">Position</a> will be matched against
+the indices of the component's constructor arguments. When applied to
+a delegate-based component, the parameter can be accessed using
+<a class="xref" href="Autofac.ParameterExtensions.Positional.html#Autofac_ParameterExtensions_Positional__1_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter__System_Int32_">Positional&lt;T&gt;(IEnumerable&lt;Parameter&gt;, int)</a>.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -109,7 +115,7 @@ Class PositionalParameter
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><a class="xref" href="Autofac.Core.Parameter.html">Parameter</a></div>
       <div><a class="xref" href="Autofac.Core.ConstantParameter.html">ConstantParameter</a></div>
       <div><span class="xref">PositionalParameter</span></div>
@@ -131,6 +137,22 @@ Class PositionalParameter
 
 
 
+  <h2 id="Autofac_PositionalParameter_examples">Examples</h2>
+  <p>
+Component with parameter...
+</p>
+<pre><code class="lang-csharp">public class MyComponent
+{
+    public MyComponent(int amount) { ... }
+}</code></pre>
+<p>
+Providing the parameter...
+</p>
+<pre><code class="lang-csharp">var builder = new ContainerBuilder();
+builder.RegisterType&lt;MyComponent&gt;();
+var container = builder.Build();
+var myComponent = container.Resolve&lt;MyComponent&gt;(new PositionalParameter(0, 123));</code></pre>
+
 
 
   <h2 class="section" id="constructors">Constructors
@@ -138,7 +160,8 @@ Class PositionalParameter
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.PositionalParameter.-ctor.html#Autofac_PositionalParameter__ctor_System_Int32_System_Object_">PositionalParameter(int, object?)</a></dt>
-    <dd></dd>
+    <dd><p>Initializes a new instance of the <a class="xref" href="Autofac.PositionalParameter.html">PositionalParameter</a> class.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="properties">Properties
@@ -146,7 +169,8 @@ Class PositionalParameter
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.PositionalParameter.Position.html#Autofac_PositionalParameter_Position">Position</a></dt>
-    <dd></dd>
+    <dd><p>Gets the zero-based position of the parameter.</p>
+</dd>
   </dl>
 
 

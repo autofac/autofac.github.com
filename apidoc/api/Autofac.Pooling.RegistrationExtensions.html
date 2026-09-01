@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class RegistrationExtensions | Autofac ">
       
-      
+      <meta name="description" content="Provides registration methods for setting up pooled instances.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,8 @@ Class RegistrationExtensions
   <dl><dt>Assembly</dt><dd>Autofac.Pooling.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Provides registration methods for setting up pooled instances.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -109,7 +110,7 @@ Class RegistrationExtensions
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><span class="xref">RegistrationExtensions</span></div>
     </dd>
   </dl>
@@ -126,27 +127,103 @@ Class RegistrationExtensions
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Pooling.RegistrationExtensions.PooledInstancePerLifetimeScope.html#Autofac_Pooling_RegistrationExtensions_PooledInstancePerLifetimeScope__3_Autofac_Builder_IRegistrationBuilder___0___1___2__">PooledInstancePerLifetimeScope&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Configures the component so that every dependent component or manual
+resolve within a single <a class="xref" href="Autofac.ILifetimeScope.html">ILifetimeScope</a> shares one instance
+taken from a pool, returning it to the pool when the scope ends.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Pooling.RegistrationExtensions.PooledInstancePerLifetimeScope.html#Autofac_Pooling_RegistrationExtensions_PooledInstancePerLifetimeScope__3_Autofac_Builder_IRegistrationBuilder___0___1___2__Autofac_Pooling_IPooledRegistrationPolicy___0__">PooledInstancePerLifetimeScope&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;, IPooledRegistrationPolicy&lt;TLimit&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Configures the component so that every dependent component or manual
+resolve within a single <a class="xref" href="Autofac.ILifetimeScope.html">ILifetimeScope</a> shares one instance
+taken from a pool governed by a custom policy, returning it to the pool
+when the scope ends.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.Pooling.RegistrationExtensions.PooledInstancePerLifetimeScope.html#Autofac_Pooling_RegistrationExtensions_PooledInstancePerLifetimeScope__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Func_Autofac_IComponentContext_Autofac_Pooling_IPooledRegistrationPolicy___0___">PooledInstancePerLifetimeScope&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;, Func&lt;IComponentContext, IPooledRegistrationPolicy&lt;TLimit&gt;&gt;)</a></dt>
+    <dd><p>Configures the component so that every dependent component or manual
+resolve within a single <a class="xref" href="Autofac.ILifetimeScope.html">ILifetimeScope</a> shares one instance
+taken from a pool governed by a policy from the supplied factory,
+returning it to the pool when the scope ends.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.Pooling.RegistrationExtensions.PooledInstancePerLifetimeScope.html#Autofac_Pooling_RegistrationExtensions_PooledInstancePerLifetimeScope__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Func_Autofac_IComponentContext_Autofac_Pooling_IPooledRegistrationPolicy___0___System_Func_Autofac_IComponentContext_Microsoft_Extensions_ObjectPool_ObjectPoolProvider__">PooledInstancePerLifetimeScope&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;, Func&lt;IComponentContext, IPooledRegistrationPolicy&lt;TLimit&gt;&gt;, Func&lt;IComponentContext, ObjectPoolProvider&gt;)</a></dt>
+    <dd><p>Configures the component so that every dependent component or manual
+resolve within a single <a class="xref" href="Autofac.ILifetimeScope.html">ILifetimeScope</a> shares one instance
+taken from a pool whose behavior is controlled by a custom policy and
+whose storage and eviction are controlled by a custom
+<span class="xref">Microsoft.Extensions.ObjectPool.ObjectPoolProvider</span>, returning it to the pool when the
+scope ends.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.Pooling.RegistrationExtensions.PooledInstancePerLifetimeScope.html#Autofac_Pooling_RegistrationExtensions_PooledInstancePerLifetimeScope__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Func_Autofac_IComponentContext_Microsoft_Extensions_ObjectPool_ObjectPoolProvider__">PooledInstancePerLifetimeScope&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;, Func&lt;IComponentContext, ObjectPoolProvider&gt;)</a></dt>
+    <dd><p>Configures the component so that every dependent component or manual
+resolve within a single <a class="xref" href="Autofac.ILifetimeScope.html">ILifetimeScope</a> shares one instance
+taken from a pool whose storage and eviction are controlled by a custom
+<span class="xref">Microsoft.Extensions.ObjectPool.ObjectPoolProvider</span>, returning it to the pool when the
+scope ends.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Pooling.RegistrationExtensions.PooledInstancePerLifetimeScope.html#Autofac_Pooling_RegistrationExtensions_PooledInstancePerLifetimeScope__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Int32_">PooledInstancePerLifetimeScope&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;, int)</a></dt>
-    <dd></dd>
+    <dd><p>Configures the component so that every dependent component or manual
+resolve within a single <a class="xref" href="Autofac.ILifetimeScope.html">ILifetimeScope</a> shares one instance
+taken from a pool, returning it to the pool when the scope ends.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Pooling.RegistrationExtensions.PooledInstancePerMatchingLifetimeScope.html#Autofac_Pooling_RegistrationExtensions_PooledInstancePerMatchingLifetimeScope__3_Autofac_Builder_IRegistrationBuilder___0___1___2__Autofac_Pooling_IPooledRegistrationPolicy___0__System_Object___">PooledInstancePerMatchingLifetimeScope&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;, IPooledRegistrationPolicy&lt;TLimit&gt;, params object[])</a></dt>
-    <dd></dd>
+    <dd><p>Configures the component so that every dependent component or manual
+resolve within a <a class="xref" href="Autofac.ILifetimeScope.html">ILifetimeScope</a> tagged with any of these
+tags shares one instance taken from a pool governed by a custom policy,
+returning it to the pool when the scope ends.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.Pooling.RegistrationExtensions.PooledInstancePerMatchingLifetimeScope.html#Autofac_Pooling_RegistrationExtensions_PooledInstancePerMatchingLifetimeScope__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Func_Autofac_IComponentContext_Autofac_Pooling_IPooledRegistrationPolicy___0___System_Func_Autofac_IComponentContext_Microsoft_Extensions_ObjectPool_ObjectPoolProvider__System_Object___">PooledInstancePerMatchingLifetimeScope&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;, Func&lt;IComponentContext, IPooledRegistrationPolicy&lt;TLimit&gt;&gt;, Func&lt;IComponentContext, ObjectPoolProvider&gt;, params object[])</a></dt>
+    <dd><p>Configures the component so that every dependent component or manual
+resolve within a <a class="xref" href="Autofac.ILifetimeScope.html">ILifetimeScope</a> tagged with any of these
+tags shares one instance taken from a pool whose behavior is controlled
+by a custom policy and whose storage and eviction are controlled by a
+custom <span class="xref">Microsoft.Extensions.ObjectPool.ObjectPoolProvider</span>, returning it to the pool when
+the scope ends.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.Pooling.RegistrationExtensions.PooledInstancePerMatchingLifetimeScope.html#Autofac_Pooling_RegistrationExtensions_PooledInstancePerMatchingLifetimeScope__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Func_Autofac_IComponentContext_Autofac_Pooling_IPooledRegistrationPolicy___0___System_Object___">PooledInstancePerMatchingLifetimeScope&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;, Func&lt;IComponentContext, IPooledRegistrationPolicy&lt;TLimit&gt;&gt;, params object[])</a></dt>
+    <dd><p>Configures the component so that every dependent component or manual
+resolve within a <a class="xref" href="Autofac.ILifetimeScope.html">ILifetimeScope</a> tagged with any of these
+tags shares one instance taken from a pool governed by a policy from the
+supplied factory, returning it to the pool when the scope ends.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.Pooling.RegistrationExtensions.PooledInstancePerMatchingLifetimeScope.html#Autofac_Pooling_RegistrationExtensions_PooledInstancePerMatchingLifetimeScope__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Func_Autofac_IComponentContext_Microsoft_Extensions_ObjectPool_ObjectPoolProvider__System_Object___">PooledInstancePerMatchingLifetimeScope&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;, Func&lt;IComponentContext, ObjectPoolProvider&gt;, params object[])</a></dt>
+    <dd><p>Configures the component so that every dependent component or manual
+resolve within a <a class="xref" href="Autofac.ILifetimeScope.html">ILifetimeScope</a> tagged with any of these
+tags shares one instance taken from a pool whose storage and eviction
+are controlled by a custom <span class="xref">Microsoft.Extensions.ObjectPool.ObjectPoolProvider</span>, returning
+it to the pool when the scope ends.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Pooling.RegistrationExtensions.PooledInstancePerMatchingLifetimeScope.html#Autofac_Pooling_RegistrationExtensions_PooledInstancePerMatchingLifetimeScope__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Int32_System_Object___">PooledInstancePerMatchingLifetimeScope&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;, int, params object[])</a></dt>
-    <dd></dd>
+    <dd><p>Configures the component so that every dependent component or manual
+resolve within a <a class="xref" href="Autofac.ILifetimeScope.html">ILifetimeScope</a> tagged with any of these
+tags shares one instance taken from a pool, returning it to the pool
+when the scope ends.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Pooling.RegistrationExtensions.PooledInstancePerMatchingLifetimeScope.html#Autofac_Pooling_RegistrationExtensions_PooledInstancePerMatchingLifetimeScope__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Object___">PooledInstancePerMatchingLifetimeScope&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;, params object[])</a></dt>
-    <dd></dd>
+    <dd><p>Configures the component so that every dependent component or manual
+resolve within a <a class="xref" href="Autofac.ILifetimeScope.html">ILifetimeScope</a> tagged with any of these
+tags shares one instance taken from a pool, returning it to the pool
+when the scope ends.</p>
+</dd>
   </dl>
 
 

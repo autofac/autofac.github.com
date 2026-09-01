@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class AutoMock | Autofac ">
       
-      
+      <meta name="description" content="Wrapper around  and .">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,8 @@ Class AutoMock
   <dl><dt>Assembly</dt><dd>Autofac.Extras.Moq.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Wrapper around <a class="xref" href="Autofac.html">Autofac</a> and <a class="xref" href="Autofac.Extras.Moq.html">Autofac.Extras.Moq</a>.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -109,7 +110,7 @@ Class AutoMock
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><span class="xref">AutoMock</span></div>
     </dd>
   </dl>
@@ -120,21 +121,44 @@ Class AutoMock
 
 
 
+  <h2 id="Autofac_Extras_Moq_AutoMock_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+Adding real framework services (for example, Entity Framework Core or
+<code>Microsoft.Extensions.Logging</code>) into the <a class="xref" href="Autofac.Extras.Moq.AutoMock.html">AutoMock</a>
+container can produce unexpected behavior. <a class="xref" href="Autofac.Extras.Moq.AutoMock.html">AutoMock</a>
+automatically supplies a mock for any service it can't otherwise resolve,
+including the individual elements of an otherwise-empty collection
+dependency (such as <code>IEnumerable&lt;ILoggerProvider&gt;</code>). A
+loosely-mocked element returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> from members that
+aren't explicitly set up, which can cause the consuming framework to throw -
+for example a <span class="xref">System.NullReferenceException</span> deep inside the
+framework's own code.
+</p>
+<p>
+If you need real framework services in your test, register concrete
+implementations for the services that framework consumes (or avoid mixing
+real framework wiring into the auto-mocking container) so that
+<a class="xref" href="Autofac.Extras.Moq.AutoMock.html">AutoMock</a> does not fill those slots with mocks.
+</p>
+</div>
 
   <h2 class="section" id="properties">Properties
 </h2>
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Extras.Moq.AutoMock.Container.html#Autofac_Extras_Moq_AutoMock_Container">Container</a></dt>
-    <dd></dd>
+    <dd><p>Gets the <a class="xref" href="Autofac.IContainer.html">IContainer</a> that handles the component resolution.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Extras.Moq.AutoMock.MockRepository.html#Autofac_Extras_Moq_AutoMock_MockRepository">MockRepository</a></dt>
-    <dd></dd>
+    <dd><p>Gets the <a class="xref" href="Autofac.Extras.Moq.AutoMock.MockRepository.html#Autofac_Extras_Moq_AutoMock_MockRepository">MockRepository</a> instance responsible for expectations and mocks.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Extras.Moq.AutoMock.VerifyAll.html#Autofac_Extras_Moq_AutoMock_VerifyAll">VerifyAll</a></dt>
-    <dd></dd>
+    <dd><p>Gets or sets a value indicating whether all mocks are verified.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -142,51 +166,63 @@ Class AutoMock
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Extras.Moq.AutoMock.Create.html#Autofac_Extras_Moq_AutoMock_Create_System_Type_Autofac_Core_Parameter___">Create(Type, params Parameter[])</a></dt>
-    <dd></dd>
+    <dd><p>Resolve the specified type in the container (register it if needed).</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Extras.Moq.AutoMock.Create.html#Autofac_Extras_Moq_AutoMock_Create__1_Autofac_Core_Parameter___">Create&lt;T&gt;(params Parameter[])</a></dt>
-    <dd></dd>
+    <dd><p>Resolve the specified type in the container (register it if needed).</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Extras.Moq.AutoMock.Dispose.html#Autofac_Extras_Moq_AutoMock_Dispose">Dispose()</a></dt>
-    <dd></dd>
+    <dd><p>Verifies mocks and disposes internal container.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Extras.Moq.AutoMock.Dispose.html#Autofac_Extras_Moq_AutoMock_Dispose_System_Boolean_">Dispose(bool)</a></dt>
-    <dd></dd>
+    <dd><p>Handles disposal of managed and unmanaged resources.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Extras.Moq.AutoMock.Finalize.html#Autofac_Extras_Moq_AutoMock_Finalize">~AutoMock()</a></dt>
-    <dd></dd>
+    <dd><p>Finalizes an instance of the <a class="xref" href="Autofac.Extras.Moq.AutoMock.html">AutoMock</a> class.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Extras.Moq.AutoMock.GetFromRepository.html#Autofac_Extras_Moq_AutoMock_GetFromRepository_Moq_MockRepository_">GetFromRepository(MockRepository)</a></dt>
-    <dd></dd>
+    <dd><p>Create new <a class="xref" href="Autofac.Extras.Moq.AutoMock.html">AutoMock</a> instance that will create mocks with behavior defined by a repository.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Extras.Moq.AutoMock.GetFromRepository.html#Autofac_Extras_Moq_AutoMock_GetFromRepository_Moq_MockRepository_System_Action_Autofac_ContainerBuilder__">GetFromRepository(MockRepository, Action&lt;ContainerBuilder&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Create new <a class="xref" href="Autofac.Extras.Moq.AutoMock.html">AutoMock</a> instance that will create mocks with behavior defined by a repository.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Extras.Moq.AutoMock.GetLoose.html#Autofac_Extras_Moq_AutoMock_GetLoose">GetLoose()</a></dt>
-    <dd></dd>
+    <dd><p>Create new <a class="xref" href="Autofac.Extras.Moq.AutoMock.html">AutoMock</a> instance with loose mock behavior.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Extras.Moq.AutoMock.GetLoose.html#Autofac_Extras_Moq_AutoMock_GetLoose_System_Action_Autofac_ContainerBuilder__">GetLoose(Action&lt;ContainerBuilder&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Create new <a class="xref" href="Autofac.Extras.Moq.AutoMock.html">AutoMock</a> instance with loose mock behavior.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Extras.Moq.AutoMock.GetStrict.html#Autofac_Extras_Moq_AutoMock_GetStrict">GetStrict()</a></dt>
-    <dd></dd>
+    <dd><p>Create new <a class="xref" href="Autofac.Extras.Moq.AutoMock.html">AutoMock</a> instance with strict mock behavior.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Extras.Moq.AutoMock.GetStrict.html#Autofac_Extras_Moq_AutoMock_GetStrict_System_Action_Autofac_ContainerBuilder__">GetStrict(Action&lt;ContainerBuilder&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Create new <a class="xref" href="Autofac.Extras.Moq.AutoMock.html">AutoMock</a> instance with strict mock behavior.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Extras.Moq.AutoMock.Mock.html#Autofac_Extras_Moq_AutoMock_Mock__1_Autofac_Core_Parameter___">Mock&lt;T&gt;(params Parameter[])</a></dt>
-    <dd></dd>
+    <dd><p>Finds (creating if needed) the actual mock for the provided type.</p>
+</dd>
   </dl>
 
 

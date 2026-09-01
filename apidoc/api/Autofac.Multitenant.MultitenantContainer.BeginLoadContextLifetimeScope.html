@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,11 @@ Method BeginLoadContextLifetimeScope
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Begin a new anonymous sub-scope, with additional components available to it that may be dynamically
+loaded from the provided <span class="xref">System.Runtime.Loader.AssemblyLoadContext</span>.
+Component instances created via the new scope
+will be disposed along with it.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -132,16 +136,20 @@ Method BeginLoadContextLifetimeScope
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><code>loadContext</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.loader.assemblyloadcontext">AssemblyLoadContext</a></dt>
-  <dd></dd>
-  <dt><code>configurationAction</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a>&gt;</dt>
-  <dd></dd>
+  <dt><code>loadContext</code> <span class="xref">AssemblyLoadContext</span></dt>
+  <dd><p>A <span class="xref">System.Runtime.Loader.AssemblyLoadContext</span> to associate to the created <a class="xref" href="Autofac.ILifetimeScope.html">ILifetimeScope</a>.</p>
+</dd>
+  <dt><code>configurationAction</code> <span class="xref">Action</span>&lt;<a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a>&gt;</dt>
+  <dd><p>Action on a <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a>
+that adds component registrations visible only in the new scope.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="Autofac.ILifetimeScope.html">ILifetimeScope</a></dt>
-  <dd></dd>
+  <dd><p>A new lifetime scope.</p>
+</dd>
 </dl>
 
 
@@ -149,7 +157,24 @@ Method BeginLoadContextLifetimeScope
 
 
 
+<h4 class="section" id="Autofac_Multitenant_MultitenantContainer_BeginLoadContextLifetimeScope_System_Runtime_Loader_AssemblyLoadContext_System_Action_Autofac_ContainerBuilder___examples">Examples</h4>
+<pre><code class="lang-csharp">IContainer cr = // ...
+AssemblyLoadContext pluginContext = // ...
+using (var lifetime = cr.BeginLoadContextLifetimeScope(pluginContext, builder =&gt; {
+        var assembly = pluginContext.LoadFromAssemblyPath("Plugins/plugin.dll");
+        builder.RegisterType(assembly.GetType("PluginEntryPoint")).As&lt;IPlugin&gt;();
+{
+    var plugin = lifetime.Resolve&lt;IPlugin&gt;();
+}</code></pre>
 
+
+<h4 class="section" id="Autofac_Multitenant_MultitenantContainer_BeginLoadContextLifetimeScope_System_Runtime_Loader_AssemblyLoadContext_System_Action_Autofac_ContainerBuilder___remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>When the returned lifetime scope is disposed, the provided
+<code class="paramref">loadContext</code> can be unloaded, in that
+Autofac will no longer have any references to types loaded from <code class="paramref">loadContext</code>.
+However if you have captured references to types from the loaded assemblies manually, you still may not be able
+to unload.</p>
+</div>
 
 
 
@@ -161,7 +186,11 @@ Method BeginLoadContextLifetimeScope
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Begin a new tagged sub-scope, with additional components available to it that may be dynamically
+loaded from the provided <span class="xref">System.Runtime.Loader.AssemblyLoadContext</span>.
+Component instances created via the new scope
+will be disposed along with it.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -170,18 +199,23 @@ Method BeginLoadContextLifetimeScope
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><code>tag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-  <dd></dd>
-  <dt><code>loadContext</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.loader.assemblyloadcontext">AssemblyLoadContext</a></dt>
-  <dd></dd>
-  <dt><code>configurationAction</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a>&gt;</dt>
-  <dd></dd>
+  <dt><code>tag</code> <span class="xref">object</span></dt>
+  <dd><p>The tag applied to the <a class="xref" href="Autofac.ILifetimeScope.html">ILifetimeScope</a>.</p>
+</dd>
+  <dt><code>loadContext</code> <span class="xref">AssemblyLoadContext</span></dt>
+  <dd><p>A <span class="xref">System.Runtime.Loader.AssemblyLoadContext</span> to associate to the created <a class="xref" href="Autofac.ILifetimeScope.html">ILifetimeScope</a>.</p>
+</dd>
+  <dt><code>configurationAction</code> <span class="xref">Action</span>&lt;<a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a>&gt;</dt>
+  <dd><p>Action on a <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a>
+that adds component registrations visible only in the new scope.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="Autofac.ILifetimeScope.html">ILifetimeScope</a></dt>
-  <dd></dd>
+  <dd><p>A new lifetime scope.</p>
+</dd>
 </dl>
 
 
@@ -189,7 +223,24 @@ Method BeginLoadContextLifetimeScope
 
 
 
+<h4 class="section" id="Autofac_Multitenant_MultitenantContainer_BeginLoadContextLifetimeScope_System_Object_System_Runtime_Loader_AssemblyLoadContext_System_Action_Autofac_ContainerBuilder___examples">Examples</h4>
+<pre><code class="lang-csharp">IContainer cr = // ...
+AssemblyLoadContext pluginContext = // ...
+using (var lifetime = cr.BeginLoadContextLifetimeScope(pluginContext, builder =&gt; {
+        var assembly = pluginContext.LoadFromAssemblyPath("Plugins/plugin.dll");
+        builder.RegisterType(assembly.GetType("PluginEntryPoint")).As&lt;IPlugin&gt;();
+{
+    var plugin = lifetime.Resolve&lt;IPlugin&gt;();
+}</code></pre>
 
+
+<h4 class="section" id="Autofac_Multitenant_MultitenantContainer_BeginLoadContextLifetimeScope_System_Object_System_Runtime_Loader_AssemblyLoadContext_System_Action_Autofac_ContainerBuilder___remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>When the returned lifetime scope is disposed, the provided
+<code class="paramref">loadContext</code> can be unloaded, in that
+Autofac will no longer have any references to types loaded from <code class="paramref">loadContext</code>.
+However if you have captured references to types from the loaded assemblies manually, you still may not be able
+to unload.</p>
+</div>
 
 
 

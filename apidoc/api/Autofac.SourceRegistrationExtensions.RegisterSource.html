@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,8 @@ Method RegisterSource
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Add a registration source to the container.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -133,15 +134,18 @@ Method RegisterSource
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>builder</code> <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a></dt>
-  <dd></dd>
+  <dd><p>The builder to register the registration source via.</p>
+</dd>
   <dt><code>registrationSource</code> <a class="xref" href="Autofac.Core.IRegistrationSource.html">IRegistrationSource</a></dt>
-  <dd></dd>
+  <dd><p>The registration source to add.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="Autofac.Core.Registration.ISourceRegistrar.html">ISourceRegistrar</a></dt>
-  <dd></dd>
+  <dd><p>The <a class="xref" href="Autofac.Core.Registration.ISourceRegistrar.html">ISourceRegistrar</a> to allow additional chained registration source registrations.</p>
+</dd>
 </dl>
 
 
@@ -161,7 +165,8 @@ Method RegisterSource
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Add a registration source to the container.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -171,19 +176,22 @@ Method RegisterSource
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>builder</code> <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a></dt>
-  <dd></dd>
+  <dd><p>The builder to register the registration source with.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="Autofac.Core.Registration.ISourceRegistrar.html">ISourceRegistrar</a></dt>
-  <dd></dd>
+  <dd><p>The <a class="xref" href="Autofac.Core.Registration.ISourceRegistrar.html">ISourceRegistrar</a> to allow additional chained registration source registrations.</p>
+</dd>
 </dl>
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>TRegistrationSource</code></dt>
-  <dd></dd>
+  <dd><p>The registration source to add.</p>
+</dd>
 </dl>
 
 
@@ -192,6 +200,12 @@ Method RegisterSource
 
 
 
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><span class="xref">ArgumentNullException</span></dt>
+  <dd><p>Thrown if <code class="paramref">builder</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+</dl>
 
 
 
@@ -202,7 +216,8 @@ Method RegisterSource
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Add a registration source to the container.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -212,19 +227,22 @@ Method RegisterSource
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>registrar</code> <a class="xref" href="Autofac.Core.Registration.ISourceRegistrar.html">ISourceRegistrar</a></dt>
-  <dd></dd>
+  <dd><p>The source registrar that will make the registration into the container.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="Autofac.Core.Registration.ISourceRegistrar.html">ISourceRegistrar</a></dt>
-  <dd></dd>
+  <dd><p>The <a class="xref" href="Autofac.Core.Registration.ISourceRegistrar.html">ISourceRegistrar</a> to allow additional chained registration source registrations.</p>
+</dd>
 </dl>
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>TRegistrationSource</code></dt>
-  <dd></dd>
+  <dd><p>The registration source to add.</p>
+</dd>
 </dl>
 
 
@@ -233,6 +251,12 @@ Method RegisterSource
 
 
 
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><span class="xref">ArgumentNullException</span></dt>
+  <dd><p>Thrown if <code class="paramref">registrar</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+</dl>
 
 
 

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -109,7 +109,7 @@ Class ResolveRequestContext
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><span class="xref">ResolveRequestContext</span></div>
     </dd>
   </dl>
@@ -354,51 +354,70 @@ Class ResolveRequestContext
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Resolving.Pipeline.ResolveRequestContext.ActivationScope.html#Autofac_Core_Resolving_Pipeline_ResolveRequestContext_ActivationScope">ActivationScope</a></dt>
-    <dd></dd>
+    <dd><p>Gets or sets the lifetime scope that will be used for the activation of any components later in the pipeline.
+Avoid resolving instances directly from this scope; they will not be traced as part of the same operation.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Resolving.Pipeline.ResolveRequestContext.ComponentRegistry.html#Autofac_Core_Resolving_Pipeline_ResolveRequestContext_ComponentRegistry">ComponentRegistry</a></dt>
-    <dd></dd>
+    <dd><p>Gets the associated services with the components that provide them.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Resolving.Pipeline.ResolveRequestContext.DecoratorContext.html#Autofac_Core_Resolving_Pipeline_ResolveRequestContext_DecoratorContext">DecoratorContext</a></dt>
-    <dd></dd>
+    <dd><p>Gets or sets the active decorator context for the request.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Resolving.Pipeline.ResolveRequestContext.DecoratorTarget.html#Autofac_Core_Resolving_Pipeline_ResolveRequestContext_DecoratorTarget">DecoratorTarget</a></dt>
-    <dd></dd>
+    <dd><p>Gets the target registration for decorator requests.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Resolving.Pipeline.ResolveRequestContext.DiagnosticSource.html#Autofac_Core_Resolving_Pipeline_ResolveRequestContext_DiagnosticSource">DiagnosticSource</a></dt>
-    <dd></dd>
+    <dd><p>Gets the <span class="xref">System.Diagnostics.DiagnosticListener</span> to which trace events should be written.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Resolving.Pipeline.ResolveRequestContext.Instance.html#Autofac_Core_Resolving_Pipeline_ResolveRequestContext_Instance">Instance</a></dt>
-    <dd></dd>
+    <dd><p>Gets or sets the instance that will be returned as the result of the
+resolve request. On the way back up the pipeline, after calling the next
+middleware in the chain, this value will be populated with the resolved
+instance. Check the <a class="xref" href="Autofac.Core.Resolving.Pipeline.ResolveRequestContext.NewInstanceActivated.html#Autofac_Core_Resolving_Pipeline_ResolveRequestContext_NewInstanceActivated">NewInstanceActivated</a> property to
+determine whether the object here was a newly activated instance, or a
+shared instance previously activated.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Resolving.Pipeline.ResolveRequestContext.NewInstanceActivated.html#Autofac_Core_Resolving_Pipeline_ResolveRequestContext_NewInstanceActivated">NewInstanceActivated</a></dt>
-    <dd></dd>
+    <dd><p>Gets a value indicating whether the resolved <a class="xref" href="Autofac.Core.Resolving.Pipeline.ResolveRequestContext.Instance.html#Autofac_Core_Resolving_Pipeline_ResolveRequestContext_Instance">Instance</a> is a new instance of a component has been activated during this request,
+or an existing shared instance that has been retrieved.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Resolving.Pipeline.ResolveRequestContext.Operation.html#Autofac_Core_Resolving_Pipeline_ResolveRequestContext_Operation">Operation</a></dt>
-    <dd></dd>
+    <dd><p>Gets a reference to the owning resolve operation (which might encompass multiple nested requests).</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Resolving.Pipeline.ResolveRequestContext.Parameters.html#Autofac_Core_Resolving_Pipeline_ResolveRequestContext_Parameters">Parameters</a></dt>
-    <dd></dd>
+    <dd><p>Gets or sets the current resolve parameters. These can be changed using the <a class="xref" href="Autofac.Core.Resolving.Pipeline.ResolveRequestContext.ChangeParameters.html#Autofac_Core_Resolving_Pipeline_ResolveRequestContext_ChangeParameters_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter__">ChangeParameters(IEnumerable&lt;Parameter&gt;)</a> method.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Resolving.Pipeline.ResolveRequestContext.PhaseReached.html#Autofac_Core_Resolving_Pipeline_ResolveRequestContext_PhaseReached">PhaseReached</a></dt>
-    <dd></dd>
+    <dd><p>Gets or sets the phase of the pipeline reached by this request.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Resolving.Pipeline.ResolveRequestContext.Registration.html#Autofac_Core_Resolving_Pipeline_ResolveRequestContext_Registration">Registration</a></dt>
-    <dd></dd>
+    <dd><p>Gets the component registration that is being resolved in the current request.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Resolving.Pipeline.ResolveRequestContext.Service.html#Autofac_Core_Resolving_Pipeline_ResolveRequestContext_Service">Service</a></dt>
-    <dd></dd>
+    <dd><p>Gets the service that is being resolved in the current request.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -406,15 +425,19 @@ Class ResolveRequestContext
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Resolving.Pipeline.ResolveRequestContext.ChangeParameters.html#Autofac_Core_Resolving_Pipeline_ResolveRequestContext_ChangeParameters_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter__">ChangeParameters(IEnumerable&lt;Parameter&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Change the set of parameters being used in the processing of this request.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Resolving.Pipeline.ResolveRequestContext.ChangeScope.html#Autofac_Core_Resolving_Pipeline_ResolveRequestContext_ChangeScope_Autofac_Core_ISharingLifetimeScope_">ChangeScope(ISharingLifetimeScope)</a></dt>
-    <dd></dd>
+    <dd><p>Use this method to change the <a class="xref" href="Autofac.Core.ISharingLifetimeScope.html">ISharingLifetimeScope</a> that is used in this request. Changing this scope will
+also change the <a class="xref" href="Autofac.Core.IComponentRegistry.html">IComponentRegistry</a> available in this context.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Resolving.Pipeline.ResolveRequestContext.ResolveComponent.html#Autofac_Core_Resolving_Pipeline_ResolveRequestContext_ResolveComponent_Autofac_ResolveRequest__">ResolveComponent(in ResolveRequest)</a></dt>
-    <dd></dd>
+    <dd><p>Resolve an instance of the provided registration within the context.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="events">Events
@@ -422,7 +445,9 @@ Class ResolveRequestContext
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Resolving.Pipeline.ResolveRequestContext.RequestCompleting.html">RequestCompleting</a></dt>
-    <dd></dd>
+    <dd><p>Provides an event that will fire when the current request completes.
+Requests will only be considered 'complete' when the overall <a class="xref" href="Autofac.Core.Resolving.IResolveOperation.html">IResolveOperation</a> is completing.</p>
+</dd>
   </dl>
 
 

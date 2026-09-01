@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,29 +123,35 @@ Method WithMetadataFrom
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Use the properties of an attribute (or interface implemented by an attribute) on the scanned type
+to provide metadata values.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static IRegistrationBuilder&lt;object, ScanningActivatorData, DynamicRegistrationStyle&gt; WithMetadataFrom&lt;TAttribute&gt;(this IRegistrationBuilder&lt;object, ScanningActivatorData, DynamicRegistrationStyle&gt; registration)</code></pre>
+  <pre><code class="lang-csharp hljs">[UnconditionalSuppressMessage(&quot;Trimming&quot;, &quot;IL2087:UnrecognizedReflectionPattern&quot;, Justification = &quot;GetRuntimeProperties also enumerates non-public properties, but only readable public properties contribute metadata (preserved by the PublicProperties annotation on TAttribute). Non-public properties are not part of the supported metadata surface.&quot;)]
+public static IRegistrationBuilder&lt;object, ScanningActivatorData, DynamicRegistrationStyle&gt; WithMetadataFrom&lt;TAttribute&gt;(this IRegistrationBuilder&lt;object, ScanningActivatorData, DynamicRegistrationStyle&gt; registration)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><code>registration</code> <a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>, <a class="xref" href="Autofac.Features.Scanning.ScanningActivatorData.html">ScanningActivatorData</a>, <a class="xref" href="Autofac.Builder.DynamicRegistrationStyle.html">DynamicRegistrationStyle</a>&gt;</dt>
-  <dd></dd>
+  <dt><code>registration</code> <a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;<span class="xref">object</span>, <a class="xref" href="Autofac.Features.Scanning.ScanningActivatorData.html">ScanningActivatorData</a>, <a class="xref" href="Autofac.Builder.DynamicRegistrationStyle.html">DynamicRegistrationStyle</a>&gt;</dt>
+  <dd><p>Registration to set metadata on.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>, <a class="xref" href="Autofac.Features.Scanning.ScanningActivatorData.html">ScanningActivatorData</a>, <a class="xref" href="Autofac.Builder.DynamicRegistrationStyle.html">DynamicRegistrationStyle</a>&gt;</dt>
-  <dd></dd>
+  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;<span class="xref">object</span>, <a class="xref" href="Autofac.Features.Scanning.ScanningActivatorData.html">ScanningActivatorData</a>, <a class="xref" href="Autofac.Builder.DynamicRegistrationStyle.html">DynamicRegistrationStyle</a>&gt;</dt>
+  <dd><p>Registration builder allowing the registration to be configured.</p>
+</dd>
 </dl>
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>TAttribute</code></dt>
-  <dd></dd>
+  <dd><p>The attribute applied to the scanned type.</p>
+</dd>
 </dl>
 
 
@@ -153,6 +159,10 @@ Method WithMetadataFrom
 
 
 
+<h4 class="section" id="Autofac_RegistrationExtensions_WithMetadataFrom__1_Autofac_Builder_IRegistrationBuilder_System_Object_Autofac_Features_Scanning_ScanningActivatorData_Autofac_Builder_DynamicRegistrationStyle___remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>Inherited attributes are supported; however, there must be at most one matching attribute
+in the inheritance chain.</p>
+</div>
 
 
 
@@ -164,29 +174,35 @@ Method WithMetadataFrom
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Use the properties of an attribute (or interface implemented by an attribute) on the scanned type
+to provide metadata values.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static IRegistrationBuilder&lt;object, OpenGenericScanningActivatorData, DynamicRegistrationStyle&gt; WithMetadataFrom&lt;TAttribute&gt;(this IRegistrationBuilder&lt;object, OpenGenericScanningActivatorData, DynamicRegistrationStyle&gt; registration)</code></pre>
+  <pre><code class="lang-csharp hljs">[UnconditionalSuppressMessage(&quot;Trimming&quot;, &quot;IL2087:UnrecognizedReflectionPattern&quot;, Justification = &quot;GetRuntimeProperties also enumerates non-public properties, but only readable public properties contribute metadata (preserved by the PublicProperties annotation on TAttribute). Non-public properties are not part of the supported metadata surface.&quot;)]
+public static IRegistrationBuilder&lt;object, OpenGenericScanningActivatorData, DynamicRegistrationStyle&gt; WithMetadataFrom&lt;TAttribute&gt;(this IRegistrationBuilder&lt;object, OpenGenericScanningActivatorData, DynamicRegistrationStyle&gt; registration)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><code>registration</code> <a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>, <a class="xref" href="Autofac.Features.Scanning.OpenGenericScanningActivatorData.html">OpenGenericScanningActivatorData</a>, <a class="xref" href="Autofac.Builder.DynamicRegistrationStyle.html">DynamicRegistrationStyle</a>&gt;</dt>
-  <dd></dd>
+  <dt><code>registration</code> <a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;<span class="xref">object</span>, <a class="xref" href="Autofac.Features.Scanning.OpenGenericScanningActivatorData.html">OpenGenericScanningActivatorData</a>, <a class="xref" href="Autofac.Builder.DynamicRegistrationStyle.html">DynamicRegistrationStyle</a>&gt;</dt>
+  <dd><p>Registration to set metadata on.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>, <a class="xref" href="Autofac.Features.Scanning.OpenGenericScanningActivatorData.html">OpenGenericScanningActivatorData</a>, <a class="xref" href="Autofac.Builder.DynamicRegistrationStyle.html">DynamicRegistrationStyle</a>&gt;</dt>
-  <dd></dd>
+  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;<span class="xref">object</span>, <a class="xref" href="Autofac.Features.Scanning.OpenGenericScanningActivatorData.html">OpenGenericScanningActivatorData</a>, <a class="xref" href="Autofac.Builder.DynamicRegistrationStyle.html">DynamicRegistrationStyle</a>&gt;</dt>
+  <dd><p>Registration builder allowing the registration to be configured.</p>
+</dd>
 </dl>
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>TAttribute</code></dt>
-  <dd></dd>
+  <dd><p>The attribute applied to the scanned type.</p>
+</dd>
 </dl>
 
 
@@ -194,6 +210,10 @@ Method WithMetadataFrom
 
 
 
+<h4 class="section" id="Autofac_RegistrationExtensions_WithMetadataFrom__1_Autofac_Builder_IRegistrationBuilder_System_Object_Autofac_Features_Scanning_OpenGenericScanningActivatorData_Autofac_Builder_DynamicRegistrationStyle___remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>Inherited attributes are supported; however, there must be at most one matching attribute
+in the inheritance chain.</p>
+</div>
 
 
 

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface ILifetimeScope | Autofac ">
       
-      
+      <meta name="description" content="An  tracks the instantiation of component instances. It defines a boundary in which instances are shared and configured.   Disposing an  will dispose any components that were newly created when resolving from it, provided those components were not registered as .">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,16 @@ Interface ILifetimeScope
   <dl><dt>Assembly</dt><dd>Autofac.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>
+An <a class="xref" href="Autofac.ILifetimeScope.html">ILifetimeScope</a> tracks the instantiation of component instances.
+It defines a boundary in which instances are shared and configured.
+</p>
+<p>
+Disposing an <a class="xref" href="Autofac.ILifetimeScope.html">ILifetimeScope</a> will dispose any components that were
+newly created when resolving from it, provided those components were not registered as
+<a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.ExternallyOwned.html#Autofac_Builder_IRegistrationBuilder_3_ExternallyOwned">ExternallyOwned()</a>.
+</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -336,18 +345,52 @@ Interface ILifetimeScope
   </dd></dl>
 
 
+  <h2 id="Autofac_ILifetimeScope_examples">Examples</h2>
+  <pre><code class="lang-csharp">// See IContainer for definition of the container variable
+using (var requestScope = container.BeginLifetimeScope())
+{
+    // Note that handler is resolved from requestScope, not
+    // from the container:
 
+    var handler = requestScope.Resolve&lt;IRequestHandler&gt;();
+    handler.Handle(request);
+
+    // When requestScope is disposed, all resources used in processing
+    // the request will be released.
+}</code></pre>
+
+
+  <h2 id="Autofac_ILifetimeScope_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+All long-running applications should resolve components via an
+<a class="xref" href="Autofac.ILifetimeScope.html">ILifetimeScope</a>. Choosing the duration of the lifetime is application-
+specific.
+</p>
+<p>
+The standard Autofac integrations are already configured
+to create and dispose <a class="xref" href="Autofac.ILifetimeScope.html">ILifetimeScope</a>s as appropriate. For example, the
+integration with ASP.NET Core (via the .NET DI library) will create and dispose
+one <a class="xref" href="Autofac.ILifetimeScope.html">ILifetimeScope</a> per HTTP request.
+</p>
+<p>
+Most <a class="xref" href="Autofac.ILifetimeScope.html">ILifetimeScope</a> functionality is provided by extension methods
+on the inherited <a class="xref" href="Autofac.IComponentContext.html">IComponentContext</a> interface.
+</p>
+</div>
 
   <h2 class="section" id="properties">Properties
 </h2>
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.ILifetimeScope.Disposer.html#Autofac_ILifetimeScope_Disposer">Disposer</a></dt>
-    <dd></dd>
+    <dd><p>Gets the disposer associated with this <a class="xref" href="Autofac.ILifetimeScope.html">ILifetimeScope</a>.
+Component instances can be associated with it manually if required.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.ILifetimeScope.Tag.html#Autofac_ILifetimeScope_Tag">Tag</a></dt>
-    <dd></dd>
+    <dd><p>Gets the tag applied to the <a class="xref" href="Autofac.ILifetimeScope.html">ILifetimeScope</a>.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -355,27 +398,45 @@ Interface ILifetimeScope
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.ILifetimeScope.BeginLifetimeScope.html#Autofac_ILifetimeScope_BeginLifetimeScope">BeginLifetimeScope()</a></dt>
-    <dd></dd>
+    <dd><p>Begin a new nested scope. Component instances created via the new scope
+will be disposed along with it.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.ILifetimeScope.BeginLifetimeScope.html#Autofac_ILifetimeScope_BeginLifetimeScope_System_Action_Autofac_ContainerBuilder__">BeginLifetimeScope(Action&lt;ContainerBuilder&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Begin a new nested scope, with additional components available to it.
+Component instances created via the new scope
+will be disposed along with it.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.ILifetimeScope.BeginLifetimeScope.html#Autofac_ILifetimeScope_BeginLifetimeScope_System_Object_">BeginLifetimeScope(object)</a></dt>
-    <dd></dd>
+    <dd><p>Begin a new nested scope. Component instances created via the new scope
+will be disposed along with it.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.ILifetimeScope.BeginLifetimeScope.html#Autofac_ILifetimeScope_BeginLifetimeScope_System_Object_System_Action_Autofac_ContainerBuilder__">BeginLifetimeScope(object, Action&lt;ContainerBuilder&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Begin a new nested scope, with additional components available to it.
+Component instances created via the new scope
+will be disposed along with it.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.ILifetimeScope.BeginLoadContextLifetimeScope.html#Autofac_ILifetimeScope_BeginLoadContextLifetimeScope_System_Object_System_Runtime_Loader_AssemblyLoadContext_System_Action_Autofac_ContainerBuilder__">BeginLoadContextLifetimeScope(object, AssemblyLoadContext, Action&lt;ContainerBuilder&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Begin a new tagged sub-scope, with additional components available to it that may be dynamically
+loaded from the provided <span class="xref">System.Runtime.Loader.AssemblyLoadContext</span>.
+Component instances created via the new scope
+will be disposed along with it.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.ILifetimeScope.BeginLoadContextLifetimeScope.html#Autofac_ILifetimeScope_BeginLoadContextLifetimeScope_System_Runtime_Loader_AssemblyLoadContext_System_Action_Autofac_ContainerBuilder__">BeginLoadContextLifetimeScope(AssemblyLoadContext, Action&lt;ContainerBuilder&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Begin a new anonymous sub-scope, with additional components available to it that may be dynamically
+loaded from the provided <span class="xref">System.Runtime.Loader.AssemblyLoadContext</span>.
+Component instances created via the new scope
+will be disposed along with it.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="events">Events
@@ -383,18 +444,30 @@ Interface ILifetimeScope
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.ILifetimeScope.ChildLifetimeScopeBeginning.html">ChildLifetimeScopeBeginning</a></dt>
-    <dd></dd>
+    <dd><p>Fired when a new scope based on the current scope is beginning.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.ILifetimeScope.CurrentScopeEnding.html">CurrentScopeEnding</a></dt>
-    <dd></dd>
+    <dd><p>Fired when this scope is ending.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.ILifetimeScope.ResolveOperationBeginning.html">ResolveOperationBeginning</a></dt>
-    <dd></dd>
+    <dd><p>Fired when a resolve operation is beginning in this scope.</p>
+</dd>
   </dl>
 
 
+  <h2 id="seealso">See Also</h2>
+  <div class="seealso">
+      <div><a class="xref" href="Autofac.IContainer.html">IContainer</a></div>
+      <div><a class="xref" href="Autofac.IComponentContext.html">IComponentContext</a></div>
+      <div><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.InstancePerMatchingLifetimeScope.html#Autofac_Builder_IRegistrationBuilder_3_InstancePerMatchingLifetimeScope_System_Object___">InstancePerMatchingLifetimeScope</a>(params <span class="xref">object</span>[])</div>
+      <div><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.InstancePerLifetimeScope.html#Autofac_Builder_IRegistrationBuilder_3_InstancePerLifetimeScope">InstancePerLifetimeScope</a>()</div>
+      <div><a class="xref" href="Autofac.Core.InstanceSharing.html">InstanceSharing</a></div>
+      <div><a class="xref" href="Autofac.Core.IComponentLifetime.html">IComponentLifetime</a></div>
+  </div>
 
 </article>
 

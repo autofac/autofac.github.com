@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,8 @@ Method OverrideWebApiActionFilterFor
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Sets the provided registration to act as an <span class="xref">System.Web.Http.Filters.IOverrideFilter</span> for the specified controller action.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -133,16 +134,19 @@ Method OverrideWebApiActionFilterFor
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>builder</code> <a class="xref" href="../Autofac.ContainerBuilder.html">ContainerBuilder</a></dt>
-  <dd></dd>
-  <dt><code>actionSelector</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1">Expression</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;TController&gt;&gt;</dt>
-  <dd></dd>
+  <dd><p>The container builder.</p>
+</dd>
+  <dt><code>actionSelector</code> <span class="xref">Expression</span>&lt;<span class="xref">Action</span>&lt;TController&gt;&gt;</dt>
+  <dd><p>The action selector.</p>
+</dd>
 </dl>
 
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>TController</code></dt>
-  <dd></dd>
+  <dd><p>The type of the controller.</p>
+</dd>
 </dl>
 
 
@@ -161,7 +165,8 @@ Method OverrideWebApiActionFilterFor
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Sets the provided registration to act as an <span class="xref">System.Web.Http.Filters.IOverrideFilter</span> for the specified controller.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -171,14 +176,16 @@ Method OverrideWebApiActionFilterFor
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>builder</code> <a class="xref" href="../Autofac.ContainerBuilder.html">ContainerBuilder</a></dt>
-  <dd></dd>
+  <dd><p>The container builder.</p>
+</dd>
 </dl>
 
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>TController</code></dt>
-  <dd></dd>
+  <dd><p>The type of the controller.</p>
+</dd>
 </dl>
 
 

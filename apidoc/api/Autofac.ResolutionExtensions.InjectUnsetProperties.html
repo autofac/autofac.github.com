@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,9 @@ Method InjectUnsetProperties
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Set any null-valued properties on <code class="paramref">instance</code> that can be
+resolved by the container.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -133,21 +135,25 @@ Method InjectUnsetProperties
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>context</code> <a class="xref" href="Autofac.IComponentContext.html">IComponentContext</a></dt>
-  <dd></dd>
+  <dd><p>The context from which to resolve the service.</p>
+</dd>
   <dt><code>instance</code> <span class="xref">TService</span></dt>
-  <dd></dd>
+  <dd><p>The instance to inject properties into.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><span class="xref">TService</span></dt>
-  <dd></dd>
+  <dd><p><code class="paramref">instance</code>.</p>
+</dd>
 </dl>
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>TService</code></dt>
-  <dd></dd>
+  <dd><p>Type of instance. Used only to provide method chaining.</p>
+</dd>
 </dl>
 
 
@@ -166,7 +172,9 @@ Method InjectUnsetProperties
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Set any null-valued properties on <code class="paramref">instance</code> that can be
+resolved by the container.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -176,23 +184,28 @@ Method InjectUnsetProperties
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>context</code> <a class="xref" href="Autofac.IComponentContext.html">IComponentContext</a></dt>
-  <dd></dd>
+  <dd><p>The context from which to resolve the service.</p>
+</dd>
   <dt><code>instance</code> <span class="xref">TService</span></dt>
-  <dd></dd>
-  <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Autofac.Core.Parameter.html">Parameter</a>&gt;</dt>
-  <dd></dd>
+  <dd><p>The instance to inject properties into.</p>
+</dd>
+  <dt><code>parameters</code> <span class="xref">IEnumerable</span>&lt;<a class="xref" href="Autofac.Core.Parameter.html">Parameter</a>&gt;</dt>
+  <dd><p>Optional parameters to use during the property injection.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><span class="xref">TService</span></dt>
-  <dd></dd>
+  <dd><p><code class="paramref">instance</code>.</p>
+</dd>
 </dl>
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>TService</code></dt>
-  <dd></dd>
+  <dd><p>Type of instance. Used only to provide method chaining.</p>
+</dd>
 </dl>
 
 
@@ -211,7 +224,9 @@ Method InjectUnsetProperties
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Set any null-valued properties on <code class="paramref">instance</code> that can be
+resolved by the container.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -221,23 +236,28 @@ Method InjectUnsetProperties
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>context</code> <a class="xref" href="Autofac.IComponentContext.html">IComponentContext</a></dt>
-  <dd></dd>
+  <dd><p>The context from which to resolve the service.</p>
+</dd>
   <dt><code>instance</code> <span class="xref">TService</span></dt>
-  <dd></dd>
+  <dd><p>The instance to inject properties into.</p>
+</dd>
   <dt><code>parameters</code> <a class="xref" href="Autofac.Core.Parameter.html">Parameter</a>[]</dt>
-  <dd></dd>
+  <dd><p>Optional parameters to use during the property injection.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><span class="xref">TService</span></dt>
-  <dd></dd>
+  <dd><p><code class="paramref">instance</code>.</p>
+</dd>
 </dl>
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>TService</code></dt>
-  <dd></dd>
+  <dd><p>Type of instance. Used only to provide method chaining.</p>
+</dd>
 </dl>
 
 

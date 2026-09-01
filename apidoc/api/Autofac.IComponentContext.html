@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IComponentContext | Autofac ">
       
-      
+      <meta name="description" content="The context in which a service can be accessed or a component&#39;s dependencies resolved. Disposal of a context will dispose any owned components.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,10 @@ Interface IComponentContext
   <dl><dt>Assembly</dt><dd>Autofac.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>The context in which a service can be accessed or a component's
+dependencies resolved. Disposal of a context will dispose any owned
+components.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -333,7 +336,8 @@ Interface IComponentContext
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.IComponentContext.ComponentRegistry.html#Autofac_IComponentContext_ComponentRegistry">ComponentRegistry</a></dt>
-    <dd></dd>
+    <dd><p>Gets the associated services with the components that provide them.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -341,7 +345,8 @@ Interface IComponentContext
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.IComponentContext.ResolveComponent.html#Autofac_IComponentContext_ResolveComponent_Autofac_ResolveRequest__">ResolveComponent(in ResolveRequest)</a></dt>
-    <dd></dd>
+    <dd><p>Resolve an instance of the provided registration within the context.</p>
+</dd>
   </dl>
 
 

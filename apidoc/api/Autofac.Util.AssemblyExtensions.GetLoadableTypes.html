@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,23 +123,28 @@ Method GetLoadableTypes
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Safely returns the set of loadable types from an assembly.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static IEnumerable&lt;Type&gt; GetLoadableTypes(this Assembly assembly)</code></pre>
+  <pre><code class="lang-csharp hljs">[RequiresUnreferencedCode(&quot;Enumerating all types defined in an assembly is not compatible with member-level trimming; the linker cannot determine which types to preserve.&quot;)]
+public static IEnumerable&lt;Type&gt; GetLoadableTypes(this Assembly assembly)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><code>assembly</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.assembly">Assembly</a></dt>
-  <dd></dd>
+  <dt><code>assembly</code> <span class="xref">Assembly</span></dt>
+  <dd><p>The <span class="xref">System.Reflection.Assembly</span> from which to load types.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a>&gt;</dt>
-  <dd></dd>
+  <dt><span class="xref">IEnumerable</span>&lt;<span class="xref">Type</span>&gt;</dt>
+  <dd><p>The set of types from the <code class="paramref">assembly</code>, or the subset
+of types that could be loaded if there was any error.</p>
+</dd>
 </dl>
 
 
@@ -149,6 +154,12 @@ Method GetLoadableTypes
 
 
 
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><span class="xref">ArgumentNullException</span></dt>
+  <dd><p>Thrown if <code class="paramref">assembly</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+</dl>
 
 
 

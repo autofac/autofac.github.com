@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class InterceptAttribute | Autofac ">
       
-      
+      <meta name="description" content="Indicates that a type should be intercepted.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,11 +96,13 @@ Class InterceptAttribute
   <dl><dt>Assembly</dt><dd>Autofac.Extras.DynamicProxy.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Indicates that a type should be intercepted.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[AttributeUsage(AttributeTargets.Class|AttributeTargets.Interface, AllowMultiple = true)]
+    <pre><code class="lang-csharp hljs">[ExcludeFromCodeCoverage]
+[AttributeUsage(AttributeTargets.Class|AttributeTargets.Interface, AllowMultiple = true)]
 public class InterceptAttribute : Attribute</code></pre>
   </div>
 
@@ -110,8 +112,8 @@ public class InterceptAttribute : Attribute</code></pre>
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute">Attribute</a></div>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">Attribute</span></div>
       <div><span class="xref">InterceptAttribute</span></div>
     </dd>
   </dl>
@@ -128,15 +130,18 @@ public class InterceptAttribute : Attribute</code></pre>
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Extras.DynamicProxy.InterceptAttribute.-ctor.html#Autofac_Extras_DynamicProxy_InterceptAttribute__ctor_Autofac_Core_Service_">InterceptAttribute(Service)</a></dt>
-    <dd></dd>
+    <dd><p>Initializes a new instance of the <a class="xref" href="Autofac.Extras.DynamicProxy.InterceptAttribute.html">InterceptAttribute</a> class.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Extras.DynamicProxy.InterceptAttribute.-ctor.html#Autofac_Extras_DynamicProxy_InterceptAttribute__ctor_System_String_">InterceptAttribute(string)</a></dt>
-    <dd></dd>
+    <dd><p>Initializes a new instance of the <a class="xref" href="Autofac.Extras.DynamicProxy.InterceptAttribute.html">InterceptAttribute</a> class.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Extras.DynamicProxy.InterceptAttribute.-ctor.html#Autofac_Extras_DynamicProxy_InterceptAttribute__ctor_System_Type_">InterceptAttribute(Type)</a></dt>
-    <dd></dd>
+    <dd><p>Initializes a new instance of the <a class="xref" href="Autofac.Extras.DynamicProxy.InterceptAttribute.html">InterceptAttribute</a> class.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="properties">Properties
@@ -144,7 +149,8 @@ public class InterceptAttribute : Attribute</code></pre>
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Extras.DynamicProxy.InterceptAttribute.InterceptorService.html#Autofac_Extras_DynamicProxy_InterceptAttribute_InterceptorService">InterceptorService</a></dt>
-    <dd></dd>
+    <dd><p>Gets the interceptor service.</p>
+</dd>
   </dl>
 
 

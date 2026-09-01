@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -95,54 +95,69 @@ Classes
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Core.Activators.Reflection.AutowiringParameter.html">AutowiringParameter</a></dt>
-      <dd></dd>
+      <dd><p>Supplies values based on the target parameter type.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Core.Activators.Reflection.BoundConstructor.html">BoundConstructor</a></dt>
-      <dd></dd>
+      <dd><p>Represents the outcome of a single bind attempt by a <a class="xref" href="Autofac.Core.Activators.Reflection.ConstructorBinder.html">ConstructorBinder</a>.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Core.Activators.Reflection.ConstructorBinder.html">ConstructorBinder</a></dt>
-      <dd></dd>
+      <dd><p>Provides the functionality to bind a single constructor at resolve time.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Core.Activators.Reflection.DefaultConstructorFinder.html">DefaultConstructorFinder</a></dt>
-      <dd></dd>
+      <dd><p>Finds constructors that match a finder function.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Core.Activators.Reflection.DefaultValueParameter.html">DefaultValueParameter</a></dt>
-      <dd></dd>
+      <dd><p>Provides parameters that have a default value, set with an optional parameter
+declaration in C# or VB.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Core.Activators.Reflection.MatchingSignatureConstructorSelector.html">MatchingSignatureConstructorSelector</a></dt>
-      <dd></dd>
+      <dd><p>Selects a constructor based on its signature.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Core.Activators.Reflection.MostParametersConstructorSelector.html">MostParametersConstructorSelector</a></dt>
-      <dd></dd>
+      <dd><p>Selects the constructor with the most parameters.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Core.Activators.Reflection.NoConstructorsFoundException.html">NoConstructorsFoundException</a></dt>
-      <dd></dd>
+      <dd><p>Exception thrown when no suitable constructors could be found on a type.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Core.Activators.Reflection.ReflectionActivator.html">ReflectionActivator</a></dt>
-      <dd></dd>
+      <dd><p>Uses reflection to activate instances of a type.</p>
+</dd>
     </dl>
     <h3 id="interfaces">
 Interfaces
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Core.Activators.Reflection.IConstructorFinder.html">IConstructorFinder</a></dt>
-      <dd></dd>
+      <dd><p>Find suitable constructors from which to select.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Core.Activators.Reflection.IConstructorSelector.html">IConstructorSelector</a></dt>
-      <dd></dd>
+      <dd><p>Selects the best constructor from a set of available constructors.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Core.Activators.Reflection.IConstructorSelectorWithEarlyBinding.html">IConstructorSelectorWithEarlyBinding</a></dt>
-      <dd></dd>
+      <dd><p>Defines an interface that indicates a constructor selector can attempt to
+determine the correct constructor early, as the container is built,
+without needing to understand the set of parameters in each resolve.</p>
+</dd>
     </dl>
 
 

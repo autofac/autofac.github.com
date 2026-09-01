@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class MultitenantContainer | Autofac ">
       
-      
+      <meta name="description" content="implementation that provides the ability to register and resolve dependencies in a multitenant environment.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,9 @@ Class MultitenantContainer
   <dl><dt>Assembly</dt><dd>Autofac.Multitenant.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p><a class="xref" href="Autofac.IContainer.html">IContainer</a> implementation that provides the ability
+to register and resolve dependencies in a multitenant environment.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -109,7 +111,7 @@ Class MultitenantContainer
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><a class="xref" href="Autofac.Util.Disposable.html">Disposable</a></div>
       <div><span class="xref">MultitenantContainer</span></div>
     </dd>
@@ -142,13 +144,57 @@ Class MultitenantContainer
 
 
 
+  <h2 id="Autofac_Multitenant_MultitenantContainer_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+This container implementation modifies the definition of the standard
+container implementation by returning values that are tenant-specific.
+For example, resolving a component via <a class="xref" href="Autofac.Multitenant.MultitenantContainer.ResolveComponent.html#Autofac_Multitenant_MultitenantContainer_ResolveComponent_Autofac_ResolveRequest__">ResolveComponent(in ResolveRequest)</a>
+will yield a resolution of the dependency for the current tenant, not
+from a global container/lifetime.
+</p>
+<p>
+The "current tenant ID" is resolved from an implementation of
+<a class="xref" href="Autofac.Multitenant.ITenantIdentificationStrategy.html">ITenantIdentificationStrategy</a>
+that is passed into the container during construction.
+</p>
+<p>
+The ability to remove (<a class="xref" href="Autofac.Multitenant.MultitenantContainer.RemoveTenant.html#Autofac_Multitenant_MultitenantContainer_RemoveTenant_System_Object_">RemoveTenant(object?)</a>) or reconfigure
+(<a class="xref" href="Autofac.Multitenant.MultitenantContainer.ReconfigureTenant.html#Autofac_Multitenant_MultitenantContainer_ReconfigureTenant_System_Object_System_Action_Autofac_ContainerBuilder__">ReconfigureTenant(object?, Action&lt;ContainerBuilder&gt;)</a> an
+active tenant exists.  However, it must still be noted that
+tenant lifetime scopes are immutable: once they are retrieved,
+configured, or an item is resolved, that tenant lifetime scope
+cannot be updated or otherwise changed. This is important since
+it means you need to configure your defaults and tenant overrides
+early, in application startup.
+</p>
+<p>
+Even when using <a class="xref" href="Autofac.Multitenant.MultitenantContainer.ReconfigureTenant.html#Autofac_Multitenant_MultitenantContainer_ReconfigureTenant_System_Object_System_Action_Autofac_ContainerBuilder__">ReconfigureTenant(object?, Action&lt;ContainerBuilder&gt;)</a>, the
+existing tenant scope isn't modified, but is disposed and rebuilt.
+Any dependencies that were resolved from a removed scope will also
+be disposed.  You will need to account for this in your application.
+Depending on your architecture, it may require users to re-login or some
+other form of soft reset.
+</p>
+<p>
+If you do not configure a tenant lifetime scope for a tenant but resolve a
+tenant-specific dependency for that tenant, the lifetime scope
+will be implicitly created for you.
+</p>
+<p>
+You may explicitly create and configure a tenant lifetime scope
+using the <a class="xref" href="Autofac.Multitenant.MultitenantContainer.ConfigureTenant.html#Autofac_Multitenant_MultitenantContainer_ConfigureTenant_System_Object_System_Action_Autofac_ContainerBuilder__">ConfigureTenant(object?, Action&lt;ContainerBuilder&gt;)</a>
+method. If you need to perform some logic and build up the configuration
+for a tenant, you can do that using a <a class="xref" href="Autofac.Multitenant.ConfigurationActionBuilder.html">ConfigurationActionBuilder</a>.
+</p>
+</div>
 
   <h2 class="section" id="constructors">Constructors
 </h2>
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.-ctor.html#Autofac_Multitenant_MultitenantContainer__ctor_Autofac_Multitenant_ITenantIdentificationStrategy_Autofac_IContainer_">MultitenantContainer(ITenantIdentificationStrategy, IContainer)</a></dt>
-    <dd></dd>
+    <dd><p>Initializes a new instance of the <a class="xref" href="Autofac.Multitenant.MultitenantContainer.html">MultitenantContainer</a> class.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="properties">Properties
@@ -156,27 +202,36 @@ Class MultitenantContainer
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.ApplicationContainer.html#Autofac_Multitenant_MultitenantContainer_ApplicationContainer">ApplicationContainer</a></dt>
-    <dd></dd>
+    <dd><p>Gets the base application container.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.ComponentRegistry.html#Autofac_Multitenant_MultitenantContainer_ComponentRegistry">ComponentRegistry</a></dt>
-    <dd></dd>
+    <dd><p>Gets the current tenant's registry that associates services with the
+components that provide them.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.DiagnosticSource.html#Autofac_Multitenant_MultitenantContainer_DiagnosticSource">DiagnosticSource</a></dt>
-    <dd></dd>
+    <dd><p>Gets the <span class="xref">System.Diagnostics.DiagnosticListener</span> to which
+trace events should be written.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.Disposer.html#Autofac_Multitenant_MultitenantContainer_Disposer">Disposer</a></dt>
-    <dd></dd>
+    <dd><p>Gets the disposer associated with the current tenant's <a class="xref" href="Autofac.ILifetimeScope.html">ILifetimeScope</a>.
+Component instances can be associated with it manually if required.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.Tag.html#Autofac_Multitenant_MultitenantContainer_Tag">Tag</a></dt>
-    <dd></dd>
+    <dd><p>Gets the tag applied to the current tenant's <a class="xref" href="Autofac.ILifetimeScope.html">ILifetimeScope</a>.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.TenantIdentificationStrategy.html#Autofac_Multitenant_MultitenantContainer_TenantIdentificationStrategy">TenantIdentificationStrategy</a></dt>
-    <dd></dd>
+    <dd><p>Gets the strategy used for identifying the current tenant.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -184,83 +239,119 @@ Class MultitenantContainer
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.BeginLifetimeScope.html#Autofac_Multitenant_MultitenantContainer_BeginLifetimeScope">BeginLifetimeScope()</a></dt>
-    <dd></dd>
+    <dd><p>Begin a new nested scope for the current tenant. Component instances created via the new scope
+will be disposed along with it.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.BeginLifetimeScope.html#Autofac_Multitenant_MultitenantContainer_BeginLifetimeScope_System_Action_Autofac_ContainerBuilder__">BeginLifetimeScope(Action&lt;ContainerBuilder&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Begin a new nested scope for the current tenant, with additional
+components available to it. Component instances created via the new scope
+will be disposed along with it.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.BeginLifetimeScope.html#Autofac_Multitenant_MultitenantContainer_BeginLifetimeScope_System_Object_">BeginLifetimeScope(object)</a></dt>
-    <dd></dd>
+    <dd><p>Begin a new nested scope for the current tenant. Component instances created via the new scope
+will be disposed along with it.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.BeginLifetimeScope.html#Autofac_Multitenant_MultitenantContainer_BeginLifetimeScope_System_Object_System_Action_Autofac_ContainerBuilder__">BeginLifetimeScope(object, Action&lt;ContainerBuilder&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Begin a new nested scope for the current tenant, with additional
+components available to it. Component instances created via the new scope
+will be disposed along with it.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.BeginLoadContextLifetimeScope.html#Autofac_Multitenant_MultitenantContainer_BeginLoadContextLifetimeScope_System_Object_System_Runtime_Loader_AssemblyLoadContext_System_Action_Autofac_ContainerBuilder__">BeginLoadContextLifetimeScope(object, AssemblyLoadContext, Action&lt;ContainerBuilder&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Begin a new tagged sub-scope, with additional components available to it that may be dynamically
+loaded from the provided <span class="xref">System.Runtime.Loader.AssemblyLoadContext</span>.
+Component instances created via the new scope
+will be disposed along with it.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.BeginLoadContextLifetimeScope.html#Autofac_Multitenant_MultitenantContainer_BeginLoadContextLifetimeScope_System_Runtime_Loader_AssemblyLoadContext_System_Action_Autofac_ContainerBuilder__">BeginLoadContextLifetimeScope(AssemblyLoadContext, Action&lt;ContainerBuilder&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Begin a new anonymous sub-scope, with additional components available to it that may be dynamically
+loaded from the provided <span class="xref">System.Runtime.Loader.AssemblyLoadContext</span>.
+Component instances created via the new scope
+will be disposed along with it.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.ClearTenants.html#Autofac_Multitenant_MultitenantContainer_ClearTenants">ClearTenants()</a></dt>
-    <dd></dd>
+    <dd><p>Clears all tenants configurations and disposes the associated lifetime scopes.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.ClearTenantsAsync.html#Autofac_Multitenant_MultitenantContainer_ClearTenantsAsync">ClearTenantsAsync()</a></dt>
-    <dd></dd>
+    <dd><p>Clears all tenants configurations and disposes the associated lifetime scopes asynchronously.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.ConfigureTenant.html#Autofac_Multitenant_MultitenantContainer_ConfigureTenant_System_Object_System_Action_Autofac_ContainerBuilder__">ConfigureTenant(object?, Action&lt;ContainerBuilder&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Allows configuration of tenant-specific components. You may only call this
+method if the tenant is not currently configured.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.Dispose.html#Autofac_Multitenant_MultitenantContainer_Dispose_System_Boolean_">Dispose(bool)</a></dt>
-    <dd></dd>
+    <dd><p>Releases unmanaged and - optionally - managed resources.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.DisposeAsync.html#Autofac_Multitenant_MultitenantContainer_DisposeAsync_System_Boolean_">DisposeAsync(bool)</a></dt>
-    <dd></dd>
+    <dd><p>Releases unmanaged and - optionally - managed resources - possibly async.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.GetCurrentTenantScope.html#Autofac_Multitenant_MultitenantContainer_GetCurrentTenantScope">GetCurrentTenantScope()</a></dt>
-    <dd></dd>
+    <dd><p>Retrieves the lifetime scope for the current tenant based on execution
+context.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.GetTenantScope.html#Autofac_Multitenant_MultitenantContainer_GetTenantScope_System_Object_">GetTenantScope(object?)</a></dt>
-    <dd></dd>
+    <dd><p>Retrieves the lifetime scope for a specific tenant.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.GetTenants.html#Autofac_Multitenant_MultitenantContainer_GetTenants">GetTenants()</a></dt>
-    <dd></dd>
+    <dd><p>Returns collection of all registered tenants IDs.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.ReconfigureTenant.html#Autofac_Multitenant_MultitenantContainer_ReconfigureTenant_System_Object_System_Action_Autofac_ContainerBuilder__">ReconfigureTenant(object?, Action&lt;ContainerBuilder&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Allows re-configuration of tenant-specific components by closing and rebuilding
+the tenant scope.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.ReconfigureTenantAsync.html#Autofac_Multitenant_MultitenantContainer_ReconfigureTenantAsync_System_Object_System_Action_Autofac_ContainerBuilder__">ReconfigureTenantAsync(object?, Action&lt;ContainerBuilder&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Allows re-configuration of tenant-specific components by closing and rebuilding
+the tenant scope. The closed scope is disposed asynchronously.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.RemoveTenant.html#Autofac_Multitenant_MultitenantContainer_RemoveTenant_System_Object_">RemoveTenant(object?)</a></dt>
-    <dd></dd>
+    <dd><p>Removes the tenant configuration and disposes the associated lifetime scope.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.RemoveTenantAsync.html#Autofac_Multitenant_MultitenantContainer_RemoveTenantAsync_System_Object_">RemoveTenantAsync(object?)</a></dt>
-    <dd></dd>
+    <dd><p>Removes the tenant configuration and disposes the associated lifetime scope asynchronously.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.ResolveComponent.html#Autofac_Multitenant_MultitenantContainer_ResolveComponent_Autofac_ResolveRequest__">ResolveComponent(in ResolveRequest)</a></dt>
-    <dd></dd>
+    <dd><p>Resolve an instance of the provided registration within the current tenant context.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.TenantIsConfigured.html#Autofac_Multitenant_MultitenantContainer_TenantIsConfigured_System_Object_">TenantIsConfigured(object?)</a></dt>
-    <dd></dd>
+    <dd><p>Returns whether the given tenant ID has been configured.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="events">Events
@@ -268,18 +359,25 @@ Class MultitenantContainer
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.ChildLifetimeScopeBeginning.html">ChildLifetimeScopeBeginning</a></dt>
-    <dd></dd>
+    <dd><p>Fired when a new scope based on the current scope is beginning.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.CurrentScopeEnding.html">CurrentScopeEnding</a></dt>
-    <dd></dd>
+    <dd><p>Fired when this scope is ending.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.ResolveOperationBeginning.html">ResolveOperationBeginning</a></dt>
-    <dd></dd>
+    <dd><p>Fired when a resolve operation is beginning in this scope.</p>
+</dd>
   </dl>
 
 
+  <h2 id="seealso">See Also</h2>
+  <div class="seealso">
+      <div><a class="xref" href="Autofac.Multitenant.ConfigurationActionBuilder.html">ConfigurationActionBuilder</a></div>
+  </div>
 
 </article>
 

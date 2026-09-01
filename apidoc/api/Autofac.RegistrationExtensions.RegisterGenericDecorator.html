@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,31 +123,41 @@ Method RegisterGenericDecorator
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Decorate all components implementing open generic service <code class="paramref">decoratedServiceType</code>.
+The <code class="paramref">fromKey</code> and <code class="paramref">toKey</code> parameters must be different values.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static IRegistrationBuilder&lt;object, OpenGenericDecoratorActivatorData, DynamicRegistrationStyle&gt; RegisterGenericDecorator(this ContainerBuilder builder, Type decoratorType, Type decoratedServiceType, object fromKey, object? toKey = null)</code></pre>
+  <pre><code class="lang-csharp hljs">[RequiresDynamicCode(&quot;Registering an open generic decorator constructs closed generic types at runtime via MakeGenericType, which may require dynamic code generation when closed over value types and is not compatible with native AOT.&quot;)]
+public static IRegistrationBuilder&lt;object, OpenGenericDecoratorActivatorData, DynamicRegistrationStyle&gt; RegisterGenericDecorator(this ContainerBuilder builder, Type decoratorType, Type decoratedServiceType, object fromKey, object? toKey = null)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>builder</code> <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a></dt>
-  <dd></dd>
-  <dt><code>decoratorType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
-  <dd></dd>
-  <dt><code>decoratedServiceType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
-  <dd></dd>
-  <dt><code>fromKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-  <dd></dd>
-  <dt><code>toKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-  <dd></dd>
+  <dd><p>Container builder.</p>
+</dd>
+  <dt><code>decoratorType</code> <span class="xref">Type</span></dt>
+  <dd><p>The type of the decorator. Must be an open generic type, and accept a parameter
+of type <code class="paramref">decoratedServiceType</code>, which will be set to the instance being decorated.</p>
+</dd>
+  <dt><code>decoratedServiceType</code> <span class="xref">Type</span></dt>
+  <dd><p>Service type being decorated. Must be an open generic type.</p>
+</dd>
+  <dt><code>fromKey</code> <span class="xref">object</span></dt>
+  <dd><p>Service key or name associated with the components being decorated.</p>
+</dd>
+  <dt><code>toKey</code> <span class="xref">object</span></dt>
+  <dd><p>Service key or name given to the decorated components.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>, <a class="xref" href="Autofac.Features.OpenGenerics.OpenGenericDecoratorActivatorData.html">OpenGenericDecoratorActivatorData</a>, <a class="xref" href="Autofac.Builder.DynamicRegistrationStyle.html">DynamicRegistrationStyle</a>&gt;</dt>
-  <dd></dd>
+  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;<span class="xref">object</span>, <a class="xref" href="Autofac.Features.OpenGenerics.OpenGenericDecoratorActivatorData.html">OpenGenericDecoratorActivatorData</a>, <a class="xref" href="Autofac.Builder.DynamicRegistrationStyle.html">DynamicRegistrationStyle</a>&gt;</dt>
+  <dd><p>The decorator registration for continued configuration.</p>
+</dd>
 </dl>
 
 
@@ -167,23 +177,30 @@ Method RegisterGenericDecorator
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Decorate all components implementing open generic service <code class="paramref">serviceType</code>.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void RegisterGenericDecorator(this ContainerBuilder builder, Type decoratorType, Type serviceType, Func&lt;IDecoratorContext, bool&gt;? condition = null)</code></pre>
+  <pre><code class="lang-csharp hljs">[RequiresDynamicCode(&quot;Registering an open generic decorator constructs closed generic types at runtime via MakeGenericType, which may require dynamic code generation when closed over value types and is not compatible with native AOT.&quot;)]
+public static void RegisterGenericDecorator(this ContainerBuilder builder, Type decoratorType, Type serviceType, Func&lt;IDecoratorContext, bool&gt;? condition = null)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>builder</code> <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a></dt>
-  <dd></dd>
-  <dt><code>decoratorType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
-  <dd></dd>
-  <dt><code>serviceType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
-  <dd></dd>
-  <dt><code>condition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="Autofac.Features.Decorators.IDecoratorContext.html">IDecoratorContext</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
-  <dd></dd>
+  <dd><p>Container builder.</p>
+</dd>
+  <dt><code>decoratorType</code> <span class="xref">Type</span></dt>
+  <dd><p>The type of the decorator. Must be an open generic type, and accept a parameter
+of type <code class="paramref">serviceType</code>, which will be set to the instance being decorated.</p>
+</dd>
+  <dt><code>serviceType</code> <span class="xref">Type</span></dt>
+  <dd><p>Service type being decorated. Must be an open generic type.</p>
+</dd>
+  <dt><code>condition</code> <span class="xref">Func</span>&lt;<a class="xref" href="Autofac.Features.Decorators.IDecoratorContext.html">IDecoratorContext</a>, <span class="xref">bool</span>&gt;</dt>
+  <dd><p>A function that when provided with an <a class="xref" href="Autofac.Features.Decorators.IDecoratorContext.html">IDecoratorContext</a> instance determines if the decorator should be applied.</p>
+</dd>
 </dl>
 
 

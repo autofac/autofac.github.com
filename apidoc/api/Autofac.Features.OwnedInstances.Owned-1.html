@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class Owned&lt;T&gt; | Autofac ">
       
-      
+      <meta name="description" content="Represents a dependency that can be released by the dependent component.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,8 @@ Class Owned&lt;T&gt;
   <dl><dt>Assembly</dt><dd>Autofac.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Represents a dependency that can be released by the dependent component.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -108,13 +109,14 @@ Class Owned&lt;T&gt;
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd></dd>
+    <dd><p>The service provided by the dependency.</p>
+</dd>
   </dl>
 
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><a class="xref" href="Autofac.Util.Disposable.html">Disposable</a></div>
       <div><span class="xref">Owned&lt;T&gt;</span></div>
     </dd>
@@ -138,14 +140,62 @@ Class Owned&lt;T&gt;
 
 
 
+  <h2 id="Autofac_Features_OwnedInstances_Owned_1_examples">Examples</h2>
+  <p>The component D below is disposable and implements IService:</p>
+<pre><code class="lang-csharp">public class D : IService, IDisposable
+{
+  // ...
+}</code></pre>
+<p>The dependent component C can dispose of the D instance whenever required by taking a dependency on
+<a class="xref" href="Autofac.Features.OwnedInstances.Owned-1.html">Owned&lt;T&gt;</a>:</p>
+<pre><code class="lang-csharp">public class C
+{
+  IService _service;
 
+  public C(Owned&lt;IService&gt; service)
+  {
+    _service = service;
+  }
+
+  void DoWork()
+  {
+    _service.Value.DoSomething();
+  }
+
+  void OnFinished()
+  {
+    _service.Dispose();
+  }
+}</code></pre>
+<p>In general, rather than depending on <a class="xref" href="Autofac.Features.OwnedInstances.Owned-1.html">Owned&lt;T&gt;</a> directly, components will depend on
+System.Func&lt;Owned&lt;T&gt;&gt; in order to create and dispose of other components as required.</p>
+
+
+  <h2 id="Autofac_Features_OwnedInstances_Owned_1_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+Autofac automatically provides instances of <a class="xref" href="Autofac.Features.OwnedInstances.Owned-1.html">Owned&lt;T&gt;</a> whenever the
+service <code class="typeparamref">T</code> is registered.
+</p>
+<p>
+It is not necessary for <code class="typeparamref">T</code>, or the underlying component, to implement <span class="xref">System.IDisposable</span>.
+Disposing of the <a class="xref" href="Autofac.Features.OwnedInstances.Owned-1.html">Owned&lt;T&gt;</a> object is the correct way to handle cleanup of the dependency,
+as this will dispose of any other components created indirectly as well.
+</p>
+<p>
+When <a class="xref" href="Autofac.Features.OwnedInstances.Owned-1.html">Owned&lt;T&gt;</a> is resolved, a new <a class="xref" href="Autofac.ILifetimeScope.html">ILifetimeScope</a> is created for the
+underlying <code class="typeparamref">T</code>, and tagged with the service matching <code class="typeparamref">T</code>,
+generally a <a class="xref" href="Autofac.Core.TypedService.html">TypedService</a>. This means that shared instances can be tied to this
+scope by registering them as InstancePerMatchingLifetimeScope(new TypedService(typeof(T))).
+</p>
+</div>
 
   <h2 class="section" id="constructors">Constructors
 </h2>
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Features.OwnedInstances.Owned-1.-ctor.html#Autofac_Features_OwnedInstances_Owned_1__ctor__0_System_IDisposable_">Owned(T, IDisposable)</a></dt>
-    <dd></dd>
+    <dd><p>Initializes a new instance of the <a class="xref" href="Autofac.Features.OwnedInstances.Owned-1.html">Owned&lt;T&gt;</a> class.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="properties">Properties
@@ -153,7 +203,8 @@ Class Owned&lt;T&gt;
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Features.OwnedInstances.Owned-1.Value.html#Autofac_Features_OwnedInstances_Owned_1_Value">Value</a></dt>
-    <dd></dd>
+    <dd><p>Gets or sets the owned value.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -161,11 +212,13 @@ Class Owned&lt;T&gt;
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Features.OwnedInstances.Owned-1.Dispose.html#Autofac_Features_OwnedInstances_Owned_1_Dispose_System_Boolean_">Dispose(bool)</a></dt>
-    <dd></dd>
+    <dd><p>Releases unmanaged and - optionally - managed resources.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Features.OwnedInstances.Owned-1.DisposeAsync.html#Autofac_Features_OwnedInstances_Owned_1_DisposeAsync_System_Boolean_">DisposeAsync(bool)</a></dt>
-    <dd></dd>
+    <dd><p>Releases unmanaged and - optionally - managed resources asynchronously.</p>
+</dd>
   </dl>
 
 

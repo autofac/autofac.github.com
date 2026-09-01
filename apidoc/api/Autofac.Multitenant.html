@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -102,30 +102,40 @@ Classes
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Multitenant.ConfigurationActionBuilder.html">ConfigurationActionBuilder</a></dt>
-      <dd></dd>
+      <dd><p>Allows you to build up a set of configuration actions that can be used
+all at once to configure a new <a class="xref" href="Autofac.ILifetimeScope.html">ILifetimeScope</a>.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Multitenant.DefaultTenantId.html">DefaultTenantId</a></dt>
-      <dd></dd>
+      <dd><p>Object type that represents a default tenant ID. Primarily used internally;
+most applications will not use this type.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Multitenant.MultitenantContainer.html">MultitenantContainer</a></dt>
-      <dd></dd>
+      <dd><p><a class="xref" href="Autofac.IContainer.html">IContainer</a> implementation that provides the ability
+to register and resolve dependencies in a multitenant environment.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Multitenant.RegistrationExtensions.html">RegistrationExtensions</a></dt>
-      <dd></dd>
+      <dd><p>Extends <a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder&lt;TLimit, TActivatorData, TRegistrationStyle&gt;</a> with methods to support multitenancy.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Multitenant.TenantIdentificationStrategyExtensions.html">TenantIdentificationStrategyExtensions</a></dt>
-      <dd></dd>
+      <dd><p>Extension methods for working with <a class="xref" href="Autofac.Multitenant.ITenantIdentificationStrategy.html">ITenantIdentificationStrategy</a>.</p>
+</dd>
     </dl>
     <h3 id="interfaces">
 Interfaces
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Multitenant.ITenantIdentificationStrategy.html">ITenantIdentificationStrategy</a></dt>
-      <dd></dd>
+      <dd><p>Defines a provider that determines the current tenant ID from
+execution context.</p>
+</dd>
     </dl>
 
 

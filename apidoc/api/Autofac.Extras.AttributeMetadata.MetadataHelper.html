@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class MetadataHelper | Autofac ">
       
-      
+      <meta name="description" content="Translates a type&#39;s attribute properties into a set consumable by Autofac.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,8 @@ Class MetadataHelper
   <dl><dt>Assembly</dt><dd>Autofac.Extras.AttributeMetadata.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Translates a type's attribute properties into a set consumable by Autofac.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -109,7 +110,7 @@ Class MetadataHelper
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><span class="xref">MetadataHelper</span></div>
     </dd>
   </dl>
@@ -126,15 +127,20 @@ Class MetadataHelper
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Extras.AttributeMetadata.MetadataHelper.GetMetadata.html#Autofac_Extras_AttributeMetadata_MetadataHelper_GetMetadata_System_Type_">GetMetadata(Type)</a></dt>
-    <dd></dd>
+    <dd><p>Given a component type, interrogates the metadata attributes to retrieve a set of property name/value metadata pairs.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Extras.AttributeMetadata.MetadataHelper.GetMetadata.html#Autofac_Extras_AttributeMetadata_MetadataHelper_GetMetadata__1_System_Type_">GetMetadata&lt;TMetadataType&gt;(Type)</a></dt>
-    <dd></dd>
+    <dd><p>Given a component type, interrogates the metadata attributes to retrieve
+a set of property name/value metadata pairs provided by a specific
+metadata provider.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Extras.AttributeMetadata.MetadataHelper.GetProperties.html#Autofac_Extras_AttributeMetadata_MetadataHelper_GetProperties_System_Object_System_Type_">GetProperties(object, Type)</a></dt>
-    <dd></dd>
+    <dd><p>Given a target attribute object, returns a set of public readable properties and associated values.</p>
+</dd>
   </dl>
 
 

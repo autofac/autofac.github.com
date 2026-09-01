@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,8 @@ Method Positional
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Retrieve a positional parameter value from a <a class="xref" href="Autofac.PositionalParameter.html">PositionalParameter</a> instance.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -132,22 +133,26 @@ Method Positional
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Autofac.Core.Parameter.html">Parameter</a>&gt;</dt>
-  <dd></dd>
-  <dt><code>position</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-  <dd></dd>
+  <dt><code>parameters</code> <span class="xref">IEnumerable</span>&lt;<a class="xref" href="Autofac.Core.Parameter.html">Parameter</a>&gt;</dt>
+  <dd><p>The available parameters to choose from.</p>
+</dd>
+  <dt><code>position</code> <span class="xref">int</span></dt>
+  <dd><p>The zero-based position of the parameter to select.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><span class="xref">T</span></dt>
-  <dd></dd>
+  <dd><p>The value of the selected parameter.</p>
+</dd>
 </dl>
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>T</code></dt>
-  <dd></dd>
+  <dd><p>The type to which the returned value will be cast.</p>
+</dd>
 </dl>
 
 
@@ -155,8 +160,19 @@ Method Positional
 
 
 
+<h4 class="section" id="Autofac_ParameterExtensions_Positional__1_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter__System_Int32__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>The position value is the one associated with the parameter when
+it was constructed, <b>not</b> its index into the <code class="paramref">parameters</code>
+sequence.</p>
+</div>
 
 
+<dl class="typelist seealso">
+  <dt>See Also</dt>
+  <dd>
+  <div><a class="xref" href="Autofac.PositionalParameter.html">PositionalParameter</a></div>
+  </dd>
+</dl>
 
 
 </article>

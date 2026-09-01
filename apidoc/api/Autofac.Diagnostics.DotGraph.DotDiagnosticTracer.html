@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class DotDiagnosticTracer | Autofac ">
       
-      
+      <meta name="description" content="Provides a resolve pipeline tracer that generates DOT graph output traces for an end-to-end operation flow. Attach to the  event to receive notifications when a new graph is available.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,11 @@ Class DotDiagnosticTracer
   <dl><dt>Assembly</dt><dd>Autofac.Diagnostics.DotGraph.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Provides a resolve pipeline tracer that generates DOT graph output
+traces for an end-to-end operation flow. Attach to the
+<a class="xref" href="Autofac.Diagnostics.OperationDiagnosticTracerBase-1.OperationCompleted.html">OperationCompleted</a>
+event to receive notifications when a new graph is available.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -109,9 +113,9 @@ Class DotDiagnosticTracer
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><a class="xref" href="Autofac.Diagnostics.DiagnosticTracerBase.html">DiagnosticTracerBase</a></div>
-      <div><a class="xref" href="Autofac.Diagnostics.OperationDiagnosticTracerBase-1.html">OperationDiagnosticTracerBase</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</div>
+      <div><a class="xref" href="Autofac.Diagnostics.OperationDiagnosticTracerBase-1.html">OperationDiagnosticTracerBase</a>&lt;<span class="xref">string</span>&gt;</div>
       <div><span class="xref">DotDiagnosticTracer</span></div>
     </dd>
   </dl>
@@ -162,13 +166,21 @@ Class DotDiagnosticTracer
 
 
 
+  <h2 id="Autofac_Diagnostics_DotGraph_DotDiagnosticTracer_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+The tracer subscribes to all Autofac diagnostic events and can't be
+unsubscribed. This is required to ensure beginning and end of each
+logical activity can be captured.
+</p>
+</div>
 
   <h2 class="section" id="constructors">Constructors
 </h2>
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Diagnostics.DotGraph.DotDiagnosticTracer.-ctor.html#Autofac_Diagnostics_DotGraph_DotDiagnosticTracer__ctor">DotDiagnosticTracer()</a></dt>
-    <dd></dd>
+    <dd><p>Initializes a new instance of the <a class="xref" href="Autofac.Diagnostics.DotGraph.DotDiagnosticTracer.html">DotDiagnosticTracer</a> class.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="properties">Properties
@@ -176,7 +188,8 @@ Class DotDiagnosticTracer
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Diagnostics.DotGraph.DotDiagnosticTracer.OperationsInProgress.html#Autofac_Diagnostics_DotGraph_DotDiagnosticTracer_OperationsInProgress">OperationsInProgress</a></dt>
-    <dd></dd>
+    <dd><p>Gets the number of operations in progress being traced.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -184,27 +197,33 @@ Class DotDiagnosticTracer
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Diagnostics.DotGraph.DotDiagnosticTracer.OnOperationFailure.html#Autofac_Diagnostics_DotGraph_DotDiagnosticTracer_OnOperationFailure_Autofac_Diagnostics_OperationFailureDiagnosticData_">OnOperationFailure(OperationFailureDiagnosticData)</a></dt>
-    <dd></dd>
+    <dd><p>Handles the event raised when a resolve operation encounters an error.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Diagnostics.DotGraph.DotDiagnosticTracer.OnOperationStart.html#Autofac_Diagnostics_DotGraph_DotDiagnosticTracer_OnOperationStart_Autofac_Diagnostics_OperationStartDiagnosticData_">OnOperationStart(OperationStartDiagnosticData)</a></dt>
-    <dd></dd>
+    <dd><p>Handles the event raised when a resolve operation starts.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Diagnostics.DotGraph.DotDiagnosticTracer.OnOperationSuccess.html#Autofac_Diagnostics_DotGraph_DotDiagnosticTracer_OnOperationSuccess_Autofac_Diagnostics_OperationSuccessDiagnosticData_">OnOperationSuccess(OperationSuccessDiagnosticData)</a></dt>
-    <dd></dd>
+    <dd><p>Handles the event raised when a resolve operation completes successfully.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Diagnostics.DotGraph.DotDiagnosticTracer.OnRequestFailure.html#Autofac_Diagnostics_DotGraph_DotDiagnosticTracer_OnRequestFailure_Autofac_Diagnostics_RequestFailureDiagnosticData_">OnRequestFailure(RequestFailureDiagnosticData)</a></dt>
-    <dd></dd>
+    <dd><p>Handles the event raised when a resolve request encounters an error.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Diagnostics.DotGraph.DotDiagnosticTracer.OnRequestStart.html#Autofac_Diagnostics_DotGraph_DotDiagnosticTracer_OnRequestStart_Autofac_Diagnostics_RequestDiagnosticData_">OnRequestStart(RequestDiagnosticData)</a></dt>
-    <dd></dd>
+    <dd><p>Handles the event raised when a resolve request starts.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Diagnostics.DotGraph.DotDiagnosticTracer.OnRequestSuccess.html#Autofac_Diagnostics_DotGraph_DotDiagnosticTracer_OnRequestSuccess_Autofac_Diagnostics_RequestDiagnosticData_">OnRequestSuccess(RequestDiagnosticData)</a></dt>
-    <dd></dd>
+    <dd><p>Handles the event raised when a resolve request completes successfully.</p>
+</dd>
   </dl>
 
 

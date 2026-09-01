@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,9 @@ Method RegisterApiControllers
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Register types in the provided assemblies that implement <span class="xref">System.Web.Http.Controllers.IHttpController</span> and
+match the default type name suffix of &quot;Controller&quot;.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -133,15 +135,18 @@ Method RegisterApiControllers
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>builder</code> <a class="xref" href="../Autofac.ContainerBuilder.html">ContainerBuilder</a></dt>
-  <dd></dd>
-  <dt><code>controllerAssemblies</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.assembly">Assembly</a>[]</dt>
-  <dd></dd>
+  <dd><p>The container builder.</p>
+</dd>
+  <dt><code>controllerAssemblies</code> <span class="xref">Assembly</span>[]</dt>
+  <dd><p>Assemblies to scan for controllers.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="../Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>, <a class="xref" href="../Autofac.Features.Scanning.ScanningActivatorData.html">ScanningActivatorData</a>, <a class="xref" href="../Autofac.Builder.DynamicRegistrationStyle.html">DynamicRegistrationStyle</a>&gt;</dt>
-  <dd></dd>
+  <dt><a class="xref" href="../Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;<span class="xref">object</span>, <a class="xref" href="../Autofac.Features.Scanning.ScanningActivatorData.html">ScanningActivatorData</a>, <a class="xref" href="../Autofac.Builder.DynamicRegistrationStyle.html">DynamicRegistrationStyle</a>&gt;</dt>
+  <dd><p>Registration builder allowing the controller components to be customized.</p>
+</dd>
 </dl>
 
 
@@ -161,7 +166,9 @@ Method RegisterApiControllers
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Register types in the provided assemblies that implement <span class="xref">System.Web.Http.Controllers.IHttpController</span> and
+match the provided type name suffix.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -171,17 +178,21 @@ Method RegisterApiControllers
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>builder</code> <a class="xref" href="../Autofac.ContainerBuilder.html">ContainerBuilder</a></dt>
-  <dd></dd>
-  <dt><code>controllerSuffix</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-  <dd></dd>
-  <dt><code>controllerAssemblies</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.assembly">Assembly</a>[]</dt>
-  <dd></dd>
+  <dd><p>The container builder.</p>
+</dd>
+  <dt><code>controllerSuffix</code> <span class="xref">string</span></dt>
+  <dd><p>The type name suffix of the controllers.</p>
+</dd>
+  <dt><code>controllerAssemblies</code> <span class="xref">Assembly</span>[]</dt>
+  <dd><p>Assemblies to scan for controllers.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="../Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>, <a class="xref" href="../Autofac.Features.Scanning.ScanningActivatorData.html">ScanningActivatorData</a>, <a class="xref" href="../Autofac.Builder.DynamicRegistrationStyle.html">DynamicRegistrationStyle</a>&gt;</dt>
-  <dd></dd>
+  <dt><a class="xref" href="../Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;<span class="xref">object</span>, <a class="xref" href="../Autofac.Features.Scanning.ScanningActivatorData.html">ScanningActivatorData</a>, <a class="xref" href="../Autofac.Builder.DynamicRegistrationStyle.html">DynamicRegistrationStyle</a>&gt;</dt>
+  <dd><p>Registration builder allowing the controller components to be customized.</p>
+</dd>
 </dl>
 
 

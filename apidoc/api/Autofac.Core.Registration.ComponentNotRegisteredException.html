@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class ComponentNotRegisteredException | Autofac ">
       
-      
+      <meta name="description" content="A service was requested that cannot be provided by the container. To avoid this exception, either register a component to provide the required service, check for service registration using IsRegistered(), or use the ResolveOptional() method to resolve an optional dependency.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,10 @@ Class ComponentNotRegisteredException
   <dl><dt>Assembly</dt><dd>Autofac.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>A service was requested that cannot be provided by the container. To avoid this exception, either register a component
+to provide the required service, check for service registration using IsRegistered(), or use the ResolveOptional()
+method to resolve an optional dependency.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -109,8 +112,8 @@ Class ComponentNotRegisteredException
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></div>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">Exception</span></div>
       <div><a class="xref" href="Autofac.Core.DependencyResolutionException.html">DependencyResolutionException</a></div>
       <div><span class="xref">ComponentNotRegisteredException</span></div>
     </dd>
@@ -122,17 +125,22 @@ Class ComponentNotRegisteredException
 
 
 
+  <h2 id="Autofac_Core_Registration_ComponentNotRegisteredException_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This exception is fatal. See <a class="xref" href="Autofac.Core.DependencyResolutionException.html">DependencyResolutionException</a> for more information.</p>
+</div>
 
   <h2 class="section" id="constructors">Constructors
 </h2>
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Registration.ComponentNotRegisteredException.-ctor.html#Autofac_Core_Registration_ComponentNotRegisteredException__ctor_Autofac_Core_Service_">ComponentNotRegisteredException(Service)</a></dt>
-    <dd></dd>
+    <dd><p>Initializes a new instance of the <a class="xref" href="Autofac.Core.Registration.ComponentNotRegisteredException.html">ComponentNotRegisteredException</a> class.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Registration.ComponentNotRegisteredException.-ctor.html#Autofac_Core_Registration_ComponentNotRegisteredException__ctor_Autofac_Core_Service_System_Exception_">ComponentNotRegisteredException(Service, Exception)</a></dt>
-    <dd></dd>
+    <dd><p>Initializes a new instance of the <a class="xref" href="Autofac.Core.Registration.ComponentNotRegisteredException.html">ComponentNotRegisteredException</a> class.</p>
+</dd>
   </dl>
 
 

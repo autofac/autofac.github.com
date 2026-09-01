@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,8 @@ Property Current
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Gets the current <a class="xref" href="Autofac.Integration.Wcf.AutofacInstanceContext.html">AutofacInstanceContext</a> for the operation.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -137,12 +138,22 @@ Property Current
 <h4 class="section">Property Value</h4>
 <dl class="parameters">
   <dt><a class="xref" href="Autofac.Integration.Wcf.AutofacInstanceContext.html">AutofacInstanceContext</a></dt>
-  <dd></dd>
+  <dd><p>The <a class="xref" href="Autofac.Integration.Wcf.AutofacInstanceContext.html">AutofacInstanceContext</a> associated with the current
+<span class="xref">System.ServiceModel.OperationContext</span> if one exists; or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if
+there isn't one.</p>
+</dd>
 </dl>
 
 
 
 
+<h4 class="section" id="Autofac_Integration_Wcf_AutofacInstanceContext_Current_remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>
+In a singleton service, there won't be a current
+<a class="xref" href="Autofac.Integration.Wcf.AutofacInstanceContext.html">AutofacInstanceContext</a> because singleton services are resolved
+at the time the service host begins rather than on each operation.
+</p>
+</div>
 
 
 

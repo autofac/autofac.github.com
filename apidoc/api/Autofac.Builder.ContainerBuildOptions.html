@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Enum ContainerBuildOptions | Autofac ">
       
-      
+      <meta name="description" content="Behaviors for the construction of a container by a .">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -97,7 +97,8 @@ Enum ContainerBuildOptions
   <dl><dt>Assembly</dt><dd>Autofac.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Behaviors for the construction of a container by a <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a>.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -117,11 +118,19 @@ public enum ContainerBuildOptions</code></pre>
 </h2>
   <dl class="parameters">
     <dt id="Autofac_Builder_ContainerBuildOptions_ExcludeDefaultModules"><code>ExcludeDefaultModules = 2</code></dt>
-    <dd></dd>
+  
+  <dd><p>Prevents inclusion of standard modules like support for
+relationship types including <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span> etc.</p>
+</dd>
     <dt id="Autofac_Builder_ContainerBuildOptions_IgnoreStartableComponents"><code>IgnoreStartableComponents = 4</code></dt>
-    <dd></dd>
+  
+  <dd><p>Does not call <a class="xref" href="Autofac.IStartable.Start.html#Autofac_IStartable_Start">Start()</a> on components implementing
+this interface (useful for module testing.)</p>
+</dd>
     <dt id="Autofac_Builder_ContainerBuildOptions_None"><code>None = 0</code></dt>
-    <dd></dd>
+  
+  <dd><p>No options - the default behavior for container building.</p>
+</dd>
   </dl>
 
 

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Enum PropertyWiringOptions | Autofac ">
       
-      
+      <meta name="description" content="Options that can be applied when autowiring properties on a component. (Multiple options can be specified using bitwise &#39;or&#39; - e.g. AllowCircularDependencies | PreserveSetValues.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -97,7 +97,9 @@ Enum PropertyWiringOptions
   <dl><dt>Assembly</dt><dd>Autofac.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Options that can be applied when autowiring properties on a component. (Multiple options can
+be specified using bitwise 'or' - e.g. AllowCircularDependencies | PreserveSetValues.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -117,11 +119,20 @@ public enum PropertyWiringOptions</code></pre>
 </h2>
   <dl class="parameters">
     <dt id="Autofac_PropertyWiringOptions_AllowCircularDependencies"><code>AllowCircularDependencies = 1</code></dt>
-    <dd></dd>
+  
+  <dd><p>Allows property-property and property-constructor circular dependency wiring.
+This flag moves property wiring from the Activating to the Activated event.</p>
+</dd>
     <dt id="Autofac_PropertyWiringOptions_None"><code>None = 0</code></dt>
-    <dd></dd>
+  
+  <dd><p>Default behavior. Circular dependencies are not allowed; existing non-default
+property values are overwritten.</p>
+</dd>
     <dt id="Autofac_PropertyWiringOptions_PreserveSetValues"><code>PreserveSetValues = 2</code></dt>
-    <dd></dd>
+  
+  <dd><p>If specified, properties that already have a non-default value will be left
+unchanged in the wiring operation.</p>
+</dd>
   </dl>
 
 

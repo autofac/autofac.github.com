@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IRegistrationSource | Autofac ">
       
-      
+      <meta name="description" content="Allows registrations to be made on-the-fly when unregistered services are requested (lazy registrations.)">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,9 @@ Interface IRegistrationSource
   <dl><dt>Assembly</dt><dd>Autofac.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Allows registrations to be made on-the-fly when unregistered
+services are requested (lazy registrations.)</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -119,7 +121,9 @@ Interface IRegistrationSource
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.IRegistrationSource.IsAdapterForIndividualComponents.html#Autofac_Core_IRegistrationSource_IsAdapterForIndividualComponents">IsAdapterForIndividualComponents</a></dt>
-    <dd></dd>
+    <dd><p>Gets a value indicating whether the registrations provided by this source are 1:1 adapters on top
+of other components (e.g., Meta, Func, or Owned).</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -127,7 +131,9 @@ Interface IRegistrationSource
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.IRegistrationSource.RegistrationsFor.html#Autofac_Core_IRegistrationSource_RegistrationsFor_Autofac_Core_Service_System_Func_Autofac_Core_Service_System_Collections_Generic_IEnumerable_Autofac_Core_ServiceRegistration___">RegistrationsFor(Service, Func&lt;Service, IEnumerable&lt;ServiceRegistration&gt;&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Retrieve registrations for an unregistered service, to be used
+by the container.</p>
+</dd>
   </dl>
 
 

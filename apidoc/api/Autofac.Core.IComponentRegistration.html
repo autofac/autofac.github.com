@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IComponentRegistration | Autofac ">
       
-      
+      <meta name="description" content="Describes a logical component within the container.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,8 @@ Interface IComponentRegistration
   <dl><dt>Assembly</dt><dd>Autofac.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Describes a logical component within the container.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -129,43 +130,54 @@ Interface IComponentRegistration
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.IComponentRegistration.Activator.html#Autofac_Core_IComponentRegistration_Activator">Activator</a></dt>
-    <dd></dd>
+    <dd><p>Gets the activator used to create instances.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.IComponentRegistration.Id.html#Autofac_Core_IComponentRegistration_Id">Id</a></dt>
-    <dd></dd>
+    <dd><p>Gets a unique identifier for this component (shared in all sub-contexts.)
+This value also appears in Services.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.IComponentRegistration.Lifetime.html#Autofac_Core_IComponentRegistration_Lifetime">Lifetime</a></dt>
-    <dd></dd>
+    <dd><p>Gets the lifetime associated with the component.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.IComponentRegistration.Metadata.html#Autofac_Core_IComponentRegistration_Metadata">Metadata</a></dt>
-    <dd></dd>
+    <dd><p>Gets additional data associated with the component.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.IComponentRegistration.Options.html#Autofac_Core_IComponentRegistration_Options">Options</a></dt>
-    <dd></dd>
+    <dd><p>Gets the options for the registration.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.IComponentRegistration.Ownership.html#Autofac_Core_IComponentRegistration_Ownership">Ownership</a></dt>
-    <dd></dd>
+    <dd><p>Gets a value indicating whether the instances of the component should be disposed by the container.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.IComponentRegistration.ResolvePipeline.html#Autofac_Core_IComponentRegistration_ResolvePipeline">ResolvePipeline</a></dt>
-    <dd></dd>
+    <dd><p>Gets the resolve pipeline for the component.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.IComponentRegistration.Services.html#Autofac_Core_IComponentRegistration_Services">Services</a></dt>
-    <dd></dd>
+    <dd><p>Gets the services provided by the component.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.IComponentRegistration.Sharing.html#Autofac_Core_IComponentRegistration_Sharing">Sharing</a></dt>
-    <dd></dd>
+    <dd><p>Gets a value indicating whether the component instances are shared or not.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.IComponentRegistration.Target.html#Autofac_Core_IComponentRegistration_Target">Target</a></dt>
-    <dd></dd>
+    <dd><p>Gets the component registration upon which this registration is based.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -173,7 +185,8 @@ Interface IComponentRegistration
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.IComponentRegistration.BuildResolvePipeline.html#Autofac_Core_IComponentRegistration_BuildResolvePipeline_Autofac_Core_IComponentRegistryServices_">BuildResolvePipeline(IComponentRegistryServices)</a></dt>
-    <dd></dd>
+    <dd><p>Builds the resolve pipeline.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="events">Events
@@ -181,7 +194,9 @@ Interface IComponentRegistration
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.IComponentRegistration.PipelineBuilding.html">PipelineBuilding</a></dt>
-    <dd></dd>
+    <dd><p>Provides an event that will be invoked just before a pipeline is built, and can be used to add additional middleware
+at that point.</p>
+</dd>
   </dl>
 
 

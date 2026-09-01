@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,8 @@ Method IsRegistered
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Determine whether the specified service is available in the context.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -133,19 +134,22 @@ Method IsRegistered
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>context</code> <a class="xref" href="Autofac.IComponentContext.html">IComponentContext</a></dt>
-  <dd></dd>
+  <dd><p>The context from which to resolve the service.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-  <dd></dd>
+  <dt><span class="xref">bool</span></dt>
+  <dd><p>True if the service is registered.</p>
+</dd>
 </dl>
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>TService</code></dt>
-  <dd></dd>
+  <dd><p>The service to test for the registration of.</p>
+</dd>
 </dl>
 
 
@@ -164,7 +168,8 @@ Method IsRegistered
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Determine whether the specified service is available in the context.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -174,15 +179,18 @@ Method IsRegistered
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>context</code> <a class="xref" href="Autofac.IComponentContext.html">IComponentContext</a></dt>
-  <dd></dd>
-  <dt><code>serviceType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
-  <dd></dd>
+  <dd><p>The context from which to resolve the service.</p>
+</dd>
+  <dt><code>serviceType</code> <span class="xref">Type</span></dt>
+  <dd><p>The service to test for the registration of.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-  <dd></dd>
+  <dt><span class="xref">bool</span></dt>
+  <dd><p>True if the service is registered.</p>
+</dd>
 </dl>
 
 

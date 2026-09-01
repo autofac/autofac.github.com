@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,9 @@ Method PropertiesAutowired
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Configure the component so that any properties whose types are registered in the
+container will be wired to instances of the appropriate service.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -133,25 +135,31 @@ Method PropertiesAutowired
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>registration</code> <a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, TActivatorData, TRegistrationStyle&gt;</dt>
-  <dd></dd>
+  <dd><p>Registration to auto-wire properties.</p>
+</dd>
   <dt><code>wiringFlags</code> <a class="xref" href="Autofac.PropertyWiringOptions.html">PropertyWiringOptions</a></dt>
-  <dd></dd>
+  <dd><p>Set wiring options such as circular dependency wiring support.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, TActivatorData, TRegistrationStyle&gt;</dt>
-  <dd></dd>
+  <dd><p>A registration builder allowing further configuration of the component.</p>
+</dd>
 </dl>
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>TLimit</code></dt>
-  <dd></dd>
+  <dd><p>The most specific type to which instances of the registration can be cast.</p>
+</dd>
   <dt><code>TActivatorData</code></dt>
-  <dd></dd>
+  <dd><p>Activator builder type.</p>
+</dd>
   <dt><code>TRegistrationStyle</code></dt>
-  <dd></dd>
+  <dd><p>Registration style type.</p>
+</dd>
 </dl>
 
 
@@ -170,35 +178,43 @@ Method PropertiesAutowired
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Set the policy used to find candidate properties on the implementation type.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static IRegistrationBuilder&lt;TLimit, TActivatorData, TStyle&gt; PropertiesAutowired&lt;TLimit, TActivatorData, TStyle&gt;(this IRegistrationBuilder&lt;TLimit, TActivatorData, TStyle&gt; registration, Func&lt;PropertyInfo, object, bool&gt; propertySelector)</code></pre>
+  <pre><code class="lang-csharp hljs">[RequiresUnreferencedCode(&quot;Autowired properties with a custom selector may not be compatible with member-level trimming.&quot;)]
+public static IRegistrationBuilder&lt;TLimit, TActivatorData, TStyle&gt; PropertiesAutowired&lt;TLimit, TActivatorData, TStyle&gt;(this IRegistrationBuilder&lt;TLimit, TActivatorData, TStyle&gt; registration, Func&lt;PropertyInfo, object, bool&gt; propertySelector)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>registration</code> <a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, TActivatorData, TStyle&gt;</dt>
-  <dd></dd>
-  <dt><code>propertySelector</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo">PropertyInfo</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
-  <dd></dd>
+  <dd><p>Registration to set policy on.</p>
+</dd>
+  <dt><code>propertySelector</code> <span class="xref">Func</span>&lt;<span class="xref">PropertyInfo</span>, <span class="xref">object</span>, <span class="xref">bool</span>&gt;</dt>
+  <dd><p>Policy to be used when searching for properties to inject.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, TActivatorData, TStyle&gt;</dt>
-  <dd></dd>
+  <dd><p>A registration builder allowing further configuration of the component.</p>
+</dd>
 </dl>
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>TLimit</code></dt>
-  <dd></dd>
+  <dd><p>Registration limit type.</p>
+</dd>
   <dt><code>TActivatorData</code></dt>
-  <dd></dd>
+  <dd><p>Activator data type.</p>
+</dd>
   <dt><code>TStyle</code></dt>
-  <dd></dd>
+  <dd><p>Registration style.</p>
+</dd>
 </dl>
 
 

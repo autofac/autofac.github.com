@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,10 @@ Method WithAttributedMetadata
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>This method can be invoked with the assembly scanner to register metadata that is declared loosely using
+attributes marked with the MetadataAttributeAttribute. All of the marked attributes are used together to create
+a common set of dictionary values that constitute the metadata on the type.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -133,23 +136,28 @@ Method WithAttributedMetadata
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>builder</code> <a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, TScanningActivatorData, TRegistrationStyle&gt;</dt>
-  <dd></dd>
+  <dd><p>The registration builder containing registration data.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, TScanningActivatorData, TRegistrationStyle&gt;</dt>
-  <dd></dd>
+  <dd><p>Registration builder allowing the registration to be configured.</p>
+</dd>
 </dl>
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>TLimit</code></dt>
-  <dd></dd>
+  <dd><p>The type of the registration limit.</p>
+</dd>
   <dt><code>TScanningActivatorData</code></dt>
-  <dd></dd>
+  <dd><p>Activator data type.</p>
+</dd>
   <dt><code>TRegistrationStyle</code></dt>
-  <dd></dd>
+  <dd><p>Registration style type.</p>
+</dd>
 </dl>
 
 
@@ -158,6 +166,12 @@ Method WithAttributedMetadata
 
 
 
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><span class="xref">ArgumentNullException</span></dt>
+  <dd><p>Thrown if <code class="paramref">builder</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+</dl>
 
 
 
@@ -168,7 +182,10 @@ Method WithAttributedMetadata
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>This method can be invoked with the assembly scanner to register strongly typed metadata attributes. The
+attributes are scanned for one that is derived from the metadata interface.  If one is found, the metadata
+contents are extracted and registered with the instance registration.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -177,20 +194,23 @@ Method WithAttributedMetadata
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><code>builder</code> <a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>, <a class="xref" href="Autofac.Features.Scanning.ScanningActivatorData.html">ScanningActivatorData</a>, <a class="xref" href="Autofac.Builder.DynamicRegistrationStyle.html">DynamicRegistrationStyle</a>&gt;</dt>
-  <dd></dd>
+  <dt><code>builder</code> <a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;<span class="xref">object</span>, <a class="xref" href="Autofac.Features.Scanning.ScanningActivatorData.html">ScanningActivatorData</a>, <a class="xref" href="Autofac.Builder.DynamicRegistrationStyle.html">DynamicRegistrationStyle</a>&gt;</dt>
+  <dd><p>The registration builder containing registration data.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>, <a class="xref" href="Autofac.Features.Scanning.ScanningActivatorData.html">ScanningActivatorData</a>, <a class="xref" href="Autofac.Builder.DynamicRegistrationStyle.html">DynamicRegistrationStyle</a>&gt;</dt>
-  <dd></dd>
+  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;<span class="xref">object</span>, <a class="xref" href="Autofac.Features.Scanning.ScanningActivatorData.html">ScanningActivatorData</a>, <a class="xref" href="Autofac.Builder.DynamicRegistrationStyle.html">DynamicRegistrationStyle</a>&gt;</dt>
+  <dd><p>Registration builder allowing the registration to be configured.</p>
+</dd>
 </dl>
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>TMetadata</code></dt>
-  <dd></dd>
+  <dd><p>Metadata type to search for.</p>
+</dd>
 </dl>
 
 
@@ -199,6 +219,79 @@ Method WithAttributedMetadata
 
 
 
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><span class="xref">ArgumentNullException</span></dt>
+  <dd><p>Thrown if <code class="paramref">builder</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+</dl>
+
+
+
+<a id="Autofac_Extras_AttributeMetadata_AutofacAttributeExtensions_WithAttributedMetadata_" data-uid="Autofac.Extras.AttributeMetadata.AutofacAttributeExtensions.WithAttributedMetadata*"></a>
+
+<h3 id="Autofac_Extras_AttributeMetadata_AutofacAttributeExtensions_WithAttributedMetadata__1_Autofac_Builder_IRegistrationBuilder___0_Autofac_Builder_ConcreteReflectionActivatorData_Autofac_Builder_SingleRegistrationStyle__" data-uid="Autofac.Extras.AttributeMetadata.AutofacAttributeExtensions.WithAttributedMetadata``1(Autofac.Builder.IRegistrationBuilder{``0,Autofac.Builder.ConcreteReflectionActivatorData,Autofac.Builder.SingleRegistrationStyle})">
+  WithAttributedMetadata&lt;TLimit&gt;(IRegistrationBuilder&lt;TLimit, ConcreteReflectionActivatorData, SingleRegistrationStyle&gt;)
+  
+</h3>
+
+<div class="markdown level1 summary"><p>Registers metadata that is declared loosely using attributes marked with the
+MetadataAttributeAttribute for an individual type registration. All of the marked
+attributes are used together to create a common set of dictionary values that
+constitute the metadata on the type.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static IRegistrationBuilder&lt;TLimit, ConcreteReflectionActivatorData, SingleRegistrationStyle&gt; WithAttributedMetadata&lt;TLimit&gt;(this IRegistrationBuilder&lt;TLimit, ConcreteReflectionActivatorData, SingleRegistrationStyle&gt; builder)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>builder</code> <a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, <a class="xref" href="Autofac.Builder.ConcreteReflectionActivatorData.html">ConcreteReflectionActivatorData</a>, <a class="xref" href="Autofac.Builder.SingleRegistrationStyle.html">SingleRegistrationStyle</a>&gt;</dt>
+  <dd><p>The registration builder containing registration data.</p>
+</dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, <a class="xref" href="Autofac.Builder.ConcreteReflectionActivatorData.html">ConcreteReflectionActivatorData</a>, <a class="xref" href="Autofac.Builder.SingleRegistrationStyle.html">SingleRegistrationStyle</a>&gt;</dt>
+  <dd><p>Registration builder allowing the registration to be configured.</p>
+</dd>
+</dl>
+
+<h4 class="section">Type Parameters</h4>
+<dl class="parameters">
+  <dt><code>TLimit</code></dt>
+  <dd><p>The type of the registration limit.</p>
+</dd>
+</dl>
+
+
+
+
+
+
+<h4 class="section" id="Autofac_Extras_AttributeMetadata_AutofacAttributeExtensions_WithAttributedMetadata__1_Autofac_Builder_IRegistrationBuilder___0_Autofac_Builder_ConcreteReflectionActivatorData_Autofac_Builder_SingleRegistrationStyle___remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>
+This is the individual registration counterpart to the assembly scanning overload, so
+<code>RegisterType</code> and <code>RegisterAssemblyTypes</code> can both opt in to attributed metadata
+the same way. It applies to reflection-based registrations, where the implementation type is
+known at registration time; for delegate registrations, use the
+<a class="xref" href="Autofac.Extras.AttributeMetadata.AttributedMetadataModule.html">AttributedMetadataModule</a> instead.
+</p>
+<p>
+This can safely be combined with the <a class="xref" href="Autofac.Extras.AttributeMetadata.AttributedMetadataModule.html">AttributedMetadataModule</a>. The module does
+not overwrite metadata keys that are already present, so metadata is applied once.
+</p>
+</div>
+
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><span class="xref">ArgumentNullException</span></dt>
+  <dd><p>Thrown if <code class="paramref">builder</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+</dl>
 
 
 

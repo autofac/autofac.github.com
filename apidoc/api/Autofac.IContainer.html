@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IContainer | Autofac ">
       
-      
+      <meta name="description" content="Creates, wires dependencies and manages lifetime for a set of components. Most instances of  are created by a .">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,10 @@ Interface IContainer
   <dl><dt>Assembly</dt><dd>Autofac.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Creates, wires dependencies and manages lifetime for a set of components.
+Most instances of <a class="xref" href="Autofac.IContainer.html">IContainer</a> are created
+by a <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a>.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -375,17 +378,38 @@ Interface IContainer
   </dd></dl>
 
 
+  <h2 id="Autofac_IContainer_examples">Examples</h2>
+  <pre><code class="lang-csharp">// See ContainerBuilder for the definition of the builder variable
+using (var container = builder.Build())
+{
+    var program = container.Resolve&lt;Program&gt;();
+    program.Run();
+}</code></pre>
 
+
+  <h2 id="Autofac_IContainer_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Most <a class="xref" href="Autofac.IContainer.html">IContainer</a> functionality is provided by extension methods
+on the inherited <a class="xref" href="Autofac.IComponentContext.html">IComponentContext</a> interface.</p>
+</div>
 
   <h2 class="section" id="properties">Properties
 </h2>
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.IContainer.DiagnosticSource.html#Autofac_IContainer_DiagnosticSource">DiagnosticSource</a></dt>
-    <dd></dd>
+    <dd><p>Gets the <span class="xref">System.Diagnostics.DiagnosticListener</span> to which
+trace events should be written.</p>
+</dd>
   </dl>
 
 
+  <h2 id="seealso">See Also</h2>
+  <div class="seealso">
+      <div><a class="xref" href="Autofac.ILifetimeScope.html">ILifetimeScope</a></div>
+      <div><a class="xref" href="Autofac.IComponentContext.html">IComponentContext</a></div>
+      <div><a class="xref" href="Autofac.ResolutionExtensions.html">ResolutionExtensions</a></div>
+      <div><a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a></div>
+  </div>
 
 </article>
 

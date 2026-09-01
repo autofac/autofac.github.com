@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class DiagnosticTracerBase | Autofac ">
       
-      
+      <meta name="description" content="Base class for creating diagnostic tracers that follow Autofac diagnostic events.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,8 @@ Class DiagnosticTracerBase
   <dl><dt>Assembly</dt><dd>Autofac.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Base class for creating diagnostic tracers that follow Autofac diagnostic events.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -109,7 +110,7 @@ Class DiagnosticTracerBase
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><span class="xref">DiagnosticTracerBase</span></div>
     </dd>
   </dl>
@@ -126,6 +127,48 @@ Class DiagnosticTracerBase
 
 
 
+  <h2 id="Autofac_Diagnostics_DiagnosticTracerBase_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+Following events from a <span class="xref">System.Diagnostics.DiagnosticListener</span>
+involves subscribing to that listener with an <span class="xref">System.IObserver&lt;T&gt;</span>
+where the observable is a <span class="xref">System.Collections.Generic.KeyValuePair&lt;TKey, TValue&gt;</span> of <span class="xref">string</span>
+event names and <span class="xref">object</span> event data.
+</p>
+<p>
+This class helps with that by providing strongly typed event handlers
+pre-wired to convert the event data into the right object type, allowing you
+to focus on the handling logic and not the event/data parsing.
+</p>
+<p>
+While technically you could subscribe to non-Autofac events using this
+observer, it's not a general purpose mechanism - it's very much tailored
+to Autofac.
+</p>
+<p>
+Should you want to start emitting and subscribing to your own events in the
+Autofac pipeline (e.g., a custom middleware that emits your own custom events)
+you have some options:
+</p>
+<p>
+First, you could implement your own <span class="xref">System.IObserver&lt;T&gt;</span> that listens
+for your custom events. Since you can subscribe any number of <span class="xref">System.IObserver&lt;T&gt;</span>
+to a given <span class="xref">System.Diagnostics.DiagnosticListener</span>, having one
+that derives from this class and a separate one of your own making is acceptable.
+</p>
+<p>
+Second, you could create your own <span class="xref">System.IObserver&lt;T&gt;</span> that does not
+derive from this class but still listens for Autofac events as well as any
+custom events you emit. Any diagnostics observer can listen for these events as
+long as it's subscribed to the <a class="xref" href="Autofac.IContainer.DiagnosticSource.html#Autofac_IContainer_DiagnosticSource">DiagnosticSource</a>;
+it doesn't have to be one of this specific class type.
+</p>
+<p>
+Finally, if you want to use this as a base but to listen for your custom events,
+you can derive from this and override the <a class="xref" href="Autofac.Diagnostics.DiagnosticTracerBase.Write.html#Autofac_Diagnostics_DiagnosticTracerBase_Write_System_String_System_Object_">Write(string, object?)</a>
+method. Handle your custom events, or if it's not one of your custom events, call
+the base to handle the Autofac events.
+</p>
+</div>
 
   <h2 class="section" id="constructors">Constructors
 </h2>
@@ -140,70 +183,93 @@ Class DiagnosticTracerBase
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Diagnostics.DiagnosticTracerBase.Disable.html#Autofac_Diagnostics_DiagnosticTracerBase_Disable_System_String_">Disable(string)</a></dt>
-    <dd></dd>
+    <dd><p>Unsubscribes the observer from a particular named diagnostic event.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Diagnostics.DiagnosticTracerBase.DisableBase.html#Autofac_Diagnostics_DiagnosticTracerBase_DisableBase_System_String_">DisableBase(string)</a></dt>
-    <dd></dd>
+    <dd><p>Unsubscribes the observer from a particular named diagnostic event.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Diagnostics.DiagnosticTracerBase.Enable.html#Autofac_Diagnostics_DiagnosticTracerBase_Enable_System_String_">Enable(string)</a></dt>
-    <dd></dd>
+    <dd><p>Subscribes the observer to a particular named diagnostic event.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Diagnostics.DiagnosticTracerBase.EnableAll.html#Autofac_Diagnostics_DiagnosticTracerBase_EnableAll">EnableAll()</a></dt>
-    <dd></dd>
+    <dd><p>Subscribes the observer to all Autofac events.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Diagnostics.DiagnosticTracerBase.EnableBase.html#Autofac_Diagnostics_DiagnosticTracerBase_EnableBase_System_String_">EnableBase(string)</a></dt>
-    <dd></dd>
+    <dd><p>Subscribes the observer to a particular named diagnostic event.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Diagnostics.DiagnosticTracerBase.IsEnabled.html#Autofac_Diagnostics_DiagnosticTracerBase_IsEnabled_System_String_">IsEnabled(string)</a></dt>
-    <dd></dd>
+    <dd><p>Determines if this observer is enabled for listening to a specific
+named event.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Diagnostics.DiagnosticTracerBase.OnMiddlewareFailure.html#Autofac_Diagnostics_DiagnosticTracerBase_OnMiddlewareFailure_Autofac_Diagnostics_MiddlewareDiagnosticData_">OnMiddlewareFailure(MiddlewareDiagnosticData)</a></dt>
-    <dd></dd>
+    <dd><p>Handles the event raised when middleware encounters an error.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Diagnostics.DiagnosticTracerBase.OnMiddlewareStart.html#Autofac_Diagnostics_DiagnosticTracerBase_OnMiddlewareStart_Autofac_Diagnostics_MiddlewareDiagnosticData_">OnMiddlewareStart(MiddlewareDiagnosticData)</a></dt>
-    <dd></dd>
+    <dd><p>Handles the event raised when middleware starts.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Diagnostics.DiagnosticTracerBase.OnMiddlewareSuccess.html#Autofac_Diagnostics_DiagnosticTracerBase_OnMiddlewareSuccess_Autofac_Diagnostics_MiddlewareDiagnosticData_">OnMiddlewareSuccess(MiddlewareDiagnosticData)</a></dt>
-    <dd></dd>
+    <dd><p>Handles the event raised when middleware exits successfully.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Diagnostics.DiagnosticTracerBase.OnOperationFailure.html#Autofac_Diagnostics_DiagnosticTracerBase_OnOperationFailure_Autofac_Diagnostics_OperationFailureDiagnosticData_">OnOperationFailure(OperationFailureDiagnosticData)</a></dt>
-    <dd></dd>
+    <dd><p>Handles the event raised when a resolve operation encounters an error.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Diagnostics.DiagnosticTracerBase.OnOperationStart.html#Autofac_Diagnostics_DiagnosticTracerBase_OnOperationStart_Autofac_Diagnostics_OperationStartDiagnosticData_">OnOperationStart(OperationStartDiagnosticData)</a></dt>
-    <dd></dd>
+    <dd><p>Handles the event raised when a resolve operation starts.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Diagnostics.DiagnosticTracerBase.OnOperationSuccess.html#Autofac_Diagnostics_DiagnosticTracerBase_OnOperationSuccess_Autofac_Diagnostics_OperationSuccessDiagnosticData_">OnOperationSuccess(OperationSuccessDiagnosticData)</a></dt>
-    <dd></dd>
+    <dd><p>Handles the event raised when a resolve operation completes successfully.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Diagnostics.DiagnosticTracerBase.OnRequestFailure.html#Autofac_Diagnostics_DiagnosticTracerBase_OnRequestFailure_Autofac_Diagnostics_RequestFailureDiagnosticData_">OnRequestFailure(RequestFailureDiagnosticData)</a></dt>
-    <dd></dd>
+    <dd><p>Handles the event raised when a resolve request encounters an error.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Diagnostics.DiagnosticTracerBase.OnRequestStart.html#Autofac_Diagnostics_DiagnosticTracerBase_OnRequestStart_Autofac_Diagnostics_RequestDiagnosticData_">OnRequestStart(RequestDiagnosticData)</a></dt>
-    <dd></dd>
+    <dd><p>Handles the event raised when a resolve request starts.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Diagnostics.DiagnosticTracerBase.OnRequestSuccess.html#Autofac_Diagnostics_DiagnosticTracerBase_OnRequestSuccess_Autofac_Diagnostics_RequestDiagnosticData_">OnRequestSuccess(RequestDiagnosticData)</a></dt>
-    <dd></dd>
+    <dd><p>Handles the event raised when a resolve request completes successfully.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Diagnostics.DiagnosticTracerBase.Write.html#Autofac_Diagnostics_DiagnosticTracerBase_Write_System_String_System_Object_">Write(string, object?)</a></dt>
-    <dd></dd>
+    <dd><p>Handles inbound events and converts the diagnostic data to a
+strongly-typed object that can be handled by the other methods
+in this observer.</p>
+</dd>
   </dl>
 
 
+  <h2 id="seealso">See Also</h2>
+  <div class="seealso">
+      <div><a class="xref" href="Autofac.Diagnostics.DefaultDiagnosticTracer.html">DefaultDiagnosticTracer</a></div>
+  </div>
 
 </article>
 

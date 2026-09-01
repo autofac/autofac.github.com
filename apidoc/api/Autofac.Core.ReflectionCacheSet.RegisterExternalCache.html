@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,11 @@ Method RegisterExternalCache
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Register an externally-owned <a class="xref" href="Autofac.Core.IReflectionCache.html">IReflectionCache</a> so it participates
+in <a class="xref" href="Autofac.Core.ReflectionCacheSet.Clear.html#Autofac_Core_ReflectionCacheSet_Clear">Clear()</a> and <a class="xref" href="Autofac.Core.ReflectionCacheSet.Clear.html#Autofac_Core_ReflectionCacheSet_Clear_Autofac_Core_ReflectionCacheClearPredicate_">Clear(ReflectionCacheClearPredicate)</a> calls.
+The cache is held via a weak reference so it does not prevent garbage collection
+of the owning object (e.g., a container or registration source).</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -133,7 +137,8 @@ Method RegisterExternalCache
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>cache</code> <a class="xref" href="Autofac.Core.IReflectionCache.html">IReflectionCache</a></dt>
-  <dd></dd>
+  <dd><p>The cache to register.</p>
+</dd>
 </dl>
 
 

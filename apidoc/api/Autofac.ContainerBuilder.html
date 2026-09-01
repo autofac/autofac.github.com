@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class ContainerBuilder | Autofac ">
       
-      
+      <meta name="description" content="Used to build an  from component registrations.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,8 @@ Class ContainerBuilder
   <dl><dt>Assembly</dt><dd>Autofac.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Used to build an <a class="xref" href="Autofac.IContainer.html">IContainer</a> from component registrations.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -109,7 +110,7 @@ Class ContainerBuilder
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><span class="xref">ContainerBuilder</span></div>
     </dd>
   </dl>
@@ -330,14 +331,31 @@ Class ContainerBuilder
   </dd></dl>
 
 
+  <h2 id="Autofac_ContainerBuilder_examples">Examples</h2>
+  <pre><code class="lang-csharp">var builder = new ContainerBuilder();
 
+builder.RegisterType&lt;Logger&gt;()
+    .As&lt;ILogger&gt;()
+    .SingleInstance();
+
+builder.Register(c =&gt; new MessageHandler(c.Resolve&lt;ILogger&gt;()));
+
+var container = builder.Build();
+// resolve components from container...</code></pre>
+
+
+  <h2 id="Autofac_ContainerBuilder_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Most <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a> functionality is accessed
+via extension methods in <a class="xref" href="Autofac.RegistrationExtensions.html">RegistrationExtensions</a>.</p>
+</div>
 
   <h2 class="section" id="constructors">Constructors
 </h2>
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.ContainerBuilder.-ctor.html#Autofac_ContainerBuilder__ctor">ContainerBuilder()</a></dt>
-    <dd></dd>
+    <dd><p>Initializes a new instance of the <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a> class.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="properties">Properties
@@ -345,11 +363,13 @@ Class ContainerBuilder
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.ContainerBuilder.ComponentRegistryBuilder.html#Autofac_ContainerBuilder_ComponentRegistryBuilder">ComponentRegistryBuilder</a></dt>
-    <dd></dd>
+    <dd><p>Gets the builder to use for building the underlying <a class="xref" href="Autofac.Core.IComponentRegistry.html">IComponentRegistry</a>.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.ContainerBuilder.Properties.html#Autofac_ContainerBuilder_Properties">Properties</a></dt>
-    <dd></dd>
+    <dd><p>Gets the set of properties used during component registration.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -357,18 +377,25 @@ Class ContainerBuilder
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.ContainerBuilder.Build.html#Autofac_ContainerBuilder_Build_Autofac_Builder_ContainerBuildOptions_">Build(ContainerBuildOptions)</a></dt>
-    <dd></dd>
+    <dd><p>Create a new container with the component registrations that have been made.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.ContainerBuilder.RegisterBuildCallback.html#Autofac_ContainerBuilder_RegisterBuildCallback_System_Action_Autofac_ILifetimeScope__">RegisterBuildCallback(Action&lt;ILifetimeScope&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Register a callback that will be invoked when the container (or lifetime scope) is built.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.ContainerBuilder.RegisterCallback.html#Autofac_ContainerBuilder_RegisterCallback_System_Action_Autofac_Core_Registration_IComponentRegistryBuilder__">RegisterCallback(Action&lt;IComponentRegistryBuilder&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Register a callback that will be invoked when the container is configured.</p>
+</dd>
   </dl>
 
 
+  <h2 id="seealso">See Also</h2>
+  <div class="seealso">
+      <div><a class="xref" href="Autofac.IContainer.html">IContainer</a></div>
+  </div>
 
 </article>
 

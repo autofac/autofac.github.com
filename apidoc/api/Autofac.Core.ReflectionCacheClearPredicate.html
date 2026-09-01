@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Delegate ReflectionCacheClearPredicate | Autofac ">
       
-      
+      <meta name="description" content="Delegate for predicates that can choose whether to remove a member from the reflection cache.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,9 @@ Delegate ReflectionCacheClearPredicate
   <dl><dt>Assembly</dt><dd>Autofac.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Delegate for predicates that can choose whether to remove a member from the
+reflection cache.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -105,16 +107,21 @@ Delegate ReflectionCacheClearPredicate
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>member</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo">MemberInfo</a></dt>
-    <dd></dd>
-    <dt><code>referencedAssemblies</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.assembly">Assembly</a>&gt;</dt>
-    <dd></dd>
+    <dt><code>member</code> <span class="xref">MemberInfo</span></dt>
+    <dd><p>The member information (will be an instance of a more-derived type). This
+value may be null if the cache entry relates only to an assembly.</p>
+</dd>
+    <dt><code>referencedAssemblies</code> <span class="xref">IEnumerable</span>&lt;<span class="xref">Assembly</span>&gt;</dt>
+    <dd><p>All assemblies the cache entry key references; this set includes both the direct assembly reference for the member,
+and all indirectly-referenced assemblies via generic type arguments or array element types.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dt><span class="xref">bool</span></dt>
+    <dd><p>True to remove the member from the cache, false to leave it.</p>
+</dd>
   </dl>
 
 

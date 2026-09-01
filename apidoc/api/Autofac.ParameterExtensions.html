@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class ParameterExtensions | Autofac ">
       
-      
+      <meta name="description" content="Extension methods that simplify extraction of parameter values from an  where T is . Each method returns the first matching parameter value, or throws an exception if none is provided.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,11 @@ Class ParameterExtensions
   <dl><dt>Assembly</dt><dd>Autofac.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Extension methods that simplify extraction of parameter values from
+an <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span> where T is <a class="xref" href="Autofac.Core.Parameter.html">Parameter</a>.
+Each method returns the first matching parameter value, or throws an exception if
+none is provided.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -109,7 +113,7 @@ Class ParameterExtensions
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><span class="xref">ParameterExtensions</span></div>
     </dd>
   </dl>
@@ -119,6 +123,14 @@ Class ParameterExtensions
 
 
 
+  <h2 id="Autofac_ParameterExtensions_examples">Examples</h2>
+  <p>At configuration time, delegate registrations can retrieve parameter values using
+the methods <a class="xref" href="Autofac.ParameterExtensions.Named.html#Autofac_ParameterExtensions_Named__1_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter__System_String_">Named&lt;T&gt;(IEnumerable&lt;Parameter&gt;, string)</a>, <a class="xref" href="Autofac.ParameterExtensions.Positional.html#Autofac_ParameterExtensions_Positional__1_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter__System_Int32_">Positional&lt;T&gt;(IEnumerable&lt;Parameter&gt;, int)</a> and <a class="xref" href="Autofac.ParameterExtensions.TypedAs.html#Autofac_ParameterExtensions_TypedAs__1_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter__">TypedAs&lt;T&gt;(IEnumerable&lt;Parameter&gt;)</a>:</p>
+<pre><code class="lang-csharp">builder.Register((c, p) =&gt; new FtpClient(p.Named&lt;string&gt;("server")));</code></pre>
+<p>These parameters can be provided at resolution time:</p>
+<pre><code class="lang-csharp">container.Resolve&lt;FtpClient&gt;(new NamedParameter("server", "ftp.example.com"));</code></pre>
+<p>Alternatively, the parameters can be provided via a <i>Generated Factory</i> - <a href="http://code.google.com/p/autofac/wiki/DelegateFactories">http://code.google.com/p/autofac/wiki/DelegateFactories</a>.</p>
+
 
 
   <h2 class="section" id="methods">Methods
@@ -126,23 +138,28 @@ Class ParameterExtensions
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.ParameterExtensions.KeyedServiceKey.html#Autofac_ParameterExtensions_KeyedServiceKey__1_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter__">KeyedServiceKey&lt;T&gt;(IEnumerable&lt;Parameter&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Retrieve the keyed service key value associated with the current resolve operation.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.ParameterExtensions.Named.html#Autofac_ParameterExtensions_Named__1_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter__System_String_">Named&lt;T&gt;(IEnumerable&lt;Parameter&gt;, string)</a></dt>
-    <dd></dd>
+    <dd><p>Retrieve a named parameter value from a <a class="xref" href="Autofac.NamedParameter.html">NamedParameter</a> instance.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.ParameterExtensions.Positional.html#Autofac_ParameterExtensions_Positional__1_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter__System_Int32_">Positional&lt;T&gt;(IEnumerable&lt;Parameter&gt;, int)</a></dt>
-    <dd></dd>
+    <dd><p>Retrieve a positional parameter value from a <a class="xref" href="Autofac.PositionalParameter.html">PositionalParameter</a> instance.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.ParameterExtensions.TryGetKeyedServiceKey.html#Autofac_ParameterExtensions_TryGetKeyedServiceKey__1_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter____0__">TryGetKeyedServiceKey&lt;T&gt;(IEnumerable&lt;Parameter&gt;, out T)</a></dt>
-    <dd></dd>
+    <dd><p>Attempts to retrieve the keyed service key value associated with the current resolve operation.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.ParameterExtensions.TypedAs.html#Autofac_ParameterExtensions_TypedAs__1_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter__">TypedAs&lt;T&gt;(IEnumerable&lt;Parameter&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Retrieve a typed parameter value from a <a class="xref" href="Autofac.TypedParameter.html">TypedParameter</a> instance.</p>
+</dd>
   </dl>
 
 

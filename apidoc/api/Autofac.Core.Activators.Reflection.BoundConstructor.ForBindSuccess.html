@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,8 @@ Method ForBindSuccess
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Autofac.Core.Activators.Reflection.BoundConstructor.html">BoundConstructor</a> class for a successful bind.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -133,17 +134,21 @@ Method ForBindSuccess
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>binder</code> <a class="xref" href="Autofac.Core.Activators.Reflection.ConstructorBinder.html">ConstructorBinder</a></dt>
-  <dd></dd>
-  <dt><code>factory</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[], <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
-  <dd></dd>
-  <dt><code>valueRetrievers</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;[]</dt>
-  <dd></dd>
+  <dd><p>The binder that generated this binding.</p>
+</dd>
+  <dt><code>factory</code> <span class="xref">Func</span>&lt;<span class="xref">object</span>[], <span class="xref">object</span>&gt;</dt>
+  <dd><p>The instance factory.</p>
+</dd>
+  <dt><code>valueRetrievers</code> <span class="xref">Func</span>&lt;<span class="xref">object</span>&gt;[]</dt>
+  <dd><p>The set of value-retrieval functions.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="Autofac.Core.Activators.Reflection.BoundConstructor.html">BoundConstructor</a></dt>
-  <dd></dd>
+  <dd><p>A <a class="xref" href="Autofac.Core.Activators.Reflection.BoundConstructor.html">BoundConstructor</a> with details about the successful bind.</p>
+</dd>
 </dl>
 
 

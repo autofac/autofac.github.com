@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,8 @@ Method ResolveKeyed
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Retrieve a service from the context.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -133,21 +134,25 @@ Method ResolveKeyed
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>context</code> <a class="xref" href="Autofac.IComponentContext.html">IComponentContext</a></dt>
-  <dd></dd>
-  <dt><code>serviceKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-  <dd></dd>
+  <dd><p>The context from which to resolve the service.</p>
+</dd>
+  <dt><code>serviceKey</code> <span class="xref">object</span></dt>
+  <dd><p>Key of the service.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><span class="xref">TService</span></dt>
-  <dd></dd>
+  <dd><p>The component instance that provides the service.</p>
+</dd>
 </dl>
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>TService</code></dt>
-  <dd></dd>
+  <dd><p>The type to which the result will be cast.</p>
+</dd>
 </dl>
 
 
@@ -156,6 +161,15 @@ Method ResolveKeyed
 
 
 
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="Autofac.Core.Registration.ComponentNotRegisteredException.html">ComponentNotRegisteredException</a></dt>
+  <dd><p>Thrown if the requested component is not registered.</p>
+</dd>
+  <dt><a class="xref" href="Autofac.Core.DependencyResolutionException.html">DependencyResolutionException</a></dt>
+  <dd><p>Thrown if the component cannot be resolved.</p>
+</dd>
+</dl>
 
 
 
@@ -166,7 +180,8 @@ Method ResolveKeyed
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Retrieve a service from the context.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -176,23 +191,28 @@ Method ResolveKeyed
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>context</code> <a class="xref" href="Autofac.IComponentContext.html">IComponentContext</a></dt>
-  <dd></dd>
-  <dt><code>serviceKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-  <dd></dd>
-  <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Autofac.Core.Parameter.html">Parameter</a>&gt;</dt>
-  <dd></dd>
+  <dd><p>The context from which to resolve the service.</p>
+</dd>
+  <dt><code>serviceKey</code> <span class="xref">object</span></dt>
+  <dd><p>Key of the service.</p>
+</dd>
+  <dt><code>parameters</code> <span class="xref">IEnumerable</span>&lt;<a class="xref" href="Autofac.Core.Parameter.html">Parameter</a>&gt;</dt>
+  <dd><p>The parameters.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><span class="xref">TService</span></dt>
-  <dd></dd>
+  <dd><p>The component instance that provides the service.</p>
+</dd>
 </dl>
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>TService</code></dt>
-  <dd></dd>
+  <dd><p>The type to which the result will be cast.</p>
+</dd>
 </dl>
 
 
@@ -201,6 +221,15 @@ Method ResolveKeyed
 
 
 
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="Autofac.Core.Registration.ComponentNotRegisteredException.html">ComponentNotRegisteredException</a></dt>
+  <dd><p>Thrown if the requested component is not registered.</p>
+</dd>
+  <dt><a class="xref" href="Autofac.Core.DependencyResolutionException.html">DependencyResolutionException</a></dt>
+  <dd><p>Thrown if the component cannot be resolved.</p>
+</dd>
+</dl>
 
 
 
@@ -211,7 +240,8 @@ Method ResolveKeyed
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Retrieve a service from the context.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -221,23 +251,28 @@ Method ResolveKeyed
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>context</code> <a class="xref" href="Autofac.IComponentContext.html">IComponentContext</a></dt>
-  <dd></dd>
-  <dt><code>serviceKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-  <dd></dd>
+  <dd><p>The context from which to resolve the service.</p>
+</dd>
+  <dt><code>serviceKey</code> <span class="xref">object</span></dt>
+  <dd><p>Key of the service.</p>
+</dd>
   <dt><code>parameters</code> <a class="xref" href="Autofac.Core.Parameter.html">Parameter</a>[]</dt>
-  <dd></dd>
+  <dd><p>The parameters.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><span class="xref">TService</span></dt>
-  <dd></dd>
+  <dd><p>The component instance that provides the service.</p>
+</dd>
 </dl>
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>TService</code></dt>
-  <dd></dd>
+  <dd><p>The type to which the result will be cast.</p>
+</dd>
 </dl>
 
 
@@ -246,6 +281,15 @@ Method ResolveKeyed
 
 
 
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="Autofac.Core.Registration.ComponentNotRegisteredException.html">ComponentNotRegisteredException</a></dt>
+  <dd><p>Thrown if the requested component is not registered.</p>
+</dd>
+  <dt><a class="xref" href="Autofac.Core.DependencyResolutionException.html">DependencyResolutionException</a></dt>
+  <dd><p>Thrown if the component cannot be resolved.</p>
+</dd>
+</dl>
 
 
 
@@ -256,7 +300,8 @@ Method ResolveKeyed
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Retrieve a service from the context.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -266,17 +311,21 @@ Method ResolveKeyed
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>context</code> <a class="xref" href="Autofac.IComponentContext.html">IComponentContext</a></dt>
-  <dd></dd>
-  <dt><code>serviceKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-  <dd></dd>
-  <dt><code>serviceType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
-  <dd></dd>
+  <dd><p>The context from which to resolve the service.</p>
+</dd>
+  <dt><code>serviceKey</code> <span class="xref">object</span></dt>
+  <dd><p>Key of the service.</p>
+</dd>
+  <dt><code>serviceType</code> <span class="xref">Type</span></dt>
+  <dd><p>Type of the service.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-  <dd></dd>
+  <dt><span class="xref">object</span></dt>
+  <dd><p>The component instance that provides the service.</p>
+</dd>
 </dl>
 
 
@@ -286,6 +335,15 @@ Method ResolveKeyed
 
 
 
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="Autofac.Core.Registration.ComponentNotRegisteredException.html">ComponentNotRegisteredException</a></dt>
+  <dd><p>Thrown if the requested component is not registered.</p>
+</dd>
+  <dt><a class="xref" href="Autofac.Core.DependencyResolutionException.html">DependencyResolutionException</a></dt>
+  <dd><p>Thrown if the component cannot be resolved.</p>
+</dd>
+</dl>
 
 
 
@@ -296,7 +354,8 @@ Method ResolveKeyed
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Retrieve a service from the context.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -306,19 +365,24 @@ Method ResolveKeyed
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>context</code> <a class="xref" href="Autofac.IComponentContext.html">IComponentContext</a></dt>
-  <dd></dd>
-  <dt><code>serviceKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-  <dd></dd>
-  <dt><code>serviceType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
-  <dd></dd>
-  <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Autofac.Core.Parameter.html">Parameter</a>&gt;</dt>
-  <dd></dd>
+  <dd><p>The context from which to resolve the service.</p>
+</dd>
+  <dt><code>serviceKey</code> <span class="xref">object</span></dt>
+  <dd><p>Key of the service.</p>
+</dd>
+  <dt><code>serviceType</code> <span class="xref">Type</span></dt>
+  <dd><p>Type of the service.</p>
+</dd>
+  <dt><code>parameters</code> <span class="xref">IEnumerable</span>&lt;<a class="xref" href="Autofac.Core.Parameter.html">Parameter</a>&gt;</dt>
+  <dd><p>The parameters.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-  <dd></dd>
+  <dt><span class="xref">object</span></dt>
+  <dd><p>The component instance that provides the service.</p>
+</dd>
 </dl>
 
 
@@ -328,6 +392,15 @@ Method ResolveKeyed
 
 
 
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="Autofac.Core.Registration.ComponentNotRegisteredException.html">ComponentNotRegisteredException</a></dt>
+  <dd><p>Thrown if the requested component is not registered.</p>
+</dd>
+  <dt><a class="xref" href="Autofac.Core.DependencyResolutionException.html">DependencyResolutionException</a></dt>
+  <dd><p>Thrown if the component cannot be resolved.</p>
+</dd>
+</dl>
 
 
 
@@ -338,7 +411,8 @@ Method ResolveKeyed
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Retrieve a service from the context.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -348,19 +422,24 @@ Method ResolveKeyed
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>context</code> <a class="xref" href="Autofac.IComponentContext.html">IComponentContext</a></dt>
-  <dd></dd>
-  <dt><code>serviceKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-  <dd></dd>
-  <dt><code>serviceType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
-  <dd></dd>
+  <dd><p>The context from which to resolve the service.</p>
+</dd>
+  <dt><code>serviceKey</code> <span class="xref">object</span></dt>
+  <dd><p>Key of the service.</p>
+</dd>
+  <dt><code>serviceType</code> <span class="xref">Type</span></dt>
+  <dd><p>Type of the service.</p>
+</dd>
   <dt><code>parameters</code> <a class="xref" href="Autofac.Core.Parameter.html">Parameter</a>[]</dt>
-  <dd></dd>
+  <dd><p>The parameters.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-  <dd></dd>
+  <dt><span class="xref">object</span></dt>
+  <dd><p>The component instance that provides the service.</p>
+</dd>
 </dl>
 
 
@@ -370,6 +449,15 @@ Method ResolveKeyed
 
 
 
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="Autofac.Core.Registration.ComponentNotRegisteredException.html">ComponentNotRegisteredException</a></dt>
+  <dd><p>Thrown if the requested component is not registered.</p>
+</dd>
+  <dt><a class="xref" href="Autofac.Core.DependencyResolutionException.html">DependencyResolutionException</a></dt>
+  <dd><p>Thrown if the component cannot be resolved.</p>
+</dd>
+</dl>
 
 
 

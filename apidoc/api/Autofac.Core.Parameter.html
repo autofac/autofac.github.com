@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class Parameter | Autofac ">
       
-      
+      <meta name="description" content="Used in order to provide a value to a constructor parameter or property on an instance being created by the container.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,9 @@ Class Parameter
   <dl><dt>Assembly</dt><dd>Autofac.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Used in order to provide a value to a constructor parameter or property on an instance
+being created by the container.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -109,7 +111,7 @@ Class Parameter
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><span class="xref">Parameter</span></div>
     </dd>
   </dl>
@@ -129,6 +131,9 @@ Class Parameter
 
 
 
+  <h2 id="Autofac_Core_Parameter_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Not all parameters can be applied to all sites.</p>
+</div>
 
   <h2 class="section" id="constructors">Constructors
 </h2>
@@ -143,7 +148,8 @@ Class Parameter
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Parameter.CanSupplyValue.html#Autofac_Core_Parameter_CanSupplyValue_System_Reflection_ParameterInfo_Autofac_IComponentContext_System_Func_System_Object___">CanSupplyValue(ParameterInfo, IComponentContext, out Func&lt;object?&gt;?)</a></dt>
-    <dd></dd>
+    <dd><p>Returns true if the parameter is able to provide a value to a particular site.</p>
+</dd>
   </dl>
 
 

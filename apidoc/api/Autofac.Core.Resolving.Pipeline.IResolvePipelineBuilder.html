@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IResolvePipelineBuilder | Autofac ">
       
-      
+      <meta name="description" content="Provides the ability to build a resolve pipeline from a set of middleware.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,8 @@ Interface IResolvePipelineBuilder
   <dl><dt>Assembly</dt><dd>Autofac.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Provides the ability to build a resolve pipeline from a set of middleware.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -135,11 +136,13 @@ Interface IResolvePipelineBuilder
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Resolving.Pipeline.IResolvePipelineBuilder.Middleware.html#Autofac_Core_Resolving_Pipeline_IResolvePipelineBuilder_Middleware">Middleware</a></dt>
-    <dd></dd>
+    <dd><p>Gets the set of middleware currently registered.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Resolving.Pipeline.IResolvePipelineBuilder.Type.html#Autofac_Core_Resolving_Pipeline_IResolvePipelineBuilder_Type">Type</a></dt>
-    <dd></dd>
+    <dd><p>Gets the type of the pipeline this instance will build.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -147,19 +150,23 @@ Interface IResolvePipelineBuilder
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Resolving.Pipeline.IResolvePipelineBuilder.Build.html#Autofac_Core_Resolving_Pipeline_IResolvePipelineBuilder_Build">Build()</a></dt>
-    <dd></dd>
+    <dd><p>Construct a concrete resolve pipeline from this builder.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Resolving.Pipeline.IResolvePipelineBuilder.Clone.html#Autofac_Core_Resolving_Pipeline_IResolvePipelineBuilder_Clone">Clone()</a></dt>
-    <dd></dd>
+    <dd><p>Clone this builder, returning a new builder containing the set of middleware already added.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Resolving.Pipeline.IResolvePipelineBuilder.Use.html#Autofac_Core_Resolving_Pipeline_IResolvePipelineBuilder_Use_Autofac_Core_Resolving_Pipeline_IResolveMiddleware_Autofac_Core_Resolving_Pipeline_MiddlewareInsertionMode_">Use(IResolveMiddleware, MiddlewareInsertionMode)</a></dt>
-    <dd></dd>
+    <dd><p>Use a piece of middleware in a resolve pipeline.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Resolving.Pipeline.IResolvePipelineBuilder.UseRange.html#Autofac_Core_Resolving_Pipeline_IResolvePipelineBuilder_UseRange_System_Collections_Generic_IEnumerable_Autofac_Core_Resolving_Pipeline_IResolveMiddleware__Autofac_Core_Resolving_Pipeline_MiddlewareInsertionMode_">UseRange(IEnumerable&lt;IResolveMiddleware&gt;, MiddlewareInsertionMode)</a></dt>
-    <dd></dd>
+    <dd><p>Use a set of multiple, ordered middleware instances in a resolve pipeline.</p>
+</dd>
   </dl>
 
 

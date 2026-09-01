@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class RegistrationExtensions | Autofac ">
       
-      
+      <meta name="description" content="Adds registration syntax to the  type.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,8 @@ Class RegistrationExtensions
   <dl><dt>Assembly</dt><dd>Autofac.Extras.DynamicProxy.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Adds registration syntax to the <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a> type.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -109,7 +110,7 @@ Class RegistrationExtensions
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><span class="xref">RegistrationExtensions</span></div>
     </dd>
   </dl>
@@ -126,35 +127,118 @@ Class RegistrationExtensions
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableClassInterceptors.html#Autofac_Extras_DynamicProxy_RegistrationExtensions_EnableClassInterceptors__2_Autofac_Builder_IRegistrationBuilder___0_Autofac_Features_Scanning_ScanningActivatorData___1__">EnableClassInterceptors&lt;TLimit, TRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, ScanningActivatorData, TRegistrationStyle&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Enable class interception on the target type. Interceptors will be
+determined via <a class="xref" href="Autofac.Extras.DynamicProxy.InterceptAttribute.html">InterceptAttribute</a> on the class or added
+with
+<a class="xref" href="Autofac.Extras.DynamicProxy.RegistrationExtensions.InterceptedBy.html#Autofac_Extras_DynamicProxy_RegistrationExtensions_InterceptedBy__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_String___">InterceptedBy&lt;TLimit, TActivatorData, TStyle&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, TStyle&gt;, params string[])</a>.
+Only virtual methods can be intercepted this way.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableClassInterceptors.html#Autofac_Extras_DynamicProxy_RegistrationExtensions_EnableClassInterceptors__2_Autofac_Builder_IRegistrationBuilder___0_Autofac_Features_Scanning_ScanningActivatorData___1__Castle_DynamicProxy_ProxyGenerationOptions_System_Func_System_Type_System_Boolean__System_Type___">EnableClassInterceptors&lt;TLimit, TRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, ScanningActivatorData, TRegistrationStyle&gt;, ProxyGenerationOptions, Func&lt;Type, bool&gt;?, params Type[])</a></dt>
+    <dd><p>Enable class interception on the target type, conditionally based on the
+implementation type, with specific options and additional interfaces.
+Interceptors will be determined via <a class="xref" href="Autofac.Extras.DynamicProxy.InterceptAttribute.html">InterceptAttribute</a> on
+the class or added with
+<a class="xref" href="Autofac.Extras.DynamicProxy.RegistrationExtensions.InterceptedBy.html#Autofac_Extras_DynamicProxy_RegistrationExtensions_InterceptedBy__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_String___">InterceptedBy&lt;TLimit, TActivatorData, TStyle&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, TStyle&gt;, params string[])</a>.
+Only virtual methods can be intercepted this way.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableClassInterceptors.html#Autofac_Extras_DynamicProxy_RegistrationExtensions_EnableClassInterceptors__2_Autofac_Builder_IRegistrationBuilder___0_Autofac_Features_Scanning_ScanningActivatorData___1__Castle_DynamicProxy_ProxyGenerationOptions_System_Type___">EnableClassInterceptors&lt;TLimit, TRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, ScanningActivatorData, TRegistrationStyle&gt;, ProxyGenerationOptions, params Type[])</a></dt>
-    <dd></dd>
+    <dd><p>Enable class interception on the target type with specific options and
+additional interfaces. Interceptors will be determined via
+<a class="xref" href="Autofac.Extras.DynamicProxy.InterceptAttribute.html">InterceptAttribute</a> on the class or added with
+<a class="xref" href="Autofac.Extras.DynamicProxy.RegistrationExtensions.InterceptedBy.html#Autofac_Extras_DynamicProxy_RegistrationExtensions_InterceptedBy__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_String___">InterceptedBy&lt;TLimit, TActivatorData, TStyle&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, TStyle&gt;, params string[])</a>.
+Only virtual methods can be intercepted this way.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableClassInterceptors.html#Autofac_Extras_DynamicProxy_RegistrationExtensions_EnableClassInterceptors__2_Autofac_Builder_IRegistrationBuilder___0_Autofac_Features_Scanning_ScanningActivatorData___1__System_Func_System_Type_System_Boolean__">EnableClassInterceptors&lt;TLimit, TRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, ScanningActivatorData, TRegistrationStyle&gt;, Func&lt;Type, bool&gt;)</a></dt>
+    <dd><p>Enable class interception on the target type, conditionally based on the
+implementation type. Interceptors will be determined via
+<a class="xref" href="Autofac.Extras.DynamicProxy.InterceptAttribute.html">InterceptAttribute</a> on the class or added with
+<a class="xref" href="Autofac.Extras.DynamicProxy.RegistrationExtensions.InterceptedBy.html#Autofac_Extras_DynamicProxy_RegistrationExtensions_InterceptedBy__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_String___">InterceptedBy&lt;TLimit, TActivatorData, TStyle&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, TStyle&gt;, params string[])</a>.
+Only virtual methods can be intercepted this way.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableClassInterceptors.html#Autofac_Extras_DynamicProxy_RegistrationExtensions_EnableClassInterceptors__3_Autofac_Builder_IRegistrationBuilder___0___1___2__">EnableClassInterceptors&lt;TLimit, TConcreteReflectionActivatorData, TRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, TConcreteReflectionActivatorData, TRegistrationStyle&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Enable class interception on the target type. Interceptors will be
+determined via <a class="xref" href="Autofac.Extras.DynamicProxy.InterceptAttribute.html">InterceptAttribute</a> on the class or added
+with
+<a class="xref" href="Autofac.Extras.DynamicProxy.RegistrationExtensions.InterceptedBy.html#Autofac_Extras_DynamicProxy_RegistrationExtensions_InterceptedBy__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_String___">InterceptedBy&lt;TLimit, TActivatorData, TStyle&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, TStyle&gt;, params string[])</a>.
+Only virtual methods can be intercepted this way.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableClassInterceptors.html#Autofac_Extras_DynamicProxy_RegistrationExtensions_EnableClassInterceptors__3_Autofac_Builder_IRegistrationBuilder___0___1___2__Castle_DynamicProxy_ProxyGenerationOptions_System_Func_System_Type_System_Boolean__System_Type___">EnableClassInterceptors&lt;TLimit, TConcreteReflectionActivatorData, TRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, TConcreteReflectionActivatorData, TRegistrationStyle&gt;, ProxyGenerationOptions, Func&lt;Type, bool&gt;?, params Type[])</a></dt>
+    <dd><p>Enable class interception on the target type, conditionally based on the
+implementation type, with specific options and additional interfaces.
+Interceptors will be determined via <a class="xref" href="Autofac.Extras.DynamicProxy.InterceptAttribute.html">InterceptAttribute</a> on
+the class or added with
+<a class="xref" href="Autofac.Extras.DynamicProxy.RegistrationExtensions.InterceptedBy.html#Autofac_Extras_DynamicProxy_RegistrationExtensions_InterceptedBy__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_String___">InterceptedBy&lt;TLimit, TActivatorData, TStyle&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, TStyle&gt;, params string[])</a>.
+Only virtual methods can be intercepted this way.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableClassInterceptors.html#Autofac_Extras_DynamicProxy_RegistrationExtensions_EnableClassInterceptors__3_Autofac_Builder_IRegistrationBuilder___0___1___2__Castle_DynamicProxy_ProxyGenerationOptions_System_Type___">EnableClassInterceptors&lt;TLimit, TConcreteReflectionActivatorData, TRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, TConcreteReflectionActivatorData, TRegistrationStyle&gt;, ProxyGenerationOptions, params Type[])</a></dt>
-    <dd></dd>
+    <dd><p>Enable class interception on the target type with specific options and
+additional interfaces. Interceptors will be determined via
+<a class="xref" href="Autofac.Extras.DynamicProxy.InterceptAttribute.html">InterceptAttribute</a> on the class or added with
+<a class="xref" href="Autofac.Extras.DynamicProxy.RegistrationExtensions.InterceptedBy.html#Autofac_Extras_DynamicProxy_RegistrationExtensions_InterceptedBy__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_String___">InterceptedBy&lt;TLimit, TActivatorData, TStyle&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, TStyle&gt;, params string[])</a>.
+Only virtual methods can be intercepted this way.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableClassInterceptors.html#Autofac_Extras_DynamicProxy_RegistrationExtensions_EnableClassInterceptors__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Func_System_Type_System_Boolean__">EnableClassInterceptors&lt;TLimit, TConcreteReflectionActivatorData, TRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, TConcreteReflectionActivatorData, TRegistrationStyle&gt;, Func&lt;Type, bool&gt;)</a></dt>
+    <dd><p>Enable class interception on the target type, conditionally based on the
+implementation type. Interceptors will be determined via
+<a class="xref" href="Autofac.Extras.DynamicProxy.InterceptAttribute.html">InterceptAttribute</a> on the class or added with
+<a class="xref" href="Autofac.Extras.DynamicProxy.RegistrationExtensions.InterceptedBy.html#Autofac_Extras_DynamicProxy_RegistrationExtensions_InterceptedBy__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_String___">InterceptedBy&lt;TLimit, TActivatorData, TStyle&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, TStyle&gt;, params string[])</a>.
+Only virtual methods can be intercepted this way.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableInterfaceInterceptors.html#Autofac_Extras_DynamicProxy_RegistrationExtensions_EnableInterfaceInterceptors__3_Autofac_Builder_IRegistrationBuilder___0___1___2__Castle_DynamicProxy_ProxyGenerationOptions_">EnableInterfaceInterceptors&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;, ProxyGenerationOptions?)</a></dt>
-    <dd></dd>
+    <dd><p>Enable interface interception on the target type. Interceptors will be
+determined via <a class="xref" href="Autofac.Extras.DynamicProxy.InterceptAttribute.html">InterceptAttribute</a> on the class or
+interface, or added with
+<a class="xref" href="Autofac.Extras.DynamicProxy.RegistrationExtensions.InterceptedBy.html#Autofac_Extras_DynamicProxy_RegistrationExtensions_InterceptedBy__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_String___">InterceptedBy&lt;TLimit, TActivatorData, TStyle&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, TStyle&gt;, params string[])</a>.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableInterfaceInterceptors.html#Autofac_Extras_DynamicProxy_RegistrationExtensions_EnableInterfaceInterceptors__3_Autofac_Builder_IRegistrationBuilder___0___1___2__Castle_DynamicProxy_ProxyGenerationOptions_System_Func_System_Type_System_Boolean__">EnableInterfaceInterceptors&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;, ProxyGenerationOptions?, Func&lt;Type, bool&gt;?)</a></dt>
+    <dd><p>Enable interface interception on the target type, conditionally based on
+the resolved implementation type, with specific options. Interceptors
+will be determined via <a class="xref" href="Autofac.Extras.DynamicProxy.InterceptAttribute.html">InterceptAttribute</a> on the class or
+interface, or added with
+<a class="xref" href="Autofac.Extras.DynamicProxy.RegistrationExtensions.InterceptedBy.html#Autofac_Extras_DynamicProxy_RegistrationExtensions_InterceptedBy__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_String___">InterceptedBy&lt;TLimit, TActivatorData, TStyle&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, TStyle&gt;, params string[])</a>.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableInterfaceInterceptors.html#Autofac_Extras_DynamicProxy_RegistrationExtensions_EnableInterfaceInterceptors__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Func_System_Type_System_Boolean__">EnableInterfaceInterceptors&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, TSingleRegistrationStyle&gt;, Func&lt;Type, bool&gt;)</a></dt>
+    <dd><p>Enable interface interception on the target type, conditionally based on
+the resolved implementation type. Interceptors will be determined via
+<a class="xref" href="Autofac.Extras.DynamicProxy.InterceptAttribute.html">InterceptAttribute</a> on the class or interface, or added with
+<a class="xref" href="Autofac.Extras.DynamicProxy.RegistrationExtensions.InterceptedBy.html#Autofac_Extras_DynamicProxy_RegistrationExtensions_InterceptedBy__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_String___">InterceptedBy&lt;TLimit, TActivatorData, TStyle&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, TStyle&gt;, params string[])</a>.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Extras.DynamicProxy.RegistrationExtensions.InterceptedBy.html#Autofac_Extras_DynamicProxy_RegistrationExtensions_InterceptedBy__3_Autofac_Builder_IRegistrationBuilder___0___1___2__Autofac_Core_Service___">InterceptedBy&lt;TLimit, TActivatorData, TStyle&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, TStyle&gt;, params Service[])</a></dt>
-    <dd></dd>
+    <dd><p>Assigns a list of interceptor services to a registration by service.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Extras.DynamicProxy.RegistrationExtensions.InterceptedBy.html#Autofac_Extras_DynamicProxy_RegistrationExtensions_InterceptedBy__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_String___">InterceptedBy&lt;TLimit, TActivatorData, TStyle&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, TStyle&gt;, params string[])</a></dt>
-    <dd></dd>
+    <dd><p>Assigns a list of interceptor services to a registration by name.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Extras.DynamicProxy.RegistrationExtensions.InterceptedBy.html#Autofac_Extras_DynamicProxy_RegistrationExtensions_InterceptedBy__3_Autofac_Builder_IRegistrationBuilder___0___1___2__System_Type___">InterceptedBy&lt;TLimit, TActivatorData, TStyle&gt;(IRegistrationBuilder&lt;TLimit, TActivatorData, TStyle&gt;, params Type[])</a></dt>
-    <dd></dd>
+    <dd><p>Assigns a list of interceptor services to a registration by interceptor
+type.</p>
+</dd>
   </dl>
 
 

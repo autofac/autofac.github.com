@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IStartable | Autofac ">
       
-      
+      <meta name="description" content="When implemented by a component, an instance of the component will be resolved and started as soon as the container is built. Autofac will not call the Start() method when subsequent instances are resolved. If this behavior is required, use an OnActivated() event handler instead.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,11 @@ Interface IStartable
   <dl><dt>Assembly</dt><dd>Autofac.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>When implemented by a component, an instance of the component will be resolved
+and started as soon as the container is built. Autofac will not call the Start()
+method when subsequent instances are resolved. If this behavior is required, use
+an <code>OnActivated()</code> event handler instead.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -113,13 +117,27 @@ Interface IStartable
 
 
 
+  <h2 id="Autofac_IStartable_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+For equivalent "Stop" functionality, implement <span class="xref">System.IDisposable</span>. Autofac
+will always dispose a component before any of its dependencies (except in the presence
+of circular dependencies, in which case the components in the cycle are disposed in
+reverse-construction order.)
+</p>
+<p>
+Components that implement <a class="xref" href="Autofac.IStartable.html">IStartable</a> and configured with a InstancePerLifetimeScope()
+lifetime are still only started *once*, in the root <a class="xref" href="Autofac.IContainer.html">IContainer</a> or <a class="xref" href="Autofac.ILifetimeScope.html">ILifetimeScope</a>
+where the component was registered.
+</p>
+</div>
 
   <h2 class="section" id="methods">Methods
 </h2>
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.IStartable.Start.html#Autofac_IStartable_Start">Start()</a></dt>
-    <dd></dd>
+    <dd><p>Perform once-off startup processing.</p>
+</dd>
   </dl>
 
 

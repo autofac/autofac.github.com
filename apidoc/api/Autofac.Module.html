@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class Module | Autofac ">
       
-      
+      <meta name="description" content="Base class for user-defined modules. Modules can add a set of related components to a container () or attach cross-cutting functionality to other components (. Modules are given special support in the XML configuration feature - see https://autofac.readthedocs.io/en/latest/configuration/modules.html.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,12 @@ Class Module
   <dl><dt>Assembly</dt><dd>Autofac.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Base class for user-defined modules. Modules can add a set of related components
+to a container (<a class="xref" href="Autofac.Module.Load.html#Autofac_Module_Load_Autofac_ContainerBuilder_">Load(ContainerBuilder)</a>) or attach cross-cutting functionality
+to other components (<a class="xref" href="Autofac.Module.AttachToComponentRegistration.html#Autofac_Module_AttachToComponentRegistration_Autofac_Core_Registration_IComponentRegistryBuilder_Autofac_Core_IComponentRegistration_">AttachToComponentRegistration(IComponentRegistryBuilder, IComponentRegistration)</a>.
+Modules are given special support in the XML configuration feature - see
+<a href="https://autofac.readthedocs.io/en/latest/configuration/modules.html">https://autofac.readthedocs.io/en/latest/configuration/modules.html</a>.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -109,7 +114,7 @@ Class Module
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><span class="xref">Module</span></div>
     </dd>
   </dl>
@@ -133,7 +138,34 @@ Class Module
 
 
 
+  <h2 id="Autofac_Module_examples">Examples</h2>
+  <p>Defining a module:</p>
+<pre><code class="lang-csharp">public class DataAccessModule : Module
+{
+    public string ConnectionString { get; set; }
 
+    public override void Load(ContainerBuilder moduleBuilder)
+    {
+        moduleBuilder.RegisterGeneric(typeof(MyRepository&lt;&gt;))
+            .As(typeof(IRepository&lt;&gt;))
+            .InstancePerLifetimeScope();
+
+        moduleBuilder.Register(c =&gt; new MyDbConnection(ConnectionString))
+            .As&lt;IDbConnection&gt;()
+            .InstancePerMatchingLifetimeScope(WebLifetime.Request);
+    }
+}</code></pre>
+<p>Using the module...</p>
+<pre><code class="lang-csharp">var builder = new ContainerBuilder();
+builder.RegisterModule(new DataAccessModule { ConnectionString = "..." });
+var container = builder.Build();
+var customers = container.Resolve&lt;IRepository&lt;Customer&gt;&gt;();</code></pre>
+
+
+  <h2 id="Autofac_Module_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Provides a user-friendly way to implement <a class="xref" href="Autofac.Core.IModule.html">IModule</a>
+via <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a>.</p>
+</div>
 
   <h2 class="section" id="constructors">Constructors
 </h2>
@@ -148,7 +180,10 @@ Class Module
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Module.ThisAssembly.html#Autofac_Module_ThisAssembly">ThisAssembly</a></dt>
-    <dd></dd>
+    <dd><p>Gets the assembly in which the concrete module type is located. To avoid bugs whereby deriving from a module will
+change the target assembly, this property can only be used by modules that inherit directly from
+<a class="xref" href="Autofac.Module.html">Module</a>.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -156,19 +191,24 @@ Class Module
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Module.AttachToComponentRegistration.html#Autofac_Module_AttachToComponentRegistration_Autofac_Core_Registration_IComponentRegistryBuilder_Autofac_Core_IComponentRegistration_">AttachToComponentRegistration(IComponentRegistryBuilder, IComponentRegistration)</a></dt>
-    <dd></dd>
+    <dd><p>Override to attach module-specific functionality to a
+component registration.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Module.AttachToRegistrationSource.html#Autofac_Module_AttachToRegistrationSource_Autofac_Core_Registration_IComponentRegistryBuilder_Autofac_Core_IRegistrationSource_">AttachToRegistrationSource(IComponentRegistryBuilder, IRegistrationSource)</a></dt>
-    <dd></dd>
+    <dd><p>Override to perform module-specific processing on a registration source.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Module.Configure.html#Autofac_Module_Configure_Autofac_Core_Registration_IComponentRegistryBuilder_">Configure(IComponentRegistryBuilder)</a></dt>
-    <dd></dd>
+    <dd><p>Apply the module to the component registry.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Module.Load.html#Autofac_Module_Load_Autofac_ContainerBuilder_">Load(ContainerBuilder)</a></dt>
-    <dd></dd>
+    <dd><p>Override to add registrations to the container.</p>
+</dd>
   </dl>
 
 

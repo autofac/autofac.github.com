@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,8 @@ Method TryGetSharedInstance
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Try to retrieve a shared instance based on a GUID key.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -132,16 +133,19 @@ Method TryGetSharedInstance
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
-  <dd></dd>
-  <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-  <dd></dd>
+  <dt><code>id</code> <span class="xref">Guid</span></dt>
+  <dd><p>Key to look up.</p>
+</dd>
+  <dt><code>value</code> <span class="xref">object</span></dt>
+  <dd><p>The instance that has the specified key.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-  <dd></dd>
+  <dt><span class="xref">bool</span></dt>
+  <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the key was found; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
 </dl>
 
 
@@ -161,7 +165,9 @@ Method TryGetSharedInstance
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Try to retrieve a shared instance based on a primary GUID key and
+possible secondary qualifying GUID key.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -170,18 +176,23 @@ Method TryGetSharedInstance
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><code>primaryId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
-  <dd></dd>
-  <dt><code>qualifyingId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</dt>
-  <dd></dd>
-  <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-  <dd></dd>
+  <dt><code>primaryId</code> <span class="xref">Guid</span></dt>
+  <dd><p>Key to look up.</p>
+</dd>
+  <dt><code>qualifyingId</code> <span class="xref">Guid</span>?</dt>
+  <dd><p>Secondary key to look up, to better identify an instance that wraps around another instance
+or is otherwise &quot;namespaced&quot; by it.</p>
+</dd>
+  <dt><code>value</code> <span class="xref">object</span></dt>
+  <dd><p>The instance that has the specified keys.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-  <dd></dd>
+  <dt><span class="xref">bool</span></dt>
+  <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the key was found; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
 </dl>
 
 

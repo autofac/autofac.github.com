@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,8 @@ Method AttachToRegistrationSource
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Override to perform module-specific processing on a registration source.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -133,9 +134,11 @@ Method AttachToRegistrationSource
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>componentRegistry</code> <a class="xref" href="Autofac.Core.Registration.IComponentRegistryBuilder.html">IComponentRegistryBuilder</a></dt>
-  <dd></dd>
+  <dd><p>The component registry into which the source was added.</p>
+</dd>
   <dt><code>registrationSource</code> <a class="xref" href="Autofac.Core.IRegistrationSource.html">IRegistrationSource</a></dt>
-  <dd></dd>
+  <dd><p>The registration source.</p>
+</dd>
 </dl>
 
 
@@ -145,6 +148,10 @@ Method AttachToRegistrationSource
 
 
 
+<h4 class="section" id="Autofac_Module_AttachToRegistrationSource_Autofac_Core_Registration_IComponentRegistryBuilder_Autofac_Core_IRegistrationSource__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>This method will be called for all existing <i>and future</i> sources
+- ordering is not important.</p>
+</div>
 
 
 

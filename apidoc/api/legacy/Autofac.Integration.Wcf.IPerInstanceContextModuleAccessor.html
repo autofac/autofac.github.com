@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IPerInstanceContextModuleAccessor | Autofac ">
       
-      
+      <meta name="description" content="Provides Autofac modules to register per .">
       <link rel="icon" href="../../favicon.ico">
       <link rel="stylesheet" href="../../public/docfx.min.css">
       <link rel="stylesheet" href="../../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,8 @@ Interface IPerInstanceContextModuleAccessor
   <dl><dt>Assembly</dt><dd>Autofac.Integration.Wcf.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Provides Autofac modules to register per <span class="xref">System.ServiceModel.InstanceContext</span>.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -113,13 +114,22 @@ Interface IPerInstanceContextModuleAccessor
 
 
 
+  <h2 id="Autofac_Integration_Wcf_IPerInstanceContextModuleAccessor_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+Implement this interface to supply modules that are registered when
+an instance context is created, giving access to context-static items
+such as <span class="xref">System.ServiceModel.OperationContext</span> or
+<span class="xref">System.ServiceModel.Web.WebOperationContext</span> throughout the instance context.
+</p>
+</div>
 
   <h2 class="section" id="properties">Properties
 </h2>
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Wcf.IPerInstanceContextModuleAccessor.Modules.html#Autofac_Integration_Wcf_IPerInstanceContextModuleAccessor_Modules">Modules</a></dt>
-    <dd></dd>
+    <dd><p>Gets the list of per-instance-context modules to register.</p>
+</dd>
   </dl>
 
 

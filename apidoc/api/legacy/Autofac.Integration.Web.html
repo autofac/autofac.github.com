@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -102,34 +102,45 @@ Classes
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Integration.Web.ContainerDisposalModule.html">ContainerDisposalModule</a></dt>
-      <dd></dd>
+      <dd><p>HTTP Module that disposes of Autofac-created components when processing for
+a request completes.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Integration.Web.ContainerProvider.html">ContainerProvider</a></dt>
-      <dd></dd>
+      <dd><p>Provides application-wide and per-request containers.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Integration.Web.ContainerProviderContainer.html">ContainerProviderContainer</a></dt>
-      <dd></dd>
+      <dd><p>Provides an implementation of <a class="xref" href="../Autofac.IContainer.html">IContainer</a> which uses the configured
+<a class="xref" href="Autofac.Integration.Web.IContainerProvider.html">IContainerProvider</a> to route calls to the current request container.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Integration.Web.RegistrationExtensions.html">RegistrationExtensions</a></dt>
-      <dd></dd>
+      <dd><p>Extends registration syntax for common web scenarios.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Integration.Web.WebLifetime.html">WebLifetime</a></dt>
-      <dd></dd>
+      <dd><p>Constants used to tag liftime scopes within standard Autofac web applications.</p>
+</dd>
     </dl>
     <h3 id="interfaces">
 Interfaces
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Integration.Web.IContainerProvider.html">IContainerProvider</a></dt>
-      <dd></dd>
+      <dd><p>Provides global and per-request Autofac containers in an
+ASP.NET application.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Autofac.Integration.Web.IContainerProviderAccessor.html">IContainerProviderAccessor</a></dt>
-      <dd></dd>
+      <dd><p>Implemented on a type (i.e. HttpApplication) that maintains a container provider
+for injecting dependencies into web requests.</p>
+</dd>
     </dl>
 
 

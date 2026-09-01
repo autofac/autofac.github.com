@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,16 @@ Method OnReturnToPool
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>
+Invoked when this instance is being returned to the pool. Any dependencies retrieved in <a class="xref" href="Autofac.Pooling.IPooledComponent.OnGetFromPool.html#Autofac_Pooling_IPooledComponent_OnGetFromPool_Autofac_IComponentContext_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter__">OnGetFromPool(IComponentContext, IEnumerable&lt;Parameter&gt;)</a> should
+be discarded in this method.
+</p>
+<p>
+If the maximum pool capacity has been reached (or a custom <a class="xref" href="Autofac.Pooling.IPooledRegistrationPolicy-1.html">IPooledRegistrationPolicy&lt;TPooledObject&gt;</a> decides not to return the instance to the pool),
+this method will be invoked, but then the object will not be put back in
+the pool (and may be disposed if the component implements <span class="xref">System.IDisposable</span>).
+</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,12 @@ Method InstancePerMatchingLifetimeScope
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Configure the component so that every dependent component or call to Resolve() within
+a ILifetimeScope tagged with any of the provided tags value gets the same, shared instance.
+Dependent components in lifetime scopes that are children of the tagged scope will
+share the parent's instance. If no appropriately tagged scope can be found in the
+hierarchy an <a class="xref" href="Autofac.Core.DependencyResolutionException.html">DependencyResolutionException</a> is thrown.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -132,14 +137,16 @@ Method InstancePerMatchingLifetimeScope
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><code>lifetimeScopeTag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
-  <dd></dd>
+  <dt><code>lifetimeScopeTag</code> <span class="xref">object</span>[]</dt>
+  <dd><p>Tag applied to matching lifetime scopes.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, TActivatorData, TRegistrationStyle&gt;</dt>
-  <dd></dd>
+  <dd><p>A registration builder allowing further configuration of the component.</p>
+</dd>
 </dl>
 
 

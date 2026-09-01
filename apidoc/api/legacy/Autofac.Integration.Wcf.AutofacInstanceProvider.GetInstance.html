@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,8 @@ Method GetInstance
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Returns a service object given the specified <span class="xref">System.ServiceModel.InstanceContext</span>.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -133,13 +134,15 @@ Method GetInstance
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>instanceContext</code> <span class="xref">InstanceContext</span></dt>
-  <dd></dd>
+  <dd><p>The current <span class="xref">System.ServiceModel.InstanceContext</span> object.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-  <dd></dd>
+  <dt><span class="xref">object</span></dt>
+  <dd><p>A user-defined service object.</p>
+</dd>
 </dl>
 
 
@@ -159,7 +162,8 @@ Method GetInstance
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Returns a service object given the specified <span class="xref">System.ServiceModel.InstanceContext</span>.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -169,15 +173,18 @@ Method GetInstance
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>instanceContext</code> <span class="xref">InstanceContext</span></dt>
-  <dd></dd>
+  <dd><p>The current <span class="xref">System.ServiceModel.InstanceContext</span> object.</p>
+</dd>
   <dt><code>message</code> <span class="xref">Message</span></dt>
-  <dd></dd>
+  <dd><p>The message that triggered the creation of a service object.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-  <dd></dd>
+  <dt><span class="xref">object</span></dt>
+  <dd><p>The service object.</p>
+</dd>
 </dl>
 
 
@@ -187,6 +194,12 @@ Method GetInstance
 
 
 
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><span class="xref">ArgumentNullException</span></dt>
+  <dd><p>Thrown if <code class="paramref">instanceContext</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+</dl>
 
 
 

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class ServiceImplementationData | Autofac ">
       
-      
+      <meta name="description" content="Contains data about a WCF service implementation.">
       <link rel="icon" href="../../favicon.ico">
       <link rel="stylesheet" href="../../public/docfx.min.css">
       <link rel="stylesheet" href="../../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,8 @@ Class ServiceImplementationData
   <dl><dt>Assembly</dt><dd>Autofac.Integration.Wcf.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Contains data about a WCF service implementation.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -109,7 +110,7 @@ Class ServiceImplementationData
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><span class="xref">ServiceImplementationData</span></div>
     </dd>
   </dl>
@@ -120,6 +121,13 @@ Class ServiceImplementationData
 
 
 
+  <h2 id="Autofac_Integration_Wcf_ServiceImplementationData_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+This data transfer object class is used in conjunction with
+<a class="xref" href="Autofac.Integration.Wcf.IServiceImplementationDataProvider.html">IServiceImplementationDataProvider</a>
+implementations for resolving service implementation instance information.
+</p>
+</div>
 
   <h2 class="section" id="constructors">Constructors
 </h2>
@@ -134,22 +142,32 @@ Class ServiceImplementationData
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Wcf.ServiceImplementationData.ConstructorString.html#Autofac_Integration_Wcf_ServiceImplementationData_ConstructorString">ConstructorString</a></dt>
-    <dd></dd>
+    <dd><p>Gets or sets the string used to generate the data.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Wcf.ServiceImplementationData.HostAsSingleton.html#Autofac_Integration_Wcf_ServiceImplementationData_HostAsSingleton">HostAsSingleton</a></dt>
-    <dd></dd>
+    <dd><p>Gets or sets a value indicating whether the service should be
+hosted as a singleton.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Wcf.ServiceImplementationData.ImplementationResolver.html#Autofac_Integration_Wcf_ServiceImplementationData_ImplementationResolver">ImplementationResolver</a></dt>
-    <dd></dd>
+    <dd><p>Gets or sets a mechanism that allows
+<a class="xref" href="Autofac.Integration.Wcf.AutofacInstanceContext.html">AutofacInstanceContext</a> to get the service implementation.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Wcf.ServiceImplementationData.ServiceTypeToHost.html#Autofac_Integration_Wcf_ServiceImplementationData_ServiceTypeToHost">ServiceTypeToHost</a></dt>
-    <dd></dd>
+    <dd><p>Gets or sets the concrete type to host.</p>
+</dd>
   </dl>
 
 
+  <h2 id="seealso">See Also</h2>
+  <div class="seealso">
+      <div><a class="xref" href="Autofac.Integration.Wcf.IServiceImplementationDataProvider.html">IServiceImplementationDataProvider</a></div>
+  </div>
 
 </article>
 

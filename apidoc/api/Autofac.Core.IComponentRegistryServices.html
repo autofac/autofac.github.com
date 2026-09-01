@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IComponentRegistryServices | Autofac ">
       
-      
+      <meta name="description" content="Defines an interface for accessing the set of services available during pipeline build time.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,8 @@ Interface IComponentRegistryServices
   <dl><dt>Assembly</dt><dd>Autofac.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Defines an interface for accessing the set of services available during pipeline build time.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -119,15 +120,20 @@ Interface IComponentRegistryServices
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.IComponentRegistryServices.IsRegistered.html#Autofac_Core_IComponentRegistryServices_IsRegistered_Autofac_Core_Service_">IsRegistered(Service)</a></dt>
-    <dd></dd>
+    <dd><p>Determines whether the specified service is registered.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.IComponentRegistryServices.RegistrationsFor.html#Autofac_Core_IComponentRegistryServices_RegistrationsFor_Autofac_Core_Service_">RegistrationsFor(Service)</a></dt>
-    <dd></dd>
+    <dd><p>Selects from the available registrations after ensuring that any
+dynamic registration sources that may provide <code class="paramref">service</code>
+have been invoked.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.IComponentRegistryServices.TryGetRegistration.html#Autofac_Core_IComponentRegistryServices_TryGetRegistration_Autofac_Core_Service_Autofac_Core_IComponentRegistration__">TryGetRegistration(Service, out IComponentRegistration?)</a></dt>
-    <dd></dd>
+    <dd><p>Attempts to find a default registration for the specified service.</p>
+</dd>
   </dl>
 
 

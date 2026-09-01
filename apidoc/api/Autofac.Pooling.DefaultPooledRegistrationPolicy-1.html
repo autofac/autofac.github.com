@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class DefaultPooledRegistrationPolicy&lt;TPooledObject&gt; | Autofac ">
       
-      
+      <meta name="description" content="Provides the default .">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,8 @@ Class DefaultPooledRegistrationPolicy&lt;TPooledObject&gt;
   <dl><dt>Assembly</dt><dd>Autofac.Pooling.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Provides the default <a class="xref" href="Autofac.Pooling.IPooledRegistrationPolicy-1.html">IPooledRegistrationPolicy&lt;TPooledObject&gt;</a>.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -108,13 +109,14 @@ Class DefaultPooledRegistrationPolicy&lt;TPooledObject&gt;
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>TPooledObject</code></dt>
-    <dd></dd>
+    <dd><p>The type of object being pooled.</p>
+</dd>
   </dl>
 
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><span class="xref">DefaultPooledRegistrationPolicy&lt;TPooledObject&gt;</span></div>
     </dd>
   </dl>
@@ -137,11 +139,13 @@ Class DefaultPooledRegistrationPolicy&lt;TPooledObject&gt;
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Pooling.DefaultPooledRegistrationPolicy-1.-ctor.html#Autofac_Pooling_DefaultPooledRegistrationPolicy_1__ctor">DefaultPooledRegistrationPolicy()</a></dt>
-    <dd></dd>
+    <dd><p>Initializes a new instance of the <a class="xref" href="Autofac.Pooling.DefaultPooledRegistrationPolicy-1.html">DefaultPooledRegistrationPolicy&lt;TPooledObject&gt;</a> class.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Pooling.DefaultPooledRegistrationPolicy-1.-ctor.html#Autofac_Pooling_DefaultPooledRegistrationPolicy_1__ctor_System_Int32_">DefaultPooledRegistrationPolicy(int)</a></dt>
-    <dd></dd>
+    <dd><p>Initializes a new instance of the <a class="xref" href="Autofac.Pooling.DefaultPooledRegistrationPolicy-1.html">DefaultPooledRegistrationPolicy&lt;TPooledObject&gt;</a> class.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="properties">Properties
@@ -149,7 +153,9 @@ Class DefaultPooledRegistrationPolicy&lt;TPooledObject&gt;
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Pooling.DefaultPooledRegistrationPolicy-1.MaximumRetained.html#Autofac_Pooling_DefaultPooledRegistrationPolicy_1_MaximumRetained">MaximumRetained</a></dt>
-    <dd></dd>
+    <dd><p>Gets a value indicating the maximum number of items that will be retained in the pool. This is not a limit on the number of
+objects that can be created, it's the threshold past which any objects returned to the pool will be discarded.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -157,11 +163,15 @@ Class DefaultPooledRegistrationPolicy&lt;TPooledObject&gt;
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Pooling.DefaultPooledRegistrationPolicy-1.Get.html#Autofac_Pooling_DefaultPooledRegistrationPolicy_1_Get_Autofac_IComponentContext_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter__System_Func__0__">Get(IComponentContext, IEnumerable&lt;Parameter&gt;, Func&lt;TPooledObject&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Invoked when an instance of <code class="typeparamref">TPooledObject</code> is requested. The policy can invoke <code class="paramref">getFromPool</code> to
+retrieve an instance from the pool. Equally, it could decide to ignore the pool, and just return a custom instance.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Pooling.DefaultPooledRegistrationPolicy-1.Return.html#Autofac_Pooling_DefaultPooledRegistrationPolicy_1_Return__0_">Return(TPooledObject)</a></dt>
-    <dd></dd>
+    <dd><p>Invoked when an object is about to be returned into the pool. This method should be used to clean up the state of the object
+after being used (resetting connections, releasing temporary resources, etc).</p>
+</dd>
   </dl>
 
 

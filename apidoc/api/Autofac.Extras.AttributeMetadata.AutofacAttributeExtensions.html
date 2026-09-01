@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class AutofacAttributeExtensions | Autofac ">
       
-      
+      <meta name="description" content="Extends registration syntax for attribute scenarios.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,8 @@ Class AutofacAttributeExtensions
   <dl><dt>Assembly</dt><dd>Autofac.Extras.AttributeMetadata.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Extends registration syntax for attribute scenarios.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -109,7 +110,7 @@ Class AutofacAttributeExtensions
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><span class="xref">AutofacAttributeExtensions</span></div>
     </dd>
   </dl>
@@ -125,16 +126,26 @@ Class AutofacAttributeExtensions
 </h2>
 
   <dl class="jumplist">
-    <dt><a class="xref" href="Autofac.Extras.AttributeMetadata.AutofacAttributeExtensions.WithAttributeFilter.html#Autofac_Extras_AttributeMetadata_AutofacAttributeExtensions_WithAttributeFilter__3_Autofac_Builder_IRegistrationBuilder___0___1___2__">WithAttributeFilter&lt;TLimit, TReflectionActivatorData, TRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, TReflectionActivatorData, TRegistrationStyle&gt;)</a></dt>
-    <dd></dd>
+    <dt><a class="xref" href="Autofac.Extras.AttributeMetadata.AutofacAttributeExtensions.WithAttributedMetadata.html#Autofac_Extras_AttributeMetadata_AutofacAttributeExtensions_WithAttributedMetadata__1_Autofac_Builder_IRegistrationBuilder_System_Object_Autofac_Features_Scanning_ScanningActivatorData_Autofac_Builder_DynamicRegistrationStyle__">WithAttributedMetadata&lt;TMetadata&gt;(IRegistrationBuilder&lt;object, ScanningActivatorData, DynamicRegistrationStyle&gt;)</a></dt>
+    <dd><p>This method can be invoked with the assembly scanner to register strongly typed metadata attributes. The
+attributes are scanned for one that is derived from the metadata interface.  If one is found, the metadata
+contents are extracted and registered with the instance registration.</p>
+</dd>
   </dl>
   <dl class="jumplist">
-    <dt><a class="xref" href="Autofac.Extras.AttributeMetadata.AutofacAttributeExtensions.WithAttributedMetadata.html#Autofac_Extras_AttributeMetadata_AutofacAttributeExtensions_WithAttributedMetadata__1_Autofac_Builder_IRegistrationBuilder_System_Object_Autofac_Features_Scanning_ScanningActivatorData_Autofac_Builder_DynamicRegistrationStyle__">WithAttributedMetadata&lt;TMetadata&gt;(IRegistrationBuilder&lt;object, ScanningActivatorData, DynamicRegistrationStyle&gt;)</a></dt>
-    <dd></dd>
+    <dt><a class="xref" href="Autofac.Extras.AttributeMetadata.AutofacAttributeExtensions.WithAttributedMetadata.html#Autofac_Extras_AttributeMetadata_AutofacAttributeExtensions_WithAttributedMetadata__1_Autofac_Builder_IRegistrationBuilder___0_Autofac_Builder_ConcreteReflectionActivatorData_Autofac_Builder_SingleRegistrationStyle__">WithAttributedMetadata&lt;TLimit&gt;(IRegistrationBuilder&lt;TLimit, ConcreteReflectionActivatorData, SingleRegistrationStyle&gt;)</a></dt>
+    <dd><p>Registers metadata that is declared loosely using attributes marked with the
+MetadataAttributeAttribute for an individual type registration. All of the marked
+attributes are used together to create a common set of dictionary values that
+constitute the metadata on the type.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Extras.AttributeMetadata.AutofacAttributeExtensions.WithAttributedMetadata.html#Autofac_Extras_AttributeMetadata_AutofacAttributeExtensions_WithAttributedMetadata__3_Autofac_Builder_IRegistrationBuilder___0___1___2__">WithAttributedMetadata&lt;TLimit, TScanningActivatorData, TRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, TScanningActivatorData, TRegistrationStyle&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>This method can be invoked with the assembly scanner to register metadata that is declared loosely using
+attributes marked with the MetadataAttributeAttribute. All of the marked attributes are used together to create
+a common set of dictionary values that constitute the metadata on the type.</p>
+</dd>
   </dl>
 
 

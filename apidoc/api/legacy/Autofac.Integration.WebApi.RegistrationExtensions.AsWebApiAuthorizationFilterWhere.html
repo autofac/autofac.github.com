@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,8 @@ Method AsWebApiAuthorizationFilterWhere
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Sets the provided registration to act as an <a class="xref" href="Autofac.Integration.WebApi.IAutofacAuthorizationFilter.html">IAutofacAuthorizationFilter</a>, based on a predicate that filters which actions it is applied to.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -132,18 +133,22 @@ Method AsWebApiAuthorizationFilterWhere
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><code>registration</code> <a class="xref" href="../Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>, <a class="xref" href="../Autofac.Builder.IConcreteActivatorData.html">IConcreteActivatorData</a>, <a class="xref" href="../Autofac.Builder.SingleRegistrationStyle.html">SingleRegistrationStyle</a>&gt;</dt>
-  <dd></dd>
-  <dt><code>predicate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.web.http.controllers.httpactiondescriptor">HttpActionDescriptor</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
-  <dd></dd>
-  <dt><code>filterScope</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.web.http.filters.filterscope">FilterScope</a></dt>
-  <dd></dd>
+  <dt><code>registration</code> <a class="xref" href="../Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;<span class="xref">object</span>, <a class="xref" href="../Autofac.Builder.IConcreteActivatorData.html">IConcreteActivatorData</a>, <a class="xref" href="../Autofac.Builder.SingleRegistrationStyle.html">SingleRegistrationStyle</a>&gt;</dt>
+  <dd><p>The registration.</p>
+</dd>
+  <dt><code>predicate</code> <span class="xref">Func</span>&lt;<span class="xref">HttpActionDescriptor</span>, <span class="xref">bool</span>&gt;</dt>
+  <dd><p>A predicate that should return true if this filter should be applied to the specified action.</p>
+</dd>
+  <dt><code>filterScope</code> <span class="xref">FilterScope</span></dt>
+  <dd><p>The scope to apply the filter at (only Controller and Action supported).</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="../Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>, <a class="xref" href="../Autofac.Builder.IConcreteActivatorData.html">IConcreteActivatorData</a>, <a class="xref" href="../Autofac.Builder.SingleRegistrationStyle.html">SingleRegistrationStyle</a>&gt;</dt>
-  <dd></dd>
+  <dt><a class="xref" href="../Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;<span class="xref">object</span>, <a class="xref" href="../Autofac.Builder.IConcreteActivatorData.html">IConcreteActivatorData</a>, <a class="xref" href="../Autofac.Builder.SingleRegistrationStyle.html">SingleRegistrationStyle</a>&gt;</dt>
+  <dd><p>A registration builder allowing further configuration of the component.</p>
+</dd>
 </dl>
 
 
@@ -163,7 +168,8 @@ Method AsWebApiAuthorizationFilterWhere
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Sets the provided registration to act as an <a class="xref" href="Autofac.Integration.WebApi.IAutofacAuthorizationFilter.html">IAutofacAuthorizationFilter</a>, based on a predicate that filters which actions it is applied to.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -172,18 +178,22 @@ Method AsWebApiAuthorizationFilterWhere
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><code>registration</code> <a class="xref" href="../Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>, <a class="xref" href="../Autofac.Builder.IConcreteActivatorData.html">IConcreteActivatorData</a>, <a class="xref" href="../Autofac.Builder.SingleRegistrationStyle.html">SingleRegistrationStyle</a>&gt;</dt>
-  <dd></dd>
-  <dt><code>predicate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="../Autofac.ILifetimeScope.html">ILifetimeScope</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.web.http.controllers.httpactiondescriptor">HttpActionDescriptor</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
-  <dd></dd>
-  <dt><code>filterScope</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.web.http.filters.filterscope">FilterScope</a></dt>
-  <dd></dd>
+  <dt><code>registration</code> <a class="xref" href="../Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;<span class="xref">object</span>, <a class="xref" href="../Autofac.Builder.IConcreteActivatorData.html">IConcreteActivatorData</a>, <a class="xref" href="../Autofac.Builder.SingleRegistrationStyle.html">SingleRegistrationStyle</a>&gt;</dt>
+  <dd><p>The registration.</p>
+</dd>
+  <dt><code>predicate</code> <span class="xref">Func</span>&lt;<a class="xref" href="../Autofac.ILifetimeScope.html">ILifetimeScope</a>, <span class="xref">HttpActionDescriptor</span>, <span class="xref">bool</span>&gt;</dt>
+  <dd><p>A predicate that should return true if this filter should be applied to the specified action.</p>
+</dd>
+  <dt><code>filterScope</code> <span class="xref">FilterScope</span></dt>
+  <dd><p>The scope to apply the filter at (only Controller and Action supported).</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="../Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>, <a class="xref" href="../Autofac.Builder.IConcreteActivatorData.html">IConcreteActivatorData</a>, <a class="xref" href="../Autofac.Builder.SingleRegistrationStyle.html">SingleRegistrationStyle</a>&gt;</dt>
-  <dd></dd>
+  <dt><a class="xref" href="../Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;<span class="xref">object</span>, <a class="xref" href="../Autofac.Builder.IConcreteActivatorData.html">IConcreteActivatorData</a>, <a class="xref" href="../Autofac.Builder.SingleRegistrationStyle.html">SingleRegistrationStyle</a>&gt;</dt>
+  <dd><p>A registration builder allowing further configuration of the component.</p>
+</dd>
 </dl>
 
 

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -118,30 +118,41 @@ Constructor AutoFake
 
 <a id="Autofac_Extras_FakeItEasy_AutoFake__ctor_" data-uid="Autofac.Extras.FakeItEasy.AutoFake.#ctor*"></a>
 
-<h3 id="Autofac_Extras_FakeItEasy_AutoFake__ctor_System_Boolean_System_Boolean_System_Action_System_Object__Autofac_ContainerBuilder_System_Action_Autofac_ContainerBuilder__" data-uid="Autofac.Extras.FakeItEasy.AutoFake.#ctor(System.Boolean,System.Boolean,System.Action{System.Object},Autofac.ContainerBuilder,System.Action{Autofac.ContainerBuilder})">
-  AutoFake(bool, bool, Action&lt;object&gt;, ContainerBuilder, Action&lt;ContainerBuilder&gt;)
+<h3 id="Autofac_Extras_FakeItEasy_AutoFake__ctor_System_Boolean_System_Boolean_System_Action_System_Object__System_Action_Autofac_ContainerBuilder__" data-uid="Autofac.Extras.FakeItEasy.AutoFake.#ctor(System.Boolean,System.Boolean,System.Action{System.Object},System.Action{Autofac.ContainerBuilder})">
+  AutoFake(bool, bool, Action&lt;object&gt;?, Action&lt;ContainerBuilder&gt;?)
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Autofac.Extras.FakeItEasy.AutoFake.html">AutoFake</a> class.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public AutoFake(bool strict = false, bool callsBaseMethods = false, Action&lt;object&gt; configureFake = null, ContainerBuilder builder = null, Action&lt;ContainerBuilder&gt; configureAction = null)</code></pre>
+  <pre><code class="lang-csharp hljs">public AutoFake(bool strict = false, bool callsBaseMethods = false, Action&lt;object&gt;? configureFake = null, Action&lt;ContainerBuilder&gt;? configureAction = null)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><code>strict</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-  <dd></dd>
-  <dt><code>callsBaseMethods</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-  <dd></dd>
-  <dt><code>configureFake</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
-  <dd></dd>
-  <dt><code>builder</code> <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a></dt>
-  <dd></dd>
-  <dt><code>configureAction</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a>&gt;</dt>
-  <dd></dd>
+  <dt><code>strict</code> <span class="xref">bool</span></dt>
+  <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> to create strict fakes. This means that any
+calls to the fakes that have not been explicitly configured will throw
+an exception.</p>
+</dd>
+  <dt><code>callsBaseMethods</code> <span class="xref">bool</span></dt>
+  <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> to delegate configured method calls to the base
+method of the faked method.</p>
+</dd>
+  <dt><code>configureFake</code> <span class="xref">Action</span>&lt;<span class="xref">object</span>&gt;</dt>
+  <dd><p>Specifies an action that should be run over a fake object before it's
+created.</p>
+</dd>
+  <dt><code>configureAction</code> <span class="xref">Action</span>&lt;<a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a>&gt;</dt>
+  <dd><p>Specifies actions that need to be performed on the container builder,
+like registering additional services. Use this to provide specific
+dependency instances or implementations to the system under test (for
+example, <code>configureAction: b =&gt;
+b.RegisterInstance(myDependency).As&lt;IDependency&gt;()</code>).</p>
+</dd>
 </dl>
 
 

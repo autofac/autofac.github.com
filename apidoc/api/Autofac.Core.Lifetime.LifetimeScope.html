@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class LifetimeScope | Autofac ">
       
-      
+      <meta name="description" content="Lifetime scope implementation.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,8 @@ Class LifetimeScope
   <dl><dt>Assembly</dt><dd>Autofac.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Lifetime scope implementation.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -109,7 +110,7 @@ Class LifetimeScope
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><a class="xref" href="Autofac.Util.Disposable.html">Disposable</a></div>
       <div><span class="xref">LifetimeScope</span></div>
     </dd>
@@ -362,15 +363,18 @@ Class LifetimeScope
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Lifetime.LifetimeScope.-ctor.html#Autofac_Core_Lifetime_LifetimeScope__ctor_Autofac_Core_IComponentRegistry_">LifetimeScope(IComponentRegistry)</a></dt>
-    <dd></dd>
+    <dd><p>Initializes a new instance of the <a class="xref" href="Autofac.Core.Lifetime.LifetimeScope.html">LifetimeScope</a> class.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Lifetime.LifetimeScope.-ctor.html#Autofac_Core_Lifetime_LifetimeScope__ctor_Autofac_Core_IComponentRegistry_Autofac_Core_Lifetime_LifetimeScope_System_Object_">LifetimeScope(IComponentRegistry, LifetimeScope, object)</a></dt>
-    <dd></dd>
+    <dd><p>Initializes a new instance of the <a class="xref" href="Autofac.Core.Lifetime.LifetimeScope.html">LifetimeScope</a> class.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Lifetime.LifetimeScope.-ctor.html#Autofac_Core_Lifetime_LifetimeScope__ctor_Autofac_Core_IComponentRegistry_System_Object_">LifetimeScope(IComponentRegistry, object)</a></dt>
-    <dd></dd>
+    <dd><p>Initializes a new instance of the <a class="xref" href="Autofac.Core.Lifetime.LifetimeScope.html">LifetimeScope</a> class.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="fields">Fields
@@ -378,7 +382,8 @@ Class LifetimeScope
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Lifetime.LifetimeScope.RootTag.html">RootTag</a></dt>
-    <dd></dd>
+    <dd><p>The tag applied to root scopes when no other tag is specified.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="properties">Properties
@@ -386,23 +391,29 @@ Class LifetimeScope
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Lifetime.LifetimeScope.ComponentRegistry.html#Autofac_Core_Lifetime_LifetimeScope_ComponentRegistry">ComponentRegistry</a></dt>
-    <dd></dd>
+    <dd><p>Gets the services associated with the components that provide them.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Lifetime.LifetimeScope.Disposer.html#Autofac_Core_Lifetime_LifetimeScope_Disposer">Disposer</a></dt>
-    <dd></dd>
+    <dd><p>Gets the disposer associated with this container. Instances can be associated
+with it manually if required.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Lifetime.LifetimeScope.ParentLifetimeScope.html#Autofac_Core_Lifetime_LifetimeScope_ParentLifetimeScope">ParentLifetimeScope</a></dt>
-    <dd></dd>
+    <dd><p>Gets the parent of this node of the hierarchy, or null.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Lifetime.LifetimeScope.RootLifetimeScope.html#Autofac_Core_Lifetime_LifetimeScope_RootLifetimeScope">RootLifetimeScope</a></dt>
-    <dd></dd>
+    <dd><p>Gets the root of the sharing hierarchy.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Lifetime.LifetimeScope.Tag.html#Autofac_Core_Lifetime_LifetimeScope_Tag">Tag</a></dt>
-    <dd></dd>
+    <dd><p>Gets the tag applied to the lifetime scope.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -410,47 +421,71 @@ Class LifetimeScope
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Lifetime.LifetimeScope.BeginLifetimeScope.html#Autofac_Core_Lifetime_LifetimeScope_BeginLifetimeScope">BeginLifetimeScope()</a></dt>
-    <dd></dd>
+    <dd><p>Begin a new anonymous sub-scope. Instances created via the sub-scope
+will be disposed along with it.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Lifetime.LifetimeScope.BeginLifetimeScope.html#Autofac_Core_Lifetime_LifetimeScope_BeginLifetimeScope_System_Action_Autofac_ContainerBuilder__">BeginLifetimeScope(Action&lt;ContainerBuilder&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Begin a new anonymous sub-scope, with additional components available to it.
+Component instances created via the new scope
+will be disposed along with it.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Lifetime.LifetimeScope.BeginLifetimeScope.html#Autofac_Core_Lifetime_LifetimeScope_BeginLifetimeScope_System_Object_">BeginLifetimeScope(object)</a></dt>
-    <dd></dd>
+    <dd><p>Begin a new tagged sub-scope. Instances created via the sub-scope
+will be disposed along with it.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Lifetime.LifetimeScope.BeginLifetimeScope.html#Autofac_Core_Lifetime_LifetimeScope_BeginLifetimeScope_System_Object_System_Action_Autofac_ContainerBuilder__">BeginLifetimeScope(object, Action&lt;ContainerBuilder&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Begin a new tagged sub-scope, with additional components available to it.
+Component instances created via the new scope
+will be disposed along with it.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Lifetime.LifetimeScope.BeginLoadContextLifetimeScope.html#Autofac_Core_Lifetime_LifetimeScope_BeginLoadContextLifetimeScope_System_Object_System_Runtime_Loader_AssemblyLoadContext_System_Action_Autofac_ContainerBuilder__">BeginLoadContextLifetimeScope(object, AssemblyLoadContext, Action&lt;ContainerBuilder&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Begin a new tagged sub-scope, with additional components available to it that may be dynamically
+loaded from the provided <span class="xref">System.Runtime.Loader.AssemblyLoadContext</span>.
+Component instances created via the new scope
+will be disposed along with it.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Lifetime.LifetimeScope.BeginLoadContextLifetimeScope.html#Autofac_Core_Lifetime_LifetimeScope_BeginLoadContextLifetimeScope_System_Runtime_Loader_AssemblyLoadContext_System_Action_Autofac_ContainerBuilder__">BeginLoadContextLifetimeScope(AssemblyLoadContext, Action&lt;ContainerBuilder&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Begin a new anonymous sub-scope, with additional components available to it that may be dynamically
+loaded from the provided <span class="xref">System.Runtime.Loader.AssemblyLoadContext</span>.
+Component instances created via the new scope
+will be disposed along with it.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Lifetime.LifetimeScope.CreateSharedInstance.html#Autofac_Core_Lifetime_LifetimeScope_CreateSharedInstance_System_Guid_System_Func_System_Object__">CreateSharedInstance(Guid, Func&lt;object&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Creates a shared instance with a GUID key.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Lifetime.LifetimeScope.CreateSharedInstance.html#Autofac_Core_Lifetime_LifetimeScope_CreateSharedInstance_System_Guid_System_Nullable_System_Guid__System_Func_System_Object__">CreateSharedInstance(Guid, Guid?, Func&lt;object&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Creates a shared instance with a primary GUID key and
+possible secondary qualifying GUID key.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Lifetime.LifetimeScope.Dispose.html#Autofac_Core_Lifetime_LifetimeScope_Dispose_System_Boolean_">Dispose(bool)</a></dt>
-    <dd></dd>
+    <dd><p>Releases unmanaged and - optionally - managed resources.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Lifetime.LifetimeScope.DisposeAsync.html#Autofac_Core_Lifetime_LifetimeScope_DisposeAsync_System_Boolean_">DisposeAsync(bool)</a></dt>
-    <dd></dd>
+    <dd><p>Releases unmanaged and - optionally - managed resources, asynchronously.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Lifetime.LifetimeScope.GetService.html#Autofac_Core_Lifetime_LifetimeScope_GetService_System_Type_">GetService(Type)</a></dt>
-    <dd></dd>
+    <dd><p>Gets the service object of the specified type.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Lifetime.LifetimeScope.ResolveComponent.html#Autofac_Core_Lifetime_LifetimeScope_ResolveComponent_Autofac_ResolveRequest__">ResolveComponent(in ResolveRequest)</a></dt>
@@ -458,11 +493,14 @@ Class LifetimeScope
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Lifetime.LifetimeScope.TryGetSharedInstance.html#Autofac_Core_Lifetime_LifetimeScope_TryGetSharedInstance_System_Guid_System_Nullable_System_Guid__System_Object__">TryGetSharedInstance(Guid, Guid?, out object?)</a></dt>
-    <dd></dd>
+    <dd><p>Try to retrieve a shared instance based on a primary GUID key and
+possible secondary qualifying GUID key.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Lifetime.LifetimeScope.TryGetSharedInstance.html#Autofac_Core_Lifetime_LifetimeScope_TryGetSharedInstance_System_Guid_System_Object__">TryGetSharedInstance(Guid, out object?)</a></dt>
-    <dd></dd>
+    <dd><p>Try to retrieve a shared instance based on a GUID key.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="events">Events
@@ -470,15 +508,18 @@ Class LifetimeScope
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Lifetime.LifetimeScope.ChildLifetimeScopeBeginning.html">ChildLifetimeScopeBeginning</a></dt>
-    <dd></dd>
+    <dd><p>Fired when a new scope based on the current scope is beginning.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Lifetime.LifetimeScope.CurrentScopeEnding.html">CurrentScopeEnding</a></dt>
-    <dd></dd>
+    <dd><p>Fired when this scope is ending.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Lifetime.LifetimeScope.ResolveOperationBeginning.html">ResolveOperationBeginning</a></dt>
-    <dd></dd>
+    <dd><p>Fired when a resolve operation is beginning in this scope.</p>
+</dd>
   </dl>
 
 

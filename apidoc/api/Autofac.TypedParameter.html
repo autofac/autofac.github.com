@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class TypedParameter | Autofac ">
       
-      
+      <meta name="description" content="A parameter that can supply values to sites that exactly match a specified type. When applied to a reflection-based component,  will be matched against the types of the component&#39;s constructor arguments. When applied to a delegate-based component, the parameter can be accessed using .">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,13 @@ Class TypedParameter
   <dl><dt>Assembly</dt><dd>Autofac.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>A parameter that can supply values to sites that exactly
+match a specified type. When applied to a reflection-based
+component, <a class="xref" href="Autofac.TypedParameter.Type.html#Autofac_TypedParameter_Type">Type</a> will be matched against
+the types of the component's constructor arguments. When applied to
+a delegate-based component, the parameter can be accessed using
+<a class="xref" href="Autofac.ParameterExtensions.TypedAs.html#Autofac_ParameterExtensions_TypedAs__1_System_Collections_Generic_IEnumerable_Autofac_Core_Parameter__">TypedAs&lt;T&gt;(IEnumerable&lt;Parameter&gt;)</a>.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -109,7 +115,7 @@ Class TypedParameter
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><a class="xref" href="Autofac.Core.Parameter.html">Parameter</a></div>
       <div><a class="xref" href="Autofac.Core.ConstantParameter.html">ConstantParameter</a></div>
       <div><span class="xref">TypedParameter</span></div>
@@ -131,6 +137,22 @@ Class TypedParameter
 
 
 
+  <h2 id="Autofac_TypedParameter_examples">Examples</h2>
+  <p>
+Component with parameter...
+</p>
+<pre><code class="lang-csharp">public class MyComponent
+{
+    public MyComponent(int amount) { ... }
+}</code></pre>
+<p>
+Providing the parameter...
+</p>
+<pre><code class="lang-csharp">var builder = new ContainerBuilder();
+builder.RegisterType&lt;MyComponent&gt;();
+var container = builder.Build();
+var myComponent = container.Resolve&lt;MyComponent&gt;(new TypedParameter(typeof(int), 123));</code></pre>
+
 
 
   <h2 class="section" id="constructors">Constructors
@@ -138,7 +160,8 @@ Class TypedParameter
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.TypedParameter.-ctor.html#Autofac_TypedParameter__ctor_System_Type_System_Object_">TypedParameter(Type, object?)</a></dt>
-    <dd></dd>
+    <dd><p>Initializes a new instance of the <a class="xref" href="Autofac.TypedParameter.html">TypedParameter</a> class.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="properties">Properties
@@ -146,7 +169,8 @@ Class TypedParameter
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.TypedParameter.Type.html#Autofac_TypedParameter_Type">Type</a></dt>
-    <dd></dd>
+    <dd><p>Gets the type against which targets are matched.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -154,7 +178,9 @@ Class TypedParameter
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.TypedParameter.From.html#Autofac_TypedParameter_From__1___0_">From&lt;T&gt;(T)</a></dt>
-    <dd></dd>
+    <dd><p>Shortcut for creating <a class="xref" href="Autofac.TypedParameter.html">TypedParameter</a>
+by using the <code class="typeparamref">T</code>.</p>
+</dd>
   </dl>
 
 

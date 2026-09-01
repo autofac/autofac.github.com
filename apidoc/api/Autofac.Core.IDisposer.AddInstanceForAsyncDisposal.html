@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,10 @@ Method AddInstanceForAsyncDisposal
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Adds an object to the disposer, where that object implements IAsyncDisposable. When the disposer is
+disposed, so will the object be.
+You should most likely implement IDisposable as well, and call <a class="xref" href="Autofac.Core.IDisposer.AddInstanceForDisposal.html#Autofac_Core_IDisposer_AddInstanceForDisposal_System_IDisposable_">AddInstanceForDisposal(IDisposable)</a> instead of this method.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -132,8 +135,9 @@ Method AddInstanceForAsyncDisposal
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><code>instance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iasyncdisposable">IAsyncDisposable</a></dt>
-  <dd></dd>
+  <dt><code>instance</code> <span class="xref">IAsyncDisposable</span></dt>
+  <dd><p>The instance.</p>
+</dd>
 </dl>
 
 
@@ -143,6 +147,10 @@ Method AddInstanceForAsyncDisposal
 
 
 
+<h4 class="section" id="Autofac_Core_IDisposer_AddInstanceForAsyncDisposal_System_IAsyncDisposable__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>If the provided object only implements IAsyncDisposable, and the <a class="xref" href="Autofac.Core.IDisposer.html">IDisposer</a> is disposed of using a synchronous Dispose call,
+that call will throw an exception when it attempts to dispose of the provided instance.</p>
+</div>
 
 
 

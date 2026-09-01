@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class BoundConstructor | Autofac ">
       
-      
+      <meta name="description" content="Represents the outcome of a single bind attempt by a .">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,8 @@ Class BoundConstructor
   <dl><dt>Assembly</dt><dd>Autofac.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Represents the outcome of a single bind attempt by a <a class="xref" href="Autofac.Core.Activators.Reflection.ConstructorBinder.html">ConstructorBinder</a>.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -109,7 +110,7 @@ Class BoundConstructor
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><span class="xref">BoundConstructor</span></div>
     </dd>
   </dl>
@@ -126,27 +127,35 @@ Class BoundConstructor
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Activators.Reflection.BoundConstructor.ArgumentCount.html#Autofac_Core_Activators_Reflection_BoundConstructor_ArgumentCount">ArgumentCount</a></dt>
-    <dd></dd>
+    <dd><p>Gets the total number of arguments for the bound constructor.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Activators.Reflection.BoundConstructor.Binder.html#Autofac_Core_Activators_Reflection_BoundConstructor_Binder">Binder</a></dt>
-    <dd></dd>
+    <dd><p>Gets the binder that created this binding.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Activators.Reflection.BoundConstructor.CanInstantiate.html#Autofac_Core_Activators_Reflection_BoundConstructor_CanInstantiate">CanInstantiate</a></dt>
-    <dd></dd>
+    <dd><p>Gets a value indicating whether the binding is valid.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Activators.Reflection.BoundConstructor.Description.html#Autofac_Core_Activators_Reflection_BoundConstructor_Description">Description</a></dt>
-    <dd></dd>
+    <dd><p>Gets a description of the constructor parameter binding.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Activators.Reflection.BoundConstructor.SetsRequiredMembers.html#Autofac_Core_Activators_Reflection_BoundConstructor_SetsRequiredMembers">SetsRequiredMembers</a></dt>
-    <dd></dd>
+    <dd><p>Gets a value indicating whether the constructor has the SetsRequiredMembers attribute,
+indicating we can skip population of required properties.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Activators.Reflection.BoundConstructor.TargetConstructor.html#Autofac_Core_Activators_Reflection_BoundConstructor_TargetConstructor">TargetConstructor</a></dt>
-    <dd></dd>
+    <dd><p>Gets the constructor on the target type. The actual constructor used
+might differ, e.g. if using a dynamic proxy.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -154,19 +163,23 @@ Class BoundConstructor
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Activators.Reflection.BoundConstructor.ForBindFailure.html#Autofac_Core_Activators_Reflection_BoundConstructor_ForBindFailure_Autofac_Core_Activators_Reflection_ConstructorBinder_System_Reflection_ParameterInfo_">ForBindFailure(ConstructorBinder, ParameterInfo)</a></dt>
-    <dd></dd>
+    <dd><p>Initializes a new instance of the <a class="xref" href="Autofac.Core.Activators.Reflection.BoundConstructor.html">BoundConstructor</a> class, for an unsuccessful bind.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Activators.Reflection.BoundConstructor.ForBindSuccess.html#Autofac_Core_Activators_Reflection_BoundConstructor_ForBindSuccess_Autofac_Core_Activators_Reflection_ConstructorBinder_System_Func_System_Object___System_Object__System_Func_System_Object____">ForBindSuccess(ConstructorBinder, Func&lt;object?[], object&gt;, Func&lt;object?&gt;[])</a></dt>
-    <dd></dd>
+    <dd><p>Initializes a new instance of the <a class="xref" href="Autofac.Core.Activators.Reflection.BoundConstructor.html">BoundConstructor</a> class for a successful bind.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Activators.Reflection.BoundConstructor.Instantiate.html#Autofac_Core_Activators_Reflection_BoundConstructor_Instantiate">Instantiate()</a></dt>
-    <dd></dd>
+    <dd><p>Invoke the constructor with the parameter bindings.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Activators.Reflection.BoundConstructor.ToString.html#Autofac_Core_Activators_Reflection_BoundConstructor_ToString">ToString()</a></dt>
-    <dd></dd>
+    <dd><p>Returns a System.String that represents the current System.Object.</p>
+</dd>
   </dl>
 
 

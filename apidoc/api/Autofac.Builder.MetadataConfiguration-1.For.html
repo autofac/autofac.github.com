@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,8 @@ Method For
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Set one of the property values.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -132,22 +133,26 @@ Method For
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><code>propertyAccessor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1">Expression</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TMetadata, TProperty&gt;&gt;</dt>
-  <dd></dd>
+  <dt><code>propertyAccessor</code> <span class="xref">Expression</span>&lt;<span class="xref">Func</span>&lt;TMetadata, TProperty&gt;&gt;</dt>
+  <dd><p>An expression that accesses the property to set.</p>
+</dd>
   <dt><code>value</code> <span class="xref">TProperty</span></dt>
-  <dd></dd>
+  <dd><p>The property value to set.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="Autofac.Builder.MetadataConfiguration-1.html">MetadataConfiguration</a>&lt;TMetadata&gt;</dt>
-  <dd></dd>
+  <dd><p>The current <a class="xref" href="Autofac.Builder.MetadataConfiguration-1.html">MetadataConfiguration&lt;TMetadata&gt;</a> for continued configuration.</p>
+</dd>
 </dl>
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>TProperty</code></dt>
-  <dd></dd>
+  <dd><p>The type of the property.</p>
+</dd>
 </dl>
 
 

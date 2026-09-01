@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,25 +123,31 @@ Method RegisterGeneric
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Register an un-parameterized generic type, e.g. Repository&lt;&gt;.
+Concrete types will be made as they are requested, e.g. with Resolve&lt;Repository&lt;int&gt;&gt;().</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static IRegistrationBuilder&lt;object, ReflectionActivatorData, DynamicRegistrationStyle&gt; RegisterGeneric(this ContainerBuilder builder, Type implementer)</code></pre>
+  <pre><code class="lang-csharp hljs">[RequiresDynamicCode(&quot;Registering open generic types constructs closed generic types at runtime via MakeGenericType, which may require dynamic code generation when closed over value types and is not compatible with native AOT.&quot;)]
+public static IRegistrationBuilder&lt;object, ReflectionActivatorData, DynamicRegistrationStyle&gt; RegisterGeneric(this ContainerBuilder builder, Type implementer)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>builder</code> <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a></dt>
-  <dd></dd>
-  <dt><code>implementer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
-  <dd></dd>
+  <dd><p>Container builder.</p>
+</dd>
+  <dt><code>implementer</code> <span class="xref">Type</span></dt>
+  <dd><p>The open generic implementation type.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>, <a class="xref" href="Autofac.Builder.ReflectionActivatorData.html">ReflectionActivatorData</a>, <a class="xref" href="Autofac.Builder.DynamicRegistrationStyle.html">DynamicRegistrationStyle</a>&gt;</dt>
-  <dd></dd>
+  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;<span class="xref">object</span>, <a class="xref" href="Autofac.Builder.ReflectionActivatorData.html">ReflectionActivatorData</a>, <a class="xref" href="Autofac.Builder.DynamicRegistrationStyle.html">DynamicRegistrationStyle</a>&gt;</dt>
+  <dd><p>Registration builder allowing the registration to be configured.</p>
+</dd>
 </dl>
 
 
@@ -161,7 +167,8 @@ Method RegisterGeneric
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Register a delegate that can provide instances of an open generic registration.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -171,15 +178,18 @@ Method RegisterGeneric
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>builder</code> <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a></dt>
-  <dd></dd>
-  <dt><code>factory</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="Autofac.IComponentContext.html">IComponentContext</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a>[], <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
-  <dd></dd>
+  <dd><p>The container builder.</p>
+</dd>
+  <dt><code>factory</code> <span class="xref">Func</span>&lt;<a class="xref" href="Autofac.IComponentContext.html">IComponentContext</a>, <span class="xref">Type</span>[], <span class="xref">object</span>&gt;</dt>
+  <dd><p>Delegate responsible for generating an instance of a closed generic based on the open generic type being registered. It will be called with the current <a class="xref" href="Autofac.IComponentContext.html">IComponentContext</a> and the array of generic type arguments expected to be in the closed generic.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>, <a class="xref" href="Autofac.Features.OpenGenerics.OpenGenericDelegateActivatorData.html">OpenGenericDelegateActivatorData</a>, <a class="xref" href="Autofac.Builder.DynamicRegistrationStyle.html">DynamicRegistrationStyle</a>&gt;</dt>
-  <dd></dd>
+  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;<span class="xref">object</span>, <a class="xref" href="Autofac.Features.OpenGenerics.OpenGenericDelegateActivatorData.html">OpenGenericDelegateActivatorData</a>, <a class="xref" href="Autofac.Builder.DynamicRegistrationStyle.html">DynamicRegistrationStyle</a>&gt;</dt>
+  <dd><p>Registration builder allowing the registration to be configured.</p>
+</dd>
 </dl>
 
 
@@ -199,7 +209,8 @@ Method RegisterGeneric
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Register a delegate that can provide instances of an open generic registration.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -209,15 +220,18 @@ Method RegisterGeneric
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>builder</code> <a class="xref" href="Autofac.ContainerBuilder.html">ContainerBuilder</a></dt>
-  <dd></dd>
-  <dt><code>factory</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-4">Func</a>&lt;<a class="xref" href="Autofac.IComponentContext.html">IComponentContext</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a>[], <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Autofac.Core.Parameter.html">Parameter</a>&gt;, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
-  <dd></dd>
+  <dd><p>The container builder.</p>
+</dd>
+  <dt><code>factory</code> <span class="xref">Func</span>&lt;<a class="xref" href="Autofac.IComponentContext.html">IComponentContext</a>, <span class="xref">Type</span>[], <span class="xref">IEnumerable</span>&lt;<a class="xref" href="Autofac.Core.Parameter.html">Parameter</a>&gt;, <span class="xref">object</span>&gt;</dt>
+  <dd><p>Delegate responsible for generating an instance of a closed generic based on the open generic type being registered. It will be called with the current <a class="xref" href="Autofac.IComponentContext.html">IComponentContext</a>, the array of generic type arguments expected to be in the closed generic, and any parameters passed to the resolve operation.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>, <a class="xref" href="Autofac.Features.OpenGenerics.OpenGenericDelegateActivatorData.html">OpenGenericDelegateActivatorData</a>, <a class="xref" href="Autofac.Builder.DynamicRegistrationStyle.html">DynamicRegistrationStyle</a>&gt;</dt>
-  <dd></dd>
+  <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;<span class="xref">object</span>, <a class="xref" href="Autofac.Features.OpenGenerics.OpenGenericDelegateActivatorData.html">OpenGenericDelegateActivatorData</a>, <a class="xref" href="Autofac.Builder.DynamicRegistrationStyle.html">DynamicRegistrationStyle</a>&gt;</dt>
+  <dd><p>Registration builder allowing the registration to be configured.</p>
+</dd>
 </dl>
 
 

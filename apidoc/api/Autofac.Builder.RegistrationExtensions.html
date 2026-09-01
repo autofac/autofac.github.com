@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class RegistrationExtensions | Autofac ">
       
-      
+      <meta name="description" content="Adds registration syntax for less commonly-used features.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,8 @@ Class RegistrationExtensions
   <dl><dt>Assembly</dt><dd>Autofac.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Adds registration syntax for less commonly-used features.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -109,7 +110,7 @@ Class RegistrationExtensions
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><span class="xref">RegistrationExtensions</span></div>
     </dd>
   </dl>
@@ -120,37 +121,52 @@ Class RegistrationExtensions
 
 
 
+  <h2 id="Autofac_Builder_RegistrationExtensions_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>These features are in this namespace because they will remain accessible to
+applications originally written against Autofac 1.4. In Autofac 2, this functionality
+is implicitly provided and thus making explicit registrations is rarely necessary.</p>
+</div>
 
   <h2 class="section" id="methods">Methods
 </h2>
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Builder.RegistrationExtensions.NamedParameterMapping.html#Autofac_Builder_RegistrationExtensions_NamedParameterMapping__3_Autofac_Builder_IRegistrationBuilder___0___1___2__">NamedParameterMapping&lt;TDelegate, TGeneratedFactoryActivatorData, TSingleRegistrationStyle&gt;(IRegistrationBuilder&lt;TDelegate, TGeneratedFactoryActivatorData, TSingleRegistrationStyle&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Changes the parameter mapping mode of the supplied delegate type to match
+parameters by name.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Builder.RegistrationExtensions.PositionalParameterMapping.html#Autofac_Builder_RegistrationExtensions_PositionalParameterMapping__3_Autofac_Builder_IRegistrationBuilder___0___1___2__">PositionalParameterMapping&lt;TDelegate, TGeneratedFactoryActivatorData, TSingleRegistrationStyle&gt;(IRegistrationBuilder&lt;TDelegate, TGeneratedFactoryActivatorData, TSingleRegistrationStyle&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Changes the parameter mapping mode of the supplied delegate type to match
+parameters by position.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Builder.RegistrationExtensions.RegisterGeneratedFactory.html#Autofac_Builder_RegistrationExtensions_RegisterGeneratedFactory_Autofac_ContainerBuilder_System_Type_">RegisterGeneratedFactory(ContainerBuilder, Type)</a></dt>
-    <dd></dd>
+    <dd><p>Registers a factory delegate.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Builder.RegistrationExtensions.RegisterGeneratedFactory.html#Autofac_Builder_RegistrationExtensions_RegisterGeneratedFactory_Autofac_ContainerBuilder_System_Type_Autofac_Core_Service_">RegisterGeneratedFactory(ContainerBuilder, Type, Service)</a></dt>
-    <dd></dd>
+    <dd><p>Registers a factory delegate.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Builder.RegistrationExtensions.RegisterGeneratedFactory.html#Autofac_Builder_RegistrationExtensions_RegisterGeneratedFactory__1_Autofac_ContainerBuilder_">RegisterGeneratedFactory&lt;TDelegate&gt;(ContainerBuilder)</a></dt>
-    <dd></dd>
+    <dd><p>Registers a factory delegate.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Builder.RegistrationExtensions.RegisterGeneratedFactory.html#Autofac_Builder_RegistrationExtensions_RegisterGeneratedFactory__1_Autofac_ContainerBuilder_Autofac_Core_Service_">RegisterGeneratedFactory&lt;TDelegate&gt;(ContainerBuilder, Service)</a></dt>
-    <dd></dd>
+    <dd><p>Registers a factory delegate.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Builder.RegistrationExtensions.TypedParameterMapping.html#Autofac_Builder_RegistrationExtensions_TypedParameterMapping__3_Autofac_Builder_IRegistrationBuilder___0___1___2__">TypedParameterMapping&lt;TDelegate, TGeneratedFactoryActivatorData, TSingleRegistrationStyle&gt;(IRegistrationBuilder&lt;TDelegate, TGeneratedFactoryActivatorData, TSingleRegistrationStyle&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Changes the parameter mapping mode of the supplied delegate type to match
+parameters by type.</p>
+</dd>
   </dl>
 
 

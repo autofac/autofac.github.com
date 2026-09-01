@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,10 @@ Method Write
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Handles inbound events and converts the diagnostic data to a
+strongly-typed object that can be handled by the other methods
+in this observer.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -132,10 +135,12 @@ Method Write
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><code>diagnosticName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-  <dd></dd>
-  <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-  <dd></dd>
+  <dt><code>diagnosticName</code> <span class="xref">string</span></dt>
+  <dd><p>The name of the event that was raised. Diagnostic names are case-sensitive.</p>
+</dd>
+  <dt><code>data</code> <span class="xref">object</span></dt>
+  <dd><p>The diagnostic data associated with the event.</p>
+</dd>
 </dl>
 
 
@@ -145,6 +150,13 @@ Method Write
 
 
 
+<h4 class="section" id="Autofac_Diagnostics_DiagnosticTracerBase_Write_System_String_System_Object__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>
+If you are interested in handling custom events, check out the top-level
+<a class="xref" href="Autofac.Diagnostics.DiagnosticTracerBase.html">DiagnosticTracerBase</a> documentation which discusses some
+options.
+</p>
+</div>
 
 
 

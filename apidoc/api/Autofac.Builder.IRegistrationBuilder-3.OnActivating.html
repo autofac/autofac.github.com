@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,8 @@ Method OnActivating
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Add a handler for the Activating event.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -132,14 +133,16 @@ Method OnActivating
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><code>handler</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Autofac.Core.IActivatingEventArgs-1.html">IActivatingEventArgs</a>&lt;TLimit&gt;&gt;</dt>
-  <dd></dd>
+  <dt><code>handler</code> <span class="xref">Action</span>&lt;<a class="xref" href="Autofac.Core.IActivatingEventArgs-1.html">IActivatingEventArgs</a>&lt;TLimit&gt;&gt;</dt>
+  <dd><p>The event handler.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, TActivatorData, TRegistrationStyle&gt;</dt>
-  <dd></dd>
+  <dd><p>A registration builder allowing further configuration of the component.</p>
+</dd>
 </dl>
 
 
@@ -159,7 +162,8 @@ Method OnActivating
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Add an async handler for the Activating event.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -168,14 +172,16 @@ Method OnActivating
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><code>handler</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="Autofac.Core.IActivatingEventArgs-1.html">IActivatingEventArgs</a>&lt;TLimit&gt;, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask">ValueTask</a>&gt;</dt>
-  <dd></dd>
+  <dt><code>handler</code> <span class="xref">Func</span>&lt;<a class="xref" href="Autofac.Core.IActivatingEventArgs-1.html">IActivatingEventArgs</a>&lt;TLimit&gt;, <span class="xref">ValueTask</span>&gt;</dt>
+  <dd><p>An event handler; the resolve process will not continue until the returned task completes.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="Autofac.Builder.IRegistrationBuilder-3.html">IRegistrationBuilder</a>&lt;TLimit, TActivatorData, TRegistrationStyle&gt;</dt>
-  <dd></dd>
+  <dd><p>A registration builder allowing further configuration of the component.</p>
+</dd>
 </dl>
 
 

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class AutofacWebApiDependencyResolver | Autofac ">
       
-      
+      <meta name="description" content="Autofac implementation of the  interface.">
       <link rel="icon" href="../../favicon.ico">
       <link rel="stylesheet" href="../../public/docfx.min.css">
       <link rel="stylesheet" href="../../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,8 @@ Class AutofacWebApiDependencyResolver
   <dl><dt>Assembly</dt><dd>Autofac.Integration.WebApi.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Autofac implementation of the <span class="xref">System.Web.Http.Dependencies.IDependencyResolver</span> interface.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -109,7 +110,7 @@ Class AutofacWebApiDependencyResolver
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><span class="xref">AutofacWebApiDependencyResolver</span></div>
     </dd>
   </dl>
@@ -136,11 +137,13 @@ Class AutofacWebApiDependencyResolver
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.WebApi.AutofacWebApiDependencyResolver.-ctor.html#Autofac_Integration_WebApi_AutofacWebApiDependencyResolver__ctor_Autofac_ILifetimeScope_">AutofacWebApiDependencyResolver(ILifetimeScope)</a></dt>
-    <dd></dd>
+    <dd><p>Initializes a new instance of the <a class="xref" href="Autofac.Integration.WebApi.AutofacWebApiDependencyResolver.html">AutofacWebApiDependencyResolver</a> class.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.WebApi.AutofacWebApiDependencyResolver.-ctor.html#Autofac_Integration_WebApi_AutofacWebApiDependencyResolver__ctor_Autofac_ILifetimeScope_System_Action_Autofac_ContainerBuilder__">AutofacWebApiDependencyResolver(ILifetimeScope, Action&lt;ContainerBuilder&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Initializes a new instance of the <a class="xref" href="Autofac.Integration.WebApi.AutofacWebApiDependencyResolver.html">AutofacWebApiDependencyResolver</a> class.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="properties">Properties
@@ -148,7 +151,8 @@ Class AutofacWebApiDependencyResolver
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.WebApi.AutofacWebApiDependencyResolver.Container.html#Autofac_Integration_WebApi_AutofacWebApiDependencyResolver_Container">Container</a></dt>
-    <dd></dd>
+    <dd><p>Gets the root container provided to the dependency resolver.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -156,27 +160,34 @@ Class AutofacWebApiDependencyResolver
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.WebApi.AutofacWebApiDependencyResolver.BeginScope.html#Autofac_Integration_WebApi_AutofacWebApiDependencyResolver_BeginScope">BeginScope()</a></dt>
-    <dd></dd>
+    <dd><p>Starts a resolution scope. Objects which are resolved in the given scope will belong to
+that scope, and when the scope is disposed, those objects are returned to the container.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.WebApi.AutofacWebApiDependencyResolver.Dispose.html#Autofac_Integration_WebApi_AutofacWebApiDependencyResolver_Dispose">Dispose()</a></dt>
-    <dd></dd>
+    <dd><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.WebApi.AutofacWebApiDependencyResolver.Dispose.html#Autofac_Integration_WebApi_AutofacWebApiDependencyResolver_Dispose_System_Boolean_">Dispose(bool)</a></dt>
-    <dd></dd>
+    <dd><p>Releases unmanaged and - optionally - managed resources.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.WebApi.AutofacWebApiDependencyResolver.Finalize.html#Autofac_Integration_WebApi_AutofacWebApiDependencyResolver_Finalize">~AutofacWebApiDependencyResolver()</a></dt>
-    <dd></dd>
+    <dd><p>Finalizes an instance of the <a class="xref" href="Autofac.Integration.WebApi.AutofacWebApiDependencyResolver.html">AutofacWebApiDependencyResolver</a> class.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.WebApi.AutofacWebApiDependencyResolver.GetService.html#Autofac_Integration_WebApi_AutofacWebApiDependencyResolver_GetService_System_Type_">GetService(Type)</a></dt>
-    <dd></dd>
+    <dd><p>Try to get a service of the given type.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.WebApi.AutofacWebApiDependencyResolver.GetServices.html#Autofac_Integration_WebApi_AutofacWebApiDependencyResolver_GetServices_System_Type_">GetServices(Type)</a></dt>
-    <dd></dd>
+    <dd><p>Try to get a list of services of the given type.</p>
+</dd>
   </dl>
 
 

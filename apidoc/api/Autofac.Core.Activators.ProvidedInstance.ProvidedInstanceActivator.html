@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class ProvidedInstanceActivator | Autofac ">
       
-      
+      <meta name="description" content="Provides a pre-constructed instance.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,8 @@ Class ProvidedInstanceActivator
   <dl><dt>Assembly</dt><dd>Autofac.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Provides a pre-constructed instance.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -109,7 +110,7 @@ Class ProvidedInstanceActivator
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><a class="xref" href="Autofac.Util.Disposable.html">Disposable</a></div>
       <div><a class="xref" href="Autofac.Core.Activators.InstanceActivator.html">InstanceActivator</a></div>
       <div><span class="xref">ProvidedInstanceActivator</span></div>
@@ -156,7 +157,8 @@ Class ProvidedInstanceActivator
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Activators.ProvidedInstance.ProvidedInstanceActivator.-ctor.html#Autofac_Core_Activators_ProvidedInstance_ProvidedInstanceActivator__ctor_System_Object_">ProvidedInstanceActivator(object)</a></dt>
-    <dd></dd>
+    <dd><p>Initializes a new instance of the <a class="xref" href="Autofac.Core.Activators.ProvidedInstance.ProvidedInstanceActivator.html">ProvidedInstanceActivator</a> class.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="properties">Properties
@@ -164,7 +166,10 @@ Class ProvidedInstanceActivator
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Activators.ProvidedInstance.ProvidedInstanceActivator.DisposeInstance.html#Autofac_Core_Activators_ProvidedInstance_ProvidedInstanceActivator_DisposeInstance">DisposeInstance</a></dt>
-    <dd></dd>
+    <dd><p>Gets or sets a value indicating whether the activator disposes the instance that it holds.
+Necessary because otherwise instances that are never resolved will never be
+disposed.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -172,15 +177,18 @@ Class ProvidedInstanceActivator
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Activators.ProvidedInstance.ProvidedInstanceActivator.ConfigurePipeline.html#Autofac_Core_Activators_ProvidedInstance_ProvidedInstanceActivator_ConfigurePipeline_Autofac_Core_IComponentRegistryServices_Autofac_Core_Resolving_Pipeline_IResolvePipelineBuilder_">ConfigurePipeline(IComponentRegistryServices, IResolvePipelineBuilder)</a></dt>
-    <dd></dd>
+    <dd><p>Allows an implementation to add middleware to a registration's resolve pipeline.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Activators.ProvidedInstance.ProvidedInstanceActivator.Dispose.html#Autofac_Core_Activators_ProvidedInstance_ProvidedInstanceActivator_Dispose_System_Boolean_">Dispose(bool)</a></dt>
-    <dd></dd>
+    <dd><p>Releases unmanaged and - optionally - managed resources.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Core.Activators.ProvidedInstance.ProvidedInstanceActivator.DisposeAsync.html#Autofac_Core_Activators_ProvidedInstance_ProvidedInstanceActivator_DisposeAsync_System_Boolean_">DisposeAsync(bool)</a></dt>
-    <dd></dd>
+    <dd><p>Releases unmanaged and - optionally - managed resources, asynchronously.</p>
+</dd>
   </dl>
 
 

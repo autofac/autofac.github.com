@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,19 +123,24 @@ Constructor ResolvingInterceptor
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Autofac.Extras.AggregateService.ResolvingInterceptor.html">ResolvingInterceptor</a> class.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public ResolvingInterceptor(Type interfaceType, IComponentContext context)</code></pre>
+  <pre><code class="lang-csharp hljs">[RequiresUnreferencedCode(&quot;The dynamic proxy fallback reflects over the aggregate service interface and is not compatible with trimming. Register aggregate services with statically-visible interfaces so the source generator handles them instead.&quot;)]
+[RequiresDynamicCode(&quot;The dynamic proxy fallback builds System.Func delegate types at runtime and is not compatible with NativeAOT. Register aggregate services with statically-visible interfaces so the source generator handles them instead.&quot;)]
+public ResolvingInterceptor(Type interfaceType, IComponentContext context)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><code>interfaceType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
-  <dd></dd>
+  <dt><code>interfaceType</code> <span class="xref">Type</span></dt>
+  <dd><p>Type of the interface to intercept.</p>
+</dd>
   <dt><code>context</code> <a class="xref" href="Autofac.IComponentContext.html">IComponentContext</a></dt>
-  <dd></dd>
+  <dd><p>The resolution context.</p>
+</dd>
 </dl>
 
 

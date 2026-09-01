@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,8 @@ Method GetType
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Loads a type by name.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -132,18 +133,23 @@ Method GetType
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><code>configuration</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration.iconfiguration">IConfiguration</a></dt>
-  <dd></dd>
-  <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-  <dd></dd>
-  <dt><code>defaultAssembly</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.assembly">Assembly</a></dt>
-  <dd></dd>
+  <dt><code>configuration</code> <span class="xref">IConfiguration</span></dt>
+  <dd><p>The <span class="xref">Microsoft.Extensions.Configuration.IConfiguration</span> object containing the type value to load.</p>
+</dd>
+  <dt><code>key</code> <span class="xref">string</span></dt>
+  <dd><p>Name of the <span class="xref">System.Type</span> to load. This may be a partial type name or a fully-qualified type name.</p>
+</dd>
+  <dt><code>defaultAssembly</code> <span class="xref">Assembly</span></dt>
+  <dd><p>The default <span class="xref">System.Reflection.Assembly</span> to use in type resolution if <code class="paramref">key</code>
+is a partial type name.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
-  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
-  <dd></dd>
+  <dt><span class="xref">Type</span></dt>
+  <dd><p>The resolved <span class="xref">System.Type</span> based on the specified name.</p>
+</dd>
 </dl>
 
 
@@ -153,6 +159,16 @@ Method GetType
 
 
 
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><span class="xref">ArgumentNullException</span></dt>
+  <dd><p>Thrown if <code class="paramref">configuration</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+  <dt><span class="xref">InvalidOperationException</span></dt>
+  <dd><p>Thrown if the specified <code class="paramref">key</code> can't be resolved as a fully-qualified type name and
+isn't a partial type name for a <span class="xref">System.Type</span> found in the <code class="paramref">defaultAssembly</code>.</p>
+</dd>
+</dl>
 
 
 

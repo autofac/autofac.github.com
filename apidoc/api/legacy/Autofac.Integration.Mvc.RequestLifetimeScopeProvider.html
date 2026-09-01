@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class RequestLifetimeScopeProvider | Autofac ">
       
-      
+      <meta name="description" content="Creates and disposes HTTP request based lifetime scopes.">
       <link rel="icon" href="../../favicon.ico">
       <link rel="stylesheet" href="../../public/docfx.min.css">
       <link rel="stylesheet" href="../../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,8 @@ Class RequestLifetimeScopeProvider
   <dl><dt>Assembly</dt><dd>Autofac.Integration.Mvc.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Creates and disposes HTTP request based lifetime scopes.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -109,7 +110,7 @@ Class RequestLifetimeScopeProvider
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><span class="xref">RequestLifetimeScopeProvider</span></div>
     </dd>
   </dl>
@@ -126,13 +127,17 @@ Class RequestLifetimeScopeProvider
 
 
 
+  <h2 id="Autofac_Integration_Mvc_RequestLifetimeScopeProvider_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>The provider is notified when a HTTP request ends by the <span class="xref">Autofac.Integration.Mvc.RequestLifetimeHttpModule</span>.</p>
+</div>
 
   <h2 class="section" id="constructors">Constructors
 </h2>
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Mvc.RequestLifetimeScopeProvider.-ctor.html#Autofac_Integration_Mvc_RequestLifetimeScopeProvider__ctor_Autofac_ILifetimeScope_">RequestLifetimeScopeProvider(ILifetimeScope)</a></dt>
-    <dd></dd>
+    <dd><p>Initializes a new instance of the <a class="xref" href="Autofac.Integration.Mvc.RequestLifetimeScopeProvider.html">RequestLifetimeScopeProvider</a> class.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="properties">Properties
@@ -140,7 +145,8 @@ Class RequestLifetimeScopeProvider
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Mvc.RequestLifetimeScopeProvider.ApplicationContainer.html#Autofac_Integration_Mvc_RequestLifetimeScopeProvider_ApplicationContainer">ApplicationContainer</a></dt>
-    <dd></dd>
+    <dd><p>Gets the global, application-wide container.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -148,15 +154,19 @@ Class RequestLifetimeScopeProvider
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Integration.Mvc.RequestLifetimeScopeProvider.EndLifetimeScope.html#Autofac_Integration_Mvc_RequestLifetimeScopeProvider_EndLifetimeScope">EndLifetimeScope()</a></dt>
-    <dd></dd>
+    <dd><p>Ends the current HTTP request lifetime scope.</p>
+</dd>
   </dl>
   <dl class="jumplist">
-    <dt><a class="xref" href="Autofac.Integration.Mvc.RequestLifetimeScopeProvider.GetLifetimeScope.html#Autofac_Integration_Mvc_RequestLifetimeScopeProvider_GetLifetimeScope_System_Action_Autofac_ContainerBuilder__">GetLifetimeScope(Action&lt;ContainerBuilder&gt;)</a></dt>
-    <dd></dd>
+    <dt><a class="xref" href="Autofac.Integration.Mvc.RequestLifetimeScopeProvider.GetLifetimeScope.html#Autofac_Integration_Mvc_RequestLifetimeScopeProvider_GetLifetimeScope_System_Action_Autofac_ContainerBuilder__">GetLifetimeScope(Action&lt;ContainerBuilder&gt;?)</a></dt>
+    <dd><p>Gets a nested lifetime scope that services can be resolved from.</p>
+</dd>
   </dl>
   <dl class="jumplist">
-    <dt><a class="xref" href="Autofac.Integration.Mvc.RequestLifetimeScopeProvider.GetLifetimeScopeCore.html#Autofac_Integration_Mvc_RequestLifetimeScopeProvider_GetLifetimeScopeCore_System_Action_Autofac_ContainerBuilder__">GetLifetimeScopeCore(Action&lt;ContainerBuilder&gt;)</a></dt>
-    <dd></dd>
+    <dt><a class="xref" href="Autofac.Integration.Mvc.RequestLifetimeScopeProvider.GetLifetimeScopeCore.html#Autofac_Integration_Mvc_RequestLifetimeScopeProvider_GetLifetimeScopeCore_System_Action_Autofac_ContainerBuilder__">GetLifetimeScopeCore(Action&lt;ContainerBuilder&gt;?)</a></dt>
+    <dd><p>Gets a lifetime scope for the current HTTP request. This method can be overridden
+to alter the way that the life time scope is constructed.</p>
+</dd>
   </dl>
 
 

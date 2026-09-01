@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -123,7 +123,10 @@ Method ForKeyed
   
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Construct a <a class="xref" href="Autofac.Core.ResolvedParameter.html">ResolvedParameter</a> that will match parameters of type
+<code class="typeparamref">TService</code> and resolve for those parameters an implementation
+registered with the key <code class="paramref">serviceKey</code>.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
@@ -132,20 +135,23 @@ Method ForKeyed
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
-  <dt><code>serviceKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-  <dd></dd>
+  <dt><code>serviceKey</code> <span class="xref">object</span></dt>
+  <dd><p>The key of the matching service to resolve.</p>
+</dd>
 </dl>
 
 <h4 class="section">Returns</h4>
 <dl class="parameters">
   <dt><a class="xref" href="Autofac.Core.ResolvedParameter.html">ResolvedParameter</a></dt>
-  <dd></dd>
+  <dd><p>A configured <a class="xref" href="Autofac.Core.ResolvedParameter.html">ResolvedParameter</a> instance.</p>
+</dd>
 </dl>
 
 <h4 class="section">Type Parameters</h4>
 <dl class="parameters">
   <dt><code>TService</code></dt>
-  <dd></dd>
+  <dd><p>The type of the parameter to match.</p>
+</dd>
 </dl>
 
 

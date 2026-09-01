@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class MetadataModule&lt;TInterface, TMetadata&gt; | Autofac ">
       
-      
+      <meta name="description" content="Provides a mechanism to separate metadata registrations from compile-time attributes.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,11 +96,12 @@ Class MetadataModule&lt;TInterface, TMetadata&gt;
   <dl><dt>Assembly</dt><dd>Autofac.Extras.AttributeMetadata.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Provides a mechanism to separate metadata registrations from compile-time attributes.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class MetadataModule&lt;TInterface, TMetadata&gt; : Module, IModule, IMetadataRegistrar&lt;TInterface, TMetadata&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class MetadataModule&lt;TInterface, TMetadata&gt; : Module, IModule, IMetadataRegistrar&lt;TInterface, TMetadata&gt; where TInterface : notnull</code></pre>
   </div>
 
 
@@ -108,15 +109,17 @@ Class MetadataModule&lt;TInterface, TMetadata&gt;
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>TInterface</code></dt>
-    <dd></dd>
+    <dd><p>Interface used on concrete types of metadata decorated instances.</p>
+</dd>
     <dt><code>TMetadata</code></dt>
-    <dd></dd>
+    <dd><p>Strongly typed metadata definition.</p>
+</dd>
   </dl>
 
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><a class="xref" href="Autofac.Module.html">Module</a></div>
       <div><span class="xref">MetadataModule&lt;TInterface, TMetadata&gt;</span></div>
     </dd>
@@ -165,7 +168,8 @@ Class MetadataModule&lt;TInterface, TMetadata&gt;
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Extras.AttributeMetadata.MetadataModule-2.ContainerBuilder.html#Autofac_Extras_AttributeMetadata_MetadataModule_2_ContainerBuilder">ContainerBuilder</a></dt>
-    <dd></dd>
+    <dd><p>Gets the builder used to build an <a class="xref" href="Autofac.IContainer.html">IContainer</a> from component registrations.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -173,27 +177,33 @@ Class MetadataModule&lt;TInterface, TMetadata&gt;
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Extras.AttributeMetadata.MetadataModule-2.Load.html#Autofac_Extras_AttributeMetadata_MetadataModule_2_Load_Autofac_ContainerBuilder_">Load(ContainerBuilder)</a></dt>
-    <dd></dd>
+    <dd><p>Standard module method being overridden and sealed to provide wrapped metadata registration.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Extras.AttributeMetadata.MetadataModule-2.Register.html#Autofac_Extras_AttributeMetadata_MetadataModule_2_Register_Autofac_Extras_AttributeMetadata_IMetadataRegistrar__0__1__">Register(IMetadataRegistrar&lt;TInterface, TMetadata&gt;)</a></dt>
-    <dd></dd>
+    <dd><p>Override this method to execute metadata registration operations.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Extras.AttributeMetadata.MetadataModule-2.RegisterAttributedType.html#Autofac_Extras_AttributeMetadata_MetadataModule_2_RegisterAttributedType_System_Type_">RegisterAttributedType(Type)</a></dt>
-    <dd></dd>
+    <dd><p>Registers the provided concrete instance type and scans it for generate metadata data.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Extras.AttributeMetadata.MetadataModule-2.RegisterAttributedType.html#Autofac_Extras_AttributeMetadata_MetadataModule_2_RegisterAttributedType__1">RegisterAttributedType&lt;TInstance&gt;()</a></dt>
-    <dd></dd>
+    <dd><p>Registers the provided concrete instance and scans it for generic metadata attribute data.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Extras.AttributeMetadata.MetadataModule-2.RegisterType.html#Autofac_Extras_AttributeMetadata_MetadataModule_2_RegisterType_System_Type__1_">RegisterType(Type, TMetadata)</a></dt>
-    <dd></dd>
+    <dd><p>registers provided metadata on the declared type.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Extras.AttributeMetadata.MetadataModule-2.RegisterType.html#Autofac_Extras_AttributeMetadata_MetadataModule_2_RegisterType__1__1_">RegisterType&lt;TInstance&gt;(TMetadata)</a></dt>
-    <dd></dd>
+    <dd><p>Registers provided metadata on the declared type.</p>
+</dd>
   </dl>
 
 

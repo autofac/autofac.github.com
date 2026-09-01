@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class ParameterFilterAttribute | Autofac ">
       
-      
+      <meta name="description" content="Base attribute class for marking constructor parameters and enabling filtering by attributed criteria.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -96,7 +96,9 @@ Class ParameterFilterAttribute
   <dl><dt>Assembly</dt><dd>Autofac.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Base attribute class for marking constructor parameters and enabling
+filtering by attributed criteria.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -110,8 +112,8 @@ public abstract class ParameterFilterAttribute : Attribute</code></pre>
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute">Attribute</a></div>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">Attribute</span></div>
       <div><span class="xref">ParameterFilterAttribute</span></div>
     </dd>
   </dl>
@@ -129,6 +131,25 @@ public abstract class ParameterFilterAttribute : Attribute</code></pre>
 
 
 
+  <h2 id="Autofac_Features_AttributeFilters_ParameterFilterAttribute_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+Implementations of this attribute can be used to mark constructor parameters
+so filtering can be done based on registered service data. For example, the
+<a class="xref" href="Autofac.Features.AttributeFilters.MetadataFilterAttribute.html">MetadataFilterAttribute</a> allows constructor
+parameters to be filtered by registered metadata criteria and the
+<a class="xref" href="Autofac.Features.AttributeFilters.KeyFilterAttribute.html">KeyFilterAttribute</a> allows constructor
+parameters to be filtered by a keyed service registration.
+</p>
+<p>
+If a type uses these attributes, it should be registered with Autofac
+using the
+<a class="xref" href="Autofac.Features.AttributeFilters.RegistrationExtensions.WithAttributeFiltering.html#Autofac_Features_AttributeFilters_RegistrationExtensions_WithAttributeFiltering__3_Autofac_Builder_IRegistrationBuilder___0___1___2__">WithAttributeFiltering&lt;TLimit, TReflectionActivatorData, TRegistrationStyle&gt;(IRegistrationBuilder&lt;TLimit, TReflectionActivatorData, TRegistrationStyle&gt;)</a>
+extension to enable the behavior.
+</p>
+<p>
+For specific attribute usage examples, see the attribute documentation.
+</p>
+</div>
 
   <h2 class="section" id="constructors">Constructors
 </h2>
@@ -143,14 +164,21 @@ public abstract class ParameterFilterAttribute : Attribute</code></pre>
 
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Features.AttributeFilters.ParameterFilterAttribute.CanResolveParameter.html#Autofac_Features_AttributeFilters_ParameterFilterAttribute_CanResolveParameter_System_Reflection_ParameterInfo_Autofac_IComponentContext_">CanResolveParameter(ParameterInfo, IComponentContext)</a></dt>
-    <dd></dd>
+    <dd><p>Implemented in derived classes to check a specific parameter can be resolved.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="Autofac.Features.AttributeFilters.ParameterFilterAttribute.ResolveParameter.html#Autofac_Features_AttributeFilters_ParameterFilterAttribute_ResolveParameter_System_Reflection_ParameterInfo_Autofac_IComponentContext_">ResolveParameter(ParameterInfo, IComponentContext)</a></dt>
-    <dd></dd>
+    <dd><p>Implemented in derived classes to resolve a specific parameter marked with this attribute.</p>
+</dd>
   </dl>
 
 
+  <h2 id="seealso">See Also</h2>
+  <div class="seealso">
+      <div><a class="xref" href="Autofac.Features.AttributeFilters.MetadataFilterAttribute.html">MetadataFilterAttribute</a></div>
+      <div><a class="xref" href="Autofac.Features.AttributeFilters.KeyFilterAttribute.html">KeyFilterAttribute</a></div>
+  </div>
 
 </article>
 
